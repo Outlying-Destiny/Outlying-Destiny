@@ -44,6 +44,13 @@ ServerEvents.recipes(event => {
       'thermal:ender_pearl_dust'
     )
 
+    //Vacuums
+    event.replaceInput(
+      { output: ['enderio:vacuum_chest', 'enderio:xp_vacuum']},
+      'minecraft:iron_ingot',
+      'enderio:dark_steel_ingot'
+    )
+
     //Remove SAG Mill Coal dupe
     event.remove({id:'enderio:sag_milling/coal'})
     

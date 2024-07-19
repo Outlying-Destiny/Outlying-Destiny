@@ -205,7 +205,7 @@ ServerEvents.recipes(event => {
 
     //Circuit Board
     event.remove({output:'immersiveengineering:circuit_board'})
-    event.custom({"type":"immersiveengineering:blueprint","category":"components","inputs":[{"tag":"forge:plates/plastic"},{"item":"mekanism:basic_control_circuit"}],"result":{"item":"immersiveengineering:circuit_board"}})
+    event.custom({"type":"immersiveengineering:blueprint","category":"components","inputs":[{"tag":"forge:plates/plastic"},{"item":"mekanism:basic_control_circuit"},{"base_ingredient":{"item":"thermal:copper_plate"},"count":2}],"result":{"item":"immersiveengineering:circuit_board"}})
 
     //Logic Circuit
     event.custom({"type":"immersiveengineering:blueprint","category":"components","inputs":[{"item":"immersiveengineering:circuit_board"},{"item":"immersiveengineering:component_electronic"}],"result":{"item":"immersiveengineering:logic_circuit"}})

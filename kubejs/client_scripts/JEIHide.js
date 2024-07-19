@@ -74,8 +74,17 @@ JEIEvents.hideItems(event => {
     event.hide('sophisticatedstorage:controller')
     event.hide(/sophisticatedstorage:storag.+/)
 
+    //Functional Storage Stuff
+    event.hide('functionalstorage:collector_upgrade')
+
     //Magnet
     event.hide('thermal:flux_magnet')
     event.hide('immersiveengineering:toolupgrade_powerpack_magnet')
+
+    //Vacuum
+    event.hide('thermal:device_collector')
+
+    //Item Collector
+    event.hide('itemcollectors:basic_collector')
 
 })

@@ -74,14 +74,14 @@ ServerEvents.recipes(event => {
     )
 
     //Absorption Hopper
-    event.remove({id:'mob_grinding_utils:recipe_absorption_hopper'})
+    event.remove({id:'mob_grinding_utils:recipe_absorbtion_hopper'})
     event.shaped(('mob_grinding_utils:absorption_hopper'), [
         'ABA',
         'ACA',
         'ADA'
         ], {
         A: 'minecraft:obsidian',
-        B: 'minecraft:eye_of_ender',
+        B: 'minecraft:ender_eye',
         C: 'kubejs:evil_infused_block',
         D: 'minecraft:hopper'
         }
