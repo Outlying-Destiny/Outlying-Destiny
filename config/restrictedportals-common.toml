@@ -1,0 +1,17 @@
+
+[options]
+	#Prevents Death by Teleporting Player to Spawn if trying to enter an Ender Portal
+	preventdeath = true
+	#Message that displays when Teleport is blocked
+	blockedmessage = "Only freed soul shall pass."
+	#Title for the Advancements
+	craftedmessage = "Not quite Olympus yet"
+	#Description for the Advancements
+	description = "Craft a %item%"
+	#Comma seperated list of items that when crafted unlock the corresponding dimension
+	craftitems = "kubejs:freed_soul"
+	#Comma seperated list of Dimension Resource Names
+	dimresname = "aether:the_aether"
+	#Comma seperated list of Dimension Display Names
+	dimnames = "The Aether"
+

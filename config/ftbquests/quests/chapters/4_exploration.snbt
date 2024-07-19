@@ -1,0 +1,495 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	default_quest_size: 1.25d
+	filename: "4_exploration"
+	group: ""
+	icon: "twilightforest:twilight_portal_miniature_structure"
+	id: "49ABDB5B2D61B8A3"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1D8893FD9B6AA44A"]
+			id: "3D422E8282D4F5A6"
+			size: 1.75d
+			tasks: [{
+				dimension: "twilightforest:twilight_forest"
+				id: "1A602FDAC4BA31C9"
+				title: "Twilight Forest!"
+				type: "dimension"
+			}]
+			title: "Twilight Forest"
+			x: -13.125d
+			y: -3.125d
+		}
+		{
+			dependencies: ["3D422E8282D4F5A6"]
+			hide_dependency_lines: true
+			id: "6F0EF63762F1F6F0"
+			tasks: [{
+				id: "5DC8938769D2C1EC"
+				item: "twilightforest:ironwood_ingot"
+				type: "item"
+			}]
+			x: -11.25d
+			y: 0.9375d
+		}
+		{
+			dependencies: ["2FA7D0A1BDC21418"]
+			id: "760CF1D73B65EB17"
+			tasks: [{
+				id: "5AE0790C2C1707F6"
+				item: "twilightforest:carminite"
+				type: "item"
+			}]
+			x: -15.3125d
+			y: -0.3125d
+		}
+		{
+			dependencies: ["3D422E8282D4F5A6"]
+			id: "1DFB4B8EAD81B680"
+			tasks: [{
+				id: "5EC9BC0C40F231A5"
+				item: "kubejs:your_soul"
+				type: "item"
+			}]
+			x: -14.375d
+			y: -1.5625d
+		}
+		{
+			dependencies: ["3D422E8282D4F5A6"]
+			id: "778298921C4A2EC0"
+			tasks: [{
+				id: "3E97820C52E37084"
+				item: {
+					Count: 1
+					id: "twilightforest:lamp_of_cinders"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -11.875d
+			y: -1.5625d
+		}
+		{
+			dependencies: [
+				"75E0E9C5F8E23B7E"
+				"1DFB4B8EAD81B680"
+				"778298921C4A2EC0"
+				"2191E8D6D6172EC4"
+				"760CF1D73B65EB17"
+				"6F0EF63762F1F6F0"
+				"5BD91F6B151934B2"
+			]
+			id: "292D49D365627177"
+			size: 1.5d
+			tasks: [{
+				id: "04FD2133C549E84D"
+				item: "kubejs:freed_soul"
+				type: "item"
+			}]
+			x: -13.125d
+			y: -0.125d
+		}
+		{
+			dependencies: ["5FE1BA0649DB77B6"]
+			id: "75E0E9C5F8E23B7E"
+			size: 1.25d
+			tasks: [{
+				id: "19A816B972D3D2B7"
+				item: "naturesaura:sky_ingot"
+				type: "item"
+			}]
+			x: -13.125d
+			y: 1.375d
+		}
+		{
+			dependencies: ["3D422E8282D4F5A6"]
+			hide_dependency_lines: true
+			id: "5BD91F6B151934B2"
+			tasks: [{
+				id: "44B03B9CC6D72DAD"
+				item: "twilightforest:steeleaf_ingot"
+				type: "item"
+			}]
+			x: -15.0d
+			y: 0.9375d
+		}
+		{
+			dependencies: ["3D422E8282D4F5A6"]
+			id: "13AF7E44071C9703"
+			tasks: [{
+				id: "6D597CB6E47CA850"
+				item: "twilightforest:magic_map"
+				type: "item"
+			}]
+			x: -13.125d
+			y: -1.5625d
+		}
+		{
+			dependencies: ["1F9021F87B5C3FF0"]
+			id: "2191E8D6D6172EC4"
+			tasks: [{
+				id: "7EF7BFBB4CEB8E29"
+				item: "twilightforest:knightmetal_ingot"
+				type: "item"
+			}]
+			x: -10.9375d
+			y: -0.3125d
+		}
+		{
+			dependencies: ["3D422E8282D4F5A6"]
+			id: "1F9021F87B5C3FF0"
+			tasks: [{
+				id: "4CF56032F6062113"
+				item: "twilightforest:naga_trophy"
+				type: "item"
+			}]
+			x: -10.625d
+			y: -1.875d
+		}
+		{
+			dependencies: ["3D422E8282D4F5A6"]
+			id: "2FA7D0A1BDC21418"
+			optional: true
+			tasks: [{
+				id: "67D831BE2288D593"
+				item: "twilightforest:ur_ghast_trophy"
+				type: "item"
+			}]
+			x: -15.625d
+			y: -1.875d
+		}
+		{
+			dependencies: ["292D49D365627177"]
+			hide_dependency_lines: true
+			id: "7E2D6E8C57E87A77"
+			size: 1.75d
+			tasks: [{
+				dimension: "aether:the_aether"
+				id: "2F1EC12AD3E2911B"
+				title: "Twilight Forest!"
+				type: "dimension"
+			}]
+			title: "The Aether"
+			x: -5.9375d
+			y: -2.8125d
+		}
+		{
+			dependencies: ["7E2D6E8C57E87A77"]
+			id: "7EEA9FA7703FBA8E"
+			tasks: [{
+				id: "47C450931DC04851"
+				item: "aether:bronze_dungeon_key"
+				type: "item"
+			}]
+			x: -5.3125d
+			y: -1.5625d
+		}
+		{
+			dependencies: ["7E2D6E8C57E87A77"]
+			id: "3F8ED1FBB68D88A9"
+			tasks: [{
+				id: "14A87649784D1EFA"
+				item: "aether:silver_dungeon_key"
+				type: "item"
+			}]
+			x: -6.5625d
+			y: -1.5625d
+		}
+		{
+			dependencies: ["7E2D6E8C57E87A77"]
+			id: "69859C67C5901B5A"
+			tasks: [{
+				id: "0AE60595411C3B05"
+				item: "aether:gold_dungeon_key"
+				type: "item"
+			}]
+			x: -4.0625d
+			y: -2.8125d
+		}
+		{
+			dependencies: ["7E2D6E8C57E87A77"]
+			id: "4799E888B7150B46"
+			tasks: [{
+				id: "4E5C134D769177F0"
+				item: "lost_aether_content:platinum_key"
+				type: "item"
+			}]
+			x: -7.8125d
+			y: -2.8125d
+		}
+		{
+			dependencies: [
+				"7EEA9FA7703FBA8E"
+				"25544587CC944FCB"
+			]
+			id: "4BB54C74F0D1943B"
+			tasks: [{
+				id: "42F5E875BFA3E149"
+				item: "kubejs:neptune_ingot"
+				type: "item"
+			}]
+			x: -4.6875d
+			y: -0.625d
+		}
+		{
+			dependencies: [
+				"3F8ED1FBB68D88A9"
+				"25544587CC944FCB"
+			]
+			id: "57439F6626548971"
+			tasks: [{
+				id: "13E71B0EC674EB78"
+				item: "kubejs:valkyrie_ingot"
+				type: "item"
+			}]
+			x: -5.9375d
+			y: -0.625d
+		}
+		{
+			dependencies: [
+				"69859C67C5901B5A"
+				"25544587CC944FCB"
+			]
+			id: "5293DBD98F698571"
+			tasks: [{
+				id: "4989BF538523D1D6"
+				item: "kubejs:phoenix_ingot"
+				type: "item"
+			}]
+			x: -2.8125d
+			y: -1.5625d
+		}
+		{
+			dependencies: ["3C256DAA768A228A"]
+			id: "5319232C39A7D983"
+			tasks: [{
+				id: "4B8E1B913F5470CC"
+				item: "aether:golden_amber"
+				type: "item"
+			}]
+			x: -5.3125d
+			y: 0.3125d
+		}
+		{
+			dependencies: [
+				"5293DBD98F698571"
+				"442CDA293BACC0E8"
+			]
+			id: "7748DD4DEDD2956C"
+			size: 1.5d
+			tasks: [{
+				id: "1DC2D391CEAC0D8D"
+				item: "undergarden:catalyst"
+				type: "item"
+			}]
+			x: -2.8125d
+			y: 0.3125d
+		}
+		{
+			dependencies: ["050FFC23937BD1E5"]
+			id: "77034701D26CC365"
+			tasks: [{
+				id: "07682F2B59FEDDAF"
+				item: "aether:enchanted_gravitite"
+				type: "item"
+			}]
+			x: -7.8125d
+			y: 0.3125d
+		}
+		{
+			dependencies: [
+				"4BB54C74F0D1943B"
+				"5CB13A442A89235F"
+				"10F9C73EAF18FA70"
+				"6E97A56247F2876C"
+			]
+			id: "442CDA293BACC0E8"
+			tasks: [{
+				id: "58026494419F6B36"
+				item: "kubejs:frozen_core"
+				type: "item"
+			}]
+			x: -4.0625d
+			y: 0.3125d
+		}
+		{
+			dependencies: [
+				"08FC53EB9B71028A"
+				"5319232C39A7D983"
+			]
+			id: "5CB13A442A89235F"
+			tasks: [{
+				id: "287C44EEC632E6C3"
+				item: "kubejs:enchanted_core"
+				type: "item"
+			}]
+			x: -4.6875d
+			y: 1.25d
+		}
+		{
+			dependencies: [
+				"77034701D26CC365"
+				"1D3DB6932DBB5BFB"
+			]
+			id: "08FC53EB9B71028A"
+			tasks: [{
+				id: "77546E13DFECC5C2"
+				item: "kubejs:base_core"
+				type: "item"
+			}]
+			x: -7.1875d
+			y: 1.25d
+		}
+		{
+			dependencies: ["192D223323F4DBD9"]
+			id: "050FFC23937BD1E5"
+			tasks: [{
+				id: "0957B2B23E82D3E5"
+				item: "aether:altar"
+				type: "item"
+			}]
+			x: -8.4375d
+			y: -0.625d
+		}
+		{
+			dependencies: ["7E2D6E8C57E87A77"]
+			id: "14722CD89041C019"
+			tasks: [{
+				id: "303B4158923812FF"
+				item: "aether:freezer"
+				type: "item"
+			}]
+			x: -4.0625d
+			y: -1.5625d
+		}
+		{
+			dependencies: ["192D223323F4DBD9"]
+			id: "1D3DB6932DBB5BFB"
+			tasks: [
+				{
+					id: "01FFE79AE1F1F1DC"
+					item: "aether:aechor_petal"
+					type: "item"
+				}
+				{
+					id: "3C9B89616A7F2FA0"
+					item: "aether:skyroot_poison_bucket"
+					type: "item"
+				}
+			]
+			x: -7.1875d
+			y: -0.625d
+		}
+		{
+			dependencies: ["14722CD89041C019"]
+			id: "10F9C73EAF18FA70"
+			tasks: [{
+				id: "099AC4D691C2679E"
+				item: "aether:crystal_leaves"
+				type: "item"
+			}]
+			x: -3.4375d
+			y: -0.625d
+		}
+		{
+			dependencies: ["7E2D6E8C57E87A77"]
+			id: "192D223323F4DBD9"
+			tasks: [{
+				id: "4A9F5BA6C95D3FA7"
+				item: "aether:ambrosium_shard"
+				type: "item"
+			}]
+			x: -7.8125d
+			y: -1.5625d
+		}
+		{
+			dependencies: ["57439F6626548971"]
+			id: "3C256DAA768A228A"
+			tasks: [{
+				id: "7B321E1514CB9DD4"
+				item: {
+					Count: 1
+					id: "aether:valkyrie_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -6.5625d
+			y: 0.3125d
+		}
+		{
+			dependencies: ["7748DD4DEDD2956C"]
+			hide_dependency_lines: true
+			id: "3C599A2D8429EAC2"
+			size: 1.75d
+			tasks: [{
+				dimension: "undergarden:undergarden"
+				id: "6DA2E95D9EFD7FB2"
+				type: "dimension"
+			}]
+			title: "Undergarden"
+			x: 2.5d
+			y: -2.8125d
+		}
+		{
+			dependencies: ["7E2D6E8C57E87A77"]
+			hide_dependency_lines: true
+			id: "6E97A56247F2876C"
+			tasks: [{
+				id: "05998968ADEF2319"
+				item: "aether:aerogel"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 1.25d
+		}
+		{
+			dependencies: ["17FB887A20B0F3F3"]
+			id: "590A74088180CE70"
+			size: 1.5d
+			tasks: [
+				{
+					id: "58DC7100249F695B"
+					item: "ae2:silicon_press"
+					type: "item"
+				}
+				{
+					id: "227AD8A079464B68"
+					item: "ae2:logic_processor_press"
+					type: "item"
+				}
+				{
+					id: "63434F9A1FD9104E"
+					item: "ae2:engineering_processor_press"
+					type: "item"
+				}
+				{
+					id: "3FDA10C81ED2BB11"
+					item: "ae2:calculation_processor_press"
+					type: "item"
+				}
+			]
+			x: -7.0d
+			y: -4.0625d
+		}
+		{
+			dependencies: ["7E2D6E8C57E87A77"]
+			id: "17FB887A20B0F3F3"
+			tasks: [{
+				id: "4790C836EB8299EA"
+				item: "ae2:meteorite_compass"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -4.0625d
+		}
+	]
+	title: "4. Exploration"
+}

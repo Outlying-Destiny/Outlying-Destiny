@@ -1,0 +1,563 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1_new_beginnings"
+	group: ""
+	icon: "kubejs:iron_fragment"
+	id: "6444660B8C7DA304"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "0A3D05D5F3E9C113"
+			rewards: [{
+				count: 4
+				id: "3BD5B2AB228AC476"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "798D3243F92F64B2"
+				item: { Count: 8, id: "minecraft:oak_log" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0A3D05D5F3E9C113"]
+			id: "3734A5BF783739BE"
+			rewards: [{
+				id: "6DDC32CB4B6A0F56"
+				item: "craftingstation:crafting_station"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7BE068124DBC61F3"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["3734A5BF783739BE"]
+			id: "65DB6A7BE6098186"
+			rewards: [{
+				count: 4
+				id: "73FDD0AEE4DA2B39"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "114F8071E92AEEFA"
+				item: "minecraft:campfire"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3734A5BF783739BE"]
+			id: "491A6D808994797B"
+			rewards: [{
+				count: 8
+				id: "53D61742583746EE"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4CAE927828E0FE3F"
+				item: {
+					Count: 1
+					id: "minecraft:stone_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"65DB6A7BE6098186"
+				"5F2E88EBE7506C76"
+			]
+			id: "1DD3363A37D52A83"
+			rewards: [{
+				id: "709A3AA123C09EBC"
+				type: "xp"
+				xp: 10
+			}]
+			tasks: [{
+				id: "695D939B339DAD05"
+				item: "kubejs:iron_fragment"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1DD3363A37D52A83"]
+			id: "616F8356C06E4806"
+			rewards: [{
+				id: "2866BD7E1393C628"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "5984BC61E88399A0"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["616F8356C06E4806"]
+			id: "23E48C4BA203C8F8"
+			rewards: [{
+				id: "32BDE232BBAA2CD0"
+				item: "minecraft:coal_block"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7536B03B64019263"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3734A5BF783739BE"]
+			id: "4B5E70ADE3D668E9"
+			rewards: [{
+				id: "36637836D17A3FA0"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1419FC4404D75EAE"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "functionalstorage:drawer"
+					}
+				}
+				title: "Any #functionalstorage:drawer"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["616F8356C06E4806"]
+			id: "12D98F2C5144106B"
+			rewards: [{
+				count: 4
+				id: "09FCAE9F4943CE65"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6A0464C1962C60A6"
+				item: {
+					Count: 1
+					id: "sophisticatedstorage:iron_chest"
+					tag: {
+						woodType: "oak"
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"12D98F2C5144106B"
+				"3DA41078DF459632"
+			]
+			id: "310DA632419037E0"
+			rewards: [{
+				count: 4
+				id: "4E3F205D0ABDB916"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			tasks: [{
+				id: "477F85354E717842"
+				item: {
+					Count: 1
+					id: "sophisticatedstorage:diamond_chest"
+					tag: {
+						woodType: "oak"
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6402629A93101A90"]
+			id: "699B23728F627B1F"
+			rewards: [{
+				count: 16
+				id: "52430D7CADBBA475"
+				item: "naturesaura:gold_powder"
+				type: "item"
+			}]
+			tasks: [{
+				count: 32L
+				id: "5D0E765A181142DB"
+				item: "naturesaura:gold_leaf"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"699B23728F627B1F"
+				"2B9C8EF454CAFCB8"
+			]
+			id: "5D8C90FA217A52DB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "41B8972B7CC321C8"
+				table_id: 6931617435292310794L
+				type: "choice"
+			}]
+			size: 1.75d
+			tasks: [{
+				count: 8L
+				id: "7329ECC9EFAD85B9"
+				item: "naturesaura:wood_stand"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["72EB2ED8D9D7B364"]
+			id: "396CD1AA6DFF7101"
+			rewards: [{
+				count: 2
+				id: "11B3E05C9D2E143E"
+				item: "minecraft:string"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2A86EECF640AAD31"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"396CD1AA6DFF7101"
+				"3DA41078DF459632"
+			]
+			id: "64ADE730978A941F"
+			rewards: [{
+				count: 4
+				id: "2468F77C30113DC9"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			tasks: [{
+				id: "25F67A4D8F28269B"
+				item: "sophisticatedbackpacks:diamond_backpack"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["616F8356C06E4806"]
+			id: "61564C699FF6C285"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "35239C41BCD5164C"
+				table_id: 6931617435292310794L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "65BAE2ED5ECE5499"
+				item: {
+					Count: 1
+					id: "naturescompass:naturescompass"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4B5E70ADE3D668E9"]
+			id: "13195133741568D5"
+			rewards: [{
+				count: 6
+				id: "4F04B189C785BA9A"
+				item: "minecraft:sugar_cane"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2C2E3141E430D959"
+				item: "functionalstorage:configuration_tool"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["616F8356C06E4806"]
+			id: "3DA41078DF459632"
+			rewards: [{
+				count: 2
+				id: "7F2D751F51F5B841"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "591185004FB986A9"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["616F8356C06E4806"]
+			id: "4F27C10BCFCC365F"
+			rewards: [{
+				count: 12
+				id: "6DA188DC547B6484"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			tasks: [{
+				count: 24L
+				id: "4ECA41BC55DE9BE7"
+				item: { Count: 12, id: "minecraft:redstone" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["491A6D808994797B"]
+			id: "5F2E88EBE7506C76"
+			rewards: [{
+				count: 2
+				id: "742284ADB52D94B8"
+				item: "minecraft:iron_ore"
+				type: "item"
+			}]
+			tasks: [{
+				count: 6L
+				id: "6D2CFEF902EB716D"
+				item: "minecraft:iron_ore"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["23E48C4BA203C8F8"]
+			id: "6402629A93101A90"
+			rewards: [{
+				count: 4
+				id: "0EA660EB2A5BDAFA"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "315E6991C44E3C37"
+				item: { Count: 4, id: "minecraft:gold_ingot" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			id: "72EB2ED8D9D7B364"
+			rewards: [{
+				count: 4
+				id: "100077C579132A7E"
+				item: "minecraft:leather"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "5629D1E9B396CF94"
+				item: { Count: 4, id: "minecraft:leather" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3DA41078DF459632"]
+			id: "6AD41103407CF7B6"
+			rewards: [{
+				count: 2
+				id: "486C7E03493747D8"
+				item: "compressium:obsidian_1"
+				type: "item"
+			}]
+			tasks: [{
+				count: 64L
+				id: "1DA119CCFD450C7E"
+				item: { Count: 64, id: "minecraft:obsidian" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["616F8356C06E4806"]
+			id: "2B9C8EF454CAFCB8"
+			rewards: [{
+				count: 8
+				id: "3DB0B3F77A7D9802"
+				item: "forbidden_arcanus:arcane_crystal"
+				type: "item"
+			}]
+			tasks: [{
+				count: 24L
+				id: "403EB54BD15D5B91"
+				item: { Count: 8, id: "forbidden_arcanus:arcane_crystal" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3DA41078DF459632"]
+			id: "581158A159C3EB4C"
+			rewards: [{
+				id: "28A82AA7C4893E8A"
+				item: "forbidden_arcanus:rune"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "2B42F869B6EFAE30"
+				item: { Count: 4, id: "forbidden_arcanus:rune" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6AD41103407CF7B6"
+				"581158A159C3EB4C"
+				"555D82860FDAE970"
+			]
+			id: "4017262C83944767"
+			rewards: [{
+				count: 3
+				id: "4C8EF3CFA65A8AF6"
+				item: "minecraft:book"
+				type: "item"
+			}]
+			tasks: [{
+				id: "341DA724CF7B98AD"
+				item: "minecraft:enchanting_table"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["23E48C4BA203C8F8"]
+			id: "48A318EB02A6ABBF"
+			rewards: [{
+				count: 8
+				id: "0760DBB58DE3A315"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				count: 16L
+				id: "3863E1FB8D14B98F"
+				item: { Count: 16, id: "minecraft:copper_ingot" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			description: [
+				"Village generation and villagers trades have been disabled in this pack."
+				""
+				"There will be other way to obtain the items they trade as mending books."
+			]
+			icon: "minecraft:emerald"
+			id: "6E857F803D3503A1"
+			tasks: [{
+				id: "543516CE25E51AD0"
+				title: "&c&l Important: Villages and Villagers"
+				type: "checkmark"
+			}]
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Fire Spread is automatically disabled in this pack as it will not propagate itself."
+				""
+				"This prevents the player to use the burning plank method to open the nether portal early (also to have your base burn down from lightning)"
+			]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "minecraft:flint_and_steel"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "78092D24E7A17047"
+			min_width: 300
+			tasks: [{
+				id: "1D5334B928754D67"
+				title: "&c&lImportant: Fire Spread"
+				type: "checkmark"
+			}]
+			x: -8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["72EB2ED8D9D7B364"]
+			id: "555D82860FDAE970"
+			rewards: [{
+				count: 6
+				id: "4D321CB0FBD55B5D"
+				item: "minecraft:paper"
+				type: "item"
+			}]
+			tasks: [{
+				id: "199C5F06FEA05439"
+				item: "minecraft:book"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -2.0d
+		}
+	]
+	title: "1. New Beginnings"
+}

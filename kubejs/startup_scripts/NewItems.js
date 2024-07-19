@@ -1,0 +1,30 @@
+StartupEvents.registry('item', event => {
+
+  event.create('iron_fragment').tooltip("Your very first source of iron")
+  event.create('twilight_powder').displayName("Powder of Twilight")
+  event.create('token_twilight').displayName("Token of Twilight")
+  event.create('your_soul').displayName("Your Soul?")
+  event.create('freed_soul').displayName("Freed Soul")
+  event.create('enriched_rose_gold').displayName("Enriched Rose Gold")
+  event.create('enriched_platinum').displayName("Enriched Platinum")
+  event.create('enriched_shellite').displayName("Enriched Shellite")
+  event.create('empowered_steel_energized').displayName('Empowered Energized Steel').glow(true)
+  event.create('empowered_crystal_blazing').displayName('Empowered Blazing Crystal Mix').glow(true)
+  event.create('empowered_crystal_niotic').displayName('Empowered Niotic Crystal').glow(true)
+  event.create('empowered_crystal_spirited').displayName('Empowered Spirited Crystal').glow(true)
+  event.create('empowered_crystal_nitro').displayName('Empowered Nitro Crystal').glow(true)
+  event.create('demon_ingot').displayName('Demon Ingot').fireResistant(true)
+  event.create('enchanted_ingot').displayName('Enchanted Ingot')
+  event.create('evil_infused_ingot').displayName('Evil Infused Ingot')
+  event.create('evil_infused_sword', 'sword').displayName('Evil Infused Sword').tier('diamond').attackDamageBaseline(5.0).maxDamage(1280)
+  event.create('neptune_ingot').displayName('Neptune Ingot')
+  event.create('valkyrie_ingot').displayName('Valkyrie Ingot')
+  event.create('phoenix_ingot').displayName('Phoenix Ingot')
+  event.create('base_core').displayName('Base Core')
+  event.create('enchanted_core').displayName('Enchanted Core')
+  event.create('frozen_core').displayName('Frozen Core')
+
+  //Rods
+  event.create('dark_steel_rod').displayName('Dark Steel Rod')
+
+})

@@ -1,0 +1,58 @@
+[
+    {
+      "mob": "thermal:blizz",
+      "persecond": 8,
+      "attempts": 20,
+      "amount": {
+        "minimum": 2,
+        "maximum": 4,
+        "groupdistance": 3
+      },
+      "conditions": {
+        "dimension": "twilightforest:twilight_forest",
+        "mindist": 20,
+        "maxdist": 80,
+        "minheight": 5,
+        "maxheight": 40,
+        "maxthis": 30
+      }
+    },
+    {
+        "mob": "thermal:blitz",
+        "persecond": 10,
+        "attempts": 20,
+        "amount": {
+          "minimum": 1,
+          "maximum": 3,
+          "groupdistance": 4
+        },
+        "conditions": {
+          "dimension": "aether:the_aether",
+          "norestrictions": true,
+          "mindist": 32,
+          "maxdist": 80,
+          "minheight": 0,
+          "maxheight": 140,
+          "maxthis": 20
+        }
+      },
+      {
+        "mob": "thermal:basalz",
+        "persecond": 12,
+        "attempts": 20,
+        "amount": {
+          "minimum": 2,
+          "maximum": 3,
+          "groupdistance": 5
+        },
+        "conditions": {
+          "dimension": "undergarden:undergarden",
+          "norestrictions": true,
+          "mindist": 32,
+          "maxdist": 80,
+          "minheight": 5,
+          "maxheight": 254,
+          "maxthis": 25
+        }
+      }
+  ]

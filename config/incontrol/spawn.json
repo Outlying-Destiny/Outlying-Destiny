@@ -1,0 +1,18 @@
+[
+    {
+      "mob": "thermal:blizz",
+      "dimension": "twilightforest:twilight_forest",
+      "biome": ["twilightforest:snowy_forest", "twilightforest:glacier"],
+      "result": "default"
+    },
+    {
+      "mob": "thermal:blizz",
+      "dimension": "twilightforest:twilight_forest",
+      "result": "deny"
+    },
+    {
+      "mob":["thermal:blizz", "thermal:blitz", "thermal:basalz"],
+      "dimension": "minecraft:overworld",
+      "result": "deny"
+    }
+  ]

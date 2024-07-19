@@ -1,0 +1,401 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2_natural_magic"
+	group: ""
+	icon: "naturesaura:nature_altar"
+	id: "51EA38D179D52B3D"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"699B23728F627B1F"
+				"2B9C8EF454CAFCB8"
+			]
+			icon: "naturesaura:wood_stand"
+			id: "07A64AE31764BD29"
+			size: 1.75d
+			tasks: [
+				{
+					count: 8L
+					id: "6377979DE04857AA"
+					item: "naturesaura:wood_stand"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "65B336E6FD7F32D2"
+					item: { Count: 16, id: "naturesaura:gold_powder" }
+					type: "item"
+				}
+				{
+					id: "198E0A3B1D50EC73"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:saplings"
+						}
+					}
+					title: "Any #minecraft:saplings"
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"07A64AE31764BD29"
+				"045F56361DDA2A87"
+			]
+			id: "678EF4FAD5178E53"
+			tasks: [{
+				id: "1544DE29E3EF676A"
+				item: "naturesaura:token_joy"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["678EF4FAD5178E53"]
+			icon: "naturesaura:nature_altar"
+			id: "7530FE8F2D9D011B"
+			tasks: [
+				{
+					id: "5CB20F7A953D32EC"
+					item: "naturesaura:nature_altar"
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "58A14D98B6995E29"
+					item: { Count: 20, id: "minecraft:oak_planks" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "4563D9AB86B76E20"
+					item: { Count: 16, id: "minecraft:stone_bricks" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "7D8819EEFBFF06E3"
+					item: { Count: 8, id: "naturesaura:gold_brick" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "12D9EF9A9B3B652E"
+					item: { Count: 4, id: "minecraft:chiseled_stone_bricks" }
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7530FE8F2D9D011B"]
+			id: "738163BCAD68CC8F"
+			rewards: [{
+				count: 4
+				id: "50F54E9B321D1B3D"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "42CF2343621F38FF"
+				item: { Count: 4, id: "naturesaura:tainted_gold" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7530FE8F2D9D011B"]
+			id: "45C495D3393C5F6E"
+			rewards: [{
+				count: 16
+				id: "6539F7D43B851282"
+				item: "minecraft:stone"
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				count: 27L
+				id: "5288C9C4711C2316"
+				item: { Count: 8, id: "naturesaura:infused_stone" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.75d
+		}
+		{
+			dependencies: ["6A53A5AD90652811"]
+			id: "74A5DBE334967074"
+			tasks: [{
+				id: "3C2D811E0A86E4F5"
+				item: "naturesaura:infused_iron"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["66E4E78EE2442FC4"]
+			id: "045F56361DDA2A87"
+			tasks: [{
+				id: "2DDE43B8DC79A5C2"
+				item: {
+					Count: 1
+					id: "naturesaura:aura_bottle"
+					tag: {
+						stored_type: "naturesaura:overworld"
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["306576FB42A98111"]
+			id: "66E4E78EE2442FC4"
+			tasks: [{
+				id: "7C45B91898D6729B"
+				item: { Count: 6, id: "naturesaura:bottle_two_the_rebottling" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6402629A93101A90"]
+			id: "306576FB42A98111"
+			rewards: [{
+				count: 16
+				id: "063048C4E1C3DB95"
+				item: "naturesaura:gold_powder"
+				type: "item"
+			}]
+			tasks: [{
+				count: 32L
+				id: "642C54D78E54167C"
+				item: "naturesaura:gold_leaf"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["738163BCAD68CC8F"]
+			id: "1F6429411B14E024"
+			size: 1.25d
+			tasks: [{
+				count: 32L
+				id: "4F79195000F27F6F"
+				item: { Count: 32, id: "minecraft:netherrack" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.75d
+		}
+		{
+			dependencies: ["07A64AE31764BD29"]
+			id: "1A6234798DBC2C87"
+			tasks: [{
+				id: "6106D509B0B263D7"
+				item: "naturesaura:ancient_sapling"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5F8FE2C8D2EB3B88"]
+			id: "6A53A5AD90652811"
+			size: 1.25d
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "57A9582B9A67409B"
+				type: "dimension"
+			}]
+			x: 3.25d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"74A5DBE334967074"
+				"510800933DF646AB"
+				"1937450B3F241530"
+			]
+			icon: "naturesaura:offering_table"
+			id: "5FE1BA0649DB77B6"
+			tasks: [
+				{
+					id: "51930EE6F8C47CB7"
+					item: "naturesaura:offering_table"
+					type: "item"
+				}
+				{
+					count: 36L
+					id: "10929A16147ED029"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:small_flowers"
+						}
+					}
+					title: "Any #minecraft:small_flowers"
+					type: "item"
+				}
+				{
+					id: "6DDB1DA6B1A5148D"
+					item: "naturesaura:calling_spirit"
+					type: "item"
+				}
+			]
+			x: 5.75d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6A53A5AD90652811"]
+			id: "684CBF2196952AF5"
+			tasks: [{
+				id: "1FBD5368A61837F9"
+				item: {
+					Count: 1
+					id: "naturesaura:aura_bottle"
+					tag: {
+						stored_type: "naturesaura:nether"
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"6A53A5AD90652811"
+				"64BD2158A4528720"
+			]
+			dependency_requirement: "one_completed"
+			id: "3A778832C6CDC464"
+			tasks: [{
+				id: "3C9C07A6C8DA4882"
+				item: "minecraft:ghast_tear"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3A778832C6CDC464"]
+			id: "510800933DF646AB"
+			tasks: [{
+				id: "54ED48EF806BFC28"
+				item: "naturesaura:token_sorrow"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["684CBF2196952AF5"]
+			id: "1937450B3F241530"
+			tasks: [{
+				id: "51CD28210CC94E4D"
+				item: "naturesaura:token_fear"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6A53A5AD90652811"]
+			id: "64BD2158A4528720"
+			tasks: [{
+				id: "494DD86F77E67B0A"
+				item: "naturesaura:conversion_catalyst"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5FE1BA0649DB77B6"]
+			id: "6540A2C6A17020A8"
+			tasks: [
+				{
+					id: "416DE8536DD82777"
+					item: "naturesaura:token_euphoria"
+					type: "item"
+				}
+				{
+					id: "7C25533252A65387"
+					item: "naturesaura:token_terror"
+					type: "item"
+				}
+				{
+					id: "503B6E964A756BA4"
+					item: "naturesaura:token_rage"
+					type: "item"
+				}
+				{
+					id: "30A43EC292E7D71E"
+					item: "naturesaura:token_grief"
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5FE1BA0649DB77B6"]
+			id: "5EBD1BE5CAC32C54"
+			size: 1.25d
+			tasks: [{
+				id: "5E95E143123086BF"
+				item: "naturesaura:sky_ingot"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6540A2C6A17020A8"]
+			id: "1D8893FD9B6AA44A"
+			size: 1.0d
+			tasks: [{
+				id: "6E50634A88B24B28"
+				item: "kubejs:token_twilight"
+				type: "item"
+			}]
+			x: 7.25d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1D8893FD9B6AA44A"]
+			id: "3A338B82C0765C40"
+			size: 1.25d
+			tasks: [{
+				dimension: "twilightforest:twilight_forest"
+				id: "13D1D610D7CCB596"
+				title: "Twilight Forest!"
+				type: "dimension"
+			}]
+			title: "Twilight Forest"
+			x: 8.5d
+			y: -0.5d
+		}
+	]
+	title: "2. Natural Magic"
+}
