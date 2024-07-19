@@ -25,3 +25,5 @@
 /usercache.json
 /usernamecache.json
 /mods
+/config/oculus.properties
+/config/jade/plugins.json

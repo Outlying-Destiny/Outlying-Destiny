@@ -7,4 +7,7 @@ ServerEvents.recipes(event => {
     //Saw Mill
     event.remove({id:/immersiveengineering.+sawmill.+/})
 
+    //Magnet
+    event.remove({id:'immersiveengineering:crafting/toolupgrade_powerpack_magnet'})
+
 })

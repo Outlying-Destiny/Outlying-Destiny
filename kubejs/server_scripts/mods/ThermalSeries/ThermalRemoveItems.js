@@ -7,4 +7,6 @@ ServerEvents.recipes(event => {
     event.remove({id:/thermal:machines.+sawmill.+/})
     event.remove({id:/thermal:compat.+sawmill/})
 
+    //Magnet
+    event.remove({id:'thermal:flux_magnet'})
 })
