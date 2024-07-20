@@ -33,6 +33,7 @@ StartupEvents.registry('item', event => {
   event.create('enchanted_core').displayName('Enchanted Core')
   event.create('frozen_core').displayName('Frozen Core')
   event.create('infusing_soul_ingot').displayName('Infusing Soul Ingot')
+  event.create('red_gear').displayName('Red Alloy Gear')
 
   //Rods
   event.create('dark_steel_rod').displayName('Dark Steel Rod')

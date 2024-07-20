@@ -82,44 +82,44 @@ ServerEvents.recipes(event => {
     }
 
     //Explosives
-    function explosives(output, explosiveInput) {
-        event.shaped(output, [
-            'ABA',
-            'ACA',
-            'AAA'
-            ], {
-            A: explosiveInput,
-            B: 'minecraft:string',
-            C: 'thermal:gunpowder_block'
-            }
-        )
-        event.remove( {output: output} )
-    }
-  
-    explosives('minecraft:tnt', 'minecraft:redstone')
-    explosives('thermal:ender_tnt', '#forge:ender_pearls')
-    explosives('thermal:glowstone_tnt', 'minecraft:glowstone_dust')
-    explosives('thermal:redstone_tnt', 'minecraft:redstone_block')
-    explosives('thermal:slime_tnt', '#forge:slimeballs')
-    explosives('thermal:fire_tnt', 'minecraft:blaze_powder')
-    explosives('thermal:ice_tnt', 'thermal:blizz_powder')
-    explosives('thermal:lightning_tnt', 'thermal:blitz_powder')
-    explosives('thermal:earth_tnt', 'thermal:basalz_powder')
-    explosives('thermal:phyto_tnt', 'thermal:phytogro')
+    const explosives = [
+      {input: 'minecraft:redstone', tnt: 'minecraft:tnt', grenade: 'thermal:explosive_grenade'},
+      {input: 'minecraft:glowstone_dust', tnt: 'thermal:glowstone_tnt', grenade: 'thermal:glowstone_grenade'},
+      {input: 'minecraft:ender_pearl', tnt: 'thermal:ender_tnt', grenade: 'thermal:ender_grenade'},
+      {input: 'minecraft:redstone_block', tnt: 'thermal:redstone_tnt', grenade: 'thermal:redstone_grenade'},
+      {input: '#forge:slimeballs', tnt: 'thermal:slime_tnt', grenade: 'thermal:slime_grenade'},
+      {input: 'minecraft:blaze_powder', tnt: 'thermal:fire_tnt', grenade: 'thermal:fire_grenade'},
+      {input: 'thermal:blizz_powder', tnt: 'thermal:ice_tnt', grenade: 'thermal:ice_grenade'},
+      {input: 'thermal:blitz_powder', tnt: 'thermal:lightning_tnt', grenade: 'thermal:lightning_grenade'},
+      {input: 'thermal:basalz_powder', tnt: 'thermal:earth_tnt', grenade: 'thermal:earth_grenade'},
+      {input: 'thermal:phytogro', tnt: 'thermal:phyto_tnt', grenade: 'thermal:phyto_grenade'}
+  ]
 
-    event.remove( {output: 'thermal:explosive_grenade'})
-    event.shaped(
-        '2x thermal:explosive_grenade', [
-        'DBD',
+    explosives.forEach((explo) => {
+      event.shaped(explo.tnt, [
+        'ABA',
         'ACA',
-        'DAD'
+        'AAA'
         ], {
-        A: 'minecraft:iron_ingot',
-        B: 'minecraft:string',
-        C: 'thermal:gunpowder_block',
-        D: 'minecraft:redstone'
+        A:explo.input,
+        B:'minecraft:string',
+        C:'thermal:gunpowder_block'
         }
-    )
+      )
+      event.remove({output:explo.tnt})
+      event.shaped("2x "+explo.grenade, [
+        'ABA',
+        'DCD',
+        'ADA'
+        ], {
+        A:explo.input,
+        B:'minecraft:string',
+        C:'thermal:gunpowder_block',
+        D:'thermal:lead_ingot'
+        }
+      )
+      event.remove({output:explo.grenade})
+    })
 
     //Earth Charge
     event.remove({input:'thermal:earth_charge'})
@@ -131,7 +131,7 @@ ServerEvents.recipes(event => {
       ' A ',
       'B  '
       ], {
-      A:'projectred_core:red_ingot',
+      A:'kubejs:red_gear',
       B:'thermal:gold_plate'
     })
 

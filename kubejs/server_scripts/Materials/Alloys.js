@@ -74,10 +74,12 @@ ServerEvents.recipes(event => {
     }
     
     //Alloys Remove
-    event.remove({id: /thermal:machines.+smelter.+smelter_alloy_.+/})
+    event.remove({id:/thermal:machines.+smelter.+smelter_alloy_.+/})
     event.remove({id:/thermal:fire_charge.+/})
     event.remove({id:/thermal_extra:.+_glass/})
     event.remove({id:'extendedcrafting:black_iron_ingot'})
+    //event.remove({id:/thermal_extra:machine.+smelter.+ingot/})
+    event.remove({id:'thermal_extra:machine/smelter/soul_infused_ingot'})
 
     //Alloy Unification
     alloy2('thermal:bronze_ingot', 4, 'thermal:tin_ingot', 1, 'minecraft:copper_ingot', 3, 6000)
@@ -101,7 +103,7 @@ ServerEvents.recipes(event => {
     alloy3('enderio:dark_steel_ingot', 1, 'minecraft:obsidian', 1, 'thermal:steel_ingot', 1, 'thermal:enderium_dust', 1, 16000)
     alloy3('enderio:end_steel_ingot', 1, 'minecraft:end_stone', 1, 'enderio:dark_steel_ingot', 1, 'thermal:lumium_dust', 1, 16000)
     alloy3('extendedcrafting:black_iron_ingot', 1, 'thermal:tar', 1, 'enderio:dark_steel_ingot', 1, 'bigreactors:graphite_ingot', 1, 20000)
-    //alloy3('kubejs:infusing_soul_ingot', 1, 'powah:crystal_blazing', 1, 'enderio:soularium_ingot', 1, 'kubejs:evil_infused_ingot', 1, 16000)
+    alloy3('kubejs:infusing_soul_ingot', 1, 'powah:crystal_blazing', 1, 'enderio:soularium_ingot', 1, 'kubejs:enchanted_ingot', 1, 16000)
     alloy3('thermal_extra:shellite_ingot', 1, 'minecraft:shulker_shell', 1, 'thermal:lead_ingot', 1, 'mekanism:ingot_refined_obsidian', 1, 20000)
     alloy3('kubejs:evil_infused_ingot', 1, 'kubejs:enchanted_ingot', 1, 'kubejs:demon_ingot', 1, 'architects_palette:withered_bone', 1, 12000)
     alloy3('powah_dielectric_paste', 16, 'minecraft:clay_ball', 1, 'immersiveengineering:dust_coke', 2, 'minecraft:blaze_powder', 1, 6000)
