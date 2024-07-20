@@ -121,7 +121,31 @@ ServerEvents.recipes(event => {
     woodenstand("naturesaura:conversion_catalyst", "naturesaura:gold_brick", "immersiveengineering:alloybrick", "naturesaura:infused_iron", "minecraft:glowstone", "naturesaura:infused_stone", "immersiveengineering:alloybrick", "minecraft:brewing_stand", "naturesaura:gold_leaf", "forge:sapling", 1, 500)
 
     //Powder of Twilight
-
+    event.custom({
+        "type": "naturesaura:tree_ritual",
+        "ingredients": [
+            {
+                "item": 'naturesaura:gold_powder'
+            },
+            {
+                "item": 'naturesaura:gold_powder'
+            },
+            {
+                "item": 'minecraft:glowstone_dust'
+            },
+            {
+                "item": 'immersiveengineering:dust_hop_graphite'
+            }
+        ],
+        "sapling": {
+            "tag": 'forge:sapling'
+        },
+        "output": {
+            "item": 'kubejs:twilight_powder',
+            "count": 4
+        },
+        "time": 400
+    })
 
     //Token of Twilight
     woodenstand("kubejs:token_twilight", "kubejs:twilight_powder", "naturesaura:token_euphoria", "kubejs:twilight_powder", "naturesaura:token_terror", "kubejs:twilight_powder", "naturesaura:token_rage", "kubejs:twilight_powder", "naturesaura:token_grief", "forge:sapling", 1, 500)

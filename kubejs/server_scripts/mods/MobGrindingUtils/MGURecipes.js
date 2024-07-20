@@ -127,17 +127,6 @@ ServerEvents.recipes(event => {
         }
     )
 
-    //Evil Infused Sword
-    event.shaped(('kubejs:evil_infused_sword'), [
-        ' A ',
-        ' A ',
-        ' B '
-        ], {
-        A: 'kubejs:evil_infused_ingot',
-        B: '#balm:wooden_rods'
-        }
-    )
-
     //Mob Masher Upgrades
     event.replaceInput(
         { output: /mob_grinding_utils:saw_upgrade.+/},
