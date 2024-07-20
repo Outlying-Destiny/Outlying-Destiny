@@ -261,16 +261,6 @@
 			y: -2.5d
 		}
 		{
-			id: "01B7B63D3B1F806E"
-			tasks: [{
-				id: "1C8FB9BC54A8519F"
-				item: "thermal:machine_chiller"
-				type: "item"
-			}]
-			x: 6.0d
-			y: -1.5d
-		}
-		{
 			dependencies: ["1A965CD16F4D3FE3"]
 			id: "0F2F0E0DC9438FCB"
 			tasks: [{
@@ -902,7 +892,7 @@
 					type: "item"
 				}
 				{
-					id: "681BB3A2264D92A7"
+					id: "2E1BE5FFF2E97766"
 					item: {
 						Count: 1
 						id: "itemfilters:or"
@@ -916,9 +906,18 @@
 									Count: 1b
 									id: "functionalstorage:framed_storage_controller"
 								}
+								{
+									Count: 1b
+									id: "functionalstorage:controller_extension"
+								}
+								{
+									Count: 1b
+									id: "functionalstorage:framed_controller_extension"
+								}
 							]
 						}
 					}
+					title: "Storage Controller / Access Point"
 					type: "item"
 				}
 			]
@@ -1168,6 +1167,72 @@
 			}]
 			x: 5.5d
 			y: -4.5d
+		}
+		{
+			dependencies: ["7FC2A2D7276AE83F"]
+			hide_dependency_lines: true
+			id: "1B622423B03A6A6F"
+			tasks: [
+				{
+					id: "331DD6FC66FB8637"
+					item: {
+						Count: 1
+						id: "constructionwand:diamond_wand"
+						tag: {
+							Damage: 0
+							wand_options: { }
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0459B3B30E6431D2"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "constructionwand:core_angel"
+								}
+								{
+									Count: 1b
+									id: "constructionwand:core_destruction"
+								}
+							]
+						}
+					}
+					optional_task: true
+					title: "Wand Cores"
+					type: "item"
+				}
+			]
+			x: 6.75d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1A965CD16F4D3FE3"]
+			hide_dependency_lines: true
+			id: "5211F213A9318194"
+			tasks: [
+				{
+					id: "1CA9E425B9360B35"
+					item: {
+						Count: 1
+						id: "simplemagnets:basicmagnet"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "19343CF4F4768710"
+					item: "simplemagnets:basic_demagnetization_coil"
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: -1.5d
 		}
 	]
 	title: "5. Heat it up!"

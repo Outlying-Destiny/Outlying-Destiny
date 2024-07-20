@@ -16,13 +16,16 @@ StartupEvents.registry('item', event => {
   event.create('demon_ingot').displayName('Demon Ingot').fireResistant(true)
   event.create('enchanted_ingot').displayName('Enchanted Ingot')
   event.create('evil_infused_ingot').displayName('Evil Infused Ingot')
-  event.create('evil_infused_sword', 'sword').displayName('Evil Infused Sword').tier('diamond').attackDamageBaseline(5.0).maxDamage(1280)
+  event.create('evil_infused_sword', 'sword').displayName('Evil Infused Sword').tier('evil_infused')
+  event.create('evil_infused_pickaxe', 'pickaxe').displayName('Evil Infused Pickaxe').tier('evil_infused')
+  event.create('demon_pickaxe', 'pickaxe').displayName('Demon Pickaxe').tier('demon')
   event.create('neptune_ingot').displayName('Neptune Ingot')
   event.create('valkyrie_ingot').displayName('Valkyrie Ingot')
   event.create('phoenix_ingot').displayName('Phoenix Ingot')
   event.create('base_core').displayName('Base Core')
   event.create('enchanted_core').displayName('Enchanted Core')
   event.create('frozen_core').displayName('Frozen Core')
+  event.create('infusing_soul_ingot').displayName('Infusing Soul Ingot')
 
   //Rods
   event.create('dark_steel_rod').displayName('Dark Steel Rod')

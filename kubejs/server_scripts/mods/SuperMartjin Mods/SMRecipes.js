@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
         'BCB',
         'CDC'
         ], {
-        A: 'thermal:lumium_dust',
+        A: 'extendedcrafting:luminessence',
         B: 'enderio:energetic_alloy_ingot',
         C: 'thermal:steel_ingot',
         D: 'simplemagnets:basic_demagnetization_coil'

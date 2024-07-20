@@ -87,4 +87,7 @@ JEIEvents.hideItems(event => {
     //Item Collector
     event.hide('itemcollectors:basic_collector')
 
+    //Construction Wand Stuff
+    event.hide(['constructionwand:stone_wand', 'constructionwand:iron_wand'])
+
 })
