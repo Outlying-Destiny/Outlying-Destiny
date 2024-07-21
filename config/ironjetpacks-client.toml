@@ -4,7 +4,7 @@
 	#Enable jetpack sounds?
 	jetpackSounds = true
 	#Enable jetpack particles?
-	jetpackParticles = true
+	jetpackParticles = false
 	#Enable jetpack stat tooltips?
 	advancedTooltips = true
 

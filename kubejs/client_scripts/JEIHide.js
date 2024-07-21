@@ -90,4 +90,10 @@ JEIEvents.hideItems(event => {
     //Construction Wand Stuff
     event.hide(['constructionwand:stone_wand', 'constructionwand:iron_wand'])
 
+    //Iron Jetpacks Stuff
+    event.hide('ironjetpacks:capacitor')
+    event.hide('ironjetpacks:thruster')
+    event.hide('ironjetpacks:cell')
+    event.hide(/ironjetpacks:.+coil/)
+
 })
