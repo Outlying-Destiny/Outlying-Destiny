@@ -36,5 +36,14 @@ StartupEvents.registry('block', event => {
   event.create('phoenix_block').displayName('Phoenix Block').soundType('metal')
     .hardness(5.0).resistance(2.0).requiresTool(true)
     .tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_iron_tool')
-
+  event.create('dark_soularium_block').displayName('Dark Soularium Block').soundType('metal')
+    .hardness(7.0).resistance(3.0).requiresTool(true)
+    .tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_iron_tool').item(gl=>{gl.glow(true)})
+    event.create('crystalline_alloy_block').displayName('Crystalline Alloy Block').soundType('metal')
+    .hardness(5.0).resistance(2.5).requiresTool(true)
+    .tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_iron_tool')
+    event.create('crystalline_pink_slime_block').displayName('Crystalline Pink Slime Block').soundType('metal')
+    .hardness(5.0).resistance(2.5).requiresTool(true)
+    .tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_iron_tool')
+  
 })

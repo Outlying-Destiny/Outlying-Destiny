@@ -19,8 +19,6 @@ ServerEvents.recipes(event => {
     ]
 
     aethermaterials.forEach((material) => {
-        event.shapeless(material.blockid, '9x '+material.ingotid)
-        event.shapeless('9x '+material.ingotid, material.blockid)
         event.shaped(
             'aether:'+material.item+'_chestplate', [
             'A A',

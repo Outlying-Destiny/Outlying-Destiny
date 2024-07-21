@@ -45,20 +45,10 @@ ServerEvents.recipes(event => {
     //Demon Ingot
     transform('kubejs:demon_ingot', 1, 'minecraft:gold_ingot', 'minecraft:lava')
     transform('kubejs:demon_block', 1, 'minecraft:gold_block', 'minecraft:lava')
-    event.shapeless('kubejs:demon_block', ['9x kubejs:demon_ingot'])
-    event.shapeless('9x kubejs:demon_ingot', ['kubejs:demon_block'])
     
-
     //Experience Ingot
     transform2('kubejs:enchanted_ingot', 1, 'minecraft:gold_ingot', 'minecraft:lapis_lazuli', 'forge:experience')
     transform2('kubejs:enchanted_block', 1, 'minecraft:gold_block', 'minecraft:lapis_block', 'forge:experience')
-    event.shapeless('kubejs:enchanted_block', ['9x kubejs:enchanted_ingot'])
-    event.shapeless('9x kubejs:enchanted_ingot', ['kubejs:enchanted_block'])
-
-    //Evil Infused Ingot
-    event.shapeless('kubejs:evil_infused_block', ['9x kubejs:evil_infused_ingot'])
-    event.shapeless('9x kubejs:evil_infused_ingot', ['kubejs:evil_infused_block'])
-
 
     //XP Tap
     event.remove({id:'mob_grinding_utils:recipe_xp_tap'})

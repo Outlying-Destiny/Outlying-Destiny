@@ -109,6 +109,9 @@ ServerEvents.recipes(event => {
     alloy3('powah_dielectric_paste', 16, 'minecraft:clay_ball', 1, 'immersiveengineering:dust_coke', 2, 'minecraft:blaze_powder', 1, 6000)
     alloy1('enderio:fused_quartz', 1, 'minecraft:quartz_block', 1, 4000)
     alloy1('enderio:fused_quartz', 1, 'minecraft:quartz', 4, 4000)
+    alloy2('kubejs:crystalline_alloy_ingot', 1, 'enderio:pulsating_powder', 1, 'enderio:end_steel_ingot',1 ,18000)
+    alloy2('kubejs:crystalline_pink_slime_ingot', 1, 'industrialforegoing:pink_slime_ingot', 1, 'kubejs:crystalline_alloy_ingot',1 ,20000)
+    //alloy3('kubejs:dark_soularium_ingot', 1, 'enderio:soularium_ingot', 1, 'enderio:dark_steel_ingot', 10, '', 1, 24000)
 
     //Eye of Ender
     event.remove({id:'minecraft:ender_eye'})

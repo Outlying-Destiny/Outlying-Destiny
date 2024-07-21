@@ -8,7 +8,7 @@ StartupEvents.registry('item', event => {
   event.create('enriched_rose_gold').displayName("Enriched Rose Gold")
   event.create('enriched_platinum').displayName("Enriched Platinum")
   event.create('enriched_shellite').displayName("Enriched Shellite")
-  event.create('empowered_steel_energized').displayName('Empowered Energized Steel').glow(true)
+  event.create('empowered_energized_steel').displayName('Empowered Energized Steel').glow(true)
   event.create('empowered_blazing_crystal').displayName('Empowered Blazing Crystal Mix').glow(true)
   event.create('empowered_niotic_crystal').displayName('Empowered Niotic Crystal').glow(true)
   event.create('empowered_spirited_crystal').displayName('Empowered Spirited Crystal').glow(true)
@@ -46,6 +46,9 @@ StartupEvents.registry('item', event => {
   event.create('thruster_resonant').displayName('Resonant Thruster')
   event.create('thruster_fluxed').displayName('Fluxed Thruster')
   event.create('thruster_creative').displayName('Creative Thruster')
+  event.create('dark_soularium_ingot').displayName('Dark Soularium Ingot').glow(true)
+  event.create('crystalline_alloy_ingot').displayName('Crystalline Alloy Ingot')
+  event.create('crystalline_pink_slime_ingot').displayName('Crystalline Pink Slime Ingot')
 
   //Rods
   event.create('dark_steel_rod').displayName('Dark Steel Rod')
