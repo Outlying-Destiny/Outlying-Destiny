@@ -81,7 +81,7 @@ ServerEvents.recipes(event => {
     mattoblo('kubejs:dielectric_paste_block', '9x powah:dielectric_paste')
 
     //Empowered Material to Block
-    mattoblo('kubejs:empowered_energized_steel_block', '9x kubejs:empowered_steel_energized')
+    mattoblo('kubejs:empowered_energized_steel_block', '9x kubejs:empowered_energized_steel')
     mattoblo('kubejs:empowered_blazing_crystal_block', '9x kubejs:empowered_blazing_crystal')
     mattoblo('kubejs:empowered_niotic_crystal_block', '9x kubejs:empowered_niotic_crystal')
     mattoblo('kubejs:empowered_spirited_crystal_block', '9x kubejs:empowered_spirited_crystal')

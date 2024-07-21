@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mm:block/tiny_energy_port_output"
+    }
+  }
+}

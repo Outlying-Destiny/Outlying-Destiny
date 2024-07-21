@@ -1,3 +1,12 @@
 {
-  "values": []
+  "values": [
+    "mm:soul_catcher",
+    "mm:tiny_energy_port_input",
+    "mm:tiny_energy_port_output",
+    "mm:tiny_item_port_input",
+    "mm:tiny_item_port_output",
+    "mm:test_vent",
+    "mm:test_gears",
+    "mm:test_circuit"
+  ]
 }
