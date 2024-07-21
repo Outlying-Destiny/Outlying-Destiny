@@ -1123,7 +1123,7 @@
 			dependencies: ["5C68FCCC9350C84F"]
 			hide_dependency_lines: true
 			id: "74314B7BF445D5CD"
-			size: 1.1d
+			size: 1.25d
 			tasks: [{
 				id: "7797D772E5DD3DB0"
 				item: "minecraft:end_stone"
@@ -1228,6 +1228,30 @@
 				{
 					id: "19343CF4F4768710"
 					item: "simplemagnets:basic_demagnetization_coil"
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"2F6555104D56A8E2"
+				"40889CF006E38EB0"
+				"5F2413B26A70B63B"
+			]
+			hide_dependency_lines: true
+			id: "3EE1405D4963DB67"
+			tasks: [
+				{
+					id: "4D0EFB092A45FCE8"
+					item: "bhc:heart_amulet"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "6F51C0DF65E9AFDE"
+					item: { Count: 10, id: "bhc:red_heart_canister" }
 					type: "item"
 				}
 			]

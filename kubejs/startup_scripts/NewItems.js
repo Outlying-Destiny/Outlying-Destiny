@@ -34,6 +34,18 @@ StartupEvents.registry('item', event => {
   event.create('frozen_core').displayName('Frozen Core')
   event.create('infusing_soul_ingot').displayName('Infusing Soul Ingot')
   event.create('red_gear').displayName('Red Alloy Gear')
+  event.create('dark_steel_shears', 'shears').displayName('Dark Steel Shears').maxDamage(952)
+  event.create('thruster_conductive_iron').displayName('Conductive Iron Thruster')
+  event.create('thruster_electrical_steel').displayName('Electrical Steel Thruster')
+  event.create('thruster_energetic').displayName('Energetic Thruster')
+  event.create('thruster_vibrant').displayName('Vibrant Thruster')
+  event.create('thruster_dark_soularium').displayName('Dark Soularium Thruster')
+  event.create('thruster_leadstone').displayName('Leadstone Thruster')
+  event.create('thruster_hardened').displayName('Hardened Thruster')
+  event.create('thruster_reinforced').displayName('Reinforced Thruster')
+  event.create('thruster_resonant').displayName('Resonant Thruster')
+  event.create('thruster_fluxed').displayName('Fluxed Thruster')
+  event.create('thruster_creative').displayName('Creative Thruster')
 
   //Rods
   event.create('dark_steel_rod').displayName('Dark Steel Rod')

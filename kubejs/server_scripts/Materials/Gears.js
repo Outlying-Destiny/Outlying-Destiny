@@ -73,4 +73,5 @@ ServerEvents.recipes(event => {
     allpress('thermal_extra:shellite_gear', 'thermal_extra:shellite_ingot', 4, 9600, 'gear')
     allpress('thermal_extra:twinite_gear', 'thermal_extra:twinite_ingot', 4, 9600, 'gear')
     allpress('thermal_extra:dragonsteel_gear', 'thermal_extra:dragonsteel_ingot', 4, 9600, 'gear')
+    allpress('kubejs:red_gear', 'projectred_core:red_ingot', 4, 9600, 'gear')
 })
