@@ -340,6 +340,7 @@
 		}
 		{
 			dependencies: ["30FD1966D4BEE62B"]
+			icon: "pneumaticcraft:memory_stick"
 			id: "1A75140087EB1B37"
 			tasks: [
 				{
@@ -475,12 +476,64 @@
 				"37084AF4364CC896"
 				"2F2F12C58287606A"
 			]
+			icon: "enderio:sag_mill"
 			id: "6CBDB50FFA272FAA"
-			tasks: [{
-				id: "0ADD9C249F4B87A8"
-				item: "enderio:sag_mill"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "0ADD9C249F4B87A8"
+					item: "enderio:sag_mill"
+					type: "item"
+				}
+				{
+					id: "372C07B5535AE7D2"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "enderio:pulsating_alloy_grinding_ball"
+								}
+								{
+									Count: 1b
+									id: "enderio:copper_alloy_grinding_ball"
+								}
+								{
+									Count: 1b
+									id: "enderio:conductive_alloy_grinding_ball"
+								}
+								{
+									Count: 1b
+									id: "enderio:redstone_alloy_grinding_ball"
+								}
+								{
+									Count: 1b
+									id: "enderio:energetic_alloy_grinding_ball"
+								}
+								{
+									Count: 1b
+									id: "enderio:vibrant_alloy_grinding_ball"
+								}
+								{
+									Count: 1b
+									id: "enderio:soularium_grinding_ball"
+								}
+								{
+									Count: 1b
+									id: "enderio:dark_steel_grinding_ball"
+								}
+								{
+									Count: 1b
+									id: "enderio:end_steel_grinding_ball"
+								}
+							]
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: 5.5d
 			y: -0.25d
 		}
@@ -937,6 +990,7 @@
 		}
 		{
 			dependencies: ["37C45BCCFE76D765"]
+			icon: "ae2:growth_accelerator"
 			id: "328859336883DB08"
 			tasks: [
 				{
@@ -1022,6 +1076,7 @@
 					type: "item"
 				}
 			]
+			title: "Network Tools"
 			x: 3.5d
 			y: -2.5d
 		}
@@ -1171,6 +1226,14 @@
 		{
 			dependencies: ["7FC2A2D7276AE83F"]
 			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "constructionwand:diamond_wand"
+				tag: {
+					Damage: 0
+					wand_options: { }
+				}
+			}
 			id: "1B622423B03A6A6F"
 			tasks: [
 				{
@@ -1208,12 +1271,17 @@
 					type: "item"
 				}
 			]
-			x: 6.75d
+			x: 5.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["1A965CD16F4D3FE3"]
 			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "simplemagnets:basicmagnet"
+				tag: { }
+			}
 			id: "5211F213A9318194"
 			tasks: [
 				{
@@ -1231,7 +1299,7 @@
 					type: "item"
 				}
 			]
-			x: 8.0d
+			x: 6.75d
 			y: -1.5d
 		}
 		{
@@ -1241,6 +1309,7 @@
 				"5F2413B26A70B63B"
 			]
 			hide_dependency_lines: true
+			icon: "bhc:red_heart_canister"
 			id: "3EE1405D4963DB67"
 			tasks: [
 				{
@@ -1255,7 +1324,7 @@
 					type: "item"
 				}
 			]
-			x: 5.5d
+			x: 8.0d
 			y: -1.5d
 		}
 	]

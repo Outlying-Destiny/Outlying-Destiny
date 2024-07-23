@@ -36,7 +36,7 @@ JEIEvents.hideItems(event => {
     event.hide(['pneumaticcraft:air_compressor', 'pneumaticcraft:advanced_air_compressor', 'pneumaticcraft:thermal_compressor', 'pneumaticcraft:liquid_compressor', 'pneumaticcraft:advanced_liquid_compressor', 'pneumaticcraft:manual_compressor', 'pneumaticcraft:electrostatic_compressor','pneumaticcraft:pneumatic_dynamo'])
 
     //Thermal Dynamos
-    event.hide(/thermal:dynamo.+/)
+    //event.hide(/thermal:dynamo.+/)
 
     //ProjectRed Backpacks
     event.hide(/projectred_exploration:.+backpack/)
@@ -95,5 +95,17 @@ JEIEvents.hideItems(event => {
     event.hide('ironjetpacks:thruster')
     event.hide('ironjetpacks:cell')
     event.hide(/ironjetpacks:.+coil/)
+
+    //IE Sawblade
+    event.hide('immersiveengineering:sawblade')
+
+    //Wrenches
+    event.hide(['bigreactors:wrench', 'hammerlib:wrench', 'ad_astra:wrench', 'enderio:yeta_wrench'])
+
+    //Ad Astra Fluid Pipes
+    event.hide(/ad_astra:.+fluid_pip.+/)
+
+    //EnderIO Clayed Glowstone
+    event.hide('enderio:clayed_glowstone')
 
 })

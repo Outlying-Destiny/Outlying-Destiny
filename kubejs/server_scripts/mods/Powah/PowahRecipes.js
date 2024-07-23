@@ -96,6 +96,6 @@ ServerEvents.recipes(event => {
     orb4("powah:crystal_blazing", 1, "minecraft:blaze_powder", "thermal:blizz_powder", "thermal:blitz_powder", "thermal:basalz_powder", 120000)
 
     //Empowered Powah Materials
-    combination('kubejs:empowered_steel_energized', 'powah:steel_energized', 'minecraft:dirt', 'minecraft:cobblestone', 'minecraft:stone', 'minecraft:obsidian', 500, 100)
+    combination('kubejs:empowered_energized_steel', 'powah:steel_energized', 'minecraft:dirt', 'minecraft:cobblestone', 'minecraft:stone', 'minecraft:obsidian', 500, 100)
 
 })

@@ -72,6 +72,59 @@ ServerEvents.recipes(event => {
       }
       )
     }
+
+    function alloy3tag1(output, outputcount, input1, input1count, input2, input2count, input3, input3count, energy){
+      event.custom({
+        "type": "thermal:smelter",
+        "ingredients": [
+          {
+            "tag": input1,
+            "count": input1count
+          },
+          {
+            "item": input2,
+            "count": input2count
+          },
+          {
+            "item": input3,
+            "count": input3count
+          }
+        ],
+        "result": [
+          {
+            "item": output,
+            "count": outputcount
+          }
+        ],
+        "energy": energy
+      }
+      )
+    }
+
+
+    function alloy2tag1(output, outputcount, input1, input1count, input2, input2count, energy){
+      event.custom({
+        "type": "thermal:smelter",
+        "ingredients": [
+          {
+            "tag": input1,
+            "count": input1count
+          },
+          {
+            "item": input2,
+            "count": input2count
+          }
+        ],
+        "result": [
+          {
+            "item": output,
+            "count": outputcount
+          }
+        ],
+        "energy": energy
+      }
+      )
+    }
     
     //Alloys Remove
     event.remove({id:/thermal:machines.+smelter.+smelter_alloy_.+/})
@@ -107,8 +160,6 @@ ServerEvents.recipes(event => {
     alloy3('thermal_extra:shellite_ingot', 1, 'minecraft:shulker_shell', 1, 'thermal:lead_ingot', 1, 'mekanism:ingot_refined_obsidian', 1, 20000)
     alloy3('kubejs:evil_infused_ingot', 1, 'kubejs:enchanted_ingot', 1, 'kubejs:demon_ingot', 1, 'architects_palette:withered_bone', 1, 12000)
     alloy3('powah_dielectric_paste', 16, 'minecraft:clay_ball', 1, 'immersiveengineering:dust_coke', 2, 'minecraft:blaze_powder', 1, 6000)
-    alloy1('enderio:fused_quartz', 1, 'minecraft:quartz_block', 1, 4000)
-    alloy1('enderio:fused_quartz', 1, 'minecraft:quartz', 4, 4000)
     alloy2('kubejs:crystalline_alloy_ingot', 1, 'enderio:pulsating_powder', 1, 'enderio:end_steel_ingot',1 ,18000)
     alloy2('kubejs:crystalline_pink_slime_ingot', 1, 'industrialforegoing:pink_slime_ingot', 1, 'kubejs:crystalline_alloy_ingot',1 ,20000)
     //alloy3('kubejs:dark_soularium_ingot', 1, 'enderio:soularium_ingot', 1, 'enderio:dark_steel_ingot', 10, '', 1, 24000)
@@ -116,5 +167,19 @@ ServerEvents.recipes(event => {
     //Eye of Ender
     event.remove({id:'minecraft:ender_eye'})
     alloy2('minecraft:ender_eye', 1, 'minecraft:blaze_powder', 1, 'minecraft:ender_pearl', 1, 8000)
+
+    //Glasses
+    alloy1('enderio:fused_quartz', 1, 'minecraft:quartz_block', 1, 4000)
+    alloy1('enderio:fused_quartz', 1, 'minecraft:quartz', 4, 4000)
+    alloy1('enderio:clear_glass', 1, 'minecraft:glass', 1, 4000)
+
+    //Organic dyes
+    alloy2tag1('enderio:organic_black_dye', 2, 'bookshelf:slime_balls', 1, 'mekanism:dust_coal', 6, 4000)
+    alloy2('enderio:organic_black_dye', 1, 'minecraft:egg', 1, 'mekanism:dust_coal', 3, 3000)
+    alloy3tag1('enderio:organic_green_dye', 2, 'bookshelf:slime_balls', 1, 'minecraft:green_dye', 2, 'mekanism:dust_coal', 2, 4000)
+    alloy3('enderio:organic_green_dye', 1, 'minecraft:egg', 1, 'minecraft:green_dye', 1, 'mekanism:dust_coal', 1, 3000)
+    alloy3tag1('enderio:organic_brown_dye', 2, 'bookshelf:slime_balls', 1, 'minecraft:brown_dye', 2, 'mekanism:dust_coal', 2, 4000)
+    alloy3('enderio:organic_brown_dye', 1, 'minecraft:egg', 1, 'minecraft:brown_dye', 1, 'mekanism:dust_coal', 1, 3000)
+
     
 })

@@ -42,6 +42,13 @@ ServerEvents.recipes(event => {
         }
     )
 
+    //Blast Furnace
+    event.replaceInput(
+        {output:['minecraft:blast_furnace', 'nethersdelight:blackstone_blast_furnace']},
+        'minecraft:iron_ingot',
+        'thermal:steel_ingot'
+      )
+
     //Enchanting Table
     event.remove({ output: 'minecraft:enchanting_table' })
     event.shaped(

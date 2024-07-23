@@ -46,16 +46,35 @@ ServerEvents.recipes(event => {
 
     //Vacuums
     event.replaceInput(
-      { output: ['enderio:vacuum_chest', 'enderio:xp_vacuum']},
+      {output:['enderio:vacuum_chest', 'enderio:xp_vacuum']},
       'minecraft:iron_ingot',
       'enderio:dark_steel_ingot'
+    )
+
+    //Travel Anchor
+    event.remove({id:'enderio:travel_anchor'})
+    event.shaped(
+      'enderio:travel_anchor', [
+      'ABA',
+      'BCB',
+      'ABA'
+      ], {
+      A: 'enderio:dark_steel_ingot',
+      B: 'thermal:enderium_glass',
+      C: 'mekanism:teleportation_core'
+      }
+    )
+    event.replaceInput(
+      {output:'enderio:staff_of_travelling'},
+      'enderio:dark_steel_ingot',
+      'enderio:infinity_rod'
     )
 
     //Remove SAG Mill Coal dupe
     event.remove({id:'enderio:sag_milling/coal'})
     
-    //Dark Steel Bars
-    event.remove({id:'enderio:dark_steel_bars'})
+    //Dark / End Steel Bars
+    event.remove({id:/enderio:.+_steel_bars/})
     event.shaped(
       '8x enderio:dark_steel_bars', [
       'AAA',
@@ -65,18 +84,130 @@ ServerEvents.recipes(event => {
       A: 'kubejs:dark_steel_rod'
       }
     )
+    event.shaped(
+      '8x enderio:end_steel_bars', [
+      'AAA',
+      'AAA',
+      '   '
+      ], {
+      A: 'kubejs:end_steel_rod'
+      }
+    )
+
+    //Fluid Tanks
+    event.remove({id:'enderio:fluid_tank'})
+    box('enderio:fluid_tank', 'thermal:steel_ingot', 'minecraft:iron_bars', 'minecraft:iron_bars', '#enderio:fused_quartz')
+    event.replaceInput(
+      {output:'enderio:pressurized_fluid_tank'},
+      '#enderio:fused_quartz',
+      'enderio:fluid_tank'
+    )
 
     //Tier 1 Crystals
+    function crystals(output, input1, input2){
+      event.shaped(
+        output, [
+        'AAA',
+        'ABA',
+        'AAA'
+        ], {
+        A: input1,
+        B: input2
+        }
+      )
+    }
     event.remove({id:'enderio:pulsating_crystal'})
     event.remove({id:'enderio:vibrant_crystal'})
-    box('enderio:pulsating_crystal', 'enderio:pulsating_alloy_ingot', 'enderio:pulsating_alloy_ingot', 'enderio:pulsating_alloy_ingot', 'mekanism:alloy_reinforced')
-    box('2x enderio:pulsating_crystal', 'enderio:pulsating_alloy_ingot', 'enderio:pulsating_alloy_ingot', 'enderio:pulsating_alloy_ingot', 'powah:crystal_niotic')
-    box('enderio:vibrant_crystal', 'enderio:vibrant_alloy_ingot', 'enderio:vibrant_alloy_ingot', 'enderio:vibrant_alloy_ingot', 'mekanism:alloy_reinforced')
-    box('2x enderio:vibrant_crystal', 'enderio:vibrant_alloy_ingot', 'enderio:vibrant_alloy_ingot', 'enderio:vibrant_alloy_ingot', 'powah:crystal_niotic')
+    crystals('enderio:pulsating_crystal', 'enderio:pulsating_alloy_ingot', 'mekanism:alloy_reinforced')
+    crystals('2x enderio:pulsating_crystal', 'enderio:pulsating_alloy_ingot', 'kubejs:crystalline_alloy_ingot')
+    crystals('4x enderio:pulsating_crystal', 'enderio:pulsating_alloy_ingot', 'powah:crystal_niotic')
+    crystals('enderio:vibrant_crystal', 'enderio:vibrant_alloy_ingot', 'mekanism:alloy_reinforced')
+    crystals('2x enderio:vibrant_crystal', 'enderio:vibrant_alloy_ingot', 'kubejs:crystalline_alloy_ingot')    
+    crystals('4x enderio:vibrant_crystal', 'enderio:vibrant_alloy_ingot', 'powah:crystal_niotic')
+
+    //Basic Capcacitor
+    event.remove({id:'enderio:basic_capacitor'})
+    event.shaped(
+      'enderio:basic_capacitor', [
+      ' AB',
+      'ACA',
+      'BA '
+      ], {
+      A: 'enderio:dark_steel_ingot',
+      B: 'enderio:grains_of_infinity',
+      C: 'enderio:redstone_alloy_ingot'
+      }
+    )
+
+    //Bimetal Gears
+    event.remove({id:'enderio:dark_bimetal_gear'})
+    event.remove({id:'enderio:energized_gear'})
+    event.remove({id:'enderio:vibrant_gear'})
+    event.shaped(
+      'kubejs:infinity_gear', [
+      'ABA',
+      'BCB',
+      'ABA'
+      ], {
+      A: 'enderio:grains_of_infinity',
+      B: 'thermal:steel_ingot',
+      C: 'enderio:stone_gear'
+      }
+    )
+    function gear(output, input1, input2){
+      event.shaped(
+        output, [
+        ' A ',
+        'ABA',
+        ' A '
+        ], {
+        A: input1,
+        B: input2
+        }
+      )
+    }
+    gear('enderio:dark_bimetal_gear', 'enderio:dark_steel_ingot', 'kubejs:infinity_gear')
+    gear('enderio:energized_gear', 'enderio:energetic_alloy_ingot', 'kubejs:infinity_gear')
+    gear('enderio:vibrant_gear', 'enderio:vibrant_alloy_ingot', 'enderio:energized_gear')
+
+    //Dye blends
+    event.shaped(
+      'kubejs:industrial_dye_blend', [
+      'ABC',
+      'BDB',
+      'CBA'
+      ], {
+      A: 'thermal:lapis_dust',
+      B: 'thermal:quartz_dust',
+      C: 'enderio:organic_green_dye',
+      D: 'enderio:organic_black_dye'
+      }
+    )
+    event.shaped(
+      'kubejs:soul_attuned_dye_blend', [
+      'ABC',
+      'BDB',
+      'CBA'
+      ], {
+      A: 'thermal_extra:soul_sand_dust',
+      B: 'thermal:quartz_dust',
+      C: 'enderio:organic_brown_dye',
+      D: 'enderio:organic_black_dye'
+      }
+    )
 
     //Chassis
-    //event.remove({id:/enderio:.+_chassis/})
-    //box('enderio:void_chassis', '')
+    event.remove({id:/enderio:.+_chassis/})
+    box('enderio:void_chassis', 'enderio:dark_steel_ingot', 'kubejs:industrial_dye_blend', 'enderio:pulsating_crystal', 'thermal:machine_frame')
+    box('enderio:ensouled_chassis', 'enderio:soularium_ingot', 'kubejs:soul_attuned_dye_blend', 'enderio:vibrant_crystal', 'enderio:void_chassis')
+
+    //Sagmill
+    event.replaceInput(
+      {output:'enderio:sag_mill'},
+      '#forge:gears/iron',
+      'enderio:dark_bimetal_gear'
+    )  
+
 
     
 })

@@ -62,8 +62,8 @@ ServerEvents.recipes(event => {
     
 
     //SAG Mill Dusts from non ingot
-    sagmillnoboost('thermal_extra:soul_sand_dust', 1, 'minecraft:soul_sand', 2400)
-    sagmillnoboost('thermal:ender_pearl_dust', 1, 'minecraft:ender_pearl', 2400)
+    sagmillnoboost('thermal_extra:soul_sand_dust', 1, 'minecraft:soul_sand', 1800)
+    sagmillnoboost('thermal:ender_pearl_dust', 1, 'minecraft:ender_pearl', 1800)
 
     //SAG Mill
     sagmillnoboost('mekanism:dust_fluorite', 1, 'mekanism:fluorite_gem', 2400)

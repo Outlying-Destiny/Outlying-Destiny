@@ -16,17 +16,18 @@ ServerEvents.recipes(event => {
     }
 
     //Function Machine
-    function machine(output, input1, input2, input3, input4, input5){
-      event.shaped(output, [
+    function machine(output, input1, input2, input3){
+      event.remove({output:'thermal:machine_'+output})
+      event.shaped('thermal:machine_'+output, [
           ' A ',
           'BCB',
           'DED'
           ], {
           A: input1,
           B: input2,
-          C: input3,
-          D: input4,
-          E: input5
+          C: 'thermal:machine_frame',
+          D: input3,
+          E: 'thermal:rf_coil'
           }
       )
     }
@@ -187,12 +188,27 @@ ServerEvents.recipes(event => {
       'thermal:sawdust',
       '#forge:sawdust'
     )
+    //GearWorking Die
+    event.replaceInput(
+      { output: 'thermal:press_gear_die'},
+      'thermal:diamond_gear',
+      '#forge:gears'
+    )
+
+    //Saw Blade
+    event.remove({id:'thermal:saw_blade'})
+    event.shaped('thermal:saw_blade', [
+      'AA ',
+      'A A',
+      ' AA'
+      ], {
+      A:'thermal:iron_plate'
+    })
 
     //Components
     event.remove({id:'thermal:augments/upgrade_augment_1'})
     box('thermal:upgrade_augment_1', 'thermal:invar_plate', 'thermal:obsidian_glass', 'enderio:redstone_alloy_ingot', 'thermal:lumium_gear')
 
     //Machines
-    //machine('')
-
+    machine('smelter', 'minecraft:blast_furnace', 'immersiveengineering:coil_lv', 'thermal:steel_gear')
 })

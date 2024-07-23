@@ -17,4 +17,7 @@ ServerEvents.recipes(event => {
     event.remove({id:'enderio:sag_milling/quartz'})
     event.remove({id:'enderio:sag_milling/quartz_ore'})
 
+    //Yeta Wrench
+    event.remove({id:'enderio:yeta_wrench'})
+
 })

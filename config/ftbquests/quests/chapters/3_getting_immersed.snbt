@@ -324,6 +324,7 @@
 		}
 		{
 			dependencies: ["679F2CA5C993DE97"]
+			icon: "immersiveengineering:windmill"
 			id: "7FEADDAAFAB5AFF6"
 			tasks: [
 				{
@@ -891,6 +892,7 @@
 		}
 		{
 			dependencies: ["0D73A83CC62FF6C5"]
+			icon: "immersiveengineering:sample_drill"
 			id: "50F6EA9CC23FF68D"
 			tasks: [
 				{
@@ -1386,6 +1388,7 @@
 		{
 			dependencies: ["30C16811BB92E249"]
 			hide_dependency_lines: true
+			icon: "functionalstorage:compacting_drawer"
 			id: "3618DCAF2B312EB8"
 			tasks: [{
 				id: "31FE2CAD02675A19"

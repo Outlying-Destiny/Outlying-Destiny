@@ -89,5 +89,5 @@
 	makesSound = true
 	#How old (in ticks) does a fire have to be to be able to spawn Infinity Powder?
 	#Range: 1 ~ 1000
-	fireMinAge = 260
+	fireMinAge = 240
 
