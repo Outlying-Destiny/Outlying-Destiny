@@ -531,6 +531,7 @@
 						}
 					}
 					optional_task: true
+					title: "Grinding Balls"
 					type: "item"
 				}
 			]
@@ -1305,8 +1306,8 @@
 		{
 			dependencies: [
 				"2F6555104D56A8E2"
-				"40889CF006E38EB0"
 				"5F2413B26A70B63B"
+				"090D14082AE0CCD0"
 			]
 			hide_dependency_lines: true
 			icon: "bhc:red_heart_canister"

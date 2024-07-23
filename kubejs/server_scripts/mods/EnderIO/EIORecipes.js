@@ -172,12 +172,12 @@ ServerEvents.recipes(event => {
 
     //Dye blends
     event.shaped(
-      'kubejs:industrial_dye_blend', [
+      'kubejs:void_infused_dye_blend', [
       'ABC',
       'BDB',
       'CBA'
       ], {
-      A: 'thermal:lapis_dust',
+      A: 'mekanism:dust_obsidian',
       B: 'thermal:quartz_dust',
       C: 'enderio:organic_green_dye',
       D: 'enderio:organic_black_dye'
@@ -198,15 +198,24 @@ ServerEvents.recipes(event => {
 
     //Chassis
     event.remove({id:/enderio:.+_chassis/})
-    box('enderio:void_chassis', 'enderio:dark_steel_ingot', 'kubejs:industrial_dye_blend', 'enderio:pulsating_crystal', 'thermal:machine_frame')
+    box('enderio:void_chassis', 'enderio:dark_steel_ingot', 'kubejs:void_infused_dye_blend', 'enderio:pulsating_crystal', 'thermal:machine_frame')
     box('enderio:ensouled_chassis', 'enderio:soularium_ingot', 'kubejs:soul_attuned_dye_blend', 'enderio:vibrant_crystal', 'enderio:void_chassis')
 
     //Sagmill
-    event.replaceInput(
-      {output:'enderio:sag_mill'},
-      '#forge:gears/iron',
-      'enderio:dark_bimetal_gear'
-    )  
+    event.remove({id:'enderio:sag_mill'})
+    event.shaped(
+      'enderio:sag_mill', [
+      'AAA',
+      'BCB',
+      'DED'
+      ], {
+      A: 'enderio:end_steel_ingot',
+      B: 'enderio:dark_steel_ingot',
+      C: 'enderio:void_chassis',
+      D: 'enderio:dark_bimetal_gear',
+      E: 'minecraft:piston'
+      }
+    )
 
 
     

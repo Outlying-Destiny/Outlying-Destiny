@@ -50,7 +50,7 @@ StartupEvents.registry('item', event => {
   event.create('crystalline_alloy_ingot').displayName('Crystalline Alloy Ingot')
   event.create('crystalline_pink_slime_ingot').displayName('Crystalline Pink Slime Ingot')
   event.create('infinity_gear').displayName('Infinity Bimetal Gear')
-  event.create('industrial_dye_blend').displayName('Industrial Dye Blend')
+  event.create('void_infused_dye_blend').displayName('Industrial Dye Blend')
   event.create('soul_attuned_dye_blend').displayName('Soul Attuned Dye Blend')
 
   //Rods
