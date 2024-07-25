@@ -1,7 +1,7 @@
 MMEvents.registerPorts(event => {
 
-    event.create("tiny_energy_port")
-        .name("Tiny Energy Port")
+    event.create("soul_catcher_energy_port")
+        .name("Soul Catcher Energy Port")
         .controllerId("mm:soul_catcher")
         .config("mm:energy", c => {
             c.capacity(100000)
@@ -9,12 +9,12 @@ MMEvents.registerPorts(event => {
              .maxExtract(1000);
     })
 
-    event.create("tiny_item_port")
-    .name("Tiny Item Port")
+    event.create("soul_catcher_item_port")
+    .name("Soul Catcher Item Port")
     .controllerId("mm:soul_catcher")
     .config("mm:item", c => {
         c.rows(1)
-         .columns(2);
+         .columns(1);
     })
 
 })

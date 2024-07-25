@@ -11,6 +11,7 @@
 	quests: [
 		{
 			dependencies: ["1D8893FD9B6AA44A"]
+			disable_toast: true
 			id: "3D422E8282D4F5A6"
 			size: 1.75d
 			tasks: [{

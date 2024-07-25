@@ -13,6 +13,7 @@
 				"699B23728F627B1F"
 				"2B9C8EF454CAFCB8"
 			]
+			disable_toast: true
 			icon: "naturesaura:wood_stand"
 			id: "07A64AE31764BD29"
 			size: 1.75d

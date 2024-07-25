@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
 
     //Ender Ingot
     event.remove({id:'extendedcrafting:ender_ingot'})
-    encapsulator('extendedcrafting:ender_ingot', 'extendedcrafting:black_iron_ingot', 'thermal:ender', 250)
+    encapsulator('extendedcrafting:ender_ingot', 'extendedcrafting:black_iron_ingot', 'enderio:dew_of_the_void', 250)
 
     //Soul Infused Ingot
     encapsulator('thermal_extra:soul_infused_ingot', 'kubejs:infusing_soul_ingot', 'thermal:refined_fuel', 200)

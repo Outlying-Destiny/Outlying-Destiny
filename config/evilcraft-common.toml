@@ -182,8 +182,6 @@
 		guiOverlayPosition = 1
 		#The blood usage in mB per tick.
 		bloodUsage = 1
-		#If the broom should spawn in loot chests.
-		lootChests = true
 		#Show broom part tooltips on source items.
 		broomPartTooltips = true
 		#The X offset for the broom gui overlay.

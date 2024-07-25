@@ -1,11 +1,8 @@
 {
   "block.mm.soul_catcher": "Soul Catcher",
-  "block.mm.test_circuit": "Test Circuit",
-  "block.mm.test_gears": "Test Gears",
-  "block.mm.test_vent": "Test Vent",
-  "block.mm.tiny_energy_port_input": "Tiny Energy Port Input",
-  "block.mm.tiny_energy_port_output": "Tiny Energy Port Output",
-  "block.mm.tiny_item_port_input": "Tiny Item Port Input",
-  "block.mm.tiny_item_port_output": "Tiny Item Port Output",
+  "block.mm.soul_catcher_energy_port_input": "Soul Catcher Energy Port Input",
+  "block.mm.soul_catcher_energy_port_output": "Soul Catcher Energy Port Output",
+  "block.mm.soul_catcher_item_port_input": "Soul Catcher Item Port Input",
+  "block.mm.soul_catcher_item_port_output": "Soul Catcher Item Port Output",
   "item.mm.blueprint": "Blueprint"
 }

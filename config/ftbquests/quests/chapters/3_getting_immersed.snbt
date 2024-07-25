@@ -10,6 +10,7 @@
 	quests: [
 		{
 			dependencies: ["7530FE8F2D9D011B"]
+			disable_toast: true
 			id: "6A6013A1C9916483"
 			size: 1.25d
 			tasks: [{
@@ -23,6 +24,7 @@
 		}
 		{
 			dependencies: ["738163BCAD68CC8F"]
+			disable_toast: true
 			id: "0923A0F326E0153D"
 			size: 1.25d
 			tasks: [{

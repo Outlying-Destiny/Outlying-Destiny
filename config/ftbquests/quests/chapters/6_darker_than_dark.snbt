@@ -1,0 +1,258 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6_darker_than_dark"
+	group: ""
+	icon: "extendedcrafting:crafting_core"
+	id: "4AB7FBA94F838FD5"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["53FD0B2E4952177F"]
+			disable_toast: true
+			id: "432BCDC8C90BD558"
+			size: 1.25d
+			tasks: [{
+				id: "3D96281D1F2CA427"
+				item: "enderio:ensouled_chassis"
+				type: "item"
+			}]
+			x: -5.25d
+			y: -4.25d
+		}
+		{
+			dependencies: ["432BCDC8C90BD558"]
+			id: "74037ADCBA1AEF64"
+			tasks: [{
+				id: "10EA8933B870F307"
+				item: "enderio:soul_binder"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.25d
+		}
+		{
+			dependencies: ["432BCDC8C90BD558"]
+			id: "2B5724BE9F43CF8E"
+			tasks: [{
+				id: "464B073721B92F04"
+				item: "enderio:slice_and_splice"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5F5B3D5FE5AF3D00"]
+			id: "2A9B8E18FC745B11"
+			tasks: [
+				{
+					id: "6EBC9FF8EC5122AE"
+					item: "extendedcrafting:ender_crafter"
+					type: "item"
+				}
+				{
+					id: "278EEDEF157E9426"
+					item: "extendedcrafting:ender_alternator"
+					type: "item"
+				}
+			]
+			x: 0.75d
+			y: -0.75d
+		}
+		{
+			id: "4D79DD9269D62977"
+			tasks: [{
+				id: "64A33479C40C5F83"
+				item: "thermal:machine_centrifuge"
+				type: "item"
+			}]
+			x: -2.25d
+			y: -6.0d
+		}
+		{
+			id: "01833784782A8FEB"
+			tasks: [{
+				id: "0EA99367E6434894"
+				item: "thermal:machine_pyrolyzer"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -6.0d
+		}
+		{
+			id: "24DAF54378E7AF38"
+			tasks: [{
+				id: "09DD8A6D910AE965"
+				item: "thermal:machine_crucible"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			id: "7F557FA2D89527EF"
+			tasks: [{
+				id: "0A316132E4D2F72C"
+				item: "thermal:machine_bottler"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			id: "7B18A7C4A3A3FAE3"
+			tasks: [{
+				id: "2C8DAB9FC5FF2186"
+				item: "thermal:machine_refinery"
+				type: "item"
+			}]
+			x: -0.25d
+			y: -7.25d
+		}
+		{
+			dependencies: ["7B18A7C4A3A3FAE3"]
+			id: "1EFA779139C3E470"
+			tasks: [{
+				id: "4124AF3F9FCA6A35"
+				item: "thermal:refined_fuel_bucket"
+				type: "item"
+			}]
+			x: 1.25d
+			y: -7.25d
+		}
+		{
+			dependencies: [
+				"1EFA779139C3E470"
+				"6EC3843A34FFAA3F"
+			]
+			id: "344550902BB61752"
+			tasks: [{
+				id: "480069B1359E11E0"
+				item: "thermal_extra:soul_infused_ingot"
+				type: "item"
+			}]
+			x: 2.75d
+			y: -7.25d
+		}
+		{
+			dependencies: ["7685370285CC7029"]
+			id: "6EC3843A34FFAA3F"
+			tasks: [{
+				id: "0971F526A8DBDC54"
+				item: "powah:crystal_blazing"
+				type: "item"
+			}]
+			x: 2.75d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7748DD4DEDD2956C"]
+			disable_toast: true
+			hide_dependency_lines: true
+			id: "7685370285CC7029"
+			size: 1.75d
+			tasks: [{
+				dimension: "undergarden:undergarden"
+				id: "03EC55F5CD2D39B0"
+				type: "dimension"
+			}]
+			title: "Undergarden"
+			x: 2.625d
+			y: -1.3125d
+		}
+		{
+			dependencies: ["22133B3C6FF9C7F3"]
+			id: "299364C146A285AB"
+			tasks: [{
+				id: "4C92F330C9D3F773"
+				item: "extendedcrafting:black_iron_ingot"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"299364C146A285AB"
+				"7F557FA2D89527EF"
+				"16F594AC166F1078"
+			]
+			id: "5F5B3D5FE5AF3D00"
+			tasks: [{
+				id: "53696B7488A7C58A"
+				item: "extendedcrafting:ender_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2A9B8E18FC745B11"]
+			id: "0610F51F372DC7C0"
+			tasks: [{
+				id: "083187D944A1346A"
+				item: "extendedcrafting:enhanced_ender_ingot"
+				type: "item"
+			}]
+			x: -0.75d
+			y: -0.75d
+		}
+		{
+			dependencies: ["4D79DD9269D62977"]
+			id: "22133B3C6FF9C7F3"
+			tasks: [{
+				id: "12E7BAF09B53FE4D"
+				item: "thermal:tar"
+				type: "item"
+			}]
+			x: -2.25d
+			y: -4.75d
+		}
+		{
+			dependencies: [
+				"7F557FA2D89527EF"
+				"24DAF54378E7AF38"
+			]
+			id: "1B993EA365BEFD7F"
+			tasks: [{
+				id: "4D36DD9F3A6E265B"
+				item: "extendedcrafting:luminessence"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0610F51F372DC7C0"]
+			id: "4B0C8DCB02DD44D3"
+			tasks: [
+				{
+					id: "2ACE101A6A32CFA4"
+					item: "extendedcrafting:crafting_core"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "4465CFE1F0A2BD2E"
+					item: "extendedcrafting:pedestal"
+					type: "item"
+				}
+			]
+			x: -2.25d
+			y: -0.75d
+		}
+		{
+			id: "16F594AC166F1078"
+			tasks: [{
+				id: "135D5496666BD8FE"
+				item: "enderio:dew_of_the_void_bucket"
+				type: "item"
+			}]
+			x: 1.25d
+			y: -2.0d
+		}
+	]
+	title: "6. Darker than Dark"
+}

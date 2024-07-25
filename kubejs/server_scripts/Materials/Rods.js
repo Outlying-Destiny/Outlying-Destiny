@@ -52,5 +52,6 @@ ServerEvents.recipes(event => {
     allrods('immersiveengineering:stick_aluminum', 2, 'immersiveengineering:ingot_aluminum', 4800, 'rod')
     allrods('ad_astra:etrium_rod', 2, 'ad_astra:etrium_ingot', 4800, 'rod')
     allrods('kubejs:dark_steel_rod', 2, 'enderio:dark_steel_ingot', 4800, 'rod')
+    allrods('kubejs:end_steel_rod', 2, 'enderio:end_steel_ingot', 4800, 'rod')
 
 })
