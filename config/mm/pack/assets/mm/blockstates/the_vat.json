@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "mm:block/the_vat",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "mm:block/the_vat",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "mm:block/the_vat"
+    },
+    "facing=west": {
+      "model": "mm:block/the_vat",
+      "y": 90
+    }
+  }
+}

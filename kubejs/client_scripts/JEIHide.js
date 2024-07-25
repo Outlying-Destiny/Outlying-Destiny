@@ -108,4 +108,7 @@ JEIEvents.hideItems(event => {
     //EnderIO Clayed Glowstone
     event.hide('enderio:clayed_glowstone')
 
+    //Masteful Machinery Stuff
+    event.hide(['mm:soul_catcher_energy_port_output', 'mm:the_vat_energy_port_output', 'mm:the_vat_item_port_output'])
+
 })

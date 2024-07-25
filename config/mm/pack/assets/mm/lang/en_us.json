@@ -4,5 +4,12 @@
   "block.mm.soul_catcher_energy_port_output": "Soul Catcher Energy Port Output",
   "block.mm.soul_catcher_item_port_input": "Soul Catcher Item Port Input",
   "block.mm.soul_catcher_item_port_output": "Soul Catcher Item Port Output",
+  "block.mm.the_vat": "The Vat",
+  "block.mm.the_vat_energy_port_input": "The Vat Energy Port Input",
+  "block.mm.the_vat_energy_port_output": "The Vat Energy Port Output",
+  "block.mm.the_vat_fluid_port_input": "The Vat Fluid Port Input",
+  "block.mm.the_vat_fluid_port_output": "The Vat Fluid Port Output",
+  "block.mm.the_vat_item_port_input": "The Vat Item Port Input",
+  "block.mm.the_vat_item_port_output": "The Vat Item Port Output",
   "item.mm.blueprint": "Blueprint"
 }

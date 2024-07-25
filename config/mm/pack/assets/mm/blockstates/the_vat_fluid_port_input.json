@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mm:block/the_vat_fluid_port_input"
+    }
+  }
+}

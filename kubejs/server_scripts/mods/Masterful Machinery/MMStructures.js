@@ -1,5 +1,6 @@
 MMEvents.createStructures(event => {
 
+    //Soul Catcher
     const mobs = [
         {mob: 'zombie',},
         {mob: 'witch',},
@@ -36,5 +37,36 @@ MMEvents.createStructures(event => {
                 })
             })
     })
+
+    //The Vat
+    event.create("mm:the_vat")
+        .controllerId("mm:the_vat")
+        .name("The Vat")
+        .layout(a => {
+            a.layer([
+                "A A",
+                "A A",
+                "A A"
+            ]).layer([
+                "AIA",
+                "FAF",
+                "AIA",
+            ]).layer([
+                "AEA",
+                "AAA",
+                "ACA"
+            ]).key("A", {
+                block: "kubejs:void_frame"
+            }).key("I", {
+                port: "mm:the_vat_item_port",
+                input: true
+            }).key('E', {
+                port: "mm:the_vat_energy_port",
+                input: true
+            }).key('F', {
+                port: "mm:the_vat_fluid_port"
+            })
+        })
+
 
 })

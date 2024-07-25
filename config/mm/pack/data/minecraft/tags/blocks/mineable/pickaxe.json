@@ -1,9 +1,16 @@
 {
   "values": [
     "mm:soul_catcher",
+    "mm:the_vat",
     "mm:soul_catcher_energy_port_input",
     "mm:soul_catcher_energy_port_output",
     "mm:soul_catcher_item_port_input",
-    "mm:soul_catcher_item_port_output"
+    "mm:soul_catcher_item_port_output",
+    "mm:the_vat_energy_port_input",
+    "mm:the_vat_energy_port_output",
+    "mm:the_vat_item_port_input",
+    "mm:the_vat_item_port_output",
+    "mm:the_vat_fluid_port_input",
+    "mm:the_vat_fluid_port_output"
   ]
 }
