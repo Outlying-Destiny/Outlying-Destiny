@@ -18,7 +18,7 @@
 				item: "enderio:ensouled_chassis"
 				type: "item"
 			}]
-			x: -5.25d
+			x: -7.25d
 			y: -4.25d
 		}
 		{
@@ -29,8 +29,8 @@
 				item: "enderio:soul_binder"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -4.25d
+			x: -5.75d
+			y: -5.0d
 		}
 		{
 			dependencies: ["432BCDC8C90BD558"]
@@ -40,8 +40,8 @@
 				item: "enderio:slice_and_splice"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -3.0d
+			x: -5.75d
+			y: -3.5d
 		}
 		{
 			dependencies: ["5F5B3D5FE5AF3D00"]
@@ -78,8 +78,8 @@
 				item: "thermal:machine_pyrolyzer"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -6.0d
+			x: -2.25d
+			y: -7.25d
 		}
 		{
 			id: "24DAF54378E7AF38"
@@ -221,8 +221,8 @@
 				item: "extendedcrafting:luminessence"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -3.5d
+			x: 1.25d
+			y: -4.25d
 		}
 		{
 			dependencies: ["0610F51F372DC7C0"]
@@ -244,6 +244,7 @@
 			y: -0.75d
 		}
 		{
+			dependencies: ["0B0410EFB86FACD8"]
 			id: "16F594AC166F1078"
 			tasks: [{
 				id: "135D5496666BD8FE"
@@ -252,6 +253,56 @@
 			}]
 			x: 1.25d
 			y: -2.0d
+		}
+		{
+			icon: "mm:the_vat"
+			id: "0B0410EFB86FACD8"
+			tasks: [
+				{
+					id: "383854D823F11DAD"
+					item: "mm:the_vat"
+					type: "item"
+				}
+				{
+					count: 18L
+					id: "60CEC4FDD98850F6"
+					item: { Count: 18, id: "kubejs:void_frame" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "71E80965A2652E03"
+					item: "mm:the_vat_item_port_input"
+					type: "item"
+				}
+				{
+					id: "10B4EF4966173D95"
+					item: "mm:the_vat_energy_port_input"
+					type: "item"
+				}
+				{
+					id: "4FC4EBB0C16F8175"
+					item: "mm:the_vat_fluid_port_input"
+					type: "item"
+				}
+				{
+					id: "2E3E9678D71FA7C6"
+					item: "mm:the_vat_fluid_port_output"
+					type: "item"
+				}
+			]
+			x: 1.25d
+			y: -3.25d
+		}
+		{
+			id: "6A3AF970578FC2AB"
+			tasks: [{
+				id: "2A546547B65FA138"
+				item: "enderio:enchanter"
+				type: "item"
+			}]
+			x: -5.75d
+			y: -6.5d
 		}
 	]
 	title: "6. Darker than Dark"

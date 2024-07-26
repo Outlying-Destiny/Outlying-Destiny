@@ -20,4 +20,12 @@ ServerEvents.recipes(event => {
     //Yeta Wrench
     event.remove({id:'enderio:yeta_wrench'})
 
+    //electromagnet
+    event.remove({id:'enderio:electromagnet'})
+
+    //Conduits and upgrades
+    event.remove({output:/enderio.+condui.+/})
+    event.remove({output:/enderio.+filte.+/})
+    event.remove({id:/enderio:extraction_speed_upgrade.+/})
+
 })

@@ -132,5 +132,5 @@ ServerEvents.recipes(event => {
     infusing("mekanism:alloy_atomic", "mekanism:alloy_reinforced", "kubejs:shellite", 40)
 
     //Cheaper Red Alloy
-    infusing("projectred_core:red_ingot", "minecraft:iron_ingot", "mekanism:redstone", 80)
+    infusing("enderio:redstone_alloy_ingot", "enderio:conductive_alloy_ingot", "mekanism:redstone", 80)
 })

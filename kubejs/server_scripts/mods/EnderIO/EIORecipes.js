@@ -37,6 +37,11 @@ ServerEvents.recipes(event => {
     sagmill('thermal:blitz_powder', 4, 'thermal:blitz_rod', 2400)
     sagmill('thermal:blizz_powder', 4, 'thermal:blizz_rod', 2400)
 
+    //SAG MILL Flour
+    event.remove({id:'enderio:sag_milling/wheat'})
+    event.remove({id:'enderio:cake'})
+    
+
     //"Enderios"
     event.replaceInput(
       { output: 'enderio:enderios'},
@@ -172,7 +177,7 @@ ServerEvents.recipes(event => {
 
     //Dye blends
     event.shaped(
-      'kubejs:void_infused_dye_blend', [
+      '6x kubejs:void_infused_dye_blend', [
       'ABC',
       'BDB',
       'CBA'
@@ -184,7 +189,7 @@ ServerEvents.recipes(event => {
       }
     )
     event.shaped(
-      'kubejs:soul_attuned_dye_blend', [
+      '6x kubejs:soul_attuned_dye_blend', [
       'ABC',
       'BDB',
       'CBA'
@@ -214,6 +219,20 @@ ServerEvents.recipes(event => {
       C: 'enderio:void_chassis',
       D: 'enderio:dark_bimetal_gear',
       E: 'minecraft:piston'
+      }
+    )
+
+    //Enchanter
+    event.remove({id:'enderio:enchanter'})
+    event.shaped(
+      'enderio:enchanter', [
+      ' A ',
+      'BCB',
+      'CCC'
+      ], {
+      A: 'minecraft:book',
+      B: 'enderio:weather_crystal',
+      C: 'enderio:dark_steel_block'
       }
     )
 

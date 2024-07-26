@@ -41,8 +41,11 @@ JEIEvents.hideItems(event => {
     //ProjectRed Backpacks
     event.hide(/projectred_exploration:.+backpack/)
 
-    //EnderIO Silicon
+    //EnderIO Stuff
     event.hide('enderio:silicon')
+    event.hide('enderio:flour')
+    event.hide('enderio:cake_base')
+    event.hide('enderio:clayed_glowstone')
 
     //Extended Crafting Redstone Ingot
     event.hide('extendedcrafting:redstone_ingot')
@@ -80,6 +83,7 @@ JEIEvents.hideItems(event => {
     //Magnet
     event.hide('thermal:flux_magnet')
     event.hide('immersiveengineering:toolupgrade_powerpack_magnet')
+    event.hide('enderio:electromagnet')
 
     //Vacuum
     event.hide('thermal:device_collector')
@@ -105,10 +109,11 @@ JEIEvents.hideItems(event => {
     //Ad Astra Fluid Pipes
     event.hide(/ad_astra:.+fluid_pip.+/)
 
-    //EnderIO Clayed Glowstone
-    event.hide('enderio:clayed_glowstone')
-
-    //Masteful Machinery Stuff
+    //Masterful Machinery Stuff
     event.hide(['mm:soul_catcher_energy_port_output', 'mm:the_vat_energy_port_output', 'mm:the_vat_item_port_output'])
 
+    //EnderIO Conduits and Upgrades
+    event.hide(/enderio.+condui.+/)
+    event.hide(/enderio.+filte.+/)
+    event.hide(/enderio:extraction_speed_upgrade.+/)
 })
