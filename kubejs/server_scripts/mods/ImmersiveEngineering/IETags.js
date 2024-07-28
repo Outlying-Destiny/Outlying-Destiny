@@ -9,4 +9,8 @@ ServerEvents.tags('item', event => {
     //Nitrate Dust
     event.removeAllTagsFrom('immersiveengineering:dust_saltpeter')
 
+    //Aluminium
+    event.removeAllTagsFrom('immersiveengineering:ingot_aluminum')
+    event.removeAllTagsFrom('immersiveengineering:dust_aluminum')
+
 })

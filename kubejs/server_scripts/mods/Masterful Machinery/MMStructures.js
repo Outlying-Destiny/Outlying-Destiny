@@ -1,5 +1,35 @@
 MMEvents.createStructures(event => {
 
+    //The Vat
+    event.create("mm:the_vat")
+        .controllerId("mm:the_vat")
+        .name("The Vat")
+        .layout(a => {
+            a.layer([
+                "A A",
+                "A A",
+                "A A"
+            ]).layer([
+                "AIA",
+                "FAF",
+                "AIA",
+            ]).layer([
+                "AEA",
+                "AAA",
+                "ACA"
+            ]).key("A", {
+                block: "kubejs:void_frame"
+            }).key("I", {
+                port: "mm:the_vat_tiny_item_port",
+                input: true
+            }).key('E', {
+                port: "mm:the_vat_tiny_energy_port",
+                input: true
+            }).key('F', {
+                port: "mm:the_vat_small_fluid_port"
+            })
+        })    
+
     //Soul Catcher
     const mobs = [
         {mob: 'zombie',},
@@ -28,45 +58,15 @@ MMEvents.createStructures(event => {
                 ]).key("A", {
                     block: "kubejs:ensouled_frame"
                 }).key("I", {
-                    port: "mm:soul_catcher_item_port",
+                    port: "mm:soul_catcher_tiny_item_port",
                 }).key('E', {
-                    port: "mm:soul_catcher_energy_port",
+                    port: "mm:soul_catcher_small_energy_port",
                     input: true
                 }).key('S', {
                     block: "kubejs:inhibited_"+mobs.mob+"_spawner"
                 })
             })
     })
-
-    //The Vat
-    event.create("mm:the_vat")
-        .controllerId("mm:the_vat")
-        .name("The Vat")
-        .layout(a => {
-            a.layer([
-                "A A",
-                "A A",
-                "A A"
-            ]).layer([
-                "AIA",
-                "FAF",
-                "AIA",
-            ]).layer([
-                "AEA",
-                "AAA",
-                "ACA"
-            ]).key("A", {
-                block: "kubejs:void_frame"
-            }).key("I", {
-                port: "mm:the_vat_item_port",
-                input: true
-            }).key('E', {
-                port: "mm:the_vat_energy_port",
-                input: true
-            }).key('F', {
-                port: "mm:the_vat_fluid_port"
-            })
-        })
 
 
 })

@@ -4,6 +4,7 @@ JEIEvents.removeCategories(event => {
     console.log(event.categoryIds) //log a list of all category ids to logs/kubejs/client.txt
     event.remove('jeresources:villager')
     event.remove('mekanism:energized_smelter')
+    event.remove('industrialforegoing:fluid_sieving_machine')
 
 })
 

@@ -163,6 +163,6 @@ ServerEvents.recipes(event => {
     event.replaceInput(
         {output:/laserio:overclocker.+/},
         'minecraft:redstone',
-        'kubejs:redstone_alloy_ingot'
+        'enderio:redstone_alloy_ingot'
     )
 })

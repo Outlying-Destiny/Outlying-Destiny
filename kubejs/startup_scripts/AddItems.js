@@ -33,7 +33,7 @@ StartupEvents.registry('item', event => {
   event.create('enchanted_core').displayName('Enchanted Core')
   event.create('frozen_core').displayName('Frozen Core')
   event.create('infusing_soul_ingot').displayName('Infusing Soul Ingot')
-  event.create('red_gear').displayName('Red Alloy Gear')
+  //event.create('red_gear').displayName('Red Alloy Gear')
   event.create('dark_steel_shears', 'shears').displayName('Dark Steel Shears').maxDamage(952)
   event.create('thruster_conductive_iron').displayName('Conductive Iron Thruster')
   event.create('thruster_electrical_steel').displayName('Electrical Steel Thruster')
@@ -56,9 +56,14 @@ StartupEvents.registry('item', event => {
   event.create('witch_soul_vial').displayName('Witch Soul Vial').texture('enderio:item/filled_soul_vial').maxStackSize(1).glow(true).tag('outlying:soul_vial')
   event.create('enderman_soul_vial').displayName('Enderman Soul Vial').texture('enderio:item/filled_soul_vial').maxStackSize(1).glow(true).tag('outlying:soul_vial')
   event.create('shulker_soul_vial').displayName('Shulker Soul Vial').texture('enderio:item/filled_soul_vial').maxStackSize(1).glow(true).tag('outlying:soul_vial')
-  
+  event.create('machinarium_ingot').displayName('Machinarium Ingot')
+
   //Rods
   event.create('dark_steel_rod').displayName('Dark Steel Rod')
   event.create('end_steel_rod').displayName('End Steel Rod')
+  event.create('invar_rod').displayName('Invar Rod')
+
+  //Wires
+  event.create('invar_wire').displayName('Invar Wire')
 
 })

@@ -1,13 +1,12 @@
 MMEvents.registerControllers(event => {
-    
-    //Soul Catcher
-    event.create("soul_catcher")
-        .name("Soul Catcher")
-        .type("mm:machine");
 
-    //The Vat
-    event.create("the_vat")
-        .name("The Vat")
-        .type("mm:machine");
-        
+    function controller(name) {
+        event.create(name.toLowerCase().split(" ").join("_"))
+            .name(name)
+            .type("mm:machine");
+    }
+
+    controller("Soul Catcher")
+    controller("The Vat")
+    
 })

@@ -130,6 +130,7 @@ ServerEvents.recipes(event => {
     event.remove({id:/thermal:machines.+smelter.+smelter_alloy_.+/})
     event.remove({id:/thermal:fire_charge.+/})
     event.remove({id:/thermal_extra:.+_glass/})
+    event.remove({id:/thermal:machines.+smelter.+smelter.+dust/})
     event.remove({id:'extendedcrafting:black_iron_ingot'})
     //event.remove({id:/thermal_extra:machine.+smelter.+ingot/})
     event.remove({id:'thermal_extra:machine/smelter/soul_infused_ingot'})
@@ -142,9 +143,9 @@ ServerEvents.recipes(event => {
     alloy2('thermal:rose_gold_ingot', 4, 'minecraft:gold_ingot', 1, 'minecraft:copper_ingot', 3, 6000)
 
     //Alloys
-    alloy3('thermal:lumium_ingot', 3, 'thermal:tin_ingot', 1, 'thermal:electrum_ingot', 1, 'mekanism:ingot_refined_glowstone', 1, 12000)
-    alloy3('thermal:signalum_ingot', 3, 'thermal:silver_ingot', 1, 'thermal:rose_gold_ingot', 1, 'enderio:redstone_alloy_ingot', 1, 12000)
-    alloy3('thermal:enderium_ingot', 3, 'chemlib:platinum_ingot', 1, 'thermal:lead_ingot', 1, 'enderio:vibrant_alloy_ingot', 1, 16000)
+    alloy3('thermal:lumium_ingot', 1, 'thermal:tin_ingot', 1, 'thermal:electrum_ingot', 1, 'mekanism:ingot_refined_glowstone', 1, 12000)
+    alloy3('thermal:signalum_ingot', 1, 'thermal:silver_ingot', 1, 'thermal:rose_gold_ingot', 1, 'enderio:redstone_alloy_ingot', 1, 12000)
+    alloy3('thermal:enderium_ingot', 1, 'chemlib:platinum_ingot', 1, 'thermal:lead_ingot', 1, 'enderio:pulsating_alloy_ingot', 1, 16000)
     alloy3('enderio:nethercotta', 2, 'minecraft:clay_ball', 4, 'minecraft:nether_brick', 2, 'thermal:constantan_ingot', 1, 8000)
     alloy2('enderio:pulsating_alloy_ingot', 1, 'minecraft:ender_pearl', 1, 'minecraft:iron_ingot', 1, 8000)
     alloy2('enderio:copper_alloy_ingot', 1, 'ae2:silicon', 1, 'thermal:bronze_ingot', 1, 8000)
@@ -159,7 +160,7 @@ ServerEvents.recipes(event => {
     alloy3('thermal_extra:shellite_ingot', 1, 'minecraft:shulker_shell', 1, 'thermal:lead_ingot', 1, 'mekanism:ingot_refined_obsidian', 1, 20000)
     alloy3('kubejs:evil_infused_ingot', 1, 'kubejs:enchanted_ingot', 1, 'kubejs:demon_ingot', 1, 'architects_palette:withered_bone', 1, 12000)
     alloy3('powah_dielectric_paste', 16, 'minecraft:clay_ball', 1, 'immersiveengineering:dust_coke', 2, 'minecraft:blaze_powder', 1, 6000)
-    alloy2('kubejs:crystalline_alloy_ingot', 1, 'enderio:pulsating_powder', 1, 'enderio:end_steel_ingot',1 ,18000)
+    alloy2('kubejs:crystalline_alloy_ingot', 1, 'enderio:pulsating_powder', 1, 'thermal:lumium_ingot',1 ,18000)
     alloy2('kubejs:crystalline_pink_slime_ingot', 1, 'industrialforegoing:pink_slime_ingot', 1, 'kubejs:crystalline_alloy_ingot',1 ,20000)
     //alloy3('kubejs:dark_soularium_ingot', 1, 'enderio:soularium_ingot', 1, 'enderio:dark_steel_ingot', 10, '', 1, 24000)
 

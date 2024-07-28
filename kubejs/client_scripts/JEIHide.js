@@ -9,8 +9,12 @@ JEIEvents.hideItems(event => {
     //Gunpowder Sack
     event.hide('quark:gunpowder_sack')
 
-    //IE Coke
+    //IE Stuff
+    event.hide('immersiveengineering:dust_saltpeter')
+    event.hide('immersiveengineering:sawblade')
     event.hide('immersiveengineering:coal_coke')
+    event.hide(/immersiveengineering.+alu.+/)
+    event.hide('immersiveengineering:metal_ladder_alu')
 
     //HammerLib Gears
     event.hide('hammerlib:gears/wooden')
@@ -62,9 +66,6 @@ JEIEvents.hideItems(event => {
     //Sawdust
     event.hide(['immersiveengineering:dust_wood', 'thermal:sawdust'])
 
-    //IE Nitrate Dust
-    event.hide('immersiveengineering:dust_saltpeter')
-
     //Aether Valkyrie Lance
     event.hide('aether:valkyrie_lance')
 
@@ -100,9 +101,6 @@ JEIEvents.hideItems(event => {
     event.hide('ironjetpacks:cell')
     event.hide(/ironjetpacks:.+coil/)
 
-    //IE Sawblade
-    event.hide('immersiveengineering:sawblade')
-
     //Wrenches
     event.hide(['bigreactors:wrench', 'hammerlib:wrench', 'ad_astra:wrench', 'enderio:yeta_wrench'])
 
@@ -110,10 +108,12 @@ JEIEvents.hideItems(event => {
     event.hide(/ad_astra:.+fluid_pip.+/)
 
     //Masterful Machinery Stuff
-    event.hide(['mm:soul_catcher_energy_port_output', 'mm:the_vat_energy_port_output', 'mm:the_vat_item_port_output'])
+    event.hide(/mm:.+energy_port_output/)
+    event.hide(['mm:the_vat_tiny_item_port_output'])
 
     //EnderIO Conduits and Upgrades
     event.hide(/enderio.+condui.+/)
     event.hide(/enderio.+filte.+/)
     event.hide(/enderio:extraction_speed_upgrade.+/)
+
 })

@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
 
     //Blank Upgrade
     event.remove({id:'modularrouters:blank_upgrade'})
-    event.shaped('4x modularrouters:blank_upgrade', [
+    event.shaped('6x modularrouters:blank_upgrade', [
         'AAB',
         'ACB',
         ' AB'
@@ -112,20 +112,22 @@ ServerEvents.recipes(event => {
     )
     event.shaped('3x modularrouters:stack_upgrade', [
         ' A ',
-        'ABA',
+        'BCB',
         ' A '
         ], {
-        A: '#minecraft:wool',
-        B: 'modularrouters:blank_upgrade'
+        A: 'thermal:steel_ingot',
+        B: 'thermal:enderium_ingot',
+        C: 'modularrouters:blank_upgrade'
         }
     )
     event.shaped('3x modularrouters:speed_upgrade', [
         ' A ',
-        'ABA',
+        'BCB',
         ' A '
         ], {
-        A: '#minecraft:wool',
-        B: 'modularrouters:blank_upgrade'
+        A: 'thermal:lumium_ingot',
+        B: 'enderio:redstone_alloy_ingot',
+        C: 'modularrouters:blank_upgrade'
         }
     )
 

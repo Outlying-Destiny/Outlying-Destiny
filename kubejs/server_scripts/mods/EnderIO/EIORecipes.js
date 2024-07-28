@@ -75,6 +75,17 @@ ServerEvents.recipes(event => {
       'enderio:infinity_rod'
     )
 
+    //Dark Steel Shears
+    event.shaped(
+      'kubejs:dark_steel_shears', [
+      '  A',
+      ' A ',
+      '   '
+      ], {
+      A: 'enderio:dark_steel_ingot'
+      }
+    )
+
     //Remove SAG Mill Coal dupe
     event.remove({id:'enderio:sag_milling/coal'})
     
@@ -123,11 +134,11 @@ ServerEvents.recipes(event => {
     }
     event.remove({id:'enderio:pulsating_crystal'})
     event.remove({id:'enderio:vibrant_crystal'})
-    crystals('enderio:pulsating_crystal', 'enderio:pulsating_alloy_ingot', 'mekanism:alloy_reinforced')
-    crystals('2x enderio:pulsating_crystal', 'enderio:pulsating_alloy_ingot', 'kubejs:crystalline_alloy_ingot')
+    crystals('2x enderio:pulsating_crystal', 'enderio:pulsating_alloy_ingot', 'mekanism:alloy_reinforced')
+    //Why did he do that? Is he stupid?crystals('2x enderio:pulsating_crystal', 'enderio:pulsating_alloy_ingot', 'kubejs:crystalline_alloy_ingot')
     crystals('4x enderio:pulsating_crystal', 'enderio:pulsating_alloy_ingot', 'powah:crystal_niotic')
-    crystals('enderio:vibrant_crystal', 'enderio:vibrant_alloy_ingot', 'mekanism:alloy_reinforced')
-    crystals('2x enderio:vibrant_crystal', 'enderio:vibrant_alloy_ingot', 'kubejs:crystalline_alloy_ingot')    
+    crystals('2x enderio:vibrant_crystal', 'enderio:vibrant_alloy_ingot', 'mekanism:alloy_reinforced')
+    //Why did he do that? Is he stupid?crystals('2x enderio:vibrant_crystal', 'enderio:vibrant_alloy_ingot', 'kubejs:crystalline_alloy_ingot')    
     crystals('4x enderio:vibrant_crystal', 'enderio:vibrant_alloy_ingot', 'powah:crystal_niotic')
 
     //Basic Capcacitor
@@ -236,6 +247,70 @@ ServerEvents.recipes(event => {
       }
     )
 
+    //The Vat
+    event.shaped(
+      '8x kubejs:void_frame', [
+      'AAA',
+      'ABA',
+      'AAA'
+      ], {
+      A: 'enderio:dark_steel_ingot',
+      B: 'enderio:void_chassis'
+      }
+    )
+
+    event.shaped(
+      'mm:the_vat', [
+      'AAA',
+      'ABA',
+      'AAA'
+      ], {
+      A: 'enderio:dark_steel_ingot',
+      B: 'enderio:void_chassis'
+      }
+    )
+
+    const tvport = [
+      {port:'tiny_item_port_input'},
+      {port:'small_fluid_port_input'},
+      {port:'small_fluid_port_output'},
+      {port:'tiny_energy_port_input'}
+    ]
+    tvport.forEach((port) => {
+      event.shapeless("mm:the_vat_"+port.port,["mm:base_"+port.port, 'kubejs:void_frame'])
+    })
+
+    //Soul Catcher
+    event.shaped(
+      '8x kubejs:ensouled_frame', [
+      'AAA',
+      'ABA',
+      'AAA'
+      ], {
+      A: 'thermal_extra:soul_infused_ingot',
+      B: 'enderio:ensouled_chassis'
+      }
+    )
+
+    event.shaped(
+      'mm:soul_catcher', [
+      'AAA',
+      'ABA',
+      'AAA'
+      ], {
+      A: 'thermal_extra:soul_infused_ingot',
+      B: 'enderio:void_chassis'
+      }
+    )
+
+    const scport = [
+      {port:'tiny_item_port_input'},
+      {port:'tiny_item_port_output'},
+      {port:'small_energy_port_input'}
+    ]
+    scport.forEach((port) => {
+      event.shapeless("mm:soul_catcher_"+port.port,["mm:base_"+port.port, 'kubejs:ensouled_frame'])
+    })
 
     
 })

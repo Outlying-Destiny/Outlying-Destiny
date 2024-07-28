@@ -18,11 +18,11 @@
 				item: "enderio:ensouled_chassis"
 				type: "item"
 			}]
-			x: -7.25d
+			x: -9.75d
 			y: -4.25d
 		}
 		{
-			dependencies: ["432BCDC8C90BD558"]
+			dependencies: ["1C1B6A081BDE2FB8"]
 			id: "74037ADCBA1AEF64"
 			tasks: [{
 				id: "10EA8933B870F307"
@@ -30,7 +30,7 @@
 				type: "item"
 			}]
 			x: -5.75d
-			y: -5.0d
+			y: -4.25d
 		}
 		{
 			dependencies: ["432BCDC8C90BD558"]
@@ -40,8 +40,8 @@
 				item: "enderio:slice_and_splice"
 				type: "item"
 			}]
-			x: -5.75d
-			y: -3.5d
+			x: -8.25d
+			y: -4.25d
 		}
 		{
 			dependencies: ["5F5B3D5FE5AF3D00"]
@@ -88,8 +88,8 @@
 				item: "thermal:machine_crucible"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -5.0d
+			x: -2.0d
+			y: -3.5d
 		}
 		{
 			id: "7F557FA2D89527EF"
@@ -108,8 +108,8 @@
 				item: "thermal:machine_refinery"
 				type: "item"
 			}]
-			x: -0.25d
-			y: -7.25d
+			x: 3.25d
+			y: -3.75d
 		}
 		{
 			dependencies: ["7B18A7C4A3A3FAE3"]
@@ -119,8 +119,8 @@
 				item: "thermal:refined_fuel_bucket"
 				type: "item"
 			}]
-			x: 1.25d
-			y: -7.25d
+			x: 4.5d
+			y: -3.75d
 		}
 		{
 			dependencies: [
@@ -133,8 +133,8 @@
 				item: "thermal_extra:soul_infused_ingot"
 				type: "item"
 			}]
-			x: 2.75d
-			y: -7.25d
+			x: 5.75d
+			y: -3.75d
 		}
 		{
 			dependencies: ["7685370285CC7029"]
@@ -144,8 +144,8 @@
 				item: "powah:crystal_blazing"
 				type: "item"
 			}]
-			x: 2.75d
-			y: -6.0d
+			x: 5.75d
+			y: -2.5d
 		}
 		{
 			dependencies: ["7748DD4DEDD2956C"]
@@ -159,8 +159,8 @@
 				type: "dimension"
 			}]
 			title: "Undergarden"
-			x: 2.625d
-			y: -1.3125d
+			x: 5.625d
+			y: -1.0625d
 		}
 		{
 			dependencies: ["22133B3C6FF9C7F3"]
@@ -221,11 +221,14 @@
 				item: "extendedcrafting:luminessence"
 				type: "item"
 			}]
-			x: 1.25d
-			y: -4.25d
+			x: -1.0d
+			y: -3.5d
 		}
 		{
-			dependencies: ["0610F51F372DC7C0"]
+			dependencies: [
+				"0610F51F372DC7C0"
+				"299364C146A285AB"
+			]
 			id: "4B0C8DCB02DD44D3"
 			tasks: [
 				{
@@ -271,23 +274,23 @@
 				}
 				{
 					count: 2L
-					id: "71E80965A2652E03"
-					item: "mm:the_vat_item_port_input"
+					id: "6FA4B60489CD4F6B"
+					item: "mm:the_vat_tiny_item_port_input"
 					type: "item"
 				}
 				{
-					id: "10B4EF4966173D95"
-					item: "mm:the_vat_energy_port_input"
+					id: "15EE0FD7E0AFC078"
+					item: "mm:the_vat_small_fluid_port_input"
 					type: "item"
 				}
 				{
-					id: "4FC4EBB0C16F8175"
-					item: "mm:the_vat_fluid_port_input"
+					id: "209BF92064B9C440"
+					item: "mm:the_vat_small_fluid_port_output"
 					type: "item"
 				}
 				{
-					id: "2E3E9678D71FA7C6"
-					item: "mm:the_vat_fluid_port_output"
+					id: "26C03B0489F8C2FD"
+					item: "mm:the_vat_tiny_energy_port_input"
 					type: "item"
 				}
 			]
@@ -295,14 +298,544 @@
 			y: -3.25d
 		}
 		{
+			dependencies: ["11943E63F2FF8684"]
 			id: "6A3AF970578FC2AB"
 			tasks: [{
 				id: "2A546547B65FA138"
 				item: "enderio:enchanter"
 				type: "item"
 			}]
+			x: -6.25d
+			y: -3.25d
+		}
+		{
+			dependencies: ["438010D46E252B32"]
+			id: "6AFDB0F2AD9E81BC"
+			tasks: [{
+				id: "5BA070F361AF171C"
+				item: "laserio:logic_chip"
+				type: "item"
+			}]
+			x: -8.25d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2B5724BE9F43CF8E"]
+			id: "1C1B6A081BDE2FB8"
+			tasks: [
+				{
+					id: "37A5F5C04E85E14A"
+					item: "enderio:z_logic_controller"
+					type: "item"
+				}
+				{
+					id: "29A5389ACBD6D7C8"
+					item: "enderio:ender_resonator"
+					type: "item"
+				}
+				{
+					id: "65A578D0E7337412"
+					item: "enderio:skeletal_contractor"
+					type: "item"
+				}
+				{
+					id: "069378AD48978A82"
+					item: "enderio:zombie_electrode"
+					type: "item"
+				}
+			]
+			title: "T1 Mob Components"
+			x: -7.0d
+			y: -4.25d
+		}
+		{
+			dependencies: ["6AFDB0F2AD9E81BC"]
+			id: "68F05DB4A722B875"
+			tasks: [{
+				id: "26C9E51EC9275A25"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "laserio:card_item"
+							}
+							{
+								Count: 1b
+								id: "laserio:card_fluid"
+							}
+							{
+								Count: 1b
+								id: "laserio:card_energy"
+							}
+							{
+								Count: 1b
+								id: "laserio:card_redstone"
+							}
+						]
+					}
+				}
+				title: "Laser Cards"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["6AFDB0F2AD9E81BC"]
+			id: "6E1043583A0EB480"
+			tasks: [
+				{
+					id: "1E6AE3FF680D7A5F"
+					item: "laserio:laser_wrench"
+					type: "item"
+				}
+				{
+					id: "7B3E1D04D723E71D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 15
+							}
+						}
+						id: "laserio:card_holder"
+					}
+					type: "item"
+				}
+				{
+					id: "579E7B913F6A3563"
+					item: "laserio:card_cloner"
+					type: "item"
+				}
+			]
+			title: "Laser Tools"
+			x: -9.0d
+			y: -5.25d
+		}
+		{
+			dependencies: ["6AFDB0F2AD9E81BC"]
+			id: "409CD4E7DA967D95"
+			tasks: [
+				{
+					id: "57932C61F8B5C4C9"
+					item: "laserio:filter_basic"
+					type: "item"
+				}
+				{
+					id: "1909F4B5F79595D7"
+					item: {
+						Count: 1
+						id: "laserio:filter_count"
+						tag: {
+							allowList: 1b
+							compareNBT: 0b
+							counts: [
+								{
+									Count: 0
+									MBAmount: 0
+									Slot: 0
+								}
+								{
+									Count: 0
+									MBAmount: 0
+									Slot: 1
+								}
+								{
+									Count: 0
+									MBAmount: 0
+									Slot: 2
+								}
+								{
+									Count: 0
+									MBAmount: 0
+									Slot: 3
+								}
+								{
+									Count: 0
+									MBAmount: 0
+									Slot: 4
+								}
+								{
+									Count: 0
+									MBAmount: 0
+									Slot: 5
+								}
+								{
+									Count: 0
+									MBAmount: 0
+									Slot: 6
+								}
+								{
+									Count: 0
+									MBAmount: 0
+									Slot: 7
+								}
+								{
+									Count: 0
+									MBAmount: 0
+									Slot: 8
+								}
+								{
+									Count: 0
+									MBAmount: 0
+									Slot: 9
+								}
+								{
+									Count: 0
+									MBAmount: 0
+									Slot: 10
+								}
+								{
+									Count: 0
+									MBAmount: 0
+									Slot: 11
+								}
+								{
+									Count: 0
+									MBAmount: 0
+									Slot: 12
+								}
+								{
+									Count: 0
+									MBAmount: 0
+									Slot: 13
+								}
+								{
+									Count: 0
+									MBAmount: 0
+									Slot: 14
+								}
+							]
+							inv: {
+								Items: [ ]
+								Size: 15
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7521E88C2B32AFA3"
+					item: {
+						Count: 1
+						id: "laserio:filter_tag"
+						tag: {
+							allowList: 1b
+							tags: [ ]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0748023652BEC275"
+					item: {
+						Count: 1
+						id: "laserio:filter_mod"
+						tag: {
+							allowList: 1b
+							compareNBT: 0b
+							inv: {
+								Items: [ ]
+								Size: 15
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5D51B64690DA2EA2"
+					item: "laserio:filter_nbt"
+					type: "item"
+				}
+			]
+			title: "Laser Filters"
+			x: -7.5d
+			y: -6.75d
+		}
+		{
+			dependencies: ["6AFDB0F2AD9E81BC"]
+			icon: "laserio:laser_node"
+			id: "1F87A150540CA271"
+			tasks: [
+				{
+					id: "3654304C6C9CAE7E"
+					item: "laserio:laser_connector"
+					type: "item"
+				}
+				{
+					id: "6D9EF0D2011B93DE"
+					item: "laserio:laser_node"
+					type: "item"
+				}
+			]
+			title: "Laser Transportation"
+			x: -9.25d
+			y: -6.25d
+		}
+		{
+			dependencies: ["438010D46E252B32"]
+			id: "3FE9ACEC0D804E39"
+			tasks: [{
+				id: "78E611B4A79DC58F"
+				item: "modularrouters:modular_router"
+				type: "item"
+			}]
 			x: -5.75d
-			y: -6.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"5F5B3D5FE5AF3D00"
+				"1B993EA365BEFD7F"
+			]
+			hide_dependency_lines: true
+			id: "13F278D905E6DD33"
+			tasks: [
+				{
+					id: "5A80B8A75314D4C9"
+					item: {
+						Count: 1
+						id: "simplemagnets:advancedmagnet"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "170A921DE63674BD"
+					item: "simplemagnets:advanced_demagnetization_coil"
+					type: "item"
+				}
+			]
+			x: -1.75d
+			y: 0.75d
+		}
+		{
+			dependencies: ["5F5B3D5FE5AF3D00"]
+			hide_dependency_lines: true
+			id: "76D8ECB821DDA406"
+			tasks: [{
+				id: "646A28ED86B56460"
+				item: "itemcollectors:advanced_collector"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.75d
+		}
+		{
+			dependencies: ["3FE9ACEC0D804E39"]
+			id: "28872D8D3C6A071B"
+			tasks: [
+				{
+					count: 9L
+					id: "39052F7EEA533ACF"
+					item: "modularrouters:speed_upgrade"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "243FBF877C624A73"
+					item: "modularrouters:stack_upgrade"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "3CAA8320AF73D738"
+					item: "modularrouters:muffler_upgrade"
+					type: "item"
+				}
+				{
+					id: "7EEF9B45BE1118B8"
+					item: "modularrouters:camouflage_upgrade"
+					type: "item"
+				}
+			]
+			title: "Modular Routers Base Upgrades"
+			x: -6.5d
+			y: -6.75d
+		}
+		{
+			dependencies: ["3FE9ACEC0D804E39"]
+			id: "5C74E537281EE76D"
+			tasks: [
+				{
+					id: "64B020CF4226CC90"
+					item: "modularrouters:fluid_upgrade"
+					type: "item"
+				}
+				{
+					id: "0059B760F7AF3C1A"
+					item: "modularrouters:energy_upgrade"
+					type: "item"
+				}
+			]
+			title: "Liquid and Energetic Routers!"
+			x: -5.0d
+			y: -5.25d
+		}
+		{
+			dependencies: ["3FE9ACEC0D804E39"]
+			id: "653B3E220A9728AB"
+			tasks: [
+				{
+					id: "55D69A5F9C724F1D"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "modularrouters:puller_module_1"
+								}
+								{
+									Count: 1b
+									id: "modularrouters:sender_module_1"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "18D9215ADFAB0D94"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "modularrouters:puller_module_2"
+									tag: {
+										modularrouters: {
+											Target: {
+												Face: 1b
+												InvName: "block.sophisticatedstorage.limited_netherite_barrel_4"
+												Pos: {
+													dim: "minecraft:overworld"
+													pos: {
+														X: -121
+														Y: 73
+														Z: -56
+													}
+												}
+											}
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "modularrouters:sender_module_2"
+									tag: {
+										modularrouters: {
+											Target: {
+												Face: 1b
+												InvName: "block.sophisticatedstorage.limited_netherite_barrel_2"
+												Pos: {
+													dim: "minecraft:overworld"
+													pos: {
+														X: -120
+														Y: 73
+														Z: -56
+													}
+												}
+											}
+										}
+									}
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Magic Transportation?"
+			x: -4.75d
+			y: -6.25d
+		}
+		{
+			dependencies: ["1C1B6A081BDE2FB8"]
+			id: "438010D46E252B32"
+			tasks: [{
+				id: "5F9DC8FC928A9088"
+				title: "Transportation?"
+				type: "checkmark"
+			}]
+			x: -7.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3FE9ACEC0D804E39"]
+			id: "74AB1B03344BC63D"
+			tasks: [
+				{
+					id: "775227F79DA7B42D"
+					item: "modularrouters:vacuum_module"
+					type: "item"
+				}
+				{
+					id: "43CF172E6E7DA0EC"
+					item: "modularrouters:void_module"
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["74037ADCBA1AEF64"]
+			id: "4CD3AA3E83C316B7"
+			tasks: [
+				{
+					id: "12FB47504B21DFAD"
+					item: "enderio:frank_n_zombie"
+					type: "item"
+				}
+				{
+					id: "37F07FDC0E7738A8"
+					item: "enderio:sentient_ender"
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: -4.25d
+		}
+		{
+			dependencies: ["74037ADCBA1AEF64"]
+			id: "11943E63F2FF8684"
+			tasks: [
+				{
+					id: "0DAA60DC11E8B6C4"
+					item: "enderio:ender_crystal"
+					type: "item"
+				}
+				{
+					id: "6186242A51DF6F33"
+					item: "enderio:prescient_crystal"
+					type: "item"
+				}
+				{
+					id: "7FC30A9658B2A8A1"
+					item: "enderio:weather_crystal"
+					type: "item"
+				}
+			]
+			x: -5.25d
+			y: -3.25d
+		}
+		{
+			id: "7CAFF91379D3D603"
+			tasks: [{
+				id: "1B635D68006FC2B0"
+				item: "thermal:machine_chiller"
+				type: "item"
+			}]
+			x: 0.25d
+			y: -7.25d
 		}
 	]
 	title: "6. Darker than Dark"

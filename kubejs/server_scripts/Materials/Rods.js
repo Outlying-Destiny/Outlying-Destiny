@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
     //Rods
     allrods('immersiveengineering:stick_iron', 2, 'minecraft:iron_ingot', 4800, 'rod')
     allrods('immersiveengineering:stick_steel', 2, 'thermal:steel_ingot', 4800, 'rod')
-    allrods('immersiveengineering:stick_aluminum', 2, 'immersiveengineering:ingot_aluminum', 4800, 'rod')
+    allrods('kubejs:invar_rod', 2, 'thermal:invar_ingot', 4800, 'rod')
     allrods('ad_astra:etrium_rod', 2, 'ad_astra:etrium_ingot', 4800, 'rod')
     allrods('kubejs:dark_steel_rod', 2, 'enderio:dark_steel_ingot', 4800, 'rod')
     allrods('kubejs:end_steel_rod', 2, 'enderio:end_steel_ingot', 4800, 'rod')

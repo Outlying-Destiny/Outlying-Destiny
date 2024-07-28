@@ -359,7 +359,7 @@
 		max_y = 112
 		#The number of veins attempted to be generated per chunk
 		#Range: > 0
-		attempts_per_chunk = 16
+		attempts_per_chunk = 0
 		#Set this to true to allow retro-generation of bauxite Ore.
 		retrogen_enable = false
 

@@ -59,7 +59,6 @@ ServerEvents.recipes(event => {
     allpress('thermal:signalum_plate', 'thermal:signalum_ingot', 1, 4800, 'plate')
     allpress('thermal:lumium_plate', 'thermal:lumium_ingot', 1, 4800, 'plate')
     allpress('thermal:enderium_plate', 'thermal:enderium_ingot', 1, 4800, 'plate')
-    allpress('immersiveengineering:plate_aluminum', 'immersiveengineering:ingot_aluminum', 1, 4800, 'plate')
     allpress('immersiveengineering:plate_uranium', 'mekanism:ingot_uranium', 1, 4800, 'plate')
     allpress('ad_astra:etrium_plate', 'ad_astra:etrium_ingot', 1, 4800, 'plate')
     allpress('ad_astra:desh_plate', 'ad_astra:desh_ingot', 1, 4800, 'plate')

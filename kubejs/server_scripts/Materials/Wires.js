@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
     //Wires
     allwires('immersiveengineering:wire_copper', 2, 'thermal:copper_plate', 3600, 'wire')
     allwires('immersiveengineering:wire_electrum', 2, 'thermal:electrum_plate', 3600, 'wire')
-    allwires('immersiveengineering:wire_aluminum', 2, 'immersiveengineering:plate_aluminum', 3600, 'wire')
+    allwires('kubejs:invar_wire', 2, 'thermal:invar_plate', 3600, 'wire')
     allwires('immersiveengineering:wire_steel', 2, 'thermal:steel_plate', 3600, 'wire')
     allwires('immersiveengineering:wire_lead', 2, 'thermal:lead_plate', 3600, 'wire')
 

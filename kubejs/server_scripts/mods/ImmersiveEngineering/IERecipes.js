@@ -201,7 +201,7 @@ ServerEvents.recipes(event => {
     event.remove({output:/immersiveengineering:capacitor_.+/})
     detailedbox('immersiveengineering:capacitor_lv', '#forge:treated_wood', 'thermal:lead_plate', 'thermal:lead_plate', 'immersiveengineering:coil_lv', 'minecraft:iron_ingot')
     detailedbox('immersiveengineering:capacitor_mv', '#forge:treated_wood', 'thermal:nickel_plate', 'thermal:iron_plate', 'immersiveengineering:coil_mv', 'immersiveengineering:capacitor_lv')
-    detailedbox('immersiveengineering:capacitor_hv', '#forge:treated_wood', 'immersiveengineering:plate_aluminum', 'immersiveengineering:ingot_hop_graphite', 'immersiveengineering:coil_hv', 'immersiveengineering:capacitor_mv')
+    detailedbox('immersiveengineering:capacitor_hv', '#forge:treated_wood', 'thermal:invar_plate', 'immersiveengineering:ingot_hop_graphite', 'immersiveengineering:coil_hv', 'immersiveengineering:capacitor_mv')
 
     //Circuit Board
     event.remove({output:'immersiveengineering:circuit_board'})

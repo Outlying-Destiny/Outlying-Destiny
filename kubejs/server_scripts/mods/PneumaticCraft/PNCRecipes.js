@@ -90,13 +90,6 @@ ServerEvents.recipes(event => {
   box('pneumaticcraft:large_tank', 'pneumaticcraft:plastic', 'pneumaticcraft:medium_tank', 'mekanism:alloy_reinforced', 'pneumaticcraft:reinforced_pressure_tube')
   box('pneumaticcraft:huge_tank', 'mekanism:alloy_atomic', 'pneumaticcraft:large_tank', 'pneumaticcraft:large_tank', 'pneumaticcraft:advanced_pressure_tube')
 
-  //Heat Sink
-  event.replaceInput(
-    { output: 'pneumaticcraft:heat_sink' },
-    'minecraft:copper_ingot',
-    'immersiveengineering:ingot_aluminum'
-  )
-
   //Vortex Tube
   event.remove({output:'pneumaticcraft:vortex_tube'})
   event.shaped('pneumaticcraft:vortex_tube', [

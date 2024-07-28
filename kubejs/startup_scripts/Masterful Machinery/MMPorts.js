@@ -1,48 +1,66 @@
 MMEvents.registerPorts(event => {
 
-    //Soul Catcher
-    event.create("soul_catcher_energy_port")
-        .name("Soul Catcher Energy Port")
-        .controllerId("mm:soul_catcher")
-        .config("mm:energy", c => {
-            c.capacity(102400)
-             .maxReceive(2048)
-             .maxExtract(1024);
-    })
+    function port(name, id, type, config) {
+        var portname
+        switch (type) {
+            case 1:
+                portname = "mm:item"
+                break;           
+            case 2:
+                portname = "mm:fluid"
+                break;
+            case 3:
+                portname = "mm:energy"
+                break;
+            case 4:
+                portname = "mm:create/kinetic"
+                break;
+            default:
+                type = 1
+                portname = "mm:item"
+                break;
+        }
+        event.create(name.toLowerCase().split(" ").join("_"))
+            .name(name)
+            .controllerId(id)
+            .config(portname, c => {
+                switch (type) {
+                    case 1:
+                        c.rows(config[0])
+                        .columns(config[1])
+                        break;
+                    
+                    case 2:
+                        c.rows(config[0])
+                        .columns(config[1])
+                        .slotCapacity(config[2])
+                        break;
+                    
+                    case 3:
+                        c.capacity(config*100)
+                        .maxReceive(config*2)
+                        .maxExtract(config)
+                        break;
+                    default:
+                        break;
+                }
+            })
+    }
 
-    event.create("soul_catcher_item_port")
-    .name("Soul Catcher Item Port")
-    .controllerId("mm:soul_catcher")
-    .config("mm:item", c => {
-        c.rows(1)
-         .columns(1);
-    })
-
+    //Base Ports
+    port("Base Tiny Item Port", "mm:base", 1, [1, 1])
+    port("Base Tiny Fluid Port", "mm:base", 2, [1, 1, 1000])
+    port("Base Small Fluid Port", "mm:base", 2, [1, 1, 4000])
+    port("Base Tiny Energy Port", "mm:base", 3, 512)
+    port("Base Small Energy Port", "mm:base", 3, 1024)
+    
     //The Vat
-    event.create("the_vat_energy_port")
-    .name("The Vat Energy Port")
-    .controllerId("mm:the_vat")
-    .config("mm:energy", c => {
-        c.capacity(51200)
-         .maxReceive(1024)
-         .maxExtract(512);
-    })
+    port("The Vat Tiny Item Port", "mm:the_vat", 1, [1, 1])
+    port("The Vat Small Fluid Port", "mm:the_vat", 2, [1, 1, 4000])
+    port("The Vat Tiny Energy Port", "mm:the_vat", 3, 512)
 
-    event.create("the_vat_item_port")
-    .name("The Vat Item Port")
-    .controllerId("mm:the_vat")
-    .config("mm:item", c => {
-        c.rows(1)
-         .columns(1);
-    })
-
-    event.create("the_vat_fluid_port")
-    .name("The Vat Fluid Port")
-    .controllerId("mm:the_vat")
-    .config("mm:fluid", c => {
-        c.rows(1)
-         .columns(1)
-         .slotCapacity(8000);
-    })
+    //Soul Catcher
+    port("Soul Catcher Tiny Item Port", "mm:soul_catcher", 1, [1, 1])
+    port("Soul Catcher Small Energy Port", "mm:soul_catcher", 3, 1024)
 
 })

@@ -132,7 +132,7 @@ ServerEvents.recipes(event => {
       ' A ',
       'B  '
       ], {
-      A:'kubejs:red_gear',
+      A:'projectred_core:red_ingot',
       B:'thermal:gold_plate'
     })
 
@@ -208,6 +208,18 @@ ServerEvents.recipes(event => {
     //Components
     event.remove({id:'thermal:augments/upgrade_augment_1'})
     box('thermal:upgrade_augment_1', 'thermal:invar_plate', 'thermal:obsidian_glass', 'enderio:redstone_alloy_ingot', 'thermal:lumium_gear')
+
+    //Upgrades
+    event.remove({id:'thermal:augments/machine_speed_augment'})
+    event.shaped('thermal:machine_speed_augment', [
+      ' A ',
+      'BCB',
+      ' A '
+      ], {
+      A:'thermal:signalum_gear',
+      B:'thermal:electrum_plate',
+      C:'thermal:rf_coil'
+    })
 
     //Machines
     machine('smelter', 'minecraft:blast_furnace', 'immersiveengineering:coil_lv', 'thermal:steel_gear')
