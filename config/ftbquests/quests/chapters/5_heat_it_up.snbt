@@ -140,6 +140,7 @@
 			dependencies: [
 				"4A32249482CAF37F"
 				"1D42C6268FA6E13F"
+				"07ADCEF6CBA17D58"
 			]
 			id: "2D18BF1E379DC75A"
 			tasks: [{
@@ -303,7 +304,7 @@
 				type: "item"
 			}]
 			x: -0.75d
-			y: 0.75d
+			y: 0.875d
 		}
 		{
 			dependencies: ["117B8F523BF8B590"]
@@ -847,8 +848,8 @@
 				item: "ae2:speed_card"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -5.5d
+			x: 2.0d
+			y: -5.25d
 		}
 		{
 			dependencies: ["37C45BCCFE76D765"]
@@ -976,6 +977,15 @@
 					title: "Storage Controller / Access Point"
 					type: "item"
 				}
+				{
+					id: "2DF19D8B21DE5DB0"
+					item: {
+						Count: 1
+						id: "functionalstorage:linking_tool"
+						tag: { }
+					}
+					type: "item"
+				}
 			]
 			x: 1.5d
 			y: -3.5d
@@ -1031,8 +1041,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: -5.5d
+			x: 1.0d
+			y: -5.25d
 		}
 		{
 			dependencies: ["7AC776AB528A6439"]
@@ -1113,7 +1123,7 @@
 				item: "botania:ender_air_bottle"
 				type: "item"
 			}]
-			x: 0.5d
+			x: 0.25d
 			y: 3.0d
 		}
 		{
@@ -1125,23 +1135,6 @@
 				type: "item"
 			}]
 			x: 0.75d
-			y: 2.0d
-		}
-		{
-			dependencies: ["78A5EFE0090C4D99"]
-			id: "7F1CDD46353AE4ED"
-			tasks: [{
-				id: "06B8363674019C5A"
-				item: {
-					Count: 1
-					id: "minecraft:elytra"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 2.25d
 			y: 2.0d
 		}
 		{
@@ -1163,19 +1156,8 @@
 				item: "minecraft:shulker_shell"
 				type: "item"
 			}]
-			x: 1.75d
-			y: 1.0d
-		}
-		{
-			dependencies: ["5C68FCCC9350C84F"]
-			id: "43715FEA77618FA3"
-			tasks: [{
-				id: "08C54ADDE67D1C0B"
-				item: "minecraft:end_stone"
-				type: "item"
-			}]
-			x: 0.5d
-			y: 1.0d
+			x: 2.375d
+			y: 2.0d
 		}
 		{
 			dependencies: ["5C68FCCC9350C84F"]
@@ -1212,7 +1194,7 @@
 				item: "pneumaticcraft:huge_tank"
 				type: "item"
 			}]
-			x: -3.75d
+			x: -3.5d
 			y: -3.5d
 		}
 		{
@@ -1339,8 +1321,66 @@
 				item: "mekanism:elite_energy_cube"
 				type: "item"
 			}]
-			x: 2.9375d
+			x: 3.0d
 			y: 3.0d
+		}
+		{
+			dependencies: ["1A965CD16F4D3FE3"]
+			id: "3D3BCEF5D09702EB"
+			tasks: [
+				{
+					id: "4EE8CB26A03C6D57"
+					item: "thermal:machine_speed_augment"
+					type: "item"
+				}
+				{
+					id: "4B1D6932CCA3C2C3"
+					item: "thermal:machine_output_augment"
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["090D14082AE0CCD0"]
+			id: "6D3DF45A28E33B78"
+			tasks: [{
+				id: "704740B656EE2ABB"
+				item: "mekanism:advanced_tier_installer"
+				type: "item"
+			}]
+			x: 4.25d
+			y: 3.0d
+		}
+		{
+			dependencies: ["415C7601E035DBDB"]
+			hide_dependency_lines: true
+			id: "079F9B9EE9BDDFE8"
+			tasks: [{
+				id: "1482C6ACD0907990"
+				item: "thermal:redprint"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["78A5EFE0090C4D99"]
+			id: "19DCDFBDF67BC3BD"
+			tasks: [{
+				id: "1C198EAB5016CA6F"
+				item: {
+					Count: 1
+					id: "minecraft:elytra"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.75d
+			y: 1.0d
 		}
 	]
 	title: "5. Heat it up!"

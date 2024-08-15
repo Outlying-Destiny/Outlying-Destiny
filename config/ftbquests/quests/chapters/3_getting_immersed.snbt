@@ -1186,15 +1186,14 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["2D1BB8A835207114"]
 			id: "0AE78B3871DB6D59"
 			tasks: [{
 				id: "3D4E44FCD4873629"
 				item: "mekanism:energized_smelter"
 				type: "item"
 			}]
-			x: 9.5d
-			y: -7.5d
+			x: 11.25d
+			y: -8.25d
 		}
 		{
 			dependencies: ["0D73A83CC62FF6C5"]
@@ -1465,6 +1464,17 @@
 			}]
 			x: 11.75d
 			y: -5.5d
+		}
+		{
+			dependencies: ["2D1BB8A835207114"]
+			id: "57F89AE2FB5431B2"
+			tasks: [{
+				id: "48D8069730DF2C2B"
+				item: "mekanism:basic_tier_installer"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -7.5d
 		}
 	]
 	title: "3. Getting Immersed"

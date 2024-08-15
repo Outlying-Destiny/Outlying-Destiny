@@ -102,7 +102,7 @@
 	autoCrafterInsertPowerRate = 100
 	#How much a single Ender Alternator should speed up a craft. This is a percentage of the time required.
 	#Range: 0.0 ~ 1.0
-	alternatorEffectiveness = 0.01
+	alternatorEffectiveness = 0.05
 	#Should the Ender Crafter be enabled?
 	enabled = true
 	#Should the Auto Ender Crafter be enabled?

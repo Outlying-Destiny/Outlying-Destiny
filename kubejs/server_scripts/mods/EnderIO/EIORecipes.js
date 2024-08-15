@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
 
-    //Function Box
+    //Function Crafts
     function box(output, input1, input2, input3, input4){
       event.shaped(output, [
           'ABA',
@@ -11,6 +11,19 @@ ServerEvents.recipes(event => {
           B: input2,
           C: input3,
           D: input4
+          }
+      )
+    }
+
+    function cross(output, input1, input2, input3){
+      event.shaped(output, [
+          ' A ',
+          'BCB',
+          ' A '
+          ], {
+          A: input1,
+          B: input2,
+          C: input3
           }
       )
     }
@@ -88,6 +101,20 @@ ServerEvents.recipes(event => {
 
     //Remove SAG Mill Coal dupe
     event.remove({id:'enderio:sag_milling/coal'})
+
+    //Soul Vial
+    event.remove({id:'enderio:empty_soul_vial'})
+    event.shaped(
+      'enderio:empty_soul_vial', [
+      ' A ',
+      'BCB',
+      ' B '
+      ], {
+      A: 'enderio:soularium_ingot',
+      B: 'enderio:fused_quartz',
+      C: 'enderio:z_logic_controller'
+      }
+    )
     
     //Dark / End Steel Bars
     event.remove({id:/enderio:.+_steel_bars/})
@@ -107,6 +134,19 @@ ServerEvents.recipes(event => {
       '   '
       ], {
       A: 'kubejs:end_steel_rod'
+      }
+    )
+
+    //Experience Rod
+    event.remove({id:'enderio:experience_rod'})
+    event.shaped(
+      'enderio:experience_rod', [
+      '  A',
+      ' B ',
+      'A  '
+      ], {
+      A: 'kubejs:enchanted_ingot',
+      B: 'enderio:soularium_ingot'
       }
     )
 
@@ -141,8 +181,10 @@ ServerEvents.recipes(event => {
     //Why did he do that? Is he stupid?crystals('2x enderio:vibrant_crystal', 'enderio:vibrant_alloy_ingot', 'kubejs:crystalline_alloy_ingot')    
     crystals('4x enderio:vibrant_crystal', 'enderio:vibrant_alloy_ingot', 'powah:crystal_niotic')
 
-    //Basic Capcacitor
+    //Capcacitors
     event.remove({id:'enderio:basic_capacitor'})
+    event.remove({id:'enderio:double_layer_capacitor'})
+    event.remove({id:'enderio:octadic_capacitor'})
     event.shaped(
       'enderio:basic_capacitor', [
       ' AB',
@@ -154,11 +196,19 @@ ServerEvents.recipes(event => {
       C: 'enderio:redstone_alloy_ingot'
       }
     )
+    cross('enderio:double_layer_capacitor', 'thermal:enderium_ingot', 'enderio:basic_capacitor', 'thermal_extra:soul_infused_dust')
+    cross('enderio:octadic_capacitor', 'extendedcrafting:ender_ingot', 'enderio:double_layer_capacitor', 'mekanism_extras:dust_radiance')
+
 
     //Bimetal Gears
-    event.remove({id:'enderio:dark_bimetal_gear'})
     event.remove({id:'enderio:energized_gear'})
     event.remove({id:'enderio:vibrant_gear'})
+    event.remove({id:'enderio:dark_bimetal_gear'})
+    event.replaceInput(
+      {output:/enderio:/},
+      '#forge:gears/iron',
+      'enderio:dark_bimetal_gear'
+    )
     event.shaped(
       'kubejs:infinity_gear', [
       'ABA',
@@ -166,7 +216,7 @@ ServerEvents.recipes(event => {
       'ABA'
       ], {
       A: 'enderio:grains_of_infinity',
-      B: 'thermal:steel_ingot',
+      B: 'minecraft:iron_ingot',
       C: 'enderio:stone_gear'
       }
     )
@@ -183,6 +233,7 @@ ServerEvents.recipes(event => {
       )
     }
     gear('enderio:dark_bimetal_gear', 'enderio:dark_steel_ingot', 'kubejs:infinity_gear')
+    gear('kubejs:end_bimetal_gear', 'enderio:end_steel_ingot', 'enderio:dark_bimetal_gear')
     gear('enderio:energized_gear', 'enderio:energetic_alloy_ingot', 'kubejs:infinity_gear')
     gear('enderio:vibrant_gear', 'enderio:vibrant_alloy_ingot', 'enderio:energized_gear')
 
@@ -242,10 +293,34 @@ ServerEvents.recipes(event => {
       'CCC'
       ], {
       A: 'minecraft:book',
-      B: 'enderio:weather_crystal',
+      B: 'enderio:prescient_crystal',
       C: 'enderio:dark_steel_block'
       }
     )
+
+    //Powered Spawner
+    event.remove({id:'enderio:powered_spawner'})
+    event.custom({
+      "type": "enderio:shaped_entity_storage",
+      "category": "misc",
+      "key": {
+        "A": {"item": "thermal_extra:soul_infused_ingot"},
+        "B": {"item": "enderio:broken_spawner"},
+        "C": {"item": "enderio:ender_crystal"},
+        "D": {"item": "enderio:ensouled_chassis"},
+        "E": {"item": "thermal_extra:soul_infused_gear"},
+        "F": {"item": "enderio:frank_n_zombie"}
+      },
+      "pattern": [
+        "ABA",
+        "CDC",
+        "EFE"
+      ],
+      "result": {
+        "item": "enderio:powered_spawner"
+      },
+      "show_notification": true
+    })
 
     //The Vat
     event.shaped(
@@ -261,12 +336,16 @@ ServerEvents.recipes(event => {
 
     event.shaped(
       'mm:the_vat', [
-      'AAA',
       'ABA',
-      'AAA'
+      'CDC',
+      'EFE'
       ], {
       A: 'enderio:dark_steel_ingot',
-      B: 'enderio:void_chassis'
+      B: 'minecraft:bucket',
+      C: 'enderio:basic_capacitor',
+      D: 'kubejs:void_frame',
+      E: 'enderio:dark_bimetal_gear',
+      F: 'enderio:frank_n_zombie'
       }
     )
 
@@ -294,12 +373,16 @@ ServerEvents.recipes(event => {
 
     event.shaped(
       'mm:soul_catcher', [
-      'AAA',
       'ABA',
-      'AAA'
+      'CDC',
+      'EFE'
       ], {
       A: 'thermal_extra:soul_infused_ingot',
-      B: 'enderio:void_chassis'
+      B: 'enderio:empty_soul_vial',
+      C: 'enderio:double_layer_capacitor',
+      D: 'kubejs:ensouled_frame',
+      E: 'thermal_extra:soul_infused_gear',
+      F: 'enderio:frank_n_zombie'
       }
     )
 

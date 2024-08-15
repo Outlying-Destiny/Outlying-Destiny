@@ -13,7 +13,7 @@ MMEvents.registerPorts(event => {
                 portname = "mm:energy"
                 break;
             case 4:
-                portname = "mm:create/kinetic"
+                portname = "pneumaticcraft/air"
                 break;
             default:
                 type = 1
@@ -40,6 +40,9 @@ MMEvents.registerPorts(event => {
                         c.capacity(config*100)
                         .maxReceive(config*2)
                         .maxExtract(config)
+                        break;
+                    case 4:
+                        c.volume(config)
                         break;
                     default:
                         break;

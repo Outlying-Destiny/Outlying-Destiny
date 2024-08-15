@@ -11,9 +11,9 @@ MMEvents.createProcesses(event => {
     mobs.forEach((mobs) => {
         event.create("mm:"+mobs.mob+"_soul_catcher_crafting")
             .structureId("mm:soul_catcher_"+mobs.mob)
-            .ticks(160)
+            .ticks(100)
             .input({type: "mm:input/consume", ingredient: { type: "mm:item", item: "enderio:empty_soul_vial", count: 1}})
-            .input({type: "mm:input/consume", ingredient: {type: "mm:energy", amount: 163840}})
+            .input({type: "mm:input/consume", ingredient: {type: "mm:energy", amount: 102400}})
             .output({type: "mm:output/simple", ingredient: {type: "mm:item", item: "kubejs:"+mobs.mob+"_soul_vial", count: 1}}) 
     })
 
@@ -58,12 +58,12 @@ MMEvents.createProcesses(event => {
             .output({type: "mm:output/simple", ingredient: {type: "mm:fluid", fluid: output, amount: outputcount}}
     )}
 
-    vat('enderio:dew_of_the_void', 1000, 'dew_of_the_void', 'enderio:nutrient_distillation', 4000, 'enderio:pulsating_powder', 'enderio:ender_crystal_powder', 150, 38400)
-    vat('enderio:vapor_of_levity', 1000, 'vapor_of_levity', 'enderio:dew_of_the_void', 1000, 'enderio:pulsating_powder', 'enderio:prescient_powder', 200, 51200)
-    vat('enderio:fire_water', 1000, 'fire_water', 'enderio:hootch', 1000, 'minecraft:blaze_powder', 'minecraft:redstone', 150, 25600)
-    vat('enderio:liquid_sunshine', 1000, 'liquid_sunshine', 'thermal_extra:refined_sunflower_oil', 1000, 'minecraft:glowstone', 'minecraft:sunflower', 200, 51200)
+    vat('enderio:dew_of_the_void', 1000, 'dew_of_the_void', 'enderio:nutrient_distillation', 4000, 'enderio:pulsating_powder', 'enderio:ender_crystal_powder', 90, 23040)
+    vat('enderio:vapor_of_levity', 1000, 'vapor_of_levity', 'enderio:dew_of_the_void', 1000, 'enderio:pulsating_powder', 'enderio:prescient_powder', 120, 30720)
+    vat('enderio:fire_water', 1000, 'fire_water', 'enderio:hootch', 1000, 'minecraft:blaze_powder', 'minecraft:redstone', 90, 23040)
+    vat('enderio:liquid_sunshine', 1000, 'liquid_sunshine', 'thermal_extra:refined_sunflower_oil', 1000, 'minecraft:glowstone', 'minecraft:sunflower', 120, 30720)
 
-    vattag('enderio:hootch', 400, 'hootch_1.6', 'minecraft:water', 1600, 'forge:seeds', 'minecraft:sugar', 100, 25600)
+    vattag('enderio:hootch', 400, 'hootch_1.6', 'minecraft:water', 1600, 'forge:seeds', 'minecraft:sugar', 60, 15360)
     const hootch = [
         {input: 'minecraft:poisonous_potato', mult: 8},
         {input: 'minecraft:potato', mult: 4},
@@ -72,7 +72,7 @@ MMEvents.createProcesses(event => {
     ]
 
     hootch.forEach((hootch) => {
-        vat('enderio:hootch', 250*hootch.mult, 'hootch_'+hootch.mult, 'minecraft:water', 1000*hootch.mult, hootch.input, 'minecraft:sugar', 100, 25600)
+        vat('enderio:hootch', 250*hootch.mult, 'hootch_'+hootch.mult, 'minecraft:water', 1000*hootch.mult, hootch.input, 'minecraft:sugar', 60, 15360)
     })
 
     const nutrient = [
@@ -82,9 +82,9 @@ MMEvents.createProcesses(event => {
     ]
 
     nutrient.forEach((nutrient) => {
-        vattag('enderio:nutrient_distillation', 250*nutrient.mult, 'nutrient_sugar_'+nutrient.mult, 'minecraft:water', 1000*nutrient.mult, nutrient.input, 'minecraft:sugar', 100, 25600)
-        vattag2('enderio:nutrient_distillation', 375*nutrient.mult, 'nutrient_mushrooms_'+nutrient.mult, 'minecraft:water', 1500*nutrient.mult, nutrient.input, 'forge:mushrooms', 100, 25600)
-        vattag('enderio:nutrient_distillation', 500*nutrient.mult, 'nutrient_fermented_spider_eye_'+nutrient.mult, 'minecraft:water', 2000*nutrient.mult, nutrient.input, 'minecraft:fermented_spider_eye', 100, 25600)
+        vattag('enderio:nutrient_distillation', 250*nutrient.mult, 'nutrient_sugar_'+nutrient.mult, 'minecraft:water', 1000*nutrient.mult, nutrient.input, 'minecraft:sugar', 60, 15360)
+        vattag2('enderio:nutrient_distillation', 375*nutrient.mult, 'nutrient_mushrooms_'+nutrient.mult, 'minecraft:water', 1500*nutrient.mult, nutrient.input, 'forge:mushrooms', 60, 15360)
+        vattag('enderio:nutrient_distillation', 500*nutrient.mult, 'nutrient_fermented_spider_eye_'+nutrient.mult, 'minecraft:water', 2000*nutrient.mult, nutrient.input, 'minecraft:fermented_spider_eye', 60, 15360)
     })
     
     const cloudseed = [
@@ -94,8 +94,8 @@ MMEvents.createProcesses(event => {
     ]
 
     cloudseed.forEach((cloudseed) => {
-        vat('enderio:cloud_seed', 500*cloudseed.mult, 'cloud_seed_snow_block_'+cloudseed.mult, 'minecraft:water', 500*cloudseed.mult, cloudseed.input, 'minecraft:snow_block', 100, 25600)
-        vat('enderio:cloud_seed', 1000*cloudseed.mult, 'cloud_seed_packed_ice_'+cloudseed.mult, 'minecraft:water', 1000*cloudseed.mult, cloudseed.input, 'minecraft:packed_ice', 100, 25600)
+        vat('enderio:cloud_seed', 500*cloudseed.mult, 'cloud_seed_snow_block_'+cloudseed.mult, 'minecraft:water', 500*cloudseed.mult, cloudseed.input, 'minecraft:snow_block', 60, 15360)
+        vat('enderio:cloud_seed', 1000*cloudseed.mult, 'cloud_seed_packed_ice_'+cloudseed.mult, 'minecraft:water', 1000*cloudseed.mult, cloudseed.input, 'minecraft:packed_ice', 60, 15360)
     })
 
     const ccs = [
@@ -106,6 +106,6 @@ MMEvents.createProcesses(event => {
     ]
 
     ccs.forEach((ccs) => {
-        vat1('enderio:cloud_seed_concentrated', 1000*ccs.mult, 'cloud_seed_snow_block_'+ccs.mult, 'enderio:cloud_seed', 500*ccs.mult, ccs.input, 100, 25600)
+        vat('enderio:cloud_seed_concentrated', 1000*ccs.mult, 'cloud_seed_snow_block_'+ccs.mult, 'enderio:cloud_seed', 500*ccs.mult, ccs.input, 'enderio:weather_crystal', 60, 15360)
     })
 })

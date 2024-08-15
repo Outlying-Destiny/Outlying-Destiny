@@ -13,5 +13,6 @@
   "forge:rubber": "null",
   "forge:ingots/platinum": "chemlib:platinum_ingot",
   "forge:ingots/graphite": "bigreactors:graphite_ingot",
-  "forge:gems/peridot": "projectred_core:peridot"
+  "forge:gems/peridot": "projectred_core:peridot",
+  "forge:ingots/aluminum": "chemlib:aluminum_ingot"
 }

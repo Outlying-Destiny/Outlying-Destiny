@@ -11,4 +11,7 @@ ServerEvents.tags('item', event => {
     //Enderman Head
     event.add('forge:heads', 'enderio:enderman_head')
 
+    //Dark Bimetal Gear
+    event.removeAllTagsFrom('enderio:dark_bimetal_gear')
+
 })

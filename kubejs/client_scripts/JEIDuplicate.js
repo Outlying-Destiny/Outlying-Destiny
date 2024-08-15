@@ -4,7 +4,10 @@ JEIEvents.removeCategories(event => {
     console.log(event.categoryIds) //log a list of all category ids to logs/kubejs/client.txt
     event.remove('jeresources:villager')
     event.remove('mekanism:energized_smelter')
-    event.remove('industrialforegoing:fluid_sieving_machine')
+    event.remove('industrialforegoing:fermenter')
+    event.remove('industrialforegoing:ore_sieve')
+    event.remove('industrialforegoing:ore_washer')
+    
 
 })
 
@@ -52,4 +55,7 @@ JEIEvents.addItems(event => {
 
     //Crafting Station
     event.add('craftingstation:crafting_station')
+
+    //Hidden? Augments
+    event.add(['thermal:potion_amplifier_augment', 'thermal:potion_duration_augment'])
 })

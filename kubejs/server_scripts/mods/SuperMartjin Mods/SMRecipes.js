@@ -1,5 +1,20 @@
 ServerEvents.recipes(event => {
 
+    //Function Box
+    function box(output, input1, input2, input3, input4){
+        event.shaped(output, [
+            'ABA',
+            'CDC',
+            'ABA'
+            ], {
+            A: input1,
+            B: input2,
+            C: input3,
+            D: input4
+            }
+        )
+      }
+
     //Simple Magnets
     event.remove({id:/simplemagnets:.+/})
     event.shaped(
@@ -47,7 +62,7 @@ ServerEvents.recipes(event => {
         ], {
         A: 'extendedcrafting:luminessence',
         B: 'enderio:energetic_alloy_ingot',
-        C: 'thermal:steel_ingot',
+        C: 'extendedcrafting:black_iron_ingot',
         D: 'simplemagnets:basic_demagnetization_coil'
         }
     )
@@ -67,8 +82,19 @@ ServerEvents.recipes(event => {
     )
 
     //Entangled
-
-
+    event.remove({id:/entangled:/})
+    box('2x entangled:block', 'minecraft:obsidian', 'extendedcrafting:ender_ingot', 'extendedcrafting:ender_ingot', 'enderio:sentient_ender')
+    event.shaped(
+        'entangled:item', [
+        ' AB',
+        ' CA',
+        'C  '
+        ], {
+        A: 'extendedcrafting:ender_ingot',
+        B: 'enderio:ender_resonator',
+        C: '#forge:rods/wooden'
+        }
+    )
     //Tesseracts
 
 

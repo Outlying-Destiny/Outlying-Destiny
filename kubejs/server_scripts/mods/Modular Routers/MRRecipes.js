@@ -131,7 +131,8 @@ ServerEvents.recipes(event => {
         }
     )
 
-
-
+    //Placer Moduler
+    event.remove({id:'modularrouters:placer_module'})
+    event.shapeless('2x modularrouters:placer_module', ['modularrouters:blank_module', 'industrialforegoing:block_placer', 'industrialforegoing:fluid_placer'])
 
 })

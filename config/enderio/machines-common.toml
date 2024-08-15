@@ -34,7 +34,7 @@
 		capacity = 100000
 		#The base energy consumption in uI/t.
 		#Range: > 1
-		usage = 20
+		usage = 40
 
 	[energy.sagMill]
 		#The base energy capacity in uI.
@@ -100,11 +100,11 @@
 	[energy.capacitor_bank_capacity]
 		#Capacity for capacitor banks
 		#Range: > 1
-		basic = 500000
+		basic = 2000000
 		#Range: > 1
-		advanced = 2000000
+		advanced = 8000000
 		#Range: > 1
-		vibrant = 8000000
+		vibrant = 32000000
 
 	[energy.wiredCharger]
 		#The base energy capacity in uI.
@@ -146,11 +146,11 @@
 	spawn_amount = 4
 	#The amount of entities that will turn off powered spawner if in range.
 	#Range: > 0
-	maxentities = 2
+	maxentities = 40
 	#The way a powered spawner spawns an entity. Possible options: 'ENTITYPE' Spawns the same entity types as the soul vial. 'COPY' Spawns an exact copy of the mob in the soul vial
 	#Allowed Values: ENTITYTYPE, COPY
 	"Spawn Type" = "ENTITYTYPE"
 	#The maximum amount of spawners before the spawners suffers a loss of efficiency
 	#Range: > 0
-	maxspawners = 10
+	maxspawners = 200
 

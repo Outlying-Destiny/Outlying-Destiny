@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
       )
     }
 
-    //Function Machine
+    //Function Machines
     function machine(output, input1, input2, input3){
       event.remove({output:'thermal:machine_'+output})
       event.shaped('thermal:machine_'+output, [
@@ -28,6 +28,22 @@ ServerEvents.recipes(event => {
           C: 'thermal:machine_frame',
           D: input3,
           E: 'thermal:rf_coil'
+          }
+      )
+    }
+
+    function device(output, input1, input2, input3){
+      event.remove({output:'thermal:device_'+output})
+      event.shaped('thermal:device_'+output, [
+          'ABA',
+          'CDC',
+          'AEA'
+          ], {
+          A: input1,
+          B: input2,
+          C: input3,
+          D: 'thermal:machine_frame',
+          E: 'thermal:redstone_servo'
           }
       )
     }
@@ -151,6 +167,17 @@ ServerEvents.recipes(event => {
     event.remove({id:'thermal:machine_frame'})
     box('thermal:machine_frame', 'pneumaticcraft:plastic', 'thermal:invar_gear', 'powah:steel_energized', 'mekanism:steel_casing')
     
+    //Rubber
+    event.remove({id:'thermal:rubber_from_vine'})
+    event.remove({id:'thermal:rubber_from_dandelion'})
+
+    //Energy / Fluid Cell
+    event.remove({id:/thermal:.+_cell_frame/})
+    box('thermal:fluid_cell_frame', 'enderio:copper_alloy_ingot', 'thermal:bronze_gear', '#c:glass_blocks', 'thermal:machine_frame')
+    box('thermal:energy_cell_frame', 'thermal:lead_ingot', 'thermal:electrum_gear', '#c:glass_blocks', 'thermal:machine_frame')
+    event.replaceInput({ output:'thermal:fluid_cell'}, 'minecraft:iron_ingot', 'chemlib:platinum_ingot')
+    event.replaceInput({ output:'thermal:energy_cell'}, 'minecraft:iron_ingot', 'enderio:energetic_alloy_ingot')
+
     //Nickel Ore into Platinum
     event.remove({id:'thermal:machines/pulverizer/pulverizer_nickel_ore'})
     event.remove({id:'thermal:machines/smelter/smelter_nickel_ore'})
@@ -205,22 +232,58 @@ ServerEvents.recipes(event => {
       A:'thermal:iron_plate'
     })
 
+    //Florb
+    event.remove({id:'thermal:florb_8'})
+    event.shapeless('8x thermal:florb', ['#forge:sawdust', '#forge:slag', 'thermal:rosin'])
+
     //Components
     event.remove({id:'thermal:augments/upgrade_augment_1'})
+    event.remove({id:'thermal:augments/upgrade_augment_2'})
+    event.remove({id:'thermal:augments/upgrade_augment_3'})
     box('thermal:upgrade_augment_1', 'thermal:invar_plate', 'thermal:obsidian_glass', 'enderio:redstone_alloy_ingot', 'thermal:lumium_gear')
+    box('thermal:upgrade_augment_2', 'extendedcrafting:black_iron_slate', 'thermal:enderium_glass', 'thermal:enderium_gear', 'thermal:upgrade_augment_1')
+    box('thermal:upgrade_augment_3', 'thermal_extra:dragonsteel_plate', 'thermal_extra:shellite_glass', 'thermal_extra:soul_infused_gear', 'thermal:upgrade_augment_2') 
 
-    //Upgrades
+    //Augments
     event.remove({id:'thermal:augments/machine_speed_augment'})
     event.shaped('thermal:machine_speed_augment', [
       ' A ',
       'BCB',
       ' A '
       ], {
-      A:'thermal:signalum_gear',
-      B:'thermal:electrum_plate',
+      A:'thermal:electrum_gear',
+      B:'thermal:signalum_plate',
       C:'thermal:rf_coil'
     })
 
+    //Twinite Augments
+    const augment = [
+      {name:'fluid_tank', number:'_3'},{name:'potion_amplifier', number:'_5'},{name:'potion_duration', number:'_5'},{name:'rf_coil', number:'_3'},{name:'rf_coil_storage', number:'_3'},{name:'rf_coil_xfer', number:'_3'},{name:'machine_speed', number:'_4'},{name:'machine_efficiency', number:'_4'},{name:'machine_output', number:'_3'},{name:'machine_catalyst', number:'_3'}
+    ]
+
+    augment.forEach((augment) => {
+      event.shaped('thermal_extra:'+augment.name+'_augment'+augment.number, [
+        ' A ',
+        'BCB',
+        ' A '
+        ], {
+        A:'thermal:signalum_gear',
+        B:'thermal_extra:twinite_plate',
+        C:'thermal:'+augment.name+'_augment'
+      })
+    })
+
+    //Devices
+    device('tree_extractor', '#minecraft:planks', 'minecraft:piston', 'thermal:iron_gear')
+    device('fisher', '#minecraft:planks', 'minecraft:fishing_rod', 'thermal:silver_gear')
+    
     //Machines
     machine('smelter', 'minecraft:blast_furnace', 'immersiveengineering:coil_lv', 'thermal:steel_gear')
+    machine('crucible', 'enderio:weather_crystal', 'minecraft:magma_block', 'thermal:signalum_gear')
+    machine('chiller', 'enderio:weather_crystal', 'minecraft:packed_ice', 'thermal:enderium_gear')
+    machine('bottler', 'enderio:prescient_crystal', 'minecraft:bucket', 'thermal:lumium_gear')
+    machine('centrifuge', 'enderio:prescient_crystal', 'enderio:end_steel_ingot', 'thermal:constantan_gear')
+    machine('refinery', 'enderio:frank_n_zombie', 'extendedcrafting:black_iron_ingot', 'thermal:steel_gear')
+    machine('pyrolyzer', 'minecraft:lava_bucket', 'powah:crystal_blazing', 'thermal:netherite_gear')
+    
 })

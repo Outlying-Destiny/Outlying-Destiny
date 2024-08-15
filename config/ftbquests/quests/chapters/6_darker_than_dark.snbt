@@ -18,8 +18,8 @@
 				item: "enderio:ensouled_chassis"
 				type: "item"
 			}]
-			x: -9.75d
-			y: -4.25d
+			x: -8.75d
+			y: -4.375d
 		}
 		{
 			dependencies: ["1C1B6A081BDE2FB8"]
@@ -29,8 +29,8 @@
 				item: "enderio:soul_binder"
 				type: "item"
 			}]
-			x: -5.75d
-			y: -4.25d
+			x: -7.75d
+			y: -2.75d
 		}
 		{
 			dependencies: ["432BCDC8C90BD558"]
@@ -41,10 +41,13 @@
 				type: "item"
 			}]
 			x: -8.25d
-			y: -4.25d
+			y: -3.5d
 		}
 		{
-			dependencies: ["5F5B3D5FE5AF3D00"]
+			dependencies: [
+				"5F5B3D5FE5AF3D00"
+				"2585082DAD87DC3C"
+			]
 			id: "2A9B8E18FC745B11"
 			tasks: [
 				{
@@ -58,58 +61,52 @@
 					type: "item"
 				}
 			]
-			x: 0.75d
-			y: -0.75d
+			x: -4.25d
+			y: -2.0d
 		}
 		{
+			dependencies: ["4CD3AA3E83C316B7"]
 			id: "4D79DD9269D62977"
 			tasks: [{
 				id: "64A33479C40C5F83"
 				item: "thermal:machine_centrifuge"
 				type: "item"
 			}]
-			x: -2.25d
-			y: -6.0d
+			x: -6.25d
+			y: -3.5d
 		}
 		{
-			id: "01833784782A8FEB"
-			tasks: [{
-				id: "0EA99367E6434894"
-				item: "thermal:machine_pyrolyzer"
-				type: "item"
-			}]
-			x: -2.25d
-			y: -7.25d
-		}
-		{
+			dependencies: ["11943E63F2FF8684"]
 			id: "24DAF54378E7AF38"
 			tasks: [{
 				id: "09DD8A6D910AE965"
 				item: "thermal:machine_crucible"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -3.5d
+			x: -6.75d
+			y: -1.25d
 		}
 		{
+			dependencies: ["11943E63F2FF8684"]
 			id: "7F557FA2D89527EF"
 			tasks: [{
 				id: "0A316132E4D2F72C"
 				item: "thermal:machine_bottler"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -3.5d
+			x: -6.25d
+			y: -2.0d
 		}
 		{
+			dependencies: ["22133B3C6FF9C7F3"]
 			id: "7B18A7C4A3A3FAE3"
 			tasks: [{
 				id: "2C8DAB9FC5FF2186"
 				item: "thermal:machine_refinery"
 				type: "item"
 			}]
-			x: 3.25d
-			y: -3.75d
+			x: -4.25d
+			y: -3.5d
 		}
 		{
 			dependencies: ["7B18A7C4A3A3FAE3"]
@@ -119,8 +116,8 @@
 				item: "thermal:refined_fuel_bucket"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -3.75d
+			x: -4.75d
+			y: -4.25d
 		}
 		{
 			dependencies: [
@@ -133,34 +130,20 @@
 				item: "thermal_extra:soul_infused_ingot"
 				type: "item"
 			}]
-			x: 5.75d
-			y: -3.75d
+			x: -3.75d
+			y: -4.25d
 		}
 		{
-			dependencies: ["7685370285CC7029"]
+			dependencies: ["3C599A2D8429EAC2"]
 			id: "6EC3843A34FFAA3F"
+			size: 1.0d
 			tasks: [{
 				id: "0971F526A8DBDC54"
 				item: "powah:crystal_blazing"
 				type: "item"
 			}]
-			x: 5.75d
-			y: -2.5d
-		}
-		{
-			dependencies: ["7748DD4DEDD2956C"]
-			disable_toast: true
-			hide_dependency_lines: true
-			id: "7685370285CC7029"
-			size: 1.75d
-			tasks: [{
-				dimension: "undergarden:undergarden"
-				id: "03EC55F5CD2D39B0"
-				type: "dimension"
-			}]
-			title: "Undergarden"
-			x: 5.625d
-			y: -1.0625d
+			x: -3.25d
+			y: -3.5d
 		}
 		{
 			dependencies: ["22133B3C6FF9C7F3"]
@@ -170,14 +153,14 @@
 				item: "extendedcrafting:black_iron_ingot"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -2.0d
+			x: -4.75d
+			y: -2.75d
 		}
 		{
 			dependencies: [
 				"299364C146A285AB"
 				"7F557FA2D89527EF"
-				"16F594AC166F1078"
+				"0B0410EFB86FACD8"
 			]
 			id: "5F5B3D5FE5AF3D00"
 			tasks: [{
@@ -185,7 +168,7 @@
 				item: "extendedcrafting:ender_ingot"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -5.25d
 			y: -2.0d
 		}
 		{
@@ -196,8 +179,8 @@
 				item: "extendedcrafting:enhanced_ender_ingot"
 				type: "item"
 			}]
-			x: -0.75d
-			y: -0.75d
+			x: -4.75d
+			y: -1.25d
 		}
 		{
 			dependencies: ["4D79DD9269D62977"]
@@ -207,8 +190,8 @@
 				item: "thermal:tar"
 				type: "item"
 			}]
-			x: -2.25d
-			y: -4.75d
+			x: -5.25d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -221,13 +204,13 @@
 				item: "extendedcrafting:luminessence"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -3.5d
+			x: -5.75d
+			y: -1.25d
 		}
 		{
 			dependencies: [
-				"0610F51F372DC7C0"
-				"299364C146A285AB"
+				"1DEBC8EE4D9FF4E6"
+				"55C2A1B66BFA050C"
 			]
 			id: "4B0C8DCB02DD44D3"
 			tasks: [
@@ -243,21 +226,11 @@
 					type: "item"
 				}
 			]
-			x: -2.25d
-			y: -0.75d
+			x: -4.25d
+			y: -0.5d
 		}
 		{
-			dependencies: ["0B0410EFB86FACD8"]
-			id: "16F594AC166F1078"
-			tasks: [{
-				id: "135D5496666BD8FE"
-				item: "enderio:dew_of_the_void_bucket"
-				type: "item"
-			}]
-			x: 1.25d
-			y: -2.0d
-		}
-		{
+			dependencies: ["4CD3AA3E83C316B7"]
 			icon: "mm:the_vat"
 			id: "0B0410EFB86FACD8"
 			tasks: [
@@ -294,8 +267,8 @@
 					type: "item"
 				}
 			]
-			x: 1.25d
-			y: -3.25d
+			x: -5.75d
+			y: -2.75d
 		}
 		{
 			dependencies: ["11943E63F2FF8684"]
@@ -305,8 +278,8 @@
 				item: "enderio:enchanter"
 				type: "item"
 			}]
-			x: -6.25d
-			y: -3.25d
+			x: -7.25d
+			y: -0.5d
 		}
 		{
 			dependencies: ["438010D46E252B32"]
@@ -316,8 +289,8 @@
 				item: "laserio:logic_chip"
 				type: "item"
 			}]
-			x: -8.25d
-			y: -6.0d
+			x: -9.75d
+			y: -2.75d
 		}
 		{
 			dependencies: ["2B5724BE9F43CF8E"]
@@ -345,8 +318,8 @@
 				}
 			]
 			title: "T1 Mob Components"
-			x: -7.0d
-			y: -4.25d
+			x: -8.75d
+			y: -2.75d
 		}
 		{
 			dependencies: ["6AFDB0F2AD9E81BC"]
@@ -380,8 +353,8 @@
 				title: "Laser Cards"
 				type: "item"
 			}]
-			x: -8.5d
-			y: -7.0d
+			x: -10.75d
+			y: -2.75d
 		}
 		{
 			dependencies: ["6AFDB0F2AD9E81BC"]
@@ -413,8 +386,8 @@
 				}
 			]
 			title: "Laser Tools"
-			x: -9.0d
-			y: -5.25d
+			x: -9.25d
+			y: -3.5d
 		}
 		{
 			dependencies: ["6AFDB0F2AD9E81BC"]
@@ -553,8 +526,8 @@
 				}
 			]
 			title: "Laser Filters"
-			x: -7.5d
-			y: -6.75d
+			x: -10.25d
+			y: -2.0d
 		}
 		{
 			dependencies: ["6AFDB0F2AD9E81BC"]
@@ -573,8 +546,8 @@
 				}
 			]
 			title: "Laser Transportation"
-			x: -9.25d
-			y: -6.25d
+			x: -10.25d
+			y: -3.5d
 		}
 		{
 			dependencies: ["438010D46E252B32"]
@@ -584,8 +557,8 @@
 				item: "modularrouters:modular_router"
 				type: "item"
 			}]
-			x: -5.75d
-			y: -6.0d
+			x: -8.75d
+			y: -1.25d
 		}
 		{
 			dependencies: [
@@ -610,8 +583,8 @@
 					type: "item"
 				}
 			]
-			x: -1.75d
-			y: 0.75d
+			x: -5.75d
+			y: -4.25d
 		}
 		{
 			dependencies: ["5F5B3D5FE5AF3D00"]
@@ -622,8 +595,8 @@
 				item: "itemcollectors:advanced_collector"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 0.75d
+			x: -6.75d
+			y: -4.25d
 		}
 		{
 			dependencies: ["3FE9ACEC0D804E39"]
@@ -654,8 +627,8 @@
 				}
 			]
 			title: "Modular Routers Base Upgrades"
-			x: -6.5d
-			y: -6.75d
+			x: -9.75d
+			y: -1.25d
 		}
 		{
 			dependencies: ["3FE9ACEC0D804E39"]
@@ -673,8 +646,8 @@
 				}
 			]
 			title: "Liquid and Energetic Routers!"
-			x: -5.0d
-			y: -5.25d
+			x: -7.75d
+			y: -1.25d
 		}
 		{
 			dependencies: ["3FE9ACEC0D804E39"]
@@ -754,8 +727,8 @@
 				}
 			]
 			title: "Magic Transportation?"
-			x: -4.75d
-			y: -6.25d
+			x: -9.25d
+			y: -0.5d
 		}
 		{
 			dependencies: ["1C1B6A081BDE2FB8"]
@@ -765,8 +738,8 @@
 				title: "Transportation?"
 				type: "checkmark"
 			}]
-			x: -7.0d
-			y: -5.5d
+			x: -9.25d
+			y: -2.0d
 		}
 		{
 			dependencies: ["3FE9ACEC0D804E39"]
@@ -783,8 +756,8 @@
 					type: "item"
 				}
 			]
-			x: -5.5d
-			y: -7.0d
+			x: -8.25d
+			y: -0.5d
 		}
 		{
 			dependencies: ["74037ADCBA1AEF64"]
@@ -798,11 +771,12 @@
 				{
 					id: "37F07FDC0E7738A8"
 					item: "enderio:sentient_ender"
+					optional_task: true
 					type: "item"
 				}
 			]
-			x: -4.5d
-			y: -4.25d
+			x: -6.75d
+			y: -2.75d
 		}
 		{
 			dependencies: ["74037ADCBA1AEF64"]
@@ -824,18 +798,161 @@
 					type: "item"
 				}
 			]
-			x: -5.25d
-			y: -3.25d
+			x: -7.25d
+			y: -2.0d
 		}
 		{
+			dependencies: ["11943E63F2FF8684"]
 			id: "7CAFF91379D3D603"
 			tasks: [{
 				id: "1B635D68006FC2B0"
 				item: "thermal:machine_chiller"
 				type: "item"
 			}]
-			x: 0.25d
-			y: -7.25d
+			x: -6.25d
+			y: -0.5d
+		}
+		{
+			dependencies: ["299364C146A285AB"]
+			id: "2FC46E153C739195"
+			tasks: [{
+				id: "655C7BA4BC75FEEB"
+				item: "extendedcrafting:frame"
+				type: "item"
+			}]
+			x: -3.75d
+			y: -2.75d
+		}
+		{
+			dependencies: ["11943E63F2FF8684"]
+			id: "61BB7D9CF57C67EE"
+			tasks: [{
+				id: "5C9F505EF44ACC06"
+				item: "enderio:xp_obelisk"
+				type: "item"
+			}]
+			x: -8.25d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4CD3AA3E83C316B7"]
+			id: "471198E6EA13C581"
+			tasks: [
+				{
+					id: "0A73A6F9738195AB"
+					item: {
+						Count: 1
+						id: "entangled:block"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "29D82F3FEC83F542"
+					item: "entangled:item"
+					type: "item"
+				}
+			]
+			x: -7.25d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"0610F51F372DC7C0"
+				"1B993EA365BEFD7F"
+			]
+			id: "1DEBC8EE4D9FF4E6"
+			tasks: [{
+				id: "63B0CC003011E063"
+				item: "extendedcrafting:enhanced_ender_component"
+				type: "item"
+			}]
+			x: -5.25d
+			y: -0.5d
+		}
+		{
+			dependencies: ["299364C146A285AB"]
+			hide_dependency_lines: true
+			id: "408E60EF04D7C833"
+			tasks: [{
+				id: "662F97B5C0397AA9"
+				item: "thermal:upgrade_augment_2"
+				type: "item"
+			}]
+			x: -7.75d
+			y: -4.25d
+		}
+		{
+			dependencies: ["6EC3843A34FFAA3F"]
+			id: "3B083E4C2A751A7A"
+			tasks: [{
+				id: "237D319004E7E3AE"
+				item: "thermal:machine_pyrolyzer"
+				type: "item"
+			}]
+			x: -2.75d
+			y: -2.75d
+		}
+		{
+			dependencies: ["6AFDB0F2AD9E81BC"]
+			id: "59C4675E514AA30D"
+			tasks: [
+				{
+					id: "36796B7D03C93C24"
+					item: "laserio:overclocker_card"
+					type: "item"
+				}
+				{
+					id: "3B806906F9EE47D4"
+					item: "laserio:overclocker_node"
+					type: "item"
+				}
+			]
+			x: -9.75d
+			y: -4.25d
+		}
+		{
+			dependencies: [
+				"4AB5F799E3C6C135"
+				"5BC624A4BBCF1D2F"
+			]
+			disable_toast: true
+			id: "2585082DAD87DC3C"
+			tasks: [{
+				id: "74FDF1F96C99D583"
+				item: {
+					Count: 1
+					id: "kubejs:ender_core"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.25d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1B993EA365BEFD7F"]
+			id: "04677AA3FD8F9EE3"
+			tasks: [{
+				id: "484EE4EACAA7020A"
+				item: "functionalstorage:gold_upgrade"
+				type: "item"
+			}]
+			x: -5.75d
+			y: 0.25d
+		}
+		{
+			dependencies: ["2FC46E153C739195"]
+			id: "55C2A1B66BFA050C"
+			tasks: [{
+				id: "7B4000A8D0C56C80"
+				item: "extendedcrafting:basic_table"
+				type: "item"
+			}]
+			x: -3.75d
+			y: -1.25d
 		}
 	]
 	title: "6. Darker than Dark"

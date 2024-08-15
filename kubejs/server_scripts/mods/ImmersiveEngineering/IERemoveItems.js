@@ -11,9 +11,13 @@ ServerEvents.recipes(event => {
     //Magnet
     event.remove({id:'immersiveengineering:crafting/toolupgrade_powerpack_magnet'})
 
+    //Grinding Disk
+    event.remove({id:'immersiveengineering:bottling/grindingdisk'})
+
     //Aluminium
     event.remove({output:/immersiveengineering.+alu.+/})
     event.remove({id:'industrialforegoing:laser_drill_ore/raw_materials/aluminum'})
+    event.remove({id:'immersiveengineering:crafting/metal_ladder_alu'})
     event.replaceInput(
         {output:/immersiveengineering:.+/},
         '#forge:ingots/aluminum',

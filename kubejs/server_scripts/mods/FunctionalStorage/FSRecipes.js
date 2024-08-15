@@ -1,5 +1,21 @@
 ServerEvents.recipes(event => {
 
+    //Function Storage Upgrades
+    function upgrade(output, input1, input2, input3){
+        event.remove({id:output})
+        event.shaped(
+            '4x '+output, [
+            'ABA',
+            'BCB',
+            'ABA'
+            ], {
+            A: input1,
+            B: input2,
+            C: input3
+            }
+        )
+    }
+
     //Compacting Drawers
     event.replaceInput(
         { output: ['functionalstorage:compacting_drawer', 'functionalstorage:simple_compacting_drawer', 'functionalstorage:compacting_framed_drawer', 'functionalstorage:framed_simple_compacting_drawer']},
@@ -59,18 +75,8 @@ ServerEvents.recipes(event => {
         }
     )
     
-    //Energized Steel Upgrade
-    event.remove({ output: 'functionalstorage:copper_upgrade' })
-    event.shaped(
-        '4x functionalstorage:copper_upgrade', [
-        'ACA',
-        'CBC',
-        'ACA'
-        ], {
-        A: 'powah:steel_energized',
-        B: 'powah:energized_steel_block',
-        C: '#functionalstorage:drawer'
-        }
-    )
+    //Storage Upgrades
+    upgrade('functionalstorage:copper_upgrade', 'powah:steel_energized', '#functionalstorage:drawer', 'powah:steel_energized_block')
+    upgrade('functionalstorage:gold_upgrade', 'extendedcrafting:luminessence', 'functionalstorage:copper_upgrade', 'extendedcrafting:luminessence_block')
 
 })

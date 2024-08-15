@@ -1,6 +1,20 @@
 ServerEvents.recipes(event => {
 
-    //Function cross
+    //Functions
+    function box(output, input1, input2, input3){
+        event.shaped(
+            output, [
+            'ABA',
+            'BCB',
+            'ABA'
+            ], {
+            A: input1,
+            B: input2,
+            C: input3
+            }
+        )
+    }
+
     function cross(output, input1, input2){
         event.shaped(
             output, [
@@ -28,8 +42,8 @@ ServerEvents.recipes(event => {
     cross('mm:base_small_fluid_port_output', 'ae2:capacity_card', 'mm:base_tiny_fluid_port_output')
 
     //Energy Port
-    cross('mm:base_tiny_energy_port_input', 'enderio:basic_capacitor', 'kubejs:machinarium_casing')
-    cross('mm:base_small_energy_port_input', 'enderio:double_layer_capacitor', 'mm:base_tiny_energy_port_input')
+    box('mm:base_tiny_energy_port_input', 'thermal:signalum_ingot', 'enderio:basic_capacitor', 'kubejs:machinarium_casing')
+    box('mm:base_small_energy_port_input', 'kubejs:empowered_energized_steel', 'enderio:double_layer_capacitor', 'mm:base_tiny_energy_port_input')
 
     
 })

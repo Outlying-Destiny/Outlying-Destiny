@@ -14,9 +14,9 @@ ItemEvents.modification(event => {
     //Durability
     event.modify('botania:manasteel_shears', item => {
         item.maxDamage = 1428
-      })
+    })
     event.modify('botania:elementium_shears', item => {
         item.maxDamage = 1904
-      })
+    })
 
 })

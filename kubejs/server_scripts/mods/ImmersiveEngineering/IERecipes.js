@@ -19,6 +19,9 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'immersiveengineering:coal_coke' })
     event.remove({ input: 'immersiveengineering:coal_coke' })
 
+    //Plant Oil Thermal Compat
+    event.remove({id:'thermal:compat/immersiveengineering/press_ie_hemp_to_plantoil'})
+
     //Metal Press Mold
     event.remove({id:/immersiveengineering:blueprint.+mold.+/})
     function mold(output) {

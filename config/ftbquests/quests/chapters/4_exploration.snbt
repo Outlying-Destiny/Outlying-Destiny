@@ -436,7 +436,7 @@
 				type: "dimension"
 			}]
 			title: "Undergarden"
-			x: 2.5d
+			x: 1.5625d
 			y: -2.8125d
 		}
 		{
@@ -490,6 +490,61 @@
 			}]
 			x: -5.0d
 			y: -4.0625d
+		}
+		{
+			dependencies: ["3C599A2D8429EAC2"]
+			id: "5AEDAD35B03A84E4"
+			size: 1.5d
+			tasks: [{
+				id: "357A4D46E23F16A6"
+				item: "powah:crystal_blazing"
+				type: "item"
+			}]
+			x: 1.5625d
+			y: -1.125d
+		}
+		{
+			dependencies: ["3C599A2D8429EAC2"]
+			id: "5BC624A4BBCF1D2F"
+			tasks: [{
+				id: "68E2D059B0539870"
+				item: "undergarden:forgotten_nugget"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.125d
+		}
+		{
+			dependencies: ["3C599A2D8429EAC2"]
+			id: "4AB5F799E3C6C135"
+			tasks: [{
+				id: "06CA4F70D23B5CD8"
+				item: "undergarden:virulent_mix_bucket"
+				type: "item"
+			}]
+			x: 3.125d
+			y: -1.125d
+		}
+		{
+			dependencies: [
+				"4AB5F799E3C6C135"
+				"5BC624A4BBCF1D2F"
+			]
+			id: "15B426B7F38F91FF"
+			size: 1.5d
+			tasks: [{
+				id: "0E28706B359A6852"
+				item: {
+					Count: 1
+					id: "kubejs:ender_core"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5625d
+			y: 0.5d
 		}
 	]
 	title: "4. Exploration"
