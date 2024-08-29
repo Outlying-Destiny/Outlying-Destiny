@@ -132,11 +132,16 @@ ServerEvents.recipes(event => {
         'thermal:constantan_ingot'         
     )
 
-    //Metal Press Mold Blueprint
+    //Blueprints
     event.replaceInput(
         {output:'immersiveengineering:blueprint'},
         '#forge:plates/iron',
         'immersiveengineering:hammer'
+    )
+    event.replaceInput(
+        {output:'immersiveengineering:blueprint'},
+        '#forge:ingots/aluminum',
+        'thermal:invar_ingot'
     )
 
     //Graphite Electrode

@@ -80,6 +80,23 @@ ServerEvents.recipes(event => {
     event.remove({output:'powah:dielectric_paste'})
     mattoblo('kubejs:dielectric_paste_block', '9x powah:dielectric_paste')
 
+    //Soul Binding Items
+    function soulbind(output, input, entity){
+      event.custom({
+        "type": "enderio:soul_binding",
+        "energy": 51200,
+        "entity_type": entity,
+        "exp": 4,
+        "input": {
+          "item": input
+        },
+        "output": output
+      })
+    }
+    soulbind('powah:player_aerial_pearl', 'powah:aerial_pearl', 'minecraft:zombie')
+    soulbind('powah:binding_card', 'powah:blank_card', 'minecraft:enderman')
+    event.remove({id:'powah:crafting/binding_card'})
+
     //From using machines to using blocks (I'm horrible at coding lmfao)
     const tier = [{tier:'basic', material:'thermal:steel_ingot', materialblock:'kubejs:dielectric_paste_block'},{tier:'hardened', material:'powah:steel_energized', materialblock:'powah:energized_steel_block'},{tier:'blazing', material:'powah:crystal_blazing', materialblock:'powah:blazing_crystal_block'},{tier:'niotic', material:'powah:crystal_niotic', materialblock:'powah:niotic_crystal_block'},{tier:'spirited', material:'powah:crystal_spirited', materialblock:'powah:spirited_crystal_block'},{tier:'nitro', material:'powah:crystal_nitro', materialblock:'powah:nitro_crystal_block'},]
 

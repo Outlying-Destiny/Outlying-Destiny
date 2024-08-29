@@ -595,8 +595,8 @@
 				item: "itemcollectors:advanced_collector"
 				type: "item"
 			}]
-			x: -6.75d
-			y: -4.25d
+			x: -7.25d
+			y: -5.0d
 		}
 		{
 			dependencies: ["3FE9ACEC0D804E39"]
@@ -953,6 +953,96 @@
 			}]
 			x: -3.75d
 			y: -1.25d
+		}
+		{
+			dependencies: ["4CD3AA3E83C316B7"]
+			id: "4F4B62B17585F014"
+			tasks: [
+				{
+					id: "0BFDAF3EF8C7E9E2"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "powah:player_transmitter_starter"
+									tag: {
+										powah_tile_data: {
+											energy_stored_main_energy: 33000L
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "powah:player_transmitter_basic"
+									tag: {
+										powah_tile_data: {
+											energy_stored_main_energy: 120000L
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "powah:player_transmitter_hardened"
+									tag: {
+										powah_tile_data: {
+											energy_stored_main_energy: 270000L
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "powah:player_transmitter_blazing"
+									tag: {
+										powah_tile_data: {
+											energy_stored_main_energy: 920000L
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "powah:player_transmitter_niotic"
+									tag: {
+										powah_tile_data: {
+											energy_stored_main_energy: 1900000L
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "powah:player_transmitter_spirited"
+									tag: {
+										powah_tile_data: {
+											energy_stored_main_energy: 4800000L
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "powah:player_transmitter_nitro"
+									tag: {
+										powah_tile_data: {
+											energy_stored_main_energy: 16000000L
+										}
+									}
+								}
+							]
+						}
+					}
+					title: "Any Player Transmitter"
+					type: "item"
+				}
+				{
+					id: "23D5CC9D10261A21"
+					item: "powah:binding_card"
+					type: "item"
+				}
+			]
+			title: "Wireless Personal Battery!"
+			x: -6.75d
+			y: -4.25d
 		}
 	]
 	title: "6. Darker than Dark"

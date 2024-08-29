@@ -34,7 +34,7 @@ JEIEvents.hideItems(event => {
     event.hide(['thermal:satchel', 'thermal_extra:device_lava_gen'])
 
     //Powah
-    event.hide([/powah:thermo_generator_.+/, /powah:furnator_.+/, /powah:magmator.+/, /powah:solar_panel.+/])
+    event.hide([/powah:thermo_generator_.+/, /powah:furnator_.+/, /powah:magmator.+/, /powah:solar_panel.+/, /powah:ender_gate_.+/])
 
     //Building Gadgets
     event.hide(['buildinggadgets2:template_manager', 'buildinggadgets2:template', 'buildinggadgets2:redprint'])

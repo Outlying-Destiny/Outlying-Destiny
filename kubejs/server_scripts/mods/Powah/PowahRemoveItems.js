@@ -5,4 +5,5 @@ ServerEvents.recipes(event => {
     event.remove({id:/powah:crafting.+furnator_.+/})
     event.remove({id:/powah:crafting.+magmator.+/})
     event.remove({id:/powah:crafting.+solar_panel.+/})
+    event.remove({id:/powah:crafting.+ender_gate_.+/})
 })
