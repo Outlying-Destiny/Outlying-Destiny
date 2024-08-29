@@ -47,6 +47,18 @@ ServerEvents.recipes(event => {
         'thermal:steel_nugget'
     )
 
+    //Fluid Drawers
+    event.replaceInput(
+        { output: ['functionalstorage:fluid_1', 'functionalstorage:fluid_2', 'functionalstorage:fluid_4']},
+        '#minecraft:planks',
+        'minecraft:stone'
+    )
+    event.replaceInput(
+        { output: ['functionalstorage:fluid_1', 'functionalstorage:fluid_2', 'functionalstorage:fluid_4']},
+        'minecraft:bucket',
+        'enderio:pressurized_fluid_tank'
+    )
+
     //Puller / Pusher Upgrade
     event.remove({id:/functionalstorage:puller_upgrade/})
     event.remove({id:/functionalstorage:pusher_upgrade/})

@@ -70,38 +70,42 @@ ServerEvents.recipes(event => {
     )
 
     //Metallurgic Infuser
-    event.remove({output:'mekanism:metallurgic_infuser'})
+    event.remove({id:'mekanism:metallurgic_infuser'})
     detailedbox('mekanism:metallurgic_infuser', 'thermal:steel_ingot', 'immersiveengineering:rs_engineering', 'immersiveengineering:light_engineering', 'mekanism:steel_casing')
 
     //Energy Upgrade
-    event.remove({output:'mekanism:upgrade_energy'})
+    event.remove({id:'mekanism:upgrade_energy'})
     detailedbox('mekanism:upgrade_energy', 'thermal:steel_ingot', 'thermal:gold_dust', 'powah:steel_energized', 'mekanism:alloy_infused', 'thermal:gold_dust')
 
     //Speed Upgrade
-    event.remove({output:'mekanism:upgrade_speed'})
+    event.remove({id:'mekanism:upgrade_speed'})
     detailedbox('mekanism:upgrade_speed', 'thermal:steel_ingot', 'mekanism:ingot_refined_obsidian', 'mekanism:alloy_infused', 'mekanism:dust_osmium')
     
     //Enrichment Chamber
     event.replaceInput(
-        { output: 'mekanism:enrichment_chamber'},
+        {output:'mekanism:enrichment_chamber'},
         'mekanism:basic_control_circuit',
         'mekanism:advanced_control_circuit'
     )
 
     //Energized Smelter
-    event.remove({output:'mekanism:energized_smelter'})
+    event.remove({id:'mekanism:energized_smelter'})
     detailedbox('mekanism:energized_smelter', 'mekanism:alloy_infused', 'mekanism:basic_control_circuit', 'immersiveengineering:insulating_glass', 'mekanism:steel_casing')
 
     //Crusher
-    event.remove({output:'mekanism:crusher'})
+    event.remove({id:'mekanism:crusher'})
     detailedbox('mekanism:crusher', 'mekanism:alloy_infused', 'mekanism:advanced_control_circuit', 'minecraft:magma_block', 'mekanism:steel_casing')
 
     //Osmium Compressor
-    event.remove({output:'mekanism:osmium_compressor'})
+    event.remove({id:'mekanism:osmium_compressor'})
     detailedbox('mekanism:osmium_compressor', 'mekanism:alloy_reinforced', 'mekanism:elite_control_circuit', 'pneumaticcraft:compressed_iron_block', 'mekanism:steel_casing')
 
+    //Precision Sawmill
+    event.remove({id:'mekanism:precision_sawmill'})
+    detailedbox('mekanism:precision_sawmill', 'minecraft:iron_ingot', 'mekanism:alloy_infused', 'thermal:saw_blade', 'mekanism:steel_casing')
+
     //Electric Pump
-    event.remove({output:'mekanism:electric_pump'})
+    event.remove({id:'mekanism:electric_pump'})
     event.shaped('mekanism:electric_pump', [
         ' B ',
         'CAC',
@@ -237,6 +241,18 @@ ServerEvents.recipes(event => {
         C:'mekanism:steel_casing',
         D:'mekanism:alloy_atomic',
         E:'laserio:laser_connector'
+    })
+
+    //Chargepad
+    event.remove({id:'mekanism:chargepad'})
+    event.shaped('mekanism:chargepad', [
+        '   ',
+        'AAA',
+        'BCB'
+        ], {
+        A:'extendedcrafting:black_iron_slate',
+        B:'mekanism:ultimate_control_circuit',
+        C:'mekanism:energy_tablet'
     })
 
     //Gas Machinery

@@ -47,18 +47,18 @@ ServerEvents.recipes(event => {
         "powerRate": energyrate,
         "input": {"item": baseinput, "count": 1},
         "ingredients": [
-          { "item": input1 },
-          { "item": input2 },
-          { "item": input3 },
-          { "type": "forge:nbt", "item": "thermal:florb", "nbt": florbnbt}
+          {"item":input1},
+          {"item":input2},
+          {"item":input3},
+          {"type": "forge:nbt", "item": "thermal:florb", "nbt": florbnbt}
         ],
         "result": {"item": output }
       })
     }
 
-    //Dielectric Casing
+    //Iron is Steel now
     event.replaceInput(
-        { output: 'powah:dielectric_casing'},
+        {output:/powah:.+/},
         'minecraft:iron_ingot',
         'thermal:steel_ingot'
     )
@@ -66,19 +66,117 @@ ServerEvents.recipes(event => {
     //Energizing Orb
     event.remove({id:'powah:crafting/energizing_orb'})
     event.shaped('powah:energizing_orb', [
-        'DAD',
-        'CBC',
-        'BBB'
-        ], {
-        A: 'powah:dielectric_casing',
-        B:'kubejs:dielectric_paste_block',
-        C:'immersiveengineering:heavy_engineering',
-        D:'#forge:glass'
+      'DAD',
+      'CBC',
+      'BBB'
+      ], {
+      A:'powah:dielectric_casing',
+      B:'kubejs:dielectric_paste_block',
+      C:'immersiveengineering:heavy_engineering',
+      D:'#forge:glass'
     })
 
     //Dielectric Paste
     event.remove({output:'powah:dielectric_paste'})
     mattoblo('kubejs:dielectric_paste_block', '9x powah:dielectric_paste')
+
+    //From using machines to using blocks (I'm horrible at coding lmfao)
+    const tier = [{tier:'basic', material:'thermal:steel_ingot', materialblock:'kubejs:dielectric_paste_block'},{tier:'hardened', material:'powah:steel_energized', materialblock:'powah:energized_steel_block'},{tier:'blazing', material:'powah:crystal_blazing', materialblock:'powah:blazing_crystal_block'},{tier:'niotic', material:'powah:crystal_niotic', materialblock:'powah:niotic_crystal_block'},{tier:'spirited', material:'powah:crystal_spirited', materialblock:'powah:spirited_crystal_block'},{tier:'nitro', material:'powah:crystal_nitro', materialblock:'powah:nitro_crystal_block'},]
+
+    tier.forEach((tier) => {
+      event.shaped('powah:energizing_rod_'+tier.tier, [
+        ' A ',
+        'BCB',
+        ' D '
+        ], {
+        A:'#forge:storage_blocks/quartz',
+        B:'powah:capacitor_'+tier.tier,
+        C:'powah:dielectric_casing',
+        D:tier.materialblock
+      })
+      event.shaped('powah:player_transmitter_'+tier.tier, [
+        ' A ',
+        'BCB',
+        ' D '
+        ], {
+        A:'powah:player_aerial_pearl',
+        B:'powah:capacitor_'+tier.tier,
+        C:'powah:dielectric_casing',
+        D:'powah:dielectric_rod'
+      })
+      event.shaped('4x powah:reactor_'+tier.tier, [
+        'ABA',
+        'BCB',
+        'ABA'
+        ], {
+        A:tier.materialblock,
+        B:'powah:capacitor_'+tier.tier,
+        C:'powah:uraninite'
+      })
+      event.shaped('powah:energy_cell_'+tier.tier, [
+        'ABA',
+        'CDC',
+        'ABA'
+        ], {
+        A:tier.material,
+        B:'powah:capacitor_'+tier.tier,
+        C:tier.materialblock,
+        D:'powah:dielectric_casing'
+      })
+      event.shaped('powah:battery_'+tier.tier, [
+        'ABA',
+        'CDC',
+        'AEA'
+        ], {
+        A:'powah:dielectric_paste',
+        B:tier.material,
+        C:'powah:capacitor_'+tier.tier,
+        D:'minecraft:redstone_block',
+        E:tier.materialblock
+      })
+      event.shaped('powah:energy_hopper_'+tier.tier, [
+        'AAA',
+        'BCB',
+        'ADA'
+        ], {
+        A:'powah:dielectric_paste',
+        B:'powah:capacitor_'+tier.tier,
+        C:'powah:dielectric_casing',
+        D:tier.materialblock
+      })
+    })
+
+    event.remove({id:'minecraft:kjs/powah_energy_cell_basic'})
+    event.replaceInput({output:'powah:battery_basic'},'powah:capacitor_basic_large','powah:capacitor_basic')
+    event.replaceInput({output:'powah:reactor_basic'},'powah:capacitor_basic_large','powah:capacitor_basic')
+    event.replaceInput({output:'powah:battery_starter'},'powah:capacitor_basic','powah:capacitor_basic_tiny')
+
+    //Tiered Capacitors (At least it's not if else spamming)
+    const capacitor = [{tier:'blazing', prevtier:'hardened'},{tier:'niotic', prevtier:'blazing'},{tier:'spirited', prevtier:'niotic'},{tier:'nitro', prevtier:'spirited'},]
+
+    capacitor.forEach((capacitor) => {
+      event.remove({id:'powah:crafting/capacitor_'+capacitor.tier})
+      event.shaped('powah:capacitor_'+capacitor.tier, [
+        'ABA',
+        'BCB',
+        'ABA'
+        ], {
+        A:'powah:dielectric_paste',
+        B:'powah:crystal_'+capacitor.tier,
+        C:'powah:capacitor_'+capacitor.prevtier
+      })
+    })
+
+    event.remove({id:'powah:crafting/capacitor_hardened'})
+    event.shaped('powah:capacitor_hardened', [
+      'ABA',
+      'BCB',
+      'ABA'
+      ], {
+      A:'powah:dielectric_paste',
+      B:'powah:steel_energized',
+      C:'powah:capacitor_basic_large'
+    })
 
     //Empowered Material to Block
     mattoblo('kubejs:empowered_energized_steel_block', '9x kubejs:empowered_energized_steel')

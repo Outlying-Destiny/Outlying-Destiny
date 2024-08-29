@@ -206,18 +206,18 @@ ServerEvents.recipes(event => {
 
     //Sawdust Block Fix
     event.replaceInput(
-      { output: 'thermal:sawdust_block'},
+      { output:'thermal:sawdust_block'},
       'thermal:sawdust',
       '#forge:sawdust'
     )
     event.replaceOutput(
-      { output: 'thermal:sawdust'},
+      { output:'thermal:sawdust'},
       'thermal:sawdust',
       '#forge:sawdust'
     )
     //GearWorking Die
     event.replaceInput(
-      { output: 'thermal:press_gear_die'},
+      { output:'thermal:press_gear_die'},
       'thermal:diamond_gear',
       '#forge:gears'
     )
@@ -235,6 +235,13 @@ ServerEvents.recipes(event => {
     //Florb
     event.remove({id:'thermal:florb_8'})
     event.shapeless('8x thermal:florb', ['#forge:sawdust', '#forge:slag', 'thermal:rosin'])
+
+    //Watering Can
+    event.replaceInput(
+      { output:'thermal:watering_can'},
+      'minecraft:copper_ingot',
+      'thermal:copper_plate'
+    )
 
     //Components
     event.remove({id:'thermal:augments/upgrade_augment_1'})
@@ -258,11 +265,11 @@ ServerEvents.recipes(event => {
 
     //Twinite Augments
     const augment = [
-      {name:'fluid_tank', number:'_3'},{name:'potion_amplifier', number:'_5'},{name:'potion_duration', number:'_5'},{name:'rf_coil', number:'_3'},{name:'rf_coil_storage', number:'_3'},{name:'rf_coil_xfer', number:'_3'},{name:'machine_speed', number:'_4'},{name:'machine_efficiency', number:'_4'},{name:'machine_output', number:'_3'},{name:'machine_catalyst', number:'_3'}
+      {name:'fluid_tank', material:'shellite'},{name:'potion_duration', material:'abyssal'},{name:'rf_coil', material:'shellite'},{name:'rf_coil_storage', material:'shellite'},{name:'rf_coil_xfer', material:'shellite'},{name:'machine_speed', material:'twinite'},{name:'machine_efficiency', material:'abyssal'},{name:'machine_output', material:'shellite'},{name:'machine_catalyst', material:'abyssal'}
     ]
 
     augment.forEach((augment) => {
-      event.shaped('thermal_extra:'+augment.name+'_augment'+augment.number, [
+      event.shaped('thermal_extra:'+augment.material+'_'+augment.name+'_augment', [
         ' A ',
         'BCB',
         ' A '

@@ -1080,7 +1080,7 @@
 							value: "ae2:quartz_wrench"
 						}
 					}
-					title: "Any #ae2:quartz_wrench"
+					title: "(Certus) Quartz Wrench"
 					type: "item"
 				}
 				{
@@ -1381,6 +1381,39 @@
 			}]
 			x: 1.75d
 			y: 1.0d
+		}
+		{
+			dependencies: ["66D705EFB050318F"]
+			hide_dependency_lines: true
+			id: "738703DD8B477166"
+			tasks: [{
+				id: "4AA535D450831232"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "functionalstorage:fluid_1"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:fluid_2"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:fluid_4"
+							}
+						]
+					}
+				}
+				title: "Fluid Drawers"
+				type: "item"
+			}]
+			title: "Fluid Drawers"
+			x: 6.75d
+			y: -2.5d
 		}
 	]
 	title: "5. Heat it up!"

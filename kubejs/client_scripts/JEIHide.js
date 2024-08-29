@@ -23,7 +23,18 @@ JEIEvents.hideItems(event => {
     event.hide([/industrialforegoing:conveyo.+/, /industrialforegoing:.+_transporter_type/])
     event.hide(/industrialforegoing:mycelial_.+/)
     event.hide(/industrialforegoing:infinity.+/)
-    event.hide(['industrialforegoing:biofuel_generator', 'industrialforegoing:pitiful_generator', 'industrialforegoing:resourceful_furnace'])
+    event.hide(['industrialforegoing:biofuel_generator', 'industrialforegoing:pitiful_generator', 'industrialforegoing:resourceful_furnace', 'industrialforegoing:spores_recreator', 'industrialforegoing:dye_mixer'])
+
+    //Thermal Series
+    //event.hide(/thermal:dynamo.+/)
+    event.hide([/thermal_extra:soul_infused.+_augment/, /thermal_extra:dragonsteel.+_augment/, /thermal.+dynamo_.+_augmen.+/, 'thermal_extra:twinite_fluid_tank_augment', 'thermal_extra:abyssal_fluid_tank_augment', /thermal_extra:.+_potion_amplifier_augment/, 'thermal_extra:twinite_potion_duration_augment', 'thermal_extra:shellite_potion_duration_augment', /thermal_extra:twinite_rf_coil.+augment/, /thermal_extra:abyssal_rf_coil.+augment/, 'thermal_extra:shellite_machine_speed_augment', 'thermal_extra:abyssal_machine_speed_augment', 'thermal_extra:twinite_machine_efficiency_augment', 'thermal_extra:shellite_machine_efficiency_augment', 'thermal_extra:twinite_machine_output_augment', 'thermal_extra:abyssal_machine_output_augment', 'thermal_extra:twinite_machine_catalyst_augment', 'thermal_extra:shellite_machine_catalyst_augment', /thermal_extra:.+_area_radius_augment/, 'thermalendergy:melodic_range_augment', 'thermal_extra:av_item_filter_augment', 'thermal_extra:augment_smithing_upgrade'])
+    event.hide(['thermal_extra:upgrade_augment', 'thermal_extra:abyssal_upgrade_augment'])
+    event.hide(['thermal_extra:nitratic_igniter', /thermal_extra:.+_ore_chunk/])
+    event.hide(/thermal:.+mushroom_spores/)
+    event.hide(['thermal:satchel', 'thermal_extra:device_lava_gen'])
+
+    //Powah
+    event.hide([/powah:thermo_generator_.+/, /powah:furnator_.+/, /powah:magmator.+/, /powah:solar_panel.+/])
 
     //Building Gadgets
     event.hide(['buildinggadgets2:template_manager', 'buildinggadgets2:template', 'buildinggadgets2:redprint'])
@@ -39,23 +50,15 @@ JEIEvents.hideItems(event => {
     event.hide(/elementalcraft:pure_ore/)
     event.hide('elementalcraft:purifier')
 
-    //Twilight Stuff
+    //Twilight Forest
     event.hide(/twilightforest:.+boss_spawner/)
     event.hide('twilightforest:uncrafting_table')
-
-    //Thermal Stuff
-    event.hide(/thermal:.+mushroom_spores/)
 
     //Mekanism Personal Chest
     //event.hide('mekanism:personal_chest')
 
     //PneumaticCraft Compressors
     event.hide(['pneumaticcraft:air_compressor', 'pneumaticcraft:advanced_air_compressor', 'pneumaticcraft:thermal_compressor', 'pneumaticcraft:liquid_compressor', 'pneumaticcraft:advanced_liquid_compressor', 'pneumaticcraft:manual_compressor', 'pneumaticcraft:electrostatic_compressor','pneumaticcraft:pneumatic_dynamo'])
-
-    //Thermal Stuff
-    //event.hide(/thermal:dynamo.+/)
-    event.hide([/thermal_extra:.+_augment_[1-2]/, /thermal.+dynamo_.+_augmen.+/, /thermal_extra:fluid_tank_augment_[4-6]/, /thermal_extra:potion_.+_augment_[3-4]/, /thermal_extra:rf_coil.+augment_[4-5]/, 'thermal_extra:machine_speed_augment_3', 'thermal_extra:machine_efficiency_augment_3', /thermal_extra:area_radius_augment_[3-4]/, 'thermalendergy:melodic_range_augment'])
-    event.hide('thermal_extra:upgrade_augment')
 
     //ProjectRed Backpacks
     event.hide(/projectred_exploration:.+backpack/)

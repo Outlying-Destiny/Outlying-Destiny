@@ -56,6 +56,7 @@ ServerEvents.recipes(event => {
     event.remove({id:'thermal_extra:shellite_dust'})
     event.remove({id:'thermal_extra:twinite_dust'})
     event.remove({id:'thermal_extra:dragonsteel_dust'})
+    event.remove({id:'thermal_extra:abyssal_dust'})
     event.remove({id:'immersiveengineering:crafting/electrum_mix'})
     event.remove({id:'immersiveengineering:crafting/constantan_mix'})
     event.remove({id:'mekanism:processing/steel/ingot_to_dust'})

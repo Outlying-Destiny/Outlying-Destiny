@@ -79,8 +79,15 @@ ServerEvents.recipes(event => {
       { input: 'industrialforegoing:plastic' },
       'industrialforegoing:plastic',
       'pneumaticcraft:plastic'         
-  )
+    )
 
+    //Mob Imprisonment Tool
+    event.replaceInput(
+      {output:'industrialforegoing:mob_imprisonment_tool'},
+      'minecraft:ghast_tear',
+      'enderio:ender_crystal'
+    )
+  
     //Remove Enchanted Bottle from Dissolution Chamber
     event.remove({id:'industrialforegoing:dissolution_chamber/xp_bottles'})
 
@@ -107,7 +114,7 @@ ServerEvents.recipes(event => {
     dissolution('industrialforegoing:speed_addon_1', 1, 'kubejs:molten_signalum', 500, 'pneumaticcraft:plastic', 'mekanism:upgrade_speed', 'mekanism_extras:dust_radiance', 'pneumaticcraft:plastic', 'thermal:machine_speed_augment', 100)
     dissolution('industrialforegoing:efficiency_addon_1', 1, 'kubejs:molten_signalum', 500, 'pneumaticcraft:plastic', 'mekanism:upgrade_speed', 'mekanism_extras:dust_radiance', 'pneumaticcraft:plastic', 'powah:crystal_blazing', 100)
     dissolution('industrialforegoing:processing_addon_1', 1, 'kubejs:molten_signalum', 500, 'pneumaticcraft:plastic', 'mekanism:upgrade_speed', 'mekanism_extras:dust_radiance', 'pneumaticcraft:plastic', 'minecraft:furnace', 100)
-    dissolution('industrialforegoing:speed_addon_2', 1, 'thermal_extra:twinite', 500, 'pneumaticcraft:plastic', 'industrialforegoing:speed_addon_1', 'botania:manasteel_ingot', 'pneumaticcraft:plastic', 'thermal_extra:machine_speed_augment_4', 100)
+    dissolution('industrialforegoing:speed_addon_2', 1, 'thermal_extra:twinite', 500, 'pneumaticcraft:plastic', 'industrialforegoing:speed_addon_1', 'botania:manasteel_ingot', 'pneumaticcraft:plastic', 'thermal_extra:twinite_machine_speed_augment', 100)
     dissolution('industrialforegoing:efficiency_addon_2', 1, 'thermal_extra:twinite', 500, 'pneumaticcraft:plastic', 'industrialforegoing:efficiency_addon_1', 'botania:manasteel_ingot', 'pneumaticcraft:plastic', 'kubejs:empowered_blazing_crystal', 100)
     dissolution('industrialforegoing:processing_addon_2', 1, 'thermal_extra:twinite', 500, 'pneumaticcraft:plastic', 'industrialforegoing:processing_addon_1', 'botania:manasteel_ingot', 'pneumaticcraft:plastic', 'mekanism:energized_smelter', 100)
     

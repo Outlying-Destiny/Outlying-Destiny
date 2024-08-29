@@ -150,9 +150,10 @@
 						value: "functionalstorage:drawer"
 					}
 				}
-				title: "Any #functionalstorage:drawer"
+				title: "Any Drawer"
 				type: "item"
 			}]
+			title: "Drawers"
 			x: -5.0d
 			y: -4.0d
 		}

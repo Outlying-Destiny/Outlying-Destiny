@@ -219,4 +219,10 @@ ServerEvents.recipes(event => {
         '#forge:plates/copper',
         'thermal:steel_plate'
     )
+
+    //Garden Cloche Recipes (render is generic, crop or stacking)
+    function gardenitem(output, outputcount, input, soil, time, typerender, blockrender){event.custom({"type":"immersiveengineering:cloche","input":{"item":input},"render":{"type":typerender,"block":blockrender},"results":[{"count":outputcount,"item":output}],"soil":{"item":soil},"time":time})}
+    function gardentag(output, outputcount, input, soil, time, typerender, blockrender){event.custom({"type":"immersiveengineering:cloche","input":{"item":input},"render":{"type":typerender,"block":blockrender},"results":[{"count":outputcount,"item":output}],"soil":{"tag":soil},"time":time})}
+    
+    gardenitem('minecraft:cocoa_beans', 2, 'minecraft:cocoa_beans', 'minecraft:jungle_log', 560, "crop", 'minecraft:cocoa')
 })

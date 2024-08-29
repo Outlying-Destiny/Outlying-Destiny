@@ -2,128 +2,24 @@ ServerEvents.recipes(event => {
 
     //Function Induction Smelter
     function alloy3(output, outputcount, input1, input1count, input2, input2count, input3, input3count, energy){
-      event.custom({
-        "type": "thermal:smelter",
-        "ingredients": [
-          {
-            "item": input1,
-            "count": input1count
-          },
-          {
-            "item": input2,
-            "count": input2count
-          },
-          {
-            "item": input3,
-            "count": input3count
-          }
-        ],
-        "result": [
-          {
-            "item": output,
-            "count": outputcount
-          }
-        ],
-        "energy": energy
-      }
-      )
+      event.custom({"type": "thermal:smelter","ingredients": [{"item": input1,"count": input1count},{"item": input2,"count": input2count},{"item": input3,"count": input3count}],"result": [{"item": output,"count": outputcount}],"energy": energy})
     }
 
     function alloy2(output, outputcount, input1, input1count, input2, input2count, energy){
-      event.custom({
-        "type": "thermal:smelter",
-        "ingredients": [
-          {
-            "item": input1,
-            "count": input1count
-          },
-          {
-            "item": input2,
-            "count": input2count
-          }
-        ],
-        "result": [
-          {
-            "item": output,
-            "count": outputcount
-          }
-        ],
-        "energy": energy
-      }
-      )
+      event.custom({"type": "thermal:smelter","ingredients": [{"item": input1,"count": input1count},{"item": input2,"count": input2count}],"result": [{"item": output,"count": outputcount}],"energy": energy})
     }
 
     function alloy1(output, outputcount, input1, input1count, energy){
-      event.custom({
-        "type": "thermal:smelter",
-        "ingredients": [
-          {
-            "item": input1,
-            "count": input1count
-          }
-        ],
-        "result": [
-          {
-            "item": output,
-            "count": outputcount
-          }
-        ],
-        "energy": energy
-      }
-      )
+      event.custom({"type": "thermal:smelter","ingredients": [{"item": input1,"count": input1count}],"result": [{"item": output,"count": outputcount}],"energy": energy})
     }
 
     function alloy3tag1(output, outputcount, input1, input1count, input2, input2count, input3, input3count, energy){
-      event.custom({
-        "type": "thermal:smelter",
-        "ingredients": [
-          {
-            "tag": input1,
-            "count": input1count
-          },
-          {
-            "item": input2,
-            "count": input2count
-          },
-          {
-            "item": input3,
-            "count": input3count
-          }
-        ],
-        "result": [
-          {
-            "item": output,
-            "count": outputcount
-          }
-        ],
-        "energy": energy
-      }
-      )
+      event.custom({"type": "thermal:smelter","ingredients": [{"tag": input1,"count": input1count},{"item": input2,"count": input2count},{"item": input3,"count": input3count}],"result": [{"item": output,"count": outputcount}],"energy": energy})
     }
 
 
     function alloy2tag1(output, outputcount, input1, input1count, input2, input2count, energy){
-      event.custom({
-        "type": "thermal:smelter",
-        "ingredients": [
-          {
-            "tag": input1,
-            "count": input1count
-          },
-          {
-            "item": input2,
-            "count": input2count
-          }
-        ],
-        "result": [
-          {
-            "item": output,
-            "count": outputcount
-          }
-        ],
-        "energy": energy
-      }
-      )
+      event.custom({"type": "thermal:smelter","ingredients": [{"tag": input1,"count": input1count},{"item": input2,"count": input2count}],"result": [{"item": output,"count": outputcount}],"energy": energy})
     }
     
     //Alloys Remove
@@ -156,7 +52,7 @@ ServerEvents.recipes(event => {
     alloy3('enderio:soularium_ingot', 1, 'thermal_extra:soul_sand_dust', 1, 'enderio:nethercotta', 1, 'minecraft:gold_ingot', 1, 12000)
     alloy3('enderio:dark_steel_ingot', 1, 'minecraft:obsidian', 1, 'thermal:steel_ingot', 1, 'thermal:enderium_dust', 1, 14000)
     alloy3('enderio:end_steel_ingot', 1, 'minecraft:end_stone', 1, 'enderio:dark_steel_ingot', 1, 'thermal:lumium_dust', 1, 16000)
-    alloy3('extendedcrafting:black_iron_ingot', 1, 'thermal:tar', 1, 'enderio:dark_steel_ingot', 1, 'bigreactors:graphite_ingot', 1, 18000)
+    alloy3('extendedcrafting:black_iron_ingot', 1, 'thermal:tar', 1, 'enderio:dark_steel_ingot', 1, 'bigreactors:graphite_ingot', 1, 16000)
     alloy3('kubejs:infusing_soul_ingot', 1, 'powah:crystal_blazing', 1, 'enderio:soularium_ingot', 1, 'kubejs:enchanted_ingot', 1, 16000)
     alloy3('thermal_extra:shellite_ingot', 1, 'minecraft:shulker_shell', 1, 'kubejs:biofuel_ingot', 1, 'mekanism:ingot_refined_obsidian', 1, 20000)
     alloy3('kubejs:evil_infused_ingot', 1, 'kubejs:enchanted_ingot', 1, 'kubejs:demon_ingot', 1, 'architects_palette:withered_bone', 1, 12000)
@@ -177,6 +73,13 @@ ServerEvents.recipes(event => {
     alloy1('enderio:fused_quartz', 1, 'minecraft:quartz_block', 1, 4000)
     alloy1('enderio:fused_quartz', 1, 'minecraft:quartz', 4, 4000)
     alloy1('enderio:clear_glass', 1, 'minecraft:glass', 1, 4000)
+    const glass = [
+      {material:'soul_infused'},{material:'shellite'},{material:'twinite'},{material:'dragonsteel'},{material:'abyssal'}
+    ]
+
+    glass.forEach((glass) => {
+      event.custom({"type": "thermal:smelter","ingredients": [{"item": "thermal:obsidian_glass","count": 2},{"value": [{"tag": "forge:ingots/"+glass.material},{"tag": "forge:dusts/"+glass.material}],"count": 1}],"result": [{"item": "thermal_extra:"+glass.material+"_glass","count": 2}],"energy": 4800})
+    })
 
     //Organic dyes
     alloy2tag1('enderio:organic_black_dye', 2, 'bookshelf:slime_balls', 1, 'mekanism:dust_coal', 6, 4000)

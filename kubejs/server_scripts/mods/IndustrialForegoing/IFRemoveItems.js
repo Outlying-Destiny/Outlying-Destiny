@@ -1,9 +1,13 @@
 ServerEvents.recipes(event => {
 
-    //Ore Dupe Machinery
+    //Machinery
     event.remove({id:'industrialforegoing:fluid_sieving_machine'})
     event.remove({id:'industrialforegoing:fermentation_station'})
     event.remove({id:'industrialforegoing:washing_factory'})
+    event.remove({id:'industrialforegoing:biofuel_generator'})
+    event.remove({id:'industrialforegoing:resourceful_furnace'})
+    event.remove({id:'industrialforegoing:spores_recreator'})
+    event.remove({id:'industrialforegoing:dye_mixer'})
 
     //Conveyors & Transporters
     event.remove({id:/industrialforegoing:conveyo.+/})
@@ -19,8 +23,4 @@ ServerEvents.recipes(event => {
     //Infinity Stuff
     event.remove({id:/industrialforegoing:dissolution_chamber.+infinity_.+/})
     event.remove({id:'industrialforegoing:infinity_charger'})
-
-    //Biofuel Generator
-    event.remove({id:'industrialforegoing:biofuel_generator'})
-    event.remove({id:'industrialforegoing:resourceful_furnace'})
 })

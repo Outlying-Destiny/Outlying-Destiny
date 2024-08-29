@@ -847,7 +847,10 @@
 			y: -6.5d
 		}
 		{
-			dependencies: ["07ADCEF6CBA17D58"]
+			dependencies: [
+				"07ADCEF6CBA17D58"
+				"68EDC2F3611F213F"
+			]
 			icon: "immersiveengineering:diesel_generator"
 			id: "0E3CE979A136068A"
 			size: 1.25d
@@ -1130,11 +1133,33 @@
 		{
 			dependencies: ["460A47E0362D9799"]
 			id: "187BE2A259075C18"
-			tasks: [{
-				id: "1B1C272EBEBDFAA6"
-				item: "powah:energizing_orb"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "1B1C272EBEBDFAA6"
+					item: "powah:energizing_orb"
+					type: "item"
+				}
+				{
+					id: "41CC5EA2E55EAB07"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "powah:energizing_rod_starter"
+								}
+								{
+									Count: 1b
+									id: "powah:energizing_rod_basic"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
 			x: 11.75d
 			y: -2.5d
 		}
@@ -1186,14 +1211,19 @@
 			y: -2.5d
 		}
 		{
+			dependencies: [
+				"2D1BB8A835207114"
+				"11D604309801EF9C"
+			]
+			hide_dependency_lines: true
 			id: "0AE78B3871DB6D59"
 			tasks: [{
 				id: "3D4E44FCD4873629"
 				item: "mekanism:energized_smelter"
 				type: "item"
 			}]
-			x: 11.25d
-			y: -8.25d
+			x: 11.3333d
+			y: -7.5d
 		}
 		{
 			dependencies: ["0D73A83CC62FF6C5"]
@@ -1425,13 +1455,18 @@
 			y: -2.25d
 		}
 		{
+			dependencies: [
+				"2D1BB8A835207114"
+				"11D604309801EF9C"
+			]
+			hide_dependency_lines: true
 			id: "593A4B9105930EC5"
 			tasks: [{
 				id: "5976E276BFD3C164"
 				item: "mekanism:precision_sawmill"
 				type: "item"
 			}]
-			x: 11.75d
+			x: 12.16666d
 			y: -7.5d
 		}
 		{
