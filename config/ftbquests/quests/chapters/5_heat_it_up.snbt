@@ -338,7 +338,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 0.0d
+			y: -0.25d
 		}
 		{
 			dependencies: ["30FD1966D4BEE62B"]
@@ -644,6 +644,13 @@
 				{
 					id: "55292BBCCAD97DDB"
 					item: "mob_grinding_utils:xp_tap"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7AEFCB17DC18885A"
+					item: "mob_grinding_utils:tank_sink"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -746,7 +753,7 @@
 				}
 			]
 			x: -4.0d
-			y: 0.0d
+			y: -0.25d
 		}
 		{
 			dependencies: ["415C7601E035DBDB"]
@@ -1362,7 +1369,7 @@
 				item: "thermal:redprint"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 6.75d
 			y: 3.0d
 		}
 		{
@@ -1414,6 +1421,19 @@
 			title: "Fluid Drawers"
 			x: 6.75d
 			y: -2.5d
+		}
+		{
+			dependencies: ["415C7601E035DBDB"]
+			hide_dependency_lines: true
+			id: "19650D2B7AABCFC9"
+			tasks: [{
+				id: "4E301AE22A8A3B05"
+				item: "thermal:tinker_bench"
+				type: "item"
+			}]
+			title: "Faster Charging Station"
+			x: 5.5d
+			y: 3.0d
 		}
 	]
 	title: "5. Heat it up!"

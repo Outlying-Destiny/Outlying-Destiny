@@ -1044,6 +1044,18 @@
 			x: -6.75d
 			y: -4.25d
 		}
+		{
+			dependencies: ["11943E63F2FF8684"]
+			hide_dependency_lines: true
+			id: "72F05C1DD6B30480"
+			tasks: [{
+				id: "120E189A6BD882FE"
+				item: "thermal:device_rock_gen"
+				type: "item"
+			}]
+			x: -6.25d
+			y: -5.0d
+		}
 	]
 	title: "6. Darker than Dark"
 }

@@ -77,6 +77,19 @@ ServerEvents.recipes(event => {
         }
     )
 
+    //Entity Conveyor
+    event.remove({id:'mob_grinding_utils:recipe_entity_conveyor'})
+    event.shaped(('mob_grinding_utils:entity_conveyor'), [
+        ' A ',
+        'BCB',
+        'BAB'
+        ], {
+        A: '#forge:slimeballs',
+        B: 'kubejs:evil_infused_ingot',
+        C: 'mekanism:advanced_control_circuit'
+        }
+    )
+
     //Mob Fan
     event.remove({id:'mob_grinding_utils:recipe_fan'})
     event.shaped(('mob_grinding_utils:fan'), [
@@ -114,6 +127,19 @@ ServerEvents.recipes(event => {
         ], {
         A: 'kubejs:evil_infused_sword',
         B: 'kubejs:evil_infused_block'
+        }
+    )
+
+    //Ender Inhibitor
+    event.remove({id:'mob_grinding_utils:recipe_ender_inhibitor'})
+    event.shaped(('mob_grinding_utils:ender_inhibitor_on'), [
+        'AAA',
+        'BCB',
+        'BBB'
+        ], {
+        A: 'mekanism:alloy_reinforced',
+        B: 'kubejs:evil_infused_ingot',
+        C: 'thermal:enderium_block'
         }
     )
 
@@ -156,6 +182,47 @@ ServerEvents.recipes(event => {
         { output: 'mob_grinding_utils:absorption_upgrade'},
         'minecraft:redstone',
         'kubejs:demon_block'
+    )
+
+    //XP Solidifier Upgrade
+    event.remove({id:'mob_grinding_utils:recipe_xpsolidifier_upgrade'})
+    event.shaped(('mob_grinding_utils:xp_solidifier_upgrade'), [
+        'ABA',
+        'CDC',
+        'ABA'
+        ], {
+        A: 'kubejs:enchanted_ingot',
+        B: 'kubejs:demon_ingot',
+        C: 'minecraft:blaze_powder',
+        D: 'minecraft:bucket'
+        }
+    )
+
+    //Chicken Feed
+    event.remove({id:'mob_grinding_utils:recipe_nutritious_feed'})
+    event.shaped(('mob_grinding_utils:nutritious_chicken_feed'), [
+        'ABA',
+        'BCB',
+        'ABA'
+        ], {
+        A: {"type":"mob_grinding_utils:fluid", "advanced":false, "tag":"forge:experience"},
+        B: '#forge:crops',
+        C: '#forge:seeds'
+        }
+    )
+
+    //XP Drain Singularity Tank
+    event.remove({id:'mob_grinding_utils:recipe_tank_sink'})
+    event.shaped(('mob_grinding_utils:tank_sink'), [
+        ' A ',
+        'BCB',
+        ' D '
+        ], {
+        A: 'minecraft:heavy_weighted_pressure_plate',
+        B: 'kubejs:enchanted_ingot',
+        C: 'minecraft:hopper',
+        D: 'mob_grinding_utils:tank'
+        }
     )
 
 })

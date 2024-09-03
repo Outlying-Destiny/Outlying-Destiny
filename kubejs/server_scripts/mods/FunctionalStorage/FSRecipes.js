@@ -88,7 +88,7 @@ ServerEvents.recipes(event => {
     )
     
     //Storage Upgrades
-    upgrade('functionalstorage:copper_upgrade', 'powah:steel_energized', '#functionalstorage:drawer', 'powah:steel_energized_block')
+    upgrade('functionalstorage:copper_upgrade', 'powah:steel_energized', '#functionalstorage:drawer', 'powah:energized_steel_block')
     upgrade('functionalstorage:gold_upgrade', 'extendedcrafting:luminessence', 'functionalstorage:copper_upgrade', 'extendedcrafting:luminessence_block')
 
 })

@@ -222,6 +222,13 @@ ServerEvents.recipes(event => {
       '#forge:gears'
     )
 
+    //Tinker's Workbench
+    event.replaceInput(
+      { output:'thermal:tinker_bench'},
+      'minecraft:crafting_table',
+      'thermal:machine_frame'
+    )
+
     //Saw Blade
     event.remove({id:'thermal:saw_blade'})
     event.shaped('thermal:saw_blade', [
@@ -248,7 +255,7 @@ ServerEvents.recipes(event => {
     event.remove({id:'thermal:augments/upgrade_augment_2'})
     event.remove({id:'thermal:augments/upgrade_augment_3'})
     box('thermal:upgrade_augment_1', 'thermal:invar_plate', 'thermal:obsidian_glass', 'enderio:redstone_alloy_ingot', 'thermal:lumium_gear')
-    box('thermal:upgrade_augment_2', 'extendedcrafting:black_iron_slate', 'thermal:enderium_glass', 'thermal:enderium_gear', 'thermal:upgrade_augment_1')
+    box('thermal:upgrade_augment_2', 'extendedcrafting:black_iron_slate', 'thermal:signalum_glass', 'thermal:enderium_gear', 'thermal:upgrade_augment_1')
     box('thermal:upgrade_augment_3', 'thermal_extra:dragonsteel_plate', 'thermal_extra:shellite_glass', 'thermal_extra:soul_infused_gear', 'thermal:upgrade_augment_2') 
 
     //Augments
@@ -283,6 +290,7 @@ ServerEvents.recipes(event => {
     //Devices
     device('tree_extractor', '#minecraft:planks', 'minecraft:piston', 'thermal:iron_gear')
     device('fisher', '#minecraft:planks', 'minecraft:fishing_rod', 'thermal:silver_gear')
+    device('rock_gen', 'thermal:invar_ingot', 'enderio:weather_crystal', 'kubejs:infinity_gear')
     
     //Machines
     machine('smelter', 'minecraft:blast_furnace', 'immersiveengineering:coil_lv', 'thermal:steel_gear')

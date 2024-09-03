@@ -44,11 +44,23 @@ ServerEvents.recipes(event => {
     event.custom({"type": "thermal:pyrolyzer","ingredient": {"tag": "minecraft:logs"},"result": [{"item": "minecraft:charcoal"},{"fluid": "immersiveengineering:creosote","amount": 125}],"experience": 0.15})
     event.remove({id:'thermal:bottler_creosote_bucket'})
 
-    //Nitratic Igniter
+    //Thermal Extra Ore Dupe
     event.remove({id:'thermal_extra:crafting/nitratic_igniter'})
     event.remove({id:/thermal_extra:machine.+nitratic_igniter.+/})
+    event.remove({id:/thermal_extra.+machine.+chiller.+raw_.+/})
 
-    //Magmatic Accumulator
+    //Devices
     event.remove({id:'thermal_extra:crafting/device_lava_gen'})
+    event.remove({id:'thermal:device_water_gen'})
+
+    //Insightful Stuff
+    event.remove({id:'thermal:tools/xp_crystal'})
+    event.remove({id:'thermal:augments/xp_storage_augment'})
+    event.remove({id:'thermal:device_xp_condenser'})
+    event.remove({id:'minecraft:enchantment.thermal.xp_crystal'})
+
+    //Phyto-Soil (Infuser)
+    event.remove({id:'thermal:phytosoil'})
+    event.remove({id:'thermal:device_soil_infuser'})
 
 })

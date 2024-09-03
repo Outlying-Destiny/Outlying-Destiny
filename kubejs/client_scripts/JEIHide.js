@@ -23,7 +23,7 @@ JEIEvents.hideItems(event => {
     event.hide([/industrialforegoing:conveyo.+/, /industrialforegoing:.+_transporter_type/])
     event.hide(/industrialforegoing:mycelial_.+/)
     event.hide(/industrialforegoing:infinity.+/)
-    event.hide(['industrialforegoing:biofuel_generator', 'industrialforegoing:pitiful_generator', 'industrialforegoing:resourceful_furnace', 'industrialforegoing:spores_recreator', 'industrialforegoing:dye_mixer'])
+    event.hide(['industrialforegoing:biofuel_generator', 'industrialforegoing:pitiful_generator', 'industrialforegoing:resourceful_furnace', 'industrialforegoing:spores_recreator', 'industrialforegoing:dye_mixer', 'industrialforegoing:mechanical_dirt', 'industrialforegoing:water_condensator'])
 
     //Thermal Series
     //event.hide(/thermal:dynamo.+/)
@@ -31,10 +31,13 @@ JEIEvents.hideItems(event => {
     event.hide(['thermal_extra:upgrade_augment', 'thermal_extra:abyssal_upgrade_augment'])
     event.hide(['thermal_extra:nitratic_igniter', /thermal_extra:.+_ore_chunk/])
     event.hide(/thermal:.+mushroom_spores/)
-    event.hide(['thermal:satchel', 'thermal_extra:device_lava_gen'])
+    event.hide(['thermal:satchel', 'thermal_extra:device_lava_gen', 'thermal:device_water_gen', 'thermal:phytosoil', 'thermal:phytosoil_tiled', 'thermal:device_soil_infuser', 'thermal:xp_crystal', 'thermal:device_xp_condenser', 'thermal:xp_storage_augment'])
 
     //Powah
     event.hide([/powah:thermo_generator_.+/, /powah:furnator_.+/, /powah:magmator.+/, /powah:solar_panel.+/, /powah:ender_gate_.+/])
+
+    //Mob Grinding Utils
+    event.hide(['mob_grinding_utils:entity_spawner', 'mob_grinding_utils:spawner_upgrade_height', 'mob_grinding_utils:spawner_upgrade_width', 'mob_grinding_utils:jumbo_tank'])
 
     //Building Gadgets
     event.hide(['buildinggadgets2:template_manager', 'buildinggadgets2:template', 'buildinggadgets2:redprint'])
@@ -60,8 +63,8 @@ JEIEvents.hideItems(event => {
     //PneumaticCraft Compressors
     event.hide(['pneumaticcraft:air_compressor', 'pneumaticcraft:advanced_air_compressor', 'pneumaticcraft:thermal_compressor', 'pneumaticcraft:liquid_compressor', 'pneumaticcraft:advanced_liquid_compressor', 'pneumaticcraft:manual_compressor', 'pneumaticcraft:electrostatic_compressor','pneumaticcraft:pneumatic_dynamo'])
 
-    //ProjectRed Backpacks
-    event.hide(/projectred_exploration:.+backpack/)
+    //ProjectRed
+    event.hide([/projectred_exploration:.+backpack/, 'projectred_exploration:athame'])
 
     //EnderIO Stuff
     event.hide(['enderio:silicon', 'enderio:flour', 'enderio:cake_base', 'enderio:clayed_glowstone'])
@@ -141,7 +144,7 @@ JEIEvents.hideItems(event => {
 JEIEvents.hideFluids(event => {
 
     //Experience
-    let exp = ['cofh_core:experience', 'enderio:xp_juice', 'enderio:flowing_xp_juice', 'sophisticatedcore:xp_still']
+    let exp = ['cofh_core:experience', 'enderio:flowing_xp_juice', 'sophisticatedcore:xp_still']
     exp.forEach(fluid => { event.hide(fluid) })
     
     //Biodiesel Line

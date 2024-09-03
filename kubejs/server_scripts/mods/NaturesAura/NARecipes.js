@@ -150,4 +150,6 @@ ServerEvents.recipes(event => {
     //Token of Twilight
     woodenstand("kubejs:token_twilight", "kubejs:twilight_powder", "naturesaura:token_euphoria", "kubejs:twilight_powder", "naturesaura:token_terror", "kubejs:twilight_powder", "naturesaura:token_rage", "kubejs:twilight_powder", "naturesaura:token_grief", "forge:sapling", 1, 500)
 
+    //Emerald
+    altar("minecraft:emerald", "minecraft:diamond", 10000, 50)
 })

@@ -8,6 +8,9 @@ ServerEvents.recipes(event => {
     event.remove({id:'industrialforegoing:resourceful_furnace'})
     event.remove({id:'industrialforegoing:spores_recreator'})
     event.remove({id:'industrialforegoing:dye_mixer'})
+    event.remove({id:'industrialforegoing:dissolution_chamber/mechanical_dirt'})
+    event.remove({id:'industrialforegoing:water_condensator'})
+
 
     //Conveyors & Transporters
     event.remove({id:/industrialforegoing:conveyo.+/})
@@ -17,6 +20,7 @@ ServerEvents.recipes(event => {
     event.remove({id:'industrialforegoing:dryrubber'})
 
     //Mycelial Stuff
+    event.remove({id:'industrialforegoing:pitiful_generator'})
     event.remove({id:/industrialforegoing:mycelial_.+/})
     event.remove({id:'industrialforegoing:dissolution_chamber/mycelial_reactor'})
 
