@@ -74,5 +74,6 @@ ServerEvents.recipes(event => {
     allpress('thermal_extra:twinite_gear', 'thermal_extra:twinite_ingot', 4, 9600)
     allpress('thermal_extra:dragonsteel_gear', 'thermal_extra:dragonsteel_ingot', 4, 9600)
     allpress('kubejs:energized_steel_gear', 'powah:steel_energized', 4, 9600)
+    allpress('kubejs:enchanted_gear', 'kubejs:enchanted_ingot', 4, 9600)
     //allpress('kubejs:red_gear', 'projectred_core:red_ingot', 4, 9600)
 })

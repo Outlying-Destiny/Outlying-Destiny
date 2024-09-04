@@ -114,6 +114,8 @@ ServerEvents.recipes(event => {
     allcrush('thermal_extra:soul_infused_dust', 1, 'thermal_extra:soul_infused_ingot', 2400)
     allcrush('thermal_extra:shellite_dust', 1, 'thermal_extra:shellite_ingot', 2400)
     allcrush('thermal_extra:twinite_dust', 1, 'thermal_extra:twinite_ingot', 2400)
+    allcrush('thermal_extra:dragonsteel_dust', 1, 'thermal_extra:dragonsteel_ingot', 2400)
+    allcrush('thermal_extra:abyssal_dust', 1, 'thermal_extra:abyssal_ingot', 2400)
     allcrush('thermal:rose_gold_dust', 1, 'thermal:rose_gold_ingot', 2400)
     allcrush('thermal_extra:amethyst_dust', 1, 'minecraft:amethyst_shard', 2400)
     allcrush('thermal:steel_dust', 1, 'thermal:steel_ingot', 2400)
