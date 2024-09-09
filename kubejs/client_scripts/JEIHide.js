@@ -8,8 +8,8 @@ JEIEvents.hideItems(event => {
 
     //Immersive Engineering
     event.hide(['immersiveengineering:dust_saltpeter', 'immersiveengineering:sawblade', 'immersiveengineering:coal_coke', 'immersiveengineering:grindingdisk'])
-    event.hide(/immersiveengineering.+alu.+/)
-    event.hide('immersiveengineering:metal_ladder_alu')
+    event.hide([/immersiveengineering.+alu.+/, 'immersiveengineering:metal_ladder_alu'])
+    event.hide(['immersiveengineering:crusher', 'immersiveengineering:sawmill'])
 
     //Industrial Foregoing
     event.hide(['industrialforegoing:raw_ore_meat_bucket', 'industrialforegoing:raw_ore_meat', 'industrialforegoing:fermented_ore_meat_bucket', 'industrialforegoing:fermented_ore_meat', 'industrialforegoing:fermentation_station', 'industrialforegoing:washing_factory', 'industrialforegoing:fluid_sieving_machine'])
