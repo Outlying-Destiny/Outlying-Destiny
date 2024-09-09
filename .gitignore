@@ -27,7 +27,9 @@
 /mods
 /config/oculus.properties
 /config/jade/plugins.json
-/config/jei
+/config/jei/world
+/config/jei/jei-debug.ini
+/config/jei/jei-client.ini
 /kubejs/config/probe-settings.json
 /config/quark-common.toml
 /config/mm/pack/.cache
