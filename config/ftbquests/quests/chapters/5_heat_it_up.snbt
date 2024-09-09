@@ -253,12 +253,21 @@
 		}
 		{
 			dependencies: ["415C7601E035DBDB"]
+			icon: "thermal:machine_press"
 			id: "55C1955949B877B8"
-			tasks: [{
-				id: "17867FC32C281AF0"
-				item: "thermal:machine_press"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "17867FC32C281AF0"
+					item: "thermal:machine_press"
+					type: "item"
+				}
+				{
+					id: "2B666EF4C06D87CC"
+					item: "thermal:machine_sawmill"
+					type: "item"
+				}
+			]
+			title: "Metal Press Get Out!"
 			x: -1.75d
 			y: -2.5d
 		}
@@ -317,17 +326,6 @@
 			}]
 			x: -0.75d
 			y: 2.0d
-		}
-		{
-			dependencies: ["415C7601E035DBDB"]
-			id: "5958F0CF29E0EE43"
-			tasks: [{
-				id: "37CB26CAE6217403"
-				item: "thermal:machine_sawmill"
-				type: "item"
-			}]
-			x: 0.25d
-			y: -2.5d
 		}
 		{
 			dependencies: ["1A75140087EB1B37"]
@@ -794,6 +792,7 @@
 		{
 			dependencies: ["17FB887A20B0F3F3"]
 			disable_toast: true
+			icon: "ae2:silicon_press"
 			id: "633FBF8B95C846AA"
 			size: 1.25d
 			tasks: [
@@ -994,6 +993,7 @@
 					type: "item"
 				}
 			]
+			title: "Storage Alternative"
 			x: 1.5d
 			y: -3.5d
 		}
@@ -1064,6 +1064,7 @@
 		}
 		{
 			dependencies: ["78893A86998F05B7"]
+			icon: "ae2:network_tool"
 			id: "3EE5AB03B9E73786"
 			tasks: [
 				{
@@ -1392,6 +1393,7 @@
 		{
 			dependencies: ["66D705EFB050318F"]
 			hide_dependency_lines: true
+			icon: "functionalstorage:fluid_1"
 			id: "738703DD8B477166"
 			tasks: [{
 				id: "4AA535D450831232"
@@ -1434,6 +1436,18 @@
 			title: "Faster Charging Station"
 			x: 5.5d
 			y: 3.0d
+		}
+		{
+			dependencies: ["415C7601E035DBDB"]
+			id: "06EC2DEA64DD39BF"
+			tasks: [{
+				id: "092CE2F6E44D0C57"
+				item: "thermal:machine_insolator"
+				type: "item"
+			}]
+			title: "Garden Cloche well... actually stay."
+			x: 0.25d
+			y: -2.5d
 		}
 	]
 	title: "5. Heat it up!"

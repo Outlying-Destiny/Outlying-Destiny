@@ -250,6 +250,28 @@ ServerEvents.recipes(event => {
       'thermal:copper_plate'
     )
 
+    //Phytogenic Insolator
+    event.remove({not:{id:/thermal.+saplin.+/}, id:/thermal.+insolator.+/})
+
+    function phyto(sapling, log){
+      event.custom({"type": "thermal:insolator","ingredient": {"item": sapling,},"result": [{"item": log,"chance": 6.0},{"item": sapling,"chance": 1.1}],"energy_mod": 3.0,"water_mod": 3.0})
+    }
+
+    const sapling = [
+      {name:'architects_palette:twisted'},{name:'forbidden_arcanus:aurum'},{name:'aether:skyroot'},{name:'twilightforest:twilight_oak'},{name:'twilightforest:canopy'},{name:'twilightforest:mangrove'},{name:'twilightforest:time'},{name:'twilightforest:transformation'},{name:'twilightforest:mining'},{name:'twilightforest:sorting'},{name:'twilightforest:hollow_oak'},{name:'undergarden:smogstem'},{name:'undergarden:wigglewood'},{name:'undergarden:grongle'}
+    ]
+
+    sapling.forEach((sapling) => {
+      phyto(sapling.name+"_sapling", sapling.name+"_log")
+    })
+    
+    phyto('twilightforest:darkwood_sapling', 'twilightforest:dark_log')
+    phyto('twilightforest:rainbow_oak_sapling', 'twilight:twilight_oak_sapling')
+    phyto('lost_aether_content:crystal_sapling', 'aether:skyroot_log')
+    phyto('lost_aether_content:holiday_sapling', 'aether:skyroot_log')
+
+    event.custom({"type": "thermal:insolator_catalyst","ingredient": {"item": "thermal:phytogro"},"primary_mod": 1.5,"secondary_mod": 1.5,"energy_mod": 0.8,"min_chance": 0.5,"use_chance": 0.5})
+
     //Components
     event.remove({id:'thermal:augments/upgrade_augment_1'})
     event.remove({id:'thermal:augments/upgrade_augment_2'})

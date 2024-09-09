@@ -48,6 +48,7 @@
 				"5F5B3D5FE5AF3D00"
 				"2585082DAD87DC3C"
 			]
+			icon: "extendedcrafting:ender_crafter"
 			id: "2A9B8E18FC745B11"
 			tasks: [
 				{
@@ -212,6 +213,7 @@
 				"1DEBC8EE4D9FF4E6"
 				"55C2A1B66BFA050C"
 			]
+			icon: "extendedcrafting:crafting_core"
 			id: "4B0C8DCB02DD44D3"
 			tasks: [
 				{
@@ -756,6 +758,7 @@
 					type: "item"
 				}
 			]
+			title: "Extra Modules"
 			x: -8.25d
 			y: -0.5d
 		}
@@ -836,6 +839,11 @@
 		}
 		{
 			dependencies: ["4CD3AA3E83C316B7"]
+			icon: {
+				Count: 1
+				id: "entangled:block"
+				tag: { }
+			}
 			id: "471198E6EA13C581"
 			tasks: [
 				{
@@ -908,6 +916,7 @@
 					type: "item"
 				}
 			]
+			title: "Overclockers"
 			x: -9.75d
 			y: -4.25d
 		}
