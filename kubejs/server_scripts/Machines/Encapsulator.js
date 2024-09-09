@@ -34,5 +34,8 @@ ServerEvents.recipes(event => {
 
     //Sunny Quartz
     event.remove({id:'botania:quartz_sunny'})
-    encapsulatortag('botania:quartz_sunny', 'botania:quartz_mana', 'enderio:liquid_sunshine', 500, 10000)
+    encapsulator('botania:quartz_sunny', 'botania:quartz_mana', 'enderio:liquid_sunshine', 500, 10000)
+
+    //Red Alloy Ingot
+    encapsulator('projectred_core:red_ingot', 'minecraft:iron_ingot', 'thermal:redstone', 500, 8000)
 })

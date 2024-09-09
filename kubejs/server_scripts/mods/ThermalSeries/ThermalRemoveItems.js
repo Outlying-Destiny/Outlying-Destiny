@@ -63,4 +63,8 @@ ServerEvents.recipes(event => {
     event.remove({id:'thermal:phytosoil'})
     event.remove({id:'thermal:device_soil_infuser'})
 
+    //Ruby / Sapphire
+    event.remove({id:'industrialforegoing:laser_drill_ore/ores/ruby'})
+    event.remove({id:'industrialforegoing:laser_drill_ore/ores/sapphire'})
+
 })

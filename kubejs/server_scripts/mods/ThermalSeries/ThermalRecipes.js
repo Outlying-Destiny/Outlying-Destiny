@@ -272,7 +272,7 @@ ServerEvents.recipes(event => {
 
     //Twinite Augments
     const augment = [
-      {name:'fluid_tank', material:'shellite'},{name:'potion_duration', material:'abyssal'},{name:'rf_coil', material:'shellite'},{name:'rf_coil_storage', material:'shellite'},{name:'rf_coil_xfer', material:'shellite'},{name:'machine_speed', material:'twinite'},{name:'machine_efficiency', material:'abyssal'},{name:'machine_output', material:'shellite'},{name:'machine_catalyst', material:'abyssal'}
+      {name:'fluid_tank', material:'shellite'},{name:'potion_duration', material:'abyssal'},{name:'rf_coil', material:'shellite'},{name:'rf_coil_storage', material:'shellite'},{name:'rf_coil_xfer', material:'shellite'},{name:'machine_speed', material:'soul_infused'},{name:'machine_efficiency', material:'abyssal'},{name:'machine_output', material:'shellite'},{name:'machine_catalyst', material:'abyssal'}
     ]
 
     augment.forEach((augment) => {

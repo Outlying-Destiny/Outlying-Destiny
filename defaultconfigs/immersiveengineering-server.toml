@@ -323,7 +323,7 @@
 		particles = true
 		#The threshold the perlin noise has to cross for a mineral vein to be generated. Higher means less likely.
 		#Range: 0.0 ~ 1.0
-		chance = 0.9
+		chance = 0.6
 		#The maximum amount of yield one can get out of a chunk with the excavator. Set a number smaller than zero to make it infinite
 		#Range: > -1
 		yield = 38400

@@ -10,7 +10,7 @@
 	#Generation Settings for naquadah ore.
 	[world_generation.naquadah]
 		#Determines if naquadah ore should be added to world generation.
-		shouldGenerate = true
+		shouldGenerate = false
 
 		#small naquadah vein Generation Settings.
 		[world_generation.naquadah.small]
@@ -56,7 +56,7 @@
 	#Generation Settings for end_naquadah ore.
 	[world_generation.end_naquadah]
 		#Determines if end_naquadah ore should be added to world generation.
-		shouldGenerate = true
+		shouldGenerate = false
 
 		#middle end_naquadah vein Generation Settings.
 		[world_generation.end_naquadah.middle]
