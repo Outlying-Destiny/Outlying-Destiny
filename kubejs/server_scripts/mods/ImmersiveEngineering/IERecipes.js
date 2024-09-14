@@ -225,19 +225,4 @@ ServerEvents.recipes(event => {
         'thermal:steel_plate'
     )
 
-    //Fertilizer
-    function fertilizer(fertilizer, multiplier){event.custom({"type":"immersiveengineering:fertilizer","growthModifier":multiplier,"input":{"item":fertilizer}})}
-
-    event.remove({id:'immersiveengineering:fertilizer/saltpeter'})
-    fertilizer('thermal:niter_dust', 1.2)
-    fertilizer('thermal:apatite_dust', 1.3)
-    fertilizer('thermal:phytogro', 1.5)
-    fertilizer('industrialforegoing:fertilizer', 1.8)
-    fertilizer('mysticalagriculture:mystical_fertilizer', 2.5)
-
-    //Garden Cloche Recipes (render is generic, crop or stacking)
-    function gardenitem(output, outputcount, input, soil, time, typerender, blockrender){event.custom({"type":"immersiveengineering:cloche","input":{"item":input},"render":{"type":typerender,"block":blockrender},"results":[{"count":outputcount,"item":output}],"soil":{"item":soil},"time":time})}
-    function gardentag(output, outputcount, input, soil, time, typerender, blockrender){event.custom({"type":"immersiveengineering:cloche","input":{"item":input},"render":{"type":typerender,"block":blockrender},"results":[{"count":outputcount,"item":output}],"soil":{"tag":soil},"time":time})}
-    
-    gardenitem('minecraft:cocoa_beans', 2, 'minecraft:cocoa_beans', 'minecraft:jungle_log', 560, "crop", 'minecraft:cocoa')
 })
