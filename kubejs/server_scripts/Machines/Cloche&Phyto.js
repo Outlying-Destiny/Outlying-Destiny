@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
     gardensapling('minecraft:acacia', 'minecraft:acacia')
     gardensapling('minecraft:dark_oak', 'minecraft:dark_oak')
     gardensapling('minecraft:cherry', 'minecraft:cherry')
-    gardensapling('thermal:rubberwood')
+    gardensapling('thermal:rubberwood', 'thermal:rubberwood')
     gardensapling('quark:ancient', 'quark:ancient')
     gardensapling('quark:blue_blossom', 'quark:blossom')
     gardensapling('quark:lavender_blossom', 'quark:blossom')
@@ -59,12 +59,6 @@ ServerEvents.recipes(event => {
     saplingannoying('lost_aether_content:crystal', 'aether:skyroot')
     saplingannoying('lost_aether_content:holiday', 'aether:skyroot')
 
-
-    const saplin = [
-      {name:'undergarden:smogstem'},{name:'undergarden:wigglewood'},{name:'undergarden:grongle'}
-    ]
-
     //Garden Cloche Crops
     gardenitem('minecraft:cocoa_beans', 2, 'minecraft:cocoa_beans', 'minecraft:jungle_log', 560, 'crop', 'minecraft:cocoa')
-    gardenitem('minecraft:birch_log', 6, 'minecraft:birch_sapling', 'minecraft:dirt', 560, 'generic', 'minecraft:birch_sapling')
 })

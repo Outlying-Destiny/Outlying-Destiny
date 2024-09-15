@@ -48,6 +48,7 @@ ServerEvents.recipes(event => {
     event.remove({id:'thermal_extra:crafting/nitratic_igniter'})
     event.remove({id:/thermal_extra:machine.+nitratic_igniter.+/})
     event.remove({id:/thermal_extra.+machine.+chiller.+raw_.+/})
+    event.remove({id:/thermal_extra:machine\/crucible.+/})
 
     //Devices
     event.remove({id:'thermal_extra:crafting/device_lava_gen'})
