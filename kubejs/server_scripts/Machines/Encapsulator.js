@@ -38,4 +38,8 @@ ServerEvents.recipes(event => {
 
     //Red Alloy Ingot
     encapsulator('projectred_core:red_ingot', 'minecraft:iron_ingot', 'thermal:redstone', 500, 8000)
+
+    //Florb Thermal Extra fix
+    function florb(fluid, florbnbt) {event.custom({"type": "thermal:bottler","ingredients": [{"item": 'thermal:florb'},{"fluid": fluid,"amount": 1000}],"result": [{"type": "forge:nbt", "item": "thermal:florb", "nbt": florbnbt}],"energy": 400})}
+    florb('thermal_extra:sunflower_oil', '{Fluid:{Amount:1000,FluidName:"thermal_extra:sunflower_oil"}}')
 })

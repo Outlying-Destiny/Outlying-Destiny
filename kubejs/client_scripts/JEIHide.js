@@ -170,4 +170,7 @@ JEIEvents.hideFluids(event => {
 
     //Creosote
     event.hide('thermal:creosote')
+
+    //Flowing
+    event.hide(/.+flowing/)
 })
