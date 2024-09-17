@@ -178,4 +178,8 @@ ServerEvents.recipes(event => {
       'enderio:copper_alloy_ingot'
     )
 
+    //Crafting Terminal
+    event.remove({id:'ae2:network/parts/terminals_crafting'})
+    event.shapeless('ae2:crafting_terminal', ['ae2:terminal', 'extendedcrafting:basic_table', 'ae2:calculation_processor'])
+
 })

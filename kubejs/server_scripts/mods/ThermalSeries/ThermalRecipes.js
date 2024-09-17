@@ -300,5 +300,6 @@ ServerEvents.recipes(event => {
     machine('centrifuge', 'enderio:prescient_crystal', 'enderio:end_steel_ingot', 'thermal:constantan_gear')
     machine('refinery', 'enderio:frank_n_zombie', 'extendedcrafting:black_iron_ingot', 'thermal:steel_gear')
     machine('pyrolyzer', 'minecraft:lava_bucket', 'powah:crystal_blazing', 'thermal:netherite_gear')
+    machine('crafter', 'minecraft:crafting_table', 'thermal:signalum_plate', 'thermal:bronze_gear')
     
 })

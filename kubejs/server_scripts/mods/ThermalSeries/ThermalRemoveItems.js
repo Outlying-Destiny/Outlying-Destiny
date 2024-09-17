@@ -22,11 +22,11 @@ ServerEvents.recipes(event => {
     event.remove({id:'thermal:machines/insolator/insolator_glowstone_mushroom'})
     event.remove({id:'thermal:machines/insolator/insolator_gunpowder_mushroom'})
     event.remove({id:'thermal:machines/insolator/insolator_redstone_mushroom'})
-    event.remove({id:'thermal:machines/insolator/insolator_slime_mushroom'})
+    event.remove({id:'thermal:machinaes/insolator/insolator_slime_mushroom'})
 
     //Augments
     event.remove({id:'thermal_extra:crafting/augment_smithing_templte'})
-    event.remove({id:/thermal_extra:crafting.+augment.+/})
+    event.remove({id:/thermal_extra:crafting\/augment.+/})
     event.remove({id:'thermal_extra:machine/crystallizer/dragonsteel_infused_fluid_tank_augment'})
 
     //Components
@@ -46,8 +46,8 @@ ServerEvents.recipes(event => {
 
     //Thermal Extra Ore Dupe
     event.remove({id:'thermal_extra:crafting/nitratic_igniter'})
-    event.remove({id:/thermal_extra:machine.+nitratic_igniter.+/})
-    event.remove({id:/thermal_extra.+machine.+chiller.+raw_.+/})
+    event.remove({id:/thermal_extra:machine\/nitratic_igniter.+/})
+    event.remove({id:/thermal_extra.+machine\/chiller.+raw_.+/})
     event.remove({id:/thermal_extra:machine\/crucible.+/})
 
     //Devices
@@ -68,4 +68,6 @@ ServerEvents.recipes(event => {
     event.remove({id:'industrialforegoing:laser_drill_ore/ores/ruby'})
     event.remove({id:'industrialforegoing:laser_drill_ore/ores/sapphire'})
 
+    //Ancient Dust
+    event.remove({id:'thermal_extra:machine/crystallizer/ancient_dust'})
 })

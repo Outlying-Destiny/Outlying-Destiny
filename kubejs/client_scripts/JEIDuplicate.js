@@ -2,11 +2,16 @@ JEIEvents.removeCategories(event => {
 
     //Villager Trades
     console.log(event.categoryIds) //log a list of all category ids to logs/kubejs/client.txt
-    event.remove('jeresources:villager')
-    event.remove('mekanism:energized_smelter')
-    event.remove('industrialforegoing:fermenter')
-    event.remove('industrialforegoing:ore_sieve')
-    event.remove('industrialforegoing:ore_washer')
+    event.remove(
+        'jeresources:villager',
+        'mekanism:energized_smelter',
+        'industrialforegoing:fermenter',
+        'industrialforegoing:ore_sieve',
+        'industrialforegoing:ore_washer',
+        'farmingforblockheads:market',
+        'thermal:furnace',
+        'enderio:alloy_smelting'
+        )
     
 
 })
