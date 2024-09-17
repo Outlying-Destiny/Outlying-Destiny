@@ -237,12 +237,32 @@
 				type: "choice"
 			}]
 			size: 1.75d
-			tasks: [{
-				count: 8L
-				id: "7329ECC9EFAD85B9"
-				item: "naturesaura:wood_stand"
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 8L
+					id: "7329ECC9EFAD85B9"
+					item: "naturesaura:wood_stand"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "4B10ABF12568BE8B"
+					item: { Count: 16, id: "naturesaura:gold_powder" }
+					type: "item"
+				}
+				{
+					id: "18E400FC450DC61E"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:saplings"
+						}
+					}
+					title: "Any #minecraft:saplings"
+					type: "item"
+				}
+			]
 			x: -0.5d
 			y: -1.0d
 		}

@@ -3,7 +3,13 @@
 	default_quest_shape: ""
 	filename: "3_getting_immersed"
 	group: ""
-	icon: "immersiveengineering:manual"
+	icon: {
+		Count: 1
+		id: "immersiveengineering:hammer"
+		tag: {
+			Damage: 0
+		}
+	}
 	id: "2097D9B696BD54B2"
 	order_index: 2
 	quest_links: [ ]

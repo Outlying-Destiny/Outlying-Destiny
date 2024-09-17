@@ -1,0 +1,883 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "7_chemical_industry"
+	group: ""
+	icon: "industrialforegoing:machine_frame_supreme"
+	id: "1F45B840803E6322"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4B0C8DCB02DD44D3"]
+			disable_toast: true
+			id: "632B7F8040701318"
+			size: 1.25d
+			tasks: [{
+				id: "626D311447749734"
+				item: "kubejs:empowered_energized_steel"
+				type: "item"
+			}]
+			x: -5.75d
+			y: -1.0d
+		}
+		{
+			dependencies: ["632B7F8040701318"]
+			id: "150A63180583B169"
+			tasks: [{
+				id: "331353E01AC28C63"
+				item: "industrialforegoing:machine_frame_pity"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"12EE00BE6E582A9B"
+				"150A63180583B169"
+			]
+			id: "6ABF176C5EFBDD3E"
+			tasks: [{
+				id: "1DD52E4C0347A670"
+				item: "industrialforegoing:dissolution_chamber"
+				type: "item"
+			}]
+			x: -3.25d
+			y: 0.25d
+		}
+		{
+			dependencies: [
+				"4B0C8DCB02DD44D3"
+				"6EC3843A34FFAA3F"
+			]
+			disable_toast: true
+			id: "12EE00BE6E582A9B"
+			size: 1.25d
+			tasks: [{
+				id: "439802B615A5D746"
+				item: "kubejs:empowered_blazing_crystal"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.25d
+		}
+		{
+			dependencies: ["150A63180583B169"]
+			id: "528DBD8CAB98933A"
+			tasks: [{
+				id: "0C114CE7F62590BB"
+				item: "industrialforegoing:bioreactor"
+				type: "item"
+			}]
+			x: -5.75d
+			y: -2.25d
+		}
+		{
+			dependencies: ["150A63180583B169"]
+			id: "40D48E2DDAB93BB3"
+			tasks: [{
+				id: "7B8FC3A2B52E3CEF"
+				item: "industrialforegoing:fluid_extractor"
+				type: "item"
+			}]
+			x: -3.25d
+			y: -2.25d
+		}
+		{
+			dependencies: ["528DBD8CAB98933A"]
+			id: "7181ABFD7A44C9C7"
+			tasks: [{
+				id: "136789B53EF750CB"
+				item: "industrialforegoing:biofuel_bucket"
+				type: "item"
+			}]
+			x: -5.75d
+			y: -3.5d
+		}
+		{
+			dependencies: ["40D48E2DDAB93BB3"]
+			id: "20EE34FE4B966E53"
+			tasks: [{
+				id: "0EC8C450FB9448A5"
+				item: "industrialforegoing:latex_bucket"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7181ABFD7A44C9C7"]
+			id: "1ADE47AB57137297"
+			tasks: [{
+				id: "564C012BC42B58F3"
+				item: "thermal_extra:shellite_ingot"
+				type: "item"
+			}]
+			x: -3.25d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1ADE47AB57137297"]
+			id: "704E2028C6A94AAC"
+			tasks: [{
+				id: "690B563EF5E20CB7"
+				item: "mekanism:alloy_atomic"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"6ABF176C5EFBDD3E"
+				"20EE34FE4B966E53"
+				"0F6ECA16BAFB299C"
+			]
+			id: "4E3F3D2CC84F706A"
+			tasks: [{
+				id: "4438C63555AF28C6"
+				item: "industrialforegoing:machine_frame_simple"
+				type: "item"
+			}]
+			x: -0.75d
+			y: 0.25d
+		}
+		{
+			dependencies: ["704E2028C6A94AAC"]
+			id: "75B59A3392FA89A9"
+			tasks: [{
+				id: "4CCDA962EECE7309"
+				item: "mekanism:electrolytic_core"
+				type: "item"
+			}]
+			x: -0.75d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"7B3CC62686FA4310"
+				"2A3181170AF6A8C3"
+				"1CB37EF3A793639C"
+			]
+			id: "0F6ECA16BAFB299C"
+			tasks: [{
+				id: "7E6FE09359C7F7DA"
+				item: "mekanism:hdpe_sheet"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["75B59A3392FA89A9"]
+			id: "7B3CC62686FA4310"
+			tasks: [{
+				id: "5D842D5DA6C2FAAA"
+				item: "mekanism:electrolytic_separator"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.25d
+		}
+		{
+			dependencies: ["75B59A3392FA89A9"]
+			id: "1CB37EF3A793639C"
+			tasks: [{
+				id: "752F9587D047F7C2"
+				item: "mekanism:pressurized_reaction_chamber"
+				type: "item"
+			}]
+			x: -0.75d
+			y: -2.25d
+		}
+		{
+			dependencies: ["75B59A3392FA89A9"]
+			id: "7FF5D4745350349F"
+			tasks: [{
+				id: "5D581E482B3E90F9"
+				item: "mekanism:rotary_condensentrator"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7FF5D4745350349F"]
+			id: "2A3181170AF6A8C3"
+			tasks: [{
+				id: "41DB37CB6ADAF8EB"
+				item: "mekanism:ethene_bucket"
+				type: "item"
+			}]
+			x: 1.75d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"4E3F3D2CC84F706A"
+				"043ED88B3458DB26"
+			]
+			id: "3010848152BF092A"
+			tasks: [{
+				id: "17783EA813F475BB"
+				item: "industrialforegoing:mob_slaughter_factory"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3010848152BF092A"]
+			id: "314BD3ECA75A6233"
+			tasks: [{
+				id: "6C33A424DA7FFBA9"
+				item: "industrialforegoing:pink_slime_bucket"
+				type: "item"
+			}]
+			x: 1.75d
+			y: 1.5d
+		}
+		{
+			dependencies: ["314BD3ECA75A6233"]
+			id: "323755DC97DFAE26"
+			tasks: [{
+				id: "1F67076B4D286767"
+				item: "thermal_extra:twinite_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4E3F3D2CC84F706A"]
+			icon: "mekanism:thermal_evaporation_controller"
+			id: "34C5F3C2EC9DA297"
+			tasks: [
+				{
+					id: "67E7F2954F362C77"
+					item: "mekanism:thermal_evaporation_controller"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "66037BA17834AB49"
+					item: { Count: 3, id: "mekanism:thermal_evaporation_valve" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "5E9DC3F9FFA86BE0"
+					item: { Count: 20, id: "mekanism:thermal_evaporation_block" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "251CB79EF9D7106D"
+					item: { Count: 16, id: "mekanism:structural_glass" }
+					type: "item"
+				}
+				{
+					id: "41F552E54ABAF88D"
+					item: "mekanism:fuelwood_heater"
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 0.25d
+		}
+		{
+			dependencies: ["34C5F3C2EC9DA297"]
+			id: "650525E2EBF30DE7"
+			tasks: [{
+				id: "256D6DBF86DE3DEF"
+				item: "mekanism:lithium_bucket"
+				type: "item"
+			}]
+			x: 1.75d
+			y: 0.25d
+		}
+		{
+			dependencies: [
+				"00BD32920B4719EB"
+				"650525E2EBF30DE7"
+			]
+			id: "35691A3C6B2A7B84"
+			tasks: [{
+				id: "5EB4F231B09152A5"
+				item: "mekanism:dust_lithium"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["35691A3C6B2A7B84"]
+			icon: "mekanism:induction_port"
+			id: "00CC830713FF0B88"
+			tasks: [
+				{
+					count: 24L
+					id: "689EDC5D66BC9CB1"
+					item: { Count: 24, id: "mekanism:induction_casing" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "4216B736C3F35B82"
+					item: { Count: 2, id: "mekanism:induction_port" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "0720C82264796AE6"
+					item: { Count: 8, id: "mekanism:structural_glass" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"323755DC97DFAE26"
+				"35691A3C6B2A7B84"
+			]
+			id: "5FB1C36C44672D6C"
+			tasks: [{
+				id: "47824EFE086059B2"
+				item: "industrialforegoing:machine_frame_advanced"
+				type: "item"
+			}]
+			x: 4.25d
+			y: 0.25d
+		}
+		{
+			dependencies: ["0F6ECA16BAFB299C"]
+			id: "00BD32920B4719EB"
+			tasks: [{
+				id: "7B25BF38634437F0"
+				item: "mekanism:chemical_crystallizer"
+				type: "item"
+			}]
+			x: 1.75d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"1EFA779139C3E470"
+				"6EC3843A34FFAA3F"
+			]
+			disable_toast: true
+			id: "043ED88B3458DB26"
+			size: 1.25d
+			tasks: [{
+				id: "65E3CFE508F137FC"
+				item: "thermal_extra:soul_infused_ingot"
+				type: "item"
+			}]
+			x: -0.75d
+			y: 1.5d
+		}
+		{
+			dependencies: ["323755DC97DFAE26"]
+			id: "0FBA307E889389C5"
+			tasks: [{
+				id: "091492CC51890EF9"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "thermal_extra:soul_infused_machine_speed_augment"
+							}
+							{
+								Count: 1b
+								id: "thermal_extra:shellite_machine_output_augment"
+							}
+							{
+								Count: 1b
+								id: "thermal_extra:abyssal_machine_catalyst_augment"
+							}
+							{
+								Count: 1b
+								id: "thermal_extra:abyssal_machine_efficiency_augment"
+							}
+							{
+								Count: 1b
+								id: "thermal_extra:abyssal_potion_duration_augment"
+							}
+							{
+								Count: 1b
+								id: "thermal_extra:shellite_fluid_tank_augment"
+							}
+							{
+								Count: 1b
+								id: "thermal_extra:shellite_rf_coil_augment"
+							}
+							{
+								Count: 1b
+								id: "thermal_extra:shellite_rf_coil_storage_augment"
+							}
+							{
+								Count: 1b
+								id: "thermal_extra:shellite_rf_coil_xfer_augment"
+							}
+						]
+					}
+				}
+				title: "Any Twinite Augment"
+				type: "item"
+			}]
+			x: 4.25d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5FB1C36C44672D6C"]
+			icon: "industrialforegoing:ore_laser_base"
+			id: "1EE1DD5859B416EE"
+			tasks: [
+				{
+					id: "21C409AE87D81106"
+					item: "industrialforegoing:ore_laser_base"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "68C3E36CAB403D0F"
+					item: { Count: 4, id: "industrialforegoing:laser_drill" }
+					type: "item"
+				}
+				{
+					id: "48B2C03F4A514613"
+					item: "industrialforegoing:laser_lens10"
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 0.25d
+		}
+		{
+			dependencies: ["1EE1DD5859B416EE"]
+			id: "7D941F66A8003501"
+			tasks: [{
+				id: "35A77888436301E4"
+				item: "draconicevolution:draconium_ingot"
+				type: "item"
+			}]
+			x: 6.75d
+			y: 0.25d
+		}
+		{
+			dependencies: ["7D941F66A8003501"]
+			id: "39CE2691053F993E"
+			tasks: [{
+				id: "3DFDFB767E1BCFE7"
+				item: "thermal_extra:dragonsteel_ingot"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.25d
+		}
+		{
+			dependencies: ["39CE2691053F993E"]
+			id: "79B3FE70F7A8D0BF"
+			tasks: [{
+				id: "35464F63690B0680"
+				item: "thermal:upgrade_augment_3"
+				type: "item"
+			}]
+			x: 6.75d
+			y: 1.5d
+		}
+		{
+			dependencies: ["39CE2691053F993E"]
+			id: "156349CDCED84A78"
+			tasks: [{
+				id: "61C19A3DEB8A92C9"
+				item: {
+					Count: 1
+					id: "constructionwand:infinity_wand"
+					tag: {
+						wand_options: { }
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["39CE2691053F993E"]
+			id: "0AADF9A23FCF74F0"
+			tasks: [{
+				id: "1EE08D41B35988E5"
+				item: "mekanism:chemical_oxidizer"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0AADF9A23FCF74F0"]
+			id: "4E5147F740457745"
+			tasks: [{
+				id: "748589634482265C"
+				item: "mekanism_extras:dust_radiance"
+				type: "item"
+			}]
+			x: 9.25d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4E5147F740457745"]
+			id: "56FDBCD9C5B61D1B"
+			tasks: [{
+				id: "14176530C604C80C"
+				item: "mekanism:resistive_heater"
+				type: "item"
+			}]
+			x: 9.25d
+			y: 0.25d
+		}
+		{
+			dependencies: ["4E5147F740457745"]
+			id: "3944526C83B2BCDD"
+			tasks: [
+				{
+					id: "11AC4FD56965CEF3"
+					item: {
+						Count: 1
+						id: "industrialforegoing:speed_addon_1"
+						tag: {
+							TitaniumAugment: {
+								Speed: 2.0f
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3C0EAA67C9D39F26"
+					item: {
+						Count: 1
+						id: "industrialforegoing:processing_addon_1"
+						tag: {
+							TitaniumAugment: {
+								Processing: 2.0f
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3A07B06E6A98E2CA"
+					item: {
+						Count: 1
+						id: "industrialforegoing:efficiency_addon_1"
+						tag: {
+							TitaniumAugment: {
+								Efficiency: 0.9f
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -2.25d
+		}
+		{
+			dependencies: ["5FB1C36C44672D6C"]
+			id: "269EC584408CEC4F"
+			tasks: [
+				{
+					count: 24L
+					id: "1E89BC2630D40A6A"
+					item: { Count: 24, id: "mekanism:boiler_casing" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "54C84D1B18EC5F48"
+					item: { Count: 3, id: "mekanism:boiler_valve" }
+					type: "item"
+				}
+				{
+					id: "6AEDF38E9F05D078"
+					item: "mekanism:pressure_disperser"
+					type: "item"
+				}
+				{
+					id: "3542530FE5FED1AB"
+					item: "mekanism:superheating_element"
+					type: "item"
+				}
+				{
+					count: 7L
+					id: "03A2F4D1416AEF85"
+					item: { Count: 7, id: "mekanism:structural_glass" }
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["39CE2691053F993E"]
+			id: "05855413E5060AF2"
+			tasks: [{
+				id: "1480239AC297627E"
+				item: "mekanism:chemical_infuser"
+				type: "item"
+			}]
+			x: 6.75d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"12EE00BE6E582A9B"
+				"0F6ECA16BAFB299C"
+			]
+			hide_dependency_lines: true
+			id: "01424748CE37CD98"
+			tasks: [{
+				id: "6E9791E2DB04658E"
+				item: "mekanism:chemical_dissolution_chamber"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"01424748CE37CD98"
+				"0AADF9A23FCF74F0"
+				"05855413E5060AF2"
+				"269EC584408CEC4F"
+			]
+			id: "443C2A71DBD6C1D6"
+			tasks: [{
+				id: "33E3B5989583099F"
+				item: "mekanism:hydrofluoric_acid_bucket"
+				type: "item"
+			}]
+			title: "Liquid Hydrofluoric Acid"
+			x: 6.75d
+			y: -2.25d
+		}
+		{
+			dependencies: ["39CE2691053F993E"]
+			id: "7A910EB52355AC31"
+			tasks: [{
+				id: "3B6DB3D08818C294"
+				item: "industrialforegoing:material_stonework_factory"
+				type: "item"
+			}]
+			x: 9.25d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4E3F3D2CC84F706A"]
+			hide_dependency_lines: true
+			id: "32F2F96DFC55D755"
+			tasks: [{
+				id: "5EE0A8D04B622201"
+				item: "industrialforegoing:marine_fisher"
+				type: "item"
+			}]
+			x: -3.25d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5FB1C36C44672D6C"]
+			id: "5EB59B977D2BB99D"
+			tasks: [{
+				id: "5584AA4473CC92FF"
+				item: "industrialforegoing:potion_brewer"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.25d
+		}
+		{
+			dependencies: ["5FB1C36C44672D6C"]
+			id: "0213E8BE90FED1EE"
+			tasks: [{
+				id: "4862DCE1B23FA3BD"
+				item: "industrialforegoing:mob_crusher"
+				type: "item"
+			}]
+			x: 4.25d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5FB1C36C44672D6C"]
+			id: "7EA8EB705F30AB9B"
+			tasks: [
+				{
+					id: "6141E42E7CAB6F04"
+					item: "industrialforegoing:enchantment_factory"
+					type: "item"
+				}
+				{
+					id: "4E21E07150F82BE8"
+					item: "industrialforegoing:enchantment_applicator"
+					type: "item"
+				}
+			]
+			title: "Enchanting? Pfft... why are we doing that already?"
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["150A63180583B169"]
+			icon: "industrialforegoing:fertilizer"
+			id: "12951669C3B0FF84"
+			tasks: [
+				{
+					id: "51C93900A96917E4"
+					item: "industrialforegoing:sewer"
+					type: "item"
+				}
+				{
+					id: "20BFFC7BC37DC09B"
+					item: "industrialforegoing:sewage_composter"
+					type: "item"
+				}
+				{
+					id: "1894302804A87A88"
+					item: "industrialforegoing:fertilizer"
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: -2.25d
+		}
+		{
+			dependencies: ["4E3F3D2CC84F706A"]
+			id: "4A1685BEDD0583F5"
+			tasks: [
+				{
+					id: "433B9D7078AD9A34"
+					item: "industrialforegoing:plant_gatherer"
+					type: "item"
+				}
+				{
+					id: "76529A80DA856107"
+					item: "industrialforegoing:plant_sower"
+					type: "item"
+				}
+			]
+			x: -0.75d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5FB1C36C44672D6C"]
+			id: "4DABEF4B0EA4D20C"
+			tasks: [{
+				id: "27D03EE375814069"
+				item: "industrialforegoing:plant_fertilizer"
+				type: "item"
+			}]
+			x: 4.25d
+			y: -2.25d
+		}
+		{
+			dependencies: ["4E3F3D2CC84F706A"]
+			id: "1C4214532D48FA11"
+			tasks: [{
+				id: "107D3C14A12D7F05"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "industrialforegoing:block_placer"
+							}
+							{
+								Count: 1b
+								id: "industrialforegoing:block_breaker"
+							}
+							{
+								Count: 1b
+								id: "industrialforegoing:fluid_placer"
+							}
+							{
+								Count: 1b
+								id: "industrialforegoing:fluid_collector"
+							}
+						]
+					}
+				}
+				title: "Block/Liquid Placer/Breaker"
+				type: "item"
+			}]
+			title: "Placing and Breaking? Pfft... that's old news"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["704E2028C6A94AAC"]
+			id: "3A96B0C4E67A9461"
+			tasks: [{
+				id: "4636D061391F3026"
+				item: "mekanism:chargepad"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"4E5147F740457745"
+				"443C2A71DBD6C1D6"
+			]
+			id: "0A2A53C5869DC219"
+			size: 1.5d
+			tasks: [{
+				id: "20FEA51C95DFB07B"
+				item: "industrialforegoing:machine_frame_supreme"
+				type: "item"
+			}]
+			x: 9.25d
+			y: -2.25d
+		}
+		{
+			dependencies: ["150A63180583B169"]
+			hide_dependency_lines: true
+			id: "184D83FCDB936F68"
+			tasks: [{
+				id: "1976FE1F643A0C57"
+				item: "industrialforegoing:animal_rancher"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4E3F3D2CC84F706A"]
+			hide_dependency_lines: true
+			id: "1C4ED33D23E19544"
+			tasks: [
+				{
+					id: "1D2FE2A62296A24A"
+					item: "industrialforegoing:animal_feeder"
+					type: "item"
+				}
+				{
+					id: "5D4CA8BE2A124E94"
+					item: "industrialforegoing:animal_baby_separator"
+					type: "item"
+				}
+			]
+			x: -3.25d
+			y: 1.5d
+		}
+	]
+	title: "7. Chemical Industry"
+}
