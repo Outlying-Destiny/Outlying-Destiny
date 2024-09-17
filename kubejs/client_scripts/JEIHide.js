@@ -24,7 +24,7 @@ JEIEvents.hideItems(event => {
     event.hide([/thermal_extra:soul_infused.+_augment/, /thermal_extra:dragonsteel.+_augment/, /thermal.+dynamo_.+_augmen.+/, 'thermal_extra:twinite_fluid_tank_augment', 'thermal_extra:abyssal_fluid_tank_augment', /thermal_extra:.+_potion_amplifier_augment/, 'thermal_extra:twinite_potion_duration_augment', 'thermal_extra:shellite_potion_duration_augment', /thermal_extra:twinite_rf_coil.+augment/, /thermal_extra:abyssal_rf_coil.+augment/, /thermal_extra:.+machine_speed_augment/, 'thermal_extra:twinite_machine_efficiency_augment', 'thermal_extra:shellite_machine_efficiency_augment', 'thermal_extra:twinite_machine_output_augment', 'thermal_extra:abyssal_machine_output_augment', 'thermal_extra:twinite_machine_catalyst_augment', 'thermal_extra:shellite_machine_catalyst_augment', /thermal_extra:.+_area_radius_augment/, 'thermalendergy:melodic_range_augment', 'thermal_extra:av_item_filter_augment', 'thermal_extra:augment_smithing_upgrade'])
     event.hide(['thermal_extra:upgrade_augment', 'thermal_extra:abyssal_upgrade_augment'])
     event.hide(['thermal_extra:nitratic_igniter', /thermal_extra:.+_ore_chunk/])
-    event.hide(/thermal:.+mushroom_spores/, 'thermal_extra:ancient_dust')
+    event.hide([/thermal:.+mushroom_spores/, 'thermal_extra:ancient_dust'])
     event.hide(['thermal:satchel', 'thermal_extra:device_lava_gen', 'thermal:device_water_gen', 'thermal:phytosoil', 'thermal:phytosoil_tiled', 'thermal:device_soil_infuser', 'thermal:xp_crystal', 'thermal:device_xp_condenser', 'thermal:xp_storage_augment'])
     event.hide(['thermal:ruby_ore', 'thermal:deepslate_ruby_ore', 'thermal:sapphire_ore', 'thermal:deepslate_sapphire_ore'])
 
@@ -45,7 +45,7 @@ JEIEvents.hideItems(event => {
     event.hide(['elementalcraft:inert_crystal_ore', 'elementalcraft:deepslate_inert_crystal_ore'])
 
     //EvilCraft
-    event.hide([/evilcraft:exalted_crafte.+/])
+    event.hide(/evilcraft:exalted_crafte.+/)
 
     //Forbiddern Arcanus
     event.hide(['forbidden_arcanus:xpetrified_ore', 'forbidden_arcanus:stella_arcanum'])
@@ -76,8 +76,9 @@ JEIEvents.hideItems(event => {
 
     //EnderIO
     event.hide(['enderio:silicon', 'enderio:flour', 'enderio:cake_base', 'enderio:clayed_glowstone'])
-    event.hide(['enderio:drain', 'enderio:stirling_generator', 'enderio:crafter', 'enderio:soul_engine'])
-
+    event.hide(['enderio:drain', 'enderio:stirling_generator', 'enderio:crafter', 'enderio:soul_engine', 'enderio:primitive_alloy_smelter', 'enderio:alloy_smelter'])
+    event.hide([/enderio.+condui.+/, /enderio.+filte.+/, /enderio:extraction_speed_upgrade.+/])
+    
     //Construction Wand
     event.hide(['constructionwand:stone_wand', 'constructionwand:iron_wand'])
 
@@ -93,24 +94,20 @@ JEIEvents.hideItems(event => {
 
     //Masterful Machinery
     event.hide(/mm:.+energy_port_output/)
-    event.hide(['mm:the_vat_tiny_item_port_output'])
+    event.hide('mm:the_vat_tiny_item_port_output')
 
     //Applied Energistics 2
     event.hide('ae2:crafting_card')
 
     //Farming for Blockheads
-    event.hide('farmingforblockheads:market', 'farmingforblockheads:chicken_nest', 'farmingforblockheads:feeding_trough')
+    event.hide(['farmingforblockheads:market', 'farmingforblockheads:chicken_nest', 'farmingforblockheads:feeding_trough'])
     
     //Extended Crafting Redstone Ingot
     event.hide('extendedcrafting:redstone_ingot')
 
-    //Ender Pearl Dust
+    //Dusts
     event.hide(['ae2:ender_dust', 'enderio:powdered_ender_pearl'])
-
-    //Quartz Dust
     event.hide(['mekanism:dust_quartz', 'enderio:powdered_quartz'])
-
-    //Cobalt Dust
     event.hide('enderio:powdered_cobalt')
 
     //Sawdust
@@ -123,7 +120,7 @@ JEIEvents.hideItems(event => {
     //Aether Valkyrie Lance
     event.hide('aether:valkyrie_lance')
 
-    //Magnet
+    //Magnets
     event.hide('thermal:flux_magnet')
     event.hide('immersiveengineering:toolupgrade_powerpack_magnet')
     event.hide('enderio:electromagnet')
@@ -142,11 +139,6 @@ JEIEvents.hideItems(event => {
 
     //Wrenches
     event.hide(['bigreactors:wrench', 'hammerlib:wrench', 'ad_astra:wrench', 'enderio:yeta_wrench'])
-
-    //EnderIO Conduits and Upgrades
-    event.hide(/enderio.+condui.+/)
-    event.hide(/enderio.+filte.+/)
-    event.hide(/enderio:extraction_speed_upgrade.+/)
 
     //Fluid Buckets
     event.hide(['enderio:xp_juice_bucket', 'pneumaticcraft:biodiesel_bucket', 'pneumaticcraft:vegetable_oil_bucket', 'pneumaticcraft:ethanol_bucket', 'thermal:creosote_bucket'])

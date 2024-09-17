@@ -11,7 +11,7 @@ JEIEvents.removeCategories(event => {
         'farmingforblockheads:market',
         'thermal:furnace',
         'enderio:alloy_smelting'
-        )
+    )
     
 
 })
