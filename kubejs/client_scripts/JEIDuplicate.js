@@ -1,6 +1,6 @@
 JEIEvents.removeCategories(event => {
 
-    //Villager Trades
+    //Categories
     console.log(event.categoryIds) //log a list of all category ids to logs/kubejs/client.txt
     event.remove(
         'jeresources:villager',

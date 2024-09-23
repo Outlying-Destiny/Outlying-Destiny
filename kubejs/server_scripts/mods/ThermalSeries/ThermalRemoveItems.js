@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
 
     //Essence of Knowledge
     event.remove({id:'thermal:machines/centrifuge/centrifuge_experience_bottle'})
-    event.custom({"type": "thermal:centrifuge","ingredient": {"item": "minecraft:experience_bottle"},"result": [{"item": "minecraft:glass_bottle"},{"fluid_tag": "forge:experience","amount": 250}],"energy": 800})
+    event.custom({"type": "thermal:centrifuge","ingredient": {"item": "minecraft:experience_bottle"},"result": [{"item": "minecraft:glass_bottle"},{"fluid": "mob_grinding_utils:fluid_xp","amount": 250}],"energy": 800})
 
     //Creosote Oil
     event.remove({id:'thermal:machines/pyrolyzer/pyrolyzer_coal'})

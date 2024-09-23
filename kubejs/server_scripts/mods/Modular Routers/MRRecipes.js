@@ -81,7 +81,7 @@ ServerEvents.recipes(event => {
     event.shapeless('8x modularrouters:sender_module_2', ['4x modularrouters:sender_module_1', 'enderio:ender_resonator', '4x modularrouters:sender_module_1'])
     event.shapeless('8x modularrouters:fluid_module_2', ['4x modularrouters:fluid_module', 'enderio:ender_resonator', '4x modularrouters:fluid_module'])
     event.shapeless('8x modularrouters:energy_distributor_module', ['4x modularrouters:energy_output_module', 'enderio:ender_resonator', '4x modularrouters:energy_output_module'])
-    event.shapeless('modularrouters:sender_module_3', ['modularrouters:sender_module_2', 'tesseract:tesseract'])
+    event.shapeless('modularrouters:sender_module_3', ['modularrouters:sender_module_2', 'mekanism:quantum_entangloporter'])
 
 
     //Vacuum Module + Augment

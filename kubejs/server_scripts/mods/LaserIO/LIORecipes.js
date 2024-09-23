@@ -143,11 +143,11 @@ ServerEvents.recipes(event => {
         'minecraft:book',
         'ae2:engineering_processor'
     )
-    event.replaceInput(
-        {output:'laserio:filter_nbt'},
-        'minecraft:white_wool',
-        'integrateddynamics:logic_director'
-    )
+    //event.replaceInput(
+    //    {output:'laserio:filter_nbt'},
+    //    'minecraft:white_wool',
+    //    'kubejs:something_processor'
+    //)
 
     //Overclockers
     event.replaceInput(
