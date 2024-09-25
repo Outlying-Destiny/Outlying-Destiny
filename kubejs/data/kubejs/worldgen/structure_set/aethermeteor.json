@@ -1,0 +1,14 @@
+{
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 4687523,
+      "separation": 28,
+      "spacing": 40
+    },
+    "structures": [
+      {
+        "structure": "kubejs:aethermeteor",
+        "weight": 1
+      }
+    ]
+  }
