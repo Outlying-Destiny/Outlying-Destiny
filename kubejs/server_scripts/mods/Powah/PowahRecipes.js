@@ -39,23 +39,6 @@ ServerEvents.recipes(event => {
       event.shapeless(material, block)
     }
 
-    //Function Combination Crafting
-    function combination(output, baseinput, input1, input2, input3, florbnbt, energyrate, time){
-      event.custom({
-        "type": "extendedcrafting:combination",
-        "powerCost": energyrate*time,
-        "powerRate": energyrate,
-        "input": {"item": baseinput, "count": 1},
-        "ingredients": [
-          {"item":input1},
-          {"item":input2},
-          {"item":input3},
-          {"type": "forge:nbt", "item": "thermal:florb", "nbt": florbnbt}
-        ],
-        "result": {"item": output }
-      })
-    }
-
     //Iron is Steel now
     event.replaceInput(
         {output:/powah:.+/},
@@ -196,8 +179,8 @@ ServerEvents.recipes(event => {
     })
 
     //Empowered Material to Block
-    mattoblo('kubejs:empowered_energized_steel_block', '9x kubejs:empowered_energized_steel')
-    mattoblo('kubejs:empowered_blazing_crystal_block', '9x kubejs:empowered_blazing_crystal')
+    mattoblo('actuallyadditions:empowered_enori_crystal_block', '9x actuallyadditions:empowered_enori_crystal')
+    mattoblo('actuallyadditions:empowered_palis_crystal_block', '9x actuallyadditions:empowered_palis_crystal')
     mattoblo('kubejs:empowered_niotic_crystal_block', '9x kubejs:empowered_niotic_crystal')
     mattoblo('kubejs:empowered_spirited_crystal_block', '9x kubejs:empowered_spirited_crystal')
     mattoblo('kubejs:empowered_nitro_crystal_block', '9x kubejs:empowered_nitro_crystal')
@@ -209,9 +192,4 @@ ServerEvents.recipes(event => {
     //Blazing Crystal
     event.remove({id:/powah:energizing.+blazing_crysta.+/})
     orb4("powah:crystal_blazing", 1, "minecraft:blaze_powder", "thermal:blizz_powder", "thermal:blitz_powder", "thermal:basalz_powder", 100000)
-
-    //Empowered Powah Materials
-    combination('kubejs:empowered_energized_steel', 'powah:steel_energized', 'enderio:energized_gear', 'extendedcrafting:luminessence', 'mekanism:yellow_cake_uranium', '{Fluid:{Amount:1000,FluidName:"thermal_extra:sunflower_oil"}}', 200, 100)
-    combination('kubejs:empowered_blazing_crystal', 'powah:crystal_blazing', 'minecraft:packed_ice', 'aether:aerogel', 'minecraft:obsidian', '{Fluid:{Amount:1000,FluidName:"enderio:fire_water"}}', 1000, 100)
-
 })

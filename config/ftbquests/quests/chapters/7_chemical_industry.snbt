@@ -15,7 +15,7 @@
 			size: 1.25d
 			tasks: [{
 				id: "626D311447749734"
-				item: "kubejs:empowered_energized_steel"
+				item: "actuallyadditions:empowered_enori_crystal"
 				type: "item"
 			}]
 			x: -5.75d
@@ -56,7 +56,7 @@
 			size: 1.25d
 			tasks: [{
 				id: "439802B615A5D746"
-				item: "kubejs:empowered_blazing_crystal"
+				item: "actuallyadditions:empowered_palis_crystal"
 				type: "item"
 			}]
 			x: -4.5d

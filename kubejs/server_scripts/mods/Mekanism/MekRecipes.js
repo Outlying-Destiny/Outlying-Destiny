@@ -100,6 +100,10 @@ ServerEvents.recipes(event => {
     event.remove({id:'mekanism:osmium_compressor'})
     detailedbox('mekanism:osmium_compressor', 'mekanism:alloy_reinforced', 'mekanism:elite_control_circuit', 'pneumaticcraft:compressed_iron_block', 'mekanism:steel_casing')
 
+    //Combiner
+    event.remove({id:'mekanism:combiner'})
+    detailedbox('mekanism:combiner', 'mekanism:alloy_infused', 'mekanism:elite_control_circuit', 'mekanism:block_refined_obsidian', 'mekanism:steel_casing')
+
     //Precision Sawmill
     event.remove({id:'mekanism:precision_sawmill'})
     detailedbox('mekanism:precision_sawmill', 'minecraft:iron_ingot', 'mekanism:alloy_infused', 'thermal:saw_blade', 'mekanism:steel_casing')
@@ -136,7 +140,7 @@ ServerEvents.recipes(event => {
     detailedbox('mekanism:basic_energy_cube', 'minecraft:redstone', 'mekanism:energy_tablet', 'thermal:steel_ingot', 'immersiveengineering:capacitor_hv')
     detailedbox('mekanism:advanced_energy_cube', 'mekanism:alloy_infused', 'mekanism:energy_tablet', 'powah:steel_energized', 'mekanism:basic_energy_cube')
     detailedbox('mekanism:elite_energy_cube', 'mekanism:alloy_reinforced', 'mekanism:energy_tablet', 'thermal:signalum_ingot', 'mekanism:advanced_energy_cube')
-    detailedbox('mekanism:ultimate_energy_cube', 'mekanism:alloy_atomic', 'mekanism:energy_tablet', 'kubejs:empowered_energized_steel', 'mekanism:elite_energy_cube')
+    detailedbox('mekanism:ultimate_energy_cube', 'mekanism:alloy_atomic', 'mekanism:energy_tablet', 'actuallyadditions:empowered_enori_crystal', 'mekanism:elite_energy_cube')
 
     //Fluid Tanks
     event.remove({id:/mekanism.+fluid_tank.+/})
@@ -239,7 +243,7 @@ ServerEvents.recipes(event => {
         A:'minecraft:diamond',
         B:'mekanism:energy_tablet',
         C:'mekanism:steel_casing',
-        D:'mekanism:alloy_atomic',
+        D:'mekanism:alloy_reinforced',
         E:'laserio:laser_connector'
     })
 
@@ -342,7 +346,7 @@ ServerEvents.recipes(event => {
         'EFE'
         ], {
         A:'extendedcrafting:black_iron_ingot',
-        B:'kubejs:empowered_blazing_crystal',
+        B:'actuallyadditions:empowered_palis_crystal',
         C:'mekanism:ultimate_chemical_tank',
         D:'mekanism:steel_casing',
         E:'extendedcrafting:black_iron_block',
@@ -410,7 +414,7 @@ ServerEvents.recipes(event => {
     event.remove({id:'mekanism:superheating_element'})
     event.remove({id:'mekanism:pressure_disperser'})
     event.remove({id:'mekanism:boiler_casing'})
-    box('mekanism:superheating_element', 'enderio:dark_steel_ingot', 'kubejs:empowered_blazing_crystal', 'industrialforegoing:machine_frame_advanced')
+    box('mekanism:superheating_element', 'enderio:dark_steel_ingot', 'actuallyadditions:empowered_palis_crystal', 'industrialforegoing:machine_frame_advanced')
     box('mekanism:pressure_disperser', 'thermal:steel_ingot', 'enderio:dark_steel_bars', 'mekanism:alloy_atomic')
     box('4x mekanism:boiler_casing', 'extendedcrafting:black_iron_slate', 'extendedcrafting:black_iron_slate', 'industrialforegoing:machine_frame_simple')
     event.replaceInput(

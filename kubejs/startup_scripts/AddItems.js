@@ -8,11 +8,11 @@ StartupEvents.registry('item', event => {
   event.create('enriched_rose_gold').displayName("Enriched Rose Gold")
   event.create('enriched_platinum').displayName("Enriched Platinum")
   event.create('enriched_shellite').displayName("Enriched Shellite")
-  event.create('empowered_energized_steel').displayName('Empowered Energized Steel').glow(true)
-  event.create('empowered_blazing_crystal').displayName('Empowered Blazing Crystal').glow(true)
-  event.create('empowered_niotic_crystal').displayName('Empowered Niotic Crystal').glow(true)
-  event.create('empowered_spirited_crystal').displayName('Empowered Spirited Crystal').glow(true)
-  event.create('empowered_nitro_crystal').displayName('Empowered Nitro Crystal').glow(true)
+  //event.create('empowered_energized_steel').displayName('Empowered Energized Steel').glow(true)
+  //event.create('empowered_blazing_crystal').displayName('Empowered Blazing Crystal').glow(true)
+  //event.create('empowered_niotic_crystal').displayName('Empowered Niotic Crystal').glow(true)
+  //event.create('empowered_spirited_crystal').displayName('Empowered Spirited Crystal').glow(true)
+  //event.create('empowered_nitro_crystal').displayName('Empowered Nitro Crystal').glow(true)
   event.create('demon_ingot').displayName('Demon Ingot').fireResistant(true)
   event.create('enchanted_ingot').displayName('Enchanted Ingot')
   event.create('evil_infused_ingot').displayName('Evil Infused Ingot')
@@ -46,11 +46,12 @@ StartupEvents.registry('item', event => {
   event.create('machinarium_ingot').displayName('Machinarium Ingot')
   event.create('ender_core').displayName('Ender Core').maxDamage(10000)
   event.create('biofuel_ingot').displayName('Biofuel Ingot')
+  event.create('drill_upgrade_base').displayName('Drill Augment Base')
   
   //Jetpack Plating
   event.create('armorplating_te1').displayName('Invar Armor Plating')
   event.create('armorplating_te2').displayName('Lumium Armor Plating')
-  event.create('armorplating_te3').displayName('Signalum Armor Plating')
+  event.create('armorplating_te3').displayName('Soul Infused Armor Plating')
   event.create('armorplating_te4').displayName('Enderium Armor Plating')
 
   //Gears

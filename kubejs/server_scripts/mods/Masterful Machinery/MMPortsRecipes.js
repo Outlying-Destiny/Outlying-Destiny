@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
 
     //Energy Port
     box('mm:base_tiny_energy_port_input', 'thermal:signalum_ingot', 'enderio:basic_capacitor', 'kubejs:machinarium_casing')
-    box('mm:base_small_energy_port_input', 'kubejs:empowered_energized_steel', 'enderio:double_layer_capacitor', 'mm:base_tiny_energy_port_input')
+    box('mm:base_small_energy_port_input', 'actuallyadditions:empowered_enori_crystal', 'enderio:double_layer_capacitor', 'mm:base_tiny_energy_port_input')
 
     
 })

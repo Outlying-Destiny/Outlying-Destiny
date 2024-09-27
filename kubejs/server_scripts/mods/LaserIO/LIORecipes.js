@@ -117,7 +117,7 @@ ServerEvents.recipes(event => {
         'CDC',
         'EEE'
         ], {
-        A: 'minecraft:redstone',
+        A: 'projectred_core:red_ingot',
         B: 'minecraft:quartz',
         C: 'enderio:conductive_alloy_ingot',
         D: 'laserio:logic_chip',

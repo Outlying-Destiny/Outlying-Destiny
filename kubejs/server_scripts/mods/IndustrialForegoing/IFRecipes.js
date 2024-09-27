@@ -1,73 +1,18 @@
 ServerEvents.recipes(event => {
 
     //Functions Craft
-    function box(output, input1, input2, input3, input4){
-      event.shaped(output, [
-          'ABA',
-          'CDC',
-          'ABA'
-          ], {
-          A: input1,
-          B: input2,
-          C: input3,
-          D: input4
-          }
-      )
-    }
+    function box(output, input1, input2, input3, input4){event.shaped(output, ['ABA','CDC','ABA'], {A: input1,B: input2,C: input3,D: input4})}
 
-    //function range (output, input1, input2, input3){
-    //  event.shaped(output, [
-    //    'AAA',
-    //    'ABA',
-    //    'CCC'
-    //    ], {
-    //    A: input1,
-    //    B: input2,
-    //    C: input3
-    //    }
-    //  )
-    //}
+    //function range (output, input1, input2, input3){event.shaped(output, ['AAA','ABA','CCC'], {A: input1,B: input2,C: input3})}
 
     //Function Machine
     function machine(output, input1, input2, input3, input4, input5){
       event.remove({id:'industrialforegoing:'+output})
-      event.shaped('industrialforegoing:'+output, [
-          'ABA',
-          'CDE',
-          'AFA'
-          ], {
-          A: 'pneumaticcraft:plastic',
-          B: input1,
-          C: input2,
-          D: 'industrialforegoing:machine_frame_'+input3,
-          E: input4,
-          F: input5
-          }
-      )
+      event.shaped('industrialforegoing:'+output, ['ABA','CDE','AFA'], {A: 'pneumaticcraft:plastic',B: input1,C: input2,D: 'industrialforegoing:machine_frame_'+input3,E: input4,F: input5})
     }    
 
     //Function Dissolution Chamber {Amount:250,FluidName:\"industrialforegoing:latex\"}
-    function dissolution(output, outputcount, fluid, fluidamount, input1, input2, input3, input4, input5, time){
-      event.custom({
-        "type": "industrialforegoing:dissolution_chamber",
-        "input": [
-          {"item": input1},
-          {"item": input2},
-          {"item": input1},
-          {"item": input3},
-          {"item": input3},
-          {"item": input4},
-          {"item": input5},
-          {"item": input4}
-        ],
-        "inputFluid": `{FluidName:"${fluid}",Amount:${fluidamount}}`,
-        "output": {
-          "count": outputcount,
-          "item": output
-        },
-        "processingTime": time
-      })
-    }
+    function dissolution(output, outputcount, fluid, fluidamount, input1, input2, input3, input4, input5, time){event.custom({"type": "industrialforegoing:dissolution_chamber","input": [{"item": input1},{"item": input2},{"item": input1},{"item": input3},{"item": input3},{"item": input4},{"item": input5},{"item": input4}],"inputFluid": `{FluidName:"${fluid}",Amount:${fluidamount}}`,"output": {"count": outputcount,"item": output},"processingTime": time})}
 
     //Plastic conversion to PNC
     event.replaceOutput(
@@ -115,7 +60,7 @@ ServerEvents.recipes(event => {
     dissolution('industrialforegoing:efficiency_addon_1', 1, 'kubejs:molten_signalum', 500, 'pneumaticcraft:plastic', 'mekanism:upgrade_speed', 'mekanism_extras:dust_radiance', 'pneumaticcraft:plastic', 'powah:crystal_blazing', 100)
     dissolution('industrialforegoing:processing_addon_1', 1, 'kubejs:molten_signalum', 500, 'pneumaticcraft:plastic', 'mekanism:upgrade_speed', 'mekanism_extras:dust_radiance', 'pneumaticcraft:plastic', 'minecraft:furnace', 100)
     dissolution('industrialforegoing:speed_addon_2', 1, 'thermal_extra:twinite', 500, 'pneumaticcraft:plastic', 'industrialforegoing:speed_addon_1', 'botania:manasteel_ingot', 'pneumaticcraft:plastic', 'thermal_extra:soul_infused_machine_speed_augment', 100)
-    dissolution('industrialforegoing:efficiency_addon_2', 1, 'thermal_extra:twinite', 500, 'pneumaticcraft:plastic', 'industrialforegoing:efficiency_addon_1', 'botania:manasteel_ingot', 'pneumaticcraft:plastic', 'kubejs:empowered_blazing_crystal', 100)
+    dissolution('industrialforegoing:efficiency_addon_2', 1, 'thermal_extra:twinite', 500, 'pneumaticcraft:plastic', 'industrialforegoing:efficiency_addon_1', 'botania:manasteel_ingot', 'pneumaticcraft:plastic', 'actuallyadditions:empowered_palis_crystal', 100)
     dissolution('industrialforegoing:processing_addon_2', 1, 'thermal_extra:twinite', 500, 'pneumaticcraft:plastic', 'industrialforegoing:processing_addon_1', 'botania:manasteel_ingot', 'pneumaticcraft:plastic', 'mekanism:energized_smelter', 100)
     
     const range = [
@@ -150,16 +95,16 @@ ServerEvents.recipes(event => {
     //Machine Frames
     event.remove({id:'industrialforegoing:machine_frame_pity'})
     event.remove({id:/industrialforegoing:dissolution_chamber.+machine_frame/})
-    box('industrialforegoing:machine_frame_pity', 'kubejs:empowered_energized_steel', 'thermal:steel_ingot', 'thermal:steel_ingot', 'extendedcrafting:frame')
+    box('industrialforegoing:machine_frame_pity', 'actuallyadditions:empowered_enori_crystal', 'thermal:steel_ingot', 'thermal:steel_ingot', 'extendedcrafting:frame')
     dissolution('industrialforegoing:machine_frame_simple', 1, "industrialforegoing:latex", 500, 'mekanism:hdpe_sheet', 'industrialforegoing:machine_frame_pity', 'thermal_extra:shellite_gear', 'minecraft:experience_bottle', 'kubejs:infinity_gear', 200)
     dissolution('industrialforegoing:machine_frame_advanced', 1, "thermal_extra:soul_infused", 1000, 'kubejs:lithium_block', 'industrialforegoing:machine_frame_simple', 'thermal_extra:twinite_gear', 'extendedcrafting:luminessence', 'enderio:dark_bimetal_gear', 200)
-    dissolution('industrialforegoing:machine_frame_supreme', 1, "mekanism:hydrofluoric_acid", 4000, 'kubejs:radiance_block', 'industrialforegoing:machine_frame_advanced', 'thermal_extra:dragonsteel_gear', 'kubejs:empowered_blazing_crystal', 'kubejs:end_bimetal_gear', 200)
+    dissolution('industrialforegoing:machine_frame_supreme', 1, "mekanism:hydrofluoric_acid", 4000, 'kubejs:radiance_block', 'industrialforegoing:machine_frame_advanced', 'thermal_extra:dragonsteel_gear', 'actuallyadditions:empowered_palis_crystal', 'kubejs:end_bimetal_gear', 200)
 
     //Machines
     machine('bioreactor', 'thermal:fluid_cell_frame', 'thermal:lumium_gear', 'pity', 'thermal:lumium_gear', 'mekanism:enrichment_chamber')
     machine('fluid_extractor', 'thermal:fluid_cell_frame', 'minecraft:diamond_axe', 'pity', 'minecraft:diamond_axe', 'thermal:device_tree_extractor')
     machine('latex_processing_unit', 'mekanism:energized_smelter', 'minecraft:bucket', 'pity', 'minecraft:bucket', 'kubejs:energized_steel_gear')
-    machine('dissolution_chamber', 'extendedcrafting:black_iron_slate', 'kubejs:empowered_blazing_crystal', 'pity', 'kubejs:empowered_blazing_crystal', 'kubejs:energized_steel_gear')
+    machine('dissolution_chamber', 'extendedcrafting:black_iron_slate', 'actuallyadditions:empowered_palis_crystal', 'pity', 'actuallyadditions:empowered_palis_crystal', 'kubejs:energized_steel_gear')
     machine('mob_slaughter_factory', 'thermal:fluid_cell_frame', 'thermal_extra:soul_infused_gear', 'simple', 'thermal_extra:soul_infused_gear', 'mob_grinding_utils:saw')
     machine('mob_crusher', 'kubejs:evil_infused_axe', 'kubejs:evil_infused_sword', 'advanced', 'kubejs:evil_infused_sword', 'mekanism:crusher')
     machine('laser_drill', 'mekanism:laser', 'thermal_extra:twinite_gear', 'simple', 'thermal_extra:twinite_gear', 'thermal:signalum_block')

@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
         'EDE'
         ], {
         A:'extendedcrafting:luminessence_block',
-        B:'kubejs:empowered_energized_steel',
+        B:'actuallyadditions:empowered_enori_crystal',
         C:'enderio:frank_n_zombie',
         D:'#minecraft:logs',
         E:'thermal_extra:soul_infused_block'

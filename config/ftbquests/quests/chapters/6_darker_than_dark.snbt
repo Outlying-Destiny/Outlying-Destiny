@@ -144,7 +144,7 @@
 				item: "powah:crystal_blazing"
 				type: "item"
 			}]
-			x: -1.75d
+			x: -0.5d
 			y: -3.5d
 		}
 		{
@@ -229,7 +229,7 @@
 					type: "item"
 				}
 			]
-			x: -1.75d
+			x: -0.5d
 			y: -1.0d
 		}
 		{
@@ -568,7 +568,7 @@
 				"5F5B3D5FE5AF3D00"
 				"1B993EA365BEFD7F"
 			]
-			hide_dependency_lines: true
+			hide_dependency_lines: false
 			id: "13F278D905E6DD33"
 			tasks: [
 				{
@@ -586,8 +586,8 @@
 					type: "item"
 				}
 			]
-			x: -4.25d
-			y: -6.0d
+			x: -5.5d
+			y: -2.25d
 		}
 		{
 			dependencies: ["5F5B3D5FE5AF3D00"]
@@ -598,7 +598,7 @@
 				type: "item"
 			}]
 			x: -5.5d
-			y: -2.25d
+			y: -4.75d
 		}
 		{
 			dependencies: ["3FE9ACEC0D804E39"]
@@ -841,33 +841,6 @@
 			y: 0.25d
 		}
 		{
-			dependencies: ["4CD3AA3E83C316B7"]
-			icon: {
-				Count: 1
-				id: "entangled:block"
-				tag: { }
-			}
-			id: "471198E6EA13C581"
-			tasks: [
-				{
-					id: "0A73A6F9738195AB"
-					item: {
-						Count: 1
-						id: "entangled:block"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "29D82F3FEC83F542"
-					item: "entangled:item"
-					type: "item"
-				}
-			]
-			x: -8.0d
-			y: -2.25d
-		}
-		{
 			dependencies: [
 				"0610F51F372DC7C0"
 				"1B993EA365BEFD7F"
@@ -889,8 +862,8 @@
 				item: "thermal:upgrade_augment_2"
 				type: "item"
 			}]
-			x: -5.5d
-			y: -4.75d
+			x: -4.25d
+			y: -6.0d
 		}
 		{
 			dependencies: ["6EC3843A34FFAA3F"]
@@ -900,7 +873,7 @@
 				item: "thermal:machine_pyrolyzer"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -1.75d
 			y: -4.75d
 		}
 		{
@@ -952,8 +925,8 @@
 				item: "functionalstorage:gold_upgrade"
 				type: "item"
 			}]
-			x: -4.25d
-			y: -1.0d
+			x: -6.75d
+			y: 0.25d
 		}
 		{
 			dependencies: ["2FC46E153C739195"]
@@ -1064,52 +1037,13 @@
 				item: "thermal:device_rock_gen"
 				type: "item"
 			}]
-			x: -9.25d
-			y: 0.25d
-		}
-		{
-			dependencies: ["6EC3843A34FFAA3F"]
-			hide_dependency_lines: false
-			id: "30138651A2110225"
-			tasks: [{
-				id: "5515419335D11149"
-				item: "rainshield:rain_shield"
-				type: "item"
-			}]
-			x: -1.75d
-			y: -4.75d
-		}
-		{
-			dependencies: ["4B0C8DCB02DD44D3"]
-			id: "7916FC658617CBB4"
-			size: 1.25d
-			tasks: [{
-				id: "0BEE3136A0E60490"
-				item: "kubejs:empowered_energized_steel"
-				type: "item"
-			}]
-			x: -0.5d
-			y: 0.25d
-		}
-		{
-			dependencies: [
-				"4B0C8DCB02DD44D3"
-				"6EC3843A34FFAA3F"
-			]
-			id: "6D136902C234C09C"
-			size: 1.25d
-			tasks: [{
-				id: "7826F721DE6403C3"
-				item: "kubejs:empowered_blazing_crystal"
-				type: "item"
-			}]
-			x: -0.5d
+			x: -8.0d
 			y: -2.25d
 		}
 		{
 			dependencies: ["344550902BB61752"]
 			id: "32981647F8826FC4"
-			size: 1.1d
+			size: 1.0d
 			tasks: [{
 				id: "7EEF97BE6D0D09D3"
 				item: {
@@ -1137,8 +1071,8 @@
 					type: "item"
 				}
 			]
-			x: -0.5d
-			y: -3.5d
+			x: 0.75d
+			y: -6.0d
 		}
 		{
 			dependencies: ["55C2A1B66BFA050C"]
@@ -1149,8 +1083,314 @@
 				item: "ae2:crafting_terminal"
 				type: "item"
 			}]
-			x: -0.5d
+			x: 0.75d
 			y: -1.0d
+		}
+		{
+			dependencies: ["128D3F42E4DBABE4"]
+			id: "4A9AEF5FA827F675"
+			tasks: [{
+				id: "2D4DA50A48C4F50B"
+				item: "actuallyadditions:atomic_reconstructor"
+				type: "item"
+			}]
+			x: -1.75d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2FAD84CCF0B8DAB5"]
+			id: "6DBC6F18848F71BC"
+			tasks: [
+				{
+					id: "6626B3B19571AA12"
+					item: "actuallyadditions:empowerer"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0FE9490663E99CCF"
+					item: { Count: 4, id: "actuallyadditions:display_stand" }
+					type: "item"
+				}
+			]
+			x: 3.25d
+			y: -2.25d
+		}
+		{
+			dependencies: ["5E3B4D528B737D8F"]
+			id: "2FAD84CCF0B8DAB5"
+			tasks: [{
+				id: "67D87B3469C2941D"
+				item: "actuallyadditions:iron_casing"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.25d
+		}
+		{
+			dependencies: ["6DBC6F18848F71BC"]
+			id: "547E97CC5F479FCB"
+			size: 1.25d
+			tasks: [{
+				id: "38F2F395988DD76A"
+				item: "actuallyadditions:empowered_enori_crystal"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6DBC6F18848F71BC"]
+			id: "2EE05C593A9B4C97"
+			size: 1.25d
+			tasks: [{
+				id: "3AD2EAB677E6295E"
+				item: "actuallyadditions:empowered_palis_crystal"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"6EC3843A34FFAA3F"
+				"4A9AEF5FA827F675"
+			]
+			id: "32160E9E60466D24"
+			tasks: [{
+				id: "010F38D43EA59C46"
+				item: "actuallyadditions:palis_crystal"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.25d
+		}
+		{
+			dependencies: ["299364C146A285AB"]
+			id: "128D3F42E4DBABE4"
+			tasks: [{
+				id: "186FC79F28279C0C"
+				item: "actuallyadditions:basic_coil"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.75d
+		}
+		{
+			dependencies: [
+				"4B0C8DCB02DD44D3"
+				"32160E9E60466D24"
+			]
+			id: "5E3B4D528B737D8F"
+			tasks: [{
+				id: "2C3A99F55B78B110"
+				item: "actuallyadditions:advanced_coil"
+				type: "item"
+			}]
+			x: 0.75d
+			y: -2.25d
+		}
+		{
+			dependencies: ["547E97CC5F479FCB"]
+			id: "530C45928DF325B8"
+			tasks: [{
+				id: "6F9BDD7A292E30B6"
+				item: "actuallyadditions:ranged_collector"
+				type: "item"
+			}]
+			x: 3.25d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2FAD84CCF0B8DAB5"]
+			id: "3951801F60DEA924"
+			tasks: [
+				{
+					id: "1773FFCC8A15B7CC"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "actuallyadditions:item_interface"
+								}
+								{
+									Count: 1b
+									id: "actuallyadditions:hopping_item_interface"
+								}
+							]
+						}
+					}
+					title: "(Hopping) Item Interface"
+					type: "item"
+				}
+				{
+					id: "087F1C530228F75F"
+					item: "actuallyadditions:laser_relay_item"
+					type: "item"
+				}
+				{
+					id: "690BCEF4145ECA58"
+					item: {
+						Count: 1
+						id: "actuallyadditions:laser_wrench"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2EE05C593A9B4C97"]
+			id: "40BAF17A7AB7695B"
+			tasks: [
+				{
+					id: "37CA1503F3C72028"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "actuallyadditions:phantom_itemface"
+								}
+								{
+									Count: 1b
+									id: "actuallyadditions:phantom_liquiface"
+								}
+								{
+									Count: 1b
+									id: "actuallyadditions:phantom_energyface"
+								}
+								{
+									Count: 1b
+									id: "actuallyadditions:phantom_redstoneface"
+								}
+							]
+						}
+					}
+					title: "Any Phantom Face"
+					type: "item"
+				}
+				{
+					id: "50CB46FF04CB7084"
+					item: {
+						Count: 1
+						id: "actuallyadditions:phantom_connector"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: 3.25d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5E3B4D528B737D8F"]
+			id: "3E550A5967C6F86E"
+			tasks: [{
+				id: "16647CEA5D3825EA"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: { }
+					}
+					id: "actuallyadditions:drill_light_blue"
+					tag: {
+						Charged: 1b
+						Energy: 250000
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3E550A5967C6F86E"]
+			id: "7AA87F96C570713B"
+			tasks: [
+				{
+					id: "60F29B69834A229D"
+					item: "actuallyadditions:drill_upgrade_speed_iii"
+					type: "item"
+				}
+				{
+					id: "1F8AA38E329CFE02"
+					item: "actuallyadditions:drill_upgrade_fortune_ii"
+					type: "item"
+				}
+				{
+					id: "5BD1C4BEB1B34651"
+					item: "actuallyadditions:drill_upgrade_silk_touch"
+					type: "item"
+				}
+				{
+					id: "61470C9D382498DE"
+					item: "actuallyadditions:drill_upgrade_five_by_five"
+					type: "item"
+				}
+				{
+					id: "3B247508335EACB2"
+					item: "actuallyadditions:drill_upgrade_block_placing"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -4.75d
+		}
+		{
+			dependencies: ["344550902BB61752"]
+			id: "28CCC25EB1BF22A8"
+			tasks: [{
+				id: "58DD4EDD2B6A651D"
+				item: "enderio:double_layer_capacitor"
+				type: "item"
+			}]
+			x: 0.75d
+			y: -4.75d
+		}
+		{
+			dependencies: ["6EC3843A34FFAA3F"]
+			id: "7A8FA2A5AFEBE3C2"
+			tasks: [{
+				id: "7FF39B4DA3D01A32"
+				item: "rainshield:rain_shield"
+				type: "item"
+			}]
+			x: 0.75d
+			y: -3.5d
+		}
+		{
+			dependencies: ["28CCC25EB1BF22A8"]
+			id: "0B8629D33D5D1662"
+			tasks: [{
+				id: "4919042EE4B99DA7"
+				item: {
+					Count: 1
+					id: "simplyjetpacks:jetpack_te3"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2EE05C593A9B4C97"]
+			id: "560E8EED03FBF93B"
+			tasks: [{
+				id: "61EC9B7E9BF7508F"
+				item: "actuallyadditions:dropper"
+				type: "item"
+			}]
+			x: 3.25d
+			y: -4.75d
 		}
 	]
 	title: "6. Darker than Dark"

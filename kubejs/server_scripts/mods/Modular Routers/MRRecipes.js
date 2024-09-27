@@ -87,7 +87,7 @@ ServerEvents.recipes(event => {
     //Vacuum Module + Augment
     event.remove({id:'modularrouters:vacuum_module'})
     event.remove({id:'modularrouters:xp_vacuum_augment'})    
-    event.shapeless('modularrouters:vacuum_module', ['modularrouters:blank_module', 'itemcollectors:advanced_collector'])
+    event.shapeless('modularrouters:vacuum_module', ['modularrouters:blank_module', 'actuallyadditions:ranged_collector'])
     event.shapeless('modularrouters:xp_vacuum_augment', ['modularrouters:augment_core', 'mob_grinding_utils:absorption_hopper'])
 
     //Void Module    
@@ -131,8 +131,16 @@ ServerEvents.recipes(event => {
         }
     )
 
-    //Placer Moduler
+    //Placer Module
     event.remove({id:'modularrouters:placer_module'})
-    event.shapeless('2x modularrouters:placer_module', ['modularrouters:blank_module', 'industrialforegoing:block_placer', 'industrialforegoing:fluid_placer'])
+    event.shapeless('2x modularrouters:placer_module', ['2x modularrouters:blank_module', 'actuallyadditions:placer', 'actuallyadditions:fluid_placer'])
+
+    //Breaker Module
+    event.remove({id:'modularrouters:breaker_module'})
+    event.shapeless(Item.of('2x modularrouters:breaker_module', '{modularrouters:{Pickaxe:{Count:1b,id:"minecraft:netherite_pickaxe",tag:{Damage:0}}}}'), ['2x modularrouters:blank_module', 'actuallyadditions:breaker', 'actuallyadditions:fluid_collector'])
+
+    //Dropper Module
+    event.remove({id:'modularrouters:dropper_module'})
+    event.shapeless('modularrouters:dropper_module', ['modularrouters:blank_module', 'actuallyadditions:dropper'])
 
 })

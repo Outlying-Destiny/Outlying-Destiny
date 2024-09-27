@@ -297,7 +297,7 @@ ServerEvents.recipes(event => {
     machine('crucible', 'enderio:weather_crystal', 'minecraft:magma_block', 'thermal:signalum_gear')
     machine('chiller', 'enderio:weather_crystal', 'minecraft:packed_ice', 'thermal:enderium_gear')
     machine('bottler', 'enderio:prescient_crystal', 'minecraft:bucket', 'thermal:lumium_gear')
-    machine('centrifuge', 'enderio:prescient_crystal', 'enderio:end_steel_ingot', 'thermal:constantan_gear')
+    machine('centrifuge', 'enderio:frank_n_zombie', 'enderio:end_steel_ingot', 'thermal:constantan_gear')
     machine('refinery', 'enderio:frank_n_zombie', 'extendedcrafting:black_iron_ingot', 'thermal:steel_gear')
     machine('pyrolyzer', 'minecraft:lava_bucket', 'powah:crystal_blazing', 'thermal:netherite_gear')
     machine('crafter', 'minecraft:crafting_table', 'thermal:signalum_plate', 'thermal:bronze_gear')

@@ -36,4 +36,7 @@ ServerEvents.recipes(event => {
     molten('kubejs:molten_signalum', 'thermal:signalum_ingot', 'thermal:signalum_block', 20000)
     molten('thermal_extra:soul_infused', 'thermal_extra:soul_infused_ingot', 'thermal_extra:soul_infused_block', 24000)
     molten('thermal_extra:twinite', 'thermal_extra:twinite_ingot' , 'thermal_extra:twinite_block', 28000)
-})
+
+    //Solidified xp
+    crucible('mob_grinding_utils:fluid_xp', 160, 'actuallyadditions:solidified_experience', 4000)
+  })

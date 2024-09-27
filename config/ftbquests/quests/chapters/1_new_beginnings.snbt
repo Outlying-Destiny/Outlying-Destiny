@@ -28,11 +28,18 @@
 		{
 			dependencies: ["0A3D05D5F3E9C113"]
 			id: "3734A5BF783739BE"
-			rewards: [{
-				id: "6DDC32CB4B6A0F56"
-				item: "craftingstation:crafting_station"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "6DDC32CB4B6A0F56"
+					item: "craftingstation:crafting_station"
+					type: "item"
+				}
+				{
+					id: "6589A9F86238B2E0"
+					item: "actuallyadditions:crafter_on_a_stick"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "7BE068124DBC61F3"
 				item: "minecraft:crafting_table"
@@ -135,6 +142,7 @@
 		}
 		{
 			dependencies: ["3734A5BF783739BE"]
+			icon: "functionalstorage:oak_1"
 			id: "4B5E70ADE3D668E9"
 			rewards: [{
 				id: "36637836D17A3FA0"
@@ -229,6 +237,7 @@
 				"699B23728F627B1F"
 				"2B9C8EF454CAFCB8"
 			]
+			icon: "naturesaura:wood_stand"
 			id: "5D8C90FA217A52DB"
 			rewards: [{
 				exclude_from_claim_all: true

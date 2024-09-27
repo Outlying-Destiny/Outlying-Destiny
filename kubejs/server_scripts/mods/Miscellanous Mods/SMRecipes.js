@@ -83,18 +83,9 @@ ServerEvents.recipes(event => {
 
     //Entangled
     event.remove({id:/entangled:/})
-    box('2x entangled:block', 'minecraft:obsidian', 'extendedcrafting:ender_ingot', 'extendedcrafting:ender_ingot', 'enderio:sentient_ender')
-    event.shaped(
-        'entangled:item', [
-        ' AB',
-        ' CA',
-        'C  '
-        ], {
-        A: 'extendedcrafting:ender_ingot',
-        B: 'enderio:ender_resonator',
-        C: '#forge:rods/wooden'
-        }
-    )
+    //box('2x entangled:block', 'minecraft:obsidian', 'extendedcrafting:ender_ingot', 'extendedcrafting:ender_ingot', 'enderio:sentient_ender')
+    //event.shaped('entangled:item', [' AB',' CA','C  '], {A: 'extendedcrafting:ender_ingot',B: 'enderio:ender_resonator',C: '#forge:rods/wooden'})
+
     //Tesseracts
 
 
