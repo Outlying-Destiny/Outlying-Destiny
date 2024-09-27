@@ -225,4 +225,13 @@ ServerEvents.recipes(event => {
         'thermal:steel_plate'
     )
 
+    //Treated Stick Fix
+    event.shaped('4x immersiveengineering:stick_treated', [
+        'A  ',
+        'A  ',
+        '   '
+        ], {
+        A:'#forge:treated_wood'
+    })
+
 })
