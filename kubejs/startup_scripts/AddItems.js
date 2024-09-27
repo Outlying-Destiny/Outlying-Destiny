@@ -48,7 +48,7 @@ StartupEvents.registry('item', event => {
   event.create('biofuel_ingot').displayName('Biofuel Ingot')
 
   //Gears
-  //event.create('red_gear').displayName('Red Alloy Gear')
+  event.create('red_gear').displayName('Red Alloy Gear')
   event.create('energized_steel_gear').displayName('Energized Steel Gear').tag('forge:gears')
   event.create('enchanted_gear').displayName('Enchanted Gear').tag('forge:gears')
   event.create('infinity_gear').displayName('Infinity Bimetal Gear').tag('forge:gears')

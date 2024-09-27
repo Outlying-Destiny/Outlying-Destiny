@@ -148,7 +148,7 @@ ServerEvents.recipes(event => {
       ' A ',
       'B  '
       ], {
-      A:'projectred_core:red_ingot',
+      A:'kubejs:red_gear',
       B:'thermal:gold_plate'
     })
 
