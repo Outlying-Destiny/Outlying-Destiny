@@ -46,6 +46,12 @@ StartupEvents.registry('item', event => {
   event.create('machinarium_ingot').displayName('Machinarium Ingot')
   event.create('ender_core').displayName('Ender Core').maxDamage(10000)
   event.create('biofuel_ingot').displayName('Biofuel Ingot')
+  
+  //Jetpack Plating
+  event.create('armorplating_te1').displayName('Invar Armor Plating')
+  event.create('armorplating_te2').displayName('Lumium Armor Plating')
+  event.create('armorplating_te3').displayName('Signalum Armor Plating')
+  event.create('armorplating_te4').displayName('Enderium Armor Plating')
 
   //Gears
   event.create('red_gear').displayName('Red Alloy Gear')

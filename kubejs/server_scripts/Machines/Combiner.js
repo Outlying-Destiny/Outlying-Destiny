@@ -5,8 +5,8 @@ ServerEvents.recipes(event => {
 
     //Jetpack Platings
     event.remove({id:'simplyjetpacks:thermal/armorplating_te1'})
-    combiner('simplyjetpacks:armorplating_te1', 'thermal:tin_block', 'thermal:iron_plate', 4)
-    combiner('simplyjetpacks:armorplating_te2', 'simplyjetpacks:armorplating_te1', 'thermal:bronze_plate', 4)
-    combiner('simplyjetpacks:armorplating_te3', 'simplyjetpacks:armorplating_te2', 'thermal:invar_plate', 4)
-    combiner('simplyjetpacks:armorplating_te4', 'simplyjetpacks:armorplating_te3', 'thermal:enderium_plate', 4)
+    combiner('kubejs:armorplating_te1', 'thermal:tin_block', 'thermal:invar_plate', 8)
+    combiner('kubejs:armorplating_te2', 'kubejs:armorplating_te1', 'thermal:lumium_plate', 8)
+    combiner('kubejs:armorplating_te3', 'kubejs:armorplating_te2', 'thermal:signalum_plate', 8)
+    combiner('kubejs:armorplating_te4', 'kubejs:armorplating_te3', 'thermal:enderium_plate', 8)
 })

@@ -70,6 +70,7 @@ JEIEvents.hideItems(event => {
     
     //Simply Jetpacks
     event.hide([/simplyjetpacks:.+(vanilla|ie|mek).+/, 'simplyjetpacks:jetpack_potato'])
+    event.hide(/simplyjetpacks:armorplating_te[1-4]/)
 
     //Sophisticated Storage
     event.hide('sophisticatedstorage:controller')
