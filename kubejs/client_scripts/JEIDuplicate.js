@@ -10,7 +10,11 @@ JEIEvents.removeCategories(event => {
         'industrialforegoing:ore_washer',
         'farmingforblockheads:market',
         'thermal:furnace',
-        'enderio:alloy_smelting'
+        'enderio:alloy_smelting',
+        'mysticalagriculture:enchanter',
+        'thermal:disenchantment_fuel',
+        'thermal:gourmand_fuel',
+        'thermal:stirling_fuel'
     )
     
 

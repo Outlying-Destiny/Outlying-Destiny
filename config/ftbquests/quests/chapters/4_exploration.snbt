@@ -370,6 +370,7 @@
 		}
 		{
 			dependencies: ["192D223323F4DBD9"]
+			icon: "aether:skyroot_poison_bucket"
 			id: "1D3DB6932DBB5BFB"
 			tasks: [
 				{
@@ -453,6 +454,7 @@
 		}
 		{
 			dependencies: ["17FB887A20B0F3F3"]
+			icon: "ae2:silicon_press"
 			id: "590A74088180CE70"
 			size: 1.5d
 			tasks: [

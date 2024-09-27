@@ -974,7 +974,7 @@
     "block.thermal.machine_pulverizer": "Pulverizer",
     "block.thermal.machine_pyrolyzer": "Pyrolyzer",
     "block.thermal.machine_refinery": "Fractionating Still",
-    "block.thermal.machine_sawmill": "Sawmill",
+    "block.thermal.machine_sawmill": "Lathe",
     "block.thermal.machine_smelter": "Induction Smelter",
   
     "info.thermal.device_fluid_buffer.0": "Stores and transfers fluids. Can automatically extract.",
@@ -1062,9 +1062,9 @@
     "info.thermal.machine_refinery.1": "Some fluids will leave behind a solid component.",
     "info.thermal.machine_refinery.2": "Products may or may not be drinkable.",
   
-    "info.thermal.machine_sawmill.0": "Cuts logs into planks and reprocesses wooden objects.",
-    "info.thermal.machine_sawmill.1": "Very useful for making the most out of a tree.",
-    "info.thermal.machine_sawmill.2": "Watch your hands.",
+    "info.thermal.machine_sawmill.0": "Cuts materials into rods and wires.",
+    "info.thermal.machine_sawmill.1": "Don't confound your plates from your ingots.",
+    "info.thermal.machine_sawmill.2": "This is Gregtech.",
   
     "info.thermal.machine_smelter.0": "Smelts metals and things that require high temperatures.",
     "info.thermal.machine_smelter.1": "Useful for processing ores and creating advanced blocks.",
@@ -1087,7 +1087,7 @@
     "subtitles.thermal.block.machine_crucible": "Magma Crucible hums",
     "subtitles.thermal.block.machine_furnace": "Redstone Furnace hums and crackles",
     "subtitles.thermal.block.machine_pulverizer": "Pulverizer smashes",
-    "subtitles.thermal.block.machine_sawmill": "Sawmill cuts",
+    "subtitles.thermal.block.machine_sawmill": "Lathe cuts",
     "subtitles.thermal.block.machine_smelter": "Induction Smelter hums",
   
     "_comment": "========================================================================================================",

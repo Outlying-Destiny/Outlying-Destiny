@@ -1,5 +1,9 @@
 JEIEvents.hideItems(event => {
 
+    //Actually Additions
+    event.hide([/actuallyadditions:lamp.+/, /actuallyadditions:.+_aiot/, /actuallyadditions:.+_crystal_cluster/, /actuallyadditions:.+pattern/, /actuallyadditions:ric.+/, 'actuallyadditions:oil_generator', 'actuallyadditions:coal_generator', 'actuallyadditions:leaf_generator', 'actuallyadditions:bio_reactor', 'actuallyadditions:heat_collector', 'actuallyadditions:wings_of_the_bats', 'actuallyadditions:laser_upgrade_range', 'actuallyadditions:laser_upgrade_invisibility', 'actuallyadditions:lamp_controller', 'actuallyadditions:crate_keeper', 'actuallyadditions:crate_small', 'actuallyadditions:bats_wing', 'actuallyadditions:water_bowl', 'actuallyadditions:ender_star', 'actuallyadditions:engineers_goggles', 'actuallyadditions:engineers_goggles_advanced', 'actuallyadditions:tiny_torch', 'actuallyadditions:shock_suppressor', 'actuallyadditions:powered_furnace', 'actuallyadditions:lava_factory_controller', 'actuallyadditions:lava_factory_casing', 'actuallyadditions:xp_solidifier','actuallyadditions:crusher', 'actuallyadditions:crusher_double', 'actuallyadditions:greenhouse_glass', 'actuallyadditions:ring', 'actuallyadditions:ring_of_magnetizing', 'actuallyadditions:ring_of_growth', 'actuallyadditions:flax_seeds', 'actuallyadditions:travelers_sack', 'actuallyadditions:void_sack', 'actuallyadditions:teleport_staff', 'actuallyadditions:feeder', 'actuallyadditions:energizer', 'actuallyadditions:enervator', 'actuallyadditions:farmer', 'actuallyadditions:battery_box', 'actuallyadditions:laser_relay', 'actuallyadditions:laser_relay_advanced', 'actuallyadditions:laser_relay_extreme', 'actuallyadditions:laser_relay_fluids', 'actuallyadditions:laser_relay_item_advanced', 'actuallyadditions:wood_casing'])
+    event.hide(['actuallyadditions:lens_of_the_miner', 'actuallyadditions:lens_of_disruption', 'actuallyadditions:lens_of_disenchanting', 'actuallyadditions:lens_of_detonation', 'actuallyadditions:lens_of_certain_death'])
+
     //Blood Magic
     event.hide(['#bloodmagic:fragments', '#bloodmagic:gravels'])
 
@@ -9,7 +13,7 @@ JEIEvents.hideItems(event => {
     //Immersive Engineering
     event.hide(['immersiveengineering:dust_saltpeter', 'immersiveengineering:sawblade', 'immersiveengineering:coal_coke', 'immersiveengineering:grindingdisk'])
     event.hide([/immersiveengineering.+alu.+/, 'immersiveengineering:metal_ladder_alu'])
-    event.hide(['immersiveengineering:crusher', 'immersiveengineering:sawmill'])
+    event.hide(['immersiveengineering:crusher', 'immersiveengineering:sawmill', 'immersiveengineering:lightning_rod'])
 
     //Industrial Foregoing
     event.hide(['industrialforegoing:raw_ore_meat_bucket', 'industrialforegoing:raw_ore_meat', 'industrialforegoing:fermented_ore_meat_bucket', 'industrialforegoing:fermented_ore_meat', 'industrialforegoing:fermentation_station', 'industrialforegoing:washing_factory', 'industrialforegoing:fluid_sieving_machine'])
@@ -20,11 +24,11 @@ JEIEvents.hideItems(event => {
     event.hide(['industrialforegoing:biofuel_generator', 'industrialforegoing:pitiful_generator', 'industrialforegoing:resourceful_furnace', 'industrialforegoing:spores_recreator', 'industrialforegoing:dye_mixer', 'industrialforegoing:mechanical_dirt', 'industrialforegoing:water_condensator'])
 
     //Thermal Series
-    //event.hide(/thermal:dynamo.+/)
+    event.hide([/thermal:dynamo_(numismatic|disenchantment)/, 'thermal_extra:dynamo_frost'])
     event.hide([/thermal_extra:soul_infused.+_augment/, /thermal_extra:dragonsteel.+_augment/, /thermal.+dynamo_.+_augmen.+/, 'thermal_extra:twinite_fluid_tank_augment', 'thermal_extra:abyssal_fluid_tank_augment', /thermal_extra:.+_potion_amplifier_augment/, 'thermal_extra:twinite_potion_duration_augment', 'thermal_extra:shellite_potion_duration_augment', /thermal_extra:twinite_rf_coil.+augment/, /thermal_extra:abyssal_rf_coil.+augment/, /thermal_extra:.+machine_speed_augment/, 'thermal_extra:twinite_machine_efficiency_augment', 'thermal_extra:shellite_machine_efficiency_augment', 'thermal_extra:twinite_machine_output_augment', 'thermal_extra:abyssal_machine_output_augment', 'thermal_extra:twinite_machine_catalyst_augment', 'thermal_extra:shellite_machine_catalyst_augment', /thermal_extra:.+_area_radius_augment/, 'thermalendergy:melodic_range_augment', 'thermal_extra:av_item_filter_augment', 'thermal_extra:augment_smithing_upgrade'])
     event.hide(['thermal_extra:upgrade_augment', 'thermal_extra:abyssal_upgrade_augment'])
     event.hide(['thermal_extra:nitratic_igniter', /thermal_extra:.+_ore_chunk/])
-    event.hide([/thermal:.+mushroom_spores/, 'thermal_extra:ancient_dust'])
+    event.hide([/thermal:.+mushroom_spores/, 'thermal_extra:ancient_dust', 'thermal_extra:sticky_ball'])
     event.hide(['thermal:satchel', 'thermal_extra:device_lava_gen', 'thermal:device_water_gen', 'thermal:phytosoil', 'thermal:phytosoil_tiled', 'thermal:device_soil_infuser', 'thermal:xp_crystal', 'thermal:device_xp_condenser', 'thermal:xp_storage_augment'])
     event.hide(['thermal:ruby_ore', 'thermal:deepslate_ruby_ore', 'thermal:sapphire_ore', 'thermal:deepslate_sapphire_ore'])
 
@@ -60,6 +64,12 @@ JEIEvents.hideItems(event => {
     //Extreme Reactors
     event.hide([/bigreactors.+yelloriu.+/, /mysticalagriculture:yellorium.+/])
     event.hide(['bigreactors:yellorite_ore', 'bigreactors:deepslate_yellorite_ore', 'bigreactors:benitoite_ore', 'bigreactors:anglesite_ore'])
+
+    //Mystical Agriculture
+    event.hide('mysticalagriculture:enchanter')
+    
+    //Simply Jetpacks
+    event.hide([/simplyjetpacks:.+(vanilla|ie|mek).+/, 'simplyjetpacks:jetpack_potato'])
 
     //Sophisticated Storage
     event.hide('sophisticatedstorage:controller')
@@ -102,8 +112,10 @@ JEIEvents.hideItems(event => {
     //Farming for Blockheads
     event.hide(['farmingforblockheads:market', 'farmingforblockheads:chicken_nest', 'farmingforblockheads:feeding_trough'])
     
-    //Extended Crafting Redstone Ingot
+    //Extended Crafting
     event.hide('extendedcrafting:redstone_ingot')
+    event.hide('extendedcrafting:handheld_table')
+    
 
     //Dusts
     event.hide(['ae2:ender_dust', 'enderio:powdered_ender_pearl'])
@@ -170,7 +182,4 @@ JEIEvents.hideFluids(event => {
 
     //Creosote
     event.hide('thermal:creosote')
-
-    //Flowing
-    event.hide(/.+flowing/)
 })

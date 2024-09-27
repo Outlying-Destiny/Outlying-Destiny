@@ -586,8 +586,8 @@
 					type: "item"
 				}
 			]
-			x: 8.0d
-			y: -2.25d
+			x: 10.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5FB1C36C44672D6C"]
@@ -876,6 +876,32 @@
 				}
 			]
 			x: -3.25d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4E5147F740457745"]
+			id: "1AD0CDD600BB5DF0"
+			tasks: [{
+				id: "40068EE31346459D"
+				item: "enderio:octadic_capacitor"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.25d
+		}
+		{
+			dependencies: ["1AD0CDD600BB5DF0"]
+			id: "650D93474935327A"
+			tasks: [{
+				id: "1E23E0EC1E1C37CC"
+				item: {
+					Count: 1
+					id: "simplyjetpacks:jetpack_te4"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 10.5d
 			y: 1.5d
 		}
 	]

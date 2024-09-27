@@ -1370,24 +1370,7 @@
 				item: "thermal:redprint"
 				type: "item"
 			}]
-			x: 6.75d
-			y: 3.0d
-		}
-		{
-			dependencies: ["78A5EFE0090C4D99"]
-			id: "19DCDFBDF67BC3BD"
-			tasks: [{
-				id: "1C198EAB5016CA6F"
-				item: {
-					Count: 1
-					id: "minecraft:elytra"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 1.75d
+			x: 8.0d
 			y: 1.0d
 		}
 		{
@@ -1434,8 +1417,8 @@
 				type: "item"
 			}]
 			title: "Faster Charging Station"
-			x: 5.5d
-			y: 3.0d
+			x: 7.375d
+			y: 2.0d
 		}
 		{
 			dependencies: ["415C7601E035DBDB"]
@@ -1448,6 +1431,57 @@
 			title: "Garden Cloche well... actually stay."
 			x: 0.25d
 			y: -2.5d
+		}
+		{
+			dependencies: [
+				"5785F9A5AB33C124"
+				"2BE50BE744D435F6"
+			]
+			id: "2D92DC2394743654"
+			tasks: [{
+				id: "05EA0063414D8B60"
+				item: {
+					Count: 1
+					id: "simplyjetpacks:jetpack_te2"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.75d
+			y: 3.0d
+		}
+		{
+			dependencies: ["415C7601E035DBDB"]
+			hide_dependency_lines: true
+			id: "2BE50BE744D435F6"
+			tasks: [{
+				id: "321EFB2E08D8FB5D"
+				item: {
+					Count: 1
+					id: "simplyjetpacks:jetpack_te1"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["78A5EFE0090C4D99"]
+			id: "4464051324097A9D"
+			tasks: [{
+				id: "1443AD7B06CCC543"
+				item: {
+					Count: 1
+					id: "minecraft:elytra"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.75d
+			y: 1.0d
 		}
 	]
 	title: "5. Heat it up!"

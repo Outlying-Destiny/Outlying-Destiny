@@ -70,4 +70,13 @@ ServerEvents.recipes(event => {
 
     //Ancient Dust
     event.remove({id:'thermal_extra:machine/crystallizer/ancient_dust'})
+
+    //Sticky Ball
+    event.remove({id:'thermal_extra:sticky_ball_to_paper'})
+
+    //Dynamos
+    event.remove({id:/thermal(:|_extra:|endergy:)fuels.+/})
+    event.remove({id:'thermal:compat/immersiveengineering/compression_ie_biodiesel'})
+    event.remove({id:/thermal:dynamo_(numismatic|disenchantment)/})
+    event.remove({id:'thermal_extra:crafting/dynamo_frost'})
 })
