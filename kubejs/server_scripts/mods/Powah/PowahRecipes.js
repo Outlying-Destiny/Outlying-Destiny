@@ -179,11 +179,11 @@ ServerEvents.recipes(event => {
     })
 
     //Empowered Material to Block
-    mattoblo('actuallyadditions:empowered_enori_crystal_block', '9x actuallyadditions:empowered_enori_crystal')
-    mattoblo('actuallyadditions:empowered_palis_crystal_block', '9x actuallyadditions:empowered_palis_crystal')
-    mattoblo('kubejs:empowered_niotic_crystal_block', '9x kubejs:empowered_niotic_crystal')
-    mattoblo('kubejs:empowered_spirited_crystal_block', '9x kubejs:empowered_spirited_crystal')
-    mattoblo('kubejs:empowered_nitro_crystal_block', '9x kubejs:empowered_nitro_crystal')
+    //mattoblo('kubejs:empowered_energized_steel_block', '9x kubejs:empowered_energized_steel')
+    //mattoblo('kubejs:empowered_blazing_crystal_block', '9x kubejs:empowered_blazing_crystal')
+    //mattoblo('kubejs:empowered_niotic_crystal_block', '9x kubejs:empowered_niotic_crystal')
+    //mattoblo('kubejs:empowered_spirited_crystal_block', '9x kubejs:empowered_spirited_crystal')
+    //mattoblo('kubejs:empowered_nitro_crystal_block', '9x kubejs:empowered_nitro_crystal')
 
     //Energized Steel
     event.remove({id:'powah:energizing/energized_steel'})
