@@ -23,6 +23,9 @@ JEIEvents.hideItems(event => {
     event.hide(/industrialforegoing:infinity.+/)
     event.hide(['industrialforegoing:biofuel_generator', 'industrialforegoing:pitiful_generator', 'industrialforegoing:resourceful_furnace', 'industrialforegoing:spores_recreator', 'industrialforegoing:dye_mixer', 'industrialforegoing:mechanical_dirt', 'industrialforegoing:water_condensator'])
 
+    //Mekanism
+    event.hide(['mekanism:formulaic_assemblicator', 'mekanism:crafting_formula'])
+    
     //Thermal Series
     event.hide([/thermal:dynamo_(numismatic|disenchantment)/, 'thermal_extra:dynamo_frost'])
     event.hide([/thermal_extra:soul_infused.+_augment/, /thermal_extra:dragonsteel.+_augment/, /thermal.+dynamo_.+_augmen.+/, 'thermal_extra:twinite_fluid_tank_augment', 'thermal_extra:abyssal_fluid_tank_augment', /thermal_extra:.+_potion_amplifier_augment/, 'thermal_extra:twinite_potion_duration_augment', 'thermal_extra:shellite_potion_duration_augment', /thermal_extra:twinite_rf_coil.+augment/, /thermal_extra:abyssal_rf_coil.+augment/, /thermal_extra:.+machine_speed_augment/, 'thermal_extra:twinite_machine_efficiency_augment', 'thermal_extra:shellite_machine_efficiency_augment', 'thermal_extra:twinite_machine_output_augment', 'thermal_extra:abyssal_machine_output_augment', 'thermal_extra:twinite_machine_catalyst_augment', 'thermal_extra:shellite_machine_catalyst_augment', /thermal_extra:.+_area_radius_augment/, 'thermalendergy:melodic_range_augment', 'thermal_extra:av_item_filter_augment', 'thermal_extra:augment_smithing_upgrade'])
@@ -75,6 +78,9 @@ JEIEvents.hideItems(event => {
     //Sophisticated Storage
     event.hide('sophisticatedstorage:controller')
     event.hide(/sophisticatedstorage:storag.+/)
+
+    //FTBQuests
+    event.hide(/ftbquests:.+/)
 
     //Functional Storage
     event.hide('functionalstorage:collector_upgrade')
@@ -165,6 +171,9 @@ JEIEvents.addItems(event => {
     
     //Twinite Speed Augment
     event.add('thermal_extra:soul_infused_machine_speed_augment')
+
+    //FTBQuests Book
+    event.add('ftbquests:book')
 })
 
 JEIEvents.hideFluids(event => {
