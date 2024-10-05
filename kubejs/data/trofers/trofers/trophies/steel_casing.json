@@ -1,0 +1,23 @@
+{
+    "name": {
+      "color": "#444444",
+      "text": "Mekanician's Trophy"
+    },
+    "animation":{
+        "type": "spinning",
+        "speed": 0.2
+    },
+    "display": {
+      "offset": {
+          "y": 1.5
+      },
+      "scale": 0.8
+    },
+    "item": {
+      "item": "mekanism:steel_casing"
+    },
+    "colors": {
+      "base": "#312c36",
+      "accent": "#444444"
+    }
+  }

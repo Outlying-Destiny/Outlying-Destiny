@@ -1,0 +1,6 @@
+{
+  "trophy_base": "trofers:large_pillar",
+  "trophies": {
+    "kubejs:progression/wood_stand" : "trofers:wood_stand"
+  }
+}

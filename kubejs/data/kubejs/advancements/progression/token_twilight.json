@@ -1,0 +1,27 @@
+{
+    "parent": "kubejs:progression/steel_casing",
+    "display":{
+      "icon":{"item": "kubejs:token_twilight"},
+      "title":{"text": "World's favorite puppet."},
+      "description":{"text": "Craft a Token of Twilight."},
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "criteria": {
+        "token_twilight": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "kubejs:token_twilight"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "requirements": [["token_twilight"]]
+}

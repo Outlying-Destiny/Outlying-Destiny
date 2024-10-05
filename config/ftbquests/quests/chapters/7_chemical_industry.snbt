@@ -9,7 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["4B0C8DCB02DD44D3"]
+			dependencies: ["6DBC6F18848F71BC"]
 			disable_toast: true
 			id: "632B7F8040701318"
 			size: 1.25d
@@ -47,10 +47,7 @@
 			y: 0.25d
 		}
 		{
-			dependencies: [
-				"4B0C8DCB02DD44D3"
-				"6EC3843A34FFAA3F"
-			]
+			dependencies: ["6DBC6F18848F71BC"]
 			disable_toast: true
 			id: "12EE00BE6E582A9B"
 			size: 1.25d
@@ -838,6 +835,19 @@
 				"443C2A71DBD6C1D6"
 			]
 			id: "0A2A53C5869DC219"
+			rewards: [{
+				id: "7B5CEF61440CAD60"
+				item: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "trofers:trophies/machine_frame_supreme"
+						}
+					}
+				}
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [{
 				id: "20FEA51C95DFB07B"

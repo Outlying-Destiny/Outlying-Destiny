@@ -9,7 +9,10 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["463D54DAEECAC15F"]
+			description: ["No, seriously, there's nothing to be said in here. Did you read all of the previous quests? They're useful, don't miss out!"]
 			id: "0A3D05D5F3E9C113"
+			min_width: 240
 			rewards: [{
 				count: 4
 				id: "3BD5B2AB228AC476"
@@ -22,12 +25,20 @@
 				item: { Count: 8, id: "minecraft:oak_log" }
 				type: "item"
 			}]
-			x: -5.5d
+			title: "Setting up the wood"
+			x: -5.0d
 			y: -5.0d
 		}
 		{
 			dependencies: ["0A3D05D5F3E9C113"]
+			description: [
+				"Tired of losing your crafting progress when you forget an important item in a chest?"
+				"Try using the Crafting Station! It will not only retain items when leaving its HUD but also give you and JEI access to chests close to it, making your crafting tasks easier! Just place a crafting table in your crafting grid to make one."
+				""
+				"You can also combine a Crafting Table with a Stick to be able to access your crafting table directly from your inventory."
+			]
 			id: "3734A5BF783739BE"
+			min_width: 240
 			rewards: [
 				{
 					id: "6DDC32CB4B6A0F56"
@@ -45,12 +56,15 @@
 				item: "minecraft:crafting_table"
 				type: "item"
 			}]
+			title: "Wow a Crafting Table, how climatic!"
 			x: -4.0d
 			y: -5.0d
 		}
 		{
-			dependencies: ["3734A5BF783739BE"]
+			dependencies: ["491A6D808994797B"]
+			description: ["Ever wished to go camping? No? Well too bad, time to make a Campfire!"]
 			id: "65DB6A7BE6098186"
+			min_width: 240
 			rewards: [{
 				count: 4
 				id: "73FDD0AEE4DA2B39"
@@ -62,12 +76,15 @@
 				item: "minecraft:campfire"
 				type: "item"
 			}]
-			x: -4.0d
+			title: "Got any marshmallow?"
+			x: -3.5d
 			y: -4.0d
 		}
 		{
 			dependencies: ["3734A5BF783739BE"]
+			description: ["Remember to use your Ultimine capabilities when mining! You can read the &c&lImportant:&r Quest about it for more information."]
 			id: "491A6D808994797B"
+			min_width: 240
 			rewards: [{
 				count: 8
 				id: "53D61742583746EE"
@@ -85,6 +102,7 @@
 				}
 				type: "item"
 			}]
+			title: "Stony day"
 			x: -3.0d
 			y: -5.0d
 		}
@@ -93,7 +111,9 @@
 				"65DB6A7BE6098186"
 				"5F2E88EBE7506C76"
 			]
+			description: ["Smelt some Raw Iron in a Campfire to get some Iron Fragments."]
 			id: "1DD3363A37D52A83"
+			min_width: 240
 			rewards: [{
 				id: "709A3AA123C09EBC"
 				type: "xp"
@@ -104,15 +124,19 @@
 				item: "kubejs:iron_fragment"
 				type: "item"
 			}]
-			x: -3.5d
+			title: "That's not very Metal from you"
+			x: -3.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["1DD3363A37D52A83"]
+			description: ["Convert your Iron Fragments into nuggets then convert them back into ingots! This method is very inefficient however, so rush for your first furnace!"]
 			id: "616F8356C06E4806"
+			min_width: 240
 			rewards: [{
-				id: "2866BD7E1393C628"
-				item: "minecraft:iron_ingot"
+				count: 2
+				id: "3763C0E2BD620E86"
+				item: "minecraft:coal"
 				type: "item"
 			}]
 			tasks: [{
@@ -121,12 +145,19 @@
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
-			x: -3.5d
+			title: "Now that's Metal!"
+			x: -3.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["616F8356C06E4806"]
+			description: [
+				"Done with the camping I see..."
+				""
+				"At least you're iron efficient now."
+			]
 			id: "23E48C4BA203C8F8"
+			min_width: 240
 			rewards: [{
 				id: "32BDE232BBAA2CD0"
 				item: "minecraft:coal_block"
@@ -137,13 +168,24 @@
 				item: "minecraft:furnace"
 				type: "item"
 			}]
-			x: -2.5d
+			title: "Got any cupcake?"
+			x: -2.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["3734A5BF783739BE"]
+			description: [
+				"Drawers are used to store a lot of 1 to 4 type of item in them! They can get really useful if you get a lot of certain items like cobblestone or dirt. They also don't drop their items when broken so you can easily transport them."
+				""
+				"For now they can transport a total of 2048 items but later on you'll be able to upgrade them for exceptionally large sizes."
+				""
+				"You can enter their HUD by clicking on them anywhere but the main side."
+				"You can instantly insert all of your inventory items inside a drawer by holding &eright click&r on the main side."
+				"You can extract items 1 by 1 with &eLeft Click&r and stack by stack with &eShift + Left Click&r."
+			]
 			icon: "functionalstorage:oak_1"
 			id: "4B5E70ADE3D668E9"
+			min_width: 280
 			rewards: [{
 				id: "36637836D17A3FA0"
 				item: "minecraft:emerald"
@@ -161,17 +203,23 @@
 				title: "Any Drawer"
 				type: "item"
 			}]
-			title: "Drawers"
-			x: -5.0d
+			title: "That's a nice chest buddy"
+			x: -4.5d
 			y: -4.0d
 		}
 		{
 			dependencies: ["616F8356C06E4806"]
+			description: [
+				"Craft an Iron Chest from Sophisticated Storage! It has 54 slots (as much as a double chests) but also comes with useful configs on the right of its HUD. For example, it can remember your item slots even when empty like drawers, useful to stay organized."
+				"Don't get fooled, you can also make a double version of them for a total of 108 slots!"
+				""
+				"If you want to upgrade a chest that is already full of items, don't worry you can craft chest upgrdes that you can directly apply to chest without breaking them!"
+			]
 			id: "12D98F2C5144106B"
+			min_width: 240
 			rewards: [{
-				count: 4
-				id: "09FCAE9F4943CE65"
-				item: "minecraft:iron_ingot"
+				id: "0647A8438D1B755A"
+				item: "sophisticatedstorage:basic_to_copper_tier_upgrade"
 				type: "item"
 			}]
 			tasks: [{
@@ -185,7 +233,8 @@
 				}
 				type: "item"
 			}]
-			x: -4.5d
+			title: "Chest but Bigger... somehow?"
+			x: -4.0d
 			y: -3.0d
 		}
 		{
@@ -193,11 +242,17 @@
 				"12D98F2C5144106B"
 				"3DA41078DF459632"
 			]
+			description: [
+				"Upgrade your Iron Chest into a diamond chest! It has 108 slots, the equivalent of 2 double chests inside of a singular one!"
+				"And yes, you can also double it, meaning you can get a total of 216 slots in a singular storage."
+				""
+				"Now that's compact!"
+			]
 			id: "310DA632419037E0"
+			min_width: 240
 			rewards: [{
-				count: 4
-				id: "4E3F205D0ABDB916"
-				item: "minecraft:diamond"
+				id: "694275512FDE1C0D"
+				item: "sophisticatedstorage:basic_to_iron_tier_upgrade"
 				type: "item"
 			}]
 			tasks: [{
@@ -211,12 +266,21 @@
 				}
 				type: "item"
 			}]
-			x: -4.5d
+			title: "No seriously, how does that work?"
+			x: -4.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["6402629A93101A90"]
+			description: [
+				"Well, looks like it can also make leaves shiny!"
+				""
+				"Golden leaves are the main ressource of Nature's Aura, you'll need some throughout chapter 2."
+				""
+				"Go on, make those leaves shiny."
+			]
 			id: "699B23728F627B1F"
+			min_width: 240
 			rewards: [{
 				count: 16
 				id: "52430D7CADBBA475"
@@ -229,7 +293,8 @@
 				item: "naturesaura:gold_leaf"
 				type: "item"
 			}]
-			x: -0.5d
+			title: "Everything's better with a bit of gold"
+			x: 0.0d
 			y: -3.0d
 		}
 		{
@@ -237,14 +302,42 @@
 				"699B23728F627B1F"
 				"2B9C8EF454CAFCB8"
 			]
+			description: [
+				"Your next step is to perform the Ritual of the Forest and start your Naturalist Journey."
+				""
+				"To perform the Ritual of the Forest you'll first need to craft 8 Wooden Stand"
+				""
+				"Then place 16 Gold Powder on the ground, place the items on the Wooden Stand as seen in JEI (the pattern doesn't count, you can place the items as you want), and then grow a tree using bone meal."
+				""
+				"When the craft starts particles will start appearing, the input items and Gold Powder will be used and your item will be dropped on the ground"
+				""
+				"Below is how to form the Ritual of the Forest, you can also check the \"Book of Natural Aura\" to get a hologram of the structure"
+				""
+				"{image:kubejs:textures/ftbquests/naturesaura/wood_stand.png width:100 height:100 align:center}"
+			]
 			icon: "naturesaura:wood_stand"
 			id: "5D8C90FA217A52DB"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "41B8972B7CC321C8"
-				table_id: 6931617435292310794L
-				type: "choice"
-			}]
+			rewards: [
+				{
+					id: "5C3B8EED4DB0E5E5"
+					item: {
+						Count: 1
+						id: "trofers:large_pillar"
+						tag: {
+							BlockEntityTag: {
+								Trophy: "trofers:trophies/wood_stand"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "233771D142B5CB9C"
+					table_id: 6931617435292310794L
+					type: "choice"
+				}
+			]
 			size: 1.75d
 			tasks: [
 				{
@@ -272,12 +365,25 @@
 					type: "item"
 				}
 			]
-			x: -0.5d
+			title: "This one's magical, trust me"
+			x: 0.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["72EB2ED8D9D7B364"]
+			description: [
+				"Craft a backpack! They act like the Sophisticated Storage chests but they're accessible directly from your inventory, no need to say they can get quite handy. It has 27 slots and can be upgraded."
+				""
+				"You can place those by &eShift Right Clicking&r a block if you wish to do so."
+				""
+				"You can open your backpack while not holding it by using &eB&r, this keybind is of course modifiable in the Controls."
+				""
+				"Some items like Backpacks are equipable in your Curios Menu, to access it click on the button at the top left of your player visual in your inventory."
+				""
+				"Curios equippable items always have their Curios slot written below their name."
+			]
 			id: "396CD1AA6DFF7101"
+			min_width: 240
 			rewards: [{
 				count: 2
 				id: "11B3E05C9D2E143E"
@@ -289,7 +395,8 @@
 				item: "sophisticatedbackpacks:backpack"
 				type: "item"
 			}]
-			x: -5.5d
+			title: "Bundles sure looks differents"
+			x: -5.0d
 			y: -3.0d
 		}
 		{
@@ -297,7 +404,9 @@
 				"396CD1AA6DFF7101"
 				"3DA41078DF459632"
 			]
+			description: ["Upgrade your Backpack into a Diamond Backpack! It has 108 slots. You'll never be scared of a full inventory again!... or will you?"]
 			id: "64ADE730978A941F"
+			min_width: 240
 			rewards: [{
 				count: 4
 				id: "2468F77C30113DC9"
@@ -309,12 +418,15 @@
 				item: "sophisticatedbackpacks:diamond_backpack"
 				type: "item"
 			}]
-			x: -5.5d
+			title: "Got enough slots yet?"
+			x: -5.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["616F8356C06E4806"]
+			description: ["The Nature's Compass allows you to search for any specific biome and points you towards the closest! Less explory, more time effective."]
 			id: "61564C699FF6C285"
+			min_width: 240
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "35239C41BCD5164C"
@@ -330,12 +442,25 @@
 				}
 				type: "item"
 			}]
-			x: -3.5d
+			title: "Mother Nature"
+			x: -3.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["4B5E70ADE3D668E9"]
+			description: [
+				"The Configuration Tool it very useful tool and can do multiple things:"
+				""
+				"-Locking drawers so the corresponding item remain even when its count drops to zero"
+				""
+				"-Showing or Hiding the drawer item, amount and upgrade render on its main side"
+				""
+				"-Adding a progress bar on how much the drawer is filled for all items"
+				""
+				"You can switch between modes by using &eShift + Right Click&r while not looking at a drawer"
+			]
 			id: "13195133741568D5"
+			min_width: 240
 			rewards: [{
 				count: 6
 				id: "4F04B189C785BA9A"
@@ -347,12 +472,19 @@
 				item: "functionalstorage:configuration_tool"
 				type: "item"
 			}]
-			x: -6.0d
+			title: "Now including Fancy Options"
+			x: -5.5d
 			y: -4.0d
 		}
 		{
 			dependencies: ["616F8356C06E4806"]
+			description: [
+				"Mine some diamonds."
+				""
+				"Beautiful, rare and yet so useful."
+			]
 			id: "3DA41078DF459632"
+			min_width: 240
 			rewards: [{
 				count: 2
 				id: "7F2D751F51F5B841"
@@ -365,12 +497,15 @@
 				item: "minecraft:diamond"
 				type: "item"
 			}]
-			x: -4.5d
+			title: "Shiny!"
+			x: -4.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["616F8356C06E4806"]
+			description: ["Mine some good old redstone!"]
 			id: "4F27C10BCFCC365F"
+			min_width: 240
 			rewards: [{
 				count: 12
 				id: "6DA188DC547B6484"
@@ -383,30 +518,40 @@
 				item: { Count: 12, id: "minecraft:redstone" }
 				type: "item"
 			}]
-			x: -2.5d
+			title: "That's not energy!"
+			x: -2.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["491A6D808994797B"]
+			description: ["Now that's modded! Wait, no that's the next quest... Time to mine!"]
 			id: "5F2E88EBE7506C76"
+			min_width: 240
 			rewards: [{
-				count: 2
-				id: "742284ADB52D94B8"
-				item: "minecraft:iron_ore"
-				type: "item"
+				exclude_from_claim_all: true
+				id: "6139B4C7EED2C127"
+				table_id: 2601879568915432755L
+				type: "choice"
 			}]
 			tasks: [{
 				count: 6L
 				id: "6D2CFEF902EB716D"
-				item: "minecraft:iron_ore"
+				item: "minecraft:raw_iron"
 				type: "item"
 			}]
-			x: -3.0d
+			title: "That's Raw!"
+			x: -2.5d
 			y: -4.0d
 		}
 		{
 			dependencies: ["23E48C4BA203C8F8"]
+			description: [
+				"Mine some Gold."
+				""
+				"What's Gold but a material to make way better alloys anyway?"
+			]
 			id: "6402629A93101A90"
+			min_width: 240
 			rewards: [{
 				count: 4
 				id: "0EA660EB2A5BDAFA"
@@ -419,11 +564,18 @@
 				item: { Count: 4, id: "minecraft:gold_ingot" }
 				type: "item"
 			}]
-			x: -1.5d
+			title: "You're rich! Or are you?"
+			x: -1.0d
 			y: -2.0d
 		}
 		{
+			description: [
+				"You can craft leather with rotten flesh now!"
+				""
+				"Don't kill the cows please :("
+			]
 			id: "72EB2ED8D9D7B364"
+			min_width: 240
 			rewards: [{
 				count: 4
 				id: "100077C579132A7E"
@@ -436,12 +588,19 @@
 				item: { Count: 4, id: "minecraft:leather" }
 				type: "item"
 			}]
-			x: -6.5d
+			title: "What have you done?"
+			x: -6.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["3DA41078DF459632"]
+			description: [
+				"Get some obsidian, you'll thanks me later."
+				""
+				"Once again, don't forget to use Ultimine!"
+			]
 			id: "6AD41103407CF7B6"
+			min_width: 240
 			rewards: [{
 				count: 2
 				id: "486C7E03493747D8"
@@ -454,12 +613,19 @@
 				item: { Count: 64, id: "minecraft:obsidian" }
 				type: "item"
 			}]
-			x: -5.5d
+			title: "Rock, Pickaxe, Lava!"
+			x: -5.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["616F8356C06E4806"]
+			description: [
+				"Mine some Arcane Crystals."
+				""
+				"You can find them between y=-40 and y=14."
+			]
 			id: "2B9C8EF454CAFCB8"
+			min_width: 240
 			rewards: [{
 				count: 8
 				id: "3DB0B3F77A7D9802"
@@ -472,24 +638,32 @@
 				item: { Count: 8, id: "forbidden_arcanus:arcane_crystal" }
 				type: "item"
 			}]
-			x: -2.5d
+			title: "Shinier!"
+			x: -2.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["3DA41078DF459632"]
+			description: [
+				"Mine some runes."
+				""
+				"You can find them anywhere below y=2."
+			]
 			id: "581158A159C3EB4C"
+			min_width: 240
 			rewards: [{
 				id: "28A82AA7C4893E8A"
 				item: "forbidden_arcanus:rune"
 				type: "item"
 			}]
 			tasks: [{
-				count: 4L
+				count: 8L
 				id: "2B42F869B6EFAE30"
-				item: { Count: 4, id: "forbidden_arcanus:rune" }
+				item: "forbidden_arcanus:rune"
 				type: "item"
 			}]
-			x: -5.5d
+			title: "Like the dwarf you are"
+			x: -5.0d
 			y: 0.0d
 		}
 		{
@@ -498,7 +672,13 @@
 				"581158A159C3EB4C"
 				"555D82860FDAE970"
 			]
+			description: [
+				"Craft an enchanting table."
+				""
+				"Don't you love gambling?"
+			]
 			id: "4017262C83944767"
+			min_width: 240
 			rewards: [{
 				count: 3
 				id: "4C8EF3CFA65A8AF6"
@@ -510,32 +690,15 @@
 				item: "minecraft:enchanting_table"
 				type: "item"
 			}]
-			x: -6.5d
+			title: "It makes things shiny"
+			x: -6.0d
 			y: -1.0d
 		}
 		{
-			dependencies: ["23E48C4BA203C8F8"]
-			id: "48A318EB02A6ABBF"
-			rewards: [{
-				count: 8
-				id: "0760DBB58DE3A315"
-				item: "minecraft:copper_ingot"
-				type: "item"
-			}]
-			tasks: [{
-				count: 16L
-				id: "3863E1FB8D14B98F"
-				item: { Count: 16, id: "minecraft:copper_ingot" }
-				type: "item"
-			}]
-			x: -1.5d
-			y: -3.0d
-		}
-		{
 			description: [
-				"Village generation and villagers trades have been disabled in this pack."
+				"Ruined Portals, Village generation and villagers trades have been disabled in this pack."
 				""
-				"There will be other way to obtain the items they trade as mending books."
+				"There will be other way to obtain the items they trade such as mending books."
 			]
 			icon: "minecraft:emerald"
 			id: "6E857F803D3503A1"
@@ -544,14 +707,15 @@
 				title: "&c&l Important: Villages and Villagers"
 				type: "checkmark"
 			}]
-			x: -8.0d
-			y: 0.0d
+			title: "&c&lImportant: World Gen and Trading"
+			x: -1.0d
+			y: -5.0d
 		}
 		{
 			description: [
-				"Fire Spread is automatically disabled in this pack as it will not propagate itself."
+				"Fire Spread is automatically disabled in this pack such as it will not propagate itself but still despawn over time."
 				""
-				"This prevents the player to use the burning plank method to open the nether portal early (also to have your base burn down from lightning)"
+				"This prevents the player to use the burning plank method to open the nether portal early (also to prevent having your base burn down from lightning)"
 			]
 			disable_toast: true
 			icon: {
@@ -568,12 +732,18 @@
 				title: "&c&lImportant: Fire Spread"
 				type: "checkmark"
 			}]
-			x: -8.0d
-			y: -1.0d
+			x: -0.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["72EB2ED8D9D7B364"]
+			description: [
+				"When I was your age, we used to read unfinished mod wikis!"
+				""
+				"Those \"Questbooks\" of yours didn't exist yet!"
+			]
 			id: "555D82860FDAE970"
+			min_width: 240
 			rewards: [{
 				count: 6
 				id: "4D321CB0FBD55B5D"
@@ -585,8 +755,307 @@
 				item: "minecraft:book"
 				type: "item"
 			}]
-			x: -6.5d
+			title: "It's like in the 90's!"
+			x: -6.0d
 			y: -2.0d
+		}
+		{
+			description: [
+				"Welcome to Outlying Destiny! You read the title didn't ya? Outlying Destiny is an expert pack mostly oriented around Tech and Magic automation but you'll find your fair share of exploration too, if you're into that stuff..."
+				""
+				"But what is an expert modpack? We hired a random Divine Journey 2 player to answer us that question:"
+				""
+				"1. An expert modpack is a modpack that follows a progression, most recipes are changed and items are gated."
+				""
+				"2. The questbook is here to guide you! Huge efforts as been put into this pack to be a great entry point for new players while still being a great challenge for experienced player. Everyone can have fun, even if that doesn't include completing the pack, be proud of your achievements, you'll learn a lot!"
+				""
+				"3. Things will get hard! As you progress through the pack recipes will become more and more expensive, many recipes are \"tiered\" which means they will require you previous stuff to be crafted, autocrafting will be required and highly solicited! You'll unlock useful automation tools throught the pack and will become relevant in chapter 8 with the help of Applied Energistics. -\"If it's needed autocraft it!\""
+				""
+				""
+				"The pack will take you through lots of mods while adding its own few twists containing over 1000 new recipes and 100 custom items."
+				""
+				""
+				"Next page will present you a breakdown of the modpack progression (Beware of spoilers!):"
+				"{@pagebreak}"
+				"1. Early Game:"
+				""
+				"  - Genesis: Vanilla Minecraft, Nature's Aura, Immersive Engineering, Early Game Mekanism, PneumaticCraft"
+				""
+				"  - Exploration zone: Nether, Twilight Forest, The Aether, Undergarden, The End"
+				""
+				"  -Tech Mastery:"
+				"    -Thermal Series Part 1, AE2 Item / Fluid Storage, Mob Grinding Utils, EnderIO, LaserIO / Modular Routers"
+				"    -Thermal Series Part 2, ExtendedCrafting, AE2 Crafting Terminal, Actually Substractions"
+				"    -Industrial Foregoing, Mekanism Gas, RFTools, AE2 Autocrafting / Wireless"
+				""
+				"And More To Come!"
+			]
+			icon: "draconicevolution:dragon_heart"
+			id: "463D54DAEECAC15F"
+			min_width: 320
+			tasks: [{
+				id: "0EC29B4937E5C24C"
+				title: "Welcome to Outlying Destiny!"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: -5.0d
+		}
+		{
+			description: [
+				"Outlying Destiny is currently in alpha and is a heavily edited pack. You ARE a beta tester and despite my best efforts bugs are to be excepted."
+				""
+				"Want to help? You can easily report bugs to the GitHub: https://github.com/Blackalf14/Outlying-Destiny"
+				""
+				"However, before reporting:"
+				"- Make sure you're playing on the latest version of the pack"
+				"- Make sure you're running the pack on the latest Java 17 version"
+				"- Make sure your pack has not be significantly altered whether it is on your side or on the server you're playing on"
+				"- Make sure this is a modpack issue and not a mod issue"
+				"- Make sure the issue wasn't already reported, if you think you can add more infos to the issue you can comment under it"
+				""
+				""
+				"Once everything is check, feel free to send your report. Precise informations and screenshots are appreciated."
+			]
+			icon: "mm:debug_tool"
+			id: "7C9557B8455BFEF5"
+			min_width: 350
+			tasks: [{
+				id: "0871C2C041FD0E57"
+				title: "Bugs?"
+				type: "checkmark"
+			}]
+			title: "&c&lImportant: Bugs?"
+			x: -1.5d
+			y: -6.0d
+		}
+		{
+			description: [
+				"Welcome to the Questbook! This is the main hub for any important information you may need concerning the pack progression featuring tips and tricks (jokes included in the 0.99$ warranty pack (automatically given for free!))."
+				""
+				"Its usage is pretty easy to understand but let's breakdown the basics:"
+				""
+				"The questbook (QB) is divided into chapters each with their own set of quests, you don't need to complete every quests of a given chapter to unlock the next, however you will need to follow a questline indicated with arrows, quests that bridges the gap between 2 chapters are bigger and can be seen in each concerned chapter. Locked quests are grayed out."
+				""
+				"You can access the questbook in 3 different ways: Using the Quest Book item, while in your inventory clicking on the book upleft to your screen, by using a keybind configurable in your controls by simply searching \"quests\"."
+				""
+				"When clicking on a quest you can check the upleft arrow to see the quest dependency or the upright arrow to see dependant quests from this one. This is mostly useful for the therefore mentionned gap bridging quests and for some side-quests that are missing their arrows for chapter organization reasons."
+				""
+				"Outside of rare exceptions quests requires you to complete all their dependencies to be unlocked, however your progress on non-unlocked quests is still tracked so if you accidently complete a quest before unlocking it you will auto-complete it once unlocked."
+				""
+				"Each quests will have their own description usually containing tips or stupid jokes whichever you prefer. They also each have rewards, some are \"choice quests\" which name is self-explanatory you choose one of the rewards."
+				""
+				"In the top left of the main QB page. You can automatically collect every uncollected rewards with the up right button (choice quests not included), below it you'll find a button opening up a shortcut menu concerning the questbook."
+			]
+			icon: "ftbquests:book"
+			id: "78FEFF40138063EA"
+			min_width: 360
+			tasks: [{
+				id: "3E92A98CD16B0E0C"
+				title: "&c&lImportant: How to use the Questbook?"
+				type: "checkmark"
+			}]
+			title: "&c&lImportant: Questbook Manual"
+			x: -5.5d
+			y: -6.0d
+		}
+		{
+			description: [
+				"Those next keybinds can me modified in the \"Controls\" Menu:"
+				"(Note: You can search for specific controls name or keybinds using the top bar in the menu)"
+				""
+				"Pressing &eY&r while hovering over an item will highlight nearby inventories containing that same item. If no valid inventory are found, nothing will happen. You can also press &eShift+T&r to showcase that item in chat to everyone."
+				""
+				"Pressing &eF7&r will show a yellow X on blocks where monsters can spawn at night or a red X where monsters can always spawn."
+				""
+				"Pressing &eF9&r will activate the Chunk Boundary Overlary which has three modes:"
+				"1st mode: Shows red lines in the corners and a yellow line in the middle of the chunk."
+				"2nd mode: Also shows a green grid on the edges of the chunk."
+				"3rd mode: The green grid outlines a Minecraft region and displays the corresponding region save file in the top left corner."
+				""
+				""
+				"Those next keybinds cannot be modified in the \"Controls\" Menu:"
+				""
+				"Pressing &eF3+H&r will activate \"Display Advanced Tooltips\" which allows you to get useful informations like an item tags."
+				""
+				"Pressing &eF3+P&r will deactivate \"Pause on Lost Focus\" which is what pauses your game when switching tabs while not in a HUD in singleplayer."
+				""
+				"Pressing &eF3+B&r will show hitboxes of entities which can sometimes be useful when a boss, for example the Ender Dragon, seemingly randomly doesn't take hits or oppositively hits you from very far away"
+				""
+				"There are more &eF3+[key]&r shortcuts which you can show in chat by pressing &eF3+Q&r for qwerty users or &eF3+A&r for azerty users"
+			]
+			icon: "ae2:certus_quartz_wrench"
+			id: "772F45F2EC59B117"
+			min_width: 340
+			tasks: [{
+				id: "2249CA2E633186D8"
+				title: "&c&lImportant: Useful Shortcuts"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: -6.0d
+		}
+		{
+			description: [
+				"Just Enough Items, also known as JEI, is the mod adding that list of items in the right of your inventory, it is used to check items and recipes making it a crucial mod to the modpack comprehension."
+				""
+				"All below keybinds are modifiable in the \"Controls\" menu:"
+				""
+				"By &eleft clicking&r an item in the JEI menu or by pressing &eR&r you can display all recipes to craft that item"
+				"By &eright clicking&r or pressing &eU&r you can display all recipes using that item"
+				"If nothing happens that means that there is no valid recipe to make or to use that item"
+				""
+				"By pressing &eA&r you can bookmark an item to the left of your screen in order to access it easily"
+				""
+				""
+				"While checking recipes you will be shown a new HUD:"
+				""
+				"To the left of it you can see (almost) every blocks where the recipe can be effectuated"
+				""
+				"At the top you can select different categories of crafting, for example smelting or smithing, which both have their appropriate category."
+				"You can also move from page to page when there's a lot of recipes in a same category whether by pressing the arrow buttons or by using the &eMouse Wheel&r, you can also return to your previously viewed recipe by pressing &eBackspace&r"
+				""
+				"At the right of a recipe you can find 2 buttons:"
+				"The + can be pressed to automatically fill the recipe in a crafting table, if pressed while holding &eShift&r it will try to fill the recipe the most it can using what you have in your inventory, so if you have 48 logs and are trying to make planks it will fill all 48 of them."
+				"The button below it can be pressed to bookmark a recipe, not the same as an item, it can be useful if you're using a recipe frequently."
+				"{@pagebreak}"
+				"How to properly search with JEI:"
+				""
+				"You can search specific items using JEI with the search bar on the down right side of your HUD screen"
+				""
+				"You can focus your search on a specific mod by using &e@&r, for example \"@mekanism\". You can still search for an item name from there by just using a space, for example \"@mekanism factory\" will search for every factories in the mod Mekanism."
+				""
+				"Oppositively you can exclude results by using &e-&r, for example \"@mekanism -factory\" will search every items from Mekanism BUT factories"
+				""
+				"If you cannot locate an item in a large inventory, you can &edouble click&r the search bar to highlight items that matches your current search."
+			]
+			icon: "minecraft:brain_coral_block"
+			id: "726BFB17213D0231"
+			min_width: 400
+			tasks: [{
+				id: "4D84501B9BF3B1E4"
+				title: "&c&lImportant: JEI Manual"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: -6.0d
+		}
+		{
+			description: [
+				"You can play in this pack as a Team, here's a few steps tutorial to do so:"
+				""
+				"First, open your inventory and click the \"My Team\" button in the top left."
+				"From there you can create a team."
+				"Once you're done, come back to the team screen and use the green button on the top right to invite players."
+				"All they need to do is to accept the invitation and you're all done."
+				""
+				"Any player on a same team will share quest progress and rewards and will be able to interact with claimed chunks from said team."
+				""
+				""
+				"By going back to your inventory you can access the FTB Chunks: Claim Manager Menu by clicking on the green map in top left of your screen."
+				""
+				"From there you can claim chunks using &eLeft Click&r on the map and force load those using &eShift + Left Click&r"
+				"You can undo those actions by using &eRight Click&r instead of &eLeft Click&r."
+				""
+				"Claimed Chunks are chunks were only team members can interact and force loaded chunks are chunks that are always active whether or not there are players close / online."
+			]
+			icon: "minecraft:player_head"
+			id: "6130D43C39F79D9B"
+			min_width: 300
+			tasks: [{
+				id: "645AA5E09E2D0084"
+				title: "&c&lImportant: Teaming Up"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4F27C10BCFCC365F"]
+			description: [
+				"That's your first tank!"
+				""
+				"It can hold up to 32 buckets and is fully transportable."
+				""
+				"When placed in the Overworld you can enter easily input / output fluids from it with a bucket by &eRight Clicking&r it, you can also enter its HUD for more information."
+				""
+				"While in your inventory you can use &eShift + Mouse Wheel&r to enter bucket mode which can take or place a bucket of fluid with &eRight Clicking&r and &eShift + Right Clicking&r accordingly."
+				""
+				"Try filling one with lava when you see some, you might need it sooner or later."
+			]
+			id: "09444885C0D635F8"
+			min_width: 240
+			rewards: [{
+				id: "0E8251769A9A810A"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6BF7B0F7FE510546"
+				item: "mekanism:basic_fluid_tank"
+				type: "item"
+			}]
+			title: "Bucket but bigger!"
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4F27C10BCFCC365F"]
+			description: [
+				"Thanksfully, good old redstone comes with an upgrade."
+				""
+				"By combining some iron and redstone you can make some Red Alloy Wires."
+				""
+				"Here's what they do differently:"
+				""
+				"Oppositively to redstone, Red Alloy Wires power doesn't decline over distance."
+				""
+				"Red Alloy Wires powers every block around them, not only the ones they're facing to, it's specially useful when placing machinery at 90 degrees from a Red Alloy Wire line."
+				""
+				"Red Alloy Wires can be placed on walls, no more extravagant stair or redstone torches setup!"
+				""
+				"With wool you can make some Colored Insulated Wires, it's not only a nice way to differentiate different Redstone systems and adding some style to your base, different Colored Wires doesn't connect between each other, useful if you wish to have multiple system close to each other."
+				""
+				"Red Alloy Wires are also just way more lag free."
+			]
+			id: "36AC0722D684C4F4"
+			min_width: 240
+			rewards: [{
+				id: "564C7827E0F21A94"
+				item: "projectred_integration:timer_gate"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6B37AB6086EA1F68"
+				item: "projectred_transmission:red_alloy_wire"
+				type: "item"
+			}]
+			title: "Spaghetti with ketchup"
+			x: -1.5d
+			y: -4.0d
+		}
+		{
+			description: [
+				"Tired of mining and collecting ressources for hours? Lucky for you we got just what you need!"
+				""
+				"By pressing your Ultimine button (default: &e²&r) you can mine multiple of a same block at once up to a stack!"
+				""
+				"This make boring processes like breaking trees or collecting an ore vein a joke! At the cost of a bit of food"
+				""
+				"By using &eShift + Mouse Wheel&r while holding your Ultimine keybind you can change the preset of your Ultimine to break blocks in different patterns! Most notable exemples being the Small Cube 3x3 and mining tunnel."
+				""
+				"Ultimine is your best friend, make sure to use it frequently :)"
+			]
+			icon: "mysticalagradditions:supremium_paxel"
+			id: "6735C90A27B2216A"
+			min_width: 240
+			tasks: [{
+				id: "55248E7C56E66F0C"
+				title: "&c&lImportant: Ultimine"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -5.0d
 		}
 	]
 	title: "1. New Beginnings"

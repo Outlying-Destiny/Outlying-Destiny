@@ -1,0 +1,27 @@
+{
+    "parent": "kubejs:progression/root",
+    "display":{
+      "icon":{"item": "naturesaura:wood_stand"},
+      "title":{"text": "Naturalist"},
+      "description":{"text": "Start your adventure by crafting Nature's Aura Wood Stand."},
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "criteria": {
+        "wood_stand": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "naturesaura:wood_stand"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "requirements": [["wood_stand"]]
+}

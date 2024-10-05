@@ -20,7 +20,7 @@
 				title: "Twilight Forest!"
 				type: "dimension"
 			}]
-			title: "Twilight Forest"
+			title: "Can't run from this one"
 			x: -13.125d
 			y: -3.125d
 		}
@@ -86,6 +86,19 @@
 				"5BD91F6B151934B2"
 			]
 			id: "292D49D365627177"
+			rewards: [{
+				id: "0C5B6DFB09129527"
+				item: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "trofers:trophies/freed_soul"
+						}
+					}
+				}
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [{
 				id: "04FD2133C549E84D"
@@ -168,6 +181,11 @@
 			dependencies: ["292D49D365627177"]
 			hide_dependency_lines: true
 			id: "7E2D6E8C57E87A77"
+			rewards: [{
+				id: "6171CB44C6BCC49D"
+				type: "xp"
+				xp: 75
+			}]
 			size: 1.75d
 			tasks: [{
 				dimension: "aether:the_aether"
@@ -282,6 +300,19 @@
 				"442CDA293BACC0E8"
 			]
 			id: "7748DD4DEDD2956C"
+			rewards: [{
+				id: "75809E3A713082D6"
+				item: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "trofers:trophies/catalyst"
+						}
+					}
+				}
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [{
 				id: "1DC2D391CEAC0D8D"
@@ -430,6 +461,11 @@
 			dependencies: ["7748DD4DEDD2956C"]
 			hide_dependency_lines: true
 			id: "3C599A2D8429EAC2"
+			rewards: [{
+				id: "74D77DD02AB7DD09"
+				type: "xp"
+				xp: 100
+			}]
 			size: 1.75d
 			tasks: [{
 				dimension: "undergarden:undergarden"
@@ -437,7 +473,7 @@
 				type: "dimension"
 			}]
 			title: "Undergarden"
-			x: 1.5625d
+			x: 1.25d
 			y: -2.8125d
 		}
 		{
@@ -502,7 +538,7 @@
 				item: "powah:crystal_blazing"
 				type: "item"
 			}]
-			x: 1.5625d
+			x: 1.25d
 			y: -1.125d
 		}
 		{
@@ -513,7 +549,7 @@
 				item: "undergarden:forgotten_nugget"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -0.3125d
 			y: -1.125d
 		}
 		{
@@ -524,7 +560,7 @@
 				item: "undergarden:virulent_mix_bucket"
 				type: "item"
 			}]
-			x: 3.125d
+			x: 2.8125d
 			y: -1.125d
 		}
 		{
@@ -545,7 +581,7 @@
 				}
 				type: "item"
 			}]
-			x: 1.5625d
+			x: 1.25d
 			y: 0.5d
 		}
 	]

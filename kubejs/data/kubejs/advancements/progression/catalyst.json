@@ -1,0 +1,27 @@
+{
+    "parent": "kubejs:progression/freed_soul",
+    "display":{
+      "icon":{"item": "undergarden:catalyst"},
+      "title":{"text": "From Heavens to Hell"},
+      "description":{"text": "Make yourself a Catalyst and get access to The Undergarden."},
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "criteria": {
+        "catalyst": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "undergarden:catalyst"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "requirements": [["catalyst"]]
+}

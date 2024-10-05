@@ -1,0 +1,27 @@
+{
+    "parent": "kubejs:progression/steel_casing",
+    "display":{
+      "icon":{"item": "thermal:machine_frame"},
+      "title":{"text": "Thermalized to the brim"},
+      "description":{"text": "Craft a Thermal Machine Frame."},
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "criteria": {
+        "machine_frame": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "thermal:machine_frame"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "requirements": [["machine_frame"]]
+}

@@ -1,0 +1,23 @@
+{
+    "name": {
+      "color": "#353535",
+      "text": "Expert Crafter's Trophy"
+    },
+    "animation":{
+        "type": "spinning",
+        "speed": 0.2
+    },
+    "display": {
+      "offset": {
+          "y": 1.5
+      },
+      "scale": 0.8
+    },
+    "item": {
+      "item": "extendedcrafting:crafting_core"
+    },
+    "colors": {
+      "base": "#312c36",
+      "accent": "#302e2e"
+    }
+  }

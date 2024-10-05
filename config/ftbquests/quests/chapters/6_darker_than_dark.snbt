@@ -216,6 +216,19 @@
 			]
 			icon: "extendedcrafting:crafting_core"
 			id: "4B0C8DCB02DD44D3"
+			rewards: [{
+				id: "25993E85E7B35025"
+				item: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "trofers:trophies/crafting_core"
+						}
+					}
+				}
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "2ACE101A6A32CFA4"

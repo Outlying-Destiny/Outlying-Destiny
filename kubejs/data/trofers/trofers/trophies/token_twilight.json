@@ -1,0 +1,23 @@
+{
+    "name": {
+      "color": "#f6f6f6",
+      "text": "Puppet Master's Trophy"
+    },
+    "animation":{
+        "type": "spinning",
+        "speed": 0.2
+    },
+    "display": {
+      "offset": {
+          "y": 1.5
+      },
+      "scale": 1
+    },
+    "item": {
+      "item": "kubejs:token_twilight"
+    },
+    "colors": {
+      "base": "#312c36",
+      "accent": "#a35050"
+    }
+  }

@@ -1,0 +1,27 @@
+{
+    "parent": "kubejs:progression/crafting_core",
+    "display":{
+      "icon":{"item": "industrialforegoing:machine_frame_supreme"},
+      "title":{"text": "Gas were a bad idea anyway"},
+      "description":{"text": "Craft a Supreme Machine Frame."},
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "criteria": {
+        "machine_frame_supreme": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "industrialforegoing:machine_frame_supreme"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "requirements": [["machine_frame_supreme"]]
+}

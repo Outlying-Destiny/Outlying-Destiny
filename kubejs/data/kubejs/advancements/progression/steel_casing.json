@@ -1,0 +1,27 @@
+{
+    "parent": "kubejs:progression/hammer",
+    "display":{
+      "icon":{"item": "mekanism:steel_casing"},
+      "title":{"text": "Mekanician's favorite"},
+      "description":{"text": "Make yourself your first Steel Casing."},
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "criteria": {
+        "steel_casing": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "mekanism:steel_casing"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "requirements": [["steel_casing"]]
+}

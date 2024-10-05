@@ -10,12 +10,26 @@
 	quests: [
 		{
 			dependencies: [
-				"699B23728F627B1F"
 				"2B9C8EF454CAFCB8"
+				"699B23728F627B1F"
+			]
+			description: [
+				"Your next step is to perform the Ritual of the Forest and start your Naturalist Journey."
+				""
+				"To perform the Ritual of the Forest you'll first need to craft 8 Wooden Stand"
+				""
+				"Then place 16 Gold Powder on the ground, place the items on the Wooden Stand as seen in JEI (the pattern doesn't count, you can place the items as you want), and then grow a tree using bone meal."
+				""
+				"When the craft starts particles will start appearing, the input items and Gold Powder will be used and your item will be dropped on the ground"
+				""
+				"Below is how to form the Ritual of the Forest, you can also check the \"Book of Natural Aura\" to get a hologram of the structure"
+				""
+				"{image:kubejs:textures/ftbquests/naturesaura/wood_stand.png width:100 height:100 align:center}"
 			]
 			disable_toast: true
 			icon: "naturesaura:wood_stand"
 			id: "07A64AE31764BD29"
+			min_width: 240
 			size: 1.75d
 			tasks: [
 				{
@@ -43,6 +57,7 @@
 					type: "item"
 				}
 			]
+			title: "This one's magical, trust me"
 			x: -1.5d
 			y: -0.5d
 		}
@@ -51,19 +66,40 @@
 				"07A64AE31764BD29"
 				"045F56361DDA2A87"
 			]
+			description: ["Craft a Token of Joy using the Ritual of the Forest."]
 			id: "678EF4FAD5178E53"
+			min_width: 240
 			tasks: [{
 				id: "1544DE29E3EF676A"
 				item: "naturesaura:token_joy"
 				type: "item"
 			}]
+			title: ":)"
 			x: 0.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["678EF4FAD5178E53"]
+			description: [
+				"Hey, an another multiblock! Your next goal is to build the Natural Altar."
+				""
+				"The Natural Altar drains aura around it to transmute items into others."
+				""
+				"Aura is a ressource you can find everywhere in the world but invisible to the human eye."
+				"For now you shouldn't be worried that much about running out of Aura but if you want to know more about the subject you can check the 2 quests below the Ritual of The Forest quest."
+				""
+				"Here's the structure to build the Natural Altar, there are no blocks below the main block meaning you can use hoppers to semi-automate it: (Check the book to get a hologram of the structure)"
+				"{image:kubejs:textures/ftbquests/naturesaura/nature_altar.png width:100 height:100 align:center}"
+			]
 			icon: "naturesaura:nature_altar"
 			id: "7530FE8F2D9D011B"
+			min_width: 240
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "40255ED677BDC89E"
+				table_id: 6931617435292310794L
+				type: "choice"
+			}]
 			tasks: [
 				{
 					id: "5CB20F7A953D32EC"
@@ -71,9 +107,15 @@
 					type: "item"
 				}
 				{
-					count: 20L
 					id: "58A14D98B6995E29"
-					item: { Count: 20, id: "minecraft:oak_planks" }
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:planks"
+						}
+					}
+					title: "Any #minecraft:planks"
 					type: "item"
 				}
 				{
@@ -95,12 +137,15 @@
 					type: "item"
 				}
 			]
+			title: "Aura Infusion"
 			x: 1.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["7530FE8F2D9D011B"]
+			description: ["Infuse gold with aura using your newly built Natural Altar."]
 			id: "738163BCAD68CC8F"
+			min_width: 240
 			rewards: [{
 				count: 4
 				id: "50F54E9B321D1B3D"
@@ -113,31 +158,51 @@
 				item: { Count: 4, id: "naturesaura:tainted_gold" }
 				type: "item"
 			}]
+			title: "Didn't now colorants were magical"
 			x: 2.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["7530FE8F2D9D011B"]
+			description: [
+				"Infuse stone with aura using your newly built Natural Altar."
+				""
+				"This marks your first step towards becoming an engineer!"
+			]
+			icon: "naturesaura:infused_stone"
 			id: "45C495D3393C5F6E"
+			min_width: 240
 			rewards: [{
-				count: 16
+				count: 8
 				id: "6539F7D43B851282"
 				item: "minecraft:stone"
 				type: "item"
 			}]
 			size: 1.25d
 			tasks: [{
-				count: 27L
 				id: "5288C9C4711C2316"
-				item: { Count: 8, id: "naturesaura:infused_stone" }
+				item: "naturesaura:infused_stone"
 				type: "item"
 			}]
+			title: "Rock Infusion"
 			x: 1.0d
 			y: 0.75d
 		}
 		{
 			dependencies: ["6A53A5AD90652811"]
+			description: [
+				"Infuse some steel in your Natural Altar."
+				""
+				"Who said magic and industrial are uncompatible?"
+			]
 			id: "74A5DBE334967074"
+			min_width: 240
+			rewards: [{
+				count: 8
+				id: "5010845C042BAF36"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3C2D811E0A86E4F5"
 				item: "naturesaura:infused_iron"
@@ -148,7 +213,19 @@
 		}
 		{
 			dependencies: ["66E4E78EE2442FC4"]
+			description: [
+				"Use a Bottle and Dork in the Overworld to get some Bottled Sunlight."
+				""
+				"If you're unable to collect it, it means that there is no longer any aura in the zone, just walk for a bit and try again"
+			]
 			id: "045F56361DDA2A87"
+			min_width: 240
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "26C7B2170F310F08"
+				table_id: 7865783274981958186L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "2DDE43B8DC79A5C2"
 				item: {
@@ -161,71 +238,94 @@
 				match_nbt: true
 				type: "item"
 			}]
+			title: "Not to drink, probably"
 			x: -0.5d
 			y: -1.5d
 		}
 		{
-			dependencies: ["306576FB42A98111"]
+			dependencies: ["020E762288257550"]
+			description: [
+				"Bottle and Dorks can be used to collect aura by &eRight Clicking&r in the air."
+				""
+				"Each dimension as its own type of aura and so using the Bottle and Dorks in different dimensions may result in different products."
+				""
+				"More information about aura will be given in future quests."
+			]
 			id: "66E4E78EE2442FC4"
+			min_width: 240
+			rewards: [{
+				count: 4
+				id: "7CE1139FAD306732"
+				item: "minecraft:glass"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7C45B91898D6729B"
 				item: { Count: 6, id: "naturesaura:bottle_two_the_rebottling" }
 				type: "item"
 			}]
+			title: "Magical Bottle"
 			x: -0.5d
 			y: -2.5d
 		}
 		{
-			dependencies: ["6402629A93101A90"]
-			id: "306576FB42A98111"
-			rewards: [{
-				count: 16
-				id: "063048C4E1C3DB95"
-				item: "naturesaura:gold_powder"
-				type: "item"
-			}]
-			tasks: [{
-				count: 32L
-				id: "642C54D78E54167C"
-				item: "naturesaura:gold_leaf"
-				type: "item"
-			}]
-			x: -1.5d
-			y: -2.0d
-		}
-		{
 			dependencies: ["738163BCAD68CC8F"]
+			description: ["The Nether being currently inaccessible, your only way to get Netherrack is by crafting it. Luckily it looks like Tainted Gold Ingots might just do the job!"]
 			id: "1F6429411B14E024"
+			min_width: 240
+			rewards: [{
+				count: 4
+				id: "79BD5417EBE0CFB4"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
 			size: 1.25d
 			tasks: [{
-				count: 32L
+				count: 36L
 				id: "4F79195000F27F6F"
-				item: { Count: 32, id: "minecraft:netherrack" }
+				item: "minecraft:netherrack"
 				type: "item"
 			}]
+			title: "Hellscape right at home!"
 			x: 1.0d
 			y: -1.75d
 		}
 		{
 			dependencies: ["07A64AE31764BD29"]
+			description: [
+				"Want to produce aura by yourself? Unfortunately for you there's only 1 available option for you at the moment, growing ancient sapling!"
+				""
+				"Once grown, an ancient sapling leaves will produce aura in the area around it, however, doing so the leaves will slowly fade away leaving the tree bare, stopping the processus."
+				""
+				"Ancient Saplings cannot be found naturally and no sapplings are dropped from their leaves, for each tree you grow you need to craft new saplings."
+			]
 			id: "1A6234798DBC2C87"
-			tasks: [{
-				id: "6106D509B0B263D7"
+			min_width: 240
+			rewards: [{
+				id: "4CF57BB73523AFE7"
 				item: "naturesaura:ancient_sapling"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 0.5d
+			tasks: [{
+				id: "3472F6BA90C24BB5"
+				item: "naturesaura:ancient_sapling"
+				type: "item"
+			}]
+			title: "Ancient? I just made them!"
+			x: -1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5F8FE2C8D2EB3B88"]
 			id: "6A53A5AD90652811"
+			min_width: 240
 			size: 1.25d
 			tasks: [{
 				dimension: "minecraft:the_nether"
 				id: "57A9582B9A67409B"
 				type: "dimension"
 			}]
+			title: "My home IS hellscape"
 			x: 3.25d
 			y: -0.5d
 		}
@@ -235,8 +335,25 @@
 				"510800933DF646AB"
 				"1937450B3F241530"
 			]
+			description: [
+				"Your last step in becoming a Master of naturalism is to build an Offering Table. Don't know what trading with God haves to do with naturalism but... yup, gotta do it!"
+				""
+				"Simply put between 1 and 16 of a same item inside the Table and drop a Spirit of Calling on it. Your items will be offered and your reward will rain from the sky!"
+				""
+				"Did you know that Gods likes flowers? Only small ones tho, can get quite picky on that."
+				""
+				"Here's a preview of how you want to build your Offering Table: (Check the Book for a hologram of the structure)"
+				"{image:kubejs:textures/ftbquests/naturesaura/offering_table.png width:100 height:100 align:center}"
+			]
 			icon: "naturesaura:offering_table"
 			id: "5FE1BA0649DB77B6"
+			min_width: 240
+			rewards: [{
+				count: 2
+				id: "197600531C9E079B"
+				item: "minecraft:netherite_scrap"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "51930EE6F8C47CB7"
@@ -262,12 +379,25 @@
 					type: "item"
 				}
 			]
+			title: "Pray but most importantly pay"
 			x: 5.75d
 			y: -0.5d
 		}
 		{
 			dependencies: ["6A53A5AD90652811"]
+			description: [
+				"Use a Bottle and Dork in the Nether to get some Bottled Ghosts."
+				""
+				"And no you can't become glue, thanks for asking."
+			]
 			id: "684CBF2196952AF5"
+			min_width: 240
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1171E03A82BB59AB"
+				table_id: 1056890181776234961L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "1FBD5368A61837F9"
 				item: {
@@ -280,6 +410,7 @@
 				match_nbt: true
 				type: "item"
 			}]
+			title: "Luigi's Mansion 4"
 			x: 4.0d
 			y: -1.5d
 		}
@@ -289,51 +420,114 @@
 				"64BD2158A4528720"
 			]
 			dependency_requirement: "one_completed"
+			description: [
+				"Get a Ghast Tear, either by looting it or by crafting it using the Natural Altar with a Transmutation Catalyst."
+				""
+				"This quest only requires a single dependence to be completed."
+			]
 			id: "3A778832C6CDC464"
+			min_width: 240
+			rewards: [{
+				count: 8
+				id: "28F8A574C873D02C"
+				item: "minecraft:soul_sand"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3C9C07A6C8DA4882"
 				item: "minecraft:ghast_tear"
 				type: "item"
 			}]
+			title: "Ghastly noises"
 			x: 4.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["3A778832C6CDC464"]
+			description: ["Craft a Token of Joy with your \"hardly\" acquired Ghast Tear."]
 			id: "510800933DF646AB"
+			min_width: 240
+			rewards: [{
+				count: 2
+				id: "53AD379ACFF7EBF3"
+				item: "thermal:gunpowder_block"
+				type: "item"
+			}]
 			tasks: [{
 				id: "54ED48EF806BFC28"
 				item: "naturesaura:token_sorrow"
 				type: "item"
 			}]
+			title: ":("
 			x: 5.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["684CBF2196952AF5"]
+			description: [
+				"Craft a Token of Fear."
+				""
+				"Guess being trapped in a bottle can scare people, even ghosts."
+			]
 			id: "1937450B3F241530"
+			min_width: 240
+			rewards: [{
+				count: 4
+				id: "3C785D317E88049E"
+				item: "minecraft:bone_block"
+				type: "item"
+			}]
 			tasks: [{
 				id: "51CD28210CC94E4D"
 				item: "naturesaura:token_fear"
 				type: "item"
 			}]
+			title: ":O"
 			x: 5.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["6A53A5AD90652811"]
+			description: [
+				"By putting a transmutation catalyst below your Natural Altar you can unlock new crafts with it!"
+				""
+				"That does mean that you'll now be unable to automate your Natural Altar using hoppers, you'll have to use pipes instead which you unlock in chapter 3 with Mekanism."
+				""
+				"However the transmutation catalyst is your best option if you're unable to get a Ghast Tear in the Nether, try it out!"
+			]
 			id: "64BD2158A4528720"
+			min_width: 240
+			rewards: [{
+				count: 2
+				id: "4F62D1FA49F6D068"
+				item: "minecraft:blaze_rod"
+				type: "item"
+			}]
 			tasks: [{
 				id: "494DD86F77E67B0A"
 				item: "naturesaura:conversion_catalyst"
 				type: "item"
 			}]
+			title: "Because the multiblock wasn't big enough"
 			x: 2.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["5FE1BA0649DB77B6"]
+			description: [
+				"Get your new tokens by offering to the Gods."
+				""
+				"Gods have taketh, Gods have Giveth."
+			]
+			icon: "naturesaura:token_grief"
 			id: "6540A2C6A17020A8"
+			min_width: 240
+			rewards: [{
+				count: 4
+				id: "35F6BC67F22460AF"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "416DE8536DD82777"
@@ -356,36 +550,84 @@
 					type: "item"
 				}
 			]
+			title: "Waiter! More tokens please"
 			x: 6.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["5FE1BA0649DB77B6"]
+			description: [
+				"Get some Ingots of the Skies by offering to the Gods."
+				""
+				"Green steel is fashion out there, you know?"
+			]
 			id: "5EBD1BE5CAC32C54"
+			min_width: 240
+			rewards: [{
+				count: 8
+				id: "15858C5AB20D8992"
+				item: "thermal:steel_ingot"
+				type: "item"
+			}]
 			size: 1.25d
 			tasks: [{
 				id: "5E95E143123086BF"
 				item: "naturesaura:sky_ingot"
 				type: "item"
 			}]
+			title: "Gift from Olympus"
 			x: 6.5d
 			y: -1.5d
 		}
 		{
-			dependencies: ["6540A2C6A17020A8"]
+			dependencies: [
+				"6540A2C6A17020A8"
+				"28D5BB0DC2A4288E"
+			]
+			description: ["Combine all your tokens and some Powder of Twilight to get your token to the Twilight Forest!"]
 			id: "1D8893FD9B6AA44A"
+			min_width: 240
+			rewards: [{
+				id: "7BB855707B35FB89"
+				item: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "trofers:trophies/token_twilight"
+						}
+					}
+				}
+				type: "item"
+			}]
 			size: 1.0d
 			tasks: [{
 				id: "6E50634A88B24B28"
 				item: "kubejs:token_twilight"
 				type: "item"
 			}]
+			title: "Rather bright for a Token of Twilight"
 			x: 7.25d
 			y: -0.5d
 		}
 		{
 			dependencies: ["1D8893FD9B6AA44A"]
+			description: [
+				"You now have access to the Twilight Forest, simply throw your Token of Twilight in a 2x2 pond of water surrounded by flowers (corner included) and jump into the portal!"
+				""
+				"Beware, the Token of Twilight will be consumed, make sure you create your portal in an appropriate spot unless you want to craft a new token."
+				""
+				"Here's a preview of the unlit portal"
+				""
+				"{image:kubejs:textures/ftbquests/twilightforest/portal.png width:100 height:100 align:center}"
+			]
 			id: "3A338B82C0765C40"
+			min_width: 240
+			rewards: [{
+				id: "15265A492B977827"
+				type: "xp"
+				xp: 30
+			}]
 			size: 1.25d
 			tasks: [{
 				dimension: "twilightforest:twilight_forest"
@@ -393,9 +635,197 @@
 				title: "Twilight Forest!"
 				type: "dimension"
 			}]
-			title: "Twilight Forest"
-			x: 8.5d
+			title: "Can't run from this one"
+			x: 8.75d
 			y: -0.5d
+		}
+		{
+			dependencies: ["5EBD1BE5CAC32C54"]
+			description: [
+				"The Skyseeker's armor have the same stats as a diamond armor but comes with 3 additional effects:"
+				""
+				"The wearer's movement speed is increased."
+				""
+				"The wearer's ability to step up blocks without jumping is increased."
+				""
+				"The armor can repair itself when sneaking by consuming aura from an Aura Cache or Aura Trove"
+				""
+				"The Aura Cache is an item that can store aura by charging it in a Natural Altar."
+				""
+				"The Aura Trove is an upgrade from the Aura Cache that can store 3 times more aura."
+			]
+			icon: {
+				Count: 1
+				id: "naturesaura:sky_chest"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2DCDFC4EAC0E134C"
+			min_width: 240
+			rewards: [{
+				id: "490055300776A2C0"
+				item: {
+					Count: 1
+					id: "naturesaura:sky_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "539370261F63B293"
+					item: {
+						Count: 1
+						id: "naturesaura:sky_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "43BF205E4B71DAD3"
+					item: {
+						Count: 1
+						id: "naturesaura:sky_chest"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "768FB90B32E19591"
+					item: {
+						Count: 1
+						id: "naturesaura:sky_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "22E0D0BBB6EE061A"
+					item: {
+						Count: 1
+						id: "naturesaura:sky_shoes"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "41E7719C49CA8DAF"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "naturesaura:aura_cache"
+								}
+								{
+									Count: 1b
+									id: "naturesaura:aura_trove"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Hephaestus wannabe"
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["315E6991C44E3C37"]
+			description: [
+				"Well, looks like it can also make leaves shiny!"
+				""
+				"Golden leaves are the main ressource of Nature's Aura, you'll need some throughout chapter 2."
+				""
+				"Go on, make those leaves shiny."
+			]
+			disable_toast: true
+			id: "020E762288257550"
+			min_width: 240
+			tasks: [{
+				count: 32L
+				id: "7B4710D2516403BC"
+				item: "naturesaura:gold_leaf"
+				type: "item"
+			}]
+			title: "Everything's better with a bit of gold"
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["684CBF2196952AF5"]
+			description: ["The Eye of the Blaze can lead you straight to the nearest Nether Forteress, working the same way as the Eye of Ender."]
+			id: "58A83F82440D3047"
+			min_width: 240
+			rewards: [{
+				count: 2
+				id: "35D5D70A11EFC23F"
+				item: "naturesaura:tainted_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "687EA88C2841044E"
+				item: "naturesaura:fortress_finder"
+				type: "item"
+			}]
+			title: "The Fourth Eye"
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"58D275BD01AC2B1C"
+				"2AFBDF3213FABA18"
+			]
+			disable_toast: true
+			id: "28D5BB0DC2A4288E"
+			min_width: 240
+			tasks: [{
+				id: "4ED31DAA67F884E8"
+				item: "immersiveengineering:ingot_hop_graphite"
+				type: "item"
+			}]
+			title: "Blackout"
+			x: 8.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["07A64AE31764BD29"]
+			description: [
+				"Bearing the environmental Eye let you see how much aura is in an area, the bar being half full representing an excepted aura amount."
+				""
+				"Naturally, aura is found in abundance close to aura plants."
+			]
+			id: "51E26172D5042D9F"
+			min_width: 240
+			rewards: [{
+				count: 4
+				id: "6B9E426EA683D32C"
+				item: "naturesaura:aura_bloom"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6B0B407F7FE00DE4"
+				item: "naturesaura:eye"
+				type: "item"
+			}]
+			title: "The Third Eye"
+			x: -0.5d
+			y: 0.5d
 		}
 	]
 	title: "2. Natural Magic"

@@ -1,0 +1,23 @@
+{
+    "name": {
+      "color": "#fc941b",
+      "text": "Gardener's Trophy"
+    },
+    "animation":{
+        "type": "spinning",
+        "speed": 0.2
+    },
+    "display": {
+      "offset": {
+          "y": 1.5
+      },
+      "scale": 1
+    },
+    "item": {
+      "item": "undergarden:catalyst"
+    },
+    "colors": {
+      "base": "#312c36",
+      "accent": "#fc941b"
+    }
+  }

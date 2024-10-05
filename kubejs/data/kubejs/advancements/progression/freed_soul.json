@@ -1,0 +1,27 @@
+{
+    "parent": "kubejs:progression/token_twilight",
+    "display":{
+      "icon":{"item": "kubejs:freed_soul"},
+      "title":{"text": "Not quite Olympus"},
+      "description":{"text": "Free your soul and get access to the Aether."},
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "criteria": {
+        "freed_soul": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "kubejs:freed_soul"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "requirements": [["freed_soul"]]
+}

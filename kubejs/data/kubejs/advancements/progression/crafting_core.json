@@ -1,0 +1,39 @@
+{
+    "parent": "kubejs:progression/catalyst",
+    "display":{
+      "icon":{"item": "extendedcrafting:crafting_core"},
+      "title":{"text": "Crafting Madness"},
+      "description":{"text": "Craft a Crafting Core and some pedestals."},
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "criteria": {
+        "crafting_core": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "extendedcrafting:crafting_core"
+                ]
+              }
+            ]
+          }
+        },
+        "pedestal": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "extendedcrafting:pedestal"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "requirements": [["crafting_core", "pedestal"]]
+}

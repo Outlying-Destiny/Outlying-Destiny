@@ -16,29 +16,39 @@
 	quests: [
 		{
 			dependencies: ["7530FE8F2D9D011B"]
+			description: [
+				"Infuse stone with aura using your newly built Natural Altar."
+				""
+				"This marks your first step towards becoming an engineer!"
+			]
 			disable_toast: true
 			id: "6A6013A1C9916483"
+			min_width: 240
 			size: 1.25d
 			tasks: [{
-				count: 27L
 				id: "46211EEBD016520E"
-				item: { Count: 8, id: "naturesaura:infused_stone" }
+				item: "naturesaura:infused_stone"
 				type: "item"
 			}]
+			title: "Rock Infusion"
 			x: 0.5d
 			y: -7.75d
 		}
 		{
 			dependencies: ["738163BCAD68CC8F"]
+			description: ["The Nether being currently inaccessible, your only way to get Netherrack is by crafting it. Luckily it looks like Tainted Gold Ingots might just do the job!"]
 			disable_toast: true
+			hide: false
 			id: "0923A0F326E0153D"
+			min_width: 240
 			size: 1.25d
 			tasks: [{
-				count: 32L
+				count: 36L
 				id: "75F82079BCBC11C9"
-				item: { Count: 32, id: "minecraft:netherrack" }
+				item: "minecraft:netherrack"
 				type: "item"
 			}]
+			title: "Hellscape right at home!"
 			x: -1.0d
 			y: -6.5d
 		}
@@ -47,8 +57,16 @@
 				"6A6013A1C9916483"
 				"61BF92491E596D74"
 			]
+			description: [
+				"Build a Coke Oven. Simply make a 3³ cube of Coke Brick and &eRight Click&r it with your engineer hammer."
+				""
+				"The Coke Oven will be used for the production of Coke and Creosote Oil."
+				""
+				"However, you'll notice it's pretty slow. 90 seconds per coke to be exact. You want to make multiple of those as future coke demand will be expansive."
+			]
 			icon: "immersiveengineering:coke_oven"
 			id: "163B6909663DDA70"
+			min_width: 240
 			tasks: [{
 				count: 27L
 				id: "595488493715B0A4"
@@ -61,25 +79,35 @@
 		}
 		{
 			dependencies: ["0923A0F326E0153D"]
+			description: [
+				"Infuse some netherrack to get yourself some magma blocks."
+				""
+				"Time to infuse the infusion!"
+			]
 			id: "001AEB901C551C90"
+			min_width: 240
 			tasks: [{
-				count: 8L
+				count: 9L
 				id: "30DF87553ED32071"
-				item: { Count: 27, id: "minecraft:magma_block" }
+				item: "minecraft:magma_block"
 				type: "item"
 			}]
+			title: "A joke about Ligma"
 			x: -0.25d
 			y: -5.5d
 		}
 		{
 			dependencies: ["0923A0F326E0153D"]
+			description: ["Smelt some netherrack to get Nether Bricks."]
 			id: "35B2842413B6586C"
+			min_width: 240
 			tasks: [{
-				count: 32L
+				count: 36L
 				id: "043E6037AEF1778F"
-				item: { Count: 32, id: "minecraft:nether_brick" }
+				item: "minecraft:nether_brick"
 				type: "item"
 			}]
+			title: "Bricked up"
 			x: 0.5d
 			y: -6.5d
 		}
@@ -89,8 +117,18 @@
 				"001AEB901C551C90"
 				"61BF92491E596D74"
 			]
+			description: [
+				"Build a Blast Oven. Simply make a 3³ cube of Blast Brick and &eRight Click&r it with your engineer hammer."
+				""
+				"The Blast Furnace constitutes your first production of Steel!"
+				""
+				"However, you'll notice its production is pretty slow and its fuel demand high, only making a steel ingot per minute. When it comes to fuel you want to prioritize the use of Coke as it is x4 more efficient than coal going from 4 to 1 coal per steel."
+				""
+				"You'll quickly unlock a new way of creating steel with Mekanism going way faster at the cost of electricity but for now the Blast Furnace shall suffice."
+			]
 			icon: "immersiveengineering:blast_furnace"
 			id: "610C537DA0A2AD77"
+			min_width: 240
 			tasks: [{
 				count: 27L
 				id: "1353861A1A9ABDEB"
@@ -103,8 +141,22 @@
 		}
 		{
 			dependencies: ["61BF92491E596D74"]
+			description: [
+				"Build an Alloy Kiln. Simply make a 2³ cube of Kiln Brick and &eRight Click&r it with your engineer hammer."
+				""
+				"This will be your first mean of making alloys."
+				""
+				"You can easily make multiple of those, go ahead, make that factory running!"
+			]
 			icon: "immersiveengineering:alloy_smelter"
 			id: "56A7B01838A02347"
+			min_width: 240
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0D25975066067C9D"
+				table_id: 1850457764399033268L
+				type: "choice"
+			}]
 			tasks: [{
 				count: 8L
 				id: "5787DFC2E92B4DB7"
@@ -117,7 +169,22 @@
 		}
 		{
 			dependencies: ["6A6013A1C9916483"]
+			description: ["The Engineer hammer is the main tool of Immersive Engineering (IE), it is mainly used to complete the construction of IE multiblocks."]
 			id: "61BF92491E596D74"
+			min_width: 240
+			rewards: [{
+				id: "0681EC663C0DEAC8"
+				item: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "trofers:trophies/hammer"
+						}
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "68C373839B61E693"
 				item: {
@@ -135,6 +202,7 @@
 		{
 			dependencies: ["163B6909663DDA70"]
 			id: "49CB87276BB136AA"
+			min_width: 240
 			tasks: [{
 				id: "4C96AD40C4E80B2C"
 				item: "immersiveengineering:creosote_bucket"
@@ -146,6 +214,7 @@
 		{
 			dependencies: ["49CB87276BB136AA"]
 			id: "679F2CA5C993DE97"
+			min_width: 240
 			rewards: [{
 				count: 16
 				id: "0F904202B2E70095"
@@ -163,7 +232,13 @@
 		}
 		{
 			dependencies: ["163B6909663DDA70"]
+			description: [
+				"When it comes to smelting, coke is direct upgrade to coal. It lasts 2 times longer in a furnace and 4 times longer in a Blast Furnace. You want to prioritize its use on the production of steel until you unlock Mekanism as it diminishes a lot its global coal cost."
+				""
+				"Coke Dust is also used to produce HOP Graphite Dust which you'll need in great quantities later on, so make sure you keep producing Coke constantly by automating your Coke Ovens."
+			]
 			id: "6DA318B2DC301A67"
+			min_width: 240
 			rewards: [{
 				count: 4
 				id: "1D85DEA8762315F1"
@@ -181,8 +256,9 @@
 		{
 			dependencies: ["610C537DA0A2AD77"]
 			id: "30C16811BB92E249"
+			min_width: 240
 			rewards: [{
-				count: 8
+				count: 4
 				id: "5DD14121765085EB"
 				item: "minecraft:iron_ingot"
 				type: "item"
@@ -199,6 +275,7 @@
 		{
 			dependencies: ["679F2CA5C993DE97"]
 			id: "61C38FC70F3E31F9"
+			min_width: 240
 			tasks: [{
 				id: "4A218CF6D93C1D23"
 				item: "immersiveengineering:workbench"
@@ -217,6 +294,13 @@
 			icon: "immersiveengineering:metal_press"
 			id: "0AA6184C7940DD0E"
 			min_required_dependencies: 3
+			min_width: 240
+			rewards: [{
+				count: 2
+				id: "7178895DF29432DA"
+				item: "immersiveengineering:component_iron"
+				type: "item"
+			}]
 			tasks: [
 				{
 					count: 2L
@@ -256,6 +340,7 @@
 				"7DF6B4B0BA263ED5"
 			]
 			id: "34174912779DA609"
+			min_width: 240
 			size: 1.1d
 			tasks: [{
 				count: 4L
@@ -268,7 +353,15 @@
 		}
 		{
 			dependencies: ["56A7B01838A02347"]
+			icon: "thermal:rose_gold_ingot"
 			id: "48561BE33A3C9899"
+			min_width: 240
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5961FAAFD7B0E9F5"
+				table_id: 6984222753246390592L
+				type: "choice"
+			}]
 			tasks: [
 				{
 					id: "010991BB34D0B26A"
@@ -296,6 +389,7 @@
 				"26DE28EB32A47D88"
 			]
 			id: "0C062A3E4CE595B8"
+			min_width: 240
 			tasks: [{
 				id: "404E87D4A2C6B782"
 				item: "immersiveengineering:thermoelectric_generator"
@@ -310,6 +404,7 @@
 				"26DE28EB32A47D88"
 			]
 			id: "20D2FE0159ADB69C"
+			min_width: 240
 			tasks: [{
 				id: "5414283C42634B2F"
 				item: "immersiveengineering:dynamo"
@@ -321,6 +416,7 @@
 		{
 			dependencies: ["679F2CA5C993DE97"]
 			id: "0B4EA0C21E58691D"
+			min_width: 240
 			tasks: [{
 				count: 3L
 				id: "2EF655D311757B7F"
@@ -334,6 +430,7 @@
 			dependencies: ["679F2CA5C993DE97"]
 			icon: "immersiveengineering:windmill"
 			id: "7FEADDAAFAB5AFF6"
+			min_width: 240
 			tasks: [
 				{
 					id: "61990109790E80C2"
@@ -358,6 +455,7 @@
 			dependency_requirement: "one_completed"
 			hide_dependent_lines: true
 			id: "2AE95C9790D4C37F"
+			min_width: 240
 			tasks: [{
 				id: "7FAA53980DA36084"
 				item: "immersiveengineering:dynamo"
@@ -369,7 +467,9 @@
 		{
 			dependencies: ["30C16811BB92E249"]
 			hide_dependency_lines: true
+			icon: "immersiveengineering:wirecoil_copper"
 			id: "26DE28EB32A47D88"
+			min_width: 240
 			rewards: [{
 				count: 2
 				id: "19ABD07131E33FEF"
@@ -402,6 +502,7 @@
 		{
 			dependencies: ["26DE28EB32A47D88"]
 			id: "67BD81ECCD9CE396"
+			min_width: 240
 			tasks: [{
 				count: 4L
 				id: "0A6D8DE550D7B690"
@@ -414,6 +515,20 @@
 		{
 			dependencies: ["34174912779DA609"]
 			id: "475CABBA6607E1BF"
+			min_width: 240
+			rewards: [{
+				id: "18FC045B59A9B3E7"
+				item: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "trofers:trophies/steel_casing"
+						}
+					}
+				}
+				type: "item"
+			}]
 			size: 1.1d
 			tasks: [{
 				id: "0D94F60DAFC362E3"
@@ -426,6 +541,18 @@
 		{
 			dependencies: ["30C16811BB92E249"]
 			id: "5F8FE2C8D2EB3B88"
+			min_width: 240
+			rewards: [{
+				id: "26A2C921B6AD7AEB"
+				item: {
+					Count: 1
+					id: "immersiveengineering:sword_steel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "51664D5037A19183"
 				item: {
@@ -443,19 +570,26 @@
 		{
 			dependencies: ["5F8FE2C8D2EB3B88"]
 			id: "3CF60761EF692702"
+			min_width: 240
+			rewards: [{
+				id: "299DE9C0F5842FD3"
+				type: "xp"
+				xp: 50
+			}]
 			size: 1.5d
 			tasks: [{
 				dimension: "minecraft:the_nether"
 				id: "797E938120CFEB89"
 				type: "dimension"
 			}]
-			title: "The Nether"
+			title: "My home IS hellscape"
 			x: -0.25d
 			y: -3.5d
 		}
 		{
 			dependencies: ["61C38FC70F3E31F9"]
 			id: "7DF6B4B0BA263ED5"
+			min_width: 240
 			tasks: [{
 				id: "3CBC81353C69431B"
 				item: "immersiveengineering:mold_plate"
@@ -466,7 +600,9 @@
 		}
 		{
 			dependencies: ["61C38FC70F3E31F9"]
+			icon: "immersiveengineering:mold_gear"
 			id: "199CC95E08343BAC"
+			min_width: 240
 			tasks: [
 				{
 					id: "4A5511316810AD79"
@@ -490,6 +626,7 @@
 		{
 			dependencies: ["338C75F201A6B9DE"]
 			id: "11D604309801EF9C"
+			min_width: 240
 			tasks: [{
 				id: "1B7342B10F7CFEFF"
 				item: "mekanism:alloy_infused"
@@ -501,6 +638,7 @@
 		{
 			dependencies: ["338C75F201A6B9DE"]
 			id: "2D1BB8A835207114"
+			min_width: 240
 			tasks: [{
 				id: "11D959FEDA55DEE5"
 				item: "mekanism:basic_control_circuit"
@@ -512,6 +650,7 @@
 		{
 			dependencies: ["475CABBA6607E1BF"]
 			id: "338C75F201A6B9DE"
+			min_width: 240
 			tasks: [{
 				id: "71A206361543D5C3"
 				item: "mekanism:metallurgic_infuser"
@@ -522,7 +661,9 @@
 		}
 		{
 			dependencies: ["2D1BB8A835207114"]
+			icon: "mekanism:basic_universal_cable"
 			id: "56DDF1ACD4C0AFE4"
+			min_width: 240
 			tasks: [
 				{
 					id: "7414ED9123888323"
@@ -552,6 +693,7 @@
 			dependencies: ["34174912779DA609"]
 			icon: "immersiveengineering:squeezer"
 			id: "58D275BD01AC2B1C"
+			min_width: 240
 			tasks: [
 				{
 					count: 6L
@@ -602,6 +744,7 @@
 			dependencies: ["34174912779DA609"]
 			icon: "immersiveengineering:fermenter"
 			id: "6D2FEA8A870535C2"
+			min_width: 240
 			tasks: [
 				{
 					count: 6L
@@ -646,6 +789,7 @@
 		{
 			dependencies: ["6D2FEA8A870535C2"]
 			id: "4F862AF46BF14A60"
+			min_width: 240
 			tasks: [{
 				id: "1BD6890049C96E3C"
 				item: "immersiveengineering:ethanol_bucket"
@@ -657,6 +801,7 @@
 		{
 			dependencies: ["58D275BD01AC2B1C"]
 			id: "4CF036B891536FA6"
+			min_width: 240
 			tasks: [{
 				id: "7AAF8C0A433E227E"
 				item: "immersiveengineering:plantoil_bucket"
@@ -672,6 +817,7 @@
 				"4CF036B891536FA6"
 			]
 			id: "07ADCEF6CBA17D58"
+			min_width: 240
 			tasks: [{
 				id: "74028B85DBF9FEA2"
 				item: "immersiveengineering:biodiesel_bucket"
@@ -685,6 +831,7 @@
 			hide_dependency_lines: true
 			icon: "immersiveengineering:refinery"
 			id: "594769AAF1003A2C"
+			min_width: 240
 			tasks: [
 				{
 					count: 16L
@@ -730,6 +877,7 @@
 			dependencies: ["7110C31E1355AFBB"]
 			icon: "immersiveengineering:arc_furnace"
 			id: "25544587CC944FCB"
+			min_width: 240
 			size: 1.25d
 			tasks: [
 				{
@@ -792,6 +940,7 @@
 		{
 			dependencies: ["25544587CC944FCB"]
 			id: "460A47E0362D9799"
+			min_width: 240
 			tasks: [{
 				id: "14FAC648D86FD49D"
 				item: "powah:dielectric_paste"
@@ -801,9 +950,13 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["50F6EA9CC23FF68D"]
+			dependencies: [
+				"50F6EA9CC23FF68D"
+				"429BA86F904409C9"
+			]
 			icon: "immersiveengineering:excavator"
 			id: "3D7DCB797F62F537"
+			min_width: 240
 			size: 1.25d
 			tasks: [
 				{
@@ -855,10 +1008,11 @@
 		{
 			dependencies: [
 				"07ADCEF6CBA17D58"
-				"68EDC2F3611F213F"
+				"315C6FF2F745F80A"
 			]
 			icon: "immersiveengineering:diesel_generator"
 			id: "0E3CE979A136068A"
+			min_width: 240
 			size: 1.25d
 			tasks: [
 				{
@@ -905,6 +1059,7 @@
 			dependencies: ["0D73A83CC62FF6C5"]
 			icon: "immersiveengineering:sample_drill"
 			id: "50F6EA9CC23FF68D"
+			min_width: 240
 			tasks: [
 				{
 					id: "0921A876422A2742"
@@ -933,17 +1088,20 @@
 				"2AFBDF3213FABA18"
 			]
 			id: "429BA86F904409C9"
+			min_width: 240
 			tasks: [{
 				id: "315C6FF2F745F80A"
 				item: "immersiveengineering:ingot_hop_graphite"
 				type: "item"
 			}]
+			title: "Blackout"
 			x: 9.5d
 			y: -4.5d
 		}
 		{
 			dependencies: ["429BA86F904409C9"]
 			id: "7110C31E1355AFBB"
+			min_width: 240
 			tasks: [{
 				count: 3L
 				id: "2CA79E32718F0C1D"
@@ -962,6 +1120,7 @@
 		{
 			dependencies: ["38F8CADA7CDAB49F"]
 			id: "598EECDD8CA3E189"
+			min_width: 240
 			tasks: [{
 				id: "49B3CBF847A976EF"
 				item: "immersiveengineering:phenolic_resin_bucket"
@@ -976,6 +1135,7 @@
 				"594769AAF1003A2C"
 			]
 			id: "38F8CADA7CDAB49F"
+			min_width: 240
 			tasks: [{
 				id: "6284FED2EC44B6BC"
 				item: "immersiveengineering:acetaldehyde_bucket"
@@ -990,6 +1150,7 @@
 				"12F11AF15831DE43"
 			]
 			id: "39A50046284C5EA0"
+			min_width: 240
 			size: 1.0d
 			tasks: [{
 				id: "1C6921085901DB09"
@@ -1003,6 +1164,7 @@
 			dependencies: ["34174912779DA609"]
 			icon: "immersiveengineering:bottling_machine"
 			id: "12F11AF15831DE43"
+			min_width: 240
 			tasks: [
 				{
 					count: 3L
@@ -1048,6 +1210,7 @@
 			hide_dependency_lines: true
 			icon: "immersiveengineering:assembler"
 			id: "7D7D82F2D0FC0098"
+			min_width: 240
 			tasks: [
 				{
 					count: 9L
@@ -1095,6 +1258,7 @@
 			hide_dependency_lines: true
 			icon: "immersiveengineering:auto_workbench"
 			id: "7B2D4ED93B47ECB2"
+			min_width: 240
 			tasks: [
 				{
 					count: 5L
@@ -1138,7 +1302,9 @@
 		}
 		{
 			dependencies: ["460A47E0362D9799"]
+			icon: "powah:energizing_orb"
 			id: "187BE2A259075C18"
+			min_width: 240
 			tasks: [
 				{
 					id: "1B1C272EBEBDFAA6"
@@ -1172,6 +1338,7 @@
 		{
 			dependencies: ["187BE2A259075C18"]
 			id: "024BC686F691E558"
+			min_width: 240
 			size: 1.25d
 			tasks: [{
 				id: "0B06BE5271748EB1"
@@ -1184,6 +1351,7 @@
 		{
 			dependencies: ["024BC686F691E558"]
 			id: "782317906021905F"
+			min_width: 240
 			tasks: [{
 				id: "2773FC8A00E97568"
 				item: "functionalstorage:copper_upgrade"
@@ -1195,6 +1363,7 @@
 		{
 			dependencies: ["024BC686F691E558"]
 			id: "1ED1AD000CDE6819"
+			min_width: 240
 			tasks: [{
 				count: 8L
 				id: "0191FD28792496C3"
@@ -1208,6 +1377,7 @@
 			dependencies: ["61C38FC70F3E31F9"]
 			hide_dependency_lines: true
 			id: "1948D2DEF9C6F001"
+			min_width: 240
 			tasks: [{
 				id: "4E2BCBB289280E78"
 				item: "immersiveengineering:cloche"
@@ -1223,6 +1393,7 @@
 			]
 			hide_dependency_lines: true
 			id: "0AE78B3871DB6D59"
+			min_width: 240
 			tasks: [{
 				id: "3D4E44FCD4873629"
 				item: "mekanism:energized_smelter"
@@ -1234,6 +1405,7 @@
 		{
 			dependencies: ["0D73A83CC62FF6C5"]
 			id: "55C65F6C9E1769C1"
+			min_width: 240
 			tasks: [{
 				id: "584A130D007BAD35"
 				item: "mekanism:enrichment_chamber"
@@ -1248,6 +1420,7 @@
 				"11D604309801EF9C"
 			]
 			id: "0D73A83CC62FF6C5"
+			min_width: 240
 			tasks: [{
 				id: "68EDC2F3611F213F"
 				item: "mekanism:advanced_control_circuit"
@@ -1259,6 +1432,7 @@
 		{
 			dependencies: ["0D73A83CC62FF6C5"]
 			id: "2AFBDF3213FABA18"
+			min_width: 240
 			tasks: [{
 				id: "3752B7561829FF49"
 				item: "mekanism:crusher"
@@ -1269,7 +1443,9 @@
 		}
 		{
 			dependencies: ["39A50046284C5EA0"]
+			icon: "immersiveengineering:component_electronic_adv"
 			id: "04BC94D4DF69E78A"
+			min_width: 240
 			size: 1.5d
 			tasks: [
 				{
@@ -1289,6 +1465,7 @@
 		{
 			dependencies: ["0D73A83CC62FF6C5"]
 			id: "1A0669167235AF6F"
+			min_width: 240
 			tasks: [{
 				id: "18DFBE397AFC8698"
 				item: "mekanism:electric_pump"
@@ -1300,6 +1477,7 @@
 		{
 			dependencies: ["34174912779DA609"]
 			id: "1DF55EFE519AC8E9"
+			min_width: 240
 			tasks: [{
 				id: "5B4606905FA58E50"
 				item: "immersiveengineering:capacitor_lv"
@@ -1311,6 +1489,7 @@
 		{
 			dependencies: ["1DF55EFE519AC8E9"]
 			id: "249AB801B7FCAA4C"
+			min_width: 240
 			tasks: [{
 				id: "642A91B6A027D31B"
 				item: "immersiveengineering:capacitor_mv"
@@ -1322,6 +1501,7 @@
 		{
 			dependencies: ["429BA86F904409C9"]
 			id: "6127D981D26C152B"
+			min_width: 240
 			tasks: [{
 				id: "17E019B1BAC74740"
 				item: "immersiveengineering:capacitor_hv"
@@ -1335,6 +1515,7 @@
 			hide_dependency_lines: true
 			icon: "immersiveengineering:advanced_blast_furnace"
 			id: "2BB1954D53DBC92C"
+			min_width: 240
 			tasks: [
 				{
 					count: 27L
@@ -1356,6 +1537,7 @@
 			dependencies: ["34174912779DA609"]
 			hide_dependency_lines: true
 			id: "212EB0CAB00348FD"
+			min_width: 240
 			tasks: [{
 				id: "4E731A4398E6D8AA"
 				item: "immersiveengineering:furnace_heater"
@@ -1370,6 +1552,7 @@
 				"212EB0CAB00348FD"
 			]
 			id: "62BED9A6CA93EBFF"
+			min_width: 240
 			tasks: [{
 				count: 2L
 				id: "07595F5D5C75DE90"
@@ -1382,6 +1565,7 @@
 		{
 			dependencies: ["26DE28EB32A47D88"]
 			id: "137A6D891677A042"
+			min_width: 240
 			tasks: [{
 				id: "2B12D0D9470C2B56"
 				item: "immersiveengineering:charging_station"
@@ -1396,6 +1580,7 @@
 				"17E019B1BAC74740"
 			]
 			id: "1C70164378BAE7E1"
+			min_width: 240
 			tasks: [
 				{
 					id: "76004E8B19B4C34F"
@@ -1414,6 +1599,7 @@
 		{
 			dependencies: ["338C75F201A6B9DE"]
 			id: "1121C66EB54346AE"
+			min_width: 240
 			tasks: [{
 				id: "22649F0B51115D92"
 				item: "mekanism:enriched_iron"
@@ -1427,6 +1613,7 @@
 			hide_dependency_lines: true
 			icon: "functionalstorage:compacting_drawer"
 			id: "3618DCAF2B312EB8"
+			min_width: 240
 			tasks: [{
 				id: "31FE2CAD02675A19"
 				item: {
@@ -1467,6 +1654,7 @@
 			]
 			hide_dependency_lines: true
 			id: "593A4B9105930EC5"
+			min_width: 240
 			tasks: [{
 				id: "5976E276BFD3C164"
 				item: "mekanism:precision_sawmill"
@@ -1477,7 +1665,9 @@
 		}
 		{
 			dependencies: ["25544587CC944FCB"]
+			icon: "kubejs:valkyrie_ingot"
 			id: "2083C22AD1F9FF0C"
+			min_width: 240
 			tasks: [{
 				id: "668BB4DA91A0695D"
 				item: {
@@ -1509,6 +1699,7 @@
 		{
 			dependencies: ["2D1BB8A835207114"]
 			id: "57F89AE2FB5431B2"
+			min_width: 240
 			tasks: [{
 				id: "48D8069730DF2C2B"
 				item: "mekanism:basic_tier_installer"

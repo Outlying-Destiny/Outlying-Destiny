@@ -1,0 +1,16 @@
+{
+    "display":{
+        "icon":{"item": "draconicevolution:dragon_heart"},
+        "title":{"text": "Welcome to Outlying Destiny"},
+        "description":{"text": "Destiny Awaits"},
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true,
+        "background": "kubejs:textures/block/lithium_block.png"
+    },
+    "criteria": {
+        "log": {"trigger": "minecraft:inventory_changed"}
+      },
+      "requirements": [["log"]]
+}

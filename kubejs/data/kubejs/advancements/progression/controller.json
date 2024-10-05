@@ -1,0 +1,27 @@
+{
+    "parent": "kubejs:progression/freed_soul",
+    "display":{
+      "icon":{"item": "ae2:controller"},
+      "title":{"text": "Meteor happens"},
+      "description":{"text": "Craft a ME Contoller and put some order to that storage or yours."},
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "criteria": {
+        "controller": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "ae2:controller"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "requirements": [["controller"]]
+}

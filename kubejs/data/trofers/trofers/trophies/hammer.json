@@ -1,0 +1,23 @@
+{
+    "name": {
+      "color": "#8f5034",
+      "text": "Engineer's Trophy"
+    },
+    "animation":{
+        "type": "spinning",
+        "speed": 0.2
+    },
+    "display": {
+      "offset": {
+          "y": 1.5
+      },
+      "scale": 1
+    },
+    "item": {
+      "item": "immersiveengineering:hammer"
+    },
+    "colors": {
+      "base": "#312c36",
+      "accent": "#8f5034"
+    }
+  }

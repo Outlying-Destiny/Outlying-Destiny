@@ -10,5 +10,5 @@
 		{ count: 4, item: "minecraft:acacia_sapling" }
 		{ count: 4, item: "minecraft:dark_oak_sapling" }
 	]
-	title: "Sapling"
+	title: "Saplings"
 }

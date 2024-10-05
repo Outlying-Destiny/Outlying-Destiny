@@ -1,0 +1,10 @@
+{
+	id: "60ECF1970F73A940"
+	loot_size: 1
+	order_index: 5
+	rewards: [
+		{ count: 2, item: "thermal:constantan_ingot" }
+		{ count: 2, item: "thermal:invar_ingot" }
+	]
+	title: "T1 Alloys"
+}

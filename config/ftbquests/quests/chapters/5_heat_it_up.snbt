@@ -11,6 +11,7 @@
 		{
 			dependencies: ["39A50046284C5EA0"]
 			disable_toast: true
+			icon: "immersiveengineering:component_electronic_adv"
 			id: "5E62C6B6C69FEE4F"
 			size: 1.25d
 			tasks: [
@@ -97,6 +98,7 @@
 		}
 		{
 			dependencies: ["5DAF16566BC2FDB6"]
+			icon: "pneumaticcraft:heat_sink"
 			id: "5E29CBA54EDA91C0"
 			tasks: [
 				{
@@ -153,6 +155,7 @@
 		}
 		{
 			dependencies: ["7E4B6EB5FFFB66BB"]
+			icon: "pneumaticcraft:upgrade_matrix"
 			id: "5C3A578EAC76C3CF"
 			tasks: [
 				{
@@ -312,12 +315,18 @@
 				item: "minecraft:ender_eye"
 				type: "item"
 			}]
+			title: "The Fifth Eye"
 			x: -0.75d
 			y: 0.875d
 		}
 		{
 			dependencies: ["117B8F523BF8B590"]
 			id: "5C68FCCC9350C84F"
+			rewards: [{
+				id: "5227C4E762393B63"
+				type: "xp"
+				xp: 200
+			}]
 			size: 1.25d
 			tasks: [{
 				dimension: "minecraft:the_end"
@@ -373,6 +382,7 @@
 		}
 		{
 			dependencies: ["7C2E14CCBB9A5685"]
+			icon: "mekanism:ingot_refined_glowstone"
 			id: "40889CF006E38EB0"
 			tasks: [
 				{
@@ -737,19 +747,29 @@
 		}
 		{
 			dependencies: ["1A75140087EB1B37"]
+			icon: "mob_grinding_utils:gm_chicken_feed_cursed"
 			id: "7AC54ABB76003D59"
-			tasks: [
-				{
-					id: "48A810EE5F873E3E"
-					item: "mob_grinding_utils:nutritious_chicken_feed"
-					type: "item"
+			tasks: [{
+				id: "0ECA700692583DAA"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "mob_grinding_utils:nutritious_chicken_feed"
+							}
+							{
+								Count: 1b
+								id: "mob_grinding_utils:gm_chicken_feed_cursed"
+							}
+						]
+					}
 				}
-				{
-					id: "331253B24810FE4D"
-					item: "mob_grinding_utils:gm_chicken_feed_cursed"
-					type: "item"
-				}
-			]
+				title: "Egg Chicken Feed"
+				type: "item"
+			}]
 			x: -4.0d
 			y: -0.25d
 		}
@@ -770,6 +790,19 @@
 				"0D79613C2A510AAB"
 			]
 			id: "4A6467F39566C34D"
+			rewards: [{
+				id: "7D73D9BC0DBFDB2D"
+				item: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "trofers:trophies/controller"
+						}
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "5D95CDBF8D5872D1"
 				item: "ae2:controller"

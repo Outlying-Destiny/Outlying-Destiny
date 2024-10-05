@@ -1,0 +1,27 @@
+{
+    "parent": "kubejs:progression/wood_stand",
+    "display":{
+      "icon":{"item": "immersiveengineering:hammer"},
+      "title":{"text": "Engineer's favorite"},
+      "description":{"text": "Craft an Engineer's Hammer and build yourself some more multiblocks."},
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "criteria": {
+        "hammer": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "immersiveengineering:hammer"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "requirements": [["hammer"]]
+}

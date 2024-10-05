@@ -1,0 +1,23 @@
+{
+    "name": {
+      "color": "#949494",
+      "text": "Technician's Trophy"
+    },
+    "animation":{
+        "type": "spinning",
+        "speed": 0.2
+    },
+    "display": {
+      "offset": {
+          "y": 1.5
+      },
+      "scale": 0.8
+    },
+    "item": {
+      "item": "industrialforegoing:machine_frame_supreme"
+    },
+    "colors": {
+      "base": "#312c36",
+      "accent": "#949494"
+    }
+  }
