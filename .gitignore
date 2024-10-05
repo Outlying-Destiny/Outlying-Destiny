@@ -33,3 +33,7 @@
 /kubejs/config/probe-settings.json
 /config/quark-common.toml
 /config/mm/pack/.cache
+/servers.dat
+/servers.dat_old
+/config/oculus.properties
+/config/mm/pack/.cache
