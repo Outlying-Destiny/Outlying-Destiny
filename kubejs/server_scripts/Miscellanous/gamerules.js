@@ -1,3 +1,3 @@
-//ServerEvents.command(event => {
-//    event.server.runCommandSilent('gamerule tfEnforcedProgression false');
-//})
+ServerEvents.loaded(event => {
+    event.server.runCommandSilent('gamerule tfEnforcedProgression false');
+})
