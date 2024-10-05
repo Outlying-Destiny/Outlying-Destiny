@@ -69,6 +69,11 @@
 			description: ["Craft a Token of Joy using the Ritual of the Forest."]
 			id: "678EF4FAD5178E53"
 			min_width: 240
+			rewards: [{
+				id: "03A579D4C3179CD6"
+				item: "thermal:apple_block"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1544DE29E3EF676A"
 				item: "naturesaura:token_joy"
@@ -153,9 +158,9 @@
 				type: "item"
 			}]
 			tasks: [{
-				count: 8L
+				count: 4L
 				id: "42CF2343621F38FF"
-				item: { Count: 4, id: "naturesaura:tainted_gold" }
+				item: "naturesaura:tainted_gold"
 				type: "item"
 			}]
 			title: "Didn't now colorants were magical"

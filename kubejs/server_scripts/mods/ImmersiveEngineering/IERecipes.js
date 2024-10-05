@@ -2,7 +2,8 @@ ServerEvents.recipes(event => {
 
     //Functions
     function box(output, input1, input2, input3){event.shaped(output, ['ABA','BCB','ABA'], {A: input1,B: input2,C: input3})}
-    function detailedbox(output, input1, input2, input3, input4, input5){event.shaped(output, ['ABA','DED','ACA'], {A: input1,B: input2,C: input3,D: input4,E: input5})}
+    function detailedbox(output, input1, input2, input3, input4){event.shaped(output, ['ABA','CDC','ABA'], {A: input1,B: input2,C: input3, D: input4})}
+    function accumulator(output, input1, input2, input3, input4, input5){event.shaped(output, ['ABA','DED','ACA'], {A: input1,B: input2,C: input3,D: input4,E: input5})}
 
     //Engineer Hammer
     event.replaceInput(
@@ -174,7 +175,7 @@ ServerEvents.recipes(event => {
 
     //Radiator Block
     event.remove({output:'immersiveengineering:radiator'})
-    box('immersiveengineering:radiator', 'immersiveengineering:sheetmetal_steel', 'mekanism:advanced_control_circuit', 'immersiveengineering:ingot_hop_graphite')
+    detailedbox('immersiveengineering:radiator', 'immersiveengineering:sheetmetal_steel', 'mekanism:advanced_control_circuit', 'mekanism:alloy_infused', 'immersiveengineering:ingot_hop_graphite')
 
     //Generator Block
     event.replaceInput(
@@ -185,9 +186,9 @@ ServerEvents.recipes(event => {
 
     //Accumulators
     event.remove({output:/immersiveengineering:capacitor_.+/})
-    detailedbox('immersiveengineering:capacitor_lv', '#forge:treated_wood', 'thermal:lead_plate', 'thermal:lead_plate', 'immersiveengineering:coil_lv', 'minecraft:iron_ingot')
-    detailedbox('immersiveengineering:capacitor_mv', '#forge:treated_wood', 'thermal:nickel_plate', 'thermal:iron_plate', 'immersiveengineering:coil_mv', 'immersiveengineering:capacitor_lv')
-    detailedbox('immersiveengineering:capacitor_hv', '#forge:treated_wood', 'thermal:invar_plate', 'immersiveengineering:ingot_hop_graphite', 'immersiveengineering:coil_hv', 'immersiveengineering:capacitor_mv')
+    accumulator('immersiveengineering:capacitor_lv', '#forge:treated_wood', 'thermal:lead_plate', 'thermal:lead_plate', 'immersiveengineering:coil_lv', 'minecraft:iron_ingot')
+    accumulator('immersiveengineering:capacitor_mv', '#forge:treated_wood', 'thermal:nickel_plate', 'thermal:iron_plate', 'immersiveengineering:coil_mv', 'immersiveengineering:capacitor_lv')
+    accumulator('immersiveengineering:capacitor_hv', '#forge:treated_wood', 'thermal:invar_plate', 'immersiveengineering:ingot_hop_graphite', 'immersiveengineering:coil_hv', 'immersiveengineering:capacitor_mv')
 
     //Circuit Board
     event.remove({output:'immersiveengineering:circuit_board'})

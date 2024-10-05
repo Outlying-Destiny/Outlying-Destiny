@@ -3,10 +3,10 @@
 	loot_size: 1
 	order_index: 1
 	rewards: [
-		{ count: 2, item: "thermal:raw_tin" }
-		{ count: 2, item: "thermal:raw_lead" }
-		{ count: 2, item: "thermal:raw_silver" }
-		{ count: 2, item: "thermal:raw_nickel" }
+		{ count: 4, item: "thermal:raw_tin" }
+		{ count: 4, item: "thermal:raw_lead" }
+		{ count: 4, item: "thermal:raw_silver" }
+		{ count: 4, item: "thermal:raw_nickel" }
 	]
 	title: "Raw Ores"
 }

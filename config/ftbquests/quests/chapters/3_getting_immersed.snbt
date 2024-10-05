@@ -264,9 +264,8 @@
 				type: "item"
 			}]
 			tasks: [{
-				count: 8L
 				id: "53F6D21B186ACD16"
-				item: { Count: 4, id: "thermal:steel_ingot" }
+				item: "thermal:steel_ingot"
 				type: "item"
 			}]
 			x: 2.0d
@@ -694,6 +693,7 @@
 			icon: "immersiveengineering:squeezer"
 			id: "58D275BD01AC2B1C"
 			min_width: 240
+			progression_mode: "linear"
 			tasks: [
 				{
 					count: 6L
@@ -745,6 +745,7 @@
 			icon: "immersiveengineering:fermenter"
 			id: "6D2FEA8A870535C2"
 			min_width: 240
+			progression_mode: "linear"
 			tasks: [
 				{
 					count: 6L
@@ -832,6 +833,7 @@
 			icon: "immersiveengineering:refinery"
 			id: "594769AAF1003A2C"
 			min_width: 240
+			progression_mode: "linear"
 			tasks: [
 				{
 					count: 16L
@@ -878,6 +880,7 @@
 			icon: "immersiveengineering:arc_furnace"
 			id: "25544587CC944FCB"
 			min_width: 240
+			progression_mode: "linear"
 			size: 1.25d
 			tasks: [
 				{
@@ -957,6 +960,7 @@
 			icon: "immersiveengineering:excavator"
 			id: "3D7DCB797F62F537"
 			min_width: 240
+			progression_mode: "linear"
 			size: 1.25d
 			tasks: [
 				{
@@ -1013,6 +1017,7 @@
 			icon: "immersiveengineering:diesel_generator"
 			id: "0E3CE979A136068A"
 			min_width: 240
+			progression_mode: "linear"
 			size: 1.25d
 			tasks: [
 				{
@@ -1165,6 +1170,7 @@
 			icon: "immersiveengineering:bottling_machine"
 			id: "12F11AF15831DE43"
 			min_width: 240
+			progression_mode: "linear"
 			tasks: [
 				{
 					count: 3L
@@ -1211,6 +1217,7 @@
 			icon: "immersiveengineering:assembler"
 			id: "7D7D82F2D0FC0098"
 			min_width: 240
+			progression_mode: "linear"
 			tasks: [
 				{
 					count: 9L
@@ -1259,6 +1266,7 @@
 			icon: "immersiveengineering:auto_workbench"
 			id: "7B2D4ED93B47ECB2"
 			min_width: 240
+			progression_mode: "linear"
 			tasks: [
 				{
 					count: 5L
@@ -1390,6 +1398,7 @@
 			dependencies: [
 				"2D1BB8A835207114"
 				"11D604309801EF9C"
+				"2AFBDF3213FABA18"
 			]
 			hide_dependency_lines: true
 			id: "0AE78B3871DB6D59"

@@ -22,7 +22,14 @@
 			tasks: [{
 				count: 8L
 				id: "798D3243F92F64B2"
-				item: { Count: 8, id: "minecraft:oak_log" }
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "Any #minecraft:logs"
 				type: "item"
 			}]
 			title: "Setting up the wood"
@@ -189,6 +196,7 @@
 			rewards: [{
 				id: "36637836D17A3FA0"
 				item: "minecraft:emerald"
+				team_reward: false
 				type: "item"
 			}]
 			tasks: [{
@@ -657,7 +665,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				count: 8L
+				count: 3L
 				id: "2B42F869B6EFAE30"
 				item: "forbidden_arcanus:rune"
 				type: "item"
@@ -839,7 +847,7 @@
 				""
 				"You can access the questbook in 3 different ways: Using the Quest Book item, while in your inventory clicking on the book upleft to your screen, by using a keybind configurable in your controls by simply searching \"quests\"."
 				""
-				"When clicking on a quest you can check the upleft arrow to see the quest dependency or the upright arrow to see dependant quests from this one. This is mostly useful for the therefore mentionned gap bridging quests and for some side-quests that are missing their arrows for chapter organization reasons."
+				"When clicking on a quest you can check the upleft arrow to see the quest dependency or the upright arrow to see dependant quests from this one. This is mostly useful for the therefore mentionned gap bridging quests and for some side-quests with invisible arrow dependencies for chapter organization reasons."
 				""
 				"Outside of rare exceptions quests requires you to complete all their dependencies to be unlocked, however your progress on non-unlocked quests is still tracked so if you accidently complete a quest before unlocking it you will auto-complete it once unlocked."
 				""

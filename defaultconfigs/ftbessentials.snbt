@@ -176,7 +176,7 @@
 			# You can override this with FTB Ranks using ftbessentials.home.cooldown
 			# Default: 10
 			# Range: 0 ~ 604800
-			cooldown: 10
+			cooldown: 0
 			
 			# Default: true
 			enabled: true
@@ -185,7 +185,7 @@
 			# You can override this with FTB Ranks using ftbessentials.home.max
 			# Default: 1
 			# Range: 0 ~ 2147483647
-			max: 10
+			max: 50
 			
 			# Warm-up time before /home command executes (in seconds)
 			# You can override this with FTB Ranks using ftbessentials.home.warmup
@@ -220,7 +220,7 @@
 			dimension_whitelist: [ ]
 			
 			# Default: true
-			enabled: true
+			enabled: false
 			
 			# /rtp max distance from spawn point
 			# Default: 25000

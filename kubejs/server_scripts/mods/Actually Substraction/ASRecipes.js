@@ -35,6 +35,16 @@ ServerEvents.recipes(event => {
       '#forge:rods/wooden'
     )
 
+    //Filters
+    event.remove({id:'actuallyadditions:filter'})
+    event.shaped('4x actuallyadditions:filter', ['AAA','ABA','AAA'], {A:'minecraft:iron_bars', B:'enderio:skeletal_contractor'})
+    event.remove({id:'actuallyadditions:item_tag'})
+    event.shapeless('actuallyadditions:item_tag', ['actuallyadditions:filter', 'ae2:logic_processor'])
+
+    //Lens
+    event.remove({id:'actuallyadditions:lens'})
+    event.shaped('actuallyadditions:lens', ['AAA','ABA','AAA'], {A:'enderio:dark_steel_bars', B:'#forge:glass'})
+
     //Coils (Check Crafting Core.js for advanced Coil Recipe)
     event.remove({id:'actuallyadditions:basic_coil'})
     event.remove({id:'actuallyadditions:advanced_coil'})
@@ -70,7 +80,7 @@ ServerEvents.recipes(event => {
     detailedbox('actuallyadditions:item_interface', 'actuallyadditions:basic_coil', '#forge:chests/wooden', 'immersiveengineering:sheetmetal_steel', 'actuallyadditions:iron_casing')
     detailedbox('4x actuallyadditions:laser_relay_item', 'immersiveengineering:sheetmetal_steel', 'actuallyadditions:advanced_coil', 'thermal:signalum_ingot', 'enderio:z_logic_controller')
     event.remove({id:'actuallyadditions:laser_wrench'})
-    event.shaped('actuallyadditions:laser_wrench', ['A A','BCB',' B '], {A:'actuallyadditions:black_quartz',B:'minecraft:iron_ingot',C:'actuallyadditions:advanced_coil'})
+    event.shaped('actuallyadditions:laser_wrench', ['A A','BCB',' B '], {A:'extendedcrafting:black_iron_ingot',B:'minecraft:iron_ingot',C:'actuallyadditions:advanced_coil'})
     event.remove({id:'actuallyadditions:coffee_machine'})
     event.shaped('actuallyadditions:coffee_machine', [' A ',' B ','CDC'], {A:'actuallyadditions:coffee_beans',B:'actuallyadditions:iron_casing',C:'actuallyadditions:basic_coil',D:'actuallyadditions:empty_cup'})
     event.remove({id:/actuallyadditions:phantom_(itemface|energyface|redstoneface|connector)/})

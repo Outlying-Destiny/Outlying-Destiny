@@ -78,6 +78,8 @@ ServerEvents.recipes(event => {
     event.remove({id:'actuallyadditions:decompress/void_crystal_shard'})
     event.remove({id:/actuallyadditions:compress\/(void|empowered_void)_crystal_block/})
     event.remove({id:/actuallyadditions:decompress\/(void|empowered_void)_crystal/})
-    
+
+    //Black Quartz
+    event.remove({id:/actuallyadditions.+black_quartz.+/})
 
 })

@@ -1,7 +1,7 @@
 JEIEvents.hideItems(event => {
 
     //Actually Additions
-    event.hide([/actuallyadditions:lamp.+/, /actuallyadditions:.+_aiot/, /actuallyadditions:.+_crystal_cluster/, /actuallyadditions:.+pattern/, /actuallyadditions:ric.+/, /actuallyadditions:void_crysta(l|l_shard|l_block)/, /actuallyadditions:empowered_void_crysta(l|l_block)/, 'actuallyadditions:oil_generator', 'actuallyadditions:coal_generator', 'actuallyadditions:leaf_generator', 'actuallyadditions:bio_reactor', 'actuallyadditions:heat_collector', 'actuallyadditions:wings_of_the_bats', 'actuallyadditions:laser_upgrade_range', 'actuallyadditions:laser_upgrade_invisibility', 'actuallyadditions:lamp_controller', 'actuallyadditions:crate_keeper', 'actuallyadditions:crate_small', 'actuallyadditions:bats_wing', 'actuallyadditions:water_bowl', 'actuallyadditions:ender_star', 'actuallyadditions:engineers_goggles', 'actuallyadditions:engineers_goggles_advanced', 'actuallyadditions:tiny_torch', 'actuallyadditions:shock_suppressor', 'actuallyadditions:powered_furnace', 'actuallyadditions:lava_factory_controller', 'actuallyadditions:lava_factory_casing', 'actuallyadditions:xp_solidifier','actuallyadditions:crusher', 'actuallyadditions:crusher_double', 'actuallyadditions:greenhouse_glass', 'actuallyadditions:ring', 'actuallyadditions:ring_of_magnetizing', 'actuallyadditions:ring_of_growth', 'actuallyadditions:flax_seeds', 'actuallyadditions:travelers_sack', 'actuallyadditions:void_sack', 'actuallyadditions:teleport_staff', 'actuallyadditions:feeder', 'actuallyadditions:energizer', 'actuallyadditions:enervator', 'actuallyadditions:farmer', 'actuallyadditions:battery_box', 'actuallyadditions:laser_relay', 'actuallyadditions:laser_relay_advanced', 'actuallyadditions:laser_relay_extreme', 'actuallyadditions:laser_relay_fluids', 'actuallyadditions:laser_relay_item_advanced', 'actuallyadditions:phantom_booster', 'actuallyadditions:fermenting_barrel', 'actuallyadditions:canola_press', 'actuallyadditions:wood_casing'])
+    event.hide([/actuallyadditions:lamp.+/, /actuallyadditions:.+_aiot/, /actuallyadditions:.+_crystal_cluster/, /actuallyadditions:.+pattern/, /actuallyadditions:ric.+/, /actuallyadditions:void_crysta(l|l_shard|l_block)/, /actuallyadditions:empowered_void_crysta(l|l_block)/, /actuallyadditions.+black_quart.+/, 'actuallyadditions:oil_generator', 'actuallyadditions:coal_generator', 'actuallyadditions:leaf_generator', 'actuallyadditions:bio_reactor', 'actuallyadditions:heat_collector', 'actuallyadditions:wings_of_the_bats', 'actuallyadditions:laser_upgrade_range', 'actuallyadditions:laser_upgrade_invisibility', 'actuallyadditions:lamp_controller', 'actuallyadditions:crate_keeper', 'actuallyadditions:crate_small', 'actuallyadditions:bats_wing', 'actuallyadditions:water_bowl', 'actuallyadditions:ender_star', 'actuallyadditions:engineers_goggles', 'actuallyadditions:engineers_goggles_advanced', 'actuallyadditions:tiny_torch', 'actuallyadditions:shock_suppressor', 'actuallyadditions:powered_furnace', 'actuallyadditions:lava_factory_controller', 'actuallyadditions:lava_factory_casing', 'actuallyadditions:xp_solidifier','actuallyadditions:crusher', 'actuallyadditions:crusher_double', 'actuallyadditions:greenhouse_glass', 'actuallyadditions:ring', 'actuallyadditions:ring_of_magnetizing', 'actuallyadditions:ring_of_growth', 'actuallyadditions:flax_seeds', 'actuallyadditions:travelers_sack', 'actuallyadditions:void_sack', 'actuallyadditions:teleport_staff', 'actuallyadditions:feeder', 'actuallyadditions:energizer', 'actuallyadditions:enervator', 'actuallyadditions:farmer', 'actuallyadditions:battery_box', 'actuallyadditions:laser_relay', 'actuallyadditions:laser_relay_advanced', 'actuallyadditions:laser_relay_extreme', 'actuallyadditions:laser_relay_fluids', 'actuallyadditions:laser_relay_item_advanced', 'actuallyadditions:phantom_booster', 'actuallyadditions:fermenting_barrel', 'actuallyadditions:canola_press', 'actuallyadditions:wood_casing'])
     event.hide(['actuallyadditions:lens_of_the_miner', 'actuallyadditions:lens_of_disruption', 'actuallyadditions:lens_of_disenchanting', 'actuallyadditions:lens_of_detonation', 'actuallyadditions:lens_of_certain_death', 'actuallyadditions:lens_of_the_killer'])
 
     //Blood Magic
@@ -59,6 +59,10 @@ JEIEvents.hideItems(event => {
 
     //Botania
     event.hide(/botania:.+_mushroom/)
+
+    //Quark
+    event.hide('quark:gunpowder_sack')
+    event.hide('quark:apple_crate')
 
     //Twilight Forest
     event.hide(/twilightforest:.+boss_spawner/)
@@ -122,7 +126,6 @@ JEIEvents.hideItems(event => {
     //Extended Crafting
     event.hide('extendedcrafting:redstone_ingot')
     event.hide('extendedcrafting:handheld_table')
-    
 
     //Dusts
     event.hide(['ae2:ender_dust', 'enderio:powdered_ender_pearl'])
@@ -136,8 +139,9 @@ JEIEvents.hideItems(event => {
     event.hide('hammerlib:gears/wooden')
     event.hide('hammerlib:gears/stone')
 
-    //Aether Valkyrie Lance
+    //Aether
     event.hide('aether:valkyrie_lance')
+    event.hide('aether:iron_ring')
 
     //Magnets
     event.hide('thermal:flux_magnet')
@@ -152,9 +156,6 @@ JEIEvents.hideItems(event => {
 
     //Furnaces
     event.hide(['quark:deepslate_furnace', 'quark:blackstone_furnace'])
-
-    //Gunpowder Sack
-    event.hide('quark:gunpowder_sack')
 
     //Wrenches
     event.hide(['bigreactors:wrench', 'hammerlib:wrench', 'ad_astra:wrench', 'enderio:yeta_wrench'])

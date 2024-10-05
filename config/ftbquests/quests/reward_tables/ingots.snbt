@@ -3,10 +3,10 @@
 	loot_size: 1
 	order_index: 4
 	rewards: [
-		{ count: 2, item: "thermal:tin_ingot" }
-		{ count: 2, item: "thermal:lead_ingot" }
-		{ count: 2, item: "thermal:silver_ingot" }
-		{ count: 2, item: "thermal:nickel_ingot" }
+		{ count: 4, item: "thermal:tin_ingot" }
+		{ count: 4, item: "thermal:lead_ingot" }
+		{ count: 4, item: "thermal:silver_ingot" }
+		{ count: 4, item: "thermal:nickel_ingot" }
 	]
 	title: "Ingots"
 }

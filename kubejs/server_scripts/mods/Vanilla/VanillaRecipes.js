@@ -94,13 +94,6 @@ ServerEvents.recipes(event => {
         'thermal:iron_plate'
     )
 
-    //Hopper
-    event.replaceInput(
-        { output: 'minecraft:hopper' },
-        'minecraft:iron_ingot',
-        'thermal:iron_plate'         
-    )
-
     //Netherite
     event.remove({id:'minecraft:netherite_ingot'})
 
