@@ -28,12 +28,13 @@
 /config/oculus.properties
 /config/jade/plugins.json
 /config/jei/world
-/config/jei/jei-debug.ini
-/config/jei/jei-client.ini
 /kubejs/config/probe-settings.json
 /config/quark-common.toml
 /config/mm/pack/.cache
 /servers.dat
 /servers.dat_old
-/config/oculus.properties
 /config/mm/pack/.cache
+config/jei/ingredient-list-mod-sort-order.ini
+config/jei/recipe-category-sort-order.ini
+config/oculus.properties
+config/jei/world/local/New_World
