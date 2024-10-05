@@ -1,5 +1,9 @@
 ServerEvents.recipes(event => {
 
+    //Functions
+    function box(output, input1, input2, input3){event.shaped(output, ['ABA','BCB','ABA'], {A: input1,B: input2,C: input3})}
+    function detailedbox(output, input1, input2, input3, input4, input5){event.shaped(output, ['ABA','DED','ACA'], {A: input1,B: input2,C: input3,D: input4,E: input5})}
+
     //Engineer Hammer
     event.replaceInput(
         { output: 'immersiveengineering:hammer'},
@@ -9,10 +13,16 @@ ServerEvents.recipes(event => {
     event.remove( {id:/immersiveengineering:crafting.+hammer.+/} )
     
     //Coke Oven
-    event.replaceInput(
-        { output: 'immersiveengineering:cokebrick' },
-        '#forge:sandstone',
-        'naturesaura:infused_stone'         
+    event.remove({id:'immersiveengineering:crafting/cokebrick'})
+    event.shaped('2x immersiveengineering:cokebrick', [
+        'ABA',
+        'BCB',
+        'ABA'
+        ], {
+        A: 'minecraft:clay_ball',
+        B: 'minecraft:brick',
+        C: 'naturesaura:infused_stone'
+        }
     )
 
     //Coke
@@ -24,9 +34,7 @@ ServerEvents.recipes(event => {
 
     //Metal Press Mold
     event.remove({id:/immersiveengineering:blueprint.+mold.+/})
-    function mold(output) {
-        event.custom({"type":"immersiveengineering:blueprint","category":"molds","inputs":[{"base_ingredient":{"item":"thermal:steel_ingot"},"count":3},{"item":"immersiveengineering:wirecutter"}],"result":{"item":output}})
-    }
+    function mold(output) {event.custom({"type":"immersiveengineering:blueprint","category":"molds","inputs":[{"base_ingredient":{"item":"thermal:steel_ingot"},"count":3},{"item":"immersiveengineering:wirecutter"}],"result":{"item":output}})}
     mold('immersiveengineering:mold_plate')
     mold('immersiveengineering:mold_rod')
     mold('immersiveengineering:mold_gear')
@@ -78,36 +86,6 @@ ServerEvents.recipes(event => {
     }
     sheetmetal('immersiveengineering:sheetmetal_iron', 'minecraft:iron_ingot')
     sheetmetal('immersiveengineering:sheetmetal_steel', 'thermal:steel_ingot')
-
-    //Function Box
-    function box(output, input1, input2, input3){
-        event.shaped(output, [
-            'ABA',
-            'BCB',
-            'ABA'
-            ], {
-            A: input1,
-            B: input2,
-            C: input3
-            }
-        )
-    }
-
-    //Function DetailedBox
-    function detailedbox(output, input1, input2, input3, input4, input5){
-        event.shaped(output, [
-            'ABA',
-            'DED',
-            'ACA'
-            ], {
-            A: input1,
-            B: input2,
-            C: input3,
-            D: input4,
-            E: input5
-            }
-        )
-    }
 
     //Heavy Engineering Block
     event.shapeless('immersiveengineering:heavy_engineering', ['immersiveengineering:sheetmetal_steel', 'immersiveengineering:component_steel', 'thermal:electrum_ingot'])
@@ -217,6 +195,10 @@ ServerEvents.recipes(event => {
 
     //Logic Circuit
     event.custom({"type":"immersiveengineering:blueprint","category":"components","inputs":[{"item":"immersiveengineering:circuit_board"},{"item":"immersiveengineering:component_electronic"}],"result":{"item":"immersiveengineering:logic_circuit"}})
+
+    //Advanced Electric Component
+    event.remove({id:'immersiveengineering:blueprint/component_electronic_adv'})
+    event.custom({"type":"immersiveengineering:blueprint","category":"components","inputs":[{"item":"immersiveengineering:plate_duroplast"},{"base_ingredient":{"item":'immersiveengineering:electron_tube'},"count":2},{"item":'kubejs:invar_wire'}],"result":{"item":'immersiveengineering:component_electronic_adv'}})
 
     //External Heater
     event.replaceInput(

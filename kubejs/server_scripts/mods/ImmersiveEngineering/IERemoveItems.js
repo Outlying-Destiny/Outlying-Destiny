@@ -42,6 +42,28 @@ ServerEvents.recipes(event => {
         {output:/immersiveengineering:.+/},
         '#forge:wires/aluminum',
         'kubejs:invar_wire'
-    )  
+    )
+    event.remove({id:'immersiveengineering:crafting/wirecoil_steel'})
+    event.remove({id:'immersiveengineering:crafting/wirecoil_redstone'})
+    event.shaped('immersiveengineering:wirecoil_steel', [
+        ' A ',
+        'BCB',
+        ' A '
+        ], {
+        A: 'immersiveengineering:wire_steel',
+        B: 'kubejs:invar_wire',
+        C: '#balm:wooden_rods'
+        }
+    )
+    event.shaped('immersiveengineering:wirecoil_steel', [
+        ' A ',
+        'BCB',
+        ' A '
+        ], {
+        A: 'kubejs:invar_wire',
+        B: 'minecraft:redstone',
+        C: '#balm:wooden_rods'
+        }
+    )
 
 })

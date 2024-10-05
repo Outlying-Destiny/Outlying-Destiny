@@ -9,13 +9,13 @@
 	[items.edelwood_bucket]
 		#How many Water Blocks the Edelwood Bucket can store [default: 4]
 		#Range: 1 ~ 10
-		water_capacity = 4
+		water_capacity = 1
 		#How many Lava Blocks the Edelwood Bucket can store [default: 3]
 		#Range: 1 ~ 10
-		lava_capacity = 3
+		lava_capacity = 1
 		#How much Milk the Edelwood Bucket can store [default: 4]
 		#Range: 1 ~ 10
-		milk_capacity = 4
+		milk_capacity = 1
 		#How many Soups/Stews the Edelwood Bucket can store [default: 8]
 		#Range: 1 ~ 10
 		soup_capacity = 8
@@ -70,7 +70,7 @@
 
 	[aureal.corruption]
 		#Do you want to completely disable corruption consequences? [default: false]
-		disable_consequences = false
+		disable_consequences = true
 		#How much Corruption should killing a normal Entity give [default: 1]
 		#Range: 0 ~ 100
 		entity_death_increasement_amount = 1

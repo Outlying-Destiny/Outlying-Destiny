@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
     event.shapeless('3x minecraft:iron_nugget', 'kubejs:iron_fragment')
 
     //Furnaces
-    event.remove({ output: ['minecraft:furnace', 'quark:deepslate_furnace', 'quark:blackstone_furnace' ] })
+    event.remove({ output: ['minecraft:furnace', 'quark:deepslate_furnace', 'quark:blackstone_furnace', 'nethersdelisht:blackstone_furnace'] })
     event.shaped(
         'minecraft:furnace', [
         'AAA',

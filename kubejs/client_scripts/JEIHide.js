@@ -55,7 +55,7 @@ JEIEvents.hideItems(event => {
     event.hide(/evilcraft:exalted_crafte.+/)
 
     //Forbiddern Arcanus
-    event.hide(['forbidden_arcanus:xpetrified_ore', 'forbidden_arcanus:stella_arcanum'])
+    event.hide(['forbidden_arcanus:xpetrified_ore', 'forbidden_arcanus:stella_arcanum', 'forbidden_arcanus:orb_of_temporary_flight'])
 
     //Botania
     event.hide(/botania:.+_mushroom/)

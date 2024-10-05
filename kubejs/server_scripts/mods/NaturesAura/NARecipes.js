@@ -1,49 +1,10 @@
 ServerEvents.recipes(event => {
 
-    //Function Wooden Stand
-    function woodenstand(output, input1, input2, input3, input4, input5, input6, input7, input8, sapling, count, time){
-        event.custom({
-            "type": "naturesaura:tree_ritual",
-            "ingredients": [
-                {
-                    "item": input1
-                },
-                {
-                    "item": input5
-                },
-                {
-                    "item": input3
-                },
-                {
-                    "item": input7
-                },
-                {
-                    "item": input2
-                },
-                {
-                    "item": input6
-                },
-                {
-                    "item": input8
-                },
-                 {
-                    "item": input4
-                }
-            ],
-            "sapling": {
-                "tag": sapling
-            },
-            "output": {
-                "item": output,
-                "count": count
-            },
-            "time": time
-        })
-    }
-
+    //Functions
+    function woodenstand(output, input1, input2, input3, input4, input5, input6, input7, input8, sapling, count, time){event.custom({"type": "naturesaura:tree_ritual","ingredients": [{"item": input1},{"item": input5},{"item": input3},{"item": input7},{"item": input2},{"item": input6},{"item": input8},{"item": input4}],"sapling": {"tag": sapling},"output": {"item": output,"count": count},"time": time})}
+    function altar(output, input, aura, time){event.custom({"type": "naturesaura:altar","input": {"item": input},"output": {"item": output},"aura": aura,"time": time    })}
 
     //Gold Leaf
-    event.remove( {output: 'naturesaura:gold_fiber'})
     event.shaped(
         '32x naturesaura:gold_leaf', [
         'ABA',
@@ -52,6 +13,20 @@ ServerEvents.recipes(event => {
         ], {
         A: '#minecraft:leaves',
         B: 'minecraft:gold_ingot'
+        }
+    )
+
+    //Brilliant Fiber
+    event.remove({id:'naturesaura:gold_fiber'})
+    event.shaped(
+        '4x naturesaura:gold_fiber', [
+        'ABA',
+        'BCB',
+        'ABA'
+        ], {
+        A: 'minecraft:string',
+        B: 'minecraft:gold_nugget',
+        C: 'minecraft:grass'
         }
     )
 
@@ -78,21 +53,6 @@ ServerEvents.recipes(event => {
 
     //Netherrrack
     woodenstand("minecraft:netherrack", "compressium:stone_1", "naturesaura:tainted_gold", "compressium:stone_1", "naturesaura:tainted_gold", "compressium:stone_1", "naturesaura:tainted_gold", "compressium:stone_1", "naturesaura:tainted_gold", "forge:sapling", 36, 300)
-
-    //function Natural Altar
-    function altar(output, input, aura, time){
-        event.custom({   
-            "type": "naturesaura:altar",
-            "input": {
-                "item": input
-            },
-            "output": {
-                "item": output
-            },
-            "aura": aura,
-            "time": time    
-        })
-    }
 
     //Magma Block
     altar("minecraft:magma_block", "minecraft:netherrack", 10000, 50)

@@ -211,6 +211,17 @@ ServerEvents.recipes(event => {
         }
     )
 
+    //Tank
+    event.remove({id:'mob_grinding_utils:recipe_tank'})
+    event.shaped(('mob_grinding_utils:tank'), [
+        'BAB',
+        'AAA',
+        'BAB'
+        ], {
+        A: '#forge:glass',
+        B: 'thermal:steel_ingot'
+        }
+    )
     //XP Drain Singularity Tank
     event.remove({id:'mob_grinding_utils:recipe_tank_sink'})
     event.shaped(('mob_grinding_utils:tank_sink'), [

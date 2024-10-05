@@ -86,7 +86,7 @@ ServerEvents.recipes(event => {
 
     //Drill
     event.remove({id:'actuallyadditions:drill_light_blue'})
-    event.shaped('actuallyadditions:drill_light_blue', ['AAA','BCB','DDD'], {A:'kubejs:crystalline_alloy_ingot',B:'actuallyadditions:drill_core',C:'actuallyadditions:advanced_coil',D:'actuallyadditions:enori_crystal'})
+    event.shaped('actuallyadditions:drill_light_blue', ['AAA','BCB','DDD'], {A:'kubejs:crystalline_alloy_ingot',B:'actuallyadditions:advanced_coil',C:'actuallyadditions:drill_core',D:'actuallyadditions:enori_crystal'})
     event.remove({id:'actuallyadditions:drill_core'})
     event.shaped('actuallyadditions:drill_core', ['ABA','BCD','ADA'], {A:'actuallyadditions:enori_crystal',B:'thermal:signalum_gear',C:'actuallyadditions:basic_coil',D:'thermal:enderium_gear'})
     event.shaped('kubejs:drill_upgrade_base', ['ABA','CDC','AEA'], {A:'actuallyadditions:enori_crystal',B:'mekanism:elite_control_circuit',C:'actuallyadditions:basic_coil',D:'actuallyadditions:palis_crystal', E:'thermal:signalum_gear'})
