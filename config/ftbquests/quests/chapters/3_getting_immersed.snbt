@@ -62,7 +62,9 @@
 				""
 				"The Coke Oven will be used for the production of Coke and Creosote Oil."
 				""
-				"However, you'll notice it's pretty slow. 90 seconds per coke to be exact. You want to make multiple of those as future coke demand will be expansive."
+				"However, you'll notice it's pretty slow. 90 seconds per coke to be exact. You may want to make multiple of those as future coke demand will be expansive."
+				""
+				"Thanksfully, you can input and output from it from any of its block or side making it automatable."
 			]
 			icon: "immersiveengineering:coke_oven"
 			id: "163B6909663DDA70"
@@ -125,6 +127,8 @@
 				"However, you'll notice its production is pretty slow and its fuel demand high, only making a steel ingot per minute. When it comes to fuel you want to prioritize the use of Coke as it is x4 more efficient than coal going from 4 to 1 coal per steel."
 				""
 				"You'll quickly unlock a new way of creating steel with Mekanism going way faster at the cost of electricity but for now the Blast Furnace shall suffice."
+				""
+				"It is not automatable."
 			]
 			icon: "immersiveengineering:blast_furnace"
 			id: "610C537DA0A2AD77"
@@ -147,6 +151,8 @@
 				"This will be your first mean of making alloys."
 				""
 				"You can easily make multiple of those, go ahead, make that factory running!"
+				""
+				"It is not automatable."
 			]
 			icon: "immersiveengineering:alloy_smelter"
 			id: "56A7B01838A02347"
@@ -213,6 +219,7 @@
 		}
 		{
 			dependencies: ["49CB87276BB136AA"]
+			description: ["Dip some planks inside Creosote Oil and get some Treated Wood."]
 			id: "679F2CA5C993DE97"
 			min_width: 240
 			rewards: [{
@@ -227,6 +234,7 @@
 				item: { Count: 8, id: "immersiveengineering:treated_wood_horizontal" }
 				type: "item"
 			}]
+			title: "Get yourself a treat"
 			x: 4.25d
 			y: -7.75d
 		}
@@ -258,7 +266,7 @@
 			id: "30C16811BB92E249"
 			min_width: 240
 			rewards: [{
-				count: 4
+				count: 8
 				id: "5DD14121765085EB"
 				item: "minecraft:iron_ingot"
 				type: "item"
@@ -273,13 +281,27 @@
 		}
 		{
 			dependencies: ["679F2CA5C993DE97"]
+			icon: "immersiveengineering:workbench"
 			id: "61C38FC70F3E31F9"
 			min_width: 240
-			tasks: [{
-				id: "4A218CF6D93C1D23"
-				item: "immersiveengineering:workbench"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "4A218CF6D93C1D23"
+					item: "immersiveengineering:workbench"
+					type: "item"
+				}
+				{
+					id: "18DDA538D43644E0"
+					item: {
+						Count: 1
+						id: "immersiveengineering:blueprint"
+						tag: {
+							blueprint: "molds"
+						}
+					}
+					type: "item"
+				}
+			]
 			x: 5.25d
 			y: -6.5d
 		}
@@ -470,7 +492,7 @@
 			id: "26DE28EB32A47D88"
 			min_width: 240
 			rewards: [{
-				count: 2
+				count: 4
 				id: "19ABD07131E33FEF"
 				item: "immersiveengineering:wirecoil_copper"
 				type: "item"
@@ -502,6 +524,12 @@
 			dependencies: ["26DE28EB32A47D88"]
 			id: "67BD81ECCD9CE396"
 			min_width: 240
+			rewards: [{
+				count: 16
+				id: "62E6B8AE05AA7E25"
+				item: "immersiveengineering:hemp_fiber"
+				type: "item"
+			}]
 			tasks: [{
 				count: 4L
 				id: "0A6D8DE550D7B690"
@@ -1525,6 +1553,12 @@
 			icon: "immersiveengineering:advanced_blast_furnace"
 			id: "2BB1954D53DBC92C"
 			min_width: 240
+			rewards: [{
+				count: 8
+				id: "2F84BCFCADA32B5F"
+				item: "thermal:steel_plate"
+				type: "item"
+			}]
 			tasks: [
 				{
 					count: 27L
@@ -1547,6 +1581,12 @@
 			hide_dependency_lines: true
 			id: "212EB0CAB00348FD"
 			min_width: 240
+			rewards: [{
+				count: 8
+				id: "0F11485DAFAA340C"
+				item: "minecraft:coal"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4E731A4398E6D8AA"
 				item: "immersiveengineering:furnace_heater"
@@ -1562,6 +1602,12 @@
 			]
 			id: "62BED9A6CA93EBFF"
 			min_width: 240
+			rewards: [{
+				count: 16
+				id: "6DE9F7F0B819AD55"
+				item: "minecraft:coal"
+				type: "item"
+			}]
 			tasks: [{
 				count: 2L
 				id: "07595F5D5C75DE90"

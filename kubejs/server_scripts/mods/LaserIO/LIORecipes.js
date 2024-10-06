@@ -1,19 +1,8 @@
 ServerEvents.recipes(event => {
 
     //Function box
-    function box(output, input1, input2, input3, input4){
-        event.shaped(output, [
-            'ABA',
-            'CDC',
-            'ABA'
-            ], {
-            A: input1,
-            B: input2,
-            C: input3,
-            D: input4
-            }
-        )
-    }
+    function box(output, input1, input2, input3, input4){event.shaped(output, ['ABA','CDC','ABA'], {A: input1,B: input2,C: input3,D: input4})}
+    function card(card, input){event.shaped('laserio:card_'+card, ['BAB','CDC','EEE'], {A: input,B: 'minecraft:quartz',C: 'enderio:conductive_alloy_ingot',D: 'laserio:logic_chip',E: 'enderio:energetic_alloy_nugget'})}
 
     //Raw Logic Chip
     event.remove({id:'laserio:logic_chip_raw'})
@@ -76,54 +65,11 @@ ServerEvents.recipes(event => {
 
     //Cards
     event.remove({id:/laserio:card_.+/})
-    event.shaped('laserio:card_item', [
-        'BAB',
-        'CDC',
-        'EEE'
-        ], {
-        A: 'enderio:pulsating_alloy_ingot',
-        B: 'minecraft:quartz',
-        C: 'enderio:conductive_alloy_ingot',
-        D: 'laserio:logic_chip',
-        E: 'enderio:energetic_alloy_nugget'
-        }
-    )
-    event.shaped('laserio:card_fluid', [
-        'BAB',
-        'CDC',
-        'EEE'
-        ], {
-        A: 'minecraft:bucket',
-        B: 'minecraft:quartz',
-        C: 'enderio:conductive_alloy_ingot',
-        D: 'laserio:logic_chip',
-        E: 'enderio:energetic_alloy_nugget'
-        }
-    )
-    event.shaped('laserio:card_energy', [
-        'BAB',
-        'CDC',
-        'EEE'
-        ], {
-        A: 'thermal:electrum_ingot',
-        B: 'minecraft:quartz',
-        C: 'enderio:conductive_alloy_ingot',
-        D: 'laserio:logic_chip',
-        E: 'enderio:energetic_alloy_nugget'
-        }
-    )
-    event.shaped('laserio:card_redstone', [
-        'BAB',
-        'CDC',
-        'EEE'
-        ], {
-        A: 'projectred_core:red_ingot',
-        B: 'minecraft:quartz',
-        C: 'enderio:conductive_alloy_ingot',
-        D: 'laserio:logic_chip',
-        E: 'enderio:energetic_alloy_nugget'
-        }
-    )
+    card('item', 'enderio:pulsating_alloy_ingot')
+    card('fluid', 'minecraft:bucket')
+    card('energy', 'thermal:electrum_ingot')
+    card('redstone', 'projectred_core:red_ingot')
+    card('chemical', 'thermal_extra:shellite_ingot')
 
     //Filters
     event.remove({id:'laserio:filter_basic'})

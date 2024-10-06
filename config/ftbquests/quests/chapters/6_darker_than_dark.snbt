@@ -339,9 +339,10 @@
 		}
 		{
 			dependencies: ["6AFDB0F2AD9E81BC"]
+			description: ["And hey! There's even a gas one for your future Mekanism endeavors too!"]
 			id: "68F05DB4A722B875"
 			tasks: [{
-				id: "26C9E51EC9275A25"
+				id: "2684CB04AB89E838"
 				item: {
 					Count: 1
 					id: "itemfilters:or"
@@ -362,6 +363,10 @@
 							{
 								Count: 1b
 								id: "laserio:card_redstone"
+							}
+							{
+								Count: 1b
+								id: "laserio:card_chemical"
 							}
 						]
 					}

@@ -201,7 +201,7 @@ ServerEvents.recipes(event => {
 
     //Base Alloys
     event.remove({id:'mekanism:metallurgic_infusing/alloy/infused'})
-    infusing("mekanism:alloy_infused", "minecraft:iron_ingot", "kubejs:rose_gold", 10)
+    infusing("mekanism:alloy_infused", "minecraft:iron_ingot", "kubejs:rose_gold", 20)
     event.remove({id:'mekanism:metallurgic_infusing/alloy/reinforced'})
     infusing("mekanism:alloy_reinforced", "mekanism:alloy_infused", "kubejs:platinum", 20)
     event.remove({id:'mekanism:metallurgic_infusing/alloy/atomic'})
