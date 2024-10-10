@@ -11,10 +11,9 @@ JEIEvents.hideItems(event => {
     event.hide(['draconicevolution:generator', 'draconicevolution:overworld_draconium_ore', 'draconicevolution:deepslate_draconium_ore', 'draconicevolution:nether_draconium_ore'])
 
     //Immersive Engineering
-    event.hide(['immersiveengineering:dust_saltpeter', 'immersiveengineering:sawblade', 'immersiveengineering:coal_coke', 'immersiveengineering:grindingdisk'])
+    event.hide(['immersiveengineering:dust_saltpeter', 'immersiveengineering:sawblade', 'immersiveengineering:coal_coke', 'immersiveengineering:grindingdisk', 'immersiveengineering:mold_packing_9'])
     event.hide([/immersiveengineering.+alu.+/, 'immersiveengineering:metal_ladder_alu'])
-    event.hide(['immersiveengineering:crusher', 'immersiveengineering:sawmill', 'immersiveengineering:lightning_rod'])
-
+    
     //Industrial Foregoing
     event.hide(['industrialforegoing:raw_ore_meat_bucket', 'industrialforegoing:raw_ore_meat', 'industrialforegoing:fermented_ore_meat_bucket', 'industrialforegoing:fermented_ore_meat', 'industrialforegoing:fermentation_station', 'industrialforegoing:washing_factory', 'industrialforegoing:fluid_sieving_machine'])
     event.hide(['industrialforegoing:tinydryrubber', 'industrialforegoing:plastic'])
@@ -28,7 +27,7 @@ JEIEvents.hideItems(event => {
     
     //Thermal Series
     event.hide([/thermal:dynamo_(numismatic|disenchantment)/, 'thermal_extra:dynamo_frost'])
-    event.hide([/thermal_extra:soul_infused.+_augment/, /thermal_extra:dragonsteel.+_augment/, /thermal.+dynamo_.+_augmen.+/, 'thermal_extra:twinite_fluid_tank_augment', 'thermal_extra:abyssal_fluid_tank_augment', /thermal_extra:.+_potion_amplifier_augment/, 'thermal_extra:twinite_potion_duration_augment', 'thermal_extra:shellite_potion_duration_augment', /thermal_extra:twinite_rf_coil.+augment/, /thermal_extra:abyssal_rf_coil.+augment/, /thermal_extra:.+machine_speed_augment/, 'thermal_extra:twinite_machine_efficiency_augment', 'thermal_extra:shellite_machine_efficiency_augment', 'thermal_extra:twinite_machine_output_augment', 'thermal_extra:abyssal_machine_output_augment', 'thermal_extra:twinite_machine_catalyst_augment', 'thermal_extra:shellite_machine_catalyst_augment', /thermal_extra:.+_area_radius_augment/, 'thermalendergy:melodic_range_augment', 'thermal_extra:av_item_filter_augment', 'thermal_extra:augment_smithing_upgrade'])
+    event.hide([/thermal_extra:soul_infused.+_augment/, /thermal_extra:dragonsteel.+_augment/, /thermal.+dynamo_.+_augmen.+/, 'thermal_extra:twinite_fluid_tank_augment', 'thermal_extra:abyssal_fluid_tank_augment', /thermal_extra:.+_potion_amplifier_augment/, 'thermal_extra:twinite_potion_duration_augment', 'thermal_extra:shellite_potion_duration_augment', /thermal_extra:twinite_rf_coil.+augment/, /thermal_extra:abyssal_rf_coil.+augment/, /thermal_extra:.+machine_speed_augment/, 'thermal_extra:twinite_machine_efficiency_augment', 'thermal_extra:shellite_machine_efficiency_augment', 'thermal_extra:twinite_machine_output_augment', 'thermal_extra:abyssal_machine_output_augment', 'thermal_extra:twinite_machine_catalyst_augment', 'thermal_extra:shellite_machine_catalyst_augment', /thermal_extra:.+_area_radius_augment/, 'thermalendergy:melodic_range_augment', 'thermal_extra:av_item_filter_augment', 'thermal_extra:augment_smithing_upgrade']).except('thermal_extra:soul_infused_machine_speed_augment')
     event.hide(['thermal_extra:upgrade_augment', 'thermal_extra:abyssal_upgrade_augment'])
     event.hide(['thermal_extra:nitratic_igniter', /thermal_extra:.+_ore_chunk/])
     event.hide([/thermal:.+mushroom_spores/, 'thermal_extra:ancient_dust', 'thermal_extra:sticky_ball'])
@@ -84,7 +83,7 @@ JEIEvents.hideItems(event => {
     event.hide(/sophisticatedstorage:storag.+/)
 
     //FTBQuests
-    event.hide(/ftbquests:.+/)
+    event.hide(/ftbquests:.+/).except('ftbquests:book')
 
     //Functional Storage
     event.hide('functionalstorage:collector_upgrade')
@@ -169,12 +168,9 @@ JEIEvents.addItems(event => {
 
     //Hidden? Augments
     event.add(['thermal:potion_amplifier_augment', 'thermal:potion_duration_augment'])
-    
-    //Twinite Speed Augment
-    event.add('thermal_extra:soul_infused_machine_speed_augment')
 
-    //FTBQuests Book
-    event.add('ftbquests:book')
+    //IE Multi test
+    event.add(['immersiveengineering:alloy_smelter', 'immersiveengineering:coke_oven', 'immersiveengineering:blast_furnace', 'immersiveengineering:advanced_blast_furnace', 'immersiveengineering:metal_press', 'immersiveengineering:assembler', 'immersiveengineering:auto_workbench', 'immersiveengineering:squeezer', 'immersiveengineering:fermenter', 'immersiveengineering:refinery', 'immersiveengineering:bottling_machine', 'immersiveengineering:arc_furnace', 'immersiveengineering:mixer', 'immersiveengineering:excavator', 'immersiveengineering:bucket_wheel', 'immersiveengineering:diesel_generator', 'immersiveengineering:tank', 'immersiveengineering:silo'])
 })
 
 JEIEvents.hideFluids(event => {
@@ -194,3 +190,8 @@ JEIEvents.hideFluids(event => {
     //Creosote
     event.hide('thermal:creosote')
 })
+
+//const $MBType = Java.loadClass('sguest.jeimultiblocks.jei.MultiblockIngredientType')
+//JEIEvents.hideCustom(event => {
+//  event.get($MBType).hideAll()
+//})

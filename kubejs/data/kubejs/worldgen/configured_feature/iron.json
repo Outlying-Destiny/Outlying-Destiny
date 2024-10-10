@@ -1,7 +1,7 @@
 {
   "type": "minecraft:ore",
   "config": {
-    "size": 1,
+    "size": 5,
     "discard_chance_on_air_exposure": 0,
     "targets": [
       {
@@ -10,7 +10,7 @@
           "tag": "minecraft:stone_ore_replaceables"
         },
         "state": {
-          "Name": "minecraft:emerald_ore"
+          "Name": "minecraft:iron_ore"
         }
       },
       {
@@ -19,7 +19,7 @@
           "tag": "minecraft:deepslate_ore_replaceables"
         },
         "state": {
-          "Name": "minecraft:deepslate_emerald_ore"
+          "Name": "minecraft:deepslate_iron_ore"
         }
       }
     ]

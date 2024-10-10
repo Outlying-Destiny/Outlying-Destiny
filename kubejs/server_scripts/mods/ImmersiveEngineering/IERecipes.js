@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
     //Functions
     function box(output, input1, input2, input3){event.shaped(output, ['ABA','BCB','ABA'], {A: input1,B: input2,C: input3})}
     function detailedbox(output, input1, input2, input3, input4){event.shaped(output, ['ABA','CDC','ABA'], {A: input1,B: input2,C: input3, D: input4})}
-    function accumulator(output, input1, input2, input3, input4, input5){event.shaped(output, ['ABA','DED','ACA'], {A: input1,B: input2,C: input3,D: input4,E: input5})}
+    function accumulator(tier, input1, input2, input3){event.shaped('immersiveengineering:capacitor_'+tier, ['ABA','DED','ACA'], {A: '#forge:treated_wood',B: input1,C: input2,D: 'immersiveengineering:coil_'+tier,E: input3}).modifyResult(copyOldAccumulatorData)}
 
     //Engineer Hammer
     event.replaceInput(
@@ -42,7 +42,6 @@ ServerEvents.recipes(event => {
     mold('immersiveengineering:mold_bullet_casing')
     mold('immersiveengineering:mold_wire')
     mold('immersiveengineering:mold_packing_4')
-    mold('immersiveengineering:mold_packing_9')
     mold('immersiveengineering:mold_unpacking')
 
     //Wire Coils
@@ -137,22 +136,20 @@ ServerEvents.recipes(event => {
     )
 
     //Function Arc Furnace
-    function arcfurnace3(output, outputcount, baseinput, baseinputcount, extrainput1, extrainput2, energy, time){
+    function arcfurnace3(output, outputcount, baseinput, baseinputcount, extrainput1, extrainputcount1, extrainput2, extrainputcount2, energy, time){
         event.custom({   
             "type":"immersiveengineering:arc_furnace",
-                "additives":[{"item":extrainput1}, {"item":extrainput2}],
+                "additives":[{"base_ingredient":{"item":extrainput1}, "count":extrainputcount1}, {"base_ingredient":{"item":extrainput2}, "count":extrainputcount2}],
                 "energy":energy,
-                "input":{"base_ingredient":{"item":baseinput},
-                    "count":baseinputcount},
-                "results":[{"base_ingredient":{"item":output},
-                    "count":outputcount}],
+                "input":{"base_ingredient":{"item":baseinput}, "count":baseinputcount},
+                "results":[{"base_ingredient":{"item":output}, "count":outputcount}],
                 "slag":{"tag":"forge:slag"},
                 "time":time
         })
     }
 
     //Dielectric Paste
-    arcfurnace3("powah:dielectric_paste", 16, "immersiveengineering:dust_coke", 2, "minecraft:clay_ball", "minecraft:blaze_powder", 153600, 300)
+    arcfurnace3("powah:dielectric_paste", 16, "immersiveengineering:dust_coke", 4, "minecraft:clay_ball", 8, "minecraft:blaze_powder", 2, 153600, 300)
 
     //Wooden Barrel
     event.remove({output:'immersiveengineering:wooden_barrel'})
@@ -185,21 +182,39 @@ ServerEvents.recipes(event => {
     )
 
     //Accumulators
+        /**
+     * Copies old Accumulator nbt to the new Accumulator (whoever Monifactory contibutor coded that, thank you)
+     * @param {Internal.ModifyRecipeCraftingGrid} grid
+     * @param {Internal.ItemStack} result
+     * @returns {Internal.ItemStack}
+     */
+	const copyOldAccumulatorData = (grid, result) => {
+		let item = grid.find(/immersiveengineering:capacitor_.+/)
+		if (!item.nbt) {
+            return result;
+		}
+
+		let nbt = {};
+		if (item.nbt.energy) {
+			nbt.energy = item.nbt.energy
+		}
+		return result.withNBT(nbt);
+	}
     event.remove({output:/immersiveengineering:capacitor_.+/})
-    accumulator('immersiveengineering:capacitor_lv', '#forge:treated_wood', 'thermal:lead_plate', 'thermal:lead_plate', 'immersiveengineering:coil_lv', 'minecraft:iron_ingot')
-    accumulator('immersiveengineering:capacitor_mv', '#forge:treated_wood', 'thermal:nickel_plate', 'thermal:iron_plate', 'immersiveengineering:coil_mv', 'immersiveengineering:capacitor_lv')
-    accumulator('immersiveengineering:capacitor_hv', '#forge:treated_wood', 'thermal:invar_plate', 'immersiveengineering:ingot_hop_graphite', 'immersiveengineering:coil_hv', 'immersiveengineering:capacitor_mv')
+    accumulator('lv', 'thermal:lead_plate', 'thermal:lead_plate', 'minecraft:iron_ingot')
+    accumulator('mv', 'thermal:nickel_plate', 'thermal:iron_plate', 'immersiveengineering:capacitor_lv')
+    accumulator('hv', 'thermal:invar_plate', 'immersiveengineering:ingot_hop_graphite', 'immersiveengineering:capacitor_mv')
 
     //Circuit Board
     event.remove({output:'immersiveengineering:circuit_board'})
-    event.custom({"type":"immersiveengineering:blueprint","category":"components","inputs":[{"tag":"forge:plates/plastic"},{"item":"mekanism:basic_control_circuit"},{"base_ingredient":{"item":"thermal:copper_plate"},"count":2}],"result":{"item":"immersiveengineering:circuit_board"}})
+    event.custom({"type":"immersiveengineering:blueprint","category":"components","inputs":[{"base_ingredient":{"item":'immersiveengineering:plate_duroplast'},"count":2},{"base_ingredient":{"item":'mekanism:basic_control_circuit'},"count":3},{"base_ingredient":{"item":"thermal:copper_plate"},"count":4}],"result":{"item":"immersiveengineering:circuit_board"}})
 
     //Logic Circuit
-    event.custom({"type":"immersiveengineering:blueprint","category":"components","inputs":[{"item":"immersiveengineering:circuit_board"},{"item":"immersiveengineering:component_electronic"}],"result":{"item":"immersiveengineering:logic_circuit"}})
+    event.custom({"type":"immersiveengineering:blueprint","category":"components","inputs":[{"item":"immersiveengineering:circuit_board"},{"base_ingredient":{"item":'immersiveengineering:component_electronic'},"count":4}],"result":{"item":"immersiveengineering:logic_circuit"}})
 
     //Advanced Electric Component
     event.remove({id:'immersiveengineering:blueprint/component_electronic_adv'})
-    event.custom({"type":"immersiveengineering:blueprint","category":"components","inputs":[{"item":"immersiveengineering:plate_duroplast"},{"base_ingredient":{"item":'immersiveengineering:electron_tube'},"count":2},{"item":'kubejs:invar_wire'}],"result":{"item":'immersiveengineering:component_electronic_adv'}})
+    event.custom({"type":"immersiveengineering:blueprint","category":"components","inputs":[{"base_ingredient":{"item":'immersiveengineering:plate_duroplast'},"count":2},{"base_ingredient":{"item":'immersiveengineering:electron_tube'},"count":2},{"base_ingredient":{"item":'kubejs:invar_wire'},"count":4}],"result":{"item":'immersiveengineering:component_electronic_adv'}})
 
     //External Heater
     event.replaceInput(

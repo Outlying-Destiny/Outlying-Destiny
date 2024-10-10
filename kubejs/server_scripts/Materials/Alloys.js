@@ -89,5 +89,7 @@ ServerEvents.recipes(event => {
     alloy3tag1('enderio:organic_brown_dye', 2, 'bookshelf:slime_balls', 1, 'minecraft:brown_dye', 2, 'mekanism:dust_coal', 2, 4000)
     alloy3('enderio:organic_brown_dye', 1, 'minecraft:egg', 1, 'minecraft:brown_dye', 1, 'mekanism:dust_coal', 1, 3000)
 
+    //Dielectric Paste
+    alloy3('powah:dielectric_paste', 16, 'minecraft:clay_ball', 8, 'immersiveengineering:dust_coke', 4, 'minecraft:blaze_powder', 2, 12000)
     
 })

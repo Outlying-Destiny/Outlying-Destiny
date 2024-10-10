@@ -74,11 +74,11 @@ ServerEvents.recipes(event => {
     detailedbox('mekanism:metallurgic_infuser', 'thermal:steel_ingot', 'immersiveengineering:rs_engineering', 'immersiveengineering:light_engineering', 'mekanism:steel_casing')
 
     //Energy Upgrade
-    event.remove({id:'mekanism:upgrade_energy'})
+    event.remove({id:'mekanism:upgrade/energy'})
     detailedbox('mekanism:upgrade_energy', 'thermal:steel_ingot', 'thermal:gold_dust', 'powah:steel_energized', 'mekanism:alloy_infused', 'thermal:gold_dust')
 
     //Speed Upgrade
-    event.remove({id:'mekanism:upgrade_speed'})
+    event.remove({id:'mekanism:upgrade/speed'})
     detailedbox('mekanism:upgrade_speed', 'thermal:steel_ingot', 'mekanism:ingot_refined_obsidian', 'mekanism:alloy_infused', 'mekanism:dust_osmium')
     
     //Enrichment Chamber
