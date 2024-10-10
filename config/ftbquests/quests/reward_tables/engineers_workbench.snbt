@@ -1,0 +1,10 @@
+{
+	id: "2658489DCCE031A9"
+	loot_size: 1
+	order_index: 10
+	rewards: [
+		{ count: 4, item: "minecraft:book" }
+		{ count: 6, item: "minecraft:lapis_ore" }
+	]
+	title: "Engineer's Workbench"
+}

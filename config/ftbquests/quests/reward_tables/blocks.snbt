@@ -1,0 +1,12 @@
+{
+	id: "7ED41E916354BFC4"
+	loot_size: 1
+	order_index: 12
+	rewards: [
+		{ item: "thermal:tin_block" }
+		{ item: "thermal:lead_block" }
+		{ item: "thermal:silver_block" }
+		{ item: "thermal:nickel_block" }
+	]
+	title: "Blocks"
+}

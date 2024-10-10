@@ -198,13 +198,13 @@
 			description: [
 				"Infuse some steel in your Natural Altar."
 				""
-				"Who said magic and industrial are uncompatible?"
+				"Who said magic and industrialization were uncompatible?"
 			]
 			id: "74A5DBE334967074"
 			min_width: 240
 			rewards: [{
 				count: 8
-				id: "5010845C042BAF36"
+				id: "3D2CC9114F49ACB1"
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
@@ -322,6 +322,8 @@
 		}
 		{
 			dependencies: ["5F8FE2C8D2EB3B88"]
+			description: ["Enter the Nether and get access to the second half of chapter 2!"]
+			disable_toast: true
 			id: "6A53A5AD90652811"
 			min_width: 240
 			size: 1.25d
@@ -569,7 +571,7 @@
 			id: "5EBD1BE5CAC32C54"
 			min_width: 240
 			rewards: [{
-				count: 8
+				count: 12
 				id: "15858C5AB20D8992"
 				item: "thermal:steel_ingot"
 				type: "item"
@@ -795,6 +797,11 @@
 			dependencies: [
 				"58D275BD01AC2B1C"
 				"2AFBDF3213FABA18"
+			]
+			description: [
+				"Craft a HOP Graphite Ingot."
+				""
+				"This is where Coke starts to get into real use, if you don't have multiple Coke Oven already now maybe is the time to change that."
 			]
 			disable_toast: true
 			id: "28D5BB0DC2A4288E"

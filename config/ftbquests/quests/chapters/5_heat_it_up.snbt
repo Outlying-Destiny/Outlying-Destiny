@@ -31,6 +31,7 @@
 		}
 		{
 			dependencies: ["30C16811BB92E249"]
+			disable_toast: true
 			hide: false
 			id: "5DAF16566BC2FDB6"
 			size: 1.25d
@@ -233,6 +234,12 @@
 		}
 		{
 			dependencies: ["187BE2A259075C18"]
+			description: [
+				"Energized Steel is the first tier material of Powah, meaning you can now upgrade your Energizing Rods to the next tier."
+				""
+				"It will be used a lot through your adventure and is required to unlock Thermal Series but for now it unlocks you some cool upgrades, check them out!"
+			]
+			disable_toast: true
 			id: "7ED427C5D3207920"
 			size: 1.25d
 			tasks: [{

@@ -11,6 +11,7 @@
 		{
 			dependencies: ["463D54DAEECAC15F"]
 			description: ["No, seriously, there's nothing to be said in here. Did you read all of the previous quests? They're useful, don't miss out!"]
+			icon: "minecraft:oak_log"
 			id: "0A3D05D5F3E9C113"
 			min_width: 240
 			rewards: [{
@@ -688,10 +689,10 @@
 			id: "4017262C83944767"
 			min_width: 240
 			rewards: [{
-				count: 3
-				id: "4C8EF3CFA65A8AF6"
-				item: "minecraft:book"
-				type: "item"
+				exclude_from_claim_all: true
+				id: "36808ED36A8A4EE8"
+				table_id: 6307414237475125258L
+				type: "choice"
 			}]
 			tasks: [{
 				id: "341DA724CF7B98AD"
@@ -707,9 +708,22 @@
 				"Ruined Portals, Village generation and villagers trades have been disabled in this pack."
 				""
 				"There will be other way to obtain the items they trade such as mending books."
+				""
+				"The given Charm can be activated to disable Wandering Trader Spawning around you. It is also equipable in your Curios Menu, to access it click on the button at the top left of your player visual in your inventory."
 			]
 			icon: "minecraft:emerald"
 			id: "6E857F803D3503A1"
+			rewards: [{
+				id: "6DFB31CC100A9E51"
+				item: {
+					Count: 1
+					id: "nomowanderer:no_mo_wanderer_totem"
+					tag: {
+						Enabled: 1b
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "543516CE25E51AD0"
 				title: "&c&l Important: Villages and Villagers"

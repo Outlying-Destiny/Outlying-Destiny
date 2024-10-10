@@ -1,0 +1,10 @@
+{
+	id: "57886FD4B3F2380A"
+	loot_size: 1
+	order_index: 11
+	rewards: [
+		{ count: 3, item: "minecraft:bookshelf" }
+		{ count: 64, item: "actuallyadditions:solidified_experience" }
+	]
+	title: "Enchanting Table"
+}

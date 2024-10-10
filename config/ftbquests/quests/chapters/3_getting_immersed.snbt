@@ -69,6 +69,12 @@
 			icon: "immersiveengineering:coke_oven"
 			id: "163B6909663DDA70"
 			min_width: 240
+			rewards: [{
+				count: 2
+				id: "3751C2C7F1BCA484"
+				item: "thermal:charcoal_block"
+				type: "item"
+			}]
 			tasks: [{
 				count: 27L
 				id: "595488493715B0A4"
@@ -84,10 +90,16 @@
 			description: [
 				"Infuse some netherrack to get yourself some magma blocks."
 				""
-				"Time to infuse the infusion!"
+				"You can also find them in mines if you're lucky."
 			]
 			id: "001AEB901C551C90"
 			min_width: 240
+			rewards: [{
+				count: 2
+				id: "2DEF14685408DEAF"
+				item: "minecraft:magma_cream"
+				type: "item"
+			}]
 			tasks: [{
 				count: 9L
 				id: "30DF87553ED32071"
@@ -103,13 +115,19 @@
 			description: ["Smelt some netherrack to get Nether Bricks."]
 			id: "35B2842413B6586C"
 			min_width: 240
+			rewards: [{
+				count: 16
+				id: "2791F8A1D939B352"
+				item: "minecraft:brick"
+				type: "item"
+			}]
 			tasks: [{
 				count: 36L
 				id: "043E6037AEF1778F"
 				item: "minecraft:nether_brick"
 				type: "item"
 			}]
-			title: "Bricked up"
+			title: "Overcooked!"
 			x: 0.5d
 			y: -6.5d
 		}
@@ -120,19 +138,24 @@
 				"61BF92491E596D74"
 			]
 			description: [
-				"Build a Blast Oven. Simply make a 3³ cube of Blast Brick and &eRight Click&r it with your engineer hammer."
+				"Build a Blast Furnace. Simply make a 3³ cube of Blast Brick and &eRight Click&r it with your engineer hammer."
 				""
 				"The Blast Furnace constitutes your first production of Steel!"
 				""
 				"However, you'll notice its production is pretty slow and its fuel demand high, only making a steel ingot per minute. When it comes to fuel you want to prioritize the use of Coke as it is x4 more efficient than coal going from 4 to 1 coal per steel."
 				""
-				"You'll quickly unlock a new way of creating steel with Mekanism going way faster at the cost of electricity but for now the Blast Furnace shall suffice."
+				"You'll quickly unlock a new way of creating steel with Mekanism going way faster and using less coal at the cost of electricity but for now the Blast Furnace shall suffice."
 				""
 				"It is not automatable."
 			]
 			icon: "immersiveengineering:blast_furnace"
 			id: "610C537DA0A2AD77"
 			min_width: 240
+			rewards: [{
+				id: "546EE9CC417561E0"
+				item: "immersiveengineering:manual"
+				type: "item"
+			}]
 			tasks: [{
 				count: 27L
 				id: "1353861A1A9ABDEB"
@@ -202,18 +225,30 @@
 				}
 				type: "item"
 			}]
+			title: "Engineer's Favorite"
 			x: 2.0d
 			y: -6.5d
 		}
 		{
 			dependencies: ["163B6909663DDA70"]
+			description: [
+				"Use your Coke Oven to get some Creosote Oil."
+				""
+				"If the Coke Oven Creosote Oil tank is full it will stop producing. Make a tank to store it, or use a trashcan if you're so desesperate."
+			]
 			id: "49CB87276BB136AA"
 			min_width: 240
+			rewards: [{
+				id: "39D862E2D87286F6"
+				item: "trashcans:liquid_trash_can"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4C96AD40C4E80B2C"
 				item: "immersiveengineering:creosote_bucket"
 				type: "item"
 			}]
+			title: "Good old oil!"
 			x: 3.25d
 			y: -6.5d
 		}
@@ -258,11 +293,19 @@
 				item: "thermal:coal_coke"
 				type: "item"
 			}]
+			title: "Overcoked!"
 			x: 3.25d
 			y: -7.75d
 		}
 		{
 			dependencies: ["610C537DA0A2AD77"]
+			description: [
+				"Told you it was slow! And yet it will be the main material used throughout this chapter. But as said earlier you'll be able to fasten that pace soon enough."
+				""
+				"For now your next step is to get a Metal Press up and running and unlocking Mekanism to get a better steel recipe."
+				""
+				"Keep it up!"
+			]
 			id: "30C16811BB92E249"
 			min_width: 240
 			rewards: [{
@@ -276,14 +319,28 @@
 				item: "thermal:steel_ingot"
 				type: "item"
 			}]
+			title: "Stand Steel"
 			x: 2.0d
 			y: -4.5d
 		}
 		{
 			dependencies: ["679F2CA5C993DE97"]
+			description: [
+				"The Engineer's Workbench is used to craft several items from Immersive Engineering."
+				""
+				"However, to work it will need the proper Blueprint associated to the recipe your trying to use."
+				""
+				"All you need for the moment is the Metal Press Molds Blueprint but you might want to make the Crafting Components one too for cheaper Mechanical Component once you unlock plates."
+			]
 			icon: "immersiveengineering:workbench"
 			id: "61C38FC70F3E31F9"
 			min_width: 240
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7838A55BC72E0205"
+				table_id: 2763038213976109481L
+				type: "choice"
+			}]
 			tasks: [
 				{
 					id: "4A218CF6D93C1D23"
@@ -302,6 +359,7 @@
 					type: "item"
 				}
 			]
+			title: "Engineering at its peak"
 			x: 5.25d
 			y: -6.5d
 		}
@@ -312,14 +370,23 @@
 				"20D2FE0159ADB69C"
 				"0C062A3E4CE595B8"
 			]
+			description: [
+				"Build the Metal Press! It'll serve you as your first way to make several components like plates, rods, gears and wires."
+				""
+				"However, this multiblock requires power to work which means you need to produce some and redirect it to the Metal Press. You'll get more information on the quests below."
+				""
+				"Once powered, equip it with a mold of your choice and drop your items on the conveyor belt! Feel free to use a dropper to safely store the output."
+				""
+				"&eThis quest requires 3 out of 4 dependencies to be completed."
+			]
 			icon: "immersiveengineering:metal_press"
 			id: "0AA6184C7940DD0E"
 			min_required_dependencies: 3
 			min_width: 240
 			rewards: [{
-				count: 2
-				id: "7178895DF29432DA"
-				item: "immersiveengineering:component_iron"
+				count: 4
+				id: "1466E35D58D20037"
+				item: "thermal:steel_ingot"
 				type: "item"
 			}]
 			tasks: [
@@ -360,8 +427,19 @@
 				"0AA6184C7940DD0E"
 				"7DF6B4B0BA263ED5"
 			]
+			description: [
+				"Steel Plates! You're going to need a LOT of those, or plates in general."
+				""
+				"You can use them to get most IE stuff you already crafted for a cheaper price, it's also your opening door to Mekanism!"
+			]
 			id: "34174912779DA609"
 			min_width: 240
+			rewards: [{
+				count: 2
+				id: "4CA410A50897220F"
+				item: "immersiveengineering:component_steel"
+				type: "item"
+			}]
 			size: 1.1d
 			tasks: [{
 				count: 4L
@@ -369,11 +447,13 @@
 				item: { Count: 4, id: "thermal:steel_plate" }
 				type: "item"
 			}]
+			title: "Steel Plates Strikes Back"
 			x: 5.25d
 			y: -4.5d
 		}
 		{
 			dependencies: ["56A7B01838A02347"]
+			description: ["But not the lasts."]
 			icon: "thermal:rose_gold_ingot"
 			id: "48561BE33A3C9899"
 			min_width: 240
@@ -400,7 +480,7 @@
 					type: "item"
 				}
 			]
-			title: "Your First Alloys"
+			title: "Your First Alloys!"
 			x: 4.25d
 			y: -5.5d
 		}
@@ -409,13 +489,39 @@
 				"30C16811BB92E249"
 				"26DE28EB32A47D88"
 			]
+			description: [
+				"The Thermoelectric Generator (TG) is 1 of your first 2 ways of generating electricity."
+				""
+				"It creates energy from the heat difference between two sources of opposite sides."
+				""
+				"This means that if you place a hot block/fluid on a side of it and a cold one to the opposite the TG will start producing energy."
+				""
+				"You can do that 2 times per TG using the North / South + East / West sides."
+				""
+				"There are 2 interesting combination of heat sources:"
+				""
+				"Water + Lava / Magma Block producing 15FE/t (30FE/t max per TG)"
+				""
+				"Water + Uranium Block producing 20FE/t (40FE/t max per TG)"
+				""
+				"(Snow and Ice temperature difference are too little compared to water to be noticed)"
+				""
+				"While it costs steel, the TG is a really space efficient way to produce energy, if you don't like setting up huge things you should go for it."
+			]
 			id: "0C062A3E4CE595B8"
 			min_width: 240
+			rewards: [{
+				count: 6
+				id: "7B67FDEADE0DEDCA"
+				item: "mekanism:raw_uranium"
+				type: "item"
+			}]
 			tasks: [{
 				id: "404E87D4A2C6B782"
 				item: "immersiveengineering:thermoelectric_generator"
 				type: "item"
 			}]
+			title: "Don't get a fever"
 			x: 2.75d
 			y: -3.5d
 		}
@@ -424,34 +530,92 @@
 				"2AE95C9790D4C37F"
 				"26DE28EB32A47D88"
 			]
+			description: [
+				"The Kinetic Dynamo (KD) is 1 of your first 2 ways of generating electricity."
+				""
+				"You can connect the KD to either a Wind Mill or up to 3 Water Wheels using its front side."
+				""
+				"From there the KD will create energy based on the rotation speed it is connected to."
+				""
+				"For more information about the Wind Mill and Water Wheels check their corresponding quests."
+				""
+				"While the KD is pretty cheap it is really space inefficient, if you don't like setting up huge things you should check the Thermoelectric Generator quest."
+				""
+				"&eThis quest requires 1 out of 2 dependencies to be completed."
+			]
 			id: "20D2FE0159ADB69C"
 			min_width: 240
+			rewards: [{
+				id: "4C51E1E335B43A54"
+				item: "immersiveengineering:voltmeter"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5414283C42634B2F"
 				item: "immersiveengineering:dynamo"
 				type: "item"
 			}]
+			title: "Don't get dizzy"
 			x: 4.25d
 			y: -3.5d
 		}
 		{
 			dependencies: ["679F2CA5C993DE97"]
+			description: [
+				"Up to 3 Water Wheels can be connected to a Kinetic Dynamo to produce energy."
+				""
+				"Water Wheels needs water flow to start rotating the more flowing water there is the faster the rotation speed will be."
+				""
+				"While they can produce a fair amount of energy and the setup is pretty cheap they're not very space efficient as you want to setup a 9x9x5 area to max a setup."
+				""
+				"The max production of a 3 Water Wheels setup is 88FE/t."
+				""
+				"Here's what a maxed setup looks like:"
+				""
+				"{image:kubejs:textures/ftbquests/immersiveengineering/watermill.png width:100 height:100 align:center}"
+			]
 			id: "0B4EA0C21E58691D"
 			min_width: 240
+			rewards: [{
+				count: 3
+				id: "6376E9647AFED630"
+				item: "minecraft:water_bucket"
+				type: "item"
+			}]
 			tasks: [{
 				count: 3L
 				id: "2EF655D311757B7F"
 				item: { Count: 3, id: "immersiveengineering:watermill" }
 				type: "item"
 			}]
+			title: "Rotating with water"
 			x: 5.75d
 			y: -7.25d
 		}
 		{
 			dependencies: ["679F2CA5C993DE97"]
+			description: [
+				"The Windmill can be connected to a Kinetic Dynamo to produce energy."
+				""
+				"It is pretty slow and not very space efficient as you need a 7x7x1 area for it to start rotating but there's way to make it a big better!"
+				""
+				"*You can add up to 8 Windmill Sails to your windmill to make it rotate faster, you should also make sure that no blocks are in front of it as it can reduce its roration speed."
+				""
+				"Rains and thunderstorms can also make it rotate up to 2 times faster but that's out of your scope and so not really reliable."
+				""
+				"Its max* production on clear weather is 35FE/t."
+				""
+				"You're free to use it but using Water Wheels on the Kinetic Dynamos or using the Thermoelectric Generator are better options."
+			]
 			icon: "immersiveengineering:windmill"
 			id: "7FEADDAAFAB5AFF6"
 			min_width: 240
+			rewards: [{
+				count: 4
+				id: "07645935027063DB"
+				item: "immersiveengineering:hemp_fabric"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "61990109790E80C2"
@@ -465,6 +629,7 @@
 					type: "item"
 				}
 			]
+			title: "Rotating with wind"
 			x: 5.75d
 			y: -8.25d
 		}
@@ -474,6 +639,20 @@
 				"0B4EA0C21E58691D"
 			]
 			dependency_requirement: "one_completed"
+			description: [
+				"The Kinetic Dynamo (KD) is 1 of your first 2 ways of generating electricity."
+				""
+				"You can connect the KD to either a Wind Mill or up to 3 Water Wheels using its front side."
+				""
+				"From there the KD will create energy based on the rotation speed it is connected to."
+				""
+				"For more information about the Wind Mill and Water Wheels check their corresponding quests."
+				""
+				"While the KD is pretty cheap it is really space inefficient, if you don't like setting up huge things you should check the Thermoelectric Generator quest."
+				""
+				"&eThis quest requires 1 out of 2 dependencies to be completed."
+			]
+			disable_toast: true
 			hide_dependent_lines: true
 			id: "2AE95C9790D4C37F"
 			min_width: 240
@@ -482,11 +661,32 @@
 				item: "immersiveengineering:dynamo"
 				type: "item"
 			}]
+			title: "Don't get dizzy"
 			x: 7.25d
 			y: -7.75d
 		}
 		{
 			dependencies: ["30C16811BB92E249"]
+			description: [
+				"This is your first step into power generation and transportation."
+				""
+				"This quest will focus on energy transportation and will unlock the 2 quests above, each being a way of power generation."
+				""
+				"For now, you'll transport energy with the use of Wire Coils. To connect them from a point A to B you'll need Wire Connectors and Wire Relays of the same tier."
+				""
+				"Wire Connectors are used to send electricity to the block they're placed on and can handle 1 Wire Coil."
+				""
+				"Wire Relays are used to distribute electricity between multiple points, they don't send electricity to the blocks they're placed on but can handle as many Wire Coils as you wish."
+				""
+				"When connecting a cable from a point A to B the cable cannot go through blocks, while trying to do so blocks in the way will be highlighted in red."
+				""
+				"Each tier of Wire Coils have their limits, being the maximum input value (how much energy a connector can take) (aka IV), the total transfer rate (how much energy can go through the Wire Coils) (aka TR) and the max wire length:"
+				"LV: IV = 256, TR = 4096, length = 16"
+				"MV: IV = 1024, TR = 16384, length = 16"
+				"HV: IV = 4096, TR = 65536, length = 32"
+				""
+				"Ouch, going through Wire Coils connected to an energy source will hurt you! Fortunetaly you can insulate your Wire Coils, more about that in the quest on your left"
+			]
 			hide_dependency_lines: true
 			icon: "immersiveengineering:wirecoil_copper"
 			id: "26DE28EB32A47D88"
@@ -517,11 +717,17 @@
 					type: "item"
 				}
 			]
+			title: "Electrical Engineer"
 			x: 3.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["26DE28EB32A47D88"]
+			description: [
+				"Craft some Insulated Wire Coils. Those won't hurt you when you go through them!"
+				""
+				"Warning: HV Wire Coils cannot be insulated."
+			]
 			id: "67BD81ECCD9CE396"
 			min_width: 240
 			rewards: [{
@@ -536,6 +742,7 @@
 				item: { Count: 4, id: "immersiveengineering:wirecoil_copper_ins" }
 				type: "item"
 			}]
+			title: "Hurt no more!"
 			x: 2.0d
 			y: -2.5d
 		}
@@ -562,11 +769,17 @@
 				item: "mekanism:steel_casing"
 				type: "item"
 			}]
+			title: "Mekanician's favorite"
 			x: 6.5d
 			y: -5.5d
 		}
 		{
 			dependencies: ["30C16811BB92E249"]
+			description: [
+				"It's a flint annnnnd a steel."
+				""
+				"Original isn't it?"
+			]
 			id: "5F8FE2C8D2EB3B88"
 			min_width: 240
 			rewards: [{
@@ -591,11 +804,13 @@
 				}
 				type: "item"
 			}]
+			title: "Don't judge the recipe"
 			x: 0.75d
 			y: -4.5d
 		}
 		{
 			dependencies: ["5F8FE2C8D2EB3B88"]
+			description: ["Enter the Nether and get access to the second half of chapter 2!"]
 			id: "3CF60761EF692702"
 			min_width: 240
 			rewards: [{
@@ -615,21 +830,39 @@
 		}
 		{
 			dependencies: ["61C38FC70F3E31F9"]
+			description: [
+				"A Metal Press Mold for plates!"
+				""
+				"Craft one and use it on your Metal Press to start making those beautiful, wonderful plates."
+			]
 			id: "7DF6B4B0BA263ED5"
 			min_width: 240
+			rewards: [{
+				count: 3
+				id: "5CC000C398876ED3"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3CBC81353C69431B"
 				item: "immersiveengineering:mold_plate"
 				type: "item"
 			}]
+			title: "Yup, that's a mold."
 			x: 5.25d
 			y: -5.5d
 		}
 		{
 			dependencies: ["61C38FC70F3E31F9"]
+			description: ["Here's a list of the other important Metal Press Molds, you will need wires and gears if you want to progress any further and the rods one let's you make them at a cheaper price!"]
 			icon: "immersiveengineering:mold_gear"
 			id: "199CC95E08343BAC"
 			min_width: 240
+			rewards: [{
+				id: "09E84087CB192A5C"
+				item: "immersiveengineering:mold_unpacking"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "4A5511316810AD79"
@@ -647,14 +880,17 @@
 					type: "item"
 				}
 			]
+			title: "Hey, look! Even more molds!"
 			x: 4.25d
 			y: -6.5d
 		}
 		{
 			dependencies: ["338C75F201A6B9DE"]
+			description: ["Craft some Infused Alloy. This is the first base Mekanism material, you'll need lot of those."]
 			id: "11D604309801EF9C"
 			min_width: 240
 			tasks: [{
+				count: 4L
 				id: "1B7342B10F7CFEFF"
 				item: "mekanism:alloy_infused"
 				type: "item"
@@ -664,9 +900,11 @@
 		}
 		{
 			dependencies: ["338C75F201A6B9DE"]
+			description: ["Craft some Basic Control Circuit. This is second base Mekanism material, less required than the first of his kind but still highly needed."]
 			id: "2D1BB8A835207114"
 			min_width: 240
 			tasks: [{
+				count: 2L
 				id: "11D959FEDA55DEE5"
 				item: "mekanism:basic_control_circuit"
 				type: "item"
@@ -688,6 +926,7 @@
 		}
 		{
 			dependencies: ["2D1BB8A835207114"]
+			description: ["You now have access to Mekanism cables"]
 			icon: "mekanism:basic_universal_cable"
 			id: "56DDF1ACD4C0AFE4"
 			min_width: 240
@@ -713,15 +952,27 @@
 					type: "item"
 				}
 			]
+			title: "Finally! Proper transportation!"
 			x: 8.5d
 			y: -7.5d
 		}
 		{
 			dependencies: ["34174912779DA609"]
+			description: [
+				"The Squeezer is a multiblock used to make Plant Oil out of crop seeds and HOP Graphite out of Coke Dust."
+				""
+				"Like the Fermenter it processes a recipe every 4 seconds and can process up to 8 at once each recipe requiring 80FE/t."
+			]
 			icon: "immersiveengineering:squeezer"
 			id: "58D275BD01AC2B1C"
 			min_width: 240
 			progression_mode: "linear"
+			rewards: [{
+				count: 12
+				id: "23DF29DCBE329265"
+				item: "minecraft:raw_iron"
+				type: "item"
+			}]
 			tasks: [
 				{
 					count: 6L
@@ -770,10 +1021,21 @@
 		}
 		{
 			dependencies: ["34174912779DA609"]
+			description: [
+				"The Fermenter is a multiblock used to make Ethanol out of crops."
+				""
+				"Like the Squeezer it processes a recipe every 4 seconds and can process up to 8 at once each recipe requiring 80FE/t."
+			]
 			icon: "immersiveengineering:fermenter"
 			id: "6D2FEA8A870535C2"
 			min_width: 240
 			progression_mode: "linear"
+			rewards: [{
+				count: 12
+				id: "7E2DBFCBB14A7F43"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
 			tasks: [
 				{
 					count: 6L
@@ -817,6 +1079,11 @@
 		}
 		{
 			dependencies: ["6D2FEA8A870535C2"]
+			description: [
+				"Ferment some crops to make Ethanol."
+				""
+				"You might want to automate that process soon enough."
+			]
 			id: "4F862AF46BF14A60"
 			min_width: 240
 			tasks: [{
@@ -829,6 +1096,11 @@
 		}
 		{
 			dependencies: ["58D275BD01AC2B1C"]
+			description: [
+				"Squeeze some crops to make Plant Oil!"
+				""
+				"You might want to automate that process soon enough."
+			]
 			id: "4CF036B891536FA6"
 			min_width: 240
 			tasks: [{
@@ -845,6 +1117,11 @@
 				"4F862AF46BF14A60"
 				"4CF036B891536FA6"
 			]
+			description: [
+				"Mix Plant Oil and Ethanol inside a Refinery to make biodiesel!"
+				""
+				"You can use it in a Diesel Generator for energy production or later on for plastic production."
+			]
 			id: "07ADCEF6CBA17D58"
 			min_width: 240
 			tasks: [{
@@ -857,11 +1134,24 @@
 		}
 		{
 			dependencies: ["34174912779DA609"]
+			description: [
+				"The Refinery is a multiblock used to transform 1 or 2 fluids into an another one."
+				""
+				"It processes a recipe every tick and requires 80FE/t."
+				""
+				"Some recipes requires an item, this is a catalyst, it will not be consumed."
+			]
 			hide_dependency_lines: true
 			icon: "immersiveengineering:refinery"
 			id: "594769AAF1003A2C"
 			min_width: 240
 			progression_mode: "linear"
+			rewards: [{
+				count: 8
+				id: "7DCEF9DBD7DC7C30"
+				item: "thermal:iron_plate"
+				type: "item"
+			}]
 			tasks: [
 				{
 					count: 16L
@@ -905,10 +1195,31 @@
 		}
 		{
 			dependencies: ["7110C31E1355AFBB"]
+			description: [
+				"The Arc Furnace is a huuuge multiblock. You'll need it to unlock Powah and The Undergarden."
+				""
+				"Once powered and filled with 3 Graphite Electrodes it's ready to run."
+				""
+				"Beware, as some craft can ask a huge amount of energy! You can see that by hovering over the progress around in JEI."
+			]
 			icon: "immersiveengineering:arc_furnace"
 			id: "25544587CC944FCB"
 			min_width: 240
 			progression_mode: "linear"
+			rewards: [
+				{
+					count: 4
+					id: "46087BF1C70DE968"
+					item: "thermal:steel_block"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2513E45F9898BC45"
+					table_id: 2906495613024368745L
+					type: "choice"
+				}
+			]
 			size: 1.25d
 			tasks: [
 				{
@@ -970,9 +1281,11 @@
 		}
 		{
 			dependencies: ["25544587CC944FCB"]
+			description: ["Dielectric Paste is used everywhere in Powah, craft some to unlock it."]
 			id: "460A47E0362D9799"
 			min_width: 240
 			tasks: [{
+				count: 64L
 				id: "14FAC648D86FD49D"
 				item: "powah:dielectric_paste"
 				type: "item"
@@ -989,6 +1302,12 @@
 			id: "3D7DCB797F62F537"
 			min_width: 240
 			progression_mode: "linear"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "23EC4A794D90F5EF"
+				table_id: 3648746186656892211L
+				type: "choice"
+			}]
 			size: 1.25d
 			tasks: [
 				{
@@ -1042,10 +1361,43 @@
 				"07ADCEF6CBA17D58"
 				"315C6FF2F745F80A"
 			]
+			description: [
+				"The Diesel Generator will be your main source of energy for a loooong time."
+				""
+				"It produces 4096FE/t at the cost of 1000mb of Biodiesel every 250 ticks (There are 20 ticks per second so 12.5 seconds)."
+				""
+				"If you're tired of running into energy issues or want to run big machineries like the Ore Excavator, that's your way to go."
+				""
+				"Passiving Biodiesel will be your first tough task but with patience you can do it! Next page will give you a quick step by step tutorial to do so:"
+				"{@pagebreak}"
+				"1. Machinery connection: Connect your Squeezer and Fermenter output to your 2 Refinery inputs and then your Refinery output to your Diesel Generator input using Mechanical Pipes from Mekanism."
+				""
+				"2. Crops production: You can passively product crops with the use of Garden Cloches at the cost of energy and water. Water can easily be obtained with the help of a Mekanism Electric Pump. Connect the Electric Pump output to the Garden Cloches inputs and then connect the Garden Cloches output to the Squeezer and Fermenter inputs using Logistical Transporter from Mekanism."
+				""
+				"3. Setting up Plant Oil: Your best option are Industrial Hemp Seeds, you can deal with the fibers production simply by sending them to a drawer before reaching the Squeezer Input. You need 7 Garden Cloches to keep up on Plant Oil production."
+				""
+				"4. Setting up Ethanol: Your best option are Glow Berries, it doesn't even have a secondary output! You need 13 Garden Cloches to keep up on Ethanol Production. (Technically melons would produce more Ethanol by using a Precision Sawmill, but due to the longer processing time in the Fermenter that would create, the energy usage of it would be too big to end up being useful.)"
+				""
+				"5. Check up: Make sure every machines are properly connected to the energy system and are up and running."
+			]
 			icon: "immersiveengineering:diesel_generator"
 			id: "0E3CE979A136068A"
 			min_width: 240
 			progression_mode: "linear"
+			rewards: [
+				{
+					count: 16
+					id: "4CBBAB203F94D682"
+					item: "thermal:steel_ingot"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4A7AEA9704C28524"
+					table_id: 7964138621625033517L
+					type: "choice"
+				}
+			]
 			size: 1.25d
 			tasks: [
 				{
@@ -1084,7 +1436,7 @@
 					type: "item"
 				}
 			]
-			title: "Big machines for big energy for even more big machines"
+			title: "Diesel Generator"
 			x: 9.25d
 			y: -1.5d
 		}
@@ -1120,6 +1472,11 @@
 				"58D275BD01AC2B1C"
 				"2AFBDF3213FABA18"
 			]
+			description: [
+				"Craft a HOP Graphite Ingot."
+				""
+				"This is where Coke starts to get into real use, if you don't have multiple Coke Oven already now maybe is the time to change that."
+			]
 			id: "429BA86F904409C9"
 			min_width: 240
 			tasks: [{
@@ -1133,6 +1490,7 @@
 		}
 		{
 			dependencies: ["429BA86F904409C9"]
+			description: ["Graphite Rods are used in the Arc Furnace, you need 3 to run it and will slowly wear out."]
 			id: "7110C31E1355AFBB"
 			min_width: 240
 			tasks: [{
@@ -1152,6 +1510,11 @@
 		}
 		{
 			dependencies: ["38F8CADA7CDAB49F"]
+			description: [
+				"Mix Acetaldehyde and Creosote Oil inside a Refinery to make Phenolic Resin!"
+				""
+				"You don't need a lot for now, just enough to make your first PneumaticCraft machineries."
+			]
 			id: "598EECDD8CA3E189"
 			min_width: 240
 			tasks: [{
@@ -1166,6 +1529,12 @@
 			dependencies: [
 				"4F862AF46BF14A60"
 				"594769AAF1003A2C"
+			]
+			description: [
+				"Refine Ethanol inside a Refinery to make some Acetaldedyde!"
+				""
+				""
+				"hey... psst, don't tell anyone but you only need 6 buckets of those until chapter 8+..."
 			]
 			id: "38F8CADA7CDAB49F"
 			min_width: 240
@@ -1182,6 +1551,11 @@
 				"598EECDD8CA3E189"
 				"12F11AF15831DE43"
 			]
+			description: [
+				"Bottle your Phenolic Resin into Duroplast Sheets."
+				""
+				"You can automate that process by recolting both output, sending the Plate Mold back into a dropper and the Duroplast Sheets into a drawer."
+			]
 			id: "39A50046284C5EA0"
 			min_width: 240
 			size: 1.0d
@@ -1195,10 +1569,23 @@
 		}
 		{
 			dependencies: ["34174912779DA609"]
+			description: [
+				"The Bottling Machine is a multiblock mainly used to Make Duroplast Sheet out of Phenolic Resin."
+				""
+				"It processes a recipe every ... seconds and requires 8FE/t."
+				""
+				"It has no HUD, fill the fluid buffer with the use of pipes and drop the item as you would do for a Metal Press to make it work."
+			]
 			icon: "immersiveengineering:bottling_machine"
 			id: "12F11AF15831DE43"
 			min_width: 240
 			progression_mode: "linear"
+			rewards: [{
+				count: 2
+				id: "29A6735C1B682AF8"
+				item: "immersiveengineering:component_iron"
+				type: "item"
+			}]
 			tasks: [
 				{
 					count: 3L
@@ -1241,11 +1628,18 @@
 		}
 		{
 			dependencies: ["34174912779DA609"]
+			description: ["The Assembler can automatically make crafting recipes for you! It's quite big so if you don't feel like you require it as a moment wait and get better alternatives later on."]
 			hide_dependency_lines: true
 			icon: "immersiveengineering:assembler"
 			id: "7D7D82F2D0FC0098"
 			min_width: 240
 			progression_mode: "linear"
+			rewards: [{
+				count: 8
+				id: "15D5F0B4E95B59E6"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
 			tasks: [
 				{
 					count: 9L
@@ -1290,11 +1684,18 @@
 		}
 		{
 			dependencies: ["34174912779DA609"]
+			description: ["The Automated Engineer's Workbench can automatically make Engineer's Workbench recipes for you! You won't need it for now but it'll definitely come to use later on in your adventure."]
 			hide_dependency_lines: true
 			icon: "immersiveengineering:auto_workbench"
 			id: "7B2D4ED93B47ECB2"
 			min_width: 240
 			progression_mode: "linear"
+			rewards: [{
+				count: 8
+				id: "339483DE59E22844"
+				item: "thermal:steel_ingot"
+				type: "item"
+			}]
 			tasks: [
 				{
 					count: 5L
@@ -1338,6 +1739,15 @@
 		}
 		{
 			dependencies: ["460A47E0362D9799"]
+			description: [
+				"The Energizing Orb is the main machinery of Powah. It will be used to craft all of its future materials."
+				""
+				"To make it work, simply put your items inside of it and give power to an Energizing Rod in a range of 4 blocks around it."
+				""
+				"Energizing Rods have a speed limit on how much energy they can send represented by their \"Max I/O\". You can upgrade them or use multiple on a same Energizing Rods to unlock faster speeds."
+				""
+				"(In the case where an Energizing Rod is in the range of 2 Energizing Orbs you can use the Powah wrench to force connection of a Rod to a specific Orb )"
+			]
 			icon: "powah:energizing_orb"
 			id: "187BE2A259075C18"
 			min_width: 240
@@ -1373,6 +1783,11 @@
 		}
 		{
 			dependencies: ["187BE2A259075C18"]
+			description: [
+				"Energized Steel is the first tier material of Powah, meaning you can now upgrade your Energizing Rods to the next tier."
+				""
+				"It will be used a lot through your adventure and is required to unlock Thermal Series but for now it unlocks you some cool upgrades, check them out!"
+			]
 			id: "024BC686F691E558"
 			min_width: 240
 			size: 1.25d
@@ -1386,6 +1801,7 @@
 		}
 		{
 			dependencies: ["024BC686F691E558"]
+			description: ["This is the first tier of drawers upgrades. The item tooltip already explains it all so go ahead and make those huge drawers."]
 			id: "782317906021905F"
 			min_width: 240
 			tasks: [{
@@ -1398,6 +1814,15 @@
 		}
 		{
 			dependencies: ["024BC686F691E558"]
+			description: [
+				"Energy Upgrades can be used on Mekanism machinery to reduce their power usage and increase their power buffer."
+				""
+				"Each upgrade gives a x1.33 multiplier boost up to 8 upgrades for a x10 boost."
+				""
+				"You can equip upgrades on a machine by &eShift Right Clicking&r with the upgrades in hand or by using the upgrade menu located on the top right of the machine HUD."
+				""
+				"Yes, that does mean you can make your factories runs at 6FE/t but this will mostly come useful once you unlock Speed Upgrades in chapter 5."
+			]
 			id: "1ED1AD000CDE6819"
 			min_width: 240
 			tasks: [{
@@ -1411,6 +1836,19 @@
 		}
 		{
 			dependencies: ["61C38FC70F3E31F9"]
+			description: [
+				"The Garden Cloche is a machine that can automatially farm crops for you!"
+				""
+				"It requires 8FE/t and a small amount of water to run."
+				""
+				"You can also add fertilizer to make them faster, it will slowly be consumed."
+				""
+				"You can input power at the top side, input water and fertilizer at the bottom and output the crops using the port in the middle front of the machine."
+				""
+				"You can easily automate the water requirement using an Electric Pump and some Mechanical Pipes from Mekanism."
+				""
+				"It comes very useful for biodiesel automation."
+			]
 			hide_dependency_lines: true
 			id: "1948D2DEF9C6F001"
 			min_width: 240
@@ -1456,9 +1894,11 @@
 				"2D1BB8A835207114"
 				"11D604309801EF9C"
 			]
+			description: ["Enhance some Basic Control Circuit with Infused Alloys to craft your firsts Advanced Control Circuits."]
 			id: "0D73A83CC62FF6C5"
 			min_width: 240
 			tasks: [{
+				count: 2L
 				id: "68EDC2F3611F213F"
 				item: "mekanism:advanced_control_circuit"
 				type: "item"
@@ -1501,6 +1941,11 @@
 		}
 		{
 			dependencies: ["0D73A83CC62FF6C5"]
+			description: [
+				"When placed upon a block of water the Electric Pump will passively collect 1000mb (millibuckets) of water per second at the cost of 40FE/t."
+				""
+				"It's the perfect tool if you want to run Garden Cloches as an early game farm."
+			]
 			id: "1A0669167235AF6F"
 			min_width: 240
 			tasks: [{
@@ -1513,6 +1958,15 @@
 		}
 		{
 			dependencies: ["34174912779DA609"]
+			description: [
+				"Accumulators are your first way of properly storing energy."
+				""
+				"You can configure their side with your Engineer's Hammer with blue designating input, orange output and no colour preventing any connection at all. (&eShift Click&r to configure the opposite side)."
+				""
+				"LV Accumulators can store up to 250k FE, not the best but you can upgrade them!"
+				""
+				"Beware, as upgrading an accumulator will delete its store energy."
+			]
 			id: "1DF55EFE519AC8E9"
 			min_width: 240
 			tasks: [{
@@ -1525,6 +1979,11 @@
 		}
 		{
 			dependencies: ["1DF55EFE519AC8E9"]
+			description: [
+				"MV Accumulators can store up to 1M RF/t."
+				""
+				"This is the best you can get before unlocking HOP Graphite Ingots."
+			]
 			id: "249AB801B7FCAA4C"
 			min_width: 240
 			tasks: [{
@@ -1537,6 +1996,11 @@
 		}
 		{
 			dependencies: ["429BA86F904409C9"]
+			description: [
+				"HV Accumulators can store up to 4M RF."
+				""
+				"Now, this is pretty good! But if you wish to go further you can upgrade them to Mekanism Energy Cubes!"
+			]
 			id: "6127D981D26C152B"
 			min_width: 240
 			tasks: [{
@@ -1549,6 +2013,11 @@
 		}
 		{
 			dependencies: ["34174912779DA609"]
+			description: [
+				"The Reinforced Blast Furnace is a straight upgrade to the Blast Furnace, it can be automated and sped up with the use of Blast Furnace Preheaters."
+				""
+				"However, using your steel on unlocking the Mekanism Steel recipe asap is probably a better option. You'll need those 27 Reinforced Blast Brick for the Arc Furnace later in this chapter."
+			]
 			hide_dependency_lines: true
 			icon: "immersiveengineering:advanced_blast_furnace"
 			id: "2BB1954D53DBC92C"
@@ -1578,6 +2047,11 @@
 		}
 		{
 			dependencies: ["34174912779DA609"]
+			description: [
+				"External Heaters can heat up close blocks like furnaces at the cost of energy, removing their fuel cost."
+				""
+				"While it might not look to be the most useful thing at the moment, it'll also be able to heat up PneumaticCraft machinery in chapter 5 which may end up being very useful."
+			]
 			hide_dependency_lines: true
 			id: "212EB0CAB00348FD"
 			min_width: 240
@@ -1592,6 +2066,7 @@
 				item: "immersiveengineering:furnace_heater"
 				type: "item"
 			}]
+			title: "How to get coal in Minecraft? (The 46 minutes tutorial)"
 			x: 1.5d
 			y: -3.5d
 		}
@@ -1600,6 +2075,7 @@
 				"2BB1954D53DBC92C"
 				"212EB0CAB00348FD"
 			]
+			description: ["At the cost of energy, the Blast Furnace Preheaters can speed up the Blast Furnace when put on its left and right side."]
 			id: "62BED9A6CA93EBFF"
 			min_width: 240
 			rewards: [{
@@ -1619,13 +2095,21 @@
 		}
 		{
 			dependencies: ["26DE28EB32A47D88"]
+			description: ["You can put items inside your Charging Station to... well charge them."]
 			id: "137A6D891677A042"
 			min_width: 240
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5C8216E92F4CA6CC"
+				table_id: 4360241531693924414L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "2B12D0D9470C2B56"
 				item: "immersiveengineering:charging_station"
 				type: "item"
 			}]
+			title: "Hey bro, got a charger?"
 			x: 2.75d
 			y: -1.5d
 		}
@@ -1653,6 +2137,13 @@
 		}
 		{
 			dependencies: ["338C75F201A6B9DE"]
+			description: [
+				"Cheaper steel!"
+				""
+				"With the use of your Metallurgic infuser you can make steel much faster!"
+				""
+				"However, before doing so you might want to unlock the Enrichment Chamber which can multiply your carbon input by 8."
+			]
 			id: "1121C66EB54346AE"
 			min_width: 240
 			tasks: [{
@@ -1665,10 +2156,21 @@
 		}
 		{
 			dependencies: ["30C16811BB92E249"]
+			description: [
+				"Compacting Drawers works the same way as normal drawers but will automatically compress and decompress for you."
+				""
+				"Useful if you regularly need nuggets / blocks or simply for a huge storage."
+			]
 			hide_dependency_lines: true
 			icon: "functionalstorage:compacting_drawer"
 			id: "3618DCAF2B312EB8"
 			min_width: 240
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4567ACB445D94E81"
+				table_id: 9138963153627168708L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "31FE2CAD02675A19"
 				item: {
@@ -1698,7 +2200,7 @@
 				title: "Any Compacting Drawer"
 				type: "item"
 			}]
-			title: "Compacting Drawers"
+			title: "Compacting no more!"
 			x: -0.25d
 			y: -2.25d
 		}
@@ -1753,6 +2255,11 @@
 		}
 		{
 			dependencies: ["2D1BB8A835207114"]
+			description: [
+				"Tier Installers can be used on your Mekanism machinery to upgrade it into factories! (&eShift+RightClick&r)"
+				""
+				"Basic Factories have 3 slots."
+			]
 			id: "57F89AE2FB5431B2"
 			min_width: 240
 			tasks: [{
