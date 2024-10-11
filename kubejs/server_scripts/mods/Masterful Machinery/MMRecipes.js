@@ -1,21 +1,21 @@
 MMEvents.createProcesses(event => {
 
-    //Soul Catcher
-    const mobs = [
-        {mob: 'zombie',},
-        {mob: 'witch',},
-        {mob: 'enderman',},
-        {mob: 'shulker',}
-    ]
+    ////Soul Catcher
+    //const mobs = [
+    //    {mob: 'zombie',},
+    //    {mob: 'witch',},
+    //    {mob: 'enderman',},
+    //    {mob: 'shulker',}
+    //]
 
-    mobs.forEach((mobs) => {
-        event.create("mm:"+mobs.mob+"_soul_catcher_crafting")
-            .structureId("mm:soul_catcher_"+mobs.mob)
-            .ticks(100)
-            .input({type: "mm:input/consume", ingredient: { type: "mm:item", item: "enderio:empty_soul_vial", count: 1}})
-            .input({type: "mm:input/consume", ingredient: {type: "mm:energy", amount: 102400}})
-            .output({type: "mm:output/simple", ingredient: {type: "mm:item", item: "kubejs:"+mobs.mob+"_soul_vial", count: 1}}) 
-    })
+    //mobs.forEach((mobs) => {
+    //    event.create("mm:"+mobs.mob+"_soul_catcher_crafting")
+    //        .structureId("mm:soul_catcher_"+mobs.mob)
+    //        .ticks(100)
+    //        .input({type: "mm:input/consume", ingredient: { type: "mm:item", item: "enderio:empty_soul_vial", count: 1}})
+    //        .input({type: "mm:input/consume", ingredient: {type: "mm:energy", amount: 102400}})
+    //        .output({type: "mm:output/simple", ingredient: {type: "mm:item", item: "kubejs:"+mobs.mob+"_soul_vial", count: 1}}) 
+    //})
 
     //The Vat
     function vat(output, outputcount, name, inputfluid, fluidcount, input1, input2, time, energy){

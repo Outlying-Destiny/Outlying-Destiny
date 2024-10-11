@@ -6,7 +6,7 @@ MMEvents.registerControllers(event => {
             .type("mm:machine");
     }
 
-    controller("Soul Catcher")
+    //controller("Soul Catcher")
     controller("The Vat")
     
 })

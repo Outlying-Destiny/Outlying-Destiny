@@ -2,4 +2,7 @@
 asyncRecipeSearching = true
 #Whether use vbo for preview page rendering.
 useVBO = true
+#Duration of the multiblock in-world preview (s)
+#Range: 1 ~ 999
+multiblockPreviewDuration = 10
 

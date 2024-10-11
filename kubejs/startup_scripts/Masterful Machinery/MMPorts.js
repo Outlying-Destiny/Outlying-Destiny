@@ -63,7 +63,7 @@ MMEvents.registerPorts(event => {
     port("The Vat Tiny Energy Port", "mm:the_vat", 3, 512)
 
     //Soul Catcher
-    port("Soul Catcher Tiny Item Port", "mm:soul_catcher", 1, [1, 1])
-    port("Soul Catcher Small Energy Port", "mm:soul_catcher", 3, 1024)
+    //port("Soul Catcher Tiny Item Port", "mm:soul_catcher", 1, [1, 1])
+    //port("Soul Catcher Small Energy Port", "mm:soul_catcher", 3, 1024)
 
 })
