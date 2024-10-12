@@ -1,4 +1,4 @@
-// 1.20.1	2024-10-06T01:30:06.5940977	Loot Tables
+// 1.20.1	2024-10-12T01:41:10.6675121	Loot Tables
 98815cf5037c2168ade155e8ae96275c258ee270 data/mm/loot_tables/blocks/base_small_energy_port_input.json
 372fcbb6cba5c7d609fe6f67971a5e99b59c37eb data/mm/loot_tables/blocks/base_small_energy_port_output.json
 bfd1c1ccb67422900c8c3b0cb158fe99787eae29 data/mm/loot_tables/blocks/base_small_fluid_port_input.json
@@ -9,11 +9,6 @@ a6810da53500ed4b74ff3e6c478b0ba7f62c03fb data/mm/loot_tables/blocks/base_tiny_fl
 9feb5aad679791f32c2640749bf340e4fb6698af data/mm/loot_tables/blocks/base_tiny_fluid_port_output.json
 33636afd3ee3a07e2391607c611552f482b45124 data/mm/loot_tables/blocks/base_tiny_item_port_input.json
 0b392251b51a29bb0125a4e0c24e9a051cce185a data/mm/loot_tables/blocks/base_tiny_item_port_output.json
-e76d6dc4c74765a0438ec682bd351811a1f56d97 data/mm/loot_tables/blocks/soul_catcher.json
-66818481d31af98dae66f0a0846b5b67e9aea106 data/mm/loot_tables/blocks/soul_catcher_small_energy_port_input.json
-67f9329d47eed69fb7faa0c19dfa2c473730250e data/mm/loot_tables/blocks/soul_catcher_small_energy_port_output.json
-2c1267296ac5c966dd933dcbb7e956621109fa10 data/mm/loot_tables/blocks/soul_catcher_tiny_item_port_input.json
-629bdf94bd5158a0dc7a56135217246d55cdcf11 data/mm/loot_tables/blocks/soul_catcher_tiny_item_port_output.json
 636d7ca6df165de4ef6d22c5b3e2cdbeabe94278 data/mm/loot_tables/blocks/the_vat.json
 9319915413a94b00987bb815fd9f4f6b3c79d51b data/mm/loot_tables/blocks/the_vat_small_fluid_port_input.json
 4515a034b49253b28a43da2fd075db95c8735b1a data/mm/loot_tables/blocks/the_vat_small_fluid_port_output.json
