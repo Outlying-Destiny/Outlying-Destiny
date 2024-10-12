@@ -11,8 +11,18 @@
 	quests: [
 		{
 			dependencies: ["1D8893FD9B6AA44A"]
+			description: [
+				"You now have access to the Twilight Forest, simply throw your Token of Twilight in a 2x2 pond of water surrounded by flowers (corner included) and jump into the portal!"
+				""
+				"Beware, the Token of Twilight will be consumed, make sure you create your portal in an appropriate spot unless you want to craft a new token."
+				""
+				"Here's a preview of the unlit portal"
+				""
+				"{image:kubejs:textures/ftbquests/twilightforest/portal.png width:100 height:100 align:center}"
+			]
 			disable_toast: true
 			id: "3D422E8282D4F5A6"
+			min_width: 300
 			size: 1.75d
 			tasks: [{
 				dimension: "twilightforest:twilight_forest"
@@ -28,6 +38,7 @@
 			dependencies: ["3D422E8282D4F5A6"]
 			hide_dependency_lines: true
 			id: "6F0EF63762F1F6F0"
+			min_width: 300
 			tasks: [{
 				id: "5DC8938769D2C1EC"
 				item: "twilightforest:ironwood_ingot"
@@ -39,6 +50,7 @@
 		{
 			dependencies: ["2FA7D0A1BDC21418"]
 			id: "760CF1D73B65EB17"
+			min_width: 300
 			tasks: [{
 				id: "5AE0790C2C1707F6"
 				item: "twilightforest:carminite"
@@ -50,6 +62,7 @@
 		{
 			dependencies: ["3D422E8282D4F5A6"]
 			id: "1DFB4B8EAD81B680"
+			min_width: 300
 			tasks: [{
 				id: "5EC9BC0C40F231A5"
 				item: "kubejs:your_soul"
@@ -61,6 +74,7 @@
 		{
 			dependencies: ["3D422E8282D4F5A6"]
 			id: "778298921C4A2EC0"
+			min_width: 300
 			tasks: [{
 				id: "3E97820C52E37084"
 				item: {
@@ -86,6 +100,7 @@
 				"5BD91F6B151934B2"
 			]
 			id: "292D49D365627177"
+			min_width: 300
 			rewards: [{
 				id: "0C5B6DFB09129527"
 				item: {
@@ -110,7 +125,13 @@
 		}
 		{
 			dependencies: ["5FE1BA0649DB77B6"]
+			description: [
+				"Get some Ingots of the Skies by offering to the Gods."
+				""
+				"Green steel is fashion out there, you know?"
+			]
 			id: "75E0E9C5F8E23B7E"
+			min_width: 300
 			size: 1.25d
 			tasks: [{
 				id: "19A816B972D3D2B7"
@@ -124,6 +145,7 @@
 			dependencies: ["3D422E8282D4F5A6"]
 			hide_dependency_lines: true
 			id: "5BD91F6B151934B2"
+			min_width: 300
 			tasks: [{
 				id: "44B03B9CC6D72DAD"
 				item: "twilightforest:steeleaf_ingot"
@@ -135,6 +157,7 @@
 		{
 			dependencies: ["3D422E8282D4F5A6"]
 			id: "13AF7E44071C9703"
+			min_width: 300
 			tasks: [{
 				id: "6D597CB6E47CA850"
 				item: "twilightforest:magic_map"
@@ -146,6 +169,7 @@
 		{
 			dependencies: ["1F9021F87B5C3FF0"]
 			id: "2191E8D6D6172EC4"
+			min_width: 300
 			tasks: [{
 				id: "7EF7BFBB4CEB8E29"
 				item: "twilightforest:knightmetal_ingot"
@@ -157,6 +181,7 @@
 		{
 			dependencies: ["3D422E8282D4F5A6"]
 			id: "1F9021F87B5C3FF0"
+			min_width: 300
 			tasks: [{
 				id: "4CF56032F6062113"
 				item: "twilightforest:naga_trophy"
@@ -168,6 +193,7 @@
 		{
 			dependencies: ["3D422E8282D4F5A6"]
 			id: "2FA7D0A1BDC21418"
+			min_width: 300
 			optional: true
 			tasks: [{
 				id: "67D831BE2288D593"
@@ -181,6 +207,7 @@
 			dependencies: ["292D49D365627177"]
 			hide_dependency_lines: true
 			id: "7E2D6E8C57E87A77"
+			min_width: 300
 			rewards: [{
 				id: "6171CB44C6BCC49D"
 				type: "xp"
@@ -200,6 +227,7 @@
 		{
 			dependencies: ["7E2D6E8C57E87A77"]
 			id: "7EEA9FA7703FBA8E"
+			min_width: 300
 			tasks: [{
 				id: "47C450931DC04851"
 				item: "aether:bronze_dungeon_key"
@@ -211,6 +239,7 @@
 		{
 			dependencies: ["7E2D6E8C57E87A77"]
 			id: "3F8ED1FBB68D88A9"
+			min_width: 300
 			tasks: [{
 				id: "14A87649784D1EFA"
 				item: "aether:silver_dungeon_key"
@@ -222,6 +251,7 @@
 		{
 			dependencies: ["7E2D6E8C57E87A77"]
 			id: "69859C67C5901B5A"
+			min_width: 300
 			tasks: [{
 				id: "0AE60595411C3B05"
 				item: "aether:gold_dungeon_key"
@@ -233,6 +263,7 @@
 		{
 			dependencies: ["7E2D6E8C57E87A77"]
 			id: "4799E888B7150B46"
+			min_width: 300
 			tasks: [{
 				id: "4E5C134D769177F0"
 				item: "lost_aether_content:platinum_key"
@@ -247,6 +278,7 @@
 				"25544587CC944FCB"
 			]
 			id: "4BB54C74F0D1943B"
+			min_width: 300
 			tasks: [{
 				id: "42F5E875BFA3E149"
 				item: "kubejs:neptune_ingot"
@@ -261,6 +293,7 @@
 				"25544587CC944FCB"
 			]
 			id: "57439F6626548971"
+			min_width: 300
 			tasks: [{
 				id: "13E71B0EC674EB78"
 				item: "kubejs:valkyrie_ingot"
@@ -275,6 +308,7 @@
 				"25544587CC944FCB"
 			]
 			id: "5293DBD98F698571"
+			min_width: 300
 			tasks: [{
 				id: "4989BF538523D1D6"
 				item: "kubejs:phoenix_ingot"
@@ -286,6 +320,7 @@
 		{
 			dependencies: ["3C256DAA768A228A"]
 			id: "5319232C39A7D983"
+			min_width: 300
 			tasks: [{
 				id: "4B8E1B913F5470CC"
 				item: "aether:golden_amber"
@@ -300,6 +335,7 @@
 				"442CDA293BACC0E8"
 			]
 			id: "7748DD4DEDD2956C"
+			min_width: 300
 			rewards: [{
 				id: "75809E3A713082D6"
 				item: {
@@ -325,6 +361,7 @@
 		{
 			dependencies: ["050FFC23937BD1E5"]
 			id: "77034701D26CC365"
+			min_width: 300
 			tasks: [{
 				id: "07682F2B59FEDDAF"
 				item: "aether:enchanted_gravitite"
@@ -341,6 +378,7 @@
 				"6E97A56247F2876C"
 			]
 			id: "442CDA293BACC0E8"
+			min_width: 300
 			tasks: [{
 				id: "58026494419F6B36"
 				item: "kubejs:frozen_core"
@@ -355,6 +393,7 @@
 				"5319232C39A7D983"
 			]
 			id: "5CB13A442A89235F"
+			min_width: 300
 			tasks: [{
 				id: "287C44EEC632E6C3"
 				item: "kubejs:enchanted_core"
@@ -369,6 +408,7 @@
 				"1D3DB6932DBB5BFB"
 			]
 			id: "08FC53EB9B71028A"
+			min_width: 300
 			tasks: [{
 				id: "77546E13DFECC5C2"
 				item: "kubejs:base_core"
@@ -380,6 +420,7 @@
 		{
 			dependencies: ["192D223323F4DBD9"]
 			id: "050FFC23937BD1E5"
+			min_width: 300
 			tasks: [{
 				id: "0957B2B23E82D3E5"
 				item: "aether:altar"
@@ -391,6 +432,7 @@
 		{
 			dependencies: ["7E2D6E8C57E87A77"]
 			id: "14722CD89041C019"
+			min_width: 300
 			tasks: [{
 				id: "303B4158923812FF"
 				item: "aether:freezer"
@@ -403,6 +445,7 @@
 			dependencies: ["192D223323F4DBD9"]
 			icon: "aether:skyroot_poison_bucket"
 			id: "1D3DB6932DBB5BFB"
+			min_width: 300
 			tasks: [
 				{
 					id: "01FFE79AE1F1F1DC"
@@ -421,6 +464,7 @@
 		{
 			dependencies: ["14722CD89041C019"]
 			id: "10F9C73EAF18FA70"
+			min_width: 300
 			tasks: [{
 				id: "099AC4D691C2679E"
 				item: "aether:crystal_leaves"
@@ -432,6 +476,7 @@
 		{
 			dependencies: ["7E2D6E8C57E87A77"]
 			id: "192D223323F4DBD9"
+			min_width: 300
 			tasks: [{
 				id: "4A9F5BA6C95D3FA7"
 				item: "aether:ambrosium_shard"
@@ -443,6 +488,7 @@
 		{
 			dependencies: ["57439F6626548971"]
 			id: "3C256DAA768A228A"
+			min_width: 300
 			tasks: [{
 				id: "7B321E1514CB9DD4"
 				item: {
@@ -461,6 +507,7 @@
 			dependencies: ["7748DD4DEDD2956C"]
 			hide_dependency_lines: true
 			id: "3C599A2D8429EAC2"
+			min_width: 300
 			rewards: [{
 				id: "74D77DD02AB7DD09"
 				type: "xp"
@@ -480,6 +527,7 @@
 			dependencies: ["7E2D6E8C57E87A77"]
 			hide_dependency_lines: true
 			id: "6E97A56247F2876C"
+			min_width: 300
 			tasks: [{
 				id: "05998968ADEF2319"
 				item: "aether:aerogel"
@@ -492,6 +540,7 @@
 			dependencies: ["17FB887A20B0F3F3"]
 			icon: "ae2:silicon_press"
 			id: "590A74088180CE70"
+			min_width: 300
 			size: 1.5d
 			tasks: [
 				{
@@ -520,7 +569,9 @@
 		}
 		{
 			dependencies: ["7E2D6E8C57E87A77"]
+			description: ["Meteor HAPPENS"]
 			id: "17FB887A20B0F3F3"
+			min_width: 300
 			tasks: [{
 				id: "4790C836EB8299EA"
 				item: "ae2:meteorite_compass"
@@ -532,6 +583,7 @@
 		{
 			dependencies: ["3C599A2D8429EAC2"]
 			id: "5AEDAD35B03A84E4"
+			min_width: 300
 			size: 1.5d
 			tasks: [{
 				id: "357A4D46E23F16A6"
@@ -544,6 +596,7 @@
 		{
 			dependencies: ["3C599A2D8429EAC2"]
 			id: "5BC624A4BBCF1D2F"
+			min_width: 300
 			tasks: [{
 				id: "68E2D059B0539870"
 				item: "undergarden:forgotten_nugget"
@@ -555,6 +608,7 @@
 		{
 			dependencies: ["3C599A2D8429EAC2"]
 			id: "4AB5F799E3C6C135"
+			min_width: 300
 			tasks: [{
 				id: "06CA4F70D23B5CD8"
 				item: "undergarden:virulent_mix_bucket"
@@ -569,6 +623,7 @@
 				"5BC624A4BBCF1D2F"
 			]
 			id: "15B426B7F38F91FF"
+			min_width: 300
 			size: 1.5d
 			tasks: [{
 				id: "0E28706B359A6852"

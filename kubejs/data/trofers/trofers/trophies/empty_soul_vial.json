@@ -1,0 +1,23 @@
+{
+    "name": {
+      "color": "#cfc7b3",
+      "text": "Soul Master's Trophy"
+    },
+    "animation":{
+        "type": "spinning",
+        "speed": 0.2
+    },
+    "display": {
+      "offset": {
+          "y": 1.5
+      },
+      "scale": 1
+    },
+    "item": {
+      "type": "forge:nbt", "item": "enderio:filled_soul_vial", "nbt": "{BlockEntityTag:{EntityStorage:{Entity:{id:'minecraft:zombie'}}}}"
+    },
+    "colors": {
+      "base": "#312c36",
+      "accent": "#cfc7b3"
+    }
+  }

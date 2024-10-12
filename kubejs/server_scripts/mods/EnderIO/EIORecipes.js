@@ -360,40 +360,14 @@ ServerEvents.recipes(event => {
     })
 
     //Soul Catcher
-    event.shaped(
-      '8x kubejs:ensouled_frame', [
-      'AAA',
-      'ABA',
-      'AAA'
-      ], {
-      A: 'thermal_extra:soul_infused_ingot',
-      B: 'enderio:ensouled_chassis'
-      }
-    )
+    event.shaped('kubejs:soul_catcher', ['ABA','CDC','EFE'], {A: 'thermal_extra:soul_infused_ingot',B: 'enderio:empty_soul_vial',C: 'enderio:prescient_crystal',D: 'enderio:ensouled_chassis',E: 'thermal_extra:soul_infused_gear',F: 'enderio:frank_n_zombie'})
 
-    event.shaped(
-      'mm:soul_catcher', [
-      'ABA',
-      'CDC',
-      'EFE'
-      ], {
-      A: 'thermal_extra:soul_infused_ingot',
-      B: 'enderio:empty_soul_vial',
-      C: 'enderio:double_layer_capacitor',
-      D: 'kubejs:ensouled_frame',
-      E: 'thermal_extra:soul_infused_gear',
-      F: 'enderio:frank_n_zombie'
-      }
-    )
+    //event.shaped('8x kubejs:ensouled_frame', ['AAA','ABA','AAA'], {A: 'thermal_extra:soul_infused_ingot',B: 'enderio:ensouled_chassis'})
 
-    const scport = [
-      {port:'tiny_item_port_input'},
-      {port:'tiny_item_port_output'},
-      {port:'small_energy_port_input'}
-    ]
-    scport.forEach((port) => {
-      event.shapeless("mm:soul_catcher_"+port.port,["mm:base_"+port.port, 'kubejs:ensouled_frame'])
-    })
+    //const scport = [{port:'tiny_item_port_input'},{port:'tiny_item_port_output'},{port:'small_energy_port_input'}]
+    //scport.forEach((port) => {
+    //  event.shapeless("mm:soul_catcher_"+port.port,["mm:base_"+port.port, 'kubejs:ensouled_frame'])
+    //})
 
     
 })

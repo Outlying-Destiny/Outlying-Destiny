@@ -13,7 +13,7 @@
 			description: ["No, seriously, there's nothing to be said in here. Did you read all of the previous quests? They're useful, don't miss out!"]
 			icon: "minecraft:oak_log"
 			id: "0A3D05D5F3E9C113"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 4
 				id: "3BD5B2AB228AC476"
@@ -46,7 +46,7 @@
 				"You can also combine a Crafting Table with a Stick to be able to access your crafting table directly from your inventory."
 			]
 			id: "3734A5BF783739BE"
-			min_width: 240
+			min_width: 300
 			rewards: [
 				{
 					id: "6DDC32CB4B6A0F56"
@@ -72,7 +72,7 @@
 			dependencies: ["491A6D808994797B"]
 			description: ["Ever wished to go camping? No? Well too bad, time to make a Campfire!"]
 			id: "65DB6A7BE6098186"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 4
 				id: "73FDD0AEE4DA2B39"
@@ -92,7 +92,7 @@
 			dependencies: ["3734A5BF783739BE"]
 			description: ["Remember to use your Ultimine capabilities when mining! You can read the &c&lImportant:&r Quest about it for more information."]
 			id: "491A6D808994797B"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 8
 				id: "53D61742583746EE"
@@ -121,7 +121,7 @@
 			]
 			description: ["Smelt some Raw Iron in a Campfire to get some Iron Fragments."]
 			id: "1DD3363A37D52A83"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				id: "709A3AA123C09EBC"
 				type: "xp"
@@ -140,7 +140,7 @@
 			dependencies: ["1DD3363A37D52A83"]
 			description: ["Convert your Iron Fragments into nuggets then convert them back into ingots! This method is very inefficient however, so rush for your first furnace!"]
 			id: "616F8356C06E4806"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 2
 				id: "3763C0E2BD620E86"
@@ -165,7 +165,7 @@
 				"At least you're iron efficient now."
 			]
 			id: "23E48C4BA203C8F8"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				id: "32BDE232BBAA2CD0"
 				item: "minecraft:coal_block"
@@ -225,7 +225,7 @@
 				"If you want to upgrade a chest that is already full of items, don't worry you can craft chest upgrdes that you can directly apply to chest without breaking them!"
 			]
 			id: "12D98F2C5144106B"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				id: "0647A8438D1B755A"
 				item: "sophisticatedstorage:basic_to_copper_tier_upgrade"
@@ -258,7 +258,7 @@
 				"Now that's compact!"
 			]
 			id: "310DA632419037E0"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				id: "694275512FDE1C0D"
 				item: "sophisticatedstorage:basic_to_iron_tier_upgrade"
@@ -289,7 +289,7 @@
 				"Go on, make those leaves shiny."
 			]
 			id: "699B23728F627B1F"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 16
 				id: "52430D7CADBBA475"
@@ -326,6 +326,7 @@
 			]
 			icon: "naturesaura:wood_stand"
 			id: "5D8C90FA217A52DB"
+			min_width: 300
 			rewards: [
 				{
 					id: "5C3B8EED4DB0E5E5"
@@ -392,7 +393,7 @@
 				"Curios equippable items always have their Curios slot written below their name."
 			]
 			id: "396CD1AA6DFF7101"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 2
 				id: "11B3E05C9D2E143E"
@@ -415,7 +416,7 @@
 			]
 			description: ["Upgrade your Backpack into a Diamond Backpack! It has 108 slots. You'll never be scared of a full inventory again!... or will you?"]
 			id: "64ADE730978A941F"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 4
 				id: "2468F77C30113DC9"
@@ -435,7 +436,7 @@
 			dependencies: ["616F8356C06E4806"]
 			description: ["The Nature's Compass allows you to search for any specific biome and points you towards the closest! Less explory, more time effective."]
 			id: "61564C699FF6C285"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "35239C41BCD5164C"
@@ -469,7 +470,7 @@
 				"You can switch between modes by using &eShift + Right Click&r while not looking at a drawer"
 			]
 			id: "13195133741568D5"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 6
 				id: "4F04B189C785BA9A"
@@ -493,7 +494,7 @@
 				"Beautiful, rare and yet so useful."
 			]
 			id: "3DA41078DF459632"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 2
 				id: "7F2D751F51F5B841"
@@ -514,7 +515,7 @@
 			dependencies: ["616F8356C06E4806"]
 			description: ["Mine some good old redstone!"]
 			id: "4F27C10BCFCC365F"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 12
 				id: "6DA188DC547B6484"
@@ -535,7 +536,7 @@
 			dependencies: ["491A6D808994797B"]
 			description: ["Now that's modded! Wait, no that's the next quest... Time to mine!"]
 			id: "5F2E88EBE7506C76"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "6139B4C7EED2C127"
@@ -560,7 +561,7 @@
 				"What's Gold but a material to make way better alloys anyway?"
 			]
 			id: "6402629A93101A90"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 4
 				id: "0EA660EB2A5BDAFA"
@@ -584,7 +585,7 @@
 				"Don't kill the cows please :("
 			]
 			id: "72EB2ED8D9D7B364"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 4
 				id: "100077C579132A7E"
@@ -609,7 +610,7 @@
 				"Once again, don't forget to use Ultimine!"
 			]
 			id: "6AD41103407CF7B6"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 2
 				id: "486C7E03493747D8"
@@ -634,7 +635,7 @@
 				"You can find them between y=-40 and y=14."
 			]
 			id: "2B9C8EF454CAFCB8"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 8
 				id: "3DB0B3F77A7D9802"
@@ -659,7 +660,7 @@
 				"You can find them anywhere below y=2."
 			]
 			id: "581158A159C3EB4C"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				id: "28A82AA7C4893E8A"
 				item: "forbidden_arcanus:rune"
@@ -687,7 +688,7 @@
 				"Don't you love gambling?"
 			]
 			id: "4017262C83944767"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "36808ED36A8A4EE8"
@@ -765,7 +766,7 @@
 				"Those \"Questbooks\" of yours didn't exist yet!"
 			]
 			id: "555D82860FDAE970"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 6
 				id: "4D321CB0FBD55B5D"
@@ -1006,7 +1007,7 @@
 				"Try filling one with lava when you see some, you might need it sooner or later."
 			]
 			id: "09444885C0D635F8"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				id: "0E8251769A9A810A"
 				item: "minecraft:lava_bucket"
@@ -1041,7 +1042,7 @@
 				"Red Alloy Wires are also just way more lag free."
 			]
 			id: "36AC0722D684C4F4"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				id: "564C7827E0F21A94"
 				item: "projectred_integration:timer_gate"
@@ -1070,7 +1071,7 @@
 			]
 			icon: "mysticalagradditions:supremium_paxel"
 			id: "6735C90A27B2216A"
-			min_width: 240
+			min_width: 300
 			tasks: [{
 				id: "55248E7C56E66F0C"
 				title: "&c&lImportant: Ultimine"

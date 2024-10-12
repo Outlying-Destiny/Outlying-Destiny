@@ -23,7 +23,7 @@
 			]
 			disable_toast: true
 			id: "6A6013A1C9916483"
-			min_width: 240
+			min_width: 300
 			size: 1.25d
 			tasks: [{
 				id: "46211EEBD016520E"
@@ -40,7 +40,7 @@
 			disable_toast: true
 			hide: false
 			id: "0923A0F326E0153D"
-			min_width: 240
+			min_width: 300
 			size: 1.25d
 			tasks: [{
 				count: 36L
@@ -68,7 +68,7 @@
 			]
 			icon: "immersiveengineering:coke_oven"
 			id: "163B6909663DDA70"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 2
 				id: "3751C2C7F1BCA484"
@@ -93,7 +93,7 @@
 				"You can also find them in mines if you're lucky."
 			]
 			id: "001AEB901C551C90"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 2
 				id: "2DEF14685408DEAF"
@@ -114,7 +114,7 @@
 			dependencies: ["0923A0F326E0153D"]
 			description: ["Smelt some netherrack to get Nether Bricks."]
 			id: "35B2842413B6586C"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 16
 				id: "2791F8A1D939B352"
@@ -150,7 +150,7 @@
 			]
 			icon: "immersiveengineering:blast_furnace"
 			id: "610C537DA0A2AD77"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				id: "546EE9CC417561E0"
 				item: "immersiveengineering:manual"
@@ -179,7 +179,7 @@
 			]
 			icon: "immersiveengineering:alloy_smelter"
 			id: "56A7B01838A02347"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "0D25975066067C9D"
@@ -200,7 +200,7 @@
 			dependencies: ["6A6013A1C9916483"]
 			description: ["The Engineer hammer is the main tool of Immersive Engineering (IE), it is mainly used to complete the construction of IE multiblocks."]
 			id: "61BF92491E596D74"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				id: "0681EC663C0DEAC8"
 				item: {
@@ -237,7 +237,7 @@
 				"If the Coke Oven Creosote Oil tank is full it will stop producing. Make a tank to store it, or use a trashcan if you're so desesperate."
 			]
 			id: "49CB87276BB136AA"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				id: "39D862E2D87286F6"
 				item: "trashcans:liquid_trash_can"
@@ -256,7 +256,7 @@
 			dependencies: ["49CB87276BB136AA"]
 			description: ["Dip some planks inside Creosote Oil and get some Treated Wood."]
 			id: "679F2CA5C993DE97"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 16
 				id: "0F904202B2E70095"
@@ -281,7 +281,7 @@
 				"Coke Dust is also used to produce HOP Graphite Dust which you'll need in great quantities later on, so make sure you keep producing Coke constantly by automating your Coke Ovens."
 			]
 			id: "6DA318B2DC301A67"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 4
 				id: "1D85DEA8762315F1"
@@ -307,7 +307,7 @@
 				"Keep it up!"
 			]
 			id: "30C16811BB92E249"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 8
 				id: "5DD14121765085EB"
@@ -334,7 +334,7 @@
 			]
 			icon: "immersiveengineering:workbench"
 			id: "61C38FC70F3E31F9"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "7838A55BC72E0205"
@@ -371,9 +371,11 @@
 				"0C062A3E4CE595B8"
 			]
 			description: [
-				"Build the Metal Press! It'll serve you as your first way to make several components like plates, rods, gears and wires."
+				"Build the Metal Press! You can check how to build it by using your Engineer's Manual and by then click on the red block with your Engineer's Hammer."
 				""
-				"However, this multiblock requires power to work which means you need to produce some and redirect it to the Metal Press. You'll get more information on the quests below."
+				"It'll serve you as your first way to make several components like plates, rods, gears and wires."
+				""
+				"However, this multiblock requires power to work which means you need to produce some and redirect it to the Metal Press. You'll get more information on the quests below. IE Multiblocks have their energy inputs mark in orange."
 				""
 				"Once powered, equip it with a mold of your choice and drop your items on the conveyor belt! Feel free to use a dropper to safely store the output."
 				""
@@ -382,7 +384,7 @@
 			icon: "immersiveengineering:metal_press"
 			id: "0AA6184C7940DD0E"
 			min_required_dependencies: 3
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 4
 				id: "1466E35D58D20037"
@@ -393,7 +395,7 @@
 				{
 					count: 2L
 					id: "652418E775A98276"
-					item: { Count: 2, id: "immersiveengineering:steel_scaffolding_standard" }
+					item: "immersiveengineering:steel_scaffolding_standard"
 					type: "item"
 				}
 				{
@@ -433,7 +435,7 @@
 				"You can use them to get most IE stuff you already crafted for a cheaper price, it's also your opening door to Mekanism!"
 			]
 			id: "34174912779DA609"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 2
 				id: "4CA410A50897220F"
@@ -456,7 +458,7 @@
 			description: ["But not the lasts."]
 			icon: "thermal:rose_gold_ingot"
 			id: "48561BE33A3C9899"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5961FAAFD7B0E9F5"
@@ -509,7 +511,7 @@
 				"While it costs steel, the TG is a really space efficient way to produce energy, if you don't like setting up huge things you should go for it."
 			]
 			id: "0C062A3E4CE595B8"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 6
 				id: "7B67FDEADE0DEDCA"
@@ -544,7 +546,7 @@
 				"&eThis quest requires 1 out of 2 dependencies to be completed."
 			]
 			id: "20D2FE0159ADB69C"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				id: "4C51E1E335B43A54"
 				item: "immersiveengineering:voltmeter"
@@ -572,10 +574,10 @@
 				""
 				"Here's what a maxed setup looks like:"
 				""
-				"{image:kubejs:textures/ftbquests/immersiveengineering/watermill.png width:100 height:100 align:center}"
+				"{image:kubejs:textures/ftbquests/immersiveengineering/watermill.png width:110 height:99 align:center}"
 			]
 			id: "0B4EA0C21E58691D"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 3
 				id: "6376E9647AFED630"
@@ -609,7 +611,7 @@
 			]
 			icon: "immersiveengineering:windmill"
 			id: "7FEADDAAFAB5AFF6"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 4
 				id: "07645935027063DB"
@@ -655,7 +657,7 @@
 			disable_toast: true
 			hide_dependent_lines: true
 			id: "2AE95C9790D4C37F"
-			min_width: 240
+			min_width: 300
 			tasks: [{
 				id: "7FAA53980DA36084"
 				item: "immersiveengineering:dynamo"
@@ -690,7 +692,7 @@
 			hide_dependency_lines: true
 			icon: "immersiveengineering:wirecoil_copper"
 			id: "26DE28EB32A47D88"
-			min_width: 240
+			min_width: 320
 			rewards: [{
 				count: 4
 				id: "19ABD07131E33FEF"
@@ -729,7 +731,7 @@
 				"Warning: HV Wire Coils cannot be insulated."
 			]
 			id: "67BD81ECCD9CE396"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 16
 				id: "62E6B8AE05AA7E25"
@@ -748,8 +750,22 @@
 		}
 		{
 			dependencies: ["34174912779DA609"]
+			description: [
+				"Welcome to the world of Mekanism! I'll be explaining the HUD of its machinery in this quest."
+				""
+				"There are 4 important buttons you want to know about:"
+				""
+				"Top left: The Side Config Menu lets you configure each side of your machine to either accept input, output or even both. Different form of materials like items, fluids, energy have their own Side Config which you can access on the right and left corner of the Side Config HUD, make sure you're configuring the right kind of element when configuring your machine."
+				"You can also allow auto-output with the top right button and quickly clear all sides of an element with the bottom right one."
+				""
+				"Top Right: This is the Upgrades Menu, you can easily install and uninstall upgrades in there."
+				""
+				"Bottom Left: Will give you info on how much power does the machine needs and is currently using at the moment"
+				""
+				"Bottom Right: Can be used to switch Redstone Detection, it is by default ignored but can be changed if you wish to use it for automation."
+			]
 			id: "475CABBA6607E1BF"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				id: "18FC045B59A9B3E7"
 				item: {
@@ -781,7 +797,7 @@
 				"Original isn't it?"
 			]
 			id: "5F8FE2C8D2EB3B88"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				id: "26A2C921B6AD7AEB"
 				item: {
@@ -812,7 +828,7 @@
 			dependencies: ["5F8FE2C8D2EB3B88"]
 			description: ["Enter the Nether and get access to the second half of chapter 2!"]
 			id: "3CF60761EF692702"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				id: "299DE9C0F5842FD3"
 				type: "xp"
@@ -836,7 +852,7 @@
 				"Craft one and use it on your Metal Press to start making those beautiful, wonderful plates."
 			]
 			id: "7DF6B4B0BA263ED5"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 3
 				id: "5CC000C398876ED3"
@@ -857,7 +873,7 @@
 			description: ["Here's a list of the other important Metal Press Molds, you will need wires and gears if you want to progress any further and the rods one let's you make them at a cheaper price!"]
 			icon: "immersiveengineering:mold_gear"
 			id: "199CC95E08343BAC"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				id: "09E84087CB192A5C"
 				item: "immersiveengineering:mold_unpacking"
@@ -888,7 +904,13 @@
 			dependencies: ["338C75F201A6B9DE"]
 			description: ["Craft some Infused Alloy. This is the first base Mekanism material, you'll need lot of those."]
 			id: "11D604309801EF9C"
-			min_width: 240
+			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "44A2FAF40BF283B2"
+				table_id: 2365532201698016642L
+				type: "choice"
+			}]
 			tasks: [{
 				count: 4L
 				id: "1B7342B10F7CFEFF"
@@ -902,7 +924,13 @@
 			dependencies: ["338C75F201A6B9DE"]
 			description: ["Craft some Basic Control Circuit. This is second base Mekanism material, less required than the first of his kind but still highly needed."]
 			id: "2D1BB8A835207114"
-			min_width: 240
+			min_width: 300
+			rewards: [{
+				count: 4
+				id: "21C0920786B820B5"
+				item: "mekanism:ingot_osmium"
+				type: "item"
+			}]
 			tasks: [{
 				count: 2L
 				id: "11D959FEDA55DEE5"
@@ -914,8 +942,21 @@
 		}
 		{
 			dependencies: ["475CABBA6607E1BF"]
+			description: [
+				"The Metallurgic Infuser is your first Mekanism machine. It will be used to create Mekanism main materials."
+				""
+				"The machine requires an \"infuse type\" simply put the right item in the Extra Slot. To automatically create infuse type for the machine to use."
+				""
+				"Try to rush for the Enrichment Chamber as it can enrich your items to create x8 more infuse type!"
+			]
 			id: "338C75F201A6B9DE"
-			min_width: 240
+			min_width: 300
+			rewards: [{
+				count: 2
+				id: "5276A205266D6AFF"
+				item: "projectred_core:red_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "71A206361543D5C3"
 				item: "mekanism:metallurgic_infuser"
@@ -926,10 +967,28 @@
 		}
 		{
 			dependencies: ["2D1BB8A835207114"]
-			description: ["You now have access to Mekanism cables"]
+			description: [
+				"You now have access to Mekanism cables! They're your first proper way of transporting things in your adventure."
+				""
+				"Universal Cables are used to transport Electricity, their transfer speed is equal to their capacity and are combined when put in a same system."
+				""
+				"Mechanical Pipes are used to transport fluids, they work the same way as their energy counterpart, with the addition of their pump rate being the speed at which they can pump fluid out of a container per connection."
+				""
+				"Logistical Transporters are used to transport items, their pump rate works the same as their fluid counterpart and their speed being the number of blocks per second the item will travel inside the cables, meaning that compared to the other cables, item transportation is not instant."
+				""
+				"The Configurator have multiple modes, you can #eshift mouse wheel#r to switch between modes and &eshift right click&r to interact with blocks in the world. The Wrench mode will insta-break machines or cables. The rotate mode is self-explanatory. The other mods are used to configure cable or machine sides without having to open their HUD. When it comes to cables you can configure them no matter what element your configuration mode is on."
+				""
+				"You can upgrade already placed cables by clicking on them using the next tier alloy, this will upgrade up to 8 cables at a time."
+			]
 			icon: "mekanism:basic_universal_cable"
 			id: "56DDF1ACD4C0AFE4"
-			min_width: 240
+			min_width: 300
+			rewards: [{
+				count: 4
+				id: "243CD115BD5D9FC9"
+				item: "mekanism:alloy_infused"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "7414ED9123888323"
@@ -965,7 +1024,7 @@
 			]
 			icon: "immersiveengineering:squeezer"
 			id: "58D275BD01AC2B1C"
-			min_width: 240
+			min_width: 300
 			progression_mode: "linear"
 			rewards: [{
 				count: 12
@@ -1028,7 +1087,7 @@
 			]
 			icon: "immersiveengineering:fermenter"
 			id: "6D2FEA8A870535C2"
-			min_width: 240
+			min_width: 300
 			progression_mode: "linear"
 			rewards: [{
 				count: 12
@@ -1085,7 +1144,13 @@
 				"You might want to automate that process soon enough."
 			]
 			id: "4F862AF46BF14A60"
-			min_width: 240
+			min_width: 300
+			rewards: [{
+				count: 4
+				id: "10E2B1E83C6CEAF6"
+				item: "minecraft:honey_bottle"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1BD6890049C96E3C"
 				item: "immersiveengineering:ethanol_bucket"
@@ -1102,7 +1167,13 @@
 				"You might want to automate that process soon enough."
 			]
 			id: "4CF036B891536FA6"
-			min_width: 240
+			min_width: 300
+			rewards: [{
+				count: 16
+				id: "7BA51E0833E021E1"
+				item: "immersiveengineering:seed"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7AAF8C0A433E227E"
 				item: "immersiveengineering:plantoil_bucket"
@@ -1121,9 +1192,17 @@
 				"Mix Plant Oil and Ethanol inside a Refinery to make biodiesel!"
 				""
 				"You can use it in a Diesel Generator for energy production or later on for plastic production."
+				""
+				"Note: You need the Mekanism Crusher to get Niter Dust."
 			]
 			id: "07ADCEF6CBA17D58"
-			min_width: 240
+			min_width: 300
+			rewards: [{
+				count: 16
+				id: "70286B9D8FD27395"
+				item: "thermal:niter"
+				type: "item"
+			}]
 			tasks: [{
 				id: "74028B85DBF9FEA2"
 				item: "immersiveengineering:biodiesel_bucket"
@@ -1144,7 +1223,7 @@
 			hide_dependency_lines: true
 			icon: "immersiveengineering:refinery"
 			id: "594769AAF1003A2C"
-			min_width: 240
+			min_width: 300
 			progression_mode: "linear"
 			rewards: [{
 				count: 8
@@ -1204,7 +1283,7 @@
 			]
 			icon: "immersiveengineering:arc_furnace"
 			id: "25544587CC944FCB"
-			min_width: 240
+			min_width: 300
 			progression_mode: "linear"
 			rewards: [
 				{
@@ -1283,7 +1362,13 @@
 			dependencies: ["25544587CC944FCB"]
 			description: ["Dielectric Paste is used everywhere in Powah, craft some to unlock it."]
 			id: "460A47E0362D9799"
-			min_width: 240
+			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2C536B8BB30D2948"
+				table_id: 5846157730785464504L
+				type: "choice"
+			}]
 			tasks: [{
 				count: 64L
 				id: "14FAC648D86FD49D"
@@ -1298,9 +1383,20 @@
 				"50F6EA9CC23FF68D"
 				"429BA86F904409C9"
 			]
+			description: [
+				"The Excavator is separated into 2 parts, the Excavator itself and its Bucket Wheel meaning you'll have to assemble both to make it run, everything is in the Engineer's Manual Excavator page."
+				""
+				"If you want to mine in a very specific location, know that the mining location of the Excavator is located to the middle of the Bucket Wheel. "
+				""
+				"It requires 1024FE/t to run and its energy ports are the 3 orange slots on its right. 1024FE/t is a LOT you may want to run a Diesel Generator before hand."
+				""
+				"Once formed and running the Excavator will start mining any Mineral Veins below it and drop the items at its front, you can put any storage in that location to directly output into it instead of dropping the items, upgraded 2x2 drawers works well."
+				""
+				"Enjoy your free ores!"
+			]
 			icon: "immersiveengineering:excavator"
 			id: "3D7DCB797F62F537"
-			min_width: 240
+			min_width: 300
 			progression_mode: "linear"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1382,7 +1478,7 @@
 			]
 			icon: "immersiveengineering:diesel_generator"
 			id: "0E3CE979A136068A"
-			min_width: 240
+			min_width: 300
 			progression_mode: "linear"
 			rewards: [
 				{
@@ -1442,9 +1538,29 @@
 		}
 		{
 			dependencies: ["0D73A83CC62FF6C5"]
+			description: [
+				"Want some free ores? Wanna be rich? In today's 6 steps lesson, we'll learn how to locate and choose mineral veins to put your future Excavator on!"
+				""
+				"1. Mineral Veins are locations where you can place an Excavator to automatically mine a certain group of ores. There can be multiple veins at a same location, when this is the case the Excavator will switch between those multiple veins based on their percentage of presence, this means you can mine a larger variety of ores per Excavator coming at the cost of a smaller chance to get each resulting in a slower production."
+				""
+				"2. JEI will give you a lot of information about veins. Informations such as the rarity and dimension location of each vein as so of their retrievable ores and likeliness of each."
+				""
+				"3. To start looking for mineral veins, you'll want some Survey Tools and a Core Sample Drill."
+				""
+				"4. You can use your Survey Tools on natural blocks (dirt, stone, etc...) to identify veins and their locations. Each sample taken of a same vein will be more accurate than the last."
+				""
+				"5. You can use your Core Sample Drill to get more precise informations on veins present at that location. It costs energy so think of carrying a battery. (Needs a block below it to work)"
+				""
+				"6. Once you find out where you want to start mining, it will be time to place an Excavator, more info on that in the next quest."
+				""
+				""
+				"Notes:"
+				"The vein's locations are no longer chunk based. "
+				"The Saturation and spoil system has been removed."
+			]
 			icon: "immersiveengineering:sample_drill"
 			id: "50F6EA9CC23FF68D"
-			min_width: 240
+			min_width: 300
 			tasks: [
 				{
 					id: "0921A876422A2742"
@@ -1478,7 +1594,12 @@
 				"This is where Coke starts to get into real use, if you don't have multiple Coke Oven already now maybe is the time to change that."
 			]
 			id: "429BA86F904409C9"
-			min_width: 240
+			min_width: 300
+			rewards: [{
+				id: "4D4D0FE81E79711C"
+				item: "immersiveengineering:dust_hop_graphite"
+				type: "item"
+			}]
 			tasks: [{
 				id: "315C6FF2F745F80A"
 				item: "immersiveengineering:ingot_hop_graphite"
@@ -1492,7 +1613,13 @@
 			dependencies: ["429BA86F904409C9"]
 			description: ["Graphite Rods are used in the Arc Furnace, you need 3 to run it and will slowly wear out."]
 			id: "7110C31E1355AFBB"
-			min_width: 240
+			min_width: 300
+			rewards: [{
+				count: 8
+				id: "2AC9A4E29BD56786"
+				item: "immersiveengineering:stick_steel"
+				type: "item"
+			}]
 			tasks: [{
 				count: 3L
 				id: "2CA79E32718F0C1D"
@@ -1516,7 +1643,13 @@
 				"You don't need a lot for now, just enough to make your first PneumaticCraft machineries."
 			]
 			id: "598EECDD8CA3E189"
-			min_width: 240
+			min_width: 300
+			rewards: [{
+				count: 6
+				id: "4BFF4BE36308EB18"
+				item: "thermal:nickel_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "49B3CBF847A976EF"
 				item: "immersiveengineering:phenolic_resin_bucket"
@@ -1537,7 +1670,13 @@
 				"hey... psst, don't tell anyone but you only need 6 buckets of those until chapter 8+..."
 			]
 			id: "38F8CADA7CDAB49F"
-			min_width: 240
+			min_width: 300
+			rewards: [{
+				count: 8
+				id: "47DCA059CA6B5699"
+				item: "thermal:silver_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6284FED2EC44B6BC"
 				item: "immersiveengineering:acetaldehyde_bucket"
@@ -1557,7 +1696,13 @@
 				"You can automate that process by recolting both output, sending the Plate Mold back into a dropper and the Duroplast Sheets into a drawer."
 			]
 			id: "39A50046284C5EA0"
-			min_width: 240
+			min_width: 300
+			rewards: [{
+				count: 6
+				id: "2AD402D1FC47C10A"
+				item: "thermal:lead_ingot"
+				type: "item"
+			}]
 			size: 1.0d
 			tasks: [{
 				id: "1C6921085901DB09"
@@ -1578,7 +1723,7 @@
 			]
 			icon: "immersiveengineering:bottling_machine"
 			id: "12F11AF15831DE43"
-			min_width: 240
+			min_width: 300
 			progression_mode: "linear"
 			rewards: [{
 				count: 2
@@ -1632,7 +1777,7 @@
 			hide_dependency_lines: true
 			icon: "immersiveengineering:assembler"
 			id: "7D7D82F2D0FC0098"
-			min_width: 240
+			min_width: 300
 			progression_mode: "linear"
 			rewards: [{
 				count: 8
@@ -1688,7 +1833,7 @@
 			hide_dependency_lines: true
 			icon: "immersiveengineering:auto_workbench"
 			id: "7B2D4ED93B47ECB2"
-			min_width: 240
+			min_width: 300
 			progression_mode: "linear"
 			rewards: [{
 				count: 8
@@ -1750,7 +1895,13 @@
 			]
 			icon: "powah:energizing_orb"
 			id: "187BE2A259075C18"
-			min_width: 240
+			min_width: 300
+			rewards: [{
+				count: 16
+				id: "73549C3C5E809539"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "1B1C272EBEBDFAA6"
@@ -1789,7 +1940,13 @@
 				"It will be used a lot through your adventure and is required to unlock Thermal Series but for now it unlocks you some cool upgrades, check them out!"
 			]
 			id: "024BC686F691E558"
-			min_width: 240
+			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "723AD1F7FD37DF7C"
+				table_id: 742488244643470742L
+				type: "choice"
+			}]
 			size: 1.25d
 			tasks: [{
 				id: "0B06BE5271748EB1"
@@ -1803,7 +1960,13 @@
 			dependencies: ["024BC686F691E558"]
 			description: ["This is the first tier of drawers upgrades. The item tooltip already explains it all so go ahead and make those huge drawers."]
 			id: "782317906021905F"
-			min_width: 240
+			min_width: 300
+			rewards: [{
+				count: 2
+				id: "589F584D5DDC2033"
+				item: "functionalstorage:iron_downgrade"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2773FC8A00E97568"
 				item: "functionalstorage:copper_upgrade"
@@ -1824,7 +1987,13 @@
 				"Yes, that does mean you can make your factories runs at 6FE/t but this will mostly come useful once you unlock Speed Upgrades in chapter 5."
 			]
 			id: "1ED1AD000CDE6819"
-			min_width: 240
+			min_width: 300
+			rewards: [{
+				count: 8
+				id: "24FB51928523AE49"
+				item: "mekanism:alloy_infused"
+				type: "item"
+			}]
 			tasks: [{
 				count: 8L
 				id: "0191FD28792496C3"
@@ -1851,7 +2020,13 @@
 			]
 			hide_dependency_lines: true
 			id: "1948D2DEF9C6F001"
-			min_width: 240
+			min_width: 300
+			rewards: [{
+				count: 16
+				id: "626CE00B4668C2CC"
+				item: "thermal:phytogro"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4E2BCBB289280E78"
 				item: "immersiveengineering:cloche"
@@ -1866,9 +2041,20 @@
 				"11D604309801EF9C"
 				"2AFBDF3213FABA18"
 			]
+			description: [
+				"The Energized Smelter can smelt an item every 5 seconds at the cost of energy."
+				""
+				"Can be really useful once upgraded into a factory!"
+			]
 			hide_dependency_lines: true
 			id: "0AE78B3871DB6D59"
-			min_width: 240
+			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "08D71E41B8B448EB"
+				table_id: 2601879568915432755L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "3D4E44FCD4873629"
 				item: "mekanism:energized_smelter"
@@ -1879,8 +2065,19 @@
 		}
 		{
 			dependencies: ["0D73A83CC62FF6C5"]
+			description: [
+				"The Enrichment Chamber is mainly used to enrich materials working as infuse type in the Metallurgic Infuser making them 8 times more effective!"
+				""
+				"It can also be used as a small ore duplication method if you're running out of let's say.. iron?"
+			]
 			id: "55C65F6C9E1769C1"
-			min_width: 240
+			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "41A6A79D401B3736"
+				table_id: 2601879568915432755L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "584A130D007BAD35"
 				item: "mekanism:enrichment_chamber"
@@ -1896,7 +2093,13 @@
 			]
 			description: ["Enhance some Basic Control Circuit with Infused Alloys to craft your firsts Advanced Control Circuits."]
 			id: "0D73A83CC62FF6C5"
-			min_width: 240
+			min_width: 300
+			rewards: [{
+				count: 16
+				id: "7E097E129154DC53"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
 			tasks: [{
 				count: 2L
 				id: "68EDC2F3611F213F"
@@ -1908,8 +2111,19 @@
 		}
 		{
 			dependencies: ["0D73A83CC62FF6C5"]
+			description: [
+				"Use your newly acquired technology to craft the Crusher."
+				""
+				"It can crush things, who could have guessed?"
+			]
 			id: "2AFBDF3213FABA18"
-			min_width: 240
+			min_width: 300
+			rewards: [{
+				count: 8
+				id: "7080C52EB89FBCBD"
+				item: "mekanism:dust_coal"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3752B7561829FF49"
 				item: "mekanism:crusher"
@@ -1920,9 +2134,16 @@
 		}
 		{
 			dependencies: ["39A50046284C5EA0"]
+			description: ["Craft some advanced Immervise components and get access to PneumaticCraft!"]
 			icon: "immersiveengineering:component_electronic_adv"
 			id: "04BC94D4DF69E78A"
-			min_width: 240
+			min_width: 300
+			rewards: [{
+				count: 8
+				id: "260B163FDAE018D4"
+				item: "thermal:tin_ingot"
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [
 				{
@@ -1947,7 +2168,12 @@
 				"It's the perfect tool if you want to run Garden Cloches as an early game farm."
 			]
 			id: "1A0669167235AF6F"
-			min_width: 240
+			min_width: 300
+			rewards: [{
+				id: "58438C3F76A770E0"
+				item: "minecraft:water_bucket"
+				type: "item"
+			}]
 			tasks: [{
 				id: "18DFBE397AFC8698"
 				item: "mekanism:electric_pump"
@@ -1964,11 +2190,15 @@
 				"You can configure their side with your Engineer's Hammer with blue designating input, orange output and no colour preventing any connection at all. (&eShift Click&r to configure the opposite side)."
 				""
 				"LV Accumulators can store up to 250k FE, not the best but you can upgrade them!"
-				""
-				"Beware, as upgrading an accumulator will delete its store energy."
 			]
 			id: "1DF55EFE519AC8E9"
-			min_width: 240
+			min_width: 300
+			rewards: [{
+				count: 4
+				id: "568A55F0FAE293FD"
+				item: "immersiveengineering:wirecoil_copper"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5B4606905FA58E50"
 				item: "immersiveengineering:capacitor_lv"
@@ -1980,12 +2210,18 @@
 		{
 			dependencies: ["1DF55EFE519AC8E9"]
 			description: [
-				"MV Accumulators can store up to 1M RF/t."
+				"MV Accumulators can store up to 1M FE."
 				""
 				"This is the best you can get before unlocking HOP Graphite Ingots."
 			]
 			id: "249AB801B7FCAA4C"
-			min_width: 240
+			min_width: 300
+			rewards: [{
+				count: 4
+				id: "3F3B02FE5AA2FBE5"
+				item: "immersiveengineering:wirecoil_electrum"
+				type: "item"
+			}]
 			tasks: [{
 				id: "642A91B6A027D31B"
 				item: "immersiveengineering:capacitor_mv"
@@ -1997,12 +2233,18 @@
 		{
 			dependencies: ["429BA86F904409C9"]
 			description: [
-				"HV Accumulators can store up to 4M RF."
+				"HV Accumulators can store up to 4M FE."
 				""
 				"Now, this is pretty good! But if you wish to go further you can upgrade them to Mekanism Energy Cubes!"
 			]
 			id: "6127D981D26C152B"
-			min_width: 240
+			min_width: 300
+			rewards: [{
+				count: 4
+				id: "41F71F34456ECD4D"
+				item: "immersiveengineering:wirecoil_steel"
+				type: "item"
+			}]
 			tasks: [{
 				id: "17E019B1BAC74740"
 				item: "immersiveengineering:capacitor_hv"
@@ -2021,7 +2263,7 @@
 			hide_dependency_lines: true
 			icon: "immersiveengineering:advanced_blast_furnace"
 			id: "2BB1954D53DBC92C"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 8
 				id: "2F84BCFCADA32B5F"
@@ -2054,7 +2296,7 @@
 			]
 			hide_dependency_lines: true
 			id: "212EB0CAB00348FD"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 8
 				id: "0F11485DAFAA340C"
@@ -2077,7 +2319,7 @@
 			]
 			description: ["At the cost of energy, the Blast Furnace Preheaters can speed up the Blast Furnace when put on its left and right side."]
 			id: "62BED9A6CA93EBFF"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 16
 				id: "6DE9F7F0B819AD55"
@@ -2097,7 +2339,7 @@
 			dependencies: ["26DE28EB32A47D88"]
 			description: ["You can put items inside your Charging Station to... well charge them."]
 			id: "137A6D891677A042"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5C8216E92F4CA6CC"
@@ -2118,8 +2360,34 @@
 				"2D1BB8A835207114"
 				"17E019B1BAC74740"
 			]
+			description: [
+				"You can now upgrade your HV Accumulators to Energy Cubes!"
+				""
+				"Energy Cubes have a HUD allowing you to quickly fill or empty an item with power."
+				""
+				"While the Basic Tier has the same capacity as a HV Accumulator the Advanced version can store up to 16M FE!"
+				""
+				"Note: Upgrading the Accumulator to an Energy Cube will void any energy inside of it"
+			]
 			id: "1C70164378BAE7E1"
-			min_width: 240
+			min_width: 300
+			rewards: [{
+				count: 2
+				id: "18CAB30F6300FE29"
+				item: {
+					Count: 1
+					id: "mekanism:energy_tablet"
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "1000000"
+							}]
+						}
+					}
+				}
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "76004E8B19B4C34F"
@@ -2145,7 +2413,13 @@
 				"However, before doing so you might want to unlock the Enrichment Chamber which can multiply your carbon input by 8."
 			]
 			id: "1121C66EB54346AE"
-			min_width: 240
+			min_width: 300
+			rewards: [{
+				count: 4
+				id: "69C3D34BE5074EC5"
+				item: "thermal:steel_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "22649F0B51115D92"
 				item: "mekanism:enriched_iron"
@@ -2164,7 +2438,7 @@
 			hide_dependency_lines: true
 			icon: "functionalstorage:compacting_drawer"
 			id: "3618DCAF2B312EB8"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "4567ACB445D94E81"
@@ -2209,9 +2483,16 @@
 				"2D1BB8A835207114"
 				"11D604309801EF9C"
 			]
+			description: ["The Precision Sawmill can be used to get a better plank output out of logs, you could connect it to a Garden Cloche farming wood."]
 			hide_dependency_lines: true
 			id: "593A4B9105930EC5"
-			min_width: 240
+			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1B3BA2FD0BCF637C"
+				table_id: 6931617435292310794L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "5976E276BFD3C164"
 				item: "mekanism:precision_sawmill"
@@ -2221,10 +2502,14 @@
 			y: -7.5d
 		}
 		{
-			dependencies: ["25544587CC944FCB"]
+			dependencies: [
+				"25544587CC944FCB"
+				"7E2D6E8C57E87A77"
+			]
+			description: ["Thanks to your Arc Furnace, you can now recycle your found Aether loots into ingots and remold their purpose!"]
 			icon: "kubejs:valkyrie_ingot"
 			id: "2083C22AD1F9FF0C"
-			min_width: 240
+			min_width: 300
 			tasks: [{
 				id: "668BB4DA91A0695D"
 				item: {
@@ -2256,12 +2541,18 @@
 		{
 			dependencies: ["2D1BB8A835207114"]
 			description: [
-				"Tier Installers can be used on your Mekanism machinery to upgrade it into factories! (&eShift+RightClick&r)"
+				"Tier Installers can be used on your Mekanism machinery to upgrade them into factories! (&eShift+RightClick&r)"
 				""
-				"Basic Factories have 3 slots."
+				"Basic Factories can process 3 recipes at once."
 			]
 			id: "57F89AE2FB5431B2"
-			min_width: 240
+			min_width: 300
+			rewards: [{
+				count: 2
+				id: "096EBDC08B49F5B4"
+				item: "mekanism:basic_control_circuit"
+				type: "item"
+			}]
 			tasks: [{
 				id: "48D8069730DF2C2B"
 				item: "mekanism:basic_tier_installer"

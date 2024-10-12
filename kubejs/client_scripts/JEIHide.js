@@ -170,7 +170,7 @@ JEIEvents.addItems(event => {
     event.add(['thermal:potion_amplifier_augment', 'thermal:potion_duration_augment'])
 
     //IE Multi test
-    event.add(['immersiveengineering:alloy_smelter', 'immersiveengineering:coke_oven', 'immersiveengineering:blast_furnace', 'immersiveengineering:advanced_blast_furnace', 'immersiveengineering:metal_press', 'immersiveengineering:assembler', 'immersiveengineering:auto_workbench', 'immersiveengineering:squeezer', 'immersiveengineering:fermenter', 'immersiveengineering:refinery', 'immersiveengineering:bottling_machine', 'immersiveengineering:arc_furnace', 'immersiveengineering:mixer', 'immersiveengineering:excavator', 'immersiveengineering:bucket_wheel', 'immersiveengineering:diesel_generator', 'immersiveengineering:tank', 'immersiveengineering:silo'])
+    event.add(['immersiveengineering:alloy_smelter', 'immersiveengineering:coke_oven', 'immersiveengineering:blast_furnace', 'immersiveengineering:advanced_blast_furnace', 'immersiveengineering:metal_press', 'immersiveengineering:assembler', 'immersiveengineering:auto_workbench', 'immersiveengineering:squeezer', 'immersiveengineering:fermenter', 'immersiveengineering:refinery', 'immersiveengineering:bottling_machine', 'immersiveengineering:arc_furnace', 'immersiveengineering:mixer', 'immersiveengineering:diesel_generator', 'immersiveengineering:tank', 'immersiveengineering:silo'])
 })
 
 JEIEvents.hideFluids(event => {
@@ -191,7 +191,7 @@ JEIEvents.hideFluids(event => {
     event.hide('thermal:creosote')
 })
 
-//const $MBType = Java.loadClass('sguest.jeimultiblocks.jei.MultiblockIngredientType')
+//const $IEMulti = Java.loadClass('sguest.jeimultiblocks.jei.MultiblockIngredientType')
 //JEIEvents.hideCustom(event => {
-//  event.get($MBType).hideAll()
-//})
+//  event.get($IEMulti).hideAll()
+//}) 

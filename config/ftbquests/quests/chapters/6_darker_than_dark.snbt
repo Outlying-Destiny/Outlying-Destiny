@@ -24,6 +24,19 @@
 		{
 			dependencies: ["1C1B6A081BDE2FB8"]
 			id: "74037ADCBA1AEF64"
+			rewards: [{
+				id: "1956E425A9F27675"
+				item: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "trofers:trophies/empty_soul_vial"
+						}
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "10EA8933B870F307"
 				item: "enderio:soul_binder"
@@ -1063,12 +1076,25 @@
 			id: "32981647F8826FC4"
 			size: 1.0d
 			tasks: [{
-				id: "7EEF97BE6D0D09D3"
+				id: "2C2CBD86540D3A98"
 				item: {
 					Count: 1
-					id: "enderio:powered_spawner"
-					tag: { }
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "enderio:powered_spawner"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "kubejs:soul_catcher"
+							}
+						]
+					}
 				}
+				title: "Powered Spawner or Soul Catcher"
 				type: "item"
 			}]
 			x: -0.5d

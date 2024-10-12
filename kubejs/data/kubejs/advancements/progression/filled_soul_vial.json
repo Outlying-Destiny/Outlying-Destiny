@@ -1,0 +1,27 @@
+{
+    "parent": "kubejs:progression/machine_frame",
+    "display":{
+      "icon":{"type": "forge:nbt", "item": "enderio:filled_soul_vial", "nbt": "{BlockEntityTag:{EntityStorage:{Entity:{id:'minecraft:zombie'}}}}"},
+      "title":{"text": "Soul Master"},
+      "description":{"text": "Collect your first soul"},
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "criteria": {
+        "filled_soul_vial": {
+          "trigger": "minecraft:inventory_changed",
+          "conditions": {
+            "items": [
+              {
+                "items": [
+                  "enderio:filled_soul_vial"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "requirements": [["filled_soul_vial"]]
+}

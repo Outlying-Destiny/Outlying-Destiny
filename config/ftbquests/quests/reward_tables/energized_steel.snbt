@@ -1,0 +1,10 @@
+{
+	id: "0A4DD91FE7E09D96"
+	loot_size: 1
+	order_index: 14
+	rewards: [
+		{ count: 8, item: "thermal:steel_ingot" }
+		{ count: 8, item: "thermal:electrum_ingot" }
+	]
+	title: "Energized Steel"
+}

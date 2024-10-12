@@ -1,0 +1,10 @@
+{
+	id: "20D40F011AF53D82"
+	loot_size: 1
+	order_index: 15
+	rewards: [
+		{ count: 4, item: "minecraft:iron_ingot" }
+		{ count: 4, item: "thermal:rose_gold_ingot" }
+	]
+	title: "Infused Alloy"
+}

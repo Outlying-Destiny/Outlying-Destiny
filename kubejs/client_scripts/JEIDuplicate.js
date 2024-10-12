@@ -14,10 +14,13 @@ JEIEvents.removeCategories(event => {
         'mysticalagriculture:enchanter',
         'thermal:disenchantment_fuel',
         'thermal:gourmand_fuel',
-        'thermal:stirling_fuel'
+        'thermal:stirling_fuel',
+        'enderio:soul_engine'
     )
-    
+})
 
+JEIEvents.removeRecipes(event => {
+	event.remove(/mbd2:soul_catcher_recipes\/zombie.+/)
 })
 
 JEIEvents.hideItems(event => {

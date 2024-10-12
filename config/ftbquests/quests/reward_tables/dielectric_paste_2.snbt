@@ -1,0 +1,10 @@
+{
+	id: "5121B97B5C5F10B8"
+	loot_size: 1
+	order_index: 13
+	rewards: [
+		{ count: 4, item: "immersiveengineering:dust_coke" }
+		{ count: 4, item: "minecraft:blaze_powder" }
+	]
+	title: "Dielectric Paste"
+}

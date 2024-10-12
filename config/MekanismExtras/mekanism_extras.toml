@@ -125,19 +125,19 @@
 		#Maximum number of Joules Basic energy cubes can store.
 		absoluteStorage = "2560000000"
 		#Output rate in Joules of Basic energy cubes.
-		absoluteOutput = "2560000"
+		absoluteOutput = "2621440"
 		#Maximum number of Joules Advanced energy cubes can store.
 		supremeStorage = "10240000000"
 		#Output rate in Joules of Advanced energy cubes.
-		supremeOutput = "10240000"
+		supremeOutput = "10485760"
 		#Maximum number of Joules Elite energy cubes can store.
 		cosmicStorage = "40960000000"
 		#Output rate in Joules of Elite energy cubes.
-		cosmicOutput = "40960000"
+		cosmicOutput = "41943040"
 		#Maximum number of Joules Ultimate energy cubes can store.
 		infiniteStorage = "163840000000"
 		#Output rate in Joules of Ultimate energy cubes.
-		infiniteOutput = "163840000"
+		infiniteOutput = "167772160"
 
 	#Fluid Tanks
 	[mekanism_extras."fluid tanks"]

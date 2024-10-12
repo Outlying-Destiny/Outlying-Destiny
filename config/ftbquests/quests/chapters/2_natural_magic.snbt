@@ -29,7 +29,7 @@
 			disable_toast: true
 			icon: "naturesaura:wood_stand"
 			id: "07A64AE31764BD29"
-			min_width: 240
+			min_width: 300
 			size: 1.75d
 			tasks: [
 				{
@@ -68,7 +68,7 @@
 			]
 			description: ["Craft a Token of Joy using the Ritual of the Forest."]
 			id: "678EF4FAD5178E53"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				id: "03A579D4C3179CD6"
 				item: "thermal:apple_block"
@@ -98,7 +98,7 @@
 			]
 			icon: "naturesaura:nature_altar"
 			id: "7530FE8F2D9D011B"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "40255ED677BDC89E"
@@ -150,7 +150,7 @@
 			dependencies: ["7530FE8F2D9D011B"]
 			description: ["Infuse gold with aura using your newly built Natural Altar."]
 			id: "738163BCAD68CC8F"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 4
 				id: "50F54E9B321D1B3D"
@@ -176,7 +176,7 @@
 			]
 			icon: "naturesaura:infused_stone"
 			id: "45C495D3393C5F6E"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 8
 				id: "6539F7D43B851282"
@@ -201,7 +201,7 @@
 				"Who said magic and industrialization were uncompatible?"
 			]
 			id: "74A5DBE334967074"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 8
 				id: "3D2CC9114F49ACB1"
@@ -224,7 +224,7 @@
 				"If you're unable to collect it, it means that there is no longer any aura in the zone, just walk for a bit and try again"
 			]
 			id: "045F56361DDA2A87"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "26C7B2170F310F08"
@@ -257,7 +257,7 @@
 				"More information about aura will be given in future quests."
 			]
 			id: "66E4E78EE2442FC4"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 4
 				id: "7CE1139FAD306732"
@@ -277,7 +277,7 @@
 			dependencies: ["738163BCAD68CC8F"]
 			description: ["The Nether being currently inaccessible, your only way to get Netherrack is by crafting it. Luckily it looks like Tainted Gold Ingots might just do the job!"]
 			id: "1F6429411B14E024"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 4
 				id: "79BD5417EBE0CFB4"
@@ -305,7 +305,7 @@
 				"Ancient Saplings cannot be found naturally and no sapplings are dropped from their leaves, for each tree you grow you need to craft new saplings."
 			]
 			id: "1A6234798DBC2C87"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				id: "4CF57BB73523AFE7"
 				item: "naturesaura:ancient_sapling"
@@ -325,7 +325,7 @@
 			description: ["Enter the Nether and get access to the second half of chapter 2!"]
 			disable_toast: true
 			id: "6A53A5AD90652811"
-			min_width: 240
+			min_width: 300
 			size: 1.25d
 			tasks: [{
 				dimension: "minecraft:the_nether"
@@ -354,7 +354,7 @@
 			]
 			icon: "naturesaura:offering_table"
 			id: "5FE1BA0649DB77B6"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 2
 				id: "197600531C9E079B"
@@ -398,7 +398,7 @@
 				"And no you can't become glue, thanks for asking."
 			]
 			id: "684CBF2196952AF5"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "1171E03A82BB59AB"
@@ -433,7 +433,7 @@
 				"This quest only requires a single dependence to be completed."
 			]
 			id: "3A778832C6CDC464"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 8
 				id: "28F8A574C873D02C"
@@ -453,7 +453,7 @@
 			dependencies: ["3A778832C6CDC464"]
 			description: ["Craft a Token of Joy with your \"hardly\" acquired Ghast Tear."]
 			id: "510800933DF646AB"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 2
 				id: "53AD379ACFF7EBF3"
@@ -477,7 +477,7 @@
 				"Guess being trapped in a bottle can scare people, even ghosts."
 			]
 			id: "1937450B3F241530"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 4
 				id: "3C785D317E88049E"
@@ -503,7 +503,7 @@
 				"However the transmutation catalyst is your best option if you're unable to get a Ghast Tear in the Nether, try it out!"
 			]
 			id: "64BD2158A4528720"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 2
 				id: "4F62D1FA49F6D068"
@@ -528,7 +528,7 @@
 			]
 			icon: "naturesaura:token_grief"
 			id: "6540A2C6A17020A8"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 4
 				id: "35F6BC67F22460AF"
@@ -569,7 +569,7 @@
 				"Green steel is fashion out there, you know?"
 			]
 			id: "5EBD1BE5CAC32C54"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 12
 				id: "15858C5AB20D8992"
@@ -593,7 +593,7 @@
 			]
 			description: ["Combine all your tokens and some Powder of Twilight to get your token to the Twilight Forest!"]
 			id: "1D8893FD9B6AA44A"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				id: "7BB855707B35FB89"
 				item: {
@@ -629,7 +629,7 @@
 				"{image:kubejs:textures/ftbquests/twilightforest/portal.png width:100 height:100 align:center}"
 			]
 			id: "3A338B82C0765C40"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				id: "15265A492B977827"
 				type: "xp"
@@ -669,7 +669,7 @@
 				}
 			}
 			id: "2DCDFC4EAC0E134C"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				id: "490055300776A2C0"
 				item: {
@@ -762,7 +762,7 @@
 			]
 			disable_toast: true
 			id: "020E762288257550"
-			min_width: 240
+			min_width: 300
 			tasks: [{
 				count: 32L
 				id: "7B4710D2516403BC"
@@ -777,7 +777,7 @@
 			dependencies: ["684CBF2196952AF5"]
 			description: ["The Eye of the Blaze can lead you straight to the nearest Nether Forteress, working the same way as the Eye of Ender."]
 			id: "58A83F82440D3047"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 2
 				id: "35D5D70A11EFC23F"
@@ -805,7 +805,7 @@
 			]
 			disable_toast: true
 			id: "28D5BB0DC2A4288E"
-			min_width: 240
+			min_width: 300
 			tasks: [{
 				id: "4ED31DAA67F884E8"
 				item: "immersiveengineering:ingot_hop_graphite"
@@ -823,7 +823,7 @@
 				"Naturally, aura is found in abundance close to aura plants."
 			]
 			id: "51E26172D5042D9F"
-			min_width: 240
+			min_width: 300
 			rewards: [{
 				count: 4
 				id: "6B9E426EA683D32C"

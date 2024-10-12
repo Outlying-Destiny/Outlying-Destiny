@@ -10,6 +10,7 @@
 	quests: [
 		{
 			dependencies: ["39A50046284C5EA0"]
+			description: ["Craft some advanced Immervise components and get access to PneumaticCraft!"]
 			disable_toast: true
 			icon: "immersiveengineering:component_electronic_adv"
 			id: "5E62C6B6C69FEE4F"
