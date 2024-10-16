@@ -12,6 +12,7 @@
 			dependencies: ["6DBC6F18848F71BC"]
 			disable_toast: true
 			id: "632B7F8040701318"
+			min_width: 300
 			size: 1.25d
 			tasks: [{
 				id: "626D311447749734"
@@ -24,6 +25,7 @@
 		{
 			dependencies: ["632B7F8040701318"]
 			id: "150A63180583B169"
+			min_width: 300
 			tasks: [{
 				id: "331353E01AC28C63"
 				item: "industrialforegoing:machine_frame_pity"
@@ -38,6 +40,7 @@
 				"150A63180583B169"
 			]
 			id: "6ABF176C5EFBDD3E"
+			min_width: 300
 			tasks: [{
 				id: "1DD52E4C0347A670"
 				item: "industrialforegoing:dissolution_chamber"
@@ -50,6 +53,7 @@
 			dependencies: ["6DBC6F18848F71BC"]
 			disable_toast: true
 			id: "12EE00BE6E582A9B"
+			min_width: 300
 			size: 1.25d
 			tasks: [{
 				id: "439802B615A5D746"
@@ -62,6 +66,7 @@
 		{
 			dependencies: ["150A63180583B169"]
 			id: "528DBD8CAB98933A"
+			min_width: 300
 			tasks: [{
 				id: "0C114CE7F62590BB"
 				item: "industrialforegoing:bioreactor"
@@ -73,6 +78,7 @@
 		{
 			dependencies: ["150A63180583B169"]
 			id: "40D48E2DDAB93BB3"
+			min_width: 300
 			tasks: [{
 				id: "7B8FC3A2B52E3CEF"
 				item: "industrialforegoing:fluid_extractor"
@@ -84,6 +90,7 @@
 		{
 			dependencies: ["528DBD8CAB98933A"]
 			id: "7181ABFD7A44C9C7"
+			min_width: 300
 			tasks: [{
 				id: "136789B53EF750CB"
 				item: "industrialforegoing:biofuel_bucket"
@@ -95,17 +102,20 @@
 		{
 			dependencies: ["40D48E2DDAB93BB3"]
 			id: "20EE34FE4B966E53"
+			min_width: 300
 			tasks: [{
 				id: "0EC8C450FB9448A5"
 				item: "industrialforegoing:latex_bucket"
 				type: "item"
 			}]
+			title: "Realer plastic >:D"
 			x: -2.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["7181ABFD7A44C9C7"]
 			id: "1ADE47AB57137297"
+			min_width: 300
 			tasks: [{
 				id: "564C012BC42B58F3"
 				item: "thermal_extra:shellite_ingot"
@@ -117,6 +127,7 @@
 		{
 			dependencies: ["1ADE47AB57137297"]
 			id: "704E2028C6A94AAC"
+			min_width: 300
 			tasks: [{
 				id: "690B563EF5E20CB7"
 				item: "mekanism:alloy_atomic"
@@ -132,6 +143,7 @@
 				"0F6ECA16BAFB299C"
 			]
 			id: "4E3F3D2CC84F706A"
+			min_width: 300
 			tasks: [{
 				id: "4438C63555AF28C6"
 				item: "industrialforegoing:machine_frame_simple"
@@ -143,6 +155,7 @@
 		{
 			dependencies: ["704E2028C6A94AAC"]
 			id: "75B59A3392FA89A9"
+			min_width: 300
 			tasks: [{
 				id: "4CCDA962EECE7309"
 				item: "mekanism:electrolytic_core"
@@ -158,6 +171,7 @@
 				"1CB37EF3A793639C"
 			]
 			id: "0F6ECA16BAFB299C"
+			min_width: 300
 			tasks: [{
 				id: "7E6FE09359C7F7DA"
 				item: "mekanism:hdpe_sheet"
@@ -169,6 +183,7 @@
 		{
 			dependencies: ["75B59A3392FA89A9"]
 			id: "7B3CC62686FA4310"
+			min_width: 300
 			tasks: [{
 				id: "5D842D5DA6C2FAAA"
 				item: "mekanism:electrolytic_separator"
@@ -180,6 +195,7 @@
 		{
 			dependencies: ["75B59A3392FA89A9"]
 			id: "1CB37EF3A793639C"
+			min_width: 300
 			tasks: [{
 				id: "752F9587D047F7C2"
 				item: "mekanism:pressurized_reaction_chamber"
@@ -191,6 +207,7 @@
 		{
 			dependencies: ["75B59A3392FA89A9"]
 			id: "7FF5D4745350349F"
+			min_width: 300
 			tasks: [{
 				id: "5D581E482B3E90F9"
 				item: "mekanism:rotary_condensentrator"
@@ -202,6 +219,7 @@
 		{
 			dependencies: ["7FF5D4745350349F"]
 			id: "2A3181170AF6A8C3"
+			min_width: 300
 			tasks: [{
 				id: "41DB37CB6ADAF8EB"
 				item: "mekanism:ethene_bucket"
@@ -216,6 +234,7 @@
 				"043ED88B3458DB26"
 			]
 			id: "3010848152BF092A"
+			min_width: 300
 			tasks: [{
 				id: "17783EA813F475BB"
 				item: "industrialforegoing:mob_slaughter_factory"
@@ -227,6 +246,7 @@
 		{
 			dependencies: ["3010848152BF092A"]
 			id: "314BD3ECA75A6233"
+			min_width: 300
 			tasks: [{
 				id: "6C33A424DA7FFBA9"
 				item: "industrialforegoing:pink_slime_bucket"
@@ -238,6 +258,7 @@
 		{
 			dependencies: ["314BD3ECA75A6233"]
 			id: "323755DC97DFAE26"
+			min_width: 300
 			tasks: [{
 				id: "1F67076B4D286767"
 				item: "thermal_extra:twinite_ingot"
@@ -250,6 +271,7 @@
 			dependencies: ["4E3F3D2CC84F706A"]
 			icon: "mekanism:thermal_evaporation_controller"
 			id: "34C5F3C2EC9DA297"
+			min_width: 300
 			tasks: [
 				{
 					id: "67E7F2954F362C77"
@@ -286,6 +308,7 @@
 		{
 			dependencies: ["34C5F3C2EC9DA297"]
 			id: "650525E2EBF30DE7"
+			min_width: 300
 			tasks: [{
 				id: "256D6DBF86DE3DEF"
 				item: "mekanism:lithium_bucket"
@@ -300,6 +323,7 @@
 				"650525E2EBF30DE7"
 			]
 			id: "35691A3C6B2A7B84"
+			min_width: 300
 			tasks: [{
 				id: "5EB4F231B09152A5"
 				item: "mekanism:dust_lithium"
@@ -312,6 +336,7 @@
 			dependencies: ["35691A3C6B2A7B84"]
 			icon: "mekanism:induction_port"
 			id: "00CC830713FF0B88"
+			min_width: 300
 			tasks: [
 				{
 					count: 24L
@@ -341,6 +366,7 @@
 				"35691A3C6B2A7B84"
 			]
 			id: "5FB1C36C44672D6C"
+			min_width: 300
 			tasks: [{
 				id: "47824EFE086059B2"
 				item: "industrialforegoing:machine_frame_advanced"
@@ -352,6 +378,7 @@
 		{
 			dependencies: ["0F6ECA16BAFB299C"]
 			id: "00BD32920B4719EB"
+			min_width: 300
 			tasks: [{
 				id: "7B25BF38634437F0"
 				item: "mekanism:chemical_crystallizer"
@@ -367,6 +394,7 @@
 			]
 			disable_toast: true
 			id: "043ED88B3458DB26"
+			min_width: 300
 			size: 1.25d
 			tasks: [{
 				id: "65E3CFE508F137FC"
@@ -379,6 +407,7 @@
 		{
 			dependencies: ["323755DC97DFAE26"]
 			id: "0FBA307E889389C5"
+			min_width: 300
 			tasks: [{
 				id: "091492CC51890EF9"
 				item: {
@@ -435,6 +464,7 @@
 			dependencies: ["5FB1C36C44672D6C"]
 			icon: "industrialforegoing:ore_laser_base"
 			id: "1EE1DD5859B416EE"
+			min_width: 300
 			tasks: [
 				{
 					id: "21C409AE87D81106"
@@ -459,6 +489,7 @@
 		{
 			dependencies: ["1EE1DD5859B416EE"]
 			id: "7D941F66A8003501"
+			min_width: 300
 			tasks: [{
 				id: "35A77888436301E4"
 				item: "draconicevolution:draconium_ingot"
@@ -470,6 +501,7 @@
 		{
 			dependencies: ["7D941F66A8003501"]
 			id: "39CE2691053F993E"
+			min_width: 300
 			tasks: [{
 				id: "3DFDFB767E1BCFE7"
 				item: "thermal_extra:dragonsteel_ingot"
@@ -481,6 +513,7 @@
 		{
 			dependencies: ["39CE2691053F993E"]
 			id: "79B3FE70F7A8D0BF"
+			min_width: 300
 			tasks: [{
 				id: "35464F63690B0680"
 				item: "thermal:upgrade_augment_3"
@@ -492,6 +525,7 @@
 		{
 			dependencies: ["39CE2691053F993E"]
 			id: "156349CDCED84A78"
+			min_width: 300
 			tasks: [{
 				id: "61C19A3DEB8A92C9"
 				item: {
@@ -509,6 +543,7 @@
 		{
 			dependencies: ["39CE2691053F993E"]
 			id: "0AADF9A23FCF74F0"
+			min_width: 300
 			tasks: [{
 				id: "1EE08D41B35988E5"
 				item: "mekanism:chemical_oxidizer"
@@ -520,6 +555,7 @@
 		{
 			dependencies: ["0AADF9A23FCF74F0"]
 			id: "4E5147F740457745"
+			min_width: 300
 			tasks: [{
 				id: "748589634482265C"
 				item: "mekanism_extras:dust_radiance"
@@ -531,6 +567,7 @@
 		{
 			dependencies: ["4E5147F740457745"]
 			id: "56FDBCD9C5B61D1B"
+			min_width: 300
 			tasks: [{
 				id: "14176530C604C80C"
 				item: "mekanism:resistive_heater"
@@ -542,6 +579,7 @@
 		{
 			dependencies: ["4E5147F740457745"]
 			id: "3944526C83B2BCDD"
+			min_width: 300
 			tasks: [
 				{
 					id: "11AC4FD56965CEF3"
@@ -589,6 +627,7 @@
 		{
 			dependencies: ["5FB1C36C44672D6C"]
 			id: "269EC584408CEC4F"
+			min_width: 300
 			tasks: [
 				{
 					count: 24L
@@ -625,6 +664,7 @@
 		{
 			dependencies: ["39CE2691053F993E"]
 			id: "05855413E5060AF2"
+			min_width: 300
 			tasks: [{
 				id: "1480239AC297627E"
 				item: "mekanism:chemical_infuser"
@@ -640,6 +680,7 @@
 			]
 			hide_dependency_lines: true
 			id: "01424748CE37CD98"
+			min_width: 300
 			tasks: [{
 				id: "6E9791E2DB04658E"
 				item: "mekanism:chemical_dissolution_chamber"
@@ -656,6 +697,7 @@
 				"269EC584408CEC4F"
 			]
 			id: "443C2A71DBD6C1D6"
+			min_width: 300
 			tasks: [{
 				id: "33E3B5989583099F"
 				item: "mekanism:hydrofluoric_acid_bucket"
@@ -668,6 +710,7 @@
 		{
 			dependencies: ["39CE2691053F993E"]
 			id: "7A910EB52355AC31"
+			min_width: 300
 			tasks: [{
 				id: "3B6DB3D08818C294"
 				item: "industrialforegoing:material_stonework_factory"
@@ -680,6 +723,7 @@
 			dependencies: ["4E3F3D2CC84F706A"]
 			hide_dependency_lines: true
 			id: "32F2F96DFC55D755"
+			min_width: 300
 			tasks: [{
 				id: "5EE0A8D04B622201"
 				item: "industrialforegoing:marine_fisher"
@@ -691,6 +735,7 @@
 		{
 			dependencies: ["5FB1C36C44672D6C"]
 			id: "5EB59B977D2BB99D"
+			min_width: 300
 			tasks: [{
 				id: "5584AA4473CC92FF"
 				item: "industrialforegoing:potion_brewer"
@@ -702,6 +747,7 @@
 		{
 			dependencies: ["5FB1C36C44672D6C"]
 			id: "0213E8BE90FED1EE"
+			min_width: 300
 			tasks: [{
 				id: "4862DCE1B23FA3BD"
 				item: "industrialforegoing:mob_crusher"
@@ -713,6 +759,7 @@
 		{
 			dependencies: ["5FB1C36C44672D6C"]
 			id: "7EA8EB705F30AB9B"
+			min_width: 300
 			tasks: [
 				{
 					id: "6141E42E7CAB6F04"
@@ -733,6 +780,7 @@
 			dependencies: ["150A63180583B169"]
 			icon: "industrialforegoing:fertilizer"
 			id: "12951669C3B0FF84"
+			min_width: 300
 			tasks: [
 				{
 					id: "51C93900A96917E4"
@@ -756,6 +804,7 @@
 		{
 			dependencies: ["4E3F3D2CC84F706A"]
 			id: "4A1685BEDD0583F5"
+			min_width: 300
 			tasks: [
 				{
 					id: "433B9D7078AD9A34"
@@ -774,6 +823,7 @@
 		{
 			dependencies: ["5FB1C36C44672D6C"]
 			id: "4DABEF4B0EA4D20C"
+			min_width: 300
 			tasks: [{
 				id: "27D03EE375814069"
 				item: "industrialforegoing:plant_fertilizer"
@@ -785,6 +835,7 @@
 		{
 			dependencies: ["4E3F3D2CC84F706A"]
 			id: "1C4214532D48FA11"
+			min_width: 300
 			tasks: [{
 				id: "107D3C14A12D7F05"
 				item: {
@@ -824,6 +875,7 @@
 				"443C2A71DBD6C1D6"
 			]
 			id: "0A2A53C5869DC219"
+			min_width: 300
 			rewards: [{
 				id: "7B5CEF61440CAD60"
 				item: {
@@ -850,6 +902,7 @@
 			dependencies: ["150A63180583B169"]
 			hide_dependency_lines: true
 			id: "184D83FCDB936F68"
+			min_width: 300
 			tasks: [{
 				id: "1976FE1F643A0C57"
 				item: "industrialforegoing:animal_rancher"
@@ -862,6 +915,7 @@
 			dependencies: ["4E3F3D2CC84F706A"]
 			hide_dependency_lines: true
 			id: "1C4ED33D23E19544"
+			min_width: 300
 			tasks: [
 				{
 					id: "1D2FE2A62296A24A"
@@ -880,6 +934,7 @@
 		{
 			dependencies: ["4E5147F740457745"]
 			id: "1AD0CDD600BB5DF0"
+			min_width: 300
 			tasks: [{
 				id: "40068EE31346459D"
 				item: "enderio:octadic_capacitor"
@@ -891,6 +946,7 @@
 		{
 			dependencies: ["1AD0CDD600BB5DF0"]
 			id: "650D93474935327A"
+			min_width: 300
 			tasks: [{
 				id: "1E23E0EC1E1C37CC"
 				item: {
@@ -906,6 +962,7 @@
 		{
 			dependencies: ["704E2028C6A94AAC"]
 			id: "629D202A091D516E"
+			min_width: 300
 			tasks: [{
 				id: "6F1EC8B2C84138C2"
 				item: "mekanism:ultimate_energy_cube"

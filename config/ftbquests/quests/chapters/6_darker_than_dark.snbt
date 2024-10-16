@@ -12,6 +12,7 @@
 			dependencies: ["53FD0B2E4952177F"]
 			disable_toast: true
 			id: "432BCDC8C90BD558"
+			min_width: 300
 			size: 1.25d
 			tasks: [{
 				id: "3D96281D1F2CA427"
@@ -24,6 +25,7 @@
 		{
 			dependencies: ["1C1B6A081BDE2FB8"]
 			id: "74037ADCBA1AEF64"
+			min_width: 300
 			rewards: [{
 				id: "1956E425A9F27675"
 				item: {
@@ -48,6 +50,7 @@
 		{
 			dependencies: ["432BCDC8C90BD558"]
 			id: "2B5724BE9F43CF8E"
+			min_width: 300
 			tasks: [{
 				id: "464B073721B92F04"
 				item: "enderio:slice_and_splice"
@@ -63,6 +66,7 @@
 			]
 			icon: "extendedcrafting:ender_crafter"
 			id: "2A9B8E18FC745B11"
+			min_width: 300
 			tasks: [
 				{
 					id: "6EBC9FF8EC5122AE"
@@ -81,6 +85,7 @@
 		{
 			dependencies: ["4CD3AA3E83C316B7"]
 			id: "4D79DD9269D62977"
+			min_width: 300
 			tasks: [{
 				id: "64A33479C40C5F83"
 				item: "thermal:machine_centrifuge"
@@ -92,6 +97,7 @@
 		{
 			dependencies: ["11943E63F2FF8684"]
 			id: "24DAF54378E7AF38"
+			min_width: 300
 			tasks: [{
 				id: "09DD8A6D910AE965"
 				item: "thermal:machine_crucible"
@@ -103,6 +109,7 @@
 		{
 			dependencies: ["11943E63F2FF8684"]
 			id: "7F557FA2D89527EF"
+			min_width: 300
 			tasks: [{
 				id: "0A316132E4D2F72C"
 				item: "thermal:machine_bottler"
@@ -114,6 +121,7 @@
 		{
 			dependencies: ["299364C146A285AB"]
 			id: "7B18A7C4A3A3FAE3"
+			min_width: 300
 			tasks: [{
 				id: "2C8DAB9FC5FF2186"
 				item: "thermal:machine_refinery"
@@ -125,6 +133,7 @@
 		{
 			dependencies: ["7B18A7C4A3A3FAE3"]
 			id: "1EFA779139C3E470"
+			min_width: 300
 			tasks: [{
 				id: "4124AF3F9FCA6A35"
 				item: "thermal:refined_fuel_bucket"
@@ -139,6 +148,7 @@
 				"6EC3843A34FFAA3F"
 			]
 			id: "344550902BB61752"
+			min_width: 300
 			size: 1.25d
 			tasks: [{
 				id: "480069B1359E11E0"
@@ -151,6 +161,7 @@
 		{
 			dependencies: ["3C599A2D8429EAC2"]
 			id: "6EC3843A34FFAA3F"
+			min_width: 300
 			size: 1.25d
 			tasks: [{
 				id: "0971F526A8DBDC54"
@@ -163,6 +174,7 @@
 		{
 			dependencies: ["22133B3C6FF9C7F3"]
 			id: "299364C146A285AB"
+			min_width: 300
 			tasks: [{
 				id: "4C92F330C9D3F773"
 				item: "extendedcrafting:black_iron_ingot"
@@ -178,6 +190,7 @@
 				"0B0410EFB86FACD8"
 			]
 			id: "5F5B3D5FE5AF3D00"
+			min_width: 300
 			tasks: [{
 				id: "53696B7488A7C58A"
 				item: "extendedcrafting:ender_ingot"
@@ -189,6 +202,7 @@
 		{
 			dependencies: ["2A9B8E18FC745B11"]
 			id: "0610F51F372DC7C0"
+			min_width: 300
 			tasks: [{
 				id: "083187D944A1346A"
 				item: "extendedcrafting:enhanced_ender_ingot"
@@ -200,6 +214,7 @@
 		{
 			dependencies: ["4D79DD9269D62977"]
 			id: "22133B3C6FF9C7F3"
+			min_width: 300
 			tasks: [{
 				id: "12E7BAF09B53FE4D"
 				item: "thermal:tar"
@@ -214,6 +229,7 @@
 				"24DAF54378E7AF38"
 			]
 			id: "1B993EA365BEFD7F"
+			min_width: 300
 			tasks: [{
 				id: "4D36DD9F3A6E265B"
 				item: "extendedcrafting:luminessence"
@@ -229,6 +245,7 @@
 			]
 			icon: "extendedcrafting:crafting_core"
 			id: "4B0C8DCB02DD44D3"
+			min_width: 300
 			rewards: [{
 				id: "25993E85E7B35025"
 				item: {
@@ -262,6 +279,7 @@
 			dependencies: ["4CD3AA3E83C316B7"]
 			icon: "mm:the_vat"
 			id: "0B0410EFB86FACD8"
+			min_width: 300
 			tasks: [
 				{
 					id: "383854D823F11DAD"
@@ -302,6 +320,7 @@
 		{
 			dependencies: ["11943E63F2FF8684"]
 			id: "6A3AF970578FC2AB"
+			min_width: 300
 			tasks: [{
 				id: "2A546547B65FA138"
 				item: "enderio:enchanter"
@@ -313,6 +332,7 @@
 		{
 			dependencies: ["438010D46E252B32"]
 			id: "6AFDB0F2AD9E81BC"
+			min_width: 300
 			tasks: [{
 				id: "5BA070F361AF171C"
 				item: "laserio:logic_chip"
@@ -324,6 +344,7 @@
 		{
 			dependencies: ["2B5724BE9F43CF8E"]
 			id: "1C1B6A081BDE2FB8"
+			min_width: 300
 			tasks: [
 				{
 					id: "37A5F5C04E85E14A"
@@ -354,6 +375,7 @@
 			dependencies: ["6AFDB0F2AD9E81BC"]
 			description: ["And hey! There's even a gas one for your future Mekanism endeavors too!"]
 			id: "68F05DB4A722B875"
+			min_width: 300
 			tasks: [{
 				id: "2684CB04AB89E838"
 				item: {
@@ -393,6 +415,7 @@
 		{
 			dependencies: ["6AFDB0F2AD9E81BC"]
 			id: "6E1043583A0EB480"
+			min_width: 300
 			tasks: [
 				{
 					id: "1E6AE3FF680D7A5F"
@@ -426,6 +449,7 @@
 		{
 			dependencies: ["6AFDB0F2AD9E81BC"]
 			id: "409CD4E7DA967D95"
+			min_width: 300
 			tasks: [
 				{
 					id: "57932C61F8B5C4C9"
@@ -567,6 +591,7 @@
 			dependencies: ["6AFDB0F2AD9E81BC"]
 			icon: "laserio:laser_node"
 			id: "1F87A150540CA271"
+			min_width: 300
 			tasks: [
 				{
 					id: "3654304C6C9CAE7E"
@@ -586,6 +611,7 @@
 		{
 			dependencies: ["438010D46E252B32"]
 			id: "3FE9ACEC0D804E39"
+			min_width: 300
 			tasks: [{
 				id: "78E611B4A79DC58F"
 				item: "modularrouters:modular_router"
@@ -601,6 +627,7 @@
 			]
 			hide_dependency_lines: false
 			id: "13F278D905E6DD33"
+			min_width: 300
 			tasks: [
 				{
 					id: "5A80B8A75314D4C9"
@@ -623,6 +650,7 @@
 		{
 			dependencies: ["5F5B3D5FE5AF3D00"]
 			id: "76D8ECB821DDA406"
+			min_width: 300
 			tasks: [{
 				id: "646A28ED86B56460"
 				item: "itemcollectors:advanced_collector"
@@ -634,6 +662,7 @@
 		{
 			dependencies: ["3FE9ACEC0D804E39"]
 			id: "28872D8D3C6A071B"
+			min_width: 300
 			tasks: [
 				{
 					count: 9L
@@ -666,6 +695,7 @@
 		{
 			dependencies: ["3FE9ACEC0D804E39"]
 			id: "5C74E537281EE76D"
+			min_width: 300
 			tasks: [
 				{
 					id: "64B020CF4226CC90"
@@ -685,6 +715,7 @@
 		{
 			dependencies: ["3FE9ACEC0D804E39"]
 			id: "653B3E220A9728AB"
+			min_width: 300
 			tasks: [
 				{
 					id: "55D69A5F9C724F1D"
@@ -766,6 +797,7 @@
 		{
 			dependencies: ["1C1B6A081BDE2FB8"]
 			id: "438010D46E252B32"
+			min_width: 300
 			tasks: [{
 				id: "5F9DC8FC928A9088"
 				title: "Transportation?"
@@ -777,6 +809,7 @@
 		{
 			dependencies: ["3FE9ACEC0D804E39"]
 			id: "74AB1B03344BC63D"
+			min_width: 300
 			tasks: [
 				{
 					id: "775227F79DA7B42D"
@@ -796,6 +829,7 @@
 		{
 			dependencies: ["74037ADCBA1AEF64"]
 			id: "4CD3AA3E83C316B7"
+			min_width: 300
 			tasks: [
 				{
 					id: "12FB47504B21DFAD"
@@ -815,6 +849,7 @@
 		{
 			dependencies: ["74037ADCBA1AEF64"]
 			id: "11943E63F2FF8684"
+			min_width: 300
 			tasks: [
 				{
 					id: "0DAA60DC11E8B6C4"
@@ -838,6 +873,7 @@
 		{
 			dependencies: ["11943E63F2FF8684"]
 			id: "7CAFF91379D3D603"
+			min_width: 300
 			tasks: [{
 				id: "1B635D68006FC2B0"
 				item: "thermal:machine_chiller"
@@ -849,6 +885,7 @@
 		{
 			dependencies: ["299364C146A285AB"]
 			id: "2FC46E153C739195"
+			min_width: 300
 			tasks: [{
 				id: "655C7BA4BC75FEEB"
 				item: "extendedcrafting:frame"
@@ -863,6 +900,7 @@
 				"40787810189E2AF7"
 			]
 			id: "61BB7D9CF57C67EE"
+			min_width: 300
 			tasks: [{
 				id: "5C9F505EF44ACC06"
 				item: "enderio:xp_obelisk"
@@ -877,6 +915,7 @@
 				"1B993EA365BEFD7F"
 			]
 			id: "1DEBC8EE4D9FF4E6"
+			min_width: 300
 			tasks: [{
 				id: "63B0CC003011E063"
 				item: "extendedcrafting:enhanced_ender_component"
@@ -888,6 +927,7 @@
 		{
 			dependencies: ["299364C146A285AB"]
 			id: "408E60EF04D7C833"
+			min_width: 300
 			tasks: [{
 				id: "662F97B5C0397AA9"
 				item: "thermal:upgrade_augment_2"
@@ -899,6 +939,7 @@
 		{
 			dependencies: ["6EC3843A34FFAA3F"]
 			id: "3B083E4C2A751A7A"
+			min_width: 300
 			tasks: [{
 				id: "237D319004E7E3AE"
 				item: "thermal:machine_pyrolyzer"
@@ -910,6 +951,7 @@
 		{
 			dependencies: ["6AFDB0F2AD9E81BC"]
 			id: "59C4675E514AA30D"
+			min_width: 300
 			tasks: [
 				{
 					id: "36796B7D03C93C24"
@@ -933,6 +975,7 @@
 			]
 			disable_toast: true
 			id: "2585082DAD87DC3C"
+			min_width: 300
 			size: 1.25d
 			tasks: [{
 				id: "74FDF1F96C99D583"
@@ -951,6 +994,7 @@
 		{
 			dependencies: ["1B993EA365BEFD7F"]
 			id: "04677AA3FD8F9EE3"
+			min_width: 300
 			tasks: [{
 				id: "484EE4EACAA7020A"
 				item: "functionalstorage:gold_upgrade"
@@ -962,6 +1006,7 @@
 		{
 			dependencies: ["2FC46E153C739195"]
 			id: "55C2A1B66BFA050C"
+			min_width: 300
 			tasks: [{
 				id: "7B4000A8D0C56C80"
 				item: "extendedcrafting:basic_table"
@@ -973,6 +1018,7 @@
 		{
 			dependencies: ["4CD3AA3E83C316B7"]
 			id: "4F4B62B17585F014"
+			min_width: 300
 			tasks: [
 				{
 					id: "0BFDAF3EF8C7E9E2"
@@ -1063,6 +1109,7 @@
 		{
 			dependencies: ["11943E63F2FF8684"]
 			id: "72F05C1DD6B30480"
+			min_width: 300
 			tasks: [{
 				id: "120E189A6BD882FE"
 				item: "thermal:device_rock_gen"
@@ -1074,6 +1121,7 @@
 		{
 			dependencies: ["344550902BB61752"]
 			id: "32981647F8826FC4"
+			min_width: 300
 			size: 1.0d
 			tasks: [{
 				id: "2C2CBD86540D3A98"
@@ -1103,6 +1151,7 @@
 		{
 			dependencies: ["344550902BB61752"]
 			id: "013F34D0D61627AF"
+			min_width: 300
 			tasks: [
 				{
 					id: "551AF5B01BD196DF"
@@ -1122,6 +1171,7 @@
 			dependencies: ["55C2A1B66BFA050C"]
 			hide_dependency_lines: true
 			id: "2558DB91F673E478"
+			min_width: 300
 			tasks: [{
 				id: "7424AEB6EFF1A2BA"
 				item: "ae2:crafting_terminal"
@@ -1131,8 +1181,12 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["128D3F42E4DBABE4"]
+			dependencies: [
+				"128D3F42E4DBABE4"
+				"2FC46E153C739195"
+			]
 			id: "4A9AEF5FA827F675"
+			min_width: 300
 			tasks: [{
 				id: "2D4DA50A48C4F50B"
 				item: "actuallyadditions:atomic_reconstructor"
@@ -1144,6 +1198,7 @@
 		{
 			dependencies: ["2FAD84CCF0B8DAB5"]
 			id: "6DBC6F18848F71BC"
+			min_width: 300
 			tasks: [
 				{
 					id: "6626B3B19571AA12"
@@ -1163,6 +1218,7 @@
 		{
 			dependencies: ["5E3B4D528B737D8F"]
 			id: "2FAD84CCF0B8DAB5"
+			min_width: 300
 			tasks: [{
 				id: "67D87B3469C2941D"
 				item: "actuallyadditions:iron_casing"
@@ -1174,6 +1230,7 @@
 		{
 			dependencies: ["6DBC6F18848F71BC"]
 			id: "547E97CC5F479FCB"
+			min_width: 300
 			size: 1.25d
 			tasks: [{
 				id: "38F2F395988DD76A"
@@ -1186,6 +1243,7 @@
 		{
 			dependencies: ["6DBC6F18848F71BC"]
 			id: "2EE05C593A9B4C97"
+			min_width: 300
 			size: 1.25d
 			tasks: [{
 				id: "3AD2EAB677E6295E"
@@ -1201,6 +1259,7 @@
 				"4A9AEF5FA827F675"
 			]
 			id: "32160E9E60466D24"
+			min_width: 300
 			tasks: [{
 				id: "010F38D43EA59C46"
 				item: "actuallyadditions:palis_crystal"
@@ -1212,6 +1271,7 @@
 		{
 			dependencies: ["299364C146A285AB"]
 			id: "128D3F42E4DBABE4"
+			min_width: 300
 			tasks: [{
 				id: "186FC79F28279C0C"
 				item: "actuallyadditions:basic_coil"
@@ -1226,6 +1286,7 @@
 				"32160E9E60466D24"
 			]
 			id: "5E3B4D528B737D8F"
+			min_width: 300
 			tasks: [{
 				id: "2C3A99F55B78B110"
 				item: "actuallyadditions:advanced_coil"
@@ -1237,6 +1298,7 @@
 		{
 			dependencies: ["547E97CC5F479FCB"]
 			id: "530C45928DF325B8"
+			min_width: 300
 			tasks: [{
 				id: "6F9BDD7A292E30B6"
 				item: "actuallyadditions:ranged_collector"
@@ -1248,6 +1310,7 @@
 		{
 			dependencies: ["2FAD84CCF0B8DAB5"]
 			id: "3951801F60DEA924"
+			min_width: 300
 			tasks: [
 				{
 					id: "1773FFCC8A15B7CC"
@@ -1291,6 +1354,7 @@
 		{
 			dependencies: ["2EE05C593A9B4C97"]
 			id: "40BAF17A7AB7695B"
+			min_width: 300
 			tasks: [
 				{
 					id: "37CA1503F3C72028"
@@ -1337,6 +1401,7 @@
 		{
 			dependencies: ["5E3B4D528B737D8F"]
 			id: "3E550A5967C6F86E"
+			min_width: 300
 			tasks: [{
 				id: "16647CEA5D3825EA"
 				item: {
@@ -1358,6 +1423,7 @@
 		{
 			dependencies: ["3E550A5967C6F86E"]
 			id: "7AA87F96C570713B"
+			min_width: 300
 			tasks: [
 				{
 					id: "60F29B69834A229D"
@@ -1391,6 +1457,7 @@
 		{
 			dependencies: ["344550902BB61752"]
 			id: "28CCC25EB1BF22A8"
+			min_width: 300
 			tasks: [{
 				id: "58DD4EDD2B6A651D"
 				item: "enderio:double_layer_capacitor"
@@ -1402,6 +1469,7 @@
 		{
 			dependencies: ["6EC3843A34FFAA3F"]
 			id: "7A8FA2A5AFEBE3C2"
+			min_width: 300
 			tasks: [{
 				id: "7FF39B4DA3D01A32"
 				item: "rainshield:rain_shield"
@@ -1413,6 +1481,7 @@
 		{
 			dependencies: ["28CCC25EB1BF22A8"]
 			id: "0B8629D33D5D1662"
+			min_width: 300
 			tasks: [{
 				id: "4919042EE4B99DA7"
 				item: {
@@ -1428,6 +1497,7 @@
 		{
 			dependencies: ["2EE05C593A9B4C97"]
 			id: "560E8EED03FBF93B"
+			min_width: 300
 			tasks: [{
 				id: "61EC9B7E9BF7508F"
 				item: "actuallyadditions:dropper"

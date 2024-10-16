@@ -917,6 +917,7 @@
 				item: "mekanism:alloy_infused"
 				type: "item"
 			}]
+			title: "Your Second Alloys?"
 			x: 8.5d
 			y: -5.5d
 		}
@@ -937,6 +938,7 @@
 				item: "mekanism:basic_control_circuit"
 				type: "item"
 			}]
+			title: "Circuitery ever so easy"
 			x: 8.5d
 			y: -6.5d
 		}
@@ -962,6 +964,7 @@
 				item: "mekanism:metallurgic_infuser"
 				type: "item"
 			}]
+			title: "Infuse and mass produce"
 			x: 7.5d
 			y: -5.5d
 		}
@@ -1011,7 +1014,7 @@
 					type: "item"
 				}
 			]
-			title: "Finally! Proper transportation!"
+			title: "Finally! Proper transportation"
 			x: 8.5d
 			y: -7.5d
 		}
@@ -1156,6 +1159,7 @@
 				item: "immersiveengineering:ethanol_bucket"
 				type: "item"
 			}]
+			title: "Not to drink"
 			x: 7.75d
 			y: -3.5d
 		}
@@ -1179,6 +1183,7 @@
 				item: "immersiveengineering:plantoil_bucket"
 				type: "item"
 			}]
+			title: "Green old oil!"
 			x: 9.25d
 			y: -3.5d
 		}
@@ -1208,6 +1213,7 @@
 				item: "immersiveengineering:biodiesel_bucket"
 				type: "item"
 			}]
+			title: "Green fuel, not green diesel"
 			x: 8.5d
 			y: -2.5d
 		}
@@ -1375,6 +1381,7 @@
 				item: "powah:dielectric_paste"
 				type: "item"
 			}]
+			title: "Dielectric Copy"
 			x: 11.75d
 			y: -3.5d
 		}
@@ -1448,7 +1455,7 @@
 					type: "item"
 				}
 			]
-			title: "Free ores!"
+			title: "Free ores! Part 2"
 			x: 11.75d
 			y: -6.5d
 		}
@@ -1580,6 +1587,7 @@
 					type: "item"
 				}
 			]
+			title: "Free Ores! Part 1"
 			x: 10.5d
 			y: -6.5d
 		}
@@ -1632,6 +1640,7 @@
 				}
 				type: "item"
 			}]
+			title: "Basically a black chalk"
 			x: 10.5d
 			y: -4.5d
 		}
@@ -1655,6 +1664,7 @@
 				item: "immersiveengineering:phenolic_resin_bucket"
 				type: "item"
 			}]
+			title: "Phenomenal fluid"
 			x: 6.25d
 			y: -1.5d
 		}
@@ -1682,6 +1692,7 @@
 				item: "immersiveengineering:acetaldehyde_bucket"
 				type: "item"
 			}]
+			title: "Too hard to pronounce"
 			x: 7.0d
 			y: -2.5d
 		}
@@ -1709,6 +1720,7 @@
 				item: "immersiveengineering:plate_duroplast"
 				type: "item"
 			}]
+			title: "Fake Plastic D:"
 			x: 5.5d
 			y: -2.5d
 		}
@@ -1929,6 +1941,7 @@
 					type: "item"
 				}
 			]
+			title: "Hold these orbs"
 			x: 11.75d
 			y: -2.5d
 		}
@@ -1972,6 +1985,7 @@
 				item: "functionalstorage:copper_upgrade"
 				type: "item"
 			}]
+			title: "Nerf drawer, please"
 			x: 10.75d
 			y: -2.5d
 		}
@@ -2000,6 +2014,7 @@
 				item: { Count: 8, id: "mekanism:upgrade_energy" }
 				type: "item"
 			}]
+			title: "It's still slow tho"
 			x: 10.5d
 			y: -1.5d
 		}
@@ -2032,6 +2047,7 @@
 				item: "immersiveengineering:cloche"
 				type: "item"
 			}]
+			title: "Gardening is my passion"
 			x: 9.75d
 			y: -2.5d
 		}
@@ -2060,6 +2076,7 @@
 				item: "mekanism:energized_smelter"
 				type: "item"
 			}]
+			title: "When furnacing too slow, furnace faster"
 			x: 11.3333d
 			y: -7.5d
 		}
@@ -2083,6 +2100,7 @@
 				item: "mekanism:enrichment_chamber"
 				type: "item"
 			}]
+			title: "En-reaching limits"
 			x: 10.5d
 			y: -7.5d
 		}
@@ -2106,6 +2124,7 @@
 				item: "mekanism:advanced_control_circuit"
 				type: "item"
 			}]
+			title: "Guess it's harder now"
 			x: 9.5d
 			y: -6.5d
 		}
@@ -2129,12 +2148,17 @@
 				item: "mekanism:crusher"
 				type: "item"
 			}]
+			title: "Crushed down!"
 			x: 9.5d
 			y: -5.5d
 		}
 		{
 			dependencies: ["39A50046284C5EA0"]
-			description: ["Craft some advanced Immervise components and get access to PneumaticCraft!"]
+			description: [
+				"Craft some advanced Immervise components and get access to PneumaticCraft!"
+				""
+				"I believe you've understood the basics, I'll be less explicative from now on, don't forget, use JEI."
+			]
 			icon: "immersiveengineering:component_electronic_adv"
 			id: "04BC94D4DF69E78A"
 			min_width: 300
@@ -2179,6 +2203,7 @@
 				item: "mekanism:electric_pump"
 				type: "item"
 			}]
+			title: "Pumped up!"
 			x: 10.5d
 			y: -5.5d
 		}
@@ -2204,6 +2229,7 @@
 				item: "immersiveengineering:capacitor_lv"
 				type: "item"
 			}]
+			title: "LoVing battery"
 			x: 5.25d
 			y: -3.5d
 		}
@@ -2227,6 +2253,7 @@
 				item: "immersiveengineering:capacitor_mv"
 				type: "item"
 			}]
+			title: "Power eMVy"
 			x: 4.5d
 			y: -2.5d
 		}
@@ -2250,6 +2277,7 @@
 				item: "immersiveengineering:capacitor_hv"
 				type: "item"
 			}]
+			title: "PowaH Vessel"
 			x: 10.5d
 			y: -3.5d
 		}
@@ -2400,6 +2428,7 @@
 					type: "item"
 				}
 			]
+			title: "Power for ages! (not really)"
 			x: 7.5d
 			y: -6.5d
 		}
@@ -2425,6 +2454,7 @@
 				item: "mekanism:enriched_iron"
 				type: "item"
 			}]
+			title: "Cheap Steel"
 			x: 6.5d
 			y: -6.5d
 		}
@@ -2498,6 +2528,7 @@
 				item: "mekanism:precision_sawmill"
 				type: "item"
 			}]
+			title: "Saw that."
 			x: 12.16666d
 			y: -7.5d
 		}
@@ -2535,6 +2566,7 @@
 				title: "Aether Ingots"
 				type: "item"
 			}]
+			title: "Godly Materials"
 			x: 11.75d
 			y: -5.5d
 		}
@@ -2558,6 +2590,7 @@
 				item: "mekanism:basic_tier_installer"
 				type: "item"
 			}]
+			title: "Satis Factory"
 			x: 9.5d
 			y: -7.5d
 		}

@@ -10,10 +10,15 @@
 	quests: [
 		{
 			dependencies: ["39A50046284C5EA0"]
-			description: ["Craft some advanced Immervise components and get access to PneumaticCraft!"]
+			description: [
+				"Craft some advanced Immervise components and get access to PneumaticCraft!"
+				""
+				"I believe you've understood the basics, I'll be less explicative from now on, don't forget, use JEI."
+			]
 			disable_toast: true
 			icon: "immersiveengineering:component_electronic_adv"
 			id: "5E62C6B6C69FEE4F"
+			min_width: 300
 			size: 1.25d
 			tasks: [
 				{
@@ -35,6 +40,7 @@
 			disable_toast: true
 			hide: false
 			id: "5DAF16566BC2FDB6"
+			min_width: 300
 			size: 1.25d
 			tasks: [{
 				count: 16L
@@ -51,6 +57,7 @@
 				"5DAF16566BC2FDB6"
 			]
 			id: "4A32249482CAF37F"
+			min_width: 300
 			tasks: [{
 				id: "5E4AE3462809FFFD"
 				item: "pneumaticcraft:thermopneumatic_processing_plant"
@@ -62,6 +69,7 @@
 		{
 			dependencies: ["5DAF16566BC2FDB6"]
 			id: "3753ED157236EF54"
+			min_width: 300
 			tasks: [{
 				id: "37032354BEB0C998"
 				item: "pneumaticcraft:small_tank"
@@ -76,6 +84,7 @@
 				"55C65F6C9E1769C1"
 			]
 			id: "2577C7FFB57C9944"
+			min_width: 300
 			tasks: [{
 				id: "5CDBE8EBC3FFE16F"
 				item: "pneumaticcraft:pressure_tube"
@@ -90,6 +99,7 @@
 				"5E62C6B6C69FEE4F"
 			]
 			id: "7E4B6EB5FFFB66BB"
+			min_width: 300
 			tasks: [{
 				id: "20AB666CCC766483"
 				item: "pneumaticcraft:fluid_mixer"
@@ -102,6 +112,7 @@
 			dependencies: ["5DAF16566BC2FDB6"]
 			icon: "pneumaticcraft:heat_sink"
 			id: "5E29CBA54EDA91C0"
+			min_width: 300
 			tasks: [
 				{
 					id: "214C2A5B47F80E27"
@@ -121,6 +132,7 @@
 		{
 			dependencies: ["5E62C6B6C69FEE4F"]
 			id: "1D42C6268FA6E13F"
+			min_width: 300
 			tasks: [{
 				id: "28677B2E0E5C2ABB"
 				item: "pneumaticcraft:flux_compressor"
@@ -132,11 +144,13 @@
 		{
 			dependencies: ["2D18BF1E379DC75A"]
 			id: "30FD1966D4BEE62B"
+			min_width: 300
 			tasks: [{
 				id: "279B5DF6E6A7FE02"
 				item: "pneumaticcraft:plastic"
 				type: "item"
 			}]
+			title: "Real Plastic :D"
 			x: -2.25d
 			y: -1.5d
 		}
@@ -147,6 +161,7 @@
 				"07ADCEF6CBA17D58"
 			]
 			id: "2D18BF1E379DC75A"
+			min_width: 300
 			tasks: [{
 				id: "111C8FEAE17AF405"
 				item: "pneumaticcraft:plastic_bucket"
@@ -159,6 +174,7 @@
 			dependencies: ["7E4B6EB5FFFB66BB"]
 			icon: "pneumaticcraft:upgrade_matrix"
 			id: "5C3A578EAC76C3CF"
+			min_width: 300
 			tasks: [
 				{
 					id: "10288A12B168271F"
@@ -187,6 +203,7 @@
 				"1D42C6268FA6E13F"
 			]
 			id: "4903173768F99F18"
+			min_width: 300
 			tasks: [
 				{
 					id: "08A91172067E9F21"
@@ -210,6 +227,7 @@
 		{
 			dependencies: ["30FD1966D4BEE62B"]
 			id: "461582A0D1C0E0EF"
+			min_width: 300
 			tasks: [{
 				id: "4E84CF242FE18403"
 				item: "pneumaticcraft:medium_tank"
@@ -224,6 +242,7 @@
 				"7ED427C5D3207920"
 			]
 			id: "415C7601E035DBDB"
+			min_width: 300
 			size: 1.5d
 			tasks: [{
 				id: "626BB3AB37D561FA"
@@ -242,6 +261,7 @@
 			]
 			disable_toast: true
 			id: "7ED427C5D3207920"
+			min_width: 300
 			size: 1.25d
 			tasks: [{
 				id: "2C7DF1913545046A"
@@ -254,6 +274,7 @@
 		{
 			dependencies: ["415C7601E035DBDB"]
 			id: "1A965CD16F4D3FE3"
+			min_width: 300
 			tasks: [{
 				id: "1E0D291FDF2EC865"
 				item: "thermal:machine_smelter"
@@ -266,6 +287,7 @@
 			dependencies: ["415C7601E035DBDB"]
 			icon: "thermal:machine_press"
 			id: "55C1955949B877B8"
+			min_width: 300
 			tasks: [
 				{
 					id: "17867FC32C281AF0"
@@ -285,6 +307,7 @@
 		{
 			dependencies: ["1A965CD16F4D3FE3"]
 			id: "0F2F0E0DC9438FCB"
+			min_width: 300
 			tasks: [{
 				id: "64A699EB871CC20C"
 				item: "chemlib:platinum_ingot"
@@ -296,6 +319,7 @@
 		{
 			dependencies: ["0F2F0E0DC9438FCB"]
 			id: "452BFC7F6C2B3FCF"
+			min_width: 300
 			tasks: [{
 				id: "15155F6301EE6258"
 				item: "mekanism:alloy_reinforced"
@@ -307,6 +331,7 @@
 		{
 			dependencies: ["452BFC7F6C2B3FCF"]
 			id: "7C2E14CCBB9A5685"
+			min_width: 300
 			tasks: [{
 				id: "45A1622A978B9248"
 				item: "mekanism:osmium_compressor"
@@ -318,6 +343,7 @@
 		{
 			dependencies: ["1A965CD16F4D3FE3"]
 			id: "117B8F523BF8B590"
+			min_width: 300
 			tasks: [{
 				id: "3FB190F18D5D145C"
 				item: "minecraft:ender_eye"
@@ -330,6 +356,7 @@
 		{
 			dependencies: ["117B8F523BF8B590"]
 			id: "5C68FCCC9350C84F"
+			min_width: 300
 			rewards: [{
 				id: "5227C4E762393B63"
 				type: "xp"
@@ -347,6 +374,7 @@
 		{
 			dependencies: ["1A75140087EB1B37"]
 			id: "40787810189E2AF7"
+			min_width: 300
 			tasks: [{
 				id: "5EC727E0B45BA36B"
 				item: "kubejs:enchanted_ingot"
@@ -359,6 +387,7 @@
 			dependencies: ["30FD1966D4BEE62B"]
 			icon: "pneumaticcraft:memory_stick"
 			id: "1A75140087EB1B37"
+			min_width: 300
 			tasks: [
 				{
 					id: "140A93FFEA1DEDCC"
@@ -380,6 +409,7 @@
 				"1A965CD16F4D3FE3"
 			]
 			id: "5F2413B26A70B63B"
+			min_width: 300
 			tasks: [{
 				id: "2B27AA84DF16BC83"
 				item: "kubejs:evil_infused_ingot"
@@ -392,6 +422,7 @@
 			dependencies: ["7C2E14CCBB9A5685"]
 			icon: "mekanism:ingot_refined_glowstone"
 			id: "40889CF006E38EB0"
+			min_width: 300
 			tasks: [
 				{
 					id: "7964354639DC2339"
@@ -410,6 +441,7 @@
 		{
 			dependencies: ["0F2F0E0DC9438FCB"]
 			id: "7FC2A2D7276AE83F"
+			min_width: 300
 			tasks: [{
 				id: "480E968F1A360E76"
 				item: "thermal:enderium_ingot"
@@ -421,6 +453,7 @@
 		{
 			dependencies: ["7FC2A2D7276AE83F"]
 			id: "66D705EFB050318F"
+			min_width: 300
 			tasks: [{
 				id: "50CDFF14D14BDB69"
 				item: "enderio:dark_steel_ingot"
@@ -435,6 +468,7 @@
 				"2F6555104D56A8E2"
 			]
 			id: "554507DD4518153D"
+			min_width: 300
 			size: 1.25d
 			tasks: [{
 				id: "698D61B8CDC694C8"
@@ -447,6 +481,7 @@
 		{
 			dependencies: ["40889CF006E38EB0"]
 			id: "090D14082AE0CCD0"
+			min_width: 300
 			tasks: [{
 				id: "3E5D62EEB476B83F"
 				item: "thermal:lumium_ingot"
@@ -458,6 +493,7 @@
 		{
 			dependencies: ["090D14082AE0CCD0"]
 			id: "5785F9A5AB33C124"
+			min_width: 300
 			tasks: [{
 				id: "57893885DFD466D9"
 				item: "thermal:upgrade_augment_1"
@@ -469,6 +505,7 @@
 		{
 			dependencies: ["66D705EFB050318F"]
 			id: "2F2F12C58287606A"
+			min_width: 300
 			tasks: [{
 				id: "7B276F98E9D5097C"
 				item: "enderio:basic_capacitor"
@@ -480,6 +517,7 @@
 		{
 			dependencies: ["40889CF006E38EB0"]
 			id: "021AF051D9490BD4"
+			min_width: 300
 			tasks: [{
 				id: "7B24C884A2AA3922"
 				item: "mekanism:upgrade_speed"
@@ -496,6 +534,7 @@
 			]
 			icon: "enderio:sag_mill"
 			id: "6CBDB50FFA272FAA"
+			min_width: 300
 			tasks: [
 				{
 					id: "0ADD9C249F4B87A8"
@@ -559,6 +598,7 @@
 		{
 			dependencies: ["6CBDB50FFA272FAA"]
 			id: "37FCDB0C92228253"
+			min_width: 300
 			tasks: [{
 				id: "30964A9937A24541"
 				item: "thermal_extra:soul_sand_dust"
@@ -570,6 +610,7 @@
 		{
 			dependencies: ["37FCDB0C92228253"]
 			id: "53FD0B2E4952177F"
+			min_width: 300
 			tasks: [{
 				id: "5E2302CC3F9EA84F"
 				item: "enderio:soularium_ingot"
@@ -581,6 +622,7 @@
 		{
 			dependencies: ["53FD0B2E4952177F"]
 			id: "1645A4D41DFAFDE2"
+			min_width: 300
 			size: 1.25d
 			tasks: [{
 				id: "751CB4A8D809C989"
@@ -596,6 +638,7 @@
 				"74314B7BF445D5CD"
 			]
 			id: "37084AF4364CC896"
+			min_width: 300
 			tasks: [{
 				id: "4106B0B779D60D67"
 				item: "enderio:end_steel_ingot"
@@ -607,6 +650,7 @@
 		{
 			dependencies: ["452BFC7F6C2B3FCF"]
 			id: "2F6555104D56A8E2"
+			min_width: 300
 			tasks: [{
 				id: "537E0B5535AA4F41"
 				item: "enderio:pulsating_crystal"
@@ -618,6 +662,7 @@
 		{
 			dependencies: ["5F2413B26A70B63B"]
 			id: "2E1275F06283FB79"
+			min_width: 300
 			tasks: [{
 				id: "3B5DAEBF6D188D28"
 				item: "mob_grinding_utils:fan"
@@ -629,6 +674,7 @@
 		{
 			dependencies: ["5F2413B26A70B63B"]
 			id: "323DE7D13CCF1B14"
+			min_width: 300
 			tasks: [{
 				id: "7AB3E47ED79A8680"
 				item: "mob_grinding_utils:saw"
@@ -640,6 +686,7 @@
 		{
 			dependencies: ["1A75140087EB1B37"]
 			id: "307492750314D80F"
+			min_width: 300
 			tasks: [{
 				id: "46E2A4359395A992"
 				item: "mob_grinding_utils:gm_chicken_feed"
@@ -651,6 +698,7 @@
 		{
 			dependencies: ["5F2413B26A70B63B"]
 			id: "3AE32BC6A7B7F9AA"
+			min_width: 300
 			tasks: [
 				{
 					id: "48D8B6E452B6B873"
@@ -676,6 +724,7 @@
 		{
 			dependencies: ["2E1275F06283FB79"]
 			id: "6A7DE6D214DCB63A"
+			min_width: 300
 			tasks: [
 				{
 					id: "5536A886E27C39B4"
@@ -699,6 +748,7 @@
 		{
 			dependencies: ["3AE32BC6A7B7F9AA"]
 			id: "7BD50BB67F7143AA"
+			min_width: 300
 			tasks: [{
 				id: "17ACE0B08252C895"
 				item: "mob_grinding_utils:absorption_upgrade"
@@ -710,6 +760,7 @@
 		{
 			dependencies: ["323DE7D13CCF1B14"]
 			id: "27A8A1A6BCC1A80A"
+			min_width: 300
 			tasks: [
 				{
 					id: "7C152DF058BAED66"
@@ -733,6 +784,7 @@
 		{
 			dependencies: ["323DE7D13CCF1B14"]
 			id: "4F4CB867F0B20B57"
+			min_width: 300
 			tasks: [
 				{
 					id: "6A8C183D7B6D6917"
@@ -757,6 +809,7 @@
 			dependencies: ["1A75140087EB1B37"]
 			icon: "mob_grinding_utils:gm_chicken_feed_cursed"
 			id: "7AC54ABB76003D59"
+			min_width: 300
 			tasks: [{
 				id: "0ECA700692583DAA"
 				item: {
@@ -784,6 +837,7 @@
 		{
 			dependencies: ["415C7601E035DBDB"]
 			id: "36DA75C9F276770F"
+			min_width: 300
 			tasks: [{
 				id: "67C29A268E10B224"
 				item: "ae2:energy_acceptor"
@@ -798,6 +852,7 @@
 				"0D79613C2A510AAB"
 			]
 			id: "4A6467F39566C34D"
+			min_width: 300
 			rewards: [{
 				id: "7D73D9BC0DBFDB2D"
 				item: {
@@ -822,6 +877,7 @@
 		{
 			dependencies: ["37C45BCCFE76D765"]
 			id: "217A5E262FD3BD6A"
+			min_width: 300
 			tasks: [{
 				id: "555715CB0C9B432C"
 				item: "ae2:inscriber"
@@ -835,6 +891,7 @@
 			disable_toast: true
 			icon: "ae2:silicon_press"
 			id: "633FBF8B95C846AA"
+			min_width: 300
 			size: 1.25d
 			tasks: [
 				{
@@ -867,6 +924,7 @@
 				"633FBF8B95C846AA"
 			]
 			id: "0D79613C2A510AAB"
+			min_width: 300
 			tasks: [
 				{
 					id: "30D339EA42C3297C"
@@ -890,6 +948,7 @@
 		{
 			dependencies: ["37C45BCCFE76D765"]
 			id: "133690B7ACEC3D91"
+			min_width: 300
 			tasks: [{
 				id: "646DED9E208195AD"
 				item: "ae2:speed_card"
@@ -901,6 +960,7 @@
 		{
 			dependencies: ["37C45BCCFE76D765"]
 			id: "6EDE3C749D67EAB1"
+			min_width: 300
 			tasks: [{
 				id: "501C15951EDCEF7D"
 				item: {
@@ -916,6 +976,7 @@
 		{
 			dependencies: ["6EDE3C749D67EAB1"]
 			id: "04600B7E5CF98E03"
+			min_width: 300
 			tasks: [{
 				id: "742173A5BA35E56F"
 				item: {
@@ -931,6 +992,7 @@
 		{
 			dependencies: ["1C95DB7023229006"]
 			id: "7AC776AB528A6439"
+			min_width: 300
 			tasks: [{
 				id: "0D257A23EBCD988A"
 				item: "ae2:cell_component_1k"
@@ -942,6 +1004,7 @@
 		{
 			dependencies: ["7AC776AB528A6439"]
 			id: "5287B7527838CBD7"
+			min_width: 300
 			tasks: [{
 				id: "6F0CBE66C2AD9D2A"
 				item: "ae2:cell_component_4k"
@@ -953,6 +1016,7 @@
 		{
 			dependencies: ["5287B7527838CBD7"]
 			id: "169CB167D77EADCD"
+			min_width: 300
 			tasks: [{
 				id: "3CE4502B04B7025B"
 				item: "ae2:cell_component_16k"
@@ -964,6 +1028,7 @@
 		{
 			dependencies: ["187BE2A259075C18"]
 			id: "37C45BCCFE76D765"
+			min_width: 300
 			tasks: [{
 				id: "6C8D2CEDB18E6623"
 				item: "ae2:fluix_crystal"
@@ -978,6 +1043,7 @@
 				"78893A86998F05B7"
 			]
 			id: "1C95DB7023229006"
+			min_width: 300
 			tasks: [{
 				id: "26082C8070C21CB4"
 				item: "ae2:drive"
@@ -989,6 +1055,7 @@
 		{
 			dependencies: ["1C95DB7023229006"]
 			id: "0E8C1336874846AE"
+			min_width: 300
 			tasks: [
 				{
 					id: "12E3D56B35EE2567"
@@ -1041,6 +1108,7 @@
 		{
 			dependencies: ["169CB167D77EADCD"]
 			id: "6A73C5CCF11D80D9"
+			min_width: 300
 			tasks: [{
 				id: "23A8FE9CE379E25A"
 				item: "ae2:cell_component_64k"
@@ -1053,6 +1121,7 @@
 			dependencies: ["37C45BCCFE76D765"]
 			icon: "ae2:growth_accelerator"
 			id: "328859336883DB08"
+			min_width: 300
 			tasks: [
 				{
 					id: "42A7700C5426810D"
@@ -1095,6 +1164,7 @@
 		{
 			dependencies: ["7AC776AB528A6439"]
 			id: "03187F7013D88840"
+			min_width: 300
 			tasks: [{
 				id: "360CA341E89AF86B"
 				item: "ae2:cell_workbench"
@@ -1107,6 +1177,7 @@
 			dependencies: ["78893A86998F05B7"]
 			icon: "ae2:network_tool"
 			id: "3EE5AB03B9E73786"
+			min_width: 300
 			tasks: [
 				{
 					id: "438046045DCBEA5D"
@@ -1145,6 +1216,7 @@
 		{
 			dependencies: ["4A6467F39566C34D"]
 			id: "78893A86998F05B7"
+			min_width: 300
 			tasks: [{
 				id: "1C3EAEDF8E4B9907"
 				item: "ae2:terminal"
@@ -1156,6 +1228,7 @@
 		{
 			dependencies: ["6A73C5CCF11D80D9"]
 			id: "132B2C01D2FBC525"
+			min_width: 300
 			tasks: [{
 				id: "1BFA2D02D4184DEB"
 				item: "ae2:cell_component_256k"
@@ -1167,6 +1240,7 @@
 		{
 			dependencies: ["5C68FCCC9350C84F"]
 			id: "2F534705DE303B82"
+			min_width: 300
 			tasks: [{
 				id: "58DF8FD8AEF7C7AA"
 				item: "botania:ender_air_bottle"
@@ -1178,6 +1252,7 @@
 		{
 			dependencies: ["5C68FCCC9350C84F"]
 			id: "78A5EFE0090C4D99"
+			min_width: 300
 			tasks: [{
 				id: "26740B2D056C0FA7"
 				item: "minecraft:dragon_egg"
@@ -1189,6 +1264,7 @@
 		{
 			dependencies: ["78A5EFE0090C4D99"]
 			id: "5C94342525C74DE6"
+			min_width: 300
 			tasks: [{
 				id: "4E33AF6CC2318AC0"
 				item: "minecraft:chorus_fruit"
@@ -1200,6 +1276,7 @@
 		{
 			dependencies: ["78A5EFE0090C4D99"]
 			id: "3ED1774CFDEEC0F8"
+			min_width: 300
 			tasks: [{
 				id: "70BBBA6DBC34B237"
 				item: "minecraft:shulker_shell"
@@ -1212,6 +1289,7 @@
 			dependencies: ["5C68FCCC9350C84F"]
 			hide_dependency_lines: true
 			id: "74314B7BF445D5CD"
+			min_width: 300
 			size: 1.25d
 			tasks: [{
 				id: "7797D772E5DD3DB0"
@@ -1227,6 +1305,7 @@
 				"15155F6301EE6258"
 			]
 			id: "7834D17272807800"
+			min_width: 300
 			tasks: [{
 				id: "4032083F97D883F7"
 				item: "pneumaticcraft:large_tank"
@@ -1238,6 +1317,7 @@
 		{
 			dependencies: ["7834D17272807800"]
 			id: "1985E0AF0779593F"
+			min_width: 300
 			tasks: [{
 				id: "06EAEE495857F18F"
 				item: "pneumaticcraft:huge_tank"
@@ -1249,6 +1329,7 @@
 		{
 			dependencies: ["03187F7013D88840"]
 			id: "5873ED0DEA6D2AE3"
+			min_width: 300
 			tasks: [{
 				id: "7AA340F31B78A908"
 				item: "ae2:view_cell"
@@ -1269,6 +1350,7 @@
 				}
 			}
 			id: "1B622423B03A6A6F"
+			min_width: 300
 			tasks: [
 				{
 					id: "331DD6FC66FB8637"
@@ -1317,6 +1399,7 @@
 				tag: { }
 			}
 			id: "5211F213A9318194"
+			min_width: 300
 			tasks: [
 				{
 					id: "1CA9E425B9360B35"
@@ -1345,6 +1428,7 @@
 			hide_dependency_lines: true
 			icon: "bhc:red_heart_canister"
 			id: "3EE1405D4963DB67"
+			min_width: 300
 			tasks: [
 				{
 					id: "4D0EFB092A45FCE8"
@@ -1365,6 +1449,7 @@
 			dependencies: ["452BFC7F6C2B3FCF"]
 			hide_dependency_lines: true
 			id: "13129358495FF3BD"
+			min_width: 300
 			tasks: [{
 				id: "1E8E5345CF45D6D4"
 				item: "mekanism:elite_energy_cube"
@@ -1376,6 +1461,7 @@
 		{
 			dependencies: ["1A965CD16F4D3FE3"]
 			id: "3D3BCEF5D09702EB"
+			min_width: 300
 			tasks: [
 				{
 					id: "4EE8CB26A03C6D57"
@@ -1394,6 +1480,7 @@
 		{
 			dependencies: ["090D14082AE0CCD0"]
 			id: "6D3DF45A28E33B78"
+			min_width: 300
 			tasks: [{
 				id: "704740B656EE2ABB"
 				item: "mekanism:advanced_tier_installer"
@@ -1406,6 +1493,7 @@
 			dependencies: ["415C7601E035DBDB"]
 			hide_dependency_lines: true
 			id: "079F9B9EE9BDDFE8"
+			min_width: 300
 			tasks: [{
 				id: "1482C6ACD0907990"
 				item: "thermal:redprint"
@@ -1419,6 +1507,7 @@
 			hide_dependency_lines: true
 			icon: "functionalstorage:fluid_1"
 			id: "738703DD8B477166"
+			min_width: 300
 			tasks: [{
 				id: "4AA535D450831232"
 				item: {
@@ -1452,6 +1541,7 @@
 			dependencies: ["415C7601E035DBDB"]
 			hide_dependency_lines: true
 			id: "19650D2B7AABCFC9"
+			min_width: 300
 			tasks: [{
 				id: "4E301AE22A8A3B05"
 				item: "thermal:tinker_bench"
@@ -1464,6 +1554,7 @@
 		{
 			dependencies: ["415C7601E035DBDB"]
 			id: "06EC2DEA64DD39BF"
+			min_width: 300
 			tasks: [{
 				id: "092CE2F6E44D0C57"
 				item: "thermal:machine_insolator"
@@ -1479,6 +1570,7 @@
 				"2BE50BE744D435F6"
 			]
 			id: "2D92DC2394743654"
+			min_width: 300
 			tasks: [{
 				id: "05EA0063414D8B60"
 				item: {
@@ -1495,6 +1587,7 @@
 			dependencies: ["415C7601E035DBDB"]
 			hide_dependency_lines: true
 			id: "2BE50BE744D435F6"
+			min_width: 300
 			tasks: [{
 				id: "321EFB2E08D8FB5D"
 				item: {
@@ -1510,6 +1603,7 @@
 		{
 			dependencies: ["78A5EFE0090C4D99"]
 			id: "4464051324097A9D"
+			min_width: 300
 			tasks: [{
 				id: "1443AD7B06CCC543"
 				item: {
