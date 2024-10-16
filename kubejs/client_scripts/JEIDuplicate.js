@@ -15,7 +15,9 @@ JEIEvents.removeCategories(event => {
         'thermal:disenchantment_fuel',
         'thermal:gourmand_fuel',
         'thermal:stirling_fuel',
-        'enderio:soul_engine'
+        'enderio:soul_engine',
+        'elementalcraft:purifier',
+        'ftbquests:book'
     )
 })
 

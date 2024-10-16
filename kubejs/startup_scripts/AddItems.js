@@ -36,7 +36,7 @@ StartupEvents.registry('item', event => {
   event.create('dark_steel_shears', 'shears').displayName('Dark Steel Shears').maxDamage(952)
   event.create('dark_soularium_ingot').displayName('Dark Soularium Ingot').glow(true)
   event.create('crystalline_alloy_ingot').displayName('Crystalline Alloy Ingot')
-  event.create('crystalline_pink_slime_ingot').displayName('Crystalline Pink Slime Ingot')
+  //event.create('crystalline_pink_slime_ingot').displayName('Crystalline Pink Slime Ingot')
   event.create('void_infused_dye_blend').displayName('Void Infused Dye Blend')
   event.create('soul_attuned_dye_blend').displayName('Soul Attuned Dye Blend')
   //event.create('zombie_soul_vial').displayName('Zombie Soul Vial').texture('enderio:item/filled_soul_vial').maxStackSize(1).glow(true).tag('outlying:soul_vial')

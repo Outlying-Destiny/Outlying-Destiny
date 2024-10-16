@@ -58,11 +58,11 @@ ServerEvents.recipes(event => {
     alloy3('kubejs:evil_infused_ingot', 1, 'kubejs:enchanted_ingot', 1, 'kubejs:demon_ingot', 1, 'architects_palette:withered_bone', 1, 12000)
     alloy3('powah_dielectric_paste', 16, 'minecraft:clay_ball', 1, 'immersiveengineering:dust_coke', 2, 'minecraft:blaze_powder', 1, 6000)
     alloy2('kubejs:crystalline_alloy_ingot', 1, 'enderio:pulsating_powder', 1, 'thermal:lumium_ingot', 1, 14000)
-    alloy2('kubejs:crystalline_pink_slime_ingot', 1, 'industrialforegoing:pink_slime_ingot', 1, 'kubejs:crystalline_alloy_ingot',1 ,16000)
+    //alloy2('kubejs:crystalline_pink_slime_ingot', 1, 'industrialforegoing:pink_slime_ingot', 1, 'kubejs:crystalline_alloy_ingot',1 ,16000)
     //alloy3('kubejs:dark_soularium_ingot', 1, 'enderio:soularium_ingot', 1, 'enderio:dark_steel_ingot', 10, '', 1, 24000)
     alloy3('kubejs:machinarium_ingot', 2, 'mekanism:ingot_refined_obsidian', 1, 'thermal:steel_ingot', 1, 'kubejs:crystalline_alloy_ingot', 1, 16000)
     alloy2('industrialforegoing:pink_slime_ingot', 1, 'industrialforegoing:pink_slime', 1, 'kubejs:demon_ingot', 1, 8000)
-    alloy2('thermal_extra:twinite_ingot', 1, 'minecraft:netherite_ingot', 1, 'kubejs:crystalline_pink_slime_ingot', 1, 18000)
+    alloy3('thermal_extra:twinite_ingot', 1, 'industrialforegoing:pink_slime_ingot', 1, 'kubejs:crystalline_ingot', 1, 'minecraft:netherite_ingot', 1, 18000)
     alloy3('thermal_extra:dragonsteel_ingot', 1, 'draconicevolution:draconium_ingot', 1, 'thermal_extra:shellite_ingot', 1, 'enderio:end_steel_ingot', 1, 22000)
 
     //Eye of Ender
