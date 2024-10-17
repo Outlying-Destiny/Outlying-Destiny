@@ -142,7 +142,7 @@
 			id: "616F8356C06E4806"
 			min_width: 300
 			rewards: [{
-				count: 2
+				count: 4
 				id: "3763C0E2BD620E86"
 				item: "minecraft:coal"
 				type: "item"
@@ -314,13 +314,13 @@
 			description: [
 				"Your next step is to perform the Ritual of the Forest and start your Naturalist Journey."
 				""
-				"To perform the Ritual of the Forest you'll first need to craft 8 Wooden Stand"
+				"To perform the Ritual of the Forest you'll first need to craft 8 Wooden Stand."
 				""
 				"Then place 16 Gold Powder on the ground, place the items on the Wooden Stand as seen in JEI (the pattern doesn't count, you can place the items as you want), and then grow a tree using bone meal."
 				""
-				"When the craft starts particles will start appearing, the input items and Gold Powder will be used and your item will be dropped on the ground"
+				"When the craft starts particles will start appearing, the input items and Gold Powder will be used and your item will be dropped on the ground."
 				""
-				"Below is how to form the Ritual of the Forest, you can also check the \"Book of Natural Aura\" to get a hologram of the structure"
+				"Below is how to form the Ritual of the Forest, you can also check the \"Book of Natural Aura\" to get a hologram of the structure in the \"Natural Practices\" category."
 				""
 				"{image:kubejs:textures/ftbquests/naturesaura/wood_stand.png width:100 height:100 align:center}"
 			]
@@ -342,8 +342,19 @@
 					type: "item"
 				}
 				{
+					id: "6E6F7DAD08010705"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "naturesaura:book"
+						}
+					}
+					type: "item"
+				}
+				{
 					exclude_from_claim_all: true
-					id: "233771D142B5CB9C"
+					id: "4EF867633AA05B59"
 					table_id: 6931617435292310794L
 					type: "choice"
 				}
@@ -637,15 +648,15 @@
 			id: "2B9C8EF454CAFCB8"
 			min_width: 300
 			rewards: [{
-				count: 8
+				count: 12
 				id: "3DB0B3F77A7D9802"
 				item: "forbidden_arcanus:arcane_crystal"
 				type: "item"
 			}]
 			tasks: [{
-				count: 24L
+				count: 20L
 				id: "403EB54BD15D5B91"
-				item: { Count: 8, id: "forbidden_arcanus:arcane_crystal" }
+				item: "forbidden_arcanus:arcane_crystal"
 				type: "item"
 			}]
 			title: "Shinier!"

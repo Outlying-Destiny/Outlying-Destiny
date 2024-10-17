@@ -16,13 +16,13 @@
 			description: [
 				"Your next step is to perform the Ritual of the Forest and start your Naturalist Journey."
 				""
-				"To perform the Ritual of the Forest you'll first need to craft 8 Wooden Stand"
+				"To perform the Ritual of the Forest you'll first need to craft 8 Wooden Stand."
 				""
 				"Then place 16 Gold Powder on the ground, place the items on the Wooden Stand as seen in JEI (the pattern doesn't count, you can place the items as you want), and then grow a tree using bone meal."
 				""
-				"When the craft starts particles will start appearing, the input items and Gold Powder will be used and your item will be dropped on the ground"
+				"When the craft starts particles will start appearing, the input items and Gold Powder will be used and your item will be dropped on the ground."
 				""
-				"Below is how to form the Ritual of the Forest, you can also check the \"Book of Natural Aura\" to get a hologram of the structure"
+				"Below is how to form the Ritual of the Forest, you can also check the \"Book of Natural Aura\" to get a hologram of the structure in the \"Natural Practices\" category."
 				""
 				"{image:kubejs:textures/ftbquests/naturesaura/wood_stand.png width:100 height:100 align:center}"
 			]
@@ -93,7 +93,7 @@
 				"Aura is a ressource you can find everywhere in the world but invisible to the human eye."
 				"For now you shouldn't be worried that much about running out of Aura but if you want to know more about the subject you can check the 2 quests below the Ritual of The Forest quest."
 				""
-				"Here's the structure to build the Natural Altar, there are no blocks below the main block meaning you can use hoppers to semi-automate it: (Check the book to get a hologram of the structure)"
+				"Here's the structure to build the Natural Altar, there are no blocks below the main block meaning you can use hoppers to semi-automate it: (Check the book to get a hologram of the structure in the \"Harnessing Aura\" category.)"
 				"{image:kubejs:textures/ftbquests/naturesaura/nature_altar.png width:100 height:100 align:center}"
 			]
 			icon: "naturesaura:nature_altar"
@@ -349,7 +349,7 @@
 				""
 				"Did you know that Gods likes flowers? Only small ones tho, can get quite picky on that."
 				""
-				"Here's a preview of how you want to build your Offering Table: (Check the Book for a hologram of the structure)"
+				"Here's a preview of how you want to build your Offering Table: (Check the Book for a hologram of the structure in the \"Natural Practices\" category.)"
 				"{image:kubejs:textures/ftbquests/naturesaura/offering_table.png width:100 height:100 align:center}"
 			]
 			icon: "naturesaura:offering_table"

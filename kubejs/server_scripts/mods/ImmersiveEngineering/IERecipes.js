@@ -172,7 +172,7 @@ ServerEvents.recipes(event => {
 
     //Radiator Block
     event.remove({output:'immersiveengineering:radiator'})
-    detailedbox('immersiveengineering:radiator', 'immersiveengineering:sheetmetal_steel', 'mekanism:advanced_control_circuit', 'mekanism:alloy_infused', 'immersiveengineering:ingot_hop_graphite')
+    detailedbox('2x immersiveengineering:radiator', 'immersiveengineering:sheetmetal_steel', 'mekanism:alloy_infused', 'immersiveengineering:ingot_hop_graphite', 'mekanism:advanced_control_circuit')
 
     //Generator Block
     event.replaceInput(

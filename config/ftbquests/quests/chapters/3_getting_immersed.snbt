@@ -38,7 +38,6 @@
 			dependencies: ["738163BCAD68CC8F"]
 			description: ["The Nether being currently inaccessible, your only way to get Netherrack is by crafting it. Luckily it looks like Tainted Gold Ingots might just do the job!"]
 			disable_toast: true
-			hide: false
 			id: "0923A0F326E0153D"
 			min_width: 300
 			size: 1.25d
@@ -1568,6 +1567,12 @@
 			icon: "immersiveengineering:sample_drill"
 			id: "50F6EA9CC23FF68D"
 			min_width: 300
+			rewards: [{
+				count: 6
+				id: "22A80A6399F39668"
+				item: "immersiveengineering:steel_scaffolding_standard"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "0921A876422A2742"

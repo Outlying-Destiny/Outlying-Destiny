@@ -2,16 +2,7 @@ ServerEvents.recipes(event => {
 
     //Crafting Table
     event.remove({ output: 'minecraft:crafting_table' })
-    event.shaped(
-        'minecraft:crafting_table', [
-        'AA ',
-        'BB ',
-        '   '
-        ], {
-        A: '#minecraft:planks',
-        B: '#minecraft:logs'
-        }
-    )
+    event.shaped('minecraft:crafting_table', ['AA ','BB ','   '], {A: '#minecraft:planks',B: '#minecraft:logs'})
 
     //First Iron
     event.campfireCooking('kubejs:iron_fragment', 'minecraft:raw_iron').cookingTime(600)
@@ -19,28 +10,8 @@ ServerEvents.recipes(event => {
 
     //Furnaces
     event.remove({ output: ['minecraft:furnace', 'quark:deepslate_furnace', 'quark:blackstone_furnace', 'nethersdelisht:blackstone_furnace'] })
-    event.shaped(
-        'minecraft:furnace', [
-        'AAA',
-        'BCB',
-        'AAA'
-        ], {
-        A: '#forge:cobblestone',
-        B: 'minecraft:iron_ingot',
-        C: 'minecraft:campfire'
-        }
-    )
-    event.shaped(
-        'nethersdelight:blackstone_furnace', [
-        'AAA',
-        'BCB',
-        'AAA'
-        ], {
-        A: 'minecraft:blackstone',
-        B: 'minecraft:iron_ingot',
-        C: 'minecraft:campfire'
-        }
-    )
+    event.shaped('minecraft:furnace', ['AAA','BCB','AAA'], {A: '#forge:cobblestone',B: 'minecraft:iron_ingot',C: 'minecraft:campfire'})
+    event.shaped('nethersdelight:blackstone_furnace', ['AAA','BCB','AAA'], {A: 'minecraft:blackstone',B: 'minecraft:iron_ingot',C: 'minecraft:campfire'})
 
     //Blast Furnace
     event.replaceInput(
@@ -51,18 +22,7 @@ ServerEvents.recipes(event => {
 
     //Enchanting Table
     event.remove({ output: 'minecraft:enchanting_table' })
-    event.shaped(
-        'minecraft:enchanting_table', [
-        ' A ',
-        'BCB',
-        'CDC'
-        ], {
-        A: 'minecraft:book',
-        B: 'minecraft:diamond',
-        C: 'compressium:obsidian_1',
-        D: 'forbidden_arcanus:rune_block'
-        }
-    )
+    event.shaped('minecraft:enchanting_table', [' A ','BCB','CDC'], {A: 'minecraft:book',B: 'minecraft:diamond',C: 'compressium:obsidian_1',D: 'forbidden_arcanus:rune_block'})
 
     //Flint and steel
     event.replaceInput(
@@ -73,29 +33,22 @@ ServerEvents.recipes(event => {
 
     //Iron Bars
     event.remove({output:'minecraft:iron_bars'})
-    event.shaped(
-        '8x minecraft:iron_bars', [
-        'AAA',
-        'AAA',
-        '   '
-        ], {
-        A: 'immersiveengineering:stick_iron'
-        }
-    )
+    event.shaped('8x minecraft:iron_bars', ['AAA','AAA','   '], {A: 'immersiveengineering:stick_iron'})
 
     //Piston
     event.remove({id:'minecraft:piston'})
     event.remove({id:'aether:skyroot_piston'})
     
     //Cauldron
-    event.replaceInput(
-        {output:'minecraft:cauldron'},
-        'minecraft:iron_ingot',
-        'thermal:iron_plate'
-    )
+    event.remove({id:'minecraft:cauldron'})
+    event.shaped('2x minecraft:cauldron', ['A A','A A','AAA'], {A: 'thermal:iron_plate'})
 
     //Netherite
     event.remove({id:'minecraft:netherite_ingot'})
+
+    //Smithing Template
+    event.shaped('minecraft:netherite_upgrade_smithing_template', ['ABA','BAB','ABA'], {A:'enderio:pulsating_crystal', B:'compressium:netherrack_1'})
+
 
 
 })

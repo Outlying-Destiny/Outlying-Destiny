@@ -38,7 +38,6 @@
 		{
 			dependencies: ["30C16811BB92E249"]
 			disable_toast: true
-			hide: false
 			id: "5DAF16566BC2FDB6"
 			min_width: 300
 			size: 1.25d

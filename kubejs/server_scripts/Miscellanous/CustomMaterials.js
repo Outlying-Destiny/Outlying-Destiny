@@ -8,7 +8,6 @@ ServerEvents.recipes(event => {
         {item:'kubejs:enchanted'},
         {item:'kubejs:evil_infused'},
         {item:'kubejs:crystalline_alloy'},
-        {item:'kubejs:crystalline_pink_slime'},
         {item:'kubejs:dark_soularium'}
     ]
 

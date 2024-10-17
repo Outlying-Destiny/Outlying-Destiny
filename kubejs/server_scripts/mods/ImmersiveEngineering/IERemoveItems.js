@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
     )
     event.remove({id:'immersiveengineering:crafting/wirecoil_steel'})
     event.remove({id:'immersiveengineering:crafting/wirecoil_redstone'})
-    event.shaped('immersiveengineering:wirecoil_steel', [
+    event.shaped('4x immersiveengineering:wirecoil_steel', [
         ' A ',
         'BCB',
         ' A '
@@ -55,7 +55,7 @@ ServerEvents.recipes(event => {
         C: '#balm:wooden_rods'
         }
     )
-    event.shaped('immersiveengineering:wirecoil_steel', [
+    event.shaped('4x immersiveengineering:wirecoil_redstone', [
         ' A ',
         'BCB',
         ' A '
