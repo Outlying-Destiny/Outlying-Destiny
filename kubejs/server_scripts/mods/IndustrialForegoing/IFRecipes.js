@@ -95,10 +95,10 @@ ServerEvents.recipes(event => {
     //Machine Frames
     event.remove({id:'industrialforegoing:machine_frame_pity'})
     event.remove({id:/industrialforegoing:dissolution_chamber.+machine_frame/})
-    box('industrialforegoing:machine_frame_pity', 'actuallyadditions:empowered_enori_crystal', 'thermal:steel_ingot', 'thermal:steel_ingot', 'extendedcrafting:frame')
+    box('industrialforegoing:machine_frame_pity', 'thermal:steel_ingot', 'actuallyadditions:empowered_enori_crystal', 'thermal:signalum_gear', 'extendedcrafting:frame')
     dissolution('industrialforegoing:machine_frame_simple', 1, "industrialforegoing:latex", 500, 'mekanism:hdpe_sheet', 'industrialforegoing:machine_frame_pity', 'thermal_extra:shellite_gear', 'minecraft:experience_bottle', 'kubejs:infinity_gear', 200)
     dissolution('industrialforegoing:machine_frame_advanced', 1, "thermal_extra:soul_infused", 1000, 'kubejs:lithium_block', 'industrialforegoing:machine_frame_simple', 'thermal_extra:twinite_gear', 'extendedcrafting:luminessence', 'enderio:dark_bimetal_gear', 200)
-    dissolution('industrialforegoing:machine_frame_supreme', 1, "mekanism:hydrofluoric_acid", 4000, 'kubejs:radiance_block', 'industrialforegoing:machine_frame_advanced', 'thermal_extra:dragonsteel_gear', 'actuallyadditions:empowered_palis_crystal', 'kubejs:end_bimetal_gear', 200)
+    dissolution('industrialforegoing:machine_frame_supreme', 1, "mekanism:hydrofluoric_acid", 4000, 'kubejs:radiance_block', 'industrialforegoing:machine_frame_advanced', 'thermal_extra:dragonsteel_gear', 'actuallyadditions:empowered_palis_crystal', 'enderio:vibrant_gear', 200)
 
     //Machines
     machine('bioreactor', 'thermal:fluid_cell_frame', 'thermal:lumium_gear', 'pity', 'thermal:lumium_gear', 'mekanism:enrichment_chamber')

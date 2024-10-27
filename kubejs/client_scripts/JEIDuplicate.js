@@ -21,10 +21,6 @@ JEIEvents.removeCategories(event => {
     )
 })
 
-JEIEvents.removeRecipes(event => {
-	event.remove(/mbd2:soul_catcher_recipes\/zombie.+/)
-})
-
 JEIEvents.hideItems(event => {
 
     //Duplicate Stuff

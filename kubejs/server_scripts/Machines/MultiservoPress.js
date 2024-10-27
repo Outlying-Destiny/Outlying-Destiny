@@ -41,7 +41,7 @@ ServerEvents.recipes(event => {
     }
 
     //Sunflower Oil
-    event.remove({id:'thermal_extra:machine/press/sunflower_oil_from_sunflower'})
+    event.remove({id:'thermal_extra:machine/press/sunflower'})
     pressfluid('thermal_extra:sunflower_oil', 200, 'minecraft:sunflower', 1000)
 
     //Arboreal Extractor Skip

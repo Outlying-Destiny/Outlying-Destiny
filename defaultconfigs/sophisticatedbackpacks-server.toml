@@ -29,7 +29,7 @@
 		inventorySlotCount = 27
 		#Number of upgrade slots in the backpack
 		#Range: 0 ~ 10
-		upgradeSlotCount = 1
+		upgradeSlotCount = 0
 
 	#Copper Backpack Settings
 	[server.copperBackpack]
@@ -38,7 +38,7 @@
 		inventorySlotCount = 45
 		#Number of upgrade slots in the backpack
 		#Range: 0 ~ 10
-		upgradeSlotCount = 1
+		upgradeSlotCount = 0
 
 	#Iron Backpack Settings
 	[server.ironBackpack]
@@ -47,7 +47,7 @@
 		inventorySlotCount = 54
 		#Number of upgrade slots in the backpack
 		#Range: 0 ~ 10
-		upgradeSlotCount = 2
+		upgradeSlotCount = 0
 
 	#Gold Backpack Settings
 	[server.goldBackpack]
@@ -56,7 +56,7 @@
 		inventorySlotCount = 81
 		#Number of upgrade slots in the backpack
 		#Range: 0 ~ 10
-		upgradeSlotCount = 3
+		upgradeSlotCount = 0
 
 	#Diamond Backpack Settings
 	[server.diamondBackpack]
@@ -65,16 +65,16 @@
 		inventorySlotCount = 108
 		#Number of upgrade slots in the backpack
 		#Range: 0 ~ 10
-		upgradeSlotCount = 5
+		upgradeSlotCount = 0
 
 	#Netherite Backpack Settings
 	[server.netheriteBackpack]
 		#Number of inventory slots in the backpack
 		#Range: 1 ~ 144
-		inventorySlotCount = 120
+		inventorySlotCount = 144
 		#Number of upgrade slots in the backpack
 		#Range: 0 ~ 10
-		upgradeSlotCount = 7
+		upgradeSlotCount = 0
 
 	#Compacting Upgrade Settings
 	[server.compactingUpgrade]

@@ -81,6 +81,7 @@ JEIEvents.hideItems(event => {
     //Sophisticated Storage
     event.hide('sophisticatedstorage:controller')
     event.hide(/sophisticatedstorage:storag.+/)
+    event.hide('sophisticatedstorage:debug_tool')
 
     //FTBQuests
     event.hide(/ftbquests:.+/)
@@ -160,7 +161,7 @@ JEIEvents.hideItems(event => {
     event.hide(['bigreactors:wrench', 'hammerlib:wrench', 'ad_astra:wrench', 'enderio:yeta_wrench'])
 
     //Fluid Buckets
-    event.hide(['enderio:xp_juice_bucket', 'pneumaticcraft:biodiesel_bucket', 'pneumaticcraft:vegetable_oil_bucket', 'pneumaticcraft:ethanol_bucket', 'thermal:creosote_bucket'])
+    event.hide(['enderio:xp_juice_bucket', 'pneumaticcraft:biodiesel_bucket', 'pneumaticcraft:vegetable_oil_bucket', 'pneumaticcraft:ethanol_bucket', 'thermal:creosote_bucket', 'thermal_extra:raw_aluminum_bucket'])
 
 })
 
@@ -183,18 +184,22 @@ JEIEvents.hideFluids(event => {
 
     //Experience
     let exp = ['cofh_core:experience', 'enderio:flowing_xp_juice', 'sophisticatedcore:xp_still']
-    exp.forEach(fluid => { event.hide(fluid) })
+    exp.forEach(fluid => {event.hide(fluid)})
     
     //Biodiesel Line
     let biodiesel = ['pneumaticcraft:biodiesel', 'pneumaticcraft:vegetable_oil', 'pneumaticcraft:ethanol']
-    biodiesel.forEach(fluid => { event.hide(fluid) })
+    biodiesel.forEach(fluid => {event.hide(fluid)})
 
     //Fermented Ore Line
     let fermented = ['industrialforegoing:raw_ore_meat', 'industrialforegoing:fermented_ore_meat']
-    fermented.forEach(fluid => { event.hide(fluid) })
+    fermented.forEach(fluid => {event.hide(fluid)})
 
     //Creosote
     event.hide('thermal:creosote')
+
+    //Thermal Extra Molten Fluids
+    let molten = ['thermal_extra:raw_aluminum']
+    molten.forEach(fluid => {event.hide(fluid)})
 })
 
 //const $IEMulti = Java.loadClass('sguest.jeimultiblocks.jei.MultiblockIngredientType')

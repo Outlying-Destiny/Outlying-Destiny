@@ -3,10 +3,10 @@ ItemEvents.modification(event => {
     //Stack Size
 
     const StackSize = [
-        {i:'minecraft:enderpearl', n:'64'},
-        {i:'aether:skyroot_poison_bucket', n:'16'},
-        {i:'aether:skyroot_remedy_bucket', n:'16'},
-        {i:'immersiveengineering:logic_circuit', n:'64'},
+        {i:'minecraft:ender_pearl', n:64},
+        {i:'aether:skyroot_poison_bucket', n:16},
+        {i:'aether:skyroot_remedy_bucket', n:16},
+        {i:'immersiveengineering:logic_circuit', n:64},
     ]
   
     StackSize.forEach((StackSize) => {
@@ -15,12 +15,20 @@ ItemEvents.modification(event => {
 
     //Durability
     const Durability = [
-        {i:'botania:manasteel_shears', n:'1428'},
-        {i:'botania:elementium_shears', n:'1904'}
+        {i:'botania:manasteel_shears', n:1428},
+        {i:'botania:elementium_shears', n:1904}
     ]
 
     Durability.forEach((Durability) => {
         event.modify(Durability.i, item => {item.maxDamage = Durability.n})
     })
 
+    //Burn Time
+    const BurnTime = [
+        {i:'evilcraft:dark_gem_crushed', n:400}
+    ]
+
+    BurnTime.forEach((BurnTime) => {
+        event.modify(BurnTime.i, item => {item.burnTime = BurnTime.n})
+    })
 })

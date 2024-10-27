@@ -118,18 +118,9 @@ ServerEvents.recipes(event => {
         'mekanism:ultimate_control_circuit'
     )
 
-    //Enriched Obisidan
-    event.remove({output:'mekanism:enriched_refined_obsidian'})
-    enrichment("mekanism:enriched_refined_obsidian", 1, "mekanism:ingot_refined_obsidian", 1)
-
     //Refined Obsidian Gas
     event.remove({id:'mekanism:infusion_conversion/refined_obsidian/from_dust'})
     itemtogas("mekanism:ingot_refined_obsidian", 10, "mekanism:refined_obsidian")
-
-    //New Enriched Items
-    enrichment("kubejs:enriched_rose_gold", 1, "thermal:rose_gold_ingot", 1)
-    enrichment("kubejs:enriched_platinum", 1, "chemlib:platinum_ingot", 1)
-    enrichment("kubejs:enriched_shellite", 1, "thermal_extra:shellite_ingot", 1)
 
     //New Item To Gas
     itemtogas("thermal:rose_gold_ingot", 10, "kubejs:rose_gold")
@@ -141,9 +132,9 @@ ServerEvents.recipes(event => {
 
     //Base Alloys
     event.remove({id:'mekanism:metallurgic_infusing/alloy/infused'})
-    infusing("mekanism:alloy_infused", "minecraft:iron_ingot", "kubejs:rose_gold", 20)
+    infusing("mekanism:alloy_infused", "minecraft:iron_ingot", "kubejs:rose_gold", 40)
     event.remove({id:'mekanism:metallurgic_infusing/alloy/reinforced'})
-    infusing("mekanism:alloy_reinforced", "mekanism:alloy_infused", "kubejs:platinum", 20)
+    infusing("mekanism:alloy_reinforced", "mekanism:alloy_infused", "kubejs:platinum", 40)
     event.remove({id:'mekanism:metallurgic_infusing/alloy/atomic'})
     infusing("mekanism:alloy_atomic", "mekanism:alloy_reinforced", "kubejs:shellite", 40)
 

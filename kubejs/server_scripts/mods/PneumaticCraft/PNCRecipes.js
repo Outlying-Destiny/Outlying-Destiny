@@ -78,14 +78,8 @@ ServerEvents.recipes(event => {
   )
 
   //Fluid Tanks
-  event.replaceInput(
-    { output: 'pneumaticcraft:small_tank' },
-    '#c:glass_blocks',
-    'mekanism:basic_fluid_tank'         
-  )
-  event.remove({output:'pneumaticcraft:medium_tank'})
-  event.remove({output:'pneumaticcraft:large_tank'})
-  event.remove({output:'pneumaticcraft:huge_tank'})
+  event.remove({id:/pneumaticcraft:(small|medium|large|huge)_tank/})
+  box('pneumaticcraft:small_tank', 'minecraft:iron_bars', 'pneumaticcraft:ingot_iron_compressed', 'minecraft:iron_bars', 'mekanism:basic_fluid_tank')
   box('pneumaticcraft:medium_tank', 'pneumaticcraft:plastic', 'pneumaticcraft:small_tank', 'minecraft:gold_ingot', 'pneumaticcraft:pressure_tube')
   box('pneumaticcraft:large_tank', 'pneumaticcraft:plastic', 'pneumaticcraft:medium_tank', 'mekanism:alloy_reinforced', 'pneumaticcraft:reinforced_pressure_tube')
   box('pneumaticcraft:huge_tank', 'mekanism:alloy_atomic', 'pneumaticcraft:large_tank', 'pneumaticcraft:large_tank', 'pneumaticcraft:advanced_pressure_tube')
