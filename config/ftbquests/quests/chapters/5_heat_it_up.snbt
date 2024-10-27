@@ -37,9 +37,22 @@
 		}
 		{
 			dependencies: ["30C16811BB92E249"]
+			description: [
+				"Drop some Steel and make them go boom!"
+				""
+				"Sounds scary isn't it?"
+				""
+				"Compressed Steel is the main material of PneumaticCraft, have fun with it!"
+			]
 			disable_toast: true
 			id: "5DAF16566BC2FDB6"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "2AF3C6F56A304F3B"
+				item: "thermal:steel_ingot"
+				type: "item"
+			}]
 			size: 1.25d
 			tasks: [{
 				count: 16L
@@ -81,6 +94,11 @@
 			dependencies: [
 				"5DAF16566BC2FDB6"
 				"55C65F6C9E1769C1"
+			]
+			description: [
+				"Pressure tubes are used to transport pressure between machines."
+				""
+				"Their max pression is 5 bars, if that limit gets exceeded for too long the tubes will explode and all pression will be lost."
 			]
 			id: "2577C7FFB57C9944"
 			min_width: 300
@@ -142,6 +160,7 @@
 		}
 		{
 			dependencies: ["2D18BF1E379DC75A"]
+			description: [""]
 			id: "30FD1966D4BEE62B"
 			min_width: 300
 			tasks: [{
@@ -159,6 +178,7 @@
 				"1D42C6268FA6E13F"
 				"07ADCEF6CBA17D58"
 			]
+			description: ["Combine some Biodiesel and Charcoal in a TPP to get Molten Plastic."]
 			id: "2D18BF1E379DC75A"
 			min_width: 300
 			tasks: [{
@@ -240,6 +260,19 @@
 				"30FD1966D4BEE62B"
 				"7ED427C5D3207920"
 			]
+			description: [
+				"Welcome to the world of Thermal Series! Information about its machinery's HUD can be found down below."
+				""
+				"On the left you can get information on the machine and its power consumption."
+				""
+				"On the right there are 3 important buttons to configure your machine:"
+				""
+				"The top button can be used to access the augment tab where you can equip components and augments to enhance your machine."
+				""
+				"The middle button can be used to tweak the redstone control of the machine which is by default ignored."
+				""
+				"The bottom button can be used to configure your machine's I/O siding to either accept input, output or both. You can also ask the machine to auto-input or auto-output to simplify logistic."
+			]
 			id: "415C7601E035DBDB"
 			min_width: 300
 			size: 1.5d
@@ -284,6 +317,11 @@
 		}
 		{
 			dependencies: ["415C7601E035DBDB"]
+			description: [
+				"You can replace your Metal Press by a Multiservo Press and a Lathe!"
+				""
+				"While they might seem slow at first, when upgraded they're not only way faster than the Metal Press but are also much more practical, removing the need of dropping items and simply being able to automatically input and output from a storage."
+			]
 			icon: "thermal:machine_press"
 			id: "55C1955949B877B8"
 			min_width: 300
@@ -305,6 +343,11 @@
 		}
 		{
 			dependencies: ["1A965CD16F4D3FE3"]
+			description: [
+				"You can get Platinum as a byproduct of Nickel Ores and Raw Nickel in an Induction Smelter of Pulverizer."
+				""
+				"The best way to maximize platinum output is to smelt Nickel Ore inside an Induction Smelter with the use of Cinnabar dust as a catalyst for a total of 1.4 platinum ingot per nickel ore! You can also add Auxiliary Process Sieve augments to further increase its output ratio at the expense of speed."
+			]
 			id: "0F2F0E0DC9438FCB"
 			min_width: 300
 			tasks: [{
@@ -317,6 +360,7 @@
 		}
 		{
 			dependencies: ["0F2F0E0DC9438FCB"]
+			description: ["Upgrade your infused alloys into reinforced alloys with the use of platinum!"]
 			id: "452BFC7F6C2B3FCF"
 			min_width: 300
 			tasks: [{
@@ -329,6 +373,11 @@
 		}
 		{
 			dependencies: ["452BFC7F6C2B3FCF"]
+			description: [
+				"The Osmium Compressor is used to make Refined Obsidian and Refined Glowstone Ingots."
+				""
+				"You can put osmium in the Extra Slot to automatically transform it into gas."
+			]
 			id: "7C2E14CCBB9A5685"
 			min_width: 300
 			tasks: [{
@@ -341,6 +390,11 @@
 		}
 		{
 			dependencies: ["1A965CD16F4D3FE3"]
+			description: [
+				"Craft some Eye of Ender using your Induction Smelter!"
+				""
+				"That's a very original way to lock the End, surely no one has ever done it before."
+			]
 			id: "117B8F523BF8B590"
 			min_width: 300
 			tasks: [{
@@ -354,6 +408,11 @@
 		}
 		{
 			dependencies: ["117B8F523BF8B590"]
+			description: [
+				"Find a Stronghold and get to The End!"
+				""
+				"You'll need to get there to get some End Stone to get to the next chapter."
+			]
 			id: "5C68FCCC9350C84F"
 			min_width: 300
 			rewards: [{
@@ -367,11 +426,17 @@
 				id: "286DAA806CF100E1"
 				type: "dimension"
 			}]
+			title: "Yeah sure bro, that's the end"
 			x: -0.75d
 			y: 2.0d
 		}
 		{
 			dependencies: ["1A75140087EB1B37"]
+			description: [
+				"Throw some Gold and Lapis inside Liquid XP to get your first Enchanted Ingots!"
+				""
+				"They're used to unlock most things in Mob Grinding Utils but will also be required later in the main progression."
+			]
 			id: "40787810189E2AF7"
 			min_width: 300
 			tasks: [{
@@ -384,6 +449,13 @@
 		}
 		{
 			dependencies: ["30FD1966D4BEE62B"]
+			description: [
+				"The Memory Stick is your first way of conversion between player XP and liquid XP."
+				""
+				"You'll need Liquid XP to start working on Mob Grinding Utils, a mod dedicated on building mob farms!"
+				""
+				"It's also a great way of storing XP without losing it on death."
+			]
 			icon: "pneumaticcraft:memory_stick"
 			id: "1A75140087EB1B37"
 			min_width: 300
@@ -407,6 +479,11 @@
 				"40787810189E2AF7"
 				"1A965CD16F4D3FE3"
 			]
+			description: [
+				"Combine some Demon Ingots, Enchanted Ingots and Withered Bones and craft the base of all evil!"
+				""
+				"Evil Infused Ingots are used in large quantities in most of Mob Grinding Utils but can also be used to make nice tools or to get some more hearts if you haven't went through the challenges of exploration yet, make sure to check it out!"
+			]
 			id: "5F2413B26A70B63B"
 			min_width: 300
 			tasks: [{
@@ -419,18 +496,23 @@
 		}
 		{
 			dependencies: ["7C2E14CCBB9A5685"]
+			description: [
+				"Compress some glowstone and refined obsidian using your newly acquired Osmium Compressor."
+				""
+				"As every other alloys you'll need a lot of both, but mostly refined glowstone for now."
+			]
 			icon: "mekanism:ingot_refined_glowstone"
 			id: "40889CF006E38EB0"
 			min_width: 300
 			tasks: [
 				{
-					id: "7964354639DC2339"
-					item: "mekanism:ingot_refined_obsidian"
+					id: "4C8B5A3E6A30D4C0"
+					item: "mekanism:ingot_refined_glowstone"
 					type: "item"
 				}
 				{
-					id: "4C8B5A3E6A30D4C0"
-					item: "mekanism:ingot_refined_glowstone"
+					id: "1BA81D106452FB05"
+					item: "mekanism:ingot_refined_obsidian"
 					type: "item"
 				}
 			]
@@ -458,6 +540,7 @@
 				item: "enderio:dark_steel_ingot"
 				type: "item"
 			}]
+			title: "More Steel!"
 			x: 3.0d
 			y: -1.5d
 		}
@@ -491,6 +574,13 @@
 		}
 		{
 			dependencies: ["090D14082AE0CCD0"]
+			description: [
+				"This is the main upgrade to any Thermal Series machine."
+				""
+				"It greatly improves base attributes but can only be used once per machine."
+				""
+				"A must have!"
+			]
 			id: "5785F9A5AB33C124"
 			min_width: 300
 			tasks: [{
@@ -515,6 +605,15 @@
 		}
 		{
 			dependencies: ["40889CF006E38EB0"]
+			description: [
+				"Speed Upgrades can be used on Mekanism machinery to increase their processing speed at the cost of energy efficiency!"
+				""
+				"Like their energy equivalent, each upgrade gives a x1.33 multiplier boost up to 8 upgrades for a x10 boost."
+				""
+				"Beware as maxing your machinery speed will increase their energy requirement by x100 as their speed boost is also equal to their energy efficiency debuff."
+				""
+				"That means you probably want to use energy upgrades to counter that effect and think wisely before maximizing the speed of machines that might not immediately need it."
+			]
 			id: "021AF051D9490BD4"
 			min_width: 300
 			tasks: [{
@@ -643,11 +742,19 @@
 				item: "enderio:end_steel_ingot"
 				type: "item"
 			}]
+			title: "Even More Steel!"
 			x: 5.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["452BFC7F6C2B3FCF"]
+			description: [
+				"Pretty expensive huh?"
+				""
+				"As you can notice most recipe will get more and more expensive from now on."
+				""
+				"If you haven't build an Excavator or check into Mob Grinding Utils yet, make sure to check those out!"
+			]
 			id: "2F6555104D56A8E2"
 			min_width: 300
 			tasks: [{
@@ -660,6 +767,13 @@
 		}
 		{
 			dependencies: ["5F2413B26A70B63B"]
+			description: [
+				"The Mob Fan is used to push entities in the direction their facing at once powered with redstone."
+				""
+				"It can be upgraded to achieve a large working area, from 5x1x1 to 15x7x7."
+				""
+				"It's a great tool to send mobs into your Mob Masher!"
+			]
 			id: "2E1275F06283FB79"
 			min_width: 300
 			tasks: [{
@@ -672,6 +786,11 @@
 		}
 		{
 			dependencies: ["5F2413B26A70B63B"]
+			description: [
+				"The Mob Masher is a device used to automatically kill entities close to it when powered with redstone."
+				""
+				"You can upgrade it to make it a very powerful tool!"
+			]
 			id: "323DE7D13CCF1B14"
 			min_width: 300
 			tasks: [{
@@ -684,6 +803,21 @@
 		}
 		{
 			dependencies: ["1A75140087EB1B37"]
+			description: [
+				"You can create spawn eggs with the use of GM Chicken Feed"
+				""
+				""
+				""
+				"The Nutritious Chicken Feed and GM Chicken Feed Cursed are the base of any mob farm."
+				""
+				"When fed to a chicken, the Nutritious Chicken Feed will drop a Golden Egg which, when used on a patch of grass, will create a 5x5 square of delightful dirt where passive mob spawning is highly increased."
+				""
+				"Oppositively the GM Chicken Feed Cursed will drop a rotten Egg which will result in a square of Dreadful dirt, summoning hostile mobs at a high rate."
+				""
+				"They do not ignore spawning conditions, meaning you'll need light for your passive mobs and darkness for your hostile mobs to spawn."
+				""
+				"You need Silk Touch to recolt those so make sure to place them right."
+			]
 			id: "307492750314D80F"
 			min_width: 300
 			tasks: [{
@@ -691,11 +825,21 @@
 				item: "mob_grinding_utils:gm_chicken_feed"
 				type: "item"
 			}]
+			title: "Free spawn eggs!"
 			x: -3.0d
 			y: 0.25d
 		}
 		{
 			dependencies: ["5F2413B26A70B63B"]
+			description: [
+				"The absorption hopper can be used to automatically collect items and experience at a large distance."
+				""
+				"It works in a radius of 3 blocks, once upgraded it can work in a radius up to 9 blocks, that's 19³!"
+				""
+				"It's really handy in a mob farm."
+				""
+				"Additionally, you can use the XP Tap to output Liquid XP from a tank into XP Droplets. (Optional)"
+			]
 			id: "3AE32BC6A7B7F9AA"
 			min_width: 300
 			tasks: [
@@ -710,18 +854,18 @@
 					optional_task: true
 					type: "item"
 				}
-				{
-					id: "7AEFCB17DC18885A"
-					item: "mob_grinding_utils:tank_sink"
-					optional_task: true
-					type: "item"
-				}
 			]
 			x: -2.0d
 			y: 2.25d
 		}
 		{
 			dependencies: ["2E1275F06283FB79"]
+			description: [
+				"Those are the Mob Fan upgrades, they're used to enlarge its working area."
+				""
+				"The width and height upgrades are locked to a max of 3 but works as a radius. (adds a block to both the positive and negative value.)"
+				"The distance upgrade are locked to a max of 10 and simply adds one block to the working area distance."
+			]
 			id: "6A7DE6D214DCB63A"
 			min_width: 300
 			tasks: [
@@ -746,6 +890,11 @@
 		}
 		{
 			dependencies: ["3AE32BC6A7B7F9AA"]
+			description: [
+				"This is the one and unique Absorption Hopper upgrade."
+				""
+				"It simply increases its base radius by 1 per upgrade."
+			]
 			id: "7BD50BB67F7143AA"
 			min_width: 300
 			tasks: [{
@@ -758,6 +907,13 @@
 		}
 		{
 			dependencies: ["323DE7D13CCF1B14"]
+			description: [
+				"Those are the main upgrades for the Mob Masher used to increase its main damage and its loot drop."
+				""
+				"Sharpness 10 is pretty much a garanted oneshot."
+				"Beheading is used to drop heads more often."
+				"And yes, 10 fortune upgrades does mean Fortune 10."
+			]
 			id: "27A8A1A6BCC1A80A"
 			min_width: 300
 			tasks: [
@@ -782,6 +938,12 @@
 		}
 		{
 			dependencies: ["323DE7D13CCF1B14"]
+			description: [
+				"Those are the secondary upgrades for the Mob Masher."
+				""
+				"Smite and Bane of Arthropods are likely not to be of any use if you already crafted 10 sharpness upgrades but are cheaper"
+				"Fire Aspect can be useful if you wish to get infinite cooked food however!"
+			]
 			id: "4F4CB867F0B20B57"
 			min_width: 300
 			tasks: [
@@ -806,6 +968,17 @@
 		}
 		{
 			dependencies: ["1A75140087EB1B37"]
+			description: [
+				"The Nutritious Chicken Feed and GM Chicken Feed Cursed are the base of any mob farm."
+				""
+				"When fed to a chicken, the Nutritious Chicken Feed will drop a Golden Egg which, when used on a patch of grass, will create a 5x5 square of delightful dirt where passive mob spawning is highly increased."
+				""
+				"Oppositively the GM Chicken Feed Cursed will drop a rotten Egg which will result in a square of Dreadful dirt, summoning hostile mobs at a high rate."
+				""
+				"They do not ignore spawning conditions, meaning you'll need light for your passive mobs and darkness for your hostile mobs to spawn."
+				""
+				"You need Silk Touch to recolt those so make sure to place them right."
+			]
 			icon: "mob_grinding_utils:gm_chicken_feed_cursed"
 			id: "7AC54ABB76003D59"
 			min_width: 300
@@ -1238,18 +1411,7 @@
 		}
 		{
 			dependencies: ["5C68FCCC9350C84F"]
-			id: "2F534705DE303B82"
-			min_width: 300
-			tasks: [{
-				id: "58DF8FD8AEF7C7AA"
-				item: "botania:ender_air_bottle"
-				type: "item"
-			}]
-			x: 0.25d
-			y: 3.0d
-		}
-		{
-			dependencies: ["5C68FCCC9350C84F"]
+			description: ["Kill the Ender Dragon and collect its egg which you'll need soon:tm:."]
 			id: "78A5EFE0090C4D99"
 			min_width: 300
 			tasks: [{
@@ -1262,6 +1424,11 @@
 		}
 		{
 			dependencies: ["78A5EFE0090C4D99"]
+			description: [
+				"Collect some Chorus Fruit."
+				""
+				"It's not of much use for now but they can be crafted into an Eye of the Shulker to help with the find of a Lost City."
+			]
 			id: "5C94342525C74DE6"
 			min_width: 300
 			tasks: [{
@@ -1274,6 +1441,12 @@
 		}
 		{
 			dependencies: ["78A5EFE0090C4D99"]
+			description: [
+				"Get to an Ancient City and get some Shulker Shells."
+				""
+				"They will be mass needed once you enter chapter 7."
+				"Lucky for you they're not needed yet."
+			]
 			id: "3ED1774CFDEEC0F8"
 			min_width: 300
 			tasks: [{
@@ -1286,6 +1459,7 @@
 		}
 		{
 			dependencies: ["5C68FCCC9350C84F"]
+			description: ["Get some Endstone to be able to make End Steel and make your way to chapter 6!"]
 			hide_dependency_lines: true
 			id: "74314B7BF445D5CD"
 			min_width: 300
@@ -1446,6 +1620,11 @@
 		}
 		{
 			dependencies: ["452BFC7F6C2B3FCF"]
+			description: [
+				"You can now upgrade your old, inefficient, stone age alike Energy Cubes into their Elite version!"
+				""
+				"They can store up to 64M FE, they can power an Excavator by themselves for 3125 seconds, almost an hour!"
+			]
 			hide_dependency_lines: true
 			id: "13129358495FF3BD"
 			min_width: 300
@@ -1478,18 +1657,30 @@
 		}
 		{
 			dependencies: ["090D14082AE0CCD0"]
+			description: [
+				"You can now upgrade your basic factories into elite factories!"
+				""
+				"Elite Factories can process 5 recipes at once."
+			]
 			id: "6D3DF45A28E33B78"
-			min_width: 300
+			min_width: 325
 			tasks: [{
 				id: "704740B656EE2ABB"
 				item: "mekanism:advanced_tier_installer"
 				type: "item"
 			}]
+			title: "Overclocked Factory"
 			x: 4.25d
 			y: 3.0d
 		}
 		{
 			dependencies: ["415C7601E035DBDB"]
+			description: [
+				"The Redprint can easily copy-paste Thermal Series machine's setting for you!"
+				""
+				"Just &eRight Click&r once on a machine to copy its setting"
+				"and &eShift Right Click&r to clear it!"
+			]
 			hide_dependency_lines: true
 			id: "079F9B9EE9BDDFE8"
 			min_width: 300
@@ -1498,8 +1689,8 @@
 				item: "thermal:redprint"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 1.0d
+			x: 7.25d
+			y: 2.0d
 		}
 		{
 			dependencies: ["66D705EFB050318F"]
@@ -1538,20 +1729,13 @@
 		}
 		{
 			dependencies: ["415C7601E035DBDB"]
-			hide_dependency_lines: true
-			id: "19650D2B7AABCFC9"
-			min_width: 300
-			tasks: [{
-				id: "4E301AE22A8A3B05"
-				item: "thermal:tinker_bench"
-				type: "item"
-			}]
-			title: "Faster Charging Station"
-			x: 7.375d
-			y: 2.0d
-		}
-		{
-			dependencies: ["415C7601E035DBDB"]
+			description: [
+				"Like their Garden Cloche alternative, Phytogenic Insolators can automatically farm any type of tree for you!"
+				""
+				"While they might look pretty slow initially you can upgrade them and add some fertilizer to transform them into a great wood farm."
+				""
+				"You can easily automate their production by auto-input/output-ing inside a 1x2 drawer."
+			]
 			id: "06EC2DEA64DD39BF"
 			min_width: 300
 			tasks: [{
@@ -1568,6 +1752,7 @@
 				"5785F9A5AB33C124"
 				"2BE50BE744D435F6"
 			]
+			description: [""]
 			id: "2D92DC2394743654"
 			min_width: 300
 			tasks: [{
@@ -1579,6 +1764,7 @@
 				}
 				type: "item"
 			}]
+			title: "Harder, Better, Faster, Stronger"
 			x: 6.75d
 			y: 3.0d
 		}
@@ -1596,11 +1782,13 @@
 				}
 				type: "item"
 			}]
+			title: "Look Mom, I can fly (metal edition)"
 			x: 5.5d
 			y: 3.0d
 		}
 		{
 			dependencies: ["78A5EFE0090C4D99"]
+			description: ["While Jetpacks are available at this point, if you don't like their current slow speed, don't want to deal with their crafting or simply prefer the good old way of flying you can still get Elytras in an Ancient City and fly through the sky."]
 			id: "4464051324097A9D"
 			min_width: 300
 			tasks: [{
@@ -1614,8 +1802,25 @@
 				}
 				type: "item"
 			}]
+			title: "Look Mom, I can fly!"
 			x: 1.75d
 			y: 1.0d
+		}
+		{
+			dependencies: ["5C68FCCC9350C84F"]
+			description: [
+				"While their use might not immediately be appearant they will definitely be useful later on. Think of getting some before killing the dragon."
+				""
+				"However, if you forget to do so, you can also craft them with Nature's Aura or later on using Molten Draconium."
+			]
+			id: "638C4C76AA8C4FFB"
+			tasks: [{
+				id: "6A694B52907095FB"
+				item: "minecraft:dragon_breath"
+				type: "item"
+			}]
+			x: 0.25d
+			y: 3.0d
 		}
 	]
 	title: "5. Heat it up!"

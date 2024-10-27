@@ -213,7 +213,7 @@
 				item: "naturesaura:infused_iron"
 				type: "item"
 			}]
-			x: 4.5d
+			x: 5.75d
 			y: -0.5d
 		}
 		{
@@ -333,7 +333,7 @@
 				type: "dimension"
 			}]
 			title: "My home IS hellscape"
-			x: 3.25d
+			x: 4.5d
 			y: -0.5d
 		}
 		{
@@ -387,7 +387,7 @@
 				}
 			]
 			title: "Pray but most importantly pay"
-			x: 5.75d
+			x: 7.0d
 			y: -0.5d
 		}
 		{
@@ -418,7 +418,7 @@
 				type: "item"
 			}]
 			title: "Luigi's Mansion 4"
-			x: 4.0d
+			x: 5.25d
 			y: -1.5d
 		}
 		{
@@ -446,7 +446,7 @@
 				type: "item"
 			}]
 			title: "Ghastly noises"
-			x: 4.0d
+			x: 5.25d
 			y: 0.5d
 		}
 		{
@@ -466,7 +466,7 @@
 				type: "item"
 			}]
 			title: ":("
-			x: 5.0d
+			x: 6.25d
 			y: 0.5d
 		}
 		{
@@ -490,7 +490,7 @@
 				type: "item"
 			}]
 			title: ":O"
-			x: 5.0d
+			x: 6.25d
 			y: -1.5d
 		}
 		{
@@ -516,7 +516,7 @@
 				type: "item"
 			}]
 			title: "Because the multiblock wasn't big enough"
-			x: 2.5d
+			x: 3.75d
 			y: 0.5d
 		}
 		{
@@ -558,7 +558,7 @@
 				}
 			]
 			title: "Waiter! More tokens please"
-			x: 6.5d
+			x: 7.75d
 			y: 0.5d
 		}
 		{
@@ -583,7 +583,7 @@
 				type: "item"
 			}]
 			title: "Gift from Olympus"
-			x: 6.5d
+			x: 7.75d
 			y: -1.5d
 		}
 		{
@@ -614,7 +614,7 @@
 				type: "item"
 			}]
 			title: "Rather bright for a Token of Twilight"
-			x: 7.25d
+			x: 8.5d
 			y: -0.5d
 		}
 		{
@@ -643,7 +643,7 @@
 				type: "dimension"
 			}]
 			title: "Can't run from this one"
-			x: 8.75d
+			x: 10.0d
 			y: -0.5d
 		}
 		{
@@ -748,7 +748,7 @@
 				}
 			]
 			title: "Hephaestus wannabe"
-			x: 8.0d
+			x: 9.25d
 			y: -1.5d
 		}
 		{
@@ -790,7 +790,7 @@
 				type: "item"
 			}]
 			title: "The Fourth Eye"
-			x: 2.5d
+			x: 3.75d
 			y: -1.5d
 		}
 		{
@@ -812,7 +812,7 @@
 				type: "item"
 			}]
 			title: "Blackout"
-			x: 8.0d
+			x: 9.25d
 			y: 0.5d
 		}
 		{
@@ -837,6 +837,95 @@
 			}]
 			title: "The Third Eye"
 			x: -0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"6A53A5AD90652811"
+				"3267A5C745EE0A23"
+			]
+			description: [
+				"Netherite! You can make things with those, right?"
+				""
+				"Turns out you can, but not so easily!"
+				""
+				"The Vanilla way has been removed, you'll need an Enrichment Chamber to make some netherite."
+			]
+			id: "073BA665D40881DF"
+			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3FED599CB9D2A776"
+				table_id: 2176359990241919822L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "43FD0565AA4749EF"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			title: "Monifactory wouldn't do this"
+			x: 3.25d
+			y: -0.5d
+		}
+		{
+			dependencies: ["475CABBA6607E1BF"]
+			description: [
+				"The Metallurgic Infuser is your first Mekanism machine. It will be used to create Mekanism main materials."
+				""
+				"The machine requires an \"infuse type\" simply put the right item in the Extra Slot. To automatically create infuse type for the machine to use."
+				""
+				"Try to rush for the Enrichment Chamber as it can enrich your items to create x8 more infuse type!"
+			]
+			disable_toast: true
+			id: "3267A5C745EE0A23"
+			min_width: 300
+			size: 1.0d
+			tasks: [{
+				id: "5AC9CDD4DE68496B"
+				item: "mekanism:metallurgic_infuser"
+				type: "item"
+			}]
+			title: "Infuse and mass produce"
+			x: 2.75d
+			y: -1.5d
+		}
+		{
+			dependencies: ["073BA665D40881DF"]
+			description: [
+				"Upgrade your diamonds chests and backpacks into their final form, netherite! They each have 144 slots, should help you in your exploration journey."
+				""
+				"What more can you ask?"
+			]
+			icon: {
+				Count: 1
+				id: "sophisticatedstorage:netherite_chest"
+				tag: {
+					woodType: "oak"
+				}
+			}
+			id: "0D655A8C089FE0F4"
+			min_width: 300
+			tasks: [
+				{
+					id: "689EF8E9BFA556AD"
+					item: {
+						Count: 1
+						id: "sophisticatedstorage:netherite_chest"
+						tag: {
+							woodType: "oak"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "307B9FB8C8D87916"
+					item: "sophisticatedbackpacks:netherite_backpack"
+					type: "item"
+				}
+			]
+			title: "Yeah, no... That's just stupid"
+			x: 2.75d
 			y: 0.5d
 		}
 	]
