@@ -97,7 +97,7 @@ JEIEvents.hideItems(event => {
 
     //EnderIO
     event.hide(['enderio:silicon', 'enderio:flour', 'enderio:cake_base', 'enderio:clayed_glowstone'])
-    event.hide(['enderio:drain', 'enderio:stirling_generator', 'enderio:crafter', 'enderio:soul_engine', 'enderio:primitive_alloy_smelter', 'enderio:alloy_smelter'])
+    event.hide(['enderio:drain', 'enderio:stirling_generator', 'enderio:crafter', 'enderio:soul_engine', 'enderio:primitive_alloy_smelter', 'enderio:alloy_smelter', 'enderio:vacuum_chest', 'enderio:xp_vacuum'])
     event.hide([/enderio.+condui.+/, /enderio.+filte.+/, /enderio:extraction_speed_upgrade.+/])
     
     //Construction Wand
@@ -160,6 +160,9 @@ JEIEvents.hideItems(event => {
     //Wrenches
     event.hide(['bigreactors:wrench', 'hammerlib:wrench', 'ad_astra:wrench', 'enderio:yeta_wrench'])
 
+    //Debug Stuff
+    //event.hide('structure_gel:dynamic_spawner')
+    
     //Fluid Buckets
     event.hide(['enderio:xp_juice_bucket', 'pneumaticcraft:biodiesel_bucket', 'pneumaticcraft:vegetable_oil_bucket', 'pneumaticcraft:ethanol_bucket', 'thermal:creosote_bucket', 'thermal_extra:raw_aluminum_bucket'])
 

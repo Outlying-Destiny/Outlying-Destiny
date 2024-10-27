@@ -34,6 +34,8 @@ ServerEvents.recipes(event => {
     event.remove({id:'enderio:crafter'})
     event.remove({id:'enderio:soul_engine'})
     event.remove({id:'enderio:alloy_smelter'})
+    event.remove({id:'enderio:vacuum_chest'})
+    event.remove({id:'enderio:xp_vacuum'})  
 
     //XP Juice
     event.remove({id:'enderio:tank_fill/experience_bottle'})

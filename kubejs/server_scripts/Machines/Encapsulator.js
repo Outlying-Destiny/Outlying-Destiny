@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
 
     //Dimensional Shard
     event.remove({id:'rftoolsbase:dimensionalshard'})
-    encapsulator('rftoolsbase:dimensionalshard', 'minecraft:diamond', 'industrialforegoing:ether_gas', 100, 12000)
+    encapsulator('rftoolsbase:dimensionalshard', 'mekanism:enriched_diamond', 'industrialforegoing:ether_gas', 100, 12000)
 
     //Dragon's Breath
     encapsulator('minecraft:dragon_breath', 'botania:ender_air_bottle', 'kubejs:molten_draconium', 250, 6000)
