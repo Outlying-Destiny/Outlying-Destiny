@@ -5,4 +5,7 @@ useVBO = true
 #Duration of the multiblock in-world preview (s)
 #Range: 1 ~ 999
 multiblockPreviewDuration = 10
+#Duration of the multiblock in-world pattern error position (s)
+#Range: 1 ~ 999
+multiblockPatternErrorPosDuration = 10
 
