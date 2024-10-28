@@ -23,6 +23,8 @@
   "custommachinery:machine_component_provider": null,
   "custommachinery:machine_server_data_provider": null,
   "enderchests:hud": null,
+  "endercrop:endercrop": null,
+  "endercrop:endstone": null,
   "endertanks:hud": null,
   "entangled:entangled_block_component": null,
   "expatternprovider:jade_chamber": null,

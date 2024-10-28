@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
     event.replaceInput({output:/immersiveengineering:.+/},'#forge:ingots/aluminum','thermal:invar_ingot')
     event.replaceInput({output:/immersiveengineering:.+/},'#forge:plates/aluminum','thermal:invar_plate')
     event.replaceInput({output:/immersiveengineering:.+/},'#forge:dusts/aluminum','thermal:invar_dust')
-    event.replaceInput({output:/immersiveengineering:.+/},'#forge:rods/aluminum','kubejs:invar_rod')
+    event.replaceInput({output:/immersiveengineering:.+/},'#forge:rods/aluminum','thermal_extra:invar_rod')
     event.replaceInput({output:/immersiveengineering:.+/},'#forge:wires/aluminum','kubejs:invar_wire')
     event.remove({id:'immersiveengineering:crafting/wirecoil_steel'})
     event.remove({id:'immersiveengineering:crafting/wirecoil_redstone'})

@@ -60,6 +60,10 @@
   "entangled": {
     "entangled_block_component": true
   },
+  "endercrop": {
+    "endercrop": true,
+    "endstone": false
+  },
   "pneumaticcraft": {
     "pneumatic": true,
     "tube_module": true,
@@ -149,9 +153,6 @@
   },
   "twilightforest": {
     "quest_ram_wool": true
-  },
-  "waystones": {
-    "waystone": true
   },
   "corpse": {
     "corpse": true

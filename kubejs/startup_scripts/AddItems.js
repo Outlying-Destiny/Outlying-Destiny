@@ -64,7 +64,7 @@ StartupEvents.registry('item', event => {
   //Rods
   event.create('dark_steel_rod').displayName('Dark Steel Rod').tag('forge:rods')
   event.create('end_steel_rod').displayName('End Steel Rod').tag('forge:rods')
-  event.create('invar_rod').displayName('Invar Rod').tag('forge:rods')
+  //event.create('invar_rod').displayName('Invar Rod').tag('forge:rods')
 
   //Wires
   event.create('invar_wire').displayName('Invar Wire').tag('forge:wires')

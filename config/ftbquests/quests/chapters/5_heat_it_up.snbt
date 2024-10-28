@@ -221,6 +221,7 @@
 				"5C3A578EAC76C3CF"
 				"1D42C6268FA6E13F"
 			]
+			icon: "pneumaticcraft:speed_upgrade"
 			id: "4903173768F99F18"
 			min_width: 300
 			tasks: [
@@ -305,6 +306,17 @@
 		}
 		{
 			dependencies: ["415C7601E035DBDB"]
+			description: [
+				"The Induction Smelter is a machine you'll be using omnipotently throughout the pack."
+				""
+				"It is used to make a large part of your future alloys up to 3 inputs."
+				""
+				"It can also be used to process ores and raw materials to get more ingots and byproducts as an output."
+				""
+				"You can further boost the output ratio from ore processing with the usage of catalysts like cinnabar or cinnabar dust as long as JEI shows the output item as &6boostable&r."
+				""
+				"Non-upgraded the machine is pretty slow, check the Augments quest just below to get more infos on how to upgrade Thermal's machinery."
+			]
 			id: "1A965CD16F4D3FE3"
 			min_width: 300
 			tasks: [{
@@ -840,6 +852,7 @@
 				""
 				"Additionally, you can use the XP Tap to output Liquid XP from a tank into XP Droplets. (Optional)"
 			]
+			icon: "mob_grinding_utils:absorption_hopper"
 			id: "3AE32BC6A7B7F9AA"
 			min_width: 300
 			tasks: [
@@ -866,6 +879,7 @@
 				"The width and height upgrades are locked to a max of 3 but works as a radius. (adds a block to both the positive and negative value.)"
 				"The distance upgrade are locked to a max of 10 and simply adds one block to the working area distance."
 			]
+			icon: "mob_grinding_utils:fan_upgrade_speed"
 			id: "6A7DE6D214DCB63A"
 			min_width: 300
 			tasks: [
@@ -914,6 +928,7 @@
 				"Beheading is used to drop heads more often."
 				"And yes, 10 fortune upgrades does mean Fortune 10."
 			]
+			icon: "mob_grinding_utils:saw_upgrade_sharpness"
 			id: "27A8A1A6BCC1A80A"
 			min_width: 300
 			tasks: [
@@ -944,6 +959,7 @@
 				"Smite and Bane of Arthropods are likely not to be of any use if you already crafted 10 sharpness upgrades but are cheaper"
 				"Fire Aspect can be useful if you wish to get infinite cooked food however!"
 			]
+			icon: "mob_grinding_utils:saw_upgrade_smite"
 			id: "4F4CB867F0B20B57"
 			min_width: 300
 			tasks: [
@@ -1095,6 +1111,7 @@
 				"217A5E262FD3BD6A"
 				"633FBF8B95C846AA"
 			]
+			icon: "ae2:logic_processor"
 			id: "0D79613C2A510AAB"
 			min_width: 300
 			tasks: [
@@ -1226,6 +1243,7 @@
 		}
 		{
 			dependencies: ["1C95DB7023229006"]
+			icon: "ae2:storage_bus"
 			id: "0E8C1336874846AE"
 			min_width: 300
 			tasks: [
@@ -1638,6 +1656,27 @@
 		}
 		{
 			dependencies: ["1A965CD16F4D3FE3"]
+			description: [
+				"Augments are upgrades that can be used on Thermal's machinery to boost some of their stats."
+				""
+				"The 2 main ones you'll end up using are the Flux Linkage Amplifier and the Auxiliary Process Sieve."
+				""
+				"The first one is used to increase the machine Base Power which will make the machine use more energy per tick and so make recipes faster. However, as a side effect, it increases the Process Power needed which indirectly makes each recipes a bit slower. Overall this augment gives a great speed boost to your machinery. But if you want more details about how boosts and debuffs are calculated check the second page."
+				""
+				"The second one is used to increase the quantity of secondary outputs that are defined as &6boostable&r. It's mostly used when processing ores inside an Induction Smelter to increase byproduct's production but can be used in any machine at the cost of processing speed. Think of it if you're struggling with the obtention of a certain byproduct."
+				""
+				"{@pagebreak}"
+				"Boosts can be calculated in 2 different ways, additive or multiplicative."
+				""
+				"In the example of the Flux Linkage Amplifier (FLA):"
+				""
+				"The Base Power bonus has a \"+\" meaning the boosts are additive with each other making each new boost less and less effective (3 FLA would result to 3*100% =+300% Base Power boost)"
+				""
+				"However, the Process Power debuff has a \"x\" meaning that the debuff is multiplicative and that each new debuff won't lose in efficiency (3 FLA would result to x1.1³=x1.33 process power debuff)."
+				""
+				"In the end, 3 FLA increases the Baser Power up to 400% (as they add 300% to the base 100%) making the machine 4 times faster, but also makes each recipe requires x1.33 more energy giving a final speed boost of x3 (4.0/1.33=3)."
+			]
+			icon: "thermal:machine_speed_augment"
 			id: "3D3BCEF5D09702EB"
 			min_width: 300
 			tasks: [
@@ -1652,6 +1691,7 @@
 					type: "item"
 				}
 			]
+			title: "Thermal Augments!"
 			x: 0.5d
 			y: 1.0d
 		}

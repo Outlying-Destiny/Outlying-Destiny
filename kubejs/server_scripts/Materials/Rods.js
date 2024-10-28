@@ -45,13 +45,15 @@ ServerEvents.recipes(event => {
     event.remove({id:/immersiveengineering:crafting.+stick.+/})
     event.remove({id:/immersiveengineering:metalpress.+rod.+/})
     event.remove({id:/ad_astra:.+rod/})
+    event.remove({id:/thermal_extra:(machine\/press|crafting)\/.+_rod/})
 
     //Rods
     allrods('immersiveengineering:stick_iron', 2, 'minecraft:iron_ingot', 4800)
     allrods('immersiveengineering:stick_steel', 2, 'thermal:steel_ingot', 4800)
-    allrods('kubejs:invar_rod', 2, 'thermal:invar_ingot', 4800)
+    allrods('thermal_extra:invar_rod', 2, 'thermal:invar_ingot', 4800)
     allrods('ad_astra:etrium_rod', 2, 'ad_astra:etrium_ingot', 4800)
     allrods('kubejs:dark_steel_rod', 2, 'enderio:dark_steel_ingot', 4800)
     allrods('kubejs:end_steel_rod', 2, 'enderio:end_steel_ingot', 4800)
+    allrods('thermal_extra:signalum_rod', 2, 'thermal:signalum_ingot', 4800)
 
 })
