@@ -6,10 +6,10 @@
 	[card.fluid_card]
 		#Millibuckets for Fluid Cards without Overclockers installed
 		#Range: > 0
-		base_milli_buckets_fluid = 5000
+		base_milli_buckets_fluid = 2000
 		#Multiplier for Overclocker Cards - Number of Overclockers * this value = max millibuckets
 		#Range: > 0
-		multiplier_milli_buckets_fluid = 10000
+		multiplier_milli_buckets_fluid = 5000
 
 	#Energy Card
 	[card.energy_card]

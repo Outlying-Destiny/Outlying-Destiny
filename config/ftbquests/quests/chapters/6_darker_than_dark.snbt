@@ -10,6 +10,13 @@
 	quests: [
 		{
 			dependencies: ["53FD0B2E4952177F"]
+			description: [
+				"A simple upgrade to your Void Chassis!"
+				""
+				"It will mostly be used to play with monster's poor little souls, that's also your way into chapter 6, congrats!"
+				""
+				"You've reached Tier 4 already! Did you know there were 16 tiers of Machine Frames? Now you do. :)"
+			]
 			disable_toast: true
 			id: "432BCDC8C90BD558"
 			min_width: 300

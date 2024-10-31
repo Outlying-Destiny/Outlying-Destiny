@@ -1,18 +1,30 @@
 ServerEvents.recipes(event => {
 
     //Diamond Wand
-    event.replaceInput(
-        { output: 'constructionwand:diamond_wand'},
-        'minecraft:diamond',
-        'thermal:enderium_ingot'
+    event.remove({id:'constructionwand:diamond_wand'})
+    event.shaped(
+        'constructionwand:diamond_wand', [
+        ' AA',
+        ' BA',
+        'B  '
+        ], {
+        A: 'thermal:enderium_plate',
+        B: '#forge:rods/wooden'
+        }
     )
 
 
     //Infinity Wand
-    event.replaceInput(
-        { output: 'constructionwand:infinity_wand'},
-        'minecraft:nether_star',
-        'thermal_extra:dragonsteel_ingot'
+    event.remove({id:'constructionwand:infinity_wand'})
+    event.shaped(
+        'constructionwand:infinity_wand', [
+        ' AA',
+        ' BA',
+        'B  '
+        ], {
+        A: 'thermal_extra:dragonsteel_plate',
+        B: '#forge:rods/wooden'
+        }
     )
 
     //Angel Core

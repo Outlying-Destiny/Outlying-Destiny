@@ -60,8 +60,10 @@ ServerEvents.recipes(event => {
     event.remove({id:'immersiveengineering:crafting/electrum_mix'})
     event.remove({id:'immersiveengineering:crafting/constantan_mix'})
     event.remove({id:'mekanism:processing/steel/ingot_to_dust'})
-    
 
+    //Remove Quartz Dust Mekanism Recipe
+    event.remove({id:'mekanism:processing/quartz/to_dust'})
+    
     //SAG Mill Dusts from non ingot
     sagmillnoboost('thermal_extra:soul_sand_dust', 1, 'minecraft:soul_sand', 1800)
     sagmillnoboost('thermal:ender_pearl_dust', 1, 'minecraft:ender_pearl', 1800)

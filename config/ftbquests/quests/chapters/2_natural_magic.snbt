@@ -818,7 +818,7 @@
 		{
 			dependencies: ["07A64AE31764BD29"]
 			description: [
-				"Bearing the environmental Eye let you see how much aura is in an area, the bar being half full representing an excepted aura amount."
+				"Bearing the environmental Eye let you see how much aura is in an area, the bar being half full representing an excepted aura amount. It can be equipped in your &2Curios Menu&r."
 				""
 				"Naturally, aura is found in abundance close to aura plants."
 			]
@@ -906,6 +906,11 @@
 			}
 			id: "0D655A8C089FE0F4"
 			min_width: 300
+			rewards: [{
+				id: "6325CE15E07C9633"
+				item: "sophisticatedstorage:basic_to_gold_tier_upgrade"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "689EF8E9BFA556AD"

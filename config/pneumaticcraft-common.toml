@@ -46,7 +46,7 @@
 	elevator_base_blocks_per_base = 6
 	#The amount of air produced by using 100 FE (Forge Energy) in the flux compressor
 	#Range: > 0
-	flux_compressor_efficiency = 40
+	flux_compressor_efficiency = 20
 	#The amount to multiply the air production of the solar compressor by.
 	#Range: 0.0 ~ 1.7976931348623157E308
 	solar_compressor_multiplier = 1.0
@@ -57,7 +57,7 @@
 	kerosene_lamp_fuel_efficiency = 1.0
 	#The amount of air produced by using 100 MJ (Minecraft Joules) in the flux compressor
 	#Range: > 0
-	kinetic_compressor_efficiency = 40
+	kinetic_compressor_efficiency = 20
 	#Can the Liquid Hopper absorb/dispense fluids into the world with a Dispenser Upgrade?
 	liquid_hopper_dispenser = true
 	#Can the Omnidirectional Hopper dispense items into the world with a Dispenser Upgrade?
@@ -239,10 +239,10 @@
 [Integration]
 	#Immersive Engineering: External Heater heat/FE.  The amount of PneumaticCraft heat added by using 1 FE in the heater.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	ie_external_heater_heat_per_fe = 0.01
+	ie_external_heater_heat_per_fe = 0.02
 	#Immersive Engineering: External Heater FE/t. Set to 0 to disable External Heater integration entirely.
 	#Range: > 0
-	ie_external_heater_fe_per_tick = 100
+	ie_external_heater_fe_per_tick = 50
 	#Mekanism thermal resistance multiplier. Larger values mean slower heat transfer between Mekanism and PneumaticCraft blocks.
 	#Range: 1.0 ~ 1.7976931348623157E308
 	mek_thermal_resistance_factor = 5.0

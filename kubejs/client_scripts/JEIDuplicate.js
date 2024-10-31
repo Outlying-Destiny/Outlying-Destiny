@@ -17,8 +17,16 @@ JEIEvents.removeCategories(event => {
         'thermal:stirling_fuel',
         'enderio:soul_engine',
         'elementalcraft:purification',
-        'ftbquests:quest'
+        'ftbquests:quest',
+        'pneumaticcraft:spawner_extraction'
     )
+})
+
+JEIEvents.removeRecipes(event => {
+    
+    //Soul Catcher Recipes
+    const SoulCatcher = ['mbd2:soul_catcher_recipes/zombie_copy_0_copy_0_1', 'mbd2:soul_catcher_recipes/zombie_copy', 'mbd2:soul_catcher_recipes/zombie_copy_copy', 'mbd2:soul_catcher_recipes/zombie_copy_copy_0', 'mbd2:soul_catcher_recipes/zombie_copy_0_copy', 'mbd2:soul_catcher_recipes/zombie_copy_copy_0_1', 'mbd2:soul_catcher_recipes/zombie_copy_0_copy_0', 'mbd2:soul_catcher_recipes/zombie_copy_0']
+    SoulCatcher.forEach(recipe => {event.remove('kubejs:soul_catcher_recipes', recipe)})
 })
 
 JEIEvents.hideItems(event => {

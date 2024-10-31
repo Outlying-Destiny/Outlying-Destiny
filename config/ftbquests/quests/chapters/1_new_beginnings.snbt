@@ -223,6 +223,8 @@
 				"Don't get fooled, you can also make a double version of them for a total of 108 slots!"
 				""
 				"If you want to upgrade a chest that is already full of items, don't worry you can craft chest upgrdes that you can directly apply to chest without breaking them!"
+				""
+				"&aChest and Backpack's upgrades has been removed from the pack."
 			]
 			id: "12D98F2C5144106B"
 			min_width: 300
@@ -399,9 +401,9 @@
 				""
 				"You can open your backpack while not holding it by using &eB&r, this keybind is of course modifiable in the Controls."
 				""
-				"Some items like Backpacks are equipable in your Curios Menu, to access it click on the button at the top left of your player visual in your inventory."
+				"Some items like Backpacks are equipable in your &2Curios Menu&r, to access it click on the button at the top left of your player visual in your inventory."
 				""
-				"Curios equippable items always have their Curios slot written below their name."
+				"&aCurios equippable items always have their Curios slot written below their name.&r"
 			]
 			id: "396CD1AA6DFF7101"
 			min_width: 300
@@ -721,7 +723,7 @@
 				""
 				"There will be other way to obtain the items they trade such as mending books."
 				""
-				"The given Charm can be activated to disable Wandering Trader Spawning around you. It is also equipable in your Curios Menu, to access it click on the button at the top left of your player visual in your inventory."
+				"The given Charm can be activated to disable Wandering Trader Spawning around you. It is also equipable in your &2Curios Menu&r, to access it click on the button at the top left of your player visual in your inventory."
 			]
 			icon: "minecraft:emerald"
 			id: "6E857F803D3503A1"

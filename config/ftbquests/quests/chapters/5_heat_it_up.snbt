@@ -66,6 +66,7 @@
 		{
 			dependencies: [
 				"5E62C6B6C69FEE4F"
+				"1D42C6268FA6E13F"
 				"5DAF16566BC2FDB6"
 			]
 			id: "4A32249482CAF37F"
@@ -112,8 +113,8 @@
 		}
 		{
 			dependencies: [
-				"5DAF16566BC2FDB6"
 				"5E62C6B6C69FEE4F"
+				"1D42C6268FA6E13F"
 			]
 			id: "7E4B6EB5FFFB66BB"
 			min_width: 300
@@ -123,7 +124,7 @@
 				type: "item"
 			}]
 			x: -7.25d
-			y: -2.25d
+			y: -0.75d
 		}
 		{
 			dependencies: ["5DAF16566BC2FDB6"]
@@ -147,7 +148,10 @@
 			y: -3.75d
 		}
 		{
-			dependencies: ["5E62C6B6C69FEE4F"]
+			dependencies: [
+				"5E62C6B6C69FEE4F"
+				"5DAF16566BC2FDB6"
+			]
 			id: "1D42C6268FA6E13F"
 			min_width: 300
 			tasks: [{
@@ -155,12 +159,16 @@
 				item: "pneumaticcraft:flux_compressor"
 				type: "item"
 			}]
-			x: -4.75d
-			y: -0.75d
+			x: -7.25d
+			y: -2.25d
 		}
 		{
 			dependencies: ["2D18BF1E379DC75A"]
-			description: [""]
+			description: [
+				"Place a bucket of Molten Plastic to solidify it into Plastic Sheet!"
+				""
+				"Works pretty well with a Mekanism tank on Bucket Mode."
+			]
 			id: "30FD1966D4BEE62B"
 			min_width: 300
 			tasks: [{
@@ -175,7 +183,6 @@
 		{
 			dependencies: [
 				"4A32249482CAF37F"
-				"1D42C6268FA6E13F"
 				"07ADCEF6CBA17D58"
 			]
 			description: ["Combine some Biodiesel and Charcoal in a TPP to get Molten Plastic."]
@@ -190,7 +197,15 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["7E4B6EB5FFFB66BB"]
+			dependencies: [
+				"4A32249482CAF37F"
+				"7E4B6EB5FFFB66BB"
+			]
+			description: [
+				"Craft some Upgrade Matrix. They're the base material to craft PneumaticCraft upgradete."
+				""
+				"Optionally, you can also craft some Lubricant and Glycerol which are used to craft speed upgrades, you shouldn't need those for now however."
+			]
 			icon: "pneumaticcraft:upgrade_matrix"
 			id: "5C3A578EAC76C3CF"
 			min_width: 300
@@ -213,31 +228,41 @@
 					type: "item"
 				}
 			]
-			x: -7.25d
+			x: -4.75d
 			y: -0.75d
 		}
 		{
-			dependencies: [
-				"5C3A578EAC76C3CF"
-				"1D42C6268FA6E13F"
+			dependencies: ["5C3A578EAC76C3CF"]
+			description: [
+				"Craft a Security Upgrade!"
+				""
+				"Security Upgrades adds a safety valve to your machine to automatically release some air when reaching the pressure danger zone preventing your machines from blowing up."
+				""
+				"Optionally, you can also craft speed and volume upgrades."
+				""
+				"Speed upgrades can be used in your Flux Compressor to increase its air production rate at the cost of a reduced conversion efficiency. If you're missing on air production those can help you!"
+				""
+				"Volume upgrades can be used to increase the air capacity of the machine, it can be useful if you want to store more air or have a better control over your machine's pressure as more air capacity = slower pressure variation."
 			]
-			icon: "pneumaticcraft:speed_upgrade"
+			icon: "pneumaticcraft:security_upgrade"
 			id: "4903173768F99F18"
 			min_width: 300
 			tasks: [
 				{
-					id: "08A91172067E9F21"
-					item: "pneumaticcraft:speed_upgrade"
-					type: "item"
-				}
-				{
-					id: "6A7D762D3F722DC5"
-					item: "pneumaticcraft:volume_upgrade"
-					type: "item"
-				}
-				{
 					id: "4137B0C67D206F84"
 					item: "pneumaticcraft:security_upgrade"
+					type: "item"
+				}
+				{
+					id: "45D0039634EA003E"
+					item: "pneumaticcraft:speed_upgrade"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0F51A92AF528A65E"
+					item: "pneumaticcraft:volume_upgrade"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -246,6 +271,11 @@
 		}
 		{
 			dependencies: ["30FD1966D4BEE62B"]
+			description: [
+				"A simple upgrade to your PneumaticCraft tank, not much to say."
+				""
+				"Can now contain 64kmB."
+			]
 			id: "461582A0D1C0E0EF"
 			min_width: 300
 			tasks: [{
@@ -533,6 +563,11 @@
 		}
 		{
 			dependencies: ["0F2F0E0DC9438FCB"]
+			description: [
+				"Enjoying your new alloys? Craft some Enderium Ingots!"
+				""
+				"Did you know you can farm Ender pearls with the use of Ender Seeds? Pretty useful when you don't have a mob farm yet."
+			]
 			id: "7FC2A2D7276AE83F"
 			min_width: 300
 			tasks: [{
@@ -545,6 +580,12 @@
 		}
 		{
 			dependencies: ["7FC2A2D7276AE83F"]
+			description: [
+				"Steel! You love steel, right? Here's some more steel!!!"
+				"Don't you like it? No??? Damn... :("
+				""
+				"Craft some Dark Steel to get into EnderIO!"
+			]
 			id: "66D705EFB050318F"
 			min_width: 300
 			tasks: [{
@@ -561,6 +602,17 @@
 				"66D705EFB050318F"
 				"2F6555104D56A8E2"
 			]
+			description: [
+				"Welcome to the world of EnderIO! This one is pretty straight forward but here's what's to know:"
+				""
+				"EnderIO's machines needs a capacitor to run. There's 3 tiers of them but you only have access to 1 right now, check the quest just above for more infos."
+				""
+				"There are 2 buttons on the right."
+				""
+				"The top one is used to tweak the Redstone Mode"
+				""
+				"The down one is used to configure your machine's I/O siding. By default, EnderIO's machines can input or output from any side but this menu let you either active auto-input/output or block any interaction as a whole."
+			]
 			id: "554507DD4518153D"
 			min_width: 300
 			size: 1.25d
@@ -574,6 +626,11 @@
 		}
 		{
 			dependencies: ["40889CF006E38EB0"]
+			description: [
+				"Our chief scientists researched for the world's most luminous ingot and came up with this. Craft some Lumium Ingots!"
+				""
+				"Got multiple Induction Smelter already? No? You should!"
+			]
 			id: "090D14082AE0CCD0"
 			min_width: 300
 			tasks: [{
@@ -600,11 +657,17 @@
 				item: "thermal:upgrade_augment_1"
 				type: "item"
 			}]
+			title: "Harder, Better,"
 			x: 6.125d
 			y: 2.0d
 		}
 		{
 			dependencies: ["66D705EFB050318F"]
+			description: [
+				"Capacitors are a required component to make EnderIO machines defining its processing speed."
+				""
+				"Next tiers will be unlocked in future chapters, for now craft some Basic Capacitors."
+			]
 			id: "2F2F12C58287606A"
 			min_width: 300
 			tasks: [{
@@ -641,6 +704,17 @@
 				"554507DD4518153D"
 				"37084AF4364CC896"
 				"2F2F12C58287606A"
+			]
+			description: [
+				"The SAG Mill is your first step into EnderIO machinery. Like the Crusher it can transform any materials into dust."
+				""
+				"However, it is slower than its predecessor but has 2 special abilities:"
+				""
+				"First, the SAG Mill is the only machine that can crush Soul Sand and Ender Pearl into dusts."
+				""
+				"Additionally, it can also be used to get better outputs out of some materials like Sugar Canes or Blaze Rods, but that's not it!"
+				""
+				"You can further increase a recipe output with the use of Grinding Balls! When put inside your SAG Mill they will give various boosts while slowly being consumed. Recipes that can be boosted show the Grinding Balls in their JEI preview."
 			]
 			icon: "enderio:sag_mill"
 			id: "6CBDB50FFA272FAA"
@@ -707,6 +781,11 @@
 		}
 		{
 			dependencies: ["6CBDB50FFA272FAA"]
+			description: [
+				"Hey, look! That's the dust we were talking about!"
+				""
+				"Prepare a lot, it might come in use!"
+			]
 			id: "37FCDB0C92228253"
 			min_width: 300
 			tasks: [{
@@ -719,6 +798,11 @@
 		}
 		{
 			dependencies: ["37FCDB0C92228253"]
+			description: [
+				"Looks like we finally found a use to those useless forever trapped souls!"
+				""
+				"Craft some Soularium Ingots!"
+			]
 			id: "53FD0B2E4952177F"
 			min_width: 300
 			tasks: [{
@@ -731,6 +815,13 @@
 		}
 		{
 			dependencies: ["53FD0B2E4952177F"]
+			description: [
+				"A simple upgrade to your Void Chassis!"
+				""
+				"It will mostly be used to play with monster's poor little souls, that's also your way into chapter 6, congrats!"
+				""
+				"You've reached Tier 4 already! Did you know there were 16 tiers of Machine Frames? Now you do. :)"
+			]
 			id: "1645A4D41DFAFDE2"
 			min_width: 300
 			size: 1.25d
@@ -746,6 +837,12 @@
 			dependencies: [
 				"090D14082AE0CCD0"
 				"74314B7BF445D5CD"
+			]
+			description: [
+				"Craft some End Steel Ingots!"
+				""
+				"That's even more steel..."
+				"How do they keep getting away with it?"
 			]
 			id: "37084AF4364CC896"
 			min_width: 300
@@ -924,7 +1021,7 @@
 			description: [
 				"Those are the main upgrades for the Mob Masher used to increase its main damage and its loot drop."
 				""
-				"Sharpness 10 is pretty much a garanted oneshot."
+				"Sharpness 10 can inflict up to 56.5 damage per hit, no need to say, it's most likely a oneshot, for you included."
 				"Beheading is used to drop heads more often."
 				"And yes, 10 fortune upgrades does mean Fortune 10."
 			]
@@ -1495,6 +1592,11 @@
 				"461582A0D1C0E0EF"
 				"15155F6301EE6258"
 			]
+			description: [
+				"An another upgrade to your PneumaticCraft tank, I guess you like moving fluids around."
+				""
+				"Can now contain 128kmB."
+			]
 			id: "7834D17272807800"
 			min_width: 300
 			tasks: [{
@@ -1507,6 +1609,11 @@
 		}
 		{
 			dependencies: ["7834D17272807800"]
+			description: [
+				"The last upgrade to your PneumaticCraft tank, there's a lot more work required for this one."
+				""
+				"Can now contain 512kmB."
+			]
 			id: "1985E0AF0779593F"
 			min_width: 300
 			tasks: [{
@@ -1531,6 +1638,12 @@
 		}
 		{
 			dependencies: ["7FC2A2D7276AE83F"]
+			description: [
+				"The Enderium Wand is a useful tool for your building matters as it can automatically place up to 128 blocks on a surface, specially useful when making walls or terraforming."
+				""
+				"Additionally, you can add a Core to your wand to set it to destruct blocks or give it the ability to place blocks in the air."
+				"Beware as the Enderium Wand as a limited durability and any core added to it will be lost when broken."
+			]
 			hide_dependency_lines: true
 			icon: {
 				Count: 1
@@ -1583,6 +1696,13 @@
 		}
 		{
 			dependencies: ["1A965CD16F4D3FE3"]
+			description: [
+				"Tired of catching dropped items by hand? Craft a magnet!"
+				""
+				"This magnet can collect items and xp up to 5 blocks and has its own &2Curios Slot&r. You can activate and deactivate it at any time too."
+				""
+				"Additionally, you can set up a demagnetization coil to prevent magnet from working up to a 5³ configurable zone."
+			]
 			hide_dependency_lines: true
 			icon: {
 				Count: 1
@@ -1616,6 +1736,15 @@
 				"5F2413B26A70B63B"
 				"090D14082AE0CCD0"
 			]
+			description: [
+				"Craft a Heart Amulet and 10 Red Heart Canister!"
+				""
+				"The Heart Amulet can be equipped in its assignated &2Curios Slot&r and can contain up to 10 of each Heart Canisters."
+				""
+				"Each Heart Canister increases your max HP by 2 (1 heart)."
+				""
+				"Useful if you're getting into exploration!"
+			]
 			hide_dependency_lines: true
 			icon: "bhc:red_heart_canister"
 			id: "3EE1405D4963DB67"
@@ -1633,6 +1762,7 @@
 					type: "item"
 				}
 			]
+			title: "Healthy wearings"
 			x: 8.0d
 			y: -1.5d
 		}
@@ -1734,6 +1864,11 @@
 		}
 		{
 			dependencies: ["66D705EFB050318F"]
+			description: [
+				"Like their item's version, fluid drawers are used to store large amounts of fluids, they basically act like a tank."
+				""
+				"Once upgraded, fluid drawers are really strong tanks as they can store up to 4 different fluids and can be connected to a Storage Controller."
+			]
 			hide_dependency_lines: true
 			icon: "functionalstorage:fluid_1"
 			id: "738703DD8B477166"
@@ -1792,7 +1927,7 @@
 				"5785F9A5AB33C124"
 				"2BE50BE744D435F6"
 			]
-			description: [""]
+			description: ["Craft an Hardened Jetpack!"]
 			id: "2D92DC2394743654"
 			min_width: 300
 			tasks: [{
@@ -1804,12 +1939,21 @@
 				}
 				type: "item"
 			}]
-			title: "Harder, Better, Faster, Stronger"
+			title: "Faster, Stronger"
 			x: 6.75d
 			y: 3.0d
 		}
 		{
 			dependencies: ["415C7601E035DBDB"]
+			description: [
+				"Craft a Leadstone Jetpack! At the cost of energy this jetpack let's you fly!"
+				""
+				"However, as the first tier, it is pretty slow and have a pretty small battery."
+				""
+				"Still useful if you need to climb to high grounds but don't think you're getting fast with that one."
+				""
+				"It can be equipped in its own &2Curios Slot&r!"
+			]
 			hide_dependency_lines: true
 			id: "2BE50BE744D435F6"
 			min_width: 300
