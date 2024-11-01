@@ -130,6 +130,7 @@
 				""
 				"Green steel is fashion out there, you know?"
 			]
+			disable_toast: true
 			id: "75E0E9C5F8E23B7E"
 			min_width: 300
 			size: 1.25d
@@ -138,6 +139,7 @@
 				item: "naturesaura:sky_ingot"
 				type: "item"
 			}]
+			title: "Gift from Olympus"
 			x: -13.125d
 			y: 1.375d
 		}

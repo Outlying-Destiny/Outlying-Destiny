@@ -13,6 +13,6 @@ ServerEvents.recipes(event => {
     enrichment('mekanism:enriched_refined_obsidian', 1, 'mekanism:ingot_refined_obsidian', 1)
 
     //Ore Dupe
-    enrichment('thermal:raw_silver', 3, 'thermal:silver_dust', 4)
-    enrichment('thermal:raw_nickel', 3, 'thermal:nickel_dust', 4)
+    enrichment('thermal:silver_dust', 4, 'thermal:raw_silver', 3)
+    enrichment('thermal:nickel_dust', 4, 'thermal:raw_nickel', 3)
 })

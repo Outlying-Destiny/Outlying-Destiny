@@ -496,11 +496,9 @@
 		{
 			dependencies: ["6A53A5AD90652811"]
 			description: [
-				"By putting a transmutation catalyst below your Natural Altar you can unlock new crafts with it!"
+				"You can put a transmutation catalyst above one of the 4 lower Golden Bricks of your Natural Altar to unlock new transmutations with it!"
 				""
-				"That does mean that you'll now be unable to automate your Natural Altar using hoppers, you'll have to use pipes instead which you unlock in chapter 3 with Mekanism."
-				""
-				"However the transmutation catalyst is your best option if you're unable to get a Ghast Tear in the Nether, try it out!"
+				"This is your best option to get a Ghast Tear if you're unable to get one in the Nether, try it out!"
 			]
 			id: "64BD2158A4528720"
 			min_width: 300

@@ -27,8 +27,8 @@
 					type: "item"
 				}
 				{
-					id: "43CDDD819A6FBCD7"
-					item: "immersiveengineering:circuit_board"
+					id: "7C4B770DEA8E6914"
+					item: "immersiveengineering:logic_circuit"
 					type: "item"
 				}
 			]
@@ -44,7 +44,6 @@
 				""
 				"Compressed Steel is the main material of PneumaticCraft, have fun with it!"
 			]
-			disable_toast: true
 			id: "5DAF16566BC2FDB6"
 			min_width: 300
 			rewards: [{
@@ -55,9 +54,9 @@
 			}]
 			size: 1.25d
 			tasks: [{
-				count: 16L
+				count: 32L
 				id: "65EDDB64C1B6407C"
-				item: { Count: 32, id: "pneumaticcraft:ingot_iron_compressed" }
+				item: "pneumaticcraft:ingot_iron_compressed"
 				type: "item"
 			}]
 			x: -6.0d
@@ -100,14 +99,31 @@
 				"Pressure tubes are used to transport pressure between machines."
 				""
 				"Their max pression is 5 bars, if that limit gets exceeded for too long the tubes will explode and all pression will be lost."
+				""
+				"To counter that you can use "
+				"You'll be able to upgrade them once you unlock molten plastic."
 			]
 			id: "2577C7FFB57C9944"
 			min_width: 300
-			tasks: [{
-				id: "5CDBE8EBC3FFE16F"
-				item: "pneumaticcraft:pressure_tube"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5CDBE8EBC3FFE16F"
+					item: "pneumaticcraft:pressure_tube"
+					type: "item"
+				}
+				{
+					id: "2132040370F6D604"
+					item: "pneumaticcraft:pressure_gauge_module"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "15314A94A1C9471D"
+					item: "pneumaticcraft:safety_tube_module"
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: -6.0d
 			y: -4.25d
 		}

@@ -5,9 +5,9 @@
 	#Message that displays when Teleport is blocked
 	blockedmessage = "Only freed soul shall pass."
 	#Title for the Advancements
-	craftedmessage = "Not quite Olympus yet"
+	craftedmessage = "Not quite Olympus"
 	#Description for the Advancements
-	description = "Craft a %item%"
+	description = "Free your soul and get access to the Aether."
 	#Comma seperated list of items that when crafted unlock the corresponding dimension
 	craftitems = "kubejs:freed_soul"
 	#Comma seperated list of Dimension Resource Names

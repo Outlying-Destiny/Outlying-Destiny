@@ -125,5 +125,6 @@ ServerEvents.recipes(event => {
     allcrush('thermalendergy:melodium_dust', 1, 'thermalendergy:melodium_ingot', 2400)
     allcrush('thermalendergy:stellarium_dust', 1, 'thermalendergy:stellarium_ingot', 2400)
     allcrush('immersiveengineering:dust_coke', 1, 'thermal:coal_coke', 2400)
+    allcrush('immersiveengineering:dust_hop_graphite', 1, 'immersiveengineering:ingot_hop_graphite', 2400)
     
 })

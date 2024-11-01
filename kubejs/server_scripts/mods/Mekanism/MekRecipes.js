@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
     //Functions
     function detailedbox(output, input1, input2, input3, input4){event.shaped(output, ['ABA','CDC','ABA'], {A: input1,B: input2,C: input3,D: input4})}
     function box(output, input1, input2, input3){event.shaped(output, ['ABA','BCB','ABA'], {A: input1,B: input2,C: input3})}
-    function mekdata(output, input1, input2, input3){event.custom({"type": "mekanism:mek_data","key": {"A": {"item": input1},"B": {"item": input2},"C": {"item": input3}},"pattern": ["ABA","BCB","ABA"],"result": {"item": output}})}
+    function mekdata(output, input1, input2, input3, input4){event.custom({"type": "mekanism:mek_data","key": {"A": {"item": input1},"B": {"item": input2},"C": {"item": input3},"D": {"item": input4}},"pattern": ["ABA","CDC","ABA"],"result": {"item": output}})}
 
     //Steel Casing
     event.replaceInput({ output: 'mekanism:steel_casing'},'#forge:glass/silica','thermal:steel_plate')
@@ -59,25 +59,25 @@ ServerEvents.recipes(event => {
     //Energy Cubes
     event.remove({id:/mekanism:energy_cube.+/})
     detailedbox('mekanism:basic_energy_cube', 'minecraft:redstone', 'mekanism:energy_tablet', 'thermal:steel_ingot', 'immersiveengineering:capacitor_hv')
-    detailedbox('mekanism:advanced_energy_cube', 'mekanism:alloy_infused', 'mekanism:energy_tablet', 'powah:steel_energized', 'mekanism:basic_energy_cube')
-    detailedbox('mekanism:elite_energy_cube', 'mekanism:alloy_reinforced', 'mekanism:energy_tablet', 'thermal:signalum_ingot', 'mekanism:advanced_energy_cube')
-    detailedbox('mekanism:ultimate_energy_cube', 'mekanism:alloy_atomic', 'mekanism:energy_tablet', 'actuallyadditions:empowered_enori_crystal', 'mekanism:elite_energy_cube')
+    mekdata('mekanism:advanced_energy_cube', 'mekanism:alloy_infused', 'mekanism:energy_tablet', 'powah:steel_energized', 'mekanism:basic_energy_cube')
+    mekdata('mekanism:elite_energy_cube', 'mekanism:alloy_reinforced', 'mekanism:energy_tablet', 'thermal:signalum_ingot', 'mekanism:advanced_energy_cube')
+    mekdata('mekanism:ultimate_energy_cube', 'mekanism:alloy_atomic', 'mekanism:energy_tablet', 'actuallyadditions:empowered_enori_crystal', 'mekanism:elite_energy_cube')
 
     //Fluid Tanks
     event.remove({id:/mekanism.+fluid_tank.+/})
     event.shaped('mekanism:basic_fluid_tank', ['ABA','B B','ABA'], {A:'minecraft:redstone', B:'minecraft:iron_ingot'})
-    mekdata('mekanism:advanced_fluid_tank', 'mekanism:alloy_infused', 'thermal:steel_ingot', 'mekanism:basic_fluid_tank')
-    mekdata('mekanism:elite_fluid_tank', 'mekanism:alloy_reinforced', 'enderio:dark_steel_ingot', 'mekanism:advanced_fluid_tank')
-    mekdata('mekanism:ultimate_fluid_tank', 'mekanism:alloy_atomic', 'extendedcrafting:black_iron_ingot', 'mekanism:elite_fluid_tank')
-    mekdata('mekanism_extras:absolute_fluid_tank', 'mekanism_extras:alloy_radiance', 'thermal_extra:dragonsteel_ingot', 'mekanism:ultimate_fluid_tank')
+    mekdata('mekanism:advanced_fluid_tank', 'mekanism:alloy_infused', 'thermal:steel_ingot', 'thermal:steel_ingot', 'mekanism:basic_fluid_tank')
+    mekdata('mekanism:elite_fluid_tank', 'mekanism:alloy_reinforced', 'enderio:dark_steel_ingot', 'enderio:dark_steel_ingot', 'mekanism:advanced_fluid_tank')
+    mekdata('mekanism:ultimate_fluid_tank', 'mekanism:alloy_atomic', 'extendedcrafting:black_iron_ingot', 'extendedcrafting:black_iron_ingot', 'mekanism:elite_fluid_tank')
+    mekdata('mekanism_extras:absolute_fluid_tank', 'mekanism_extras:alloy_radiance', 'thermal_extra:dragonsteel_ingot', 'thermal_extra:dragonsteel_ingot', 'mekanism:ultimate_fluid_tank')
 
     //Chemical Tanks
     event.remove({id:/mekanism.+chemical_tank.+/})
     event.shaped('mekanism:basic_chemical_tank', ['ABA','B B','ABA'], {A:'minecraft:redstone', B:'mekanism:ingot_osmium'})
-    mekdata('mekanism:advanced_chemical_tank', 'mekanism:alloy_infused', 'mekanism:ingot_refined_glowstone', 'mekanism:basic_chemical_tank')
-    mekdata('mekanism:elite_chemical_tank', 'mekanism:alloy_reinforced', 'thermal:lumium_ingot', 'mekanism:advanced_chemical_tank')
-    mekdata('mekanism:ultimate_chemical_tank', 'mekanism:alloy_atomic', 'kubejs:crystalline_alloy_ingot', 'mekanism:elite_chemical_tank')
-    mekdata('mekanism_extras:absolute_chemical_tank', 'mekanism_extras:alloy_radiance', 'thermal_extra:twinite_ingot', 'mekanism:ultimate_chemical_tank')
+    mekdata('mekanism:advanced_chemical_tank', 'mekanism:alloy_infused', 'mekanism:ingot_refined_glowstone', 'mekanism:ingot_refined_glowstone', 'mekanism:basic_chemical_tank')
+    mekdata('mekanism:elite_chemical_tank', 'mekanism:alloy_reinforced', 'thermal:lumium_ingot', 'thermal:lumium_ingot', 'mekanism:advanced_chemical_tank')
+    mekdata('mekanism:ultimate_chemical_tank', 'mekanism:alloy_atomic', 'kubejs:crystalline_alloy_ingot', 'kubejs:crystalline_alloy_ingot', 'mekanism:elite_chemical_tank')
+    mekdata('mekanism_extras:absolute_chemical_tank', 'mekanism_extras:alloy_radiance', 'thermal_extra:twinite_ingot', 'thermal_extra:twinite_ingot', 'mekanism:ultimate_chemical_tank')
 
     //Personal Container
     event.replaceInput({ output: ['mekanism:personal_chest', 'mekanism:personal_barrel']},'thermal:steel_ingot','extendedcrafting:black_iron_ingot')

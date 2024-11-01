@@ -95,6 +95,7 @@ ServerEvents.recipes(event => {
     mineral2(['thermal:deepslate_tin_ore', 'minecraft:deepslate_copper_ore'],[0.7, 0.3], 'minecraft:overworld', 20, 'cassiterite', 'Cassiterite', '§r§fCommon')
     mineral2(['kubejs:deepslate_certus_quartz_ore', 'kubejs:deepslate_quartz_ore'], [0.7, 0.3], 'minecraft:overworld', 10, 'certus', 'Certus', '§r§6Very Rare')
     mineral2(['mekanism:deepslate_uranium_ore', 'mekanism:deepslate_fluorite_ore'],[0.85, 0.15], 'minecraft:overworld', 16, 'intragranitic_uranium', 'Intragranatic Uranium', '§r§bUncommon')
+    mineral2(['mekanism:deepslate_osmium_ore', 'minecraft:deepslate_iron_ore'], [0.8, 0.2], 'minecraft:overworld', 16, 'osmiron', 'Osmiron', '§r§bUncommon')
     mineral3(['minecraft:deepslate_iron_ore', 'thermal:deepslate_nickel_ore', 'minecraft:deepslate_copper_ore'],[0.4, 0.4, 0.2], 'minecraft:overworld', 12, 'kambalda', 'Kambalda', '§r§dRare')
     mineral3(['minecraft:deepslate_copper_ore', 'minecraft:deepslate_gold_ore', 'thermal:deepslate_silver_ore'],[0.55, 0.3, 0.15], 'minecraft:overworld', 20, 'porphyry', 'Porphyry', '§r§fCommon')
     mineral3(['minecraft:deepslate_gold_ore', 'thermal:deepslate_lead_ore', 'thermal:deepslate_tin_ore'],[0.4, 0.4, 0.2], 'minecraft:overworld', 12, 'volcanogenic', 'Volcanogenic', '§r§dRare')

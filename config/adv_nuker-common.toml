@@ -1,5 +1,5 @@
 nuke_all = false
 nuke_recipes = true
-nuke_mods = ["minecraft", "pneumaticcraft", "botania", "naturesaura", "farmersdelight", "mekanism", "undergarden", "architects_palette", "simplyjetpacks", "immersiveengineering", "evilcraft", "ae2", "twilightforest", "trashcans", "ad_astra", "mythicbotany", "actuallyadditions", "aether", "yungscavebiomes", "restrictedportals"]
+nuke_mods = ["minecraft", "pneumaticcraft", "botania", "naturesaura", "farmersdelight", "mekanism", "undergarden", "architects_palette", "simplyjetpacks", "immersiveengineering", "evilcraft", "ae2", "twilightforest", "trashcans", "ad_astra", "mythicbotany", "actuallyadditions", "aether", "yungscavebiomes"]
 whitelist_keywords = ["bumblezone:root"]
 
