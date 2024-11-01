@@ -80,6 +80,7 @@
 		}
 		{
 			dependencies: ["5DAF16566BC2FDB6"]
+			description: ["A simple tank"]
 			id: "3753ED157236EF54"
 			min_width: 300
 			tasks: [{
@@ -100,7 +101,10 @@
 				""
 				"Their max pression is 5 bars, if that limit gets exceeded for too long the tubes will explode and all pression will be lost."
 				""
-				"To counter that you can use "
+				"You can prevent that by adding a Safety Tube Module on one of your tubes to automatically release some air when the max pressure is reached. This solution wastes a bit of energy but is simple to put in place"
+				""
+				"You can put a Pressure Gauge on one of your tube to send a redstone signal based on the current pressure. You can send this signal to your Flux Compressor configured to be enabled on low redstone signal to automatically stop the compressor when reaching a certain pression. This solution requires some more work but saves you from losing air and so energy."
+				""
 				"You'll be able to upgrade them once you unlock molten plastic."
 			]
 			id: "2577C7FFB57C9944"
@@ -112,14 +116,14 @@
 					type: "item"
 				}
 				{
-					id: "2132040370F6D604"
-					item: "pneumaticcraft:pressure_gauge_module"
+					id: "15314A94A1C9471D"
+					item: "pneumaticcraft:safety_tube_module"
 					optional_task: true
 					type: "item"
 				}
 				{
-					id: "15314A94A1C9471D"
-					item: "pneumaticcraft:safety_tube_module"
+					id: "65BE280FA1906254"
+					item: "pneumaticcraft:pressure_gauge_module"
 					optional_task: true
 					type: "item"
 				}
@@ -144,6 +148,11 @@
 		}
 		{
 			dependencies: ["5DAF16566BC2FDB6"]
+			description: [
+				"Heat sinks are used to efficiently disperse heat or cold."
+				""
+				"The Vortex Tube converts pressure into heat and cold. While the External Heater from Immersive is a preferable way to create heat, the Vortex Tube can prove itself quite useful for cold generation, put a Heat Sink on the unused side for max efficiency."
+			]
 			icon: "pneumaticcraft:heat_sink"
 			id: "5E29CBA54EDA91C0"
 			min_width: 300
@@ -167,6 +176,10 @@
 			dependencies: [
 				"5E62C6B6C69FEE4F"
 				"5DAF16566BC2FDB6"
+			]
+			description: [
+				"The Flux Compressor converts FE into pressure."
+				"This is your first way to generate pressure."
 			]
 			id: "1D42C6268FA6E13F"
 			min_width: 300
@@ -220,7 +233,7 @@
 			description: [
 				"Craft some Upgrade Matrix. They're the base material to craft PneumaticCraft upgradete."
 				""
-				"Optionally, you can also craft some Lubricant and Glycerol which are used to craft speed upgrades, you shouldn't need those for now however."
+				"You can also craft some Lubricant and Glycerol which are used to craft speed upgrades, they're optional to this quest."
 			]
 			icon: "pneumaticcraft:upgrade_matrix"
 			id: "5C3A578EAC76C3CF"

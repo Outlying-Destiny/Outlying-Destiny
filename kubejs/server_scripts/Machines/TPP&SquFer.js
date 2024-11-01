@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
 
     //Molten Plastic
     event.remove({id:/pneumaticcraft:thermo_plant\/plastic_from_(biodiesel|lpg)/})
-    TPPIFtoF('pneumaticcraft:plastic', 1000, 'immersiveengineering:biodiesel', 100, 'minecraft:charcoal', 4, 373, 0.5)
+    TPPIFtoF('pneumaticcraft:plastic', 1000, 'immersiveengineering:biodiesel', 200, 'minecraft:charcoal', 4, 373, 0.5)
 
     //Molten Lapis
     TPPItoF('kubejs:molten_lapis', 250, 'minecraft:lapis_lazuli', 2.5, 393, 0.75)
