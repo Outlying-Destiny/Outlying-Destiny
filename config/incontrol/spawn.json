@@ -14,5 +14,9 @@
       "mob":["thermal:blizz", "thermal:blitz", "thermal:basalz", "minecraft:wandering_trader"],
       "dimension": "minecraft:overworld",
       "result": "deny"
+    },
+    {
+      "mob":["quark:forgotten"],
+      "result": "deny"
     }
   ]

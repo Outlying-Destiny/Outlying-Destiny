@@ -15,4 +15,10 @@ ServerEvents.recipes(event => {
     //Ore Dupe
     enrichment('thermal:silver_dust', 4, 'thermal:raw_silver', 3)
     enrichment('thermal:nickel_dust', 4, 'thermal:raw_nickel', 3)
+
+    //AE2 Dusts to Crystals
+    event.remove({id:'ae2:transform/certus_quartz_crystals'})
+    event.remove({id:'ae2:transform/fluix_crystal'})
+    enrichment('ae2:certus_quartz_crystal', 1, 'ae2:certus_quartz_dust', 1)
+    enrichment('ae2:fluix_crystal', 1, 'ae2:fluix_dust', 1)
 })

@@ -100,6 +100,7 @@ JEIEvents.hideItems(event => {
     //Quark
     event.hide('quark:gunpowder_sack')
     event.hide('quark:apple_crate')
+    event.hide('quark:forgotten_hat')
 
     //RFTools
     event.hide(/rftoolsbase:dimensionalshard_.+/)
@@ -124,7 +125,10 @@ JEIEvents.hideItems(event => {
 
     //Twilight Forest
     event.hide(/twilightforest:.+boss_spawner/)
-    event.hide('twilightforest:uncrafting_table')
+    event.hide(['twilightforest:uncrafting_table', 'twilightforest:ore_magnet'])
+
+    //Wither Skeleton Tweaks
+    event.hide(/wstweaks:(lava|blaze)_blade/)
 
     //Dusts
     event.hide(['ae2:ender_dust', 'enderio:powdered_ender_pearl'])

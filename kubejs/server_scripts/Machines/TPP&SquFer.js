@@ -9,6 +9,7 @@ ServerEvents.recipes(event => {
     }
     function TPPItoF (fluid, fluidamount, input, pressure, temp, speed){event.custom({"type": "pneumaticcraft:thermo_plant","exothermic": false,"fluid_output": {"amount": fluidamount,"fluid": fluid},"item_input": {"item": input},"pressure": pressure,"speed": speed, "temperature": {"min_temp": temp}})}
     function TPPIFtoF (fluido, fluidoamount, fluidi, fluidiamount, input, pressure, temp, speed){event.custom({"type": "pneumaticcraft:thermo_plant","exothermic": false,"fluid_input": {"type": "pneumaticcraft:fluid","amount": fluidiamount,"fluid": fluidi},"fluid_output": {"amount": fluidoamount,"fluid": fluido},"item_input": {"item": input},"temperature": {"min_temp": temp},"pressure": pressure,"speed": speed})}
+    function TPPIFtoI (output, fluidi, fluidiamount, input, pressure, temp, speed){event.custom({"type": "pneumaticcraft:thermo_plant","exothermic": false,"fluid_input": {"type": "pneumaticcraft:fluid","amount": fluidiamount,"fluid": fluidi},"item_output": {"item": output},"item_input": {"item": input},"temperature": {"min_temp": temp},"pressure": pressure,"speed": speed})}
 
     //Plant Oil
     event.remove({id:/pneumaticcraft:thermo_plant.+vegetable_oil_from_.+/})
@@ -45,4 +46,7 @@ ServerEvents.recipes(event => {
     event.remove({id:/pneumaticcraft:thermo_plant\/lubricant_from_(biodiesel|diesel)/})
     TPPIFtoF('pneumaticcraft:lubricant', 1000, 'immersiveengineering:biodiesel', 1000, 'minecraft:redstone', 3, 373, 0.5)
 
+    //Reinforced Pressure Tube
+    event.remove({id:'pneumaticcraft:thermo_plant/reinforced_pressure_tube'})
+    TPPIFtoI('pneumaticcraft:reinforced_pressure_tube', 'pneumaticcraft:plastic', 100, 'pneumaticcraft:pressure_tube', 4.5, 273, 1)
 })

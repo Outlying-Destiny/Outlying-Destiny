@@ -54,19 +54,11 @@ ServerEvents.recipes(event => {
     event.remove({id:'enderio:sag_milling/wheat'})
     event.remove({id:'enderio:cake'})
     
-
     //"Enderios"
     event.replaceInput(
       { output: 'enderio:enderios'},
       'enderio:powdered_ender_pearl',
       'thermal:ender_pearl_dust'
-    )
-
-    //Vacuums
-    event.replaceInput(
-      {output:['enderio:vacuum_chest', 'enderio:xp_vacuum']},
-      'minecraft:iron_ingot',
-      'enderio:dark_steel_ingot'
     )
 
     //Travel Anchor
@@ -281,6 +273,22 @@ ServerEvents.recipes(event => {
       C: 'enderio:void_chassis',
       D: 'enderio:dark_bimetal_gear',
       E: 'minecraft:piston'
+      }
+    )
+
+    //Soul Binder
+    event.remove({id:'enderio:soul_binder'})
+    event.shaped(
+      'enderio:soul_binder', [
+      'ABA',
+      'CDC',
+      'AEA'
+      ], {
+      A: 'enderio:soularium_ingot',
+      B: 'enderio:z_logic_controller',
+      C: 'enderio:energized_gear',
+      D: 'enderio:ensouled_chassis',
+      E: 'enderio:experience_rod'
       }
     )
 

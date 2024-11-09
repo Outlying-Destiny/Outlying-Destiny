@@ -44,6 +44,7 @@ ServerEvents.recipes(event => {
     sapling('architects_palette:twisted')
     sapling('forbidden_arcanus:aurum')
     sapling('aether:skyroot')
+    sapling('aether:golden_oak')
     sapling('twilightforest:twilight_oak')
     sapling('twilightforest:canopy')
     sapling('twilightforest:time')

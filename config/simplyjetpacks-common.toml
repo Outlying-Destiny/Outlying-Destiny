@@ -336,7 +336,7 @@
 			[simplyjetpacks-common.tuning.thermal.te2]
 				#The maximum amount of energy that this Jetpack/Fluxpack can hold.
 				#Range: > 0
-				energyCapacity = 3000000
+				energyCapacity = 600000
 				#The amount of energy that this Jetpack/Fluxpack uses every tick, when being used.
 				#Range: > 0
 				energyUsage = 50
@@ -387,7 +387,7 @@
 			[simplyjetpacks-common.tuning.thermal.te1]
 				#The maximum amount of energy that this Jetpack/Fluxpack can hold.
 				#Range: > 0
-				energyCapacity = 800000
+				energyCapacity = 200000
 				#The amount of energy that this Jetpack/Fluxpack uses every tick, when being used.
 				#Range: > 0
 				energyUsage = 32
@@ -489,7 +489,7 @@
 			[simplyjetpacks-common.tuning.thermal.te3]
 				#The maximum amount of energy that this Jetpack/Fluxpack can hold.
 				#Range: > 0
-				energyCapacity = 6000000
+				energyCapacity = 5000000
 				#The amount of energy that this Jetpack/Fluxpack uses every tick, when being used.
 				#Range: > 0
 				energyUsage = 200

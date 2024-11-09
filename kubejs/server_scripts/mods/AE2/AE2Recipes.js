@@ -1,19 +1,8 @@
 ServerEvents.recipes(event => {
 
     //Function Box
-    function box(output, input1, input2, input3, input4){
-      event.shaped(output, [
-          'ABA',
-          'CDC',
-          'ABA'
-          ], {
-          A: input1,
-          B: input2,
-          C: input3,
-          D: input4
-          }
-      )
-    }
+    function box(output, input1, input2, input3, input4){event.shaped(output, ['ABA','CDC','ABA'], {A: input1,B: input2,C: input3,D: input4})}
+    function storage(output, input1, input2, input3, input4){event.shaped(output, ['ABA','CDC','ACA'], {A: input1,B: input2+'_processor',C: input3,D: input4})}
 
     //Remove Dusts from Inscriber
     event.remove({id:/ae2:inscriber.+dust/})
@@ -143,16 +132,12 @@ ServerEvents.recipes(event => {
     )
 
     //Storage Components
-    event.replaceInput(
-      { output: /ae2:cell_component_.+/},
-      'minecraft:redstone',
-      'mekanism:alloy_infused'
-    )
-    event.replaceInput(
-      { output: /ae2:cell_component_.+/},
-      'minecraft:glowstone_dust',
-      'mekanism:ingot_refined_glowstone'
-    )
+    event.remove({id:/ae2:network\/cells\/item_storage_components_cell_(1|4|16|64|256)k_part/})
+    box('ae2:cell_component_1k', 'mekanism:alloy_infused', 'ae2:certus_quartz_crystal', 'ae2:certus_quartz_crystal', 'ae2:quartz_glass')
+    storage('ae2:cell_component_4k', 'mekanism:alloy_reinforced', 'ae2:calculation', 'ae2:cell_component_1k', 'ae2:quartz_glass')
+    storage('ae2:cell_component_16k', 'mekanism:ingot_refined_glowstone', 'ae2:calculation', 'ae2:cell_component_4k', 'ae2:quartz_vibrant_glass')
+    storage('ae2:cell_component_64k', 'mekanism:ingot_refined_obsidian', 'ae2:calculation', 'ae2:cell_component_16k', 'ae2:quartz_vibrant_glass')
+    storage('ae2:cell_component_256k', 'ae2:sky_dust', 'ae2:calculation', 'ae2:cell_component_64k', 'ae2:quartz_vibrant_glass')
 
     //Meteorite Compass
     event.remove({id:'ae2:charger/meteorite_compass'})

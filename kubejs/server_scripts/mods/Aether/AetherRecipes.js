@@ -244,42 +244,42 @@ ServerEvents.recipes(event => {
     event.custom({   
         "type":"immersiveengineering:arc_furnace",
             "additives":[{"base_ingredient":{"item":'aether:zanite_gemstone'},"count":16}, {"base_ingredient":{"item":'aether:aechor_petal'},"count":4}, {"base_ingredient":{"item":'aether:skyroot_poison_bucket'},"count":2}],
-            "energy":204800,
+            "energy":409600,
             "input":{"base_ingredient":{"item":'aether:enchanted_gravitite'},
                 "count":1},
             "results":[{"base_ingredient":{"item":'kubejs:base_core'},
-                "count":1}],
-            "time":200
-    })
-    event.custom({   
-        "type":"immersiveengineering:arc_furnace",
-            "additives":[{"base_ingredient":{"item":'aether:golden_amber'},"count":24}, {"base_ingredient":{"item":'aether:enchanted_berry'},"count":8}, {"base_ingredient":{"item":'aether:golden_aercloud'},"count":4}, {"base_ingredient":{"item":'aether:skyroot_remedy_bucket'},"count":2}],
-            "energy":307200,
-            "input":{"base_ingredient":{"item":'kubejs:base_core'},
-                "count":1},
-            "results":[{"base_ingredient":{"item":'kubejs:enchanted_core'},
-                "count":1}],
-            "time":300
-    })
-    event.custom({   
-        "type":"immersiveengineering:arc_furnace",
-            "additives":[{"base_ingredient":{"item":'kubejs:neptune_ingot'},"count":4}, {"base_ingredient":{"item":'aether:blue_aercloud'},"count":4}, {"base_ingredient":{"item":'aether:crystal_leaves'},"count":4}, {"base_ingredient":{"item":'aether:aerogel'},"count":4}],
-            "energy":409600,
-            "input":{"base_ingredient":{"item":'kubejs:enchanted_core'},
-                "count":1},
-            "results":[{"base_ingredient":{"item":'kubejs:frozen_core'},
                 "count":1}],
             "time":400
     })
     event.custom({   
         "type":"immersiveengineering:arc_furnace",
+            "additives":[{"base_ingredient":{"item":'aether:golden_amber'},"count":24}, {"base_ingredient":{"item":'aether:enchanted_berry'},"count":16}, {"base_ingredient":{"item":'aether:golden_aercloud'},"count":4}, {"base_ingredient":{"item":'aether:skyroot_remedy_bucket'},"count":2}],
+            "energy":614400,
+            "input":{"base_ingredient":{"item":'kubejs:base_core'},
+                "count":1},
+            "results":[{"base_ingredient":{"item":'kubejs:enchanted_core'},
+                "count":1}],
+            "time":600
+    })
+    event.custom({   
+        "type":"immersiveengineering:arc_furnace",
+            "additives":[{"base_ingredient":{"item":'kubejs:neptune_ingot'},"count":4}, {"base_ingredient":{"item":'aether:blue_aercloud'},"count":4}, {"base_ingredient":{"item":'aether:crystal_leaves'},"count":4}, {"base_ingredient":{"item":'aether:aerogel'},"count":4}],
+            "energy":819200,
+            "input":{"base_ingredient":{"item":'kubejs:enchanted_core'},
+                "count":1},
+            "results":[{"base_ingredient":{"item":'kubejs:frozen_core'},
+                "count":1}],
+            "time":800
+    })
+    event.custom({   
+        "type":"immersiveengineering:arc_furnace",
             "additives":[{"base_ingredient":{"item":'kubejs:valkyrie_ingot'},"count":4}, {"base_ingredient":{"item":'kubejs:phoenix_ingot'},"count":4}],
-            "energy":2457600,
+            "energy":4915200,
             "input":{"base_ingredient":{"item":'kubejs:frozen_core'},
                 "count":1},
             "results":[{"base_ingredient":{"item":'undergarden:catalyst'},
                 "count":1}],
-            "time":600
+            "time":1200
     })    
 
 })

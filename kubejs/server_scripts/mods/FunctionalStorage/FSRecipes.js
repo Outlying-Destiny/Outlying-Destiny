@@ -60,32 +60,9 @@ ServerEvents.recipes(event => {
     )
 
     //Puller / Pusher Upgrade
-    event.remove({id:/functionalstorage:puller_upgrade/})
-    event.remove({id:/functionalstorage:pusher_upgrade/})
-    event.shaped(
-        '2x functionalstorage:puller_upgrade', [
-        'ABA',
-        'ACA',
-        'ADA'
-        ], {
-        A: 'thermal:steel_ingot',
-        B: 'minecraft:hopper',
-        C: '#functionalstorage:drawer',
-        D: 'minecraft:redstone'
-        }
-    )
-    event.shaped(
-        '2x functionalstorage:pusher_upgrade', [
-        'ADA',
-        'ACA',
-        'ABA'
-        ], {
-        A: 'thermal:steel_ingot',
-        B: 'minecraft:hopper',
-        C: '#functionalstorage:drawer',
-        D: 'minecraft:redstone'
-        }
-    )
+    event.remove({id:/functionalstorage:(puller|pusher)_upgrade/})
+    event.shaped('2x functionalstorage:puller_upgrade', ['ABA','ACA','ADA'], {A: 'thermal:steel_ingot',B: 'minecraft:hopper',C: '#functionalstorage:drawer',D: 'minecraft:redstone'})
+    event.shaped('2x functionalstorage:pusher_upgrade', ['ADA','ACA','ABA'], {A: 'thermal:steel_ingot',B: 'minecraft:hopper',C: '#functionalstorage:drawer',D: 'minecraft:redstone'})
     
     //Storage Upgrades
     upgrade('functionalstorage:copper_upgrade', 'powah:steel_energized', '#functionalstorage:drawer', 'powah:energized_steel_block')

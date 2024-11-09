@@ -1,19 +1,7 @@
 ServerEvents.recipes(event => {
 
     //Function Box
-    function box(output, input1, input2, input3, input4){
-        event.shaped(output, [
-            'ABA',
-            'CDC',
-            'ABA'
-            ], {
-            A: input1,
-            B: input2,
-            C: input3,
-            D: input4
-            }
-        )
-      }
+    function box(output, input1, input2, input3, input4){event.shaped(output, ['ABA','CDC','ABA'], {A: input1,B: input2,C: input3,D: input4})}
 
     //Simple Magnets
     event.remove({id:/simplemagnets:.+/})
