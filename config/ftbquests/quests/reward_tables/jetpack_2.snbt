@@ -1,0 +1,10 @@
+{
+	id: "7281993700AD7DEA"
+	loot_size: 1
+	order_index: 32
+	rewards: [
+		{ count: 64, item: "minecraft:redstone" }
+		{ count: 8, item: "enderio:dark_steel_ingot" }
+	]
+	title: "Jetpack 2"
+}

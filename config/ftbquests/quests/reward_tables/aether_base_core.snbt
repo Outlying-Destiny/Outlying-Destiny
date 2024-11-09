@@ -1,0 +1,12 @@
+{
+	id: "3E97CCB674CC27C7"
+	loot_size: 1
+	order_index: 41
+	rewards: [
+		{ count: 32, item: "minecraft:deepslate_coal_ore" }
+		{ count: 24, item: "thermal:deepslate_lead_ore" }
+		{ count: 20, item: "thermal:deepslate_tin_ore" }
+		{ count: 16, item: "minecraft:deepslate_iron_ore" }
+	]
+	title: "Aether Base Core"
+}

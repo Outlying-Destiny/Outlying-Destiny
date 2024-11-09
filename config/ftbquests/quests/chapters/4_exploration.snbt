@@ -19,15 +19,17 @@
 				"Here's a preview of the unlit portal"
 				""
 				"{image:kubejs:textures/ftbquests/twilightforest/portal.png width:100 height:100 align:center}"
+				""
+				"&l&o&6Progression has been disabled in the Twilight, you don't need to beat dungeons in their initial order."
 			]
 			disable_toast: true
 			id: "3D422E8282D4F5A6"
-			min_width: 300
+			min_width: 315
 			size: 1.75d
 			tasks: [{
 				dimension: "twilightforest:twilight_forest"
 				id: "1A602FDAC4BA31C9"
-				title: "Twilight Forest!"
+				title: "Visit the Twilight Forest"
 				type: "dimension"
 			}]
 			title: "Can't run from this one"
@@ -36,22 +38,50 @@
 		}
 		{
 			dependencies: ["3D422E8282D4F5A6"]
+			description: [
+				"Get some Ironwood!"
+				""
+				"It's a common loot inside the Dark Tower, Labyrinth, Phantom Stronghold and Ice Queen's Tower's chests"
+				""
+				"You can also craft it with the use of liveroots which can be found rarely among roots beneath trees."
+			]
 			hide_dependency_lines: true
 			id: "6F0EF63762F1F6F0"
 			min_width: 300
+			rewards: [{
+				count: 4
+				id: "715F1E88D4B525B9"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
 			tasks: [{
+				count: 18L
 				id: "5DC8938769D2C1EC"
 				item: "twilightforest:ironwood_ingot"
 				type: "item"
 			}]
+			title: "The root of the problem"
 			x: -11.25d
 			y: 0.9375d
 		}
 		{
 			dependencies: ["2FA7D0A1BDC21418"]
+			dependency_requirement: "one_completed"
+			description: [
+				"Get some Carminite!"
+				""
+				"It can either be looted from Dark Tower's chests, by killing the Ur-Ghast or by crafting some with the use of Borer Essence obtainable by killing Towerwood Borer."
+			]
 			id: "760CF1D73B65EB17"
 			min_width: 300
+			rewards: [{
+				count: 3
+				id: "5B4711B71ACE9DE8"
+				item: "twilightforest:carminite"
+				type: "item"
+			}]
 			tasks: [{
+				count: 6L
 				id: "5AE0790C2C1707F6"
 				item: "twilightforest:carminite"
 				type: "item"
@@ -61,20 +91,53 @@
 		}
 		{
 			dependencies: ["3D422E8282D4F5A6"]
+			description: [
+				"Your soul? Well a copy of it at least."
+				""
+				"It can be looted from a Giant Miner on death, you can find those of Cloud Clottages."
+				""
+				"They also loot Giant Pickaxes, which can be used to efficiently mine Giant Obsidians from Troll's Vault!"
+				""
+				"Cloud Cottages can be found up in the sky at this location on the map:"
+				"{image:kubejs:textures/ftbquests/twilightforest/troll.png width:16 height:10 align:center}"
+			]
 			id: "1DFB4B8EAD81B680"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "42522CA729A8E083"
+				table_id: 515863444254009866L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "5EC9BC0C40F231A5"
 				item: "kubejs:your_soul"
 				type: "item"
 			}]
+			title: "Got some souls?"
 			x: -14.375d
 			y: -1.5625d
 		}
 		{
 			dependencies: ["3D422E8282D4F5A6"]
+			description: [
+				"Get a Lamp Of Cinders!"
+				""
+				"It can be looted inside of Troll Cave's Vault Chest locked behind a cube of Giant Obsidian."
+				""
+				"You can also loot Magic Beans which can be used on on Uberous Soil to grow a beanstalk up to the Cloud Cottages!"
+				""
+				"Troll Caves can be found deep underground at this location on the map:"
+				"{image:kubejs:textures/ftbquests/twilightforest/troll.png width:16 height:10 align:center}"
+			]
 			id: "778298921C4A2EC0"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "76DA71E05961E459"
+				table_id: 5765724215246942835L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "3E97820C52E37084"
 				item: {
@@ -86,6 +149,7 @@
 				}
 				type: "item"
 			}]
+			title: "No genie's lamp"
 			x: -11.875d
 			y: -1.5625d
 		}
@@ -98,6 +162,11 @@
 				"760CF1D73B65EB17"
 				"6F0EF63762F1F6F0"
 				"5BD91F6B151934B2"
+			]
+			description: [
+				"Gather all your Twilight Forest Materials to free your soul!"
+				""
+				"With that you should be able to enter The Aether!"
 			]
 			id: "292D49D365627177"
 			min_width: 300
@@ -120,6 +189,7 @@
 				item: "kubejs:freed_soul"
 				type: "item"
 			}]
+			title: "Ah, ah. Ow."
 			x: -13.125d
 			y: -0.125d
 		}
@@ -145,132 +215,268 @@
 		}
 		{
 			dependencies: ["3D422E8282D4F5A6"]
+			description: [
+				"Get some Steeleaf!"
+				""
+				"It's a common loot inside the Dark Tower, Labyrinth, Phantom Stronghold and Hollow Hill's chests."
+			]
 			hide_dependency_lines: true
 			id: "5BD91F6B151934B2"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "6D94E1885D116E7D"
+				item: "naturesaura:infused_iron"
+				type: "item"
+			}]
 			tasks: [{
+				count: 9L
 				id: "44B03B9CC6D72DAD"
 				item: "twilightforest:steeleaf_ingot"
 				type: "item"
 			}]
+			title: "Natural... that's not steel!"
 			x: -15.0d
 			y: 0.9375d
 		}
 		{
 			dependencies: ["3D422E8282D4F5A6"]
+			description: [
+				"This will be your map through your Twilight Forest journey."
+				""
+				"The Magic Map is a useful tool helping in identifying structures around you in the Twilight Forest."
+				""
+				"To craft it you can collect torchberries by killing Skeleton Druids inside of ruined houses and Raven Feathers from Raven in the wild."
+				""
+				"Each structure is represented with its own icon on the map."
+				""
+				"For example, try going to a Small Hollow Hill, you can find a lot of copper, coal and iron for your Immersive Engineering needs in there! (Seems like Medium and Large Hollow Hills does no longer contain any kind of ressource.)"
+				""
+				"You can find small Hollow Hills at this icon on the map:"
+				"{image:kubejs:textures/ftbquests/twilightforest/hollow.png width:12 height:9 align:center}"
+			]
 			id: "13AF7E44071C9703"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "471072F9A10502D5"
+				table_id: 6919074185752095018L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "6D597CB6E47CA850"
 				item: "twilightforest:magic_map"
 				type: "item"
 			}]
+			title: "This one's a map, trust me"
 			x: -13.125d
 			y: -1.5625d
 		}
 		{
 			dependencies: ["1F9021F87B5C3FF0"]
+			description: [
+				"Get a Knightmetal Ingot!"
+				""
+				"You can loot them in Phantom Stronholds by looting chests or killing mobs."
+				""
+				"You can find Phantom Stronholds at this location on the map:"
+				"{image:kubejs:textures/ftbquests/twilightforest/phantomknight.png width:16 height:12 align:center}"
+			]
 			id: "2191E8D6D6172EC4"
-			min_width: 300
+			min_width: 310
+			rewards: [{
+				id: "5B4686824D23CCCE"
+				item: {
+					Count: 1
+					id: "twilightforest:knightmetal_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "7EF7BFBB4CEB8E29"
 				item: "twilightforest:knightmetal_ingot"
 				type: "item"
 			}]
+			title: "Where's the king?"
 			x: -10.9375d
 			y: -0.3125d
 		}
 		{
 			dependencies: ["3D422E8282D4F5A6"]
+			description: [
+				"Get a Naga Trophy!"
+				""
+				"You'll need it to open the Phantom Stronghold!"
+				""
+				"To do so, simply kill a Naga found at this location on the map:"
+				"{image:kubejs:textures/ftbquests/twilightforest/naga.png width:12 height:12 align:center}"
+			]
 			id: "1F9021F87B5C3FF0"
-			min_width: 300
+			min_width: 315
+			rewards: [{
+				count: 4
+				id: "435347D8D6E32B46"
+				item: "twilightforest:naga_scale"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4CF56032F6062113"
 				item: "twilightforest:naga_trophy"
 				type: "item"
 			}]
+			title: "Nagative damage"
 			x: -10.625d
 			y: -1.875d
 		}
 		{
 			dependencies: ["3D422E8282D4F5A6"]
+			description: [
+				"Kill the Ur-Ghast and get its trophy!"
+				""
+				"It's not actually necessary for progression but it's a great way to get Carminite and is a cool boss overall!"
+				""
+				"You can find it in Dark Towers found at this location on the map:"
+				"{image:kubejs:textures/ftbquests/twilightforest/urghast.png width:16 height:14 align:center}"
+			]
 			id: "2FA7D0A1BDC21418"
 			min_width: 300
-			optional: true
+			rewards: [{
+				count: 4
+				id: "1742DA91D4B7E7F0"
+				item: "minecraft:ghast_tear"
+				type: "item"
+			}]
 			tasks: [{
 				id: "67D831BE2288D593"
 				item: "twilightforest:ur_ghast_trophy"
 				type: "item"
 			}]
+			title: "Not your ghast"
 			x: -15.625d
 			y: -1.875d
 		}
 		{
 			dependencies: ["292D49D365627177"]
+			description: [
+				"Enter The Aether!"
+				""
+				"Simply build a Nether shaped portal with glowstone blocks and place water inside of it!"
+			]
 			hide_dependency_lines: true
 			id: "7E2D6E8C57E87A77"
 			min_width: 300
 			rewards: [{
 				id: "6171CB44C6BCC49D"
 				type: "xp"
-				xp: 75
+				xp: 100
 			}]
 			size: 1.75d
 			tasks: [{
 				dimension: "aether:the_aether"
 				id: "2F1EC12AD3E2911B"
-				title: "Twilight Forest!"
+				title: "Visit The Aether"
 				type: "dimension"
 			}]
-			title: "The Aether"
+			title: "Up we go!"
 			x: -5.9375d
 			y: -2.8125d
 		}
 		{
 			dependencies: ["7E2D6E8C57E87A77"]
+			description: [
+				"Find a Bronze Dungeon and defeat its boss to get the Bronze Key."
+				""
+				"Entrance to Bronze Dungeons can be found at the side of any large island."
+			]
 			id: "7EEA9FA7703FBA8E"
 			min_width: 300
+			rewards: [{
+				count: 24
+				id: "7B5FEEDB4BBF317B"
+				item: "thermal:bronze_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "47C450931DC04851"
 				item: "aether:bronze_dungeon_key"
 				type: "item"
 			}]
+			title: "Let that slide in"
 			x: -5.3125d
 			y: -1.5625d
 		}
 		{
 			dependencies: ["7E2D6E8C57E87A77"]
+			description: [
+				"Find a Silver Dungeon and defeat its boss to get the Silver Key."
+				""
+				"Silver Dungeons are temples that can be found high up in the middle of the Sky."
+			]
 			id: "3F8ED1FBB68D88A9"
 			min_width: 300
+			rewards: [{
+				count: 24
+				id: "778F0F4D14CFC571"
+				item: "thermal:silver_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "14A87649784D1EFA"
 				item: "aether:silver_dungeon_key"
 				type: "item"
 			}]
+			title: "Valkyries off duties"
 			x: -6.5625d
 			y: -1.5625d
 		}
 		{
 			dependencies: ["7E2D6E8C57E87A77"]
+			description: [
+				"Find a Gold Dungeon and defeat its boss to get the Gold Key."
+				""
+				"The Gold dungeon spawns inside large spheric islands covered in Golden Oak Trees."
+			]
 			id: "69859C67C5901B5A"
 			min_width: 300
+			rewards: [{
+				count: 24
+				id: "68976D9DCE97D664"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0AE60595411C3B05"
 				item: "aether:gold_dungeon_key"
 				type: "item"
 			}]
+			title: "We'll call you Brown"
 			x: -4.0625d
 			y: -2.8125d
 		}
 		{
 			dependencies: ["7E2D6E8C57E87A77"]
+			description: [
+				"Find a Platinum Dungeon and defeat its boss to get the Platinum Key."
+				""
+				"This one is totally optional, but similarly to the Silver Dungeon it can be found high up in the middle of the Sky in the form of a tower."
+			]
 			id: "4799E888B7150B46"
 			min_width: 300
+			rewards: [{
+				count: 16
+				id: "54779824010CA55C"
+				item: "thermal:deepslate_nickel_ore"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4E5C134D769177F0"
 				item: "lost_aether_content:platinum_key"
 				type: "item"
 			}]
+			title: "Bonus!"
 			x: -7.8125d
 			y: -2.8125d
 		}
@@ -279,13 +485,21 @@
 				"7EEA9FA7703FBA8E"
 				"25544587CC944FCB"
 			]
+			description: ["Unlock the Boss Chest with the help of your new key and recycle your newly acquired Neptune Tools inside of an Arc Furnace to get some Neptune Ingots."]
 			id: "4BB54C74F0D1943B"
 			min_width: 300
+			rewards: [{
+				count: 3
+				id: "735DADC0556AD2BF"
+				item: "kubejs:neptune_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "42F5E875BFA3E149"
 				item: "kubejs:neptune_ingot"
 				type: "item"
 			}]
+			title: "God? Planet? No! It's an ingot!"
 			x: -4.6875d
 			y: -0.625d
 		}
@@ -294,13 +508,21 @@
 				"3F8ED1FBB68D88A9"
 				"25544587CC944FCB"
 			]
+			description: ["Unlock the Boss Chest with the help of your new key and recycle your newly acquired Valkyrie Tools inside of an Arc Furnace to get some Valkyrie Ingots."]
 			id: "57439F6626548971"
 			min_width: 300
+			rewards: [{
+				count: 3
+				id: "4E6DC6A5F598029A"
+				item: "kubejs:valkyrie_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "13E71B0EC674EB78"
 				item: "kubejs:valkyrie_ingot"
 				type: "item"
 			}]
+			title: "Who's gonna stop the Ragnarök?"
 			x: -5.9375d
 			y: -0.625d
 		}
@@ -309,25 +531,42 @@
 				"69859C67C5901B5A"
 				"25544587CC944FCB"
 			]
+			description: ["Unlock the Boss Chest with the help of your new key and recycle your newly acquired Phoenix Tools inside of an Arc Furnace to get some Phoenix Ingots."]
 			id: "5293DBD98F698571"
 			min_width: 300
+			rewards: [{
+				count: 3
+				id: "7BDC62FC3139E1C5"
+				item: "kubejs:phoenix_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4989BF538523D1D6"
 				item: "kubejs:phoenix_ingot"
 				type: "item"
 			}]
+			title: "Bird up"
 			x: -2.8125d
 			y: -1.5625d
 		}
 		{
 			dependencies: ["3C256DAA768A228A"]
+			description: ["Mine or strip some Golden Oak Trees with a Valkyrie Axe to collect some Golden Amber."]
 			id: "5319232C39A7D983"
 			min_width: 300
+			rewards: [{
+				count: 2
+				id: "08A7DFC5A39C4C91"
+				item: "minecraft:golden_apple"
+				type: "item"
+			}]
 			tasks: [{
+				count: 24L
 				id: "4B8E1B913F5470CC"
 				item: "aether:golden_amber"
 				type: "item"
 			}]
+			title: "They really make everything with gold up there, huh?"
 			x: -5.3125d
 			y: 0.3125d
 		}
@@ -335,6 +574,11 @@
 			dependencies: [
 				"5293DBD98F698571"
 				"442CDA293BACC0E8"
+			]
+			description: [
+				"Make your very own Catalyst!"
+				""
+				"With it you can finally activate your Undergarden Portal and explore the depth of this world."
 			]
 			id: "7748DD4DEDD2956C"
 			min_width: 300
@@ -357,18 +601,33 @@
 				item: "undergarden:catalyst"
 				type: "item"
 			}]
+			title: "alright... here we go again."
 			x: -2.8125d
 			y: 0.3125d
 		}
 		{
 			dependencies: ["050FFC23937BD1E5"]
+			description: [
+				"Mine some Gravitite Ore and enchant it!"
+				""
+				"Gravitite Ore is pretty rare and can only be found below y=70, the lower the better."
+				""
+				"If you're having troubles finding some you can also use an Immersive Engineering Excavator."
+			]
 			id: "77034701D26CC365"
 			min_width: 300
+			rewards: [{
+				count: 4
+				id: "58A5CA2C5E2D429C"
+				item: "aether:gravitite_ore"
+				type: "item"
+			}]
 			tasks: [{
 				id: "07682F2B59FEDDAF"
 				item: "aether:enchanted_gravitite"
 				type: "item"
 			}]
+			title: "Down you go!"
 			x: -7.8125d
 			y: 0.3125d
 		}
@@ -379,13 +638,25 @@
 				"10F9C73EAF18FA70"
 				"6E97A56247F2876C"
 			]
+			description: [
+				"Upgrade your Enchanted Core into a Frozen Core."
+				""
+				"It is the last tier of Core you need before being able to make the Undergarden Catalyst."
+			]
 			id: "442CDA293BACC0E8"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "778270218534EA09"
+				table_id: 2539034361266327261L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "58026494419F6B36"
 				item: "kubejs:frozen_core"
 				type: "item"
 			}]
+			title: "A core. (blue)"
 			x: -4.0625d
 			y: 0.3125d
 		}
@@ -394,13 +665,25 @@
 				"08FC53EB9B71028A"
 				"5319232C39A7D983"
 			]
+			description: [
+				"Upgrade your Base Core into an Enchanted Core."
+				""
+				"See the bright side, it's shiny at least."
+			]
 			id: "5CB13A442A89235F"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "451E36CA2D1A66E0"
+				table_id: 4150223706471031539L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "287C44EEC632E6C3"
 				item: "kubejs:enchanted_core"
 				type: "item"
 			}]
+			title: "Would you look at that! A core!"
 			x: -4.6875d
 			y: 1.25d
 		}
@@ -409,88 +692,181 @@
 				"77034701D26CC365"
 				"1D3DB6932DBB5BFB"
 			]
+			description: [
+				"Craft a Base Core with your newly acquired Aether Materials."
+				""
+				"Beware, all next cores will gradually cost more and more energy up to the Undergarden Catalyst. Make sure you have a great energy production!"
+			]
 			id: "08FC53EB9B71028A"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6DCDB57812528BAF"
+				table_id: 4510298635850491847L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "77546E13DFECC5C2"
 				item: "kubejs:base_core"
 				type: "item"
 			}]
+			title: "Yup, that's a core."
 			x: -7.1875d
 			y: 1.25d
 		}
 		{
 			dependencies: ["192D223323F4DBD9"]
+			description: [
+				"The Altar is a block that works similarly to a furnace."
+				""
+				"With the help of Ambrosium Shards as a fuel it can \"Enchant\" some items you'll need to complete your Aether journey."
+			]
 			id: "050FFC23937BD1E5"
 			min_width: 300
+			rewards: [{
+				count: 4
+				id: "4CF37EDF2EC67B82"
+				item: "minecraft:coal_block"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0957B2B23E82D3E5"
 				item: "aether:altar"
 				type: "item"
 			}]
+			title: "Altering Altar"
 			x: -8.4375d
 			y: -0.625d
 		}
 		{
 			dependencies: ["7E2D6E8C57E87A77"]
+			description: [
+				"The Freezer is also a block that works similarly to a furnace."
+				""
+				"With the help of Icestone as a fuel it can \"Freeze\" some items you'll need to complete your Aether journey."
+			]
 			id: "14722CD89041C019"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "57BDE4092153A8B9"
+				item: "aether:icestone"
+				type: "item"
+			}]
 			tasks: [{
 				id: "303B4158923812FF"
 				item: "aether:freezer"
 				type: "item"
 			}]
+			title: "And yet, no ice cream..."
 			x: -4.0625d
 			y: -1.5625d
 		}
 		{
 			dependencies: ["192D223323F4DBD9"]
+			description: [
+				"Get some Aechor Petals and some Skyroot Poison Buckets!"
+				""
+				"Aechor Petals can be looted out of Aechor Plants."
+				""
+				"However, before looting them, you can interact with them with the use of a Skyroot Bucket to get some poison which you can do 2 times per Aechor Plant."
+			]
 			icon: "aether:skyroot_poison_bucket"
 			id: "1D3DB6932DBB5BFB"
 			min_width: 300
+			rewards: [{
+				count: 2
+				id: "613CD1E33B7807A9"
+				item: "aether:skyroot_milk_bucket"
+				type: "item"
+			}]
 			tasks: [
 				{
+					count: 4L
 					id: "01FFE79AE1F1F1DC"
 					item: "aether:aechor_petal"
 					type: "item"
 				}
 				{
+					count: 2L
 					id: "3C9B89616A7F2FA0"
 					item: "aether:skyroot_poison_bucket"
 					type: "item"
 				}
 			]
+			title: "Aechor Encore"
 			x: -7.1875d
 			y: -0.625d
 		}
 		{
 			dependencies: ["14722CD89041C019"]
+			description: [
+				"Use your Freezer to make some Crystal Leaves."
+				""
+				"You can also theorically get them from the Platinum Dungeon but shhhh..."
+			]
 			id: "10F9C73EAF18FA70"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "5EA6D3BEA0546841"
+				item: "aether:white_apple"
+				type: "item"
+			}]
 			tasks: [{
+				count: 4L
 				id: "099AC4D691C2679E"
 				item: "aether:crystal_leaves"
 				type: "item"
 			}]
+			title: "Not menril, sorry."
 			x: -3.4375d
 			y: -0.625d
 		}
 		{
 			dependencies: ["7E2D6E8C57E87A77"]
+			description: [
+				"Mine up some Ambresium Shards!"
+				""
+				"Ambresium Shards are used to craft and fuel the Altar."
+			]
 			id: "192D223323F4DBD9"
 			min_width: 300
+			rewards: [{
+				count: 64
+				id: "78C567186CFD6151"
+				item: "minecraft:glowstone_dust"
+				type: "item"
+			}]
 			tasks: [{
+				count: 16L
 				id: "4A9F5BA6C95D3FA7"
 				item: "aether:ambrosium_shard"
 				type: "item"
 			}]
+			title: "Olympus Deliquacy"
 			x: -7.8125d
 			y: -1.5625d
 		}
 		{
 			dependencies: ["57439F6626548971"]
+			description: ["Get a Valkyrie Axe! It can be used to get Golden Amber from Golden Oak Trees."]
 			id: "3C256DAA768A228A"
 			min_width: 300
+			rewards: [{
+				id: "40FE0A30D7C12918"
+				item: {
+					Count: 1
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "minecraft:sharpness"
+							lvl: 4s
+						}]
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "7B321E1514CB9DD4"
 				item: {
@@ -502,26 +878,33 @@
 				}
 				type: "item"
 			}]
+			title: "I've only got that many Valkyrie's jokes"
 			x: -6.5625d
 			y: 0.3125d
 		}
 		{
 			dependencies: ["7748DD4DEDD2956C"]
+			description: [
+				"Enter The Undergarden!"
+				""
+				"Simply build a Nether shaped portal with Stone Bricks and use your Catalyst inside of it!"
+			]
 			hide_dependency_lines: true
 			id: "3C599A2D8429EAC2"
 			min_width: 300
 			rewards: [{
 				id: "74D77DD02AB7DD09"
 				type: "xp"
-				xp: 100
+				xp: 150
 			}]
 			size: 1.75d
 			tasks: [{
 				dimension: "undergarden:undergarden"
 				id: "6DA2E95D9EFD7FB2"
+				title: "Visit The Undergarden"
 				type: "dimension"
 			}]
-			title: "Undergarden"
+			title: "Welcome to the Underground!"
 			x: 1.25d
 			y: -2.8125d
 		}
@@ -530,19 +913,62 @@
 			hide_dependency_lines: true
 			id: "6E97A56247F2876C"
 			min_width: 300
+			rewards: [{
+				id: "2235FD9DB5DA8EBA"
+				item: {
+					Count: 1
+					id: "enderio:fluid_tank"
+					tag: {
+						BlockEntityTag: {
+							Fluid: {
+								Size: 1
+								Tanks: [{
+									Amount: 16000
+									Capacity: 16000
+									FluidName: "minecraft:lava"
+									Index: 0
+								}]
+							}
+							ForgeCaps: { }
+							Items: {
+								Items: [ ]
+								Size: 4
+							}
+							RedstoneControl: 0
+							id: "enderio:fluid_tank"
+						}
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
+				count: 4L
 				id: "05998968ADEF2319"
 				item: "aether:aerogel"
 				type: "item"
 			}]
+			title: "Funk it! Unlave your lava."
 			x: -3.5d
 			y: 1.25d
 		}
 		{
 			dependencies: ["17FB887A20B0F3F3"]
+			description: [
+				"Find an AE2 Meteor! They can be found in The Aether."
+				""
+				"You can collect Sky Stone, Certus Quartz but most importantly  Inscriber Presses at their center from them."
+				""
+				"Those presses are required to start Applied Energistic and make your own digital storage!"
+			]
 			icon: "ae2:silicon_press"
 			id: "590A74088180CE70"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0F56CCC91503BD68"
+				table_id: 2754096068862984911L
+				type: "choice"
+			}]
 			size: 1.5d
 			tasks: [
 				{
@@ -566,19 +992,30 @@
 					type: "item"
 				}
 			]
+			title: "Pressing matters"
 			x: -7.0d
 			y: -4.0625d
 		}
 		{
-			dependencies: ["7E2D6E8C57E87A77"]
-			description: ["Meteor HAPPENS"]
+			dependencies: [
+				"7E2D6E8C57E87A77"
+				"187BE2A259075C18"
+			]
+			description: ["Craft a Meteor Compass to help you find an AE2 Meteor in the Aether!"]
 			id: "17FB887A20B0F3F3"
 			min_width: 300
+			rewards: [{
+				count: 4
+				id: "3EF101984818F1CB"
+				item: "ae2:charged_certus_quartz_crystal"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4790C836EB8299EA"
 				item: "ae2:meteorite_compass"
 				type: "item"
 			}]
+			title: "&l&o&6METEOR HAPPENS"
 			x: -5.0d
 			y: -4.0625d
 		}
@@ -600,6 +1037,7 @@
 			id: "5BC624A4BBCF1D2F"
 			min_width: 300
 			tasks: [{
+				count: 4L
 				id: "68E2D059B0539870"
 				item: "undergarden:forgotten_nugget"
 				type: "item"
@@ -616,6 +1054,7 @@
 				item: "undergarden:virulent_mix_bucket"
 				type: "item"
 			}]
+			title: "Deliquate taste"
 			x: 2.8125d
 			y: -1.125d
 		}

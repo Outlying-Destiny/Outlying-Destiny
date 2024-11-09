@@ -1,0 +1,12 @@
+{
+	id: "263883C865E0C2CF"
+	loot_size: 1
+	order_index: 40
+	rewards: [
+		{ count: 16, item: "ae2:silicon" }
+		{ count: 8, item: "ae2:certus_quartz_crystal" }
+		{ count: 8, item: "minecraft:gold_ingot" }
+		{ count: 4, item: "minecraft:diamond" }
+	]
+	title: "AE2 Printed Circuits Materials"
+}

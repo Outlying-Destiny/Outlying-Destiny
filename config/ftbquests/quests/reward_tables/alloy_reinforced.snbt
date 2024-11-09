@@ -1,0 +1,11 @@
+{
+	id: "728BA54B30C5E3A3"
+	loot_size: 1
+	order_index: 23
+	rewards: [
+		{ count: 8, item: "minecraft:iron_ingot" }
+		{ count: 4, item: "thermal:rose_gold_ingot" }
+		{ count: 2, item: "chemlib:platinum_ingot" }
+	]
+	title: "Alloy Reinforced"
+}

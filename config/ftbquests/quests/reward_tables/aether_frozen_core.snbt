@@ -1,0 +1,11 @@
+{
+	id: "233C764C97CA4EDD"
+	loot_size: 1
+	order_index: 43
+	rewards: [
+		{ count: 16, item: "mekanism:deepslate_osmium_ore" }
+		{ count: 12, item: "thermal:deepslate_cinnabar_ore" }
+		{ count: 6, item: "minecraft:deepslate_diamond_ore" }
+	]
+	title: "Aether Frozen Core"
+}

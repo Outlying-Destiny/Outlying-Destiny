@@ -1,0 +1,11 @@
+{
+	id: "5003F7A02AA97273"
+	loot_size: 1
+	order_index: 36
+	rewards: [
+		{ count: 20, item: "thermal:deepslate_tin_ore" }
+		{ count: 16, item: "mekanism:deepslate_osmium_ore" }
+		{ count: 12, item: "thermal:deepslate_nickel_ore" }
+	]
+	title: "Twilight Troll"
+}

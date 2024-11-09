@@ -26,11 +26,15 @@
 				item: "enderio:ensouled_chassis"
 				type: "item"
 			}]
+			title: "Soul Mastery"
 			x: -11.75d
 			y: 0.25d
 		}
 		{
-			dependencies: ["1C1B6A081BDE2FB8"]
+			dependencies: [
+				"40787810189E2AF7"
+				"1C1B6A081BDE2FB8"
+			]
 			id: "74037ADCBA1AEF64"
 			min_width: 300
 			rewards: [{
@@ -242,6 +246,7 @@
 				item: "extendedcrafting:luminessence"
 				type: "item"
 			}]
+			title: "Brighter,"
 			x: -5.5d
 			y: -1.0d
 		}
@@ -651,6 +656,7 @@
 					type: "item"
 				}
 			]
+			title: "Magneton"
 			x: -5.5d
 			y: -2.25d
 		}
@@ -663,6 +669,7 @@
 				item: "itemcollectors:advanced_collector"
 				type: "item"
 			}]
+			title: "Poltergust 7000!"
 			x: -5.5d
 			y: -4.75d
 		}
@@ -1311,6 +1318,7 @@
 				item: "actuallyadditions:ranged_collector"
 				type: "item"
 			}]
+			title: "Poltergust 8000!"
 			x: 3.25d
 			y: -1.0d
 		}

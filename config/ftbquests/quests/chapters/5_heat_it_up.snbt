@@ -32,6 +32,7 @@
 					type: "item"
 				}
 			]
+			title: "Electronic Genie"
 			x: -6.0d
 			y: -1.5d
 		}
@@ -59,6 +60,7 @@
 				item: "pneumaticcraft:ingot_iron_compressed"
 				type: "item"
 			}]
+			title: "KABOOM!!!"
 			x: -6.0d
 			y: -3.0d
 		}
@@ -68,26 +70,49 @@
 				"1D42C6268FA6E13F"
 				"5DAF16566BC2FDB6"
 			]
+			description: [
+				"The Thermopneumatic Processing Plant (TPP) can require both pressure and heat to run."
+				""
+				"It's mostly use to make Molten Plastic or Molten Lapis to make Upgrade Matrices."
+				""
+				"You can easily heat it using an External Heater from Immersive Engineering."
+			]
 			id: "4A32249482CAF37F"
 			min_width: 300
+			rewards: [{
+				id: "6D4D81E97988F2B8"
+				item: "pneumaticcraft:pneumatic_wrench"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5E4AE3462809FFFD"
 				item: "pneumaticcraft:thermopneumatic_processing_plant"
 				type: "item"
 			}]
+			title: "Pronounce it 5 times in a row as fast as possible"
 			x: -4.75d
 			y: -2.25d
 		}
 		{
 			dependencies: ["5DAF16566BC2FDB6"]
-			description: ["A simple tank"]
+			description: [
+				"A simple tank that can contain up to 32kmB and be connected between each other using a wrench like the Mekanism Configurator."
+				""
+				"It's mostly use to craft PneumaticCraft's machinery."
+			]
 			id: "3753ED157236EF54"
 			min_width: 300
+			rewards: [{
+				id: "5F27A31172437B9C"
+				item: "mekanism:basic_fluid_tank"
+				type: "item"
+			}]
 			tasks: [{
 				id: "37032354BEB0C998"
 				item: "pneumaticcraft:small_tank"
 				type: "item"
 			}]
+			title: "Tank! but ehh... different."
 			x: -4.75d
 			y: -3.75d
 		}
@@ -107,8 +132,15 @@
 				""
 				"You'll be able to upgrade them once you unlock molten plastic."
 			]
+			icon: "pneumaticcraft:pressure_tube"
 			id: "2577C7FFB57C9944"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "05D7559C62C42DC7"
+				item: "thermal:iron_dust"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "5CDBE8EBC3FFE16F"
@@ -128,6 +160,7 @@
 					type: "item"
 				}
 			]
+			title: "Kaboom?"
 			x: -6.0d
 			y: -4.25d
 		}
@@ -136,13 +169,25 @@
 				"5E62C6B6C69FEE4F"
 				"1D42C6268FA6E13F"
 			]
+			description: [
+				"The Fluid Mixer runs solely on pressure, it's used to craft Upgrade Matrices and as a secondary way to make Biodiesel with Glycerol as a byproduct."
+				""
+				"You'll need it if you want to craft some upgrades for your machines."
+			]
 			id: "7E4B6EB5FFFB66BB"
 			min_width: 300
+			rewards: [{
+				count: 4
+				id: "7A606399DC9F1586"
+				item: "farmersdelight:mixed_salad"
+				type: "item"
+			}]
 			tasks: [{
 				id: "20AB666CCC766483"
 				item: "pneumaticcraft:fluid_mixer"
 				type: "item"
 			}]
+			title: "Mix and Stir"
 			x: -7.25d
 			y: -0.75d
 		}
@@ -156,6 +201,12 @@
 			icon: "pneumaticcraft:heat_sink"
 			id: "5E29CBA54EDA91C0"
 			min_width: 300
+			rewards: [{
+				count: 4
+				id: "2C825B7D57E517D2"
+				item: "minecraft:packed_ice"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "214C2A5B47F80E27"
@@ -169,6 +220,7 @@
 					type: "item"
 				}
 			]
+			title: "Let that Sink in"
 			x: -7.25d
 			y: -3.75d
 		}
@@ -179,15 +231,34 @@
 			]
 			description: [
 				"The Flux Compressor converts FE into pressure."
-				"This is your first way to generate pressure."
+				""
+				"Pressure is needed to run any PneumaticCraft's machine, it has multiple properties:"
+				""
+				"Pressure is counted in bars which basically equals to the amount of air in a certain volume."
+				""
+				"Pressure Tubes are used to connect pressure between multiple machines"
+				""
+				"Pressure will automatically equalize itself inside a system so if you add a machine inside a system the machine will automatically be filled but the average pression in the system will lower."
+				""
+				"Machines and tubes have a pressure threshold, when this threshold is exceeded the concerned blocks may start exploding. To counter that, you can add Security Upgrades and/or Safety Tube Modules to your machines and tubes to automatically release some air when the pressure threshold is reached."
+				""
+				"Some recipes don't require pressure to run, most do however and requires a minimum amount of pressure to run."
+				""
+				"The Flux Compressor also produces heat, which must be dissipated as when exceeding 50°C the compressor will lose in efficiency. You can put a Heat Sink on it for that."
 			]
 			id: "1D42C6268FA6E13F"
 			min_width: 300
+			rewards: [{
+				id: "3E7898D09534FE37"
+				item: "ae2:tiny_tnt"
+				type: "item"
+			}]
 			tasks: [{
 				id: "28677B2E0E5C2ABB"
 				item: "pneumaticcraft:flux_compressor"
 				type: "item"
 			}]
+			title: "Pressure is fun :]"
 			x: -7.25d
 			y: -2.25d
 		}
@@ -200,7 +271,14 @@
 			]
 			id: "30FD1966D4BEE62B"
 			min_width: 300
+			rewards: [{
+				count: 2
+				id: "6E0EE2017DF66DF7"
+				item: "thermal:charcoal_block"
+				type: "item"
+			}]
 			tasks: [{
+				count: 4L
 				id: "279B5DF6E6A7FE02"
 				item: "pneumaticcraft:plastic"
 				type: "item"
@@ -217,11 +295,17 @@
 			description: ["Combine some Biodiesel and Charcoal in a TPP to get Molten Plastic."]
 			id: "2D18BF1E379DC75A"
 			min_width: 300
+			rewards: [{
+				id: "558EB7381A1A4987"
+				item: "immersiveengineering:biodiesel_bucket"
+				type: "item"
+			}]
 			tasks: [{
 				id: "111C8FEAE17AF405"
 				item: "pneumaticcraft:plastic_bucket"
 				type: "item"
 			}]
+			title: "Yummy! Tried to drink it?"
 			x: -3.5d
 			y: -1.5d
 		}
@@ -238,6 +322,11 @@
 			icon: "pneumaticcraft:upgrade_matrix"
 			id: "5C3A578EAC76C3CF"
 			min_width: 300
+			rewards: [{
+				id: "7BB8FA040A488D24"
+				item: "kubejs:molten_lapis_bucket"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "10288A12B168271F"
@@ -257,6 +346,7 @@
 					type: "item"
 				}
 			]
+			title: "Neo, we need to upgrade."
 			x: -4.75d
 			y: -0.75d
 		}
@@ -276,6 +366,12 @@
 			icon: "pneumaticcraft:security_upgrade"
 			id: "4903173768F99F18"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "571282F60EBEAD0D"
+				item: "minecraft:obsidian"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "4137B0C67D206F84"
@@ -295,6 +391,7 @@
 					type: "item"
 				}
 			]
+			title: "No More Kaboom."
 			x: -6.0d
 			y: 0.0d
 		}
@@ -307,11 +404,18 @@
 			]
 			id: "461582A0D1C0E0EF"
 			min_width: 300
+			rewards: [{
+				count: 4
+				id: "10C593BA7193E782"
+				item: "pneumaticcraft:plastic"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4E84CF242FE18403"
 				item: "pneumaticcraft:medium_tank"
 				type: "item"
 			}]
+			title: "Going Big"
 			x: -3.0d
 			y: -2.5d
 		}
@@ -335,12 +439,19 @@
 			]
 			id: "415C7601E035DBDB"
 			min_width: 300
+			rewards: [{
+				count: 4
+				id: "6BC3A597CCDC3193"
+				item: "thermal:invar_gear"
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [{
 				id: "626BB3AB37D561FA"
 				item: "thermal:machine_frame"
 				type: "item"
 			}]
+			title: "This mod isn't even about thermodynamics"
 			x: -0.75d
 			y: -1.5d
 		}
@@ -360,6 +471,7 @@
 				item: "powah:steel_energized"
 				type: "item"
 			}]
+			title: "POWAH STEEL!!!"
 			x: -0.75d
 			y: -3.0d
 		}
@@ -378,11 +490,18 @@
 			]
 			id: "1A965CD16F4D3FE3"
 			min_width: 300
+			rewards: [{
+				count: 2
+				id: "7464C004C42E273E"
+				item: "thermal:steel_gear"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1E0D291FDF2EC865"
 				item: "thermal:machine_smelter"
 				type: "item"
 			}]
+			title: "Alloy Madness"
 			x: -0.75d
 			y: -0.25d
 		}
@@ -396,6 +515,11 @@
 			icon: "thermal:machine_press"
 			id: "55C1955949B877B8"
 			min_width: 300
+			rewards: [{
+				id: "7C2AEB69E9419CD2"
+				item: "thermal:rf_coil"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "17867FC32C281AF0"
@@ -421,11 +545,18 @@
 			]
 			id: "0F2F0E0DC9438FCB"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "11B9C5631245DC5B"
+				item: "thermal:deepslate_nickel_ore"
+				type: "item"
+			}]
 			tasks: [{
 				id: "64A699EB871CC20C"
 				item: "chemlib:platinum_ingot"
 				type: "item"
 			}]
+			title: "All achievements completed!"
 			x: 0.5d
 			y: -0.25d
 		}
@@ -434,11 +565,18 @@
 			description: ["Upgrade your infused alloys into reinforced alloys with the use of platinum!"]
 			id: "452BFC7F6C2B3FCF"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "39CB3A083689F473"
+				table_id: 8253872484445971363L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "15155F6301EE6258"
 				item: "mekanism:alloy_reinforced"
 				type: "item"
 			}]
+			title: "Strong and Healthy"
 			x: 1.75d
 			y: -0.25d
 		}
@@ -451,11 +589,18 @@
 			]
 			id: "7C2E14CCBB9A5685"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "2CC94A9B2FA5EF72"
+				item: "mekanism:deepslate_osmium_ore"
+				type: "item"
+			}]
 			tasks: [{
 				id: "45A1622A978B9248"
 				item: "mekanism:osmium_compressor"
 				type: "item"
 			}]
+			title: "Compressium 3000!"
 			x: 3.0d
 			y: 1.0d
 		}
@@ -468,6 +613,12 @@
 			]
 			id: "117B8F523BF8B590"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6A0A02AE424846EC"
+				table_id: 4052910298404816337L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "3FB190F18D5D145C"
 				item: "minecraft:ender_eye"
@@ -495,6 +646,7 @@
 			tasks: [{
 				dimension: "minecraft:the_end"
 				id: "286DAA806CF100E1"
+				title: "Visit The End"
 				type: "dimension"
 			}]
 			title: "Yeah sure bro, that's the end"
@@ -510,11 +662,18 @@
 			]
 			id: "40787810189E2AF7"
 			min_width: 300
+			rewards: [{
+				count: 32
+				id: "0A73563611046A7C"
+				item: "actuallyadditions:solidified_experience"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5EC727E0B45BA36B"
 				item: "kubejs:enchanted_ingot"
 				type: "item"
 			}]
+			title: "XU2? No idea of what you're talking about."
 			x: -2.0d
 			y: -0.25d
 		}
@@ -526,10 +685,18 @@
 				"You'll need Liquid XP to start working on Mob Grinding Utils, a mod dedicated on building mob farms!"
 				""
 				"It's also a great way of storing XP without losing it on death."
+				""
+				"You can output the liquid xp from the Memory Stick by &6interacting with a tank&r."
 			]
 			icon: "pneumaticcraft:memory_stick"
 			id: "1A75140087EB1B37"
 			min_width: 300
+			rewards: [{
+				count: 4
+				id: "238C022BA09B24AF"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "140A93FFEA1DEDCC"
@@ -542,6 +709,7 @@
 					type: "item"
 				}
 			]
+			title: "Liquid XP!"
 			x: -3.0d
 			y: -0.75d
 		}
@@ -557,11 +725,18 @@
 			]
 			id: "5F2413B26A70B63B"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "72F27B70425280B4"
+				table_id: 5130369847401888497L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "2B27AA84DF16BC83"
 				item: "kubejs:evil_infused_ingot"
 				type: "item"
 			}]
+			title: "It's an EVIL INGOOTT oooooo..."
 			x: -2.0d
 			y: 1.0d
 		}
@@ -575,18 +750,34 @@
 			icon: "mekanism:ingot_refined_glowstone"
 			id: "40889CF006E38EB0"
 			min_width: 300
-			tasks: [
-				{
-					id: "4C8B5A3E6A30D4C0"
-					item: "mekanism:ingot_refined_glowstone"
-					type: "item"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "608D79F7AF854D09"
+				table_id: 8440869129270798893L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "5D1DFB893DE3A59D"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "mekanism:ingot_refined_glowstone"
+							}
+							{
+								Count: 1b
+								id: "mekanism:ingot_refined_obsidian"
+							}
+						]
+					}
 				}
-				{
-					id: "1BA81D106452FB05"
-					item: "mekanism:ingot_refined_obsidian"
-					type: "item"
-				}
-			]
+				title: "Refined Ingots"
+				type: "item"
+			}]
+			title: "Refined Taste"
 			x: 4.25d
 			y: 1.0d
 		}
@@ -599,11 +790,18 @@
 			]
 			id: "7FC2A2D7276AE83F"
 			min_width: 300
+			rewards: [{
+				count: 4
+				id: "68448B2CA67539B4"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
 			tasks: [{
 				id: "480E968F1A360E76"
 				item: "thermal:enderium_ingot"
 				type: "item"
 			}]
+			title: "Story of Enderman"
 			x: 1.75d
 			y: -1.5d
 		}
@@ -617,6 +815,12 @@
 			]
 			id: "66D705EFB050318F"
 			min_width: 300
+			rewards: [{
+				count: 2
+				id: "3EE337023625C1E5"
+				item: "enderio:dark_steel_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "50CDFF14D14BDB69"
 				item: "enderio:dark_steel_ingot"
@@ -644,12 +848,19 @@
 			]
 			id: "554507DD4518153D"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "604971BB7C5DD14E"
+				table_id: 6194142203227657228L
+				type: "choice"
+			}]
 			size: 1.25d
 			tasks: [{
 				id: "698D61B8CDC694C8"
 				item: "enderio:void_chassis"
 				type: "item"
 			}]
+			title: "Ender when?"
 			x: 4.25d
 			y: -0.25d
 		}
@@ -662,11 +873,18 @@
 			]
 			id: "090D14082AE0CCD0"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1A755250648396C8"
+				table_id: 5090541639896399095L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "3E5D62EEB476B83F"
 				item: "thermal:lumium_ingot"
 				type: "item"
 			}]
+			title: "Bright,"
 			x: 4.875d
 			y: 2.0d
 		}
@@ -681,6 +899,11 @@
 			]
 			id: "5785F9A5AB33C124"
 			min_width: 300
+			rewards: [{
+				id: "75F99CDDC5320E6F"
+				item: "thermal:rf_coil"
+				type: "item"
+			}]
 			tasks: [{
 				id: "57893885DFD466D9"
 				item: "thermal:upgrade_augment_1"
@@ -699,11 +922,18 @@
 			]
 			id: "2F2F12C58287606A"
 			min_width: 300
+			rewards: [{
+				count: 16
+				id: "541097E63619CB16"
+				item: "enderio:grains_of_infinity"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7B276F98E9D5097C"
 				item: "enderio:basic_capacitor"
 				type: "item"
 			}]
+			title: "Are you capable enough?"
 			x: 4.25d
 			y: -1.5d
 		}
@@ -720,7 +950,14 @@
 			]
 			id: "021AF051D9490BD4"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "248B606BC1A292ED"
+				table_id: 7071292920799606641L
+				type: "choice"
+			}]
 			tasks: [{
+				count: 8L
 				id: "7B24C884A2AA3922"
 				item: "mekanism:upgrade_speed"
 				type: "item"
@@ -739,7 +976,7 @@
 				""
 				"However, it is slower than its predecessor but has 2 special abilities:"
 				""
-				"First, the SAG Mill is the only machine that can crush Soul Sand and Ender Pearl into dusts."
+				"First, the SAG Mill is the only machine that can crush some items like Soul Sand, Ender Pearls, Pulsating Crystals or Vibrant Crystals into dusts."
 				""
 				"Additionally, it can also be used to get better outputs out of some materials like Sugar Canes or Blaze Rods, but that's not it!"
 				""
@@ -748,6 +985,12 @@
 			icon: "enderio:sag_mill"
 			id: "6CBDB50FFA272FAA"
 			min_width: 300
+			rewards: [{
+				count: 2
+				id: "185B122590D4CD85"
+				item: "kubejs:infinity_gear"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "0ADD9C249F4B87A8"
@@ -805,6 +1048,7 @@
 					type: "item"
 				}
 			]
+			title: "Crushed up!"
 			x: 5.5d
 			y: -0.25d
 		}
@@ -817,11 +1061,18 @@
 			]
 			id: "37FCDB0C92228253"
 			min_width: 300
+			rewards: [{
+				count: 16
+				id: "05AD6CC72B7D1AB5"
+				item: "minecraft:soul_sand"
+				type: "item"
+			}]
 			tasks: [{
 				id: "30964A9937A24541"
 				item: "thermal_extra:soul_sand_dust"
 				type: "item"
 			}]
+			title: "Endless torment"
 			x: 6.75d
 			y: -0.25d
 		}
@@ -834,11 +1085,18 @@
 			]
 			id: "53FD0B2E4952177F"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "668BBAB82E3100AE"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5E2302CC3F9EA84F"
 				item: "enderio:soularium_ingot"
 				type: "item"
 			}]
+			title: "At least they're useful"
 			x: 8.0d
 			y: -0.25d
 		}
@@ -853,12 +1111,19 @@
 			]
 			id: "1645A4D41DFAFDE2"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "62060439402477E1"
+				table_id: 1335103574970307687L
+				type: "choice"
+			}]
 			size: 1.25d
 			tasks: [{
 				id: "751CB4A8D809C989"
 				item: "enderio:ensouled_chassis"
 				type: "item"
 			}]
+			title: "Soul Mastery"
 			x: 9.25d
 			y: -0.25d
 		}
@@ -875,6 +1140,12 @@
 			]
 			id: "37084AF4364CC896"
 			min_width: 300
+			rewards: [{
+				count: 2
+				id: "5F0D1C4367C8F860"
+				item: "thermal:lumium_dust"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4106B0B779D60D67"
 				item: "enderio:end_steel_ingot"
@@ -895,11 +1166,18 @@
 			]
 			id: "2F6555104D56A8E2"
 			min_width: 300
+			rewards: [{
+				count: 4
+				id: "3F10E06FDA2A7769"
+				item: "enderio:pulsating_alloy_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "537E0B5535AA4F41"
 				item: "enderio:pulsating_crystal"
 				type: "item"
 			}]
+			title: "Feel the Beat!"
 			x: 3.0d
 			y: -0.25d
 		}
@@ -914,11 +1192,26 @@
 			]
 			id: "2E1275F06283FB79"
 			min_width: 300
+			rewards: [{
+				id: "20019527512672EB"
+				item: {
+					Count: 1
+					id: "chisel_chipped_integration:technical_fan"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Totally Real Fan\", \"italic\":\"false\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "3B5DAEBF6D188D28"
 				item: "mob_grinding_utils:fan"
 				type: "item"
 			}]
+			title: "I'm a big fan!"
 			x: -3.0d
 			y: 1.75d
 		}
@@ -927,15 +1220,23 @@
 			description: [
 				"The Mob Masher is a device used to automatically kill entities close to it when powered with redstone."
 				""
-				"You can upgrade it to make it a very powerful tool!"
+				"It can be upgraded to deal more damage or even drop more loots!"
+				""
+				"Combined with some Mob Fans and an Absorption Hopper it can make a great mob farm!"
 			]
 			id: "323DE7D13CCF1B14"
 			min_width: 300
+			rewards: [{
+				id: "220F5333D9B2A25A"
+				item: "kubejs:evil_infused_block"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7AB3E47ED79A8680"
 				item: "mob_grinding_utils:saw"
 				type: "item"
 			}]
+			title: "Mash Them Good!"
 			x: -3.75d
 			y: 1.0d
 		}
@@ -958,6 +1259,12 @@
 			]
 			id: "307492750314D80F"
 			min_width: 300
+			rewards: [{
+				count: 4
+				id: "0D93E6588D4125AB"
+				item: "minecraft:egg"
+				type: "item"
+			}]
 			tasks: [{
 				id: "46E2A4359395A992"
 				item: "mob_grinding_utils:gm_chicken_feed"
@@ -976,11 +1283,19 @@
 				""
 				"It's really handy in a mob farm."
 				""
-				"Additionally, you can use the XP Tap to output Liquid XP from a tank into XP Droplets. (Optional)"
+				"Additionally, you can use the Ender Inhibitor to stop Enderman and Shulker teleportation in a 8 block radius, useful if you're tired of seeing those Endermen leaving your mob farm and infesting your base."
+				""
+				"You can also use the XP Tap to output Liquid XP from a tank into XP Droplets. (Optional)"
 			]
 			icon: "mob_grinding_utils:absorption_hopper"
 			id: "3AE32BC6A7B7F9AA"
 			min_width: 300
+			rewards: [{
+				count: 2
+				id: "64CE9AC14F864CDF"
+				item: "minecraft:coal_block"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "48D8B6E452B6B873"
@@ -988,12 +1303,19 @@
 					type: "item"
 				}
 				{
-					id: "55292BBCCAD97DDB"
+					id: "47A331ADAA142981"
+					item: "mob_grinding_utils:ender_inhibitor_on"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "520B08244E70ABA7"
 					item: "mob_grinding_utils:xp_tap"
 					optional_task: true
 					type: "item"
 				}
 			]
+			title: "Poltergust 6000!"
 			x: -2.0d
 			y: 2.25d
 		}
@@ -1008,6 +1330,12 @@
 			icon: "mob_grinding_utils:fan_upgrade_speed"
 			id: "6A7DE6D214DCB63A"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "761AE164765A7297"
+				table_id: 4490555316199901426L
+				type: "choice"
+			}]
 			tasks: [
 				{
 					id: "5536A886E27C39B4"
@@ -1025,6 +1353,7 @@
 					type: "item"
 				}
 			]
+			title: "Mob Fan Upgrades"
 			x: -4.0d
 			y: 2.25d
 		}
@@ -1037,6 +1366,12 @@
 			]
 			id: "7BD50BB67F7143AA"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5E7C8ED0BE8C791C"
+				table_id: 4149278427861962519L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "17ACE0B08252C895"
 				item: "mob_grinding_utils:absorption_upgrade"
@@ -1057,6 +1392,12 @@
 			icon: "mob_grinding_utils:saw_upgrade_sharpness"
 			id: "27A8A1A6BCC1A80A"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6A83D31722CD4A98"
+				table_id: 5384370789046845176L
+				type: "choice"
+			}]
 			tasks: [
 				{
 					id: "7C152DF058BAED66"
@@ -1074,6 +1415,7 @@
 					type: "item"
 				}
 			]
+			title: "Main Mob Masher Upgrades"
 			x: -4.75d
 			y: 0.5d
 		}
@@ -1088,6 +1430,12 @@
 			icon: "mob_grinding_utils:saw_upgrade_smite"
 			id: "4F4CB867F0B20B57"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "03EF36A50722763A"
+				table_id: 1808708512840089359L
+				type: "choice"
+			}]
 			tasks: [
 				{
 					id: "6A8C183D7B6D6917"
@@ -1105,6 +1453,7 @@
 					type: "item"
 				}
 			]
+			title: "Secondary Mob Masher Upgrades"
 			x: -4.75d
 			y: 1.5d
 		}
@@ -1124,6 +1473,11 @@
 			icon: "mob_grinding_utils:gm_chicken_feed_cursed"
 			id: "7AC54ABB76003D59"
 			min_width: 300
+			rewards: [{
+				id: "70AA8D5E64914AB5"
+				item: "minecraft:chicken_spawn_egg"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0ECA700692583DAA"
 				item: {
@@ -1145,6 +1499,7 @@
 				title: "Egg Chicken Feed"
 				type: "item"
 			}]
+			title: "MORE MOBS!!!"
 			x: -4.0d
 			y: -0.25d
 		}
@@ -1152,6 +1507,12 @@
 			dependencies: ["415C7601E035DBDB"]
 			id: "36DA75C9F276770F"
 			min_width: 300
+			rewards: [{
+				count: 2
+				id: "2A55864BAC2D60E2"
+				item: "mekanism:advanced_control_circuit"
+				type: "item"
+			}]
 			tasks: [{
 				id: "67C29A268E10B224"
 				item: "ae2:energy_acceptor"
@@ -1165,6 +1526,8 @@
 				"36DA75C9F276770F"
 				"0D79613C2A510AAB"
 			]
+			description: ["Consumes less energy"]
+			icon: "ae2:controller"
 			id: "4A6467F39566C34D"
 			min_width: 300
 			rewards: [{
@@ -1180,18 +1543,39 @@
 				}
 				type: "item"
 			}]
-			tasks: [{
-				id: "5D95CDBF8D5872D1"
-				item: "ae2:controller"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5D95CDBF8D5872D1"
+					item: "ae2:controller"
+					type: "item"
+				}
+				{
+					id: "476AF4FA558F2607"
+					item: "ae2:fluix_glass_cable"
+					type: "item"
+				}
+			]
+			title: "ME? In control? That was a mistake"
 			x: 1.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["37C45BCCFE76D765"]
+			description: [
+				"The Inscriber is a machine used to create AE2 Processors with the help of Inscriber Presses!"
+				""
+				"Inscribers can be sped up with the help of up to 4 acceleration cards."
+				""
+				"You can further configure it with the buttons on the left of the HUD."
+			]
 			id: "217A5E262FD3BD6A"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "347B5F494E062F99"
+				item: "thermal:invar_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "555715CB0C9B432C"
 				item: "ae2:inscriber"
@@ -1202,6 +1586,13 @@
 		}
 		{
 			dependencies: ["17FB887A20B0F3F3"]
+			description: [
+				"Find an AE2 Meteor! They can be found in The Aether."
+				""
+				"You can collect Sky Stone, Certus Quartz but most importantly  Inscriber Presses at their center from them."
+				""
+				"Those presses are required to start Applied Energistic and make your own digital storage!"
+			]
 			disable_toast: true
 			icon: "ae2:silicon_press"
 			id: "633FBF8B95C846AA"
@@ -1229,6 +1620,7 @@
 					type: "item"
 				}
 			]
+			title: "Pressing matters"
 			x: -0.75d
 			y: -4.5d
 		}
@@ -1237,9 +1629,20 @@
 				"217A5E262FD3BD6A"
 				"633FBF8B95C846AA"
 			]
+			description: [
+				"Craft some AE2 Processors."
+				""
+				"Processors are vastly used through AE2, to not switch presses again and again inside your Inscriber, think of making multiples!"
+			]
 			icon: "ae2:logic_processor"
 			id: "0D79613C2A510AAB"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "253418B916A2C380"
+				item: "ae2:printed_silicon"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "30D339EA42C3297C"
@@ -1254,6 +1657,7 @@
 				{
 					id: "297DA0890F29F998"
 					item: "ae2:calculation_processor"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -1262,13 +1666,21 @@
 		}
 		{
 			dependencies: ["37C45BCCFE76D765"]
+			description: ["Acceleration Cards can be used to speed up some machines like the Inscriber."]
 			id: "133690B7ACEC3D91"
 			min_width: 300
+			rewards: [{
+				count: 4
+				id: "5904AADD8BC5CC87"
+				item: "mekanism:alloy_reinforced"
+				type: "item"
+			}]
 			tasks: [{
 				id: "646DED9E208195AD"
 				item: "ae2:speed_card"
 				type: "item"
 			}]
+			title: "Excell accel"
 			x: 2.0d
 			y: -5.25d
 		}
@@ -1276,6 +1688,12 @@
 			dependencies: ["37C45BCCFE76D765"]
 			id: "6EDE3C749D67EAB1"
 			min_width: 300
+			rewards: [{
+				count: 4
+				id: "294F3DAE135F529E"
+				item: "ae2:charged_certus_quartz_crystal"
+				type: "item"
+			}]
 			tasks: [{
 				id: "501C15951EDCEF7D"
 				item: {
@@ -1292,6 +1710,12 @@
 			dependencies: ["6EDE3C749D67EAB1"]
 			id: "04600B7E5CF98E03"
 			min_width: 300
+			rewards: [{
+				count: 16
+				id: "5C28DFEEFDB5993C"
+				item: "ae2:fluix_dust"
+				type: "item"
+			}]
 			tasks: [{
 				id: "742173A5BA35E56F"
 				item: {
@@ -1308,6 +1732,12 @@
 			dependencies: ["1C95DB7023229006"]
 			id: "7AC776AB528A6439"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "3EF0C0825B4035FD"
+				item: "mekanism:alloy_infused"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0D257A23EBCD988A"
 				item: "ae2:cell_component_1k"
@@ -1320,6 +1750,12 @@
 			dependencies: ["7AC776AB528A6439"]
 			id: "5287B7527838CBD7"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "2956AEEDA691A9DE"
+				item: "mekanism:alloy_reinforced"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6F0CBE66C2AD9D2A"
 				item: "ae2:cell_component_4k"
@@ -1332,6 +1768,12 @@
 			dependencies: ["5287B7527838CBD7"]
 			id: "169CB167D77EADCD"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "4C9D3BE3DF248A33"
+				item: "mekanism:ingot_refined_glowstone"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3CE4502B04B7025B"
 				item: "ae2:cell_component_16k"
@@ -1342,8 +1784,19 @@
 		}
 		{
 			dependencies: ["187BE2A259075C18"]
+			description: [
+				"Craft some Fluix Crystal!"
+				""
+				"Simply throw some Charged Certus Quartz, Redstone and Quartz inside some water and check the result!"
+			]
 			id: "37C45BCCFE76D765"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "38E25EC2034DAF83"
+				item: "ae2:certus_quartz_crystal"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6C8D2CEDB18E6623"
 				item: "ae2:fluix_crystal"
@@ -1357,8 +1810,19 @@
 				"4A6467F39566C34D"
 				"78893A86998F05B7"
 			]
+			description: [
+				"The ME Drive can store up to 10 Storage Cell for your ME System."
+				""
+				"Storage Cells are the main way to store items inside of your ME system."
+			]
 			id: "1C95DB7023229006"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "63278887EA598D2A"
+				table_id: 5839169715500325796L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "26082C8070C21CB4"
 				item: "ae2:drive"
@@ -1368,10 +1832,16 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["1C95DB7023229006"]
+			dependencies: ["4A6467F39566C34D"]
 			icon: "ae2:storage_bus"
 			id: "0E8C1336874846AE"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "54B42F39A0C9CD98"
+				table_id: 5839169715500325796L
+				type: "choice"
+			}]
 			tasks: [
 				{
 					id: "12E3D56B35EE2567"
@@ -1425,6 +1895,12 @@
 			dependencies: ["169CB167D77EADCD"]
 			id: "6A73C5CCF11D80D9"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "5F95A11A341B01A5"
+				item: "mekanism:ingot_refined_obsidian"
+				type: "item"
+			}]
 			tasks: [{
 				id: "23A8FE9CE379E25A"
 				item: "ae2:cell_component_64k"
@@ -1438,6 +1914,12 @@
 			icon: "ae2:growth_accelerator"
 			id: "328859336883DB08"
 			min_width: 300
+			rewards: [{
+				count: 4
+				id: "51040A5CE3541FFD"
+				item: "ae2:fluix_crystal"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "42A7700C5426810D"
@@ -1481,6 +1963,11 @@
 			dependencies: ["7AC776AB528A6439"]
 			id: "03187F7013D88840"
 			min_width: 300
+			rewards: [{
+				id: "4B040ACFD7C485E4"
+				item: "thermal:machine_frame"
+				type: "item"
+			}]
 			tasks: [{
 				id: "360CA341E89AF86B"
 				item: "ae2:cell_workbench"
@@ -1494,6 +1981,12 @@
 			icon: "ae2:network_tool"
 			id: "3EE5AB03B9E73786"
 			min_width: 300
+			rewards: [{
+				count: 16
+				id: "5734EC164493AC20"
+				item: "ae2:fluix_glass_cable"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "438046045DCBEA5D"
@@ -1531,8 +2024,19 @@
 		}
 		{
 			dependencies: ["4A6467F39566C34D"]
+			description: [
+				"The ME Terminal is used to interact with your ME System."
+				""
+				"Later on, you'll be able to upgrade it to integrate a crafting system or even be wireless!"
+			]
 			id: "78893A86998F05B7"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "09135B1F20054194"
+				table_id: 7430803578502713902L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "1C3EAEDF8E4B9907"
 				item: "ae2:terminal"
@@ -1545,6 +2049,12 @@
 			dependencies: ["6A73C5CCF11D80D9"]
 			id: "132B2C01D2FBC525"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "5AF49E10917BF1BB"
+				item: "ae2:sky_dust"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1BFA2D02D4184DEB"
 				item: "ae2:cell_component_256k"
@@ -1558,11 +2068,17 @@
 			description: ["Kill the Ender Dragon and collect its egg which you'll need soon:tm:."]
 			id: "78A5EFE0090C4D99"
 			min_width: 300
+			rewards: [{
+				id: "7A0C25F6502814A6"
+				item: "quark:dragon_scale"
+				type: "item"
+			}]
 			tasks: [{
 				id: "26740B2D056C0FA7"
 				item: "minecraft:dragon_egg"
 				type: "item"
 			}]
+			title: "The dragon came before"
 			x: 0.75d
 			y: 2.0d
 		}
@@ -1575,11 +2091,18 @@
 			]
 			id: "5C94342525C74DE6"
 			min_width: 300
+			rewards: [{
+				id: "2D1E4DE534E69A7D"
+				item: "minecraft:chorus_flower"
+				type: "item"
+			}]
 			tasks: [{
+				count: 8L
 				id: "4E33AF6CC2318AC0"
 				item: "minecraft:chorus_fruit"
 				type: "item"
 			}]
+			title: "Doesn't actually sing? Despite the name?"
 			x: 1.75d
 			y: 3.0d
 		}
@@ -1593,11 +2116,19 @@
 			]
 			id: "3ED1774CFDEEC0F8"
 			min_width: 300
+			rewards: [{
+				count: 4
+				id: "2D23EDFBC83516E0"
+				item: "minecraft:shulker_shell"
+				type: "item"
+			}]
 			tasks: [{
+				count: 8L
 				id: "70BBBA6DBC34B237"
 				item: "minecraft:shulker_shell"
 				type: "item"
 			}]
+			title: "I'm going to the MOOOOON!"
 			x: 2.375d
 			y: 2.0d
 		}
@@ -1607,12 +2138,26 @@
 			hide_dependency_lines: true
 			id: "74314B7BF445D5CD"
 			min_width: 300
+			rewards: [{
+				id: "7892518BA3C546B6"
+				item: {
+					Count: 1
+					id: "minecraft:carved_pumpkin"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Endermen Worst Ennemy\", \"italic\":\"false\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
 			size: 1.25d
 			tasks: [{
 				id: "7797D772E5DD3DB0"
 				item: "minecraft:end_stone"
 				type: "item"
 			}]
+			title: "Actually, it's still early game."
 			x: 6.75d
 			y: 1.0d
 		}
@@ -1628,11 +2173,18 @@
 			]
 			id: "7834D17272807800"
 			min_width: 300
+			rewards: [{
+				count: 4
+				id: "3D394844F9FBFC37"
+				item: "chemlib:platinum_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4032083F97D883F7"
 				item: "pneumaticcraft:large_tank"
 				type: "item"
 			}]
+			title: "It's not actually bigger?"
 			x: -2.25d
 			y: -3.5d
 		}
@@ -1645,11 +2197,18 @@
 			]
 			id: "1985E0AF0779593F"
 			min_width: 300
+			rewards: [{
+				count: 4
+				id: "3CF79199073F953F"
+				item: "thermal_extra:shellite_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "06EAEE495857F18F"
 				item: "pneumaticcraft:huge_tank"
 				type: "item"
 			}]
+			title: "Nevermind that..."
 			x: -3.5d
 			y: -3.5d
 		}
@@ -1657,6 +2216,11 @@
 			dependencies: ["03187F7013D88840"]
 			id: "5873ED0DEA6D2AE3"
 			min_width: 300
+			rewards: [{
+				id: "035A722641B9E4FC"
+				item: "ae2:item_cell_housing"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7AA340F31B78A908"
 				item: "ae2:view_cell"
@@ -1684,6 +2248,12 @@
 			}
 			id: "1B622423B03A6A6F"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0CFBD7E04D2E2EEC"
+				table_id: 9023708515354634601L
+				type: "choice"
+			}]
 			tasks: [
 				{
 					id: "331DD6FC66FB8637"
@@ -1720,6 +2290,7 @@
 					type: "item"
 				}
 			]
+			title: "Finally, efficient building!"
 			x: 5.5d
 			y: -1.5d
 		}
@@ -1740,6 +2311,12 @@
 			}
 			id: "5211F213A9318194"
 			min_width: 300
+			rewards: [{
+				count: 4
+				id: "1CB2B867D9C49A8C"
+				item: "enderio:redstone_alloy_ingot"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "1CA9E425B9360B35"
@@ -1756,6 +2333,7 @@
 					type: "item"
 				}
 			]
+			title: "Magnemite"
 			x: 6.75d
 			y: -1.5d
 		}
@@ -1778,6 +2356,12 @@
 			icon: "bhc:red_heart_canister"
 			id: "3EE1405D4963DB67"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4E472BBCEA3D6961"
+				table_id: 9132258691741049750L
+				type: "choice"
+			}]
 			tasks: [
 				{
 					id: "4D0EFB092A45FCE8"
@@ -1805,11 +2389,18 @@
 			hide_dependency_lines: true
 			id: "13129358495FF3BD"
 			min_width: 300
+			rewards: [{
+				count: 4
+				id: "0D6BD8C90DFF0CAD"
+				item: "thermal:signalum_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1E8E5345CF45D6D4"
 				item: "mekanism:elite_energy_cube"
 				type: "item"
 			}]
+			title: "'Cause we never have enough"
 			x: 3.0d
 			y: 3.0d
 		}
@@ -1838,6 +2429,11 @@
 			icon: "thermal:machine_speed_augment"
 			id: "3D3BCEF5D09702EB"
 			min_width: 300
+			rewards: [{
+				id: "6A58B3B25506048C"
+				item: "thermal:machine_speed_augment"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "4EE8CB26A03C6D57"
@@ -1863,6 +2459,12 @@
 			]
 			id: "6D3DF45A28E33B78"
 			min_width: 325
+			rewards: [{
+				count: 4
+				id: "502D225F8EC79244"
+				item: "thermal:lumium_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "704740B656EE2ABB"
 				item: "mekanism:advanced_tier_installer"
@@ -1875,7 +2477,7 @@
 		{
 			dependencies: ["415C7601E035DBDB"]
 			description: [
-				"The Redprint can easily copy-paste Thermal Series machine's setting for you!"
+				"The Redprint can easily copy-paste Thermal Series machine's settings for you!"
 				""
 				"Just &eRight Click&r once on a machine to copy its setting"
 				"and &eShift Right Click&r to clear it!"
@@ -1883,11 +2485,18 @@
 			hide_dependency_lines: true
 			id: "079F9B9EE9BDDFE8"
 			min_width: 300
+			rewards: [{
+				count: 16
+				id: "5D981758101D964E"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1482C6ACD0907990"
 				item: "thermal:redprint"
 				type: "item"
 			}]
+			title: "Copypasta"
 			x: 7.25d
 			y: 2.0d
 		}
@@ -1902,6 +2511,12 @@
 			icon: "functionalstorage:fluid_1"
 			id: "738703DD8B477166"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "151C50067921207B"
+				item: "enderio:dark_steel_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4AA535D450831232"
 				item: {
@@ -1927,7 +2542,7 @@
 				title: "Fluid Drawers"
 				type: "item"
 			}]
-			title: "Fluid Drawers"
+			title: "That's a nice tank indeed"
 			x: 6.75d
 			y: -2.5d
 		}
@@ -1936,12 +2551,18 @@
 			description: [
 				"Like their Garden Cloche alternative, Phytogenic Insolators can automatically farm any type of tree for you!"
 				""
-				"While they might look pretty slow initially you can upgrade them and add some fertilizer to transform them into a great wood farm."
+				"While they might look pretty slow initially you can upgrade them and add some Phyto-gro as fertilizer to transform them into a great wood farm."
 				""
 				"You can easily automate their production by auto-input/output-ing inside a 1x2 drawer."
 			]
 			id: "06EC2DEA64DD39BF"
 			min_width: 300
+			rewards: [{
+				count: 32
+				id: "65F7AB7FC93D23B3"
+				item: "thermal:phytogro"
+				type: "item"
+			}]
 			tasks: [{
 				id: "092CE2F6E44D0C57"
 				item: "thermal:machine_insolator"
@@ -1956,9 +2577,21 @@
 				"5785F9A5AB33C124"
 				"2BE50BE744D435F6"
 			]
-			description: ["Craft an Hardened Jetpack!"]
+			description: [
+				"Craft an Hardened Jetpack! Faster than it's predecessor!"
+				""
+				"It also haves a greater battery at the cost of a bit higher energy usage."
+				""
+				"This one should make your exploration's quests a lot easier."
+			]
 			id: "2D92DC2394743654"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4C25B4158FC11CA0"
+				table_id: 8251044453833080298L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "05EA0063414D8B60"
 				item: {
@@ -1979,13 +2612,21 @@
 				""
 				"However, as the first tier, it is pretty slow and have a pretty small battery."
 				""
-				"Still useful if you need to climb to high grounds but don't think you're getting fast with that one."
+				"Still useful if you need to climb to high grounds just don't think you're getting fast with that one."
 				""
 				"It can be equipped in its own &2Curios Slot&r!"
+				""
+				"&l&cBeware! Jetpacks are not cheap.&r"
 			]
 			hide_dependency_lines: true
 			id: "2BE50BE744D435F6"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1FF873959217950A"
+				table_id: 8490193235443940279L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "321EFB2E08D8FB5D"
 				item: {
@@ -2004,6 +2645,12 @@
 			description: ["While Jetpacks are available at this point, if you don't like their current slow speed, don't want to deal with their crafting or simply prefer the good old way of flying you can still get Elytras in an Ancient City and fly through the sky."]
 			id: "4464051324097A9D"
 			min_width: 300
+			rewards: [{
+				count: 4
+				id: "140C69D20BDC7A28"
+				item: "minecraft:phantom_membrane"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1443AD7B06CCC543"
 				item: {
@@ -2027,11 +2674,25 @@
 				"However, if you forget to do so, you can also craft them with Nature's Aura or later on using Molten Draconium."
 			]
 			id: "638C4C76AA8C4FFB"
+			min_width: 300
+			rewards: [{
+				count: 2
+				id: "2E3C3C6CD4CB500D"
+				item: {
+					Count: 1
+					id: "naturesaura:aura_bottle"
+					tag: {
+						stored_type: "naturesaura:end"
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "6A694B52907095FB"
 				item: "minecraft:dragon_breath"
 				type: "item"
 			}]
+			title: "Komodo Dragon, eh?"
 			x: 0.25d
 			y: 3.0d
 		}

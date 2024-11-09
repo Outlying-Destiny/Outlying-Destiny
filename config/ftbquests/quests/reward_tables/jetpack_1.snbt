@@ -1,0 +1,10 @@
+{
+	id: "75D339C3C10F7BB7"
+	loot_size: 1
+	order_index: 31
+	rewards: [
+		{ count: 64, item: "minecraft:redstone" }
+		{ count: 8, item: "thermal:signalum_ingot" }
+	]
+	title: "Jetpack 1"
+}

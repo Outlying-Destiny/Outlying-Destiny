@@ -837,6 +837,7 @@
 			tasks: [{
 				dimension: "minecraft:the_nether"
 				id: "797E938120CFEB89"
+				title: "Visit The Nether"
 				type: "dimension"
 			}]
 			title: "My home IS hellscape"
@@ -980,6 +981,8 @@
 				""
 				"The Configurator have multiple modes, you can #eshift mouse wheel#r to switch between modes and &eshift right click&r to interact with blocks in the world. The Wrench mode will insta-break machines or cables. The rotate mode is self-explanatory. The other mods are used to configure cable or machine sides without having to open their HUD. When it comes to cables you can configure them no matter what element your configuration mode is on."
 				""
+				"You can easily copy-paste a machine's settings with the Configuration Tool."
+				""
 				"You can upgrade already placed cables by clicking on them using the next tier alloy, this will upgrade up to 8 cables at a time."
 			]
 			icon: "mekanism:basic_universal_cable"
@@ -1010,6 +1013,12 @@
 				{
 					id: "7E52858D3F27DFC2"
 					item: "mekanism:configurator"
+					type: "item"
+				}
+				{
+					id: "7F38C488FE8E4070"
+					item: "mekanism:configuration_card"
+					optional_task: true
 					type: "item"
 				}
 			]
@@ -1971,6 +1980,7 @@
 				item: "powah:steel_energized"
 				type: "item"
 			}]
+			title: "POWAH STEEL!!!"
 			x: 11.75d
 			y: -1.5d
 		}
@@ -2008,10 +2018,10 @@
 			id: "1ED1AD000CDE6819"
 			min_width: 300
 			rewards: [{
-				count: 8
-				id: "24FB51928523AE49"
-				item: "mekanism:alloy_infused"
-				type: "item"
+				exclude_from_claim_all: true
+				id: "4CE0927C841543D4"
+				table_id: 1359260217563217196L
+				type: "choice"
 			}]
 			tasks: [{
 				count: 8L
@@ -2186,6 +2196,7 @@
 					type: "item"
 				}
 			]
+			title: "Electronic Genie"
 			x: 4.75d
 			y: -1.5d
 		}

@@ -1,0 +1,12 @@
+{
+	id: "69030D3075C1C925"
+	loot_size: 1
+	order_index: 24
+	rewards: [
+		{ count: 16, item: "minecraft:iron_ingot" }
+		{ count: 8, item: "thermal:rose_gold_ingot" }
+		{ count: 4, item: "chemlib:platinum_ingot" }
+		{ count: 2, item: "thermal_extra:shellite_ingot" }
+	]
+	title: "Alloy Atomic"
+}

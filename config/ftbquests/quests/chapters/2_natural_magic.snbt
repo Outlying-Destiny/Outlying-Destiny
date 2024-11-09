@@ -213,6 +213,7 @@
 				item: "naturesaura:infused_iron"
 				type: "item"
 			}]
+			title: "Natural Steel"
 			x: 5.75d
 			y: -0.5d
 		}
@@ -631,13 +632,13 @@
 			rewards: [{
 				id: "15265A492B977827"
 				type: "xp"
-				xp: 30
+				xp: 75
 			}]
 			size: 1.25d
 			tasks: [{
 				dimension: "twilightforest:twilight_forest"
 				id: "13D1D610D7CCB596"
-				title: "Twilight Forest!"
+				title: "Visit the Twilight Forest"
 				type: "dimension"
 			}]
 			title: "Can't run from this one"

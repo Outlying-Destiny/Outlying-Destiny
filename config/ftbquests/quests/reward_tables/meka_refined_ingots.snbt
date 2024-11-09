@@ -1,0 +1,10 @@
+{
+	id: "7523FDC05DBF2A2D"
+	loot_size: 1
+	order_index: 27
+	rewards: [
+		{ count: 32, item: "minecraft:glowstone_dust" }
+		{ count: 32, item: "mekanism:dust_obsidian" }
+	]
+	title: "Meka Refined Ingots"
+}

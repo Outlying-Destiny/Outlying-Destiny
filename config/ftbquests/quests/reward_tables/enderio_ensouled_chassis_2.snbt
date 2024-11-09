@@ -1,0 +1,10 @@
+{
+	id: "12873DA0B4759467"
+	loot_size: 1
+	order_index: 33
+	rewards: [
+		{ count: 8, item: "minecraft:ender_pearl" }
+		{ count: 4, item: "enderio:soularium_ingot" }
+	]
+	title: "EnderIO Ensouled Chassis"
+}

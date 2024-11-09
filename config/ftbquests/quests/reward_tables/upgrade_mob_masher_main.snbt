@@ -1,0 +1,10 @@
+{
+	id: "4AB920B47C207EF8"
+	loot_size: 1
+	order_index: 17
+	rewards: [
+		{ count: 8, item: "kubejs:demon_ingot" }
+		{ count: 4, item: "minecraft:emerald" }
+	]
+	title: "Upgrade Mob Masher Main"
+}

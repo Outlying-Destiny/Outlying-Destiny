@@ -1,0 +1,18 @@
+{
+	id: "60057D502854292A"
+	loot_size: 1
+	order_index: 35
+	rewards: [
+		{ count: 4, item: "twilightforest:twilight_oak_sapling" }
+		{ count: 4, item: "twilightforest:canopy_sapling" }
+		{ count: 4, item: "twilightforest:mangrove_sapling" }
+		{ count: 4, item: "twilightforest:darkwood_sapling" }
+		{ count: 4, item: "twilightforest:time_sapling" }
+		{ count: 4, item: "twilightforest:transformation_sapling" }
+		{ count: 4, item: "twilightforest:mining_sapling" }
+		{ count: 4, item: "twilightforest:sorting_sapling" }
+		{ count: 4, item: "twilightforest:rainbow_oak_sapling" }
+		{ count: 4, item: "twilightforest:hollow_oak_sapling" }
+	]
+	title: "Twilight Saplings"
+}

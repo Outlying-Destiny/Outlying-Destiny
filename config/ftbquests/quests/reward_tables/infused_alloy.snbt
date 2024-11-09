@@ -4,7 +4,7 @@
 	order_index: 15
 	rewards: [
 		{ count: 4, item: "minecraft:iron_ingot" }
-		{ count: 4, item: "thermal:rose_gold_ingot" }
+		{ count: 2, item: "thermal:rose_gold_ingot" }
 	]
-	title: "Infused Alloy"
+	title: "Alloy Infused"
 }

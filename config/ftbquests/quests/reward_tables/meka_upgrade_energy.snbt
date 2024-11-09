@@ -1,0 +1,10 @@
+{
+	id: "12DD0FF7592CFD2C"
+	loot_size: 1
+	order_index: 25
+	rewards: [
+		{ count: 16, item: "thermal:steel_ingot" }
+		{ count: 8, item: "powah:steel_energized" }
+	]
+	title: "Meka Upgrade Energy"
+}

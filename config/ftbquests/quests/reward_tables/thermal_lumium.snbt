@@ -1,0 +1,10 @@
+{
+	id: "46A53CA6905BFCF7"
+	loot_size: 1
+	order_index: 28
+	rewards: [
+		{ count: 12, item: "thermal:tin_ingot" }
+		{ count: 8, item: "thermal:electrum_ingot" }
+	]
+	title: "Thermal Lumium"
+}

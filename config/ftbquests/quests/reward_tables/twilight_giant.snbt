@@ -1,0 +1,11 @@
+{
+	id: "0728B711C35EAA0A"
+	loot_size: 1
+	order_index: 37
+	rewards: [
+		{ count: 20, item: "thermal:deepslate_silver_ore" }
+		{ count: 16, item: "thermal:deepslate_lead_ore" }
+		{ count: 12, item: "minecraft:deepslate_gold_ore" }
+	]
+	title: "Twilight Giant"
+}

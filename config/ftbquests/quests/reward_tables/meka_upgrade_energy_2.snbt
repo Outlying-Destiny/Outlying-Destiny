@@ -1,0 +1,10 @@
+{
+	id: "6222477236FEB771"
+	loot_size: 1
+	order_index: 26
+	rewards: [
+		{ count: 16, item: "thermal:steel_ingot" }
+		{ count: 8, item: "mekanism:ingot_refined_obsidian" }
+	]
+	title: "Meka Upgrade Speed"
+}

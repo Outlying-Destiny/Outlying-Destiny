@@ -1,0 +1,10 @@
+{
+	id: "4732BC31C0C3BAF1"
+	loot_size: 1
+	order_index: 21
+	rewards: [
+		{ count: 8, item: "minecraft:gold_ingot" }
+		{ count: 4, item: "architects_palette:withered_bone" }
+	]
+	title: "Evil Infused Ingot"
+}
