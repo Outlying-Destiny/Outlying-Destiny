@@ -41,7 +41,7 @@
 			description: [
 				"Get some Ironwood!"
 				""
-				"It's a common loot inside the Dark Tower, Labyrinth, Phantom Stronghold and Ice Queen's Tower's chests"
+				"It's a common loot inside Labyrinths, Phantom Strongholds, Ice Queen's Towers but mostly Dark Towers chests"
 				""
 				"You can also craft it with the use of liveroots which can be found rarely among roots beneath trees."
 			]
@@ -218,7 +218,7 @@
 			description: [
 				"Get some Steeleaf!"
 				""
-				"It's a common loot inside the Dark Tower, Labyrinth, Phantom Stronghold and Hollow Hill's chests."
+				"It's a common loot inside Labyrinths, Phantom Strongholds, Hollow Hill's but mostly Dark Towers chests."
 			]
 			hide_dependency_lines: true
 			id: "5BD91F6B151934B2"
@@ -452,7 +452,7 @@
 				item: "aether:gold_dungeon_key"
 				type: "item"
 			}]
-			title: "We'll call you Brown"
+			title: "I always was more of a night guy anyway."
 			x: -4.0625d
 			y: -2.8125d
 		}
@@ -952,7 +952,11 @@
 			y: 1.25d
 		}
 		{
-			dependencies: ["17FB887A20B0F3F3"]
+			dependencies: [
+				"17FB887A20B0F3F3"
+				"7E2D6E8C57E87A77"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"Find an AE2 Meteor! They can be found in The Aether."
 				""

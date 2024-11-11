@@ -73,6 +73,7 @@ ServerEvents.recipes(event => {
 
     //Sticky Ball
     event.remove({id:'thermal_extra:sticky_ball_to_paper'})
+    event.remove({id:'thermal_extra:machine/chiller/sticky_ball'})
 
     //Dynamos
     event.remove({id:/thermal(:|_extra:|endergy:)fuels.+/})

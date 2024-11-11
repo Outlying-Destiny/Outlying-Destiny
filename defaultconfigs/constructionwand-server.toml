@@ -40,7 +40,7 @@
 [diamond_wand]
 	#Wand durability
 	#Range: > 1
-	durability = 1561
+	durability = 1961
 	#Wand block limit
 	#Range: > 1
 	limit = 128

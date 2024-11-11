@@ -7,4 +7,7 @@ ServerEvents.recipes(event => {
     //Enriched Tin
     event.remove({id:'mekanism:enriching/enriched/tin'})
 
+    //Mekanism Transport Stuff
+    event.remove({id:/mekanism:transmitter\/(restrictive|diversion)_transporter/})
+
 })

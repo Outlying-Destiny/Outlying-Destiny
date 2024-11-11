@@ -78,7 +78,7 @@ JEIEvents.hideItems(event => {
     event.hide('mm:the_vat_tiny_item_port_output')
 
     //Mekanism
-    event.hide(['mekanism:formulaic_assemblicator', 'mekanism:crafting_formula'])
+    event.hide(['mekanism:formulaic_assemblicator', 'mekanism:crafting_formula', /mekanism:(restrictive|diversion)_transporter/])
     event.hide('mekanism:enriched_tin')
 
     //Mob Grinding Utils
@@ -98,9 +98,8 @@ JEIEvents.hideItems(event => {
     event.hide([/projectred_exploration:.+backpack/, 'projectred_exploration:athame'])
 
     //Quark
-    event.hide('quark:gunpowder_sack')
-    event.hide('quark:apple_crate')
-    event.hide('quark:forgotten_hat')
+    event.hide(['quark:gunpowder_sack', 'quark:apple_crate'])
+    event.hide(['quark:forgotten_hat', 'quark:soul_bead'])
 
     //RFTools
     event.hide(/rftoolsbase:dimensionalshard_.+/)

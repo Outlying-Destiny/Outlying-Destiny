@@ -34,8 +34,8 @@
                   "function": "minecraft:set_count",
                   "count": {
                     "type": "minecraft:uniform",
-                    "min": 2.0,
-                    "max": 4.0
+                    "min": 1.0,
+                    "max": 3.0
                   },
                   "add": false
                 },
@@ -44,7 +44,7 @@
                   "enchantment": "minecraft:fortune",
                   "formula": "minecraft:uniform_bonus_count",
                   "parameters": {
-                    "bonusMultiplier": 1
+                    "bonusMultiplier": 0.8
                   }
                 },
                 {
@@ -78,7 +78,7 @@
               "enchantment": "minecraft:fortune",
               "formula": "minecraft:uniform_bonus_count",
               "parameters": {
-                "bonusMultiplier": 1
+                "bonusMultiplier": 0.4
               }
             },
             {
@@ -109,11 +109,12 @@
           "condition": "minecraft:table_bonus",
           "enchantment": "minecraft:fortune",
           "chances": [
-            0.1,
             0.2,
             0.3,
             0.4,
-            0.5
+            0.5,
+            0.62,
+            0.74
           ]
         }
       ]
