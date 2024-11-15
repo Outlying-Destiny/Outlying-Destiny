@@ -1025,8 +1025,15 @@
 		}
 		{
 			dependencies: ["3C599A2D8429EAC2"]
+			description: [
+				"With all 3 dimensions unlocked you can know loot all 4 sorts of Blazes and craft yourself some Blazing Crystals!"
+				""
+				"Blazing Crystal is the next tier of Powah Materials meaning you can upgrade your old machineries to their new tier!"
+				""
+				"It is also required in chapter 6."
+			]
 			id: "5AEDAD35B03A84E4"
-			min_width: 300
+			min_width: 305
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "15EB609ECF42BD13"
