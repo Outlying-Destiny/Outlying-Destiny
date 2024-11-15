@@ -18,10 +18,12 @@ ServerEvents.recipes(event => {
     fertilizer('thermal:apatite_dust', 1.3)
     fertilizer('thermal:phytogro', 1.5)
     fertilizer('industrialforegoing:fertilizer', 1.8)
-    fertilizer('mysticalagriculture:mystical_fertilizer', 2.5)
+    fertilizer('mysticalagriculture:mystical_fertilizer', 2)
 
     //Phyto-Insolator Fertilizers
-    catalyst('thermal:phytogro', 1.5, 1.5, 0.8, 0.5, 0.5)
+    catalyst('thermal:phytogro', 1.5, 1.5, 0.8, 0.5, 0.4)
+    catalyst('industrialforegoing:fertilizer', 1.8, 1.8, 0.75, 0.45, 0.3)
+    catalyst('mysticalagriculture:mystical_fertilizer', 2, 2, 0.70, 0.55, 0.45)
 
     //Garden Cloche Saplings
     gardensapling('minecraft:oak', 'minecraft:oak')

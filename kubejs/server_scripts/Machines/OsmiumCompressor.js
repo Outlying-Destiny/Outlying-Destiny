@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
         },
         "itemInput": {
           "ingredient": {
-            "tag": input
+            "item": input
           }
         },
         "output": {
@@ -19,6 +19,6 @@ ServerEvents.recipes(event => {
 
     //Radiance
     event.remove({id:'mekanism_extras:processing/dust_radiance/from_glowstone'})
-    compressor('mekanism_extras:dust_radiance', 'forge:dusts/lumium', 'mekanism:uranium_oxide')
+    compressor('mekanism_extras:dust_radiance', 'extendedcrafting:luminessence', 'mekanism:uranium_oxide')
 
 })

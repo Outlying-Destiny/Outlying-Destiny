@@ -128,7 +128,7 @@ ServerEvents.recipes(event => {
 
     //Induction Matrix
     event.remove({id:'mekanism:induction/casing'})
-    box('4x mekanism:induction_casing', 'thermal:steel_plate', 'thermal:steel_plate', 'industrialforegoing:machine_frame_simple')
+    box('8x mekanism:induction_casing', 'thermal:steel_plate', 'thermal:steel_plate', 'industrialforegoing:machine_frame_simple')
     event.replaceInput(
         { output: 'mekanism:induction_port'},
         'mekanism:elite_control_circuit',
@@ -136,10 +136,9 @@ ServerEvents.recipes(event => {
     )
 
     //Thermal Evaporation Tower
-    event.remove({id:'mekanism:thermal_evaporation/block'})
-    event.remove({id:'mekanism:thermal_evaporation/controller'})
-    box('4x mekanism:thermal_evaporation_block', 'mekanism:hdpe_sheet', 'thermal:copper_plate', 'industrialforegoing:machine_frame_simple')
-    event.replaceInput({ output: 'mekanism:thermal_evaporation_valve'},'mekanism:advanced_control_circuit','mekanism:ultimate_control_circuit')
+    event.remove({id:/mekanism:thermal_evaporation\/(block|controller|valve)/})
+    box('8x mekanism:thermal_evaporation_block', 'mekanism:hdpe_sheet', 'thermal:copper_plate', 'industrialforegoing:machine_frame_simple')
+    event.shaped('2x mekanism:thermal_evaporation_valve', [' A ','ABA',' A '], {A:'mekanism:thermal_evaporation_block', B:'mekanism:ultimate_control_circuit'})
     event.shaped('mekanism:thermal_evaporation_controller', ['ABA','CDC','CCC'], {A:'mekanism:ultimate_control_circuit',B:'#c:glass_panes',C:'mekanism:thermal_evaporation_block',D:'mekanism:ultimate_fluid_tank'})
 
     //Boiler
@@ -148,7 +147,7 @@ ServerEvents.recipes(event => {
     event.remove({id:'mekanism:boiler_casing'})
     box('mekanism:superheating_element', 'enderio:dark_steel_ingot', 'actuallyadditions:empowered_palis_crystal', 'industrialforegoing:machine_frame_advanced')
     box('mekanism:pressure_disperser', 'thermal:steel_ingot', 'enderio:dark_steel_bars', 'mekanism:alloy_atomic')
-    box('4x mekanism:boiler_casing', 'extendedcrafting:black_iron_slate', 'extendedcrafting:black_iron_slate', 'industrialforegoing:machine_frame_simple')
+    box('8x mekanism:boiler_casing', 'extendedcrafting:black_iron_slate', 'extendedcrafting:black_iron_slate', 'industrialforegoing:machine_frame_simple')
     event.replaceInput(
         { output: 'mekanism:boiler_valve'},
         'mekanism:advanced_control_circuit',

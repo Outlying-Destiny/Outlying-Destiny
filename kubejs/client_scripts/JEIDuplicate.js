@@ -12,12 +12,13 @@ JEIEvents.removeCategories(event => {
         'thermal:furnace',
         'enderio:alloy_smelting',
         'mysticalagriculture:enchanter',
+        'mysticalagriculture:reprocessor',
+        'mysticalagriculture:soul_extractor',
         'thermal:disenchantment_fuel',
         'thermal:gourmand_fuel',
         'thermal:stirling_fuel',
         'enderio:soul_engine',
         'elementalcraft:purification',
-        'ftbquests:quest',
         'pneumaticcraft:spawner_extraction'
     )
 })

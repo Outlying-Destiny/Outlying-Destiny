@@ -55,5 +55,6 @@ ServerEvents.recipes(event => {
     allrods('kubejs:dark_steel_rod', 2, 'enderio:dark_steel_ingot', 4800)
     allrods('kubejs:end_steel_rod', 2, 'enderio:end_steel_ingot', 4800)
     allrods('thermal_extra:signalum_rod', 2, 'thermal:signalum_ingot', 4800)
+    allrods('thermal_extra:gold_rod', 2, 'minecraft:gold_ingot', 4800)
 
 })

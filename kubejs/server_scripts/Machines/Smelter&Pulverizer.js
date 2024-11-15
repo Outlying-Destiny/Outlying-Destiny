@@ -13,7 +13,8 @@ ServerEvents.recipes(event => {
     catalyst('thermal:cinnabar_dust', 'smelter', 2.5, 3.5, 2, 0.55, 0.8)
     catalyst('thermal:rich_slag', 'smelter', 2.5, 2.25, 1.75, 0.1, 0.6)
     catalyst('minecraft:flint', 'pulverizer', 1.1, 1.5, 1.1, 0.05, 0.2)
-    catalyst('thermal:basalz_powder', 'pulverizer', 1.25, 2.5, 1, 0.2, 0.5)
+    catalyst('thermal:basalz_powder', 'pulverizer', 1.25, 2.25, 1, 0.2, 0.5)
+    catalyst('kubejs:petrotheum_dust', 'pulverizer', 1.5, 3, 1, 0.25, 0.6)
 
     //Pulverizer Cleaning
     event.remove({not:[{id:/therma.+pulverizer.+ore/}, {id:/therma.+pulverizer.+raw.+/}, {id:/therma.+pulverizer.+catalyst+/}], id:/therma.+pulverizer.+/})

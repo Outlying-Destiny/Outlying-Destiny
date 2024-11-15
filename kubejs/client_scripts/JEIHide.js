@@ -85,7 +85,7 @@ JEIEvents.hideItems(event => {
     event.hide(['mob_grinding_utils:entity_spawner', 'mob_grinding_utils:spawner_upgrade_height', 'mob_grinding_utils:spawner_upgrade_width', 'mob_grinding_utils:jumbo_tank'])
 
     //Mystical Agriculture
-    event.hide('mysticalagriculture:enchanter')
+    event.hide(/mysticalagriculture:(enchanter|harvester|soul_extractor|seed_reprocessor|soulium_spawner)/, /mysticalagriculture:(s|passives|hostiles)oulium_dagger/, /mysticalagriculture:(soul_jar|experience_capsule)/, /mysticalagriculture:(_|deepslate_|nether_|end_)prosperity_ore/)
 
     //PneumaticCraft
     event.hide(['pneumaticcraft:air_compressor', 'pneumaticcraft:advanced_air_compressor', 'pneumaticcraft:thermal_compressor', 'pneumaticcraft:liquid_compressor', 'pneumaticcraft:advanced_liquid_compressor', 'pneumaticcraft:manual_compressor', 'pneumaticcraft:electrostatic_compressor','pneumaticcraft:pneumatic_dynamo'])
@@ -201,6 +201,9 @@ JEIEvents.hideFluids(event => {
 
     //Creosote
     event.hide('thermal:creosote')
+
+    //Crude Oil
+    event.hide('thermal:crude_oil')
 
     //Thermal Extra Molten Fluids
     let molten = ['thermal_extra:raw_aluminum']
