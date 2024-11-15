@@ -1,0 +1,12 @@
+{
+	id: "4BA7CB6044C9AEE9"
+	loot_size: 1
+	order_index: 55
+	rewards: [
+		{ count: 8, item: "kubejs:pyrotheum_dust" }
+		{ count: 8, item: "kubejs:cryotheum_dust" }
+		{ count: 8, item: "kubejs:aerotheum_dust" }
+		{ count: 8, item: "kubejs:petrotheum_dust" }
+	]
+	title: "Actually Blazis Crystal"
+}

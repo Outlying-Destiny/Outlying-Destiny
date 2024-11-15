@@ -35,6 +35,7 @@
 				"40787810189E2AF7"
 				"1C1B6A081BDE2FB8"
 			]
+			icon: "enderio:soul_binder"
 			id: "74037ADCBA1AEF64"
 			min_width: 300
 			rewards: [{
@@ -50,11 +51,18 @@
 				}
 				type: "item"
 			}]
-			tasks: [{
-				id: "10EA8933B870F307"
-				item: "enderio:soul_binder"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "10EA8933B870F307"
+					item: "enderio:soul_binder"
+					type: "item"
+				}
+				{
+					id: "5BF4A8271EE5AF02"
+					item: "enderio:empty_soul_vial"
+					type: "item"
+				}
+			]
 			x: -9.25d
 			y: -2.25d
 		}
@@ -62,6 +70,12 @@
 			dependencies: ["432BCDC8C90BD558"]
 			id: "2B5724BE9F43CF8E"
 			min_width: 300
+			rewards: [{
+				count: 4
+				id: "04E6A535DBD4C315"
+				item: "enderio:energetic_alloy_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "464B073721B92F04"
 				item: "enderio:slice_and_splice"
@@ -78,6 +92,12 @@
 			icon: "extendedcrafting:ender_crafter"
 			id: "2A9B8E18FC745B11"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "0BEC9FA1A660445D"
+				item: "enderio:pulsating_alloy_ingot"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "6EBC9FF8EC5122AE"
@@ -97,6 +117,12 @@
 			dependencies: ["4CD3AA3E83C316B7"]
 			id: "4D79DD9269D62977"
 			min_width: 300
+			rewards: [{
+				count: 4
+				id: "5E70F78AC80672B7"
+				item: "enderio:dark_steel_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "64A33479C40C5F83"
 				item: "thermal:machine_centrifuge"
@@ -109,6 +135,12 @@
 			dependencies: ["11943E63F2FF8684"]
 			id: "24DAF54378E7AF38"
 			min_width: 300
+			rewards: [{
+				count: 4
+				id: "435634661DFFB818"
+				item: "enderio:redstone_alloy_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "09DD8A6D910AE965"
 				item: "thermal:machine_crucible"
@@ -121,6 +153,12 @@
 			dependencies: ["11943E63F2FF8684"]
 			id: "7F557FA2D89527EF"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "02F3F1372D3F8D15"
+				item: "mekanism:ingot_refined_glowstone"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0A316132E4D2F72C"
 				item: "thermal:machine_bottler"
@@ -133,6 +171,34 @@
 			dependencies: ["299364C146A285AB"]
 			id: "7B18A7C4A3A3FAE3"
 			min_width: 300
+			rewards: [{
+				id: "43B3F0853D6DE131"
+				item: {
+					Count: 1
+					id: "enderio:fluid_tank"
+					tag: {
+						BlockEntityTag: {
+							Fluid: {
+								Size: 1
+								Tanks: [{
+									Amount: 16000
+									Capacity: 16000
+									FluidName: "pneumaticcraft:oil"
+									Index: 0
+								}]
+							}
+							ForgeCaps: { }
+							Items: {
+								Items: [ ]
+								Size: 4
+							}
+							RedstoneControl: 0
+							id: "enderio:fluid_tank"
+						}
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "2C8DAB9FC5FF2186"
 				item: "thermal:machine_refinery"
@@ -145,6 +211,12 @@
 			dependencies: ["7B18A7C4A3A3FAE3"]
 			id: "1EFA779139C3E470"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "320C17B023F2C110"
+				table_id: 480223148662970775L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "4124AF3F9FCA6A35"
 				item: "thermal:refined_fuel_bucket"
@@ -160,6 +232,12 @@
 			]
 			id: "344550902BB61752"
 			min_width: 300
+			rewards: [{
+				count: 12
+				id: "3E791E3FF37DC900"
+				item: "enderio:soularium_ingot"
+				type: "item"
+			}]
 			size: 1.25d
 			tasks: [{
 				id: "480069B1359E11E0"
@@ -179,6 +257,7 @@
 				item: "powah:crystal_blazing"
 				type: "item"
 			}]
+			title: "Blazing Through"
 			x: -0.5d
 			y: -3.5d
 		}
@@ -186,6 +265,12 @@
 			dependencies: ["22133B3C6FF9C7F3"]
 			id: "299364C146A285AB"
 			min_width: 300
+			rewards: [{
+				count: 16
+				id: "2300DB0F6B4801C6"
+				item: "immersiveengineering:dust_coke"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4C92F330C9D3F773"
 				item: "extendedcrafting:black_iron_ingot"
@@ -202,6 +287,12 @@
 			]
 			id: "5F5B3D5FE5AF3D00"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "1B16F540F29C7E86"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
 			tasks: [{
 				id: "53696B7488A7C58A"
 				item: "extendedcrafting:ender_ingot"
@@ -214,6 +305,12 @@
 			dependencies: ["2A9B8E18FC745B11"]
 			id: "0610F51F372DC7C0"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "0EE48610DD86C59A"
+				item: "minecraft:ender_eye"
+				type: "item"
+			}]
 			tasks: [{
 				id: "083187D944A1346A"
 				item: "extendedcrafting:enhanced_ender_ingot"
@@ -226,6 +323,12 @@
 			dependencies: ["4D79DD9269D62977"]
 			id: "22133B3C6FF9C7F3"
 			min_width: 300
+			rewards: [{
+				count: 16
+				id: "01D385A8BB62378B"
+				item: "thermal:oil_sand"
+				type: "item"
+			}]
 			tasks: [{
 				id: "12E7BAF09B53FE4D"
 				item: "thermal:tar"
@@ -241,6 +344,12 @@
 			]
 			id: "1B993EA365BEFD7F"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "1E9DFA37615715F9"
+				item: "thermal:lumium_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4D36DD9F3A6E265B"
 				item: "extendedcrafting:luminessence"
@@ -333,6 +442,12 @@
 			dependencies: ["11943E63F2FF8684"]
 			id: "6A3AF970578FC2AB"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7A8B6B806990AA92"
+				table_id: 8255462105870773942L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "2A546547B65FA138"
 				item: "enderio:enchanter"
@@ -345,6 +460,12 @@
 			dependencies: ["438010D46E252B32"]
 			id: "6AFDB0F2AD9E81BC"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "499E2300D4ED226A"
+				item: "laserio:logic_chip"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5BA070F361AF171C"
 				item: "laserio:logic_chip"
@@ -355,8 +476,15 @@
 		}
 		{
 			dependencies: ["2B5724BE9F43CF8E"]
+			icon: "enderio:z_logic_controller"
 			id: "1C1B6A081BDE2FB8"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "36409A74D3D46BC6"
+				table_id: 551655590567055679L
+				type: "choice"
+			}]
 			tasks: [
 				{
 					id: "37A5F5C04E85E14A"
@@ -386,8 +514,15 @@
 		{
 			dependencies: ["6AFDB0F2AD9E81BC"]
 			description: ["And hey! There's even a gas one for your future Mekanism endeavors too!"]
+			icon: "laserio:card_item"
 			id: "68F05DB4A722B875"
 			min_width: 300
+			rewards: [{
+				count: 16
+				id: "0A77E4A0485C82D5"
+				item: "enderio:conductive_alloy_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2684CB04AB89E838"
 				item: {
@@ -426,8 +561,15 @@
 		}
 		{
 			dependencies: ["6AFDB0F2AD9E81BC"]
+			icon: "laserio:laser_wrench"
 			id: "6E1043583A0EB480"
 			min_width: 300
+			rewards: [{
+				count: 16
+				id: "1C3E34E7850D8C01"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "1E6AE3FF680D7A5F"
@@ -460,8 +602,15 @@
 		}
 		{
 			dependencies: ["6AFDB0F2AD9E81BC"]
+			icon: "laserio:filter_basic"
 			id: "409CD4E7DA967D95"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0AC710CFC6AD4DC0"
+				table_id: 6516829551726006226L
+				type: "choice"
+			}]
 			tasks: [
 				{
 					id: "57932C61F8B5C4C9"
@@ -469,129 +618,124 @@
 					type: "item"
 				}
 				{
-					id: "1909F4B5F79595D7"
+					id: "12A8198C2DDA0CB8"
 					item: {
 						Count: 1
-						id: "laserio:filter_count"
+						id: "itemfilters:or"
 						tag: {
-							allowList: 1b
-							compareNBT: 0b
-							counts: [
+							items: [
 								{
-									Count: 0
-									MBAmount: 0
-									Slot: 0
+									Count: 1b
+									id: "laserio:filter_count"
+									tag: {
+										counts: [
+											{
+												Count: 0
+												MBAmount: 0
+												Slot: 0
+											}
+											{
+												Count: 0
+												MBAmount: 0
+												Slot: 1
+											}
+											{
+												Count: 0
+												MBAmount: 0
+												Slot: 2
+											}
+											{
+												Count: 0
+												MBAmount: 0
+												Slot: 3
+											}
+											{
+												Count: 0
+												MBAmount: 0
+												Slot: 4
+											}
+											{
+												Count: 0
+												MBAmount: 0
+												Slot: 5
+											}
+											{
+												Count: 0
+												MBAmount: 0
+												Slot: 6
+											}
+											{
+												Count: 0
+												MBAmount: 0
+												Slot: 7
+											}
+											{
+												Count: 0
+												MBAmount: 0
+												Slot: 8
+											}
+											{
+												Count: 0
+												MBAmount: 0
+												Slot: 9
+											}
+											{
+												Count: 0
+												MBAmount: 0
+												Slot: 10
+											}
+											{
+												Count: 0
+												MBAmount: 0
+												Slot: 11
+											}
+											{
+												Count: 0
+												MBAmount: 0
+												Slot: 12
+											}
+											{
+												Count: 0
+												MBAmount: 0
+												Slot: 13
+											}
+											{
+												Count: 0
+												MBAmount: 0
+												Slot: 14
+											}
+										]
+										inv: {
+											Items: [ ]
+											Size: 15
+										}
+									}
 								}
 								{
-									Count: 0
-									MBAmount: 0
-									Slot: 1
+									Count: 1b
+									id: "laserio:filter_tag"
+									tag: {
+										tags: [ ]
+									}
 								}
 								{
-									Count: 0
-									MBAmount: 0
-									Slot: 2
+									Count: 1b
+									id: "laserio:filter_mod"
+									tag: {
+										inv: {
+											Items: [ ]
+											Size: 15
+										}
+									}
 								}
 								{
-									Count: 0
-									MBAmount: 0
-									Slot: 3
-								}
-								{
-									Count: 0
-									MBAmount: 0
-									Slot: 4
-								}
-								{
-									Count: 0
-									MBAmount: 0
-									Slot: 5
-								}
-								{
-									Count: 0
-									MBAmount: 0
-									Slot: 6
-								}
-								{
-									Count: 0
-									MBAmount: 0
-									Slot: 7
-								}
-								{
-									Count: 0
-									MBAmount: 0
-									Slot: 8
-								}
-								{
-									Count: 0
-									MBAmount: 0
-									Slot: 9
-								}
-								{
-									Count: 0
-									MBAmount: 0
-									Slot: 10
-								}
-								{
-									Count: 0
-									MBAmount: 0
-									Slot: 11
-								}
-								{
-									Count: 0
-									MBAmount: 0
-									Slot: 12
-								}
-								{
-									Count: 0
-									MBAmount: 0
-									Slot: 13
-								}
-								{
-									Count: 0
-									MBAmount: 0
-									Slot: 14
+									Count: 1b
+									id: "laserio:filter_nbt"
 								}
 							]
-							inv: {
-								Items: [ ]
-								Size: 15
-							}
 						}
 					}
-					type: "item"
-				}
-				{
-					id: "7521E88C2B32AFA3"
-					item: {
-						Count: 1
-						id: "laserio:filter_tag"
-						tag: {
-							allowList: 1b
-							tags: [ ]
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "0748023652BEC275"
-					item: {
-						Count: 1
-						id: "laserio:filter_mod"
-						tag: {
-							allowList: 1b
-							compareNBT: 0b
-							inv: {
-								Items: [ ]
-								Size: 15
-							}
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "5D51B64690DA2EA2"
-					item: "laserio:filter_nbt"
+					title: "Advanced Filters"
 					type: "item"
 				}
 			]
@@ -604,6 +748,12 @@
 			icon: "laserio:laser_node"
 			id: "1F87A150540CA271"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "6AB2D32D91E7487A"
+				item: "thermal:steel_ingot"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "3654304C6C9CAE7E"
@@ -624,6 +774,12 @@
 			dependencies: ["438010D46E252B32"]
 			id: "3FE9ACEC0D804E39"
 			min_width: 300
+			rewards: [{
+				count: 6
+				id: "15B1BE2E57EB023E"
+				item: "modularrouters:blank_upgrade"
+				type: "item"
+			}]
 			tasks: [{
 				id: "78E611B4A79DC58F"
 				item: "modularrouters:modular_router"
@@ -638,8 +794,19 @@
 				"1B993EA365BEFD7F"
 			]
 			hide_dependency_lines: false
+			icon: {
+				Count: 1
+				id: "simplemagnets:advancedmagnet"
+				tag: { }
+			}
 			id: "13F278D905E6DD33"
 			min_width: 300
+			rewards: [{
+				count: 4
+				id: "6C87D1EBCBC8EA84"
+				item: "enderio:pulsating_alloy_ingot"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "5A80B8A75314D4C9"
@@ -664,6 +831,12 @@
 			dependencies: ["5F5B3D5FE5AF3D00"]
 			id: "76D8ECB821DDA406"
 			min_width: 300
+			rewards: [{
+				count: 2
+				id: "78B7C176ACC8A6F8"
+				item: "compressium:obsidian_1"
+				type: "item"
+			}]
 			tasks: [{
 				id: "646A28ED86B56460"
 				item: "itemcollectors:advanced_collector"
@@ -675,8 +848,15 @@
 		}
 		{
 			dependencies: ["3FE9ACEC0D804E39"]
+			icon: "modularrouters:speed_upgrade"
 			id: "28872D8D3C6A071B"
 			min_width: 300
+			rewards: [{
+				count: 4
+				id: "7C5D295206359A33"
+				item: "mekanism:upgrade_speed"
+				type: "item"
+			}]
 			tasks: [
 				{
 					count: 9L
@@ -708,8 +888,15 @@
 		}
 		{
 			dependencies: ["3FE9ACEC0D804E39"]
+			icon: "modularrouters:fluid_upgrade"
 			id: "5C74E537281EE76D"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "667E3BB07B06DDCB"
+				table_id: 4621227990669671414L
+				type: "choice"
+			}]
 			tasks: [
 				{
 					id: "64B020CF4226CC90"
@@ -728,8 +915,15 @@
 		}
 		{
 			dependencies: ["3FE9ACEC0D804E39"]
+			icon: "modularrouters:puller_module_2"
 			id: "653B3E220A9728AB"
 			min_width: 300
+			rewards: [{
+				count: 16
+				id: "667A46ED8F1AEC4A"
+				item: "minecraft:piston"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "55D69A5F9C724F1D"
@@ -822,8 +1016,14 @@
 		}
 		{
 			dependencies: ["3FE9ACEC0D804E39"]
+			icon: "modularrouters:vacuum_module"
 			id: "74AB1B03344BC63D"
 			min_width: 300
+			rewards: [{
+				id: "1DA44C8402036E81"
+				item: "trashcans:ultimate_trash_can"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "775227F79DA7B42D"
@@ -842,8 +1042,14 @@
 		}
 		{
 			dependencies: ["74037ADCBA1AEF64"]
+			icon: "enderio:frank_n_zombie"
 			id: "4CD3AA3E83C316B7"
 			min_width: 300
+			rewards: [{
+				id: "1D812CCC61A8922D"
+				item: "enderio:empty_soul_vial"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "12FB47504B21DFAD"
@@ -862,8 +1068,15 @@
 		}
 		{
 			dependencies: ["74037ADCBA1AEF64"]
+			icon: "enderio:weather_crystal"
 			id: "11943E63F2FF8684"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7E8091D2566B3B04"
+				table_id: 6967724183244200066L
+				type: "choice"
+			}]
 			tasks: [
 				{
 					id: "0DAA60DC11E8B6C4"
@@ -888,6 +1101,12 @@
 			dependencies: ["11943E63F2FF8684"]
 			id: "7CAFF91379D3D603"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "4E8BF1CCB04F74AE"
+				item: "thermal:blizz_rod"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1B635D68006FC2B0"
 				item: "thermal:machine_chiller"
@@ -900,6 +1119,12 @@
 			dependencies: ["299364C146A285AB"]
 			id: "2FC46E153C739195"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "13EBC2E847195EFE"
+				table_id: 3233895940310047275L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "655C7BA4BC75FEEB"
 				item: "extendedcrafting:frame"
@@ -915,6 +1140,12 @@
 			]
 			id: "61BB7D9CF57C67EE"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "71E0E862493D7903"
+				item: "kubejs:enchanted_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5C9F505EF44ACC06"
 				item: "enderio:xp_obelisk"
@@ -930,6 +1161,12 @@
 			]
 			id: "1DEBC8EE4D9FF4E6"
 			min_width: 300
+			rewards: [{
+				count: 2
+				id: "0FBA64F77CEE5B70"
+				item: "extendedcrafting:ender_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "63B0CC003011E063"
 				item: "extendedcrafting:enhanced_ender_component"
@@ -942,6 +1179,11 @@
 			dependencies: ["299364C146A285AB"]
 			id: "408E60EF04D7C833"
 			min_width: 300
+			rewards: [{
+				id: "10C5A99FB49AC8A9"
+				item: "thermal:upgrade_augment_1"
+				type: "item"
+			}]
 			tasks: [{
 				id: "662F97B5C0397AA9"
 				item: "thermal:upgrade_augment_2"
@@ -954,6 +1196,12 @@
 			dependencies: ["6EC3843A34FFAA3F"]
 			id: "3B083E4C2A751A7A"
 			min_width: 300
+			rewards: [{
+				count: 2
+				id: "552E8ECB6C0F8CBC"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "237D319004E7E3AE"
 				item: "thermal:machine_pyrolyzer"
@@ -964,8 +1212,15 @@
 		}
 		{
 			dependencies: ["6AFDB0F2AD9E81BC"]
+			icon: "laserio:overclocker_card"
 			id: "59C4675E514AA30D"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7BC44BA589040298"
+				table_id: 7335148501940060475L
+				type: "choice"
+			}]
 			tasks: [
 				{
 					id: "36796B7D03C93C24"
@@ -987,6 +1242,11 @@
 				"4AB5F799E3C6C135"
 				"5BC624A4BBCF1D2F"
 			]
+			description: [
+				"Make an Ender Core and complete your exploration journey!"
+				""
+				"The Ender Core is required to make the Ender Crafter in Chapter 6, it is not consumed on crafting."
+			]
 			disable_toast: true
 			id: "2585082DAD87DC3C"
 			min_width: 300
@@ -1002,6 +1262,7 @@
 				}
 				type: "item"
 			}]
+			title: "The Last Core"
 			x: -3.0d
 			y: -2.25d
 		}
@@ -1009,6 +1270,12 @@
 			dependencies: ["1B993EA365BEFD7F"]
 			id: "04677AA3FD8F9EE3"
 			min_width: 300
+			rewards: [{
+				count: 6
+				id: "5F720FA07A36B69C"
+				item: "extendedcrafting:luminessence"
+				type: "item"
+			}]
 			tasks: [{
 				id: "484EE4EACAA7020A"
 				item: "functionalstorage:gold_upgrade"
@@ -1021,6 +1288,12 @@
 			dependencies: ["2FC46E153C739195"]
 			id: "55C2A1B66BFA050C"
 			min_width: 300
+			rewards: [{
+				count: 64
+				id: "6FB3F21814071872"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7B4000A8D0C56C80"
 				item: "extendedcrafting:basic_table"
@@ -1031,8 +1304,14 @@
 		}
 		{
 			dependencies: ["4CD3AA3E83C316B7"]
+			icon: "powah:player_transmitter_hardened"
 			id: "4F4B62B17585F014"
 			min_width: 300
+			rewards: [{
+				id: "3485576999A4EAF7"
+				item: "enderio:basic_capacitor"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "0BFDAF3EF8C7E9E2"
@@ -1124,6 +1403,11 @@
 			dependencies: ["11943E63F2FF8684"]
 			id: "72F05C1DD6B30480"
 			min_width: 300
+			rewards: [{
+				id: "0F05A754AE607C48"
+				item: "mekanism:steel_casing"
+				type: "item"
+			}]
 			tasks: [{
 				id: "120E189A6BD882FE"
 				item: "thermal:device_rock_gen"
@@ -1136,6 +1420,11 @@
 			dependencies: ["344550902BB61752"]
 			id: "32981647F8826FC4"
 			min_width: 300
+			rewards: [{
+				id: "7B3B57CBFA2F70EF"
+				item: "enderio:ensouled_chassis"
+				type: "item"
+			}]
 			size: 1.0d
 			tasks: [{
 				id: "2C2CBD86540D3A98"
@@ -1164,8 +1453,14 @@
 		}
 		{
 			dependencies: ["344550902BB61752"]
+			icon: "torchmaster:megatorch"
 			id: "013F34D0D61627AF"
 			min_width: 300
+			rewards: [{
+				id: "726741F0AF542B03"
+				item: "thermal_extra:soul_infused_block"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "551AF5B01BD196DF"
@@ -1186,6 +1481,12 @@
 			hide_dependency_lines: true
 			id: "2558DB91F673E478"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1012E3E315C5910B"
+				table_id: 6516829551726006226L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "7424AEB6EFF1A2BA"
 				item: "ae2:crafting_terminal"
@@ -1201,6 +1502,12 @@
 			]
 			id: "4A9AEF5FA827F675"
 			min_width: 300
+			rewards: [{
+				count: 4
+				id: "772226E5F7605ED8"
+				item: "extendedcrafting:black_iron_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2D4DA50A48C4F50B"
 				item: "actuallyadditions:atomic_reconstructor"
@@ -1211,8 +1518,15 @@
 		}
 		{
 			dependencies: ["2FAD84CCF0B8DAB5"]
+			icon: "actuallyadditions:empowerer"
 			id: "6DBC6F18848F71BC"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "70F9E784DCD1AC26"
+				item: "actuallyadditions:palis_crystal"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "6626B3B19571AA12"
@@ -1233,6 +1547,12 @@
 			dependencies: ["5E3B4D528B737D8F"]
 			id: "2FAD84CCF0B8DAB5"
 			min_width: 300
+			rewards: [{
+				count: 2
+				id: "58A7B2908AAFDD6A"
+				item: "actuallyadditions:basic_coil"
+				type: "item"
+			}]
 			tasks: [{
 				id: "67D87B3469C2941D"
 				item: "actuallyadditions:iron_casing"
@@ -1245,6 +1565,12 @@
 			dependencies: ["6DBC6F18848F71BC"]
 			id: "547E97CC5F479FCB"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3459B0A1F1FBEDBE"
+				table_id: 3222048389332532657L
+				type: "choice"
+			}]
 			size: 1.25d
 			tasks: [{
 				id: "38F2F395988DD76A"
@@ -1258,6 +1584,12 @@
 			dependencies: ["6DBC6F18848F71BC"]
 			id: "2EE05C593A9B4C97"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "24997BBA567E4C5D"
+				table_id: 2582031271507745843L
+				type: "choice"
+			}]
 			size: 1.25d
 			tasks: [{
 				id: "3AD2EAB677E6295E"
@@ -1274,6 +1606,12 @@
 			]
 			id: "32160E9E60466D24"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "27562CCF9A8D3D63"
+				table_id: 5451549488286641897L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "010F38D43EA59C46"
 				item: "actuallyadditions:palis_crystal"
@@ -1286,6 +1624,12 @@
 			dependencies: ["299364C146A285AB"]
 			id: "128D3F42E4DBABE4"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "035B23CF38F8F3CD"
+				table_id: 6412962796861422138L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "186FC79F28279C0C"
 				item: "actuallyadditions:basic_coil"
@@ -1301,6 +1645,12 @@
 			]
 			id: "5E3B4D528B737D8F"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "124CAA79F03C837B"
+				item: "enderio:energetic_alloy_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2C3A99F55B78B110"
 				item: "actuallyadditions:advanced_coil"
@@ -1313,6 +1663,12 @@
 			dependencies: ["547E97CC5F479FCB"]
 			id: "530C45928DF325B8"
 			min_width: 300
+			rewards: [{
+				count: 2
+				id: "1FA41BFE222377F9"
+				item: "actuallyadditions:enori_crystal_block"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6F9BDD7A292E30B6"
 				item: "actuallyadditions:ranged_collector"
@@ -1324,8 +1680,15 @@
 		}
 		{
 			dependencies: ["2FAD84CCF0B8DAB5"]
+			icon: "actuallyadditions:item_interface"
 			id: "3951801F60DEA924"
 			min_width: 300
+			rewards: [{
+				count: 4
+				id: "428C9B3C5070CD30"
+				item: "actuallyadditions:basic_coil"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "1773FFCC8A15B7CC"
@@ -1368,8 +1731,15 @@
 		}
 		{
 			dependencies: ["2EE05C593A9B4C97"]
+			icon: "actuallyadditions:phantom_itemface"
 			id: "40BAF17A7AB7695B"
 			min_width: 300
+			rewards: [{
+				count: 2
+				id: "66C0CCA575EAF9CC"
+				item: "extendedcrafting:ender_ingot"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "37CA1503F3C72028"
@@ -1417,6 +1787,12 @@
 			dependencies: ["5E3B4D528B737D8F"]
 			id: "3E550A5967C6F86E"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "366428663D283388"
+				table_id: 6323999922211919912L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "16647CEA5D3825EA"
 				item: {
@@ -1439,6 +1815,12 @@
 			dependencies: ["3E550A5967C6F86E"]
 			id: "7AA87F96C570713B"
 			min_width: 300
+			rewards: [{
+				count: 4
+				id: "74D2295013EA921A"
+				item: "actuallyadditions:empowered_diamatine_crystal"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "60F29B69834A229D"
@@ -1473,6 +1855,12 @@
 			dependencies: ["344550902BB61752"]
 			id: "28CCC25EB1BF22A8"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "73CB43A70E55EDBF"
+				table_id: 6913509882297795980L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "58DD4EDD2B6A651D"
 				item: "enderio:double_layer_capacitor"
@@ -1485,6 +1873,12 @@
 			dependencies: ["6EC3843A34FFAA3F"]
 			id: "7A8FA2A5AFEBE3C2"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "24CBE4A4E1D9CFC5"
+				item: "powah:steel_energized"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7FF39B4DA3D01A32"
 				item: "rainshield:rain_shield"
@@ -1497,6 +1891,12 @@
 			dependencies: ["28CCC25EB1BF22A8"]
 			id: "0B8629D33D5D1662"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "650C7584D9434DE9"
+				table_id: 3762402982118288469L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "4919042EE4B99DA7"
 				item: {
@@ -1513,6 +1913,12 @@
 			dependencies: ["2EE05C593A9B4C97"]
 			id: "560E8EED03FBF93B"
 			min_width: 300
+			rewards: [{
+				count: 2
+				id: "1F45B847DEC3FD24"
+				item: "actuallyadditions:empowered_palis_crystal"
+				type: "item"
+			}]
 			tasks: [{
 				id: "61EC9B7E9BF7508F"
 				item: "actuallyadditions:dropper"

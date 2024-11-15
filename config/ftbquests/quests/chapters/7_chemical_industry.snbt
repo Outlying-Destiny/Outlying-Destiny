@@ -26,6 +26,12 @@
 			dependencies: ["632B7F8040701318"]
 			id: "150A63180583B169"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "15E05543341F562F"
+				table_id: 8092320302434711089L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "331353E01AC28C63"
 				item: "industrialforegoing:machine_frame_pity"
@@ -41,6 +47,12 @@
 			]
 			id: "6ABF176C5EFBDD3E"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "37A6031344D5F405"
+				table_id: 4854530894780649659L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "1DD52E4C0347A670"
 				item: "industrialforegoing:dissolution_chamber"
@@ -67,6 +79,11 @@
 			dependencies: ["150A63180583B169"]
 			id: "528DBD8CAB98933A"
 			min_width: 300
+			rewards: [{
+				id: "1E3D487C633165E4"
+				item: "thermal:machine_frame"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0C114CE7F62590BB"
 				item: "industrialforegoing:bioreactor"
@@ -79,6 +96,11 @@
 			dependencies: ["150A63180583B169"]
 			id: "40D48E2DDAB93BB3"
 			min_width: 300
+			rewards: [{
+				id: "425B98E3683AF85C"
+				item: "thermal:device_tree_extractor"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7B8FC3A2B52E3CEF"
 				item: "industrialforegoing:fluid_extractor"
@@ -91,6 +113,12 @@
 			dependencies: ["528DBD8CAB98933A"]
 			id: "7181ABFD7A44C9C7"
 			min_width: 300
+			rewards: [{
+				count: 24
+				id: "56A3DCA0BF9CA06D"
+				item: "thermal:lead_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "136789B53EF750CB"
 				item: "industrialforegoing:biofuel_bucket"
@@ -103,6 +131,12 @@
 			dependencies: ["40D48E2DDAB93BB3"]
 			id: "20EE34FE4B966E53"
 			min_width: 300
+			rewards: [{
+				count: 16
+				id: "5F3911A477901554"
+				item: "pneumaticcraft:plastic"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0EC8C450FB9448A5"
 				item: "industrialforegoing:latex_bucket"
@@ -116,6 +150,12 @@
 			dependencies: ["7181ABFD7A44C9C7"]
 			id: "1ADE47AB57137297"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "1079E3820CC021F7"
+				item: "minecraft:shulker_shell"
+				type: "item"
+			}]
 			tasks: [{
 				id: "564C012BC42B58F3"
 				item: "thermal_extra:shellite_ingot"
@@ -150,6 +190,12 @@
 			]
 			id: "4E3F3D2CC84F706A"
 			min_width: 300
+			rewards: [{
+				count: 4
+				id: "4F14694DFBFF8B93"
+				item: "kubejs:infinity_gear"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4438C63555AF28C6"
 				item: "industrialforegoing:machine_frame_simple"
@@ -162,6 +208,12 @@
 			dependencies: ["704E2028C6A94AAC"]
 			id: "75B59A3392FA89A9"
 			min_width: 300
+			rewards: [{
+				count: 16
+				id: "6FB3161545E2D804"
+				item: "thermal:steel_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4CCDA962EECE7309"
 				item: "mekanism:electrolytic_core"
@@ -178,11 +230,18 @@
 			]
 			id: "0F6ECA16BAFB299C"
 			min_width: 300
+			rewards: [{
+				count: 32
+				id: "58780C0FC9751C94"
+				item: "pneumaticcraft:plastic"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7E6FE09359C7F7DA"
 				item: "mekanism:hdpe_sheet"
 				type: "item"
 			}]
+			title: "Realest plastic >=D"
 			x: 0.5d
 			y: -1.0d
 		}
@@ -190,6 +249,12 @@
 			dependencies: ["75B59A3392FA89A9"]
 			id: "7B3CC62686FA4310"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "400B8E6FCFF18334"
+				table_id: 1782017295038330679L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "5D842D5DA6C2FAAA"
 				item: "mekanism:electrolytic_separator"
@@ -202,6 +267,12 @@
 			dependencies: ["75B59A3392FA89A9"]
 			id: "1CB37EF3A793639C"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "34C9E08376DE346A"
+				table_id: 3430326361857764427L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "752F9587D047F7C2"
 				item: "mekanism:pressurized_reaction_chamber"
@@ -214,6 +285,12 @@
 			dependencies: ["75B59A3392FA89A9"]
 			id: "7FF5D4745350349F"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0D2BB69C65195283"
+				table_id: 8509601489553075033L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "5D581E482B3E90F9"
 				item: "mekanism:rotary_condensentrator"
@@ -226,6 +303,12 @@
 			dependencies: ["7FF5D4745350349F"]
 			id: "2A3181170AF6A8C3"
 			min_width: 300
+			rewards: [{
+				count: 16
+				id: "1E92F2A47401E09B"
+				item: "minecraft:bread"
+				type: "item"
+			}]
 			tasks: [{
 				id: "41DB37CB6ADAF8EB"
 				item: "mekanism:ethene_bucket"
@@ -241,6 +324,12 @@
 			]
 			id: "3010848152BF092A"
 			min_width: 300
+			rewards: [{
+				count: 16
+				id: "018E4BB1AB6BDA23"
+				item: "kubejs:evil_infused_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "17783EA813F475BB"
 				item: "industrialforegoing:mob_slaughter_factory"
@@ -253,6 +342,12 @@
 			dependencies: ["3010848152BF092A"]
 			id: "314BD3ECA75A6233"
 			min_width: 300
+			rewards: [{
+				count: 16
+				id: "7B42B9FA1254BDAC"
+				item: "minecraft:slime_ball"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6C33A424DA7FFBA9"
 				item: "industrialforegoing:pink_slime_bucket"
@@ -265,6 +360,12 @@
 			dependencies: ["314BD3ECA75A6233"]
 			id: "323755DC97DFAE26"
 			min_width: 300
+			rewards: [{
+				count: 4
+				id: "2DC9B9FC148DA9D8"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1F67076B4D286767"
 				item: "thermal_extra:twinite_ingot"
@@ -278,6 +379,12 @@
 			icon: "mekanism:thermal_evaporation_controller"
 			id: "34C5F3C2EC9DA297"
 			min_width: 300
+			rewards: [{
+				count: 2
+				id: "4DD2CF7F2A5BE7EF"
+				item: "industrialforegoing:machine_frame_simple"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "67E7F2954F362C77"
@@ -285,9 +392,9 @@
 					type: "item"
 				}
 				{
-					count: 3L
+					count: 2L
 					id: "66037BA17834AB49"
-					item: { Count: 3, id: "mekanism:thermal_evaporation_valve" }
+					item: "mekanism:thermal_evaporation_valve"
 					type: "item"
 				}
 				{
@@ -299,7 +406,8 @@
 				{
 					count: 16L
 					id: "251CB79EF9D7106D"
-					item: { Count: 16, id: "mekanism:structural_glass" }
+					item: "mekanism:structural_glass"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -330,6 +438,12 @@
 			]
 			id: "35691A3C6B2A7B84"
 			min_width: 300
+			rewards: [{
+				count: 24
+				id: "492C26F512FBF50D"
+				item: "mekanism:dust_lithium"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5EB4F231B09152A5"
 				item: "mekanism:dust_lithium"
@@ -343,6 +457,12 @@
 			icon: "mekanism:induction_port"
 			id: "00CC830713FF0B88"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "10C1C862455511CF"
+				table_id: 1787956952425882140L
+				type: "choice"
+			}]
 			tasks: [
 				{
 					count: 24L
@@ -362,6 +482,64 @@
 					item: { Count: 8, id: "mekanism:structural_glass" }
 					type: "item"
 				}
+				{
+					id: "0E03E2CDAAC601CA"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "mekanism:basic_induction_cell"
+								}
+								{
+									Count: 1b
+									id: "mekanism:advanced_induction_cell"
+								}
+								{
+									Count: 1b
+									id: "mekanism:elite_induction_cell"
+								}
+								{
+									Count: 1b
+									id: "mekanism:ultimate_induction_cell"
+								}
+							]
+						}
+					}
+					title: "Any Induction Cell"
+					type: "item"
+				}
+				{
+					id: "6FDBD25BE80F33D0"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "mekanism:basic_induction_provider"
+								}
+								{
+									Count: 1b
+									id: "mekanism:advanced_induction_provider"
+								}
+								{
+									Count: 1b
+									id: "mekanism:elite_induction_provider"
+								}
+								{
+									Count: 1b
+									id: "mekanism:ultimate_induction_provider"
+								}
+							]
+						}
+					}
+					title: "Any Induction Provider"
+					type: "item"
+				}
 			]
 			x: 3.0d
 			y: -2.25d
@@ -373,6 +551,12 @@
 			]
 			id: "5FB1C36C44672D6C"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1FE1E72BFA0B6FC2"
+				table_id: 3003561991989403839L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "47824EFE086059B2"
 				item: "industrialforegoing:machine_frame_advanced"
@@ -385,6 +569,12 @@
 			dependencies: ["0F6ECA16BAFB299C"]
 			id: "00BD32920B4719EB"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "72D6846898E99812"
+				table_id: 292729049046662368L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "7B25BF38634437F0"
 				item: "mekanism:chemical_crystallizer"
@@ -414,6 +604,12 @@
 			dependencies: ["323755DC97DFAE26"]
 			id: "0FBA307E889389C5"
 			min_width: 300
+			rewards: [{
+				count: 3
+				id: "3E32FD4AF9F0DE81"
+				item: "thermal:machine_speed_augment"
+				type: "item"
+			}]
 			tasks: [{
 				id: "091492CC51890EF9"
 				item: {
@@ -471,6 +667,11 @@
 			icon: "industrialforegoing:ore_laser_base"
 			id: "1EE1DD5859B416EE"
 			min_width: 300
+			rewards: [{
+				id: "052CBD588439EC4B"
+				item: "industrialforegoing:laser_drill"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "21C409AE87D81106"
@@ -478,9 +679,8 @@
 					type: "item"
 				}
 				{
-					count: 4L
 					id: "68C3E36CAB403D0F"
-					item: { Count: 4, id: "industrialforegoing:laser_drill" }
+					item: "industrialforegoing:laser_drill"
 					type: "item"
 				}
 				{
@@ -496,6 +696,12 @@
 			dependencies: ["1EE1DD5859B416EE"]
 			id: "7D941F66A8003501"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "6471015FAEE5423A"
+				item: "draconicevolution:draconium_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "35A77888436301E4"
 				item: "draconicevolution:draconium_ingot"
@@ -508,6 +714,12 @@
 			dependencies: ["7D941F66A8003501"]
 			id: "39CE2691053F993E"
 			min_width: 300
+			rewards: [{
+				count: 12
+				id: "3295D2E82D36FF22"
+				item: "enderio:dark_steel_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3DFDFB767E1BCFE7"
 				item: "thermal_extra:dragonsteel_ingot"
@@ -520,6 +732,11 @@
 			dependencies: ["39CE2691053F993E"]
 			id: "79B3FE70F7A8D0BF"
 			min_width: 300
+			rewards: [{
+				id: "3B94246A9BC06544"
+				item: "thermal:upgrade_augment_2"
+				type: "item"
+			}]
 			tasks: [{
 				id: "35464F63690B0680"
 				item: "thermal:upgrade_augment_3"
@@ -532,6 +749,12 @@
 			dependencies: ["39CE2691053F993E"]
 			id: "156349CDCED84A78"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "080317CA903F94CA"
+				table_id: 9023708515354634601L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "61C19A3DEB8A92C9"
 				item: {
@@ -550,6 +773,12 @@
 			dependencies: ["39CE2691053F993E"]
 			id: "0AADF9A23FCF74F0"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "75584892FCFDC334"
+				table_id: 7128337044054881826L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "1EE08D41B35988E5"
 				item: "mekanism:chemical_oxidizer"
@@ -562,6 +791,12 @@
 			dependencies: ["0AADF9A23FCF74F0"]
 			id: "4E5147F740457745"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "7CE39287555D9FF0"
+				item: "extendedcrafting:luminessence"
+				type: "item"
+			}]
 			tasks: [{
 				id: "748589634482265C"
 				item: "mekanism_extras:dust_radiance"
@@ -575,6 +810,12 @@
 			dependencies: ["4E5147F740457745"]
 			id: "56FDBCD9C5B61D1B"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "61771923E0C75D52"
+				table_id: 7091521658810701037L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "14176530C604C80C"
 				item: "mekanism:resistive_heater"
@@ -587,6 +828,12 @@
 			dependencies: ["4E5147F740457745"]
 			id: "3944526C83B2BCDD"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2540D0A6B1F8350E"
+				table_id: 4790889379084334354L
+				type: "choice"
+			}]
 			tasks: [
 				{
 					id: "11AC4FD56965CEF3"
@@ -635,6 +882,12 @@
 			dependencies: ["5FB1C36C44672D6C"]
 			id: "269EC584408CEC4F"
 			min_width: 300
+			rewards: [{
+				count: 10
+				id: "408F2C55EBAB32D1"
+				item: "extendedcrafting:black_iron_ingot"
+				type: "item"
+			}]
 			tasks: [
 				{
 					count: 24L
@@ -672,6 +925,12 @@
 			dependencies: ["39CE2691053F993E"]
 			id: "05855413E5060AF2"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "57035CD42A0B2671"
+				table_id: 5180771173669537428L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "1480239AC297627E"
 				item: "mekanism:chemical_infuser"
@@ -688,6 +947,12 @@
 			hide_dependency_lines: true
 			id: "01424748CE37CD98"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "13E817DCFABED070"
+				table_id: 1782017295038330679L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "6E9791E2DB04658E"
 				item: "mekanism:chemical_dissolution_chamber"
@@ -705,6 +970,26 @@
 			]
 			id: "443C2A71DBD6C1D6"
 			min_width: 300
+			rewards: [
+				{
+					count: 36
+					id: "387E24D39AE31353"
+					item: "mekanism:fluorite_gem"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "789DB039B81A81BC"
+					item: "mekanism:ingot_uranium"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "72025B9B0C212671"
+					item: "thermal:sulfur"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "33E3B5989583099F"
 				item: "mekanism:hydrofluoric_acid_bucket"
@@ -718,6 +1003,11 @@
 			dependencies: ["39CE2691053F993E"]
 			id: "7A910EB52355AC31"
 			min_width: 300
+			rewards: [{
+				id: "7FC652C529C22011"
+				item: "industrialforegoing:machine_frame_simple"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3B6DB3D08818C294"
 				item: "industrialforegoing:material_stonework_factory"
@@ -731,6 +1021,12 @@
 			hide_dependency_lines: true
 			id: "32F2F96DFC55D755"
 			min_width: 300
+			rewards: [{
+				count: 4
+				id: "5EB56EBF1086A986"
+				item: "thermal_extra:shellite_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5EE0A8D04B622201"
 				item: "industrialforegoing:marine_fisher"
@@ -743,6 +1039,12 @@
 			dependencies: ["5FB1C36C44672D6C"]
 			id: "5EB59B977D2BB99D"
 			min_width: 300
+			rewards: [{
+				count: 4
+				id: "1CD3CE100079FF3D"
+				item: "thermal_extra:twinite_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5584AA4473CC92FF"
 				item: "industrialforegoing:potion_brewer"
@@ -755,6 +1057,11 @@
 			dependencies: ["5FB1C36C44672D6C"]
 			id: "0213E8BE90FED1EE"
 			min_width: 300
+			rewards: [{
+				id: "503821811EBB4B8E"
+				item: "thermal:machine_frame"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4862DCE1B23FA3BD"
 				item: "industrialforegoing:mob_crusher"
@@ -767,6 +1074,20 @@
 			dependencies: ["5FB1C36C44672D6C"]
 			id: "7EA8EB705F30AB9B"
 			min_width: 300
+			rewards: [{
+				id: "386A1DD8687F844C"
+				item: {
+					Count: 1
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "minecraft:fortune"
+							lvl: 2s
+						}]
+					}
+				}
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "6141E42E7CAB6F04"
@@ -788,6 +1109,12 @@
 			icon: "industrialforegoing:fertilizer"
 			id: "12951669C3B0FF84"
 			min_width: 300
+			rewards: [{
+				count: 32
+				id: "202549D676BC8C67"
+				item: "industrialforegoing:fertilizer"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "51C93900A96917E4"
@@ -812,6 +1139,12 @@
 			dependencies: ["4E3F3D2CC84F706A"]
 			id: "4A1685BEDD0583F5"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "6B2DEC457B5DC5D1"
+				item: "thermal_extra:shellite_ingot"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "433B9D7078AD9A34"
@@ -831,6 +1164,12 @@
 			dependencies: ["5FB1C36C44672D6C"]
 			id: "4DABEF4B0EA4D20C"
 			min_width: 300
+			rewards: [{
+				count: 16
+				id: "260A80E08955830D"
+				item: "thermal:lumium_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "27D03EE375814069"
 				item: "industrialforegoing:plant_fertilizer"
@@ -843,6 +1182,12 @@
 			dependencies: ["4E3F3D2CC84F706A"]
 			id: "1C4214532D48FA11"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "50D3290AB8BED387"
+				item: "enderio:end_steel_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "107D3C14A12D7F05"
 				item: {
@@ -910,6 +1255,12 @@
 			hide_dependency_lines: true
 			id: "184D83FCDB936F68"
 			min_width: 300
+			rewards: [{
+				count: 6
+				id: "5458FF80D47E3982"
+				item: "enderio:dark_steel_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1976FE1F643A0C57"
 				item: "industrialforegoing:animal_rancher"
@@ -923,6 +1274,12 @@
 			hide_dependency_lines: true
 			id: "1C4ED33D23E19544"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1A8C77EAE5491F0A"
+				table_id: 4837034457909993535L
+				type: "choice"
+			}]
 			tasks: [
 				{
 					id: "1D2FE2A62296A24A"
@@ -942,6 +1299,12 @@
 			dependencies: ["4E5147F740457745"]
 			id: "1AD0CDD600BB5DF0"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0FA28CFFECAB8248"
+				table_id: 6913509882297795980L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "40068EE31346459D"
 				item: "enderio:octadic_capacitor"
@@ -954,6 +1317,12 @@
 			dependencies: ["1AD0CDD600BB5DF0"]
 			id: "650D93474935327A"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "708A12ADE4C91B13"
+				table_id: 783364796420617476L
+				type: "choice"
+			}]
 			tasks: [{
 				id: "1E23E0EC1E1C37CC"
 				item: {
@@ -970,6 +1339,12 @@
 			dependencies: ["704E2028C6A94AAC"]
 			id: "629D202A091D516E"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "15C40E4B270D70EA"
+				item: "thermal:signalum_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6F1EC8B2C84138C2"
 				item: "mekanism:ultimate_energy_cube"

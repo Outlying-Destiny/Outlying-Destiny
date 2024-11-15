@@ -1,0 +1,10 @@
+{
+	id: "66ECAF23F1A5C38F"
+	loot_size: 1
+	order_index: 67
+	rewards: [
+		{ count: 32, item: "enderio:grains_of_infinity" }
+		{ count: 8, item: "enderio:dark_steel_ingot" }
+	]
+	title: "EIO Capacitor Double"
+}

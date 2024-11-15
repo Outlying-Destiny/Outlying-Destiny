@@ -1,0 +1,11 @@
+{
+	id: "57C35C6C5B0A1828"
+	loot_size: 1
+	order_index: 57
+	rewards: [
+		{ count: 8, item: "thermal:lumium_ingot" }
+		{ count: 8, item: "thermal:enderium_ingot" }
+		{ count: 8, item: "thermal:signalum_ingot" }
+	]
+	title: "Thermal Alloys"
+}

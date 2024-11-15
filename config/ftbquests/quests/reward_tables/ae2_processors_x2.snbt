@@ -1,0 +1,11 @@
+{
+	id: "5A706DF31C658FD2"
+	loot_size: 1
+	order_index: 49
+	rewards: [
+		{ count: 8, item: "ae2:logic_processor" }
+		{ count: 8, item: "ae2:engineering_processor" }
+		{ count: 8, item: "ae2:calculation_processor" }
+	]
+	title: "AE2 Processors x2"
+}

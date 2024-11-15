@@ -1027,32 +1027,58 @@
 			dependencies: ["3C599A2D8429EAC2"]
 			id: "5AEDAD35B03A84E4"
 			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "15EB609ECF42BD13"
+				table_id: 8610553205922975463L
+				type: "choice"
+			}]
 			size: 1.5d
 			tasks: [{
 				id: "357A4D46E23F16A6"
 				item: "powah:crystal_blazing"
 				type: "item"
 			}]
+			title: "Blazing Through"
 			x: 1.25d
 			y: -1.125d
 		}
 		{
 			dependencies: ["3C599A2D8429EAC2"]
+			description: [
+				"You can find Forgotten Guardians in the Catacombs to loot their Forgotten Nuggets."
+				""
+				"Catacombs can be found at Y = 48 in the Forgotten Fields and Frostfields biomes."
+			]
 			id: "5BC624A4BBCF1D2F"
 			min_width: 300
+			rewards: [{
+				count: 8
+				id: "1DE445ED2C77EDD1"
+				item: "naturesaura:infused_iron"
+				type: "item"
+			}]
 			tasks: [{
 				count: 4L
 				id: "68E2D059B0539870"
 				item: "undergarden:forgotten_nugget"
 				type: "item"
 			}]
+			title: "But I remember"
 			x: -0.3125d
 			y: -1.125d
 		}
 		{
 			dependencies: ["3C599A2D8429EAC2"]
+			description: ["You can find Virulent Mix naturally in The Undergarden, most commonly in the Mushroom Bogs biome but can also be found inside of Catacombs where you can find the Forgotten Guardians."]
 			id: "4AB5F799E3C6C135"
 			min_width: 300
+			rewards: [{
+				count: 4
+				id: "4574E403B0B55743"
+				item: "farmersdelight:mixed_salad"
+				type: "item"
+			}]
 			tasks: [{
 				id: "06CA4F70D23B5CD8"
 				item: "undergarden:virulent_mix_bucket"
@@ -1067,8 +1093,19 @@
 				"4AB5F799E3C6C135"
 				"5BC624A4BBCF1D2F"
 			]
+			description: [
+				"Make an Ender Core and complete your exploration journey!"
+				""
+				"The Ender Core is required to make the Ender Crafter in Chapter 6, it is not consumed on crafting."
+			]
 			id: "15B426B7F38F91FF"
 			min_width: 300
+			rewards: [{
+				count: 12
+				id: "227576C190C22FAD"
+				item: "thermal:enderium_ingot"
+				type: "item"
+			}]
 			size: 1.5d
 			tasks: [{
 				id: "0E28706B359A6852"
@@ -1081,6 +1118,7 @@
 				}
 				type: "item"
 			}]
+			title: "The Last Core"
 			x: 1.25d
 			y: 0.5d
 		}

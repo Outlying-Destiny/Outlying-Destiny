@@ -1,0 +1,10 @@
+{
+	id: "040FFB84E7DD3CE0"
+	loot_size: 1
+	order_index: 66
+	rewards: [
+		{ count: 8, item: "enderio:dark_steel_ingot" }
+		{ count: 4, item: "extendedcrafting:black_iron_ingot" }
+	]
+	title: "Mekanism Chemical Crystallizer"
+}

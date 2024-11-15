@@ -1,0 +1,11 @@
+{
+	id: "5FF1B89BCD83458C"
+	loot_size: 1
+	order_index: 68
+	rewards: [
+		{ count: 64, item: "enderio:grains_of_infinity" }
+		{ count: 16, item: "enderio:dark_steel_ingot" }
+		{ count: 4, item: "thermal_extra:soul_infused_ingot" }
+	]
+	title: "EIO Capacitor Octadic"
+}

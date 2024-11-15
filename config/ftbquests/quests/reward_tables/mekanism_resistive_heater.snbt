@@ -1,0 +1,10 @@
+{
+	id: "626A25604E6694ED"
+	loot_size: 1
+	order_index: 69
+	rewards: [
+		{ count: 16, item: "mekanism:dust_lithium" }
+		{ count: 4, item: "mekanism_extras:dust_radiance" }
+	]
+	title: "Mekanism Resistive Heater"
+}

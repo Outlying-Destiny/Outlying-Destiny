@@ -1,0 +1,10 @@
+{
+	id: "3436BD940307EC55"
+	loot_size: 1
+	order_index: 51
+	rewards: [
+		{ count: 64, item: "minecraft:redstone" }
+		{ count: 16, item: "thermal:enderium_ingot" }
+	]
+	title: "Jetpack 3"
+}

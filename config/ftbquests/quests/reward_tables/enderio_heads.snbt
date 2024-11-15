@@ -1,0 +1,11 @@
+{
+	id: "07A7DFD63A1B913F"
+	loot_size: 1
+	order_index: 44
+	rewards: [
+		{ count: 4, item: "minecraft:zombie_head" }
+		{ count: 4, item: "minecraft:skeleton_skull" }
+		{ count: 4, item: "enderio:enderman_head" }
+	]
+	title: "EnderIO Heads"
+}

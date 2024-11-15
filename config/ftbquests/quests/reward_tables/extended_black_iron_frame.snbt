@@ -1,0 +1,10 @@
+{
+	id: "2CE11B394AC21A2B"
+	loot_size: 1
+	order_index: 53
+	rewards: [
+		{ count: 24, item: "thermal:obsidian_glass" }
+		{ count: 8, item: "thermal:enderium_ingot" }
+	]
+	title: "Extended Black Iron Frame"
+}

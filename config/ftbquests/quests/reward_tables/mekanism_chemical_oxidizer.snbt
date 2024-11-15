@@ -1,0 +1,10 @@
+{
+	id: "62ECF0C626263622"
+	loot_size: 1
+	order_index: 73
+	rewards: [
+		{ count: 8, item: "extendedcrafting:black_iron_ingot" }
+		{ count: 3, item: "thermal_extra:dragonsteel_ingot" }
+	]
+	title: "Mekanism Chemical Oxidizer"
+}

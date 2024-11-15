@@ -1,0 +1,10 @@
+{
+	id: "29AECBB7D964A0BF"
+	loot_size: 1
+	order_index: 74
+	rewards: [
+		{ count: 8, item: "thermal_extra:soul_infused_ingot" }
+		{ count: 4, item: "thermal_extra:twinite_ingot" }
+	]
+	title: "IF Advanced Machine Frame"
+}

@@ -1,0 +1,11 @@
+{
+	id: "47E5CBEEFD280694"
+	loot_size: 1
+	order_index: 72
+	rewards: [
+		{ count: 6, item: "kubejs:crystalline_alloy_ingot" }
+		{ count: 6, item: "extendedcrafting:black_iron_ingot" }
+		{ count: 2, item: "thermal_extra:dragonsteel_ingot" }
+	]
+	title: "Mekanism Chemical Infuser"
+}

@@ -1,0 +1,12 @@
+{
+	id: "777ED48526A3CEE7"
+	loot_size: 1
+	order_index: 54
+	rewards: [
+		{ count: 8, item: "minecraft:blaze_powder" }
+		{ count: 8, item: "thermal:blizz_powder" }
+		{ count: 8, item: "thermal:blitz_powder" }
+		{ count: 8, item: "thermal:basalz_powder" }
+	]
+	title: "Powah Blazing Crystal"
+}

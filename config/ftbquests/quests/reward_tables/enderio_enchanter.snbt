@@ -1,0 +1,10 @@
+{
+	id: "72914B0BC5202EB6"
+	loot_size: 1
+	order_index: 45
+	rewards: [
+		{ count: 18, item: "thermal:steel_ingot" }
+		{ item: "enderio:vibrant_crystal" }
+	]
+	title: "EnderIO Enchanter"
+}

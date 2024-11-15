@@ -1730,6 +1730,7 @@
 		}
 		{
 			dependencies: ["1C95DB7023229006"]
+			description: ["ME Storage Component can be used to make Storage Cells."]
 			id: "7AC776AB528A6439"
 			min_width: 300
 			rewards: [{
@@ -2390,9 +2391,9 @@
 			id: "13129358495FF3BD"
 			min_width: 300
 			rewards: [{
-				count: 4
-				id: "0D6BD8C90DFF0CAD"
-				item: "thermal:signalum_ingot"
+				count: 8
+				id: "0C462E8E0EDBE4C6"
+				item: "powah:steel_energized"
 				type: "item"
 			}]
 			tasks: [{
