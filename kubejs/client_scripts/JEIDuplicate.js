@@ -63,7 +63,7 @@ JEIEvents.addItems(event => {
         'mekanism:creative_fluid_tank',
         'mekanism:creative_chemical_tank',
         'evilcraft:dark_tank',
-        Item.of('enderio:filled_soul_vial', '{BlockEntityTag:{EntityStorage:{Entity:{id:"minecraft:zombie"}}}}')
+        //Item.of('enderio:filled_soul_vial', '{BlockEntityTag:{EntityStorage:{Entity:{id:"minecraft:zombie"}}}}')
     ])
 
     //Sophisticated Storage Stuff

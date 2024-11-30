@@ -100,7 +100,7 @@ ServerEvents.recipes(event => {
   
   //Machines
   machine('smelter', 'minecraft:blast_furnace', 'immersiveengineering:coil_lv', 'thermal:steel_gear')
-  machine('crucible', 'enderio:weather_crystal', 'minecraft:magma_block', 'thermal:signalum_gear')
+  machine('crucible', 'enderio:weather_crystal', 'kubejs:pyrotheum_dust', 'thermal:signalum_gear')
   machine('chiller', 'enderio:weather_crystal', 'kubejs:cryotheum_dust', 'thermal:enderium_gear')
   machine('bottler', 'enderio:prescient_crystal', 'minecraft:bucket', 'thermal:lumium_gear')
   machine('centrifuge', 'enderio:frank_n_zombie', 'enderio:end_steel_ingot', 'thermal:constantan_gear')
