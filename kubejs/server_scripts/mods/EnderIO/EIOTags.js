@@ -14,4 +14,7 @@ ServerEvents.tags('item', event => {
     //Dark Bimetal Gear
     event.removeAllTagsFrom('enderio:dark_bimetal_gear')
 
+    //Capacitors
+    event.add('enderio:capacitor', /enderio:.+_capacitor/)
+
 })
