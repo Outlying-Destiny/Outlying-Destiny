@@ -114,99 +114,93 @@
 		#Allow right clicking on Cables/Pipes/Tubes with alloys to upgrade the tier.
 		transmitterAlloyUpgrade = true
 
-	#Faster Electric Pump
-	[mekanism_extras."faster electric pump"]
-		#mB of Heavy Water that is extracted per block of Water by the Electric Pump with a Filter Upgrade.
-		#Range: 1 ~ 1000
-		pumpHeavyWaterAmount = 1000
-
 	#Energy Cubes
 	[mekanism_extras."energy cube"]
-		#Maximum number of Joules Basic energy cubes can store.
+		#Maximum number of Joules Absolute energy cubes can store.
 		absoluteStorage = "2560000000"
-		#Output rate in Joules of Basic energy cubes.
+		#Output rate in Joules of Absolute energy cubes.
 		absoluteOutput = "2621440"
-		#Maximum number of Joules Advanced energy cubes can store.
+		#Maximum number of Joules Supreme energy cubes can store.
 		supremeStorage = "10240000000"
-		#Output rate in Joules of Advanced energy cubes.
+		#Output rate in Joules of Supreme energy cubes.
 		supremeOutput = "10485760"
-		#Maximum number of Joules Elite energy cubes can store.
+		#Maximum number of Joules Cosmic energy cubes can store.
 		cosmicStorage = "40960000000"
-		#Output rate in Joules of Elite energy cubes.
+		#Output rate in Joules of Cosmic energy cubes.
 		cosmicOutput = "41943040"
-		#Maximum number of Joules Ultimate energy cubes can store.
+		#Maximum number of Joules Infinite energy cubes can store.
 		infiniteStorage = "163840000000"
-		#Output rate in Joules of Ultimate energy cubes.
+		#Output rate in Joules of Infinite energy cubes.
 		infiniteOutput = "167772160"
 
 	#Fluid Tanks
 	[mekanism_extras."fluid tanks"]
 		#Storage size of absolute fluid tanks in mB.
 		#Range: > 1
-		basicStorage = 8192000
+		absoluteStorage = 4096000
 		#Output rate of absolute fluid tanks in mB.
 		#Range: > 1
-		basicOutput = 256000
+		absoluteOutput = 2048000
 		#Storage size of supreme fluid tanks in mB.
 		#Range: > 1
-		advancedStorage = 32768000
+		supremeStorage = 32768000
 		#Output rate of supreme fluid tanks in mB.
 		#Range: > 1
-		advancedOutput = 1024000
+		supremeOutput = 16384000
 		#Storage size of cosmic fluid tanks in mB.
 		#Range: > 1
-		eliteStorage = 131072000
+		cosmicStorage = 262144000
 		#Output rate of cosmic fluid tanks in mB.
 		#Range: > 1
-		eliteOutput = 4096000
+		cosmicOutput = 131072000
 		#Storage size of infinite fluid tanks in mB.
 		#Range: > 1
-		ultimateStorage = 524288000
+		infiniteStorage = 2097152000
 		#Output rate of infinite fluid tanks in mB.
 		#Range: > 1
-		ultimateOutput = 16384000
+		infiniteOutput = 1048576000
 
 	#Chemical Tanks
 	[mekanism_extras."chemical tanks"]
 		#Storage size of absolute chemical tanks in mB.
 		#Range: 1 ~ 9223372036854775807
-		basicStorage = 32768000
+		absoluteStorage = 32768000
 		#Output rate of absolute chemical tanks in mB.
 		#Range: 1 ~ 9223372036854775807
-		basicOutput = 2048000
+		absoluteOutput = 2048000
 		#Storage size of supreme chemical tanks in mB.
 		#Range: 1 ~ 9223372036854775807
-		advancedStorage = 131072000
+		supremeStorage = 131072000
 		#Output rate of supreme chemical tanks in mB.
 		#Range: 1 ~ 9223372036854775807
-		advancedOutput = 8192000
+		supremeOutput = 8192000
 		#Storage size of cosmic chemical tanks in mB.
 		#Range: 1 ~ 9223372036854775807
-		eliteStorage = 524288000
+		cosmicStorage = 524288000
 		#Output rate of cosmic chemical tanks in mB.
 		#Range: 1 ~ 9223372036854775807
-		eliteOutput = 32768000
+		cosmicOutput = 32768000
 		#Storage size of infinite chemical tanks in mB.
 		#Range: 1 ~ 9223372036854775807
-		ultimateStorage = 2097152000
+		infiniteStorage = 4194304000
 		#Output rate of infinite chemical tanks in mB.
 		#Range: 1 ~ 9223372036854775807
-		ultimateOutput = 131072000
+		infiniteOutput = 131072000
 
 	#Bins
 	[mekanism_extras.bins]
 		#The number of items absolute bins can store.
 		#Range: > 1
-		basicStorage = 2097152
+		absoluteStorage = 2097152
 		#The number of items supreme bins can store.
 		#Range: > 1
-		advancedStorage = 16777216
+		supremeStorage = 16777216
 		#The number of items cosmic bins can store.
 		#Range: > 1
-		eliteStorage = 134217728
+		cosmicStorage = 134217728
 		#The number of items infinite bins can store.
 		#Range: > 1
-		ultimateStorage = 1073741824
+		infiniteStorage = 1073741824
 
 	#Induction
 	[mekanism_extras.induction]
@@ -226,4 +220,10 @@
 		eliteOutput = "67108864000"
 		#Maximum number of Joules infinite induction providers can output or accept.
 		ultimateOutput = "536870912000"
+
+	#Advance Electric Pump
+	[mekanism_extras."advance electric pump"]
+		#mB of Heavy Water that is extracted per block of Water by the Electric Pump with a Filter Upgrade.
+		#Range: 1 ~ 1000
+		pumpHeavyWaterAmount = 1000
 
