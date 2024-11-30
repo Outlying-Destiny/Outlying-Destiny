@@ -597,6 +597,7 @@
 				item: "thermal_extra:soul_infused_ingot"
 				type: "item"
 			}]
+			title: "Tired of infusing those ones"
 			x: -0.75d
 			y: 1.5d
 		}
@@ -808,6 +809,7 @@
 		}
 		{
 			dependencies: ["4E5147F740457745"]
+			hide_dependency_lines: true
 			id: "56FDBCD9C5B61D1B"
 			min_width: 300
 			rewards: [{
@@ -821,8 +823,8 @@
 				item: "mekanism:resistive_heater"
 				type: "item"
 			}]
-			x: 9.25d
-			y: 0.25d
+			x: 10.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["4E5147F740457745"]
@@ -875,8 +877,8 @@
 					type: "item"
 				}
 			]
-			x: 10.5d
-			y: -1.0d
+			x: 9.25d
+			y: -2.25d
 		}
 		{
 			dependencies: ["5FB1C36C44672D6C"]
@@ -1247,7 +1249,7 @@
 				item: "industrialforegoing:machine_frame_supreme"
 				type: "item"
 			}]
-			x: 9.25d
+			x: 8.0d
 			y: -2.25d
 		}
 		{
@@ -1310,8 +1312,9 @@
 				item: "enderio:octadic_capacitor"
 				type: "item"
 			}]
+			title: "How capable of you!"
 			x: 10.5d
-			y: 0.25d
+			y: -1.0d
 		}
 		{
 			dependencies: ["1AD0CDD600BB5DF0"]
@@ -1333,7 +1336,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: 1.5d
+			y: -2.25d
 		}
 		{
 			dependencies: ["704E2028C6A94AAC"]
@@ -1352,6 +1355,34 @@
 			}]
 			x: -2.0d
 			y: -2.25d
+		}
+		{
+			dependencies: [
+				"4E5147F740457745"
+				"7E4760CE09F68631"
+			]
+			id: "73832DEEEF3165EA"
+			tasks: [{
+				id: "07D223FFE1DE62F6"
+				item: "solarflux:sp_6"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.25d
+		}
+		{
+			dependencies: [
+				"39CE2691053F993E"
+				"4E3F3FB508D42EF1"
+			]
+			id: "7E4760CE09F68631"
+			tasks: [{
+				id: "3529BFAF380F296D"
+				item: "solarflux:sp_5"
+				type: "item"
+			}]
+			x: 9.25d
+			y: 0.25d
 		}
 	]
 	title: "7. Chemical Industry"

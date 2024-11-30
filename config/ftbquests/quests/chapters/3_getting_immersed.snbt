@@ -2589,12 +2589,12 @@
 		{
 			dependencies: ["2D1BB8A835207114"]
 			description: [
-				"Tier Installers can be used on your Mekanism machinery to upgrade them into factories! (&eShift+RightClick&r)"
+				"You can upgrade your Mekanism machinery into basic factories!"
 				""
-				"Basic Factories can process 3 recipes at once."
+				"Basic factories can process 3 recipes at once."
 			]
 			id: "57F89AE2FB5431B2"
-			min_width: 300
+			min_width: 330
 			rewards: [{
 				count: 2
 				id: "096EBDC08B49F5B4"
@@ -2602,8 +2602,124 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "48D8069730DF2C2B"
-				item: "mekanism:basic_tier_installer"
+				id: "4F680ED0C85FEF18"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "mekanism:basic_smelting_factory"
+								tag: {
+									mekData: {
+										EnergyContainers: [{
+											Container: 0b
+											stored: "30000"
+										}]
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanism:basic_enriching_factory"
+								tag: {
+									mekData: {
+										EnergyContainers: [{
+											Container: 0b
+											stored: "30000"
+										}]
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanism:basic_crushing_factory"
+								tag: {
+									mekData: {
+										EnergyContainers: [{
+											Container: 0b
+											stored: "23850"
+										}]
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanism:basic_compressing_factory"
+								tag: {
+									mekData: {
+										EnergyContainers: [{
+											Container: 0b
+											stored: "93000"
+										}]
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanism:basic_combining_factory"
+								tag: {
+									mekData: {
+										EnergyContainers: [{
+											Container: 0b
+											stored: "45300"
+										}]
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanism:basic_purifying_factory"
+								tag: {
+									mekData: {
+										EnergyContainers: [{
+											Container: 0b
+											stored: "84600"
+										}]
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanism:basic_injecting_factory"
+								tag: {
+									mekData: {
+										EnergyContainers: [{
+											Container: 0b
+											stored: "98400"
+										}]
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanism:basic_infusing_factory"
+								tag: {
+									mekData: {
+										EnergyContainers: [{
+											Container: 0b
+											stored: "11700"
+										}]
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanism:basic_sawing_factory"
+								tag: {
+									mekData: {
+										EnergyContainers: [{
+											Container: 0b
+											stored: "10950"
+										}]
+									}
+								}
+							}
+						]
+					}
+				}
+				title: "Any Basic Factory"
 				type: "item"
 			}]
 			title: "Satis Factory"

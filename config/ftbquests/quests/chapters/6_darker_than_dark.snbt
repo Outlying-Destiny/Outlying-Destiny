@@ -63,6 +63,7 @@
 					type: "item"
 				}
 			]
+			title: "Binding of Soul"
 			x: -9.25d
 			y: -2.25d
 		}
@@ -81,6 +82,7 @@
 				item: "enderio:slice_and_splice"
 				type: "item"
 			}]
+			title: "Spliced run"
 			x: -10.5d
 			y: -1.0d
 		}
@@ -128,6 +130,7 @@
 				item: "thermal:machine_centrifuge"
 				type: "item"
 			}]
+			title: "It takes one. . . to make two."
 			x: -6.75d
 			y: -4.75d
 		}
@@ -137,8 +140,8 @@
 			min_width: 300
 			rewards: [{
 				count: 4
-				id: "435634661DFFB818"
-				item: "enderio:redstone_alloy_ingot"
+				id: "3AABF444BDB72B4A"
+				item: "minecraft:blaze_rod"
 				type: "item"
 			}]
 			tasks: [{
@@ -146,6 +149,7 @@
 				item: "thermal:machine_crucible"
 				type: "item"
 			}]
+			title: "Melt down"
 			x: -6.75d
 			y: -1.0d
 		}
@@ -164,6 +168,7 @@
 				item: "thermal:machine_bottler"
 				type: "item"
 			}]
+			title: "Fluidic Alloying"
 			x: -6.75d
 			y: -2.25d
 		}
@@ -222,6 +227,7 @@
 				item: "thermal:refined_fuel_bucket"
 				type: "item"
 			}]
+			title: "As refined it may is, it tastes poorly"
 			x: -1.75d
 			y: -6.0d
 		}
@@ -244,6 +250,7 @@
 				item: "thermal_extra:soul_infused_ingot"
 				type: "item"
 			}]
+			title: "Tired of infusing those ones"
 			x: -0.5d
 			y: -4.75d
 		}
@@ -283,6 +290,7 @@
 				item: "extendedcrafting:black_iron_ingot"
 				type: "item"
 			}]
+			title: "Well at least that's not steel"
 			x: -4.25d
 			y: -4.75d
 		}
@@ -305,6 +313,7 @@
 				item: "extendedcrafting:ender_ingot"
 				type: "item"
 			}]
+			title: "Finally, an en... wait, no.. HOW LONG IS THIS LINE?"
 			x: -5.5d
 			y: -3.5d
 		}
@@ -323,6 +332,7 @@
 				item: "extendedcrafting:enhanced_ender_ingot"
 				type: "item"
 			}]
+			title: "EE Ingot"
 			x: -4.25d
 			y: -2.25d
 		}
@@ -341,6 +351,7 @@
 				item: "thermal:tar"
 				type: "item"
 			}]
+			title: "Not Tartarus related, it's really not that deep"
 			x: -5.5d
 			y: -6.0d
 		}
@@ -442,6 +453,7 @@
 					type: "item"
 				}
 			]
+			title: "Fluid Madness"
 			x: -6.75d
 			y: -3.5d
 		}
@@ -460,6 +472,7 @@
 				item: "enderio:enchanter"
 				type: "item"
 			}]
+			title: "Gambling wasn't that fun anyway"
 			x: -9.25d
 			y: -1.0d
 		}
@@ -514,7 +527,7 @@
 					type: "item"
 				}
 			]
-			title: "T1 Mob Components"
+			title: "Organic Processing"
 			x: -10.5d
 			y: -2.25d
 		}
@@ -1070,6 +1083,7 @@
 					type: "item"
 				}
 			]
+			title: "It's Alive!"
 			x: -8.0d
 			y: -3.5d
 		}
@@ -1101,6 +1115,7 @@
 					type: "item"
 				}
 			]
+			title: "Those crystals. again..."
 			x: -8.0d
 			y: -1.0d
 		}
@@ -1109,7 +1124,7 @@
 			id: "7CAFF91379D3D603"
 			min_width: 300
 			rewards: [{
-				count: 8
+				count: 4
 				id: "4E8BF1CCB04F74AE"
 				item: "thermal:blizz_rod"
 				type: "item"
@@ -1119,6 +1134,7 @@
 				item: "thermal:machine_chiller"
 				type: "item"
 			}]
+			title: "Freeze! Don't move!"
 			x: -8.0d
 			y: 0.25d
 		}
@@ -1137,6 +1153,7 @@
 				item: "extendedcrafting:frame"
 				type: "item"
 			}]
+			title: "Craft Mastery"
 			x: -3.0d
 			y: -3.5d
 		}
@@ -1196,6 +1213,7 @@
 				item: "thermal:upgrade_augment_2"
 				type: "item"
 			}]
+			title: "Don't have your time"
 			x: -4.25d
 			y: -6.0d
 		}
@@ -1288,6 +1306,7 @@
 				item: "functionalstorage:gold_upgrade"
 				type: "item"
 			}]
+			title: "When you make Drawers THAT good"
 			x: -6.75d
 			y: 0.25d
 		}
@@ -1306,6 +1325,7 @@
 				item: "extendedcrafting:basic_table"
 				type: "item"
 			}]
+			title: "It looks cooler, okay?!"
 			x: -1.75d
 			y: -2.25d
 		}
@@ -1420,6 +1440,7 @@
 				item: "thermal:device_rock_gen"
 				type: "item"
 			}]
+			title: "Ingenious Igneous"
 			x: -8.0d
 			y: -2.25d
 		}
@@ -1452,7 +1473,7 @@
 						]
 					}
 				}
-				title: "Powered Spawner or Soul Catcher"
+				title: "Powered Spawner / Soul Catcher"
 				type: "item"
 			}]
 			x: -0.5d
@@ -1480,6 +1501,7 @@
 					type: "item"
 				}
 			]
+			title: "Monsters No More!"
 			x: 0.75d
 			y: -6.0d
 		}
@@ -1787,8 +1809,8 @@
 					type: "item"
 				}
 			]
-			x: 3.25d
-			y: -3.5d
+			x: 4.5d
+			y: -2.25d
 		}
 		{
 			dependencies: ["5E3B4D528B737D8F"]
@@ -1855,8 +1877,8 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
-			y: -4.75d
+			x: 3.25d
+			y: -3.5d
 		}
 		{
 			dependencies: ["344550902BB61752"]
@@ -1878,6 +1900,7 @@
 		}
 		{
 			dependencies: ["6EC3843A34FFAA3F"]
+			hide_dependency_lines: true
 			id: "7A8FA2A5AFEBE3C2"
 			min_width: 300
 			rewards: [{
@@ -1891,8 +1914,8 @@
 				item: "rainshield:rain_shield"
 				type: "item"
 			}]
-			x: 0.75d
-			y: -3.5d
+			x: 3.25d
+			y: -6.0d
 		}
 		{
 			dependencies: ["28CCC25EB1BF22A8"]
@@ -1931,7 +1954,51 @@
 				item: "actuallyadditions:dropper"
 				type: "item"
 			}]
+			x: 4.5d
+			y: -4.75d
+		}
+		{
+			dependencies: ["32160E9E60466D24"]
+			id: "5C97A3B7AE322F48"
+			tasks: [{
+				id: "28CE8573F4DC4EB1"
+				item: "solarflux:sp_1"
+				type: "item"
+			}]
+			x: 0.75d
+			y: -3.5d
+		}
+		{
+			dependencies: ["66B949D3973B2C2E"]
+			id: "4E3F3FB508D42EF1"
+			tasks: [{
+				id: "5B727A9808B6E6FB"
+				item: "solarflux:sp_4"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0C8B476FEA259D3F"]
+			id: "66B949D3973B2C2E"
+			tasks: [{
+				id: "1BF6E4D798A32BD4"
+				item: "solarflux:sp_3"
+				type: "item"
+			}]
 			x: 3.25d
+			y: -4.75d
+		}
+		{
+			dependencies: ["5C97A3B7AE322F48"]
+			id: "0C8B476FEA259D3F"
+			tasks: [{
+				id: "2557DE7A8A1A7FE6"
+				item: "solarflux:sp_2"
+				type: "item"
+			}]
+			x: 2.0d
 			y: -4.75d
 		}
 	]
