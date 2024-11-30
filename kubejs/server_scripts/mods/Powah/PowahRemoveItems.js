@@ -1,9 +1,5 @@
 ServerEvents.recipes(event => {
 
-    //Energy Prod
-    event.remove({id:/powah:crafting.+thermo_generator_.+/})
-    event.remove({id:/powah:crafting.+furnator_.+/})
-    event.remove({id:/powah:crafting.+magmator.+/})
-    event.remove({id:/powah:crafting.+solar_panel.+/})
-    event.remove({id:/powah:crafting.+ender_gate_.+/})
+    //Machines
+    event.remove({id:/powah:crafting\/(thermo_generator|furnator|magmator|solar_panel|ender_gate|reactor|ender_cell)_.+/})
 })

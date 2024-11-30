@@ -104,15 +104,15 @@ ServerEvents.recipes(event => {
       C:'powah:dielectric_casing',
       D:tier.materialblock
     })
-    event.shaped('4x powah:reactor_'+tier.tier, [
-      'ABA',
-      'BCB',
-      'ABA'
-      ], {
-      A:tier.materialblock,
-      B:'powah:capacitor_'+tier.tier,
-      C:'powah:uraninite'
-    })
+    //event.shaped('4x powah:reactor_'+tier.tier, [
+    //  'ABA',
+    //  'BCB',
+    //  'ABA'
+    //  ], {
+    //  A:tier.materialblock,
+    //  B:'powah:capacitor_'+tier.tier,
+    //  C:'powah:uraninite'
+    //})
     event.shaped('powah:energy_cell_'+tier.tier, [
       'ABA',
       'CDC',

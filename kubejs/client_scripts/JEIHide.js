@@ -8,6 +8,9 @@ JEIEvents.hideItems(event => {
     event.hide(/ad_astra:.+fluid_pip.+/)
     event.hide('ad_astra:coal_generator')
 
+    //Alchemistry
+    event.hide('chemlib:lithium_dust')
+
     //Applied Energistics 2
     event.hide('ae2:crafting_card')
 
@@ -78,21 +81,21 @@ JEIEvents.hideItems(event => {
     event.hide('mm:the_vat_tiny_item_port_output')
 
     //Mekanism
-    event.hide(['mekanism:formulaic_assemblicator', 'mekanism:crafting_formula', /mekanism:(restrictive|diversion)_transporter/])
+    event.hide(['mekanism:formulaic_assemblicator', 'mekanism:crafting_formula', /mekanism:(restrictive|diversion)_transporter/, /mekanism:(basic|advanced|elite|ultimate)_tier_installer/, /mekanism_extras:(absolute|supreme|cosmic|infinite)_tier_installer/])
     event.hide('mekanism:enriched_tin')
 
     //Mob Grinding Utils
     event.hide(['mob_grinding_utils:entity_spawner', 'mob_grinding_utils:spawner_upgrade_height', 'mob_grinding_utils:spawner_upgrade_width', 'mob_grinding_utils:jumbo_tank'])
 
     //Mystical Agriculture
-    event.hide(/mysticalagriculture:(enchanter|harvester|soul_extractor|seed_reprocessor|soulium_spawner)/, /mysticalagriculture:(s|passives|hostiles)oulium_dagger/, /mysticalagriculture:(soul_jar|experience_capsule)/, /mysticalagriculture:(_|deepslate_|nether_|end_)prosperity_ore/)
+    event.hide([/mysticalagriculture:(enchanter|harvester|soul_extractor|seed_reprocessor|soulium_spawner)/, /mysticalagriculture:(s|passives|hostiles)oulium_dagger/, /mysticalagriculture:(soul_jar|experience_capsule)/, /mysticalagriculture:(_|deepslate_|nether_|end_)prosperity_ore/])
 
     //PneumaticCraft
     event.hide(['pneumaticcraft:air_compressor', 'pneumaticcraft:advanced_air_compressor', 'pneumaticcraft:thermal_compressor', 'pneumaticcraft:liquid_compressor', 'pneumaticcraft:advanced_liquid_compressor', 'pneumaticcraft:manual_compressor', 'pneumaticcraft:electrostatic_compressor','pneumaticcraft:pneumatic_dynamo'])
     event.hide([/pneumaticcraft:spawner_.+/, /pneumaticcraft:.+_spawner/, /pneumaticcraft:.+_drone/])
 
     //Powah
-    event.hide([/powah:thermo_generator_.+/, /powah:furnator_.+/, /powah:magmator.+/, /powah:solar_panel.+/, /powah:ender_gate_.+/])
+    event.hide(/powah:(thermo_generator|furnator|magmator|solar_panel|ender_gate|reactor|ender_cell)_.+/)
 
     //ProjectRed
     event.hide([/projectred_exploration:.+backpack/, 'projectred_exploration:athame'])
@@ -107,6 +110,9 @@ JEIEvents.hideItems(event => {
     //Simply Jetpacks
     event.hide([/simplyjetpacks:.+(vanilla|ie|mek).+/, 'simplyjetpacks:jetpack_potato'])
     event.hide(/simplyjetpacks:armorplating_te[1-4]/)
+
+    //Solar Flux Reborn
+    event.hide([/solarflux:twilightforest.+/, /solarflux:sp_tf.+/, /solarflux:(traversal|dispersive|block_charging|furnace)_upgrade/, /solarflux:(emerald|ender)_glass/, 'solarflux:blazing_coating'])
 
     //Sophisticated Storage
     event.hide('sophisticatedstorage:controller')

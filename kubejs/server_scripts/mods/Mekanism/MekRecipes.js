@@ -84,8 +84,8 @@ ServerEvents.recipes(event => {
     event.replaceInput({ output: ['mekanism:personal_chest', 'mekanism:personal_barrel']},'mekanism:basic_control_circuit','mekanism:ultimate_control_circuit')
 
     //Lithium Block
-    event.shapeless('kubejs:lithium_block', '9x mekanism:dust_lithium')
-    event.shapeless('9x mekanism:dust_lithium', 'kubejs:lithium_block')
+    //event.shapeless('kubejs:lithium_block', '9x mekanism:dust_lithium')
+    //event.shapeless('9x mekanism:dust_lithium', 'kubejs:lithium_block')
 
     //Radiance Block
     event.shapeless('kubejs:radiance_block', '4x mekanism_extras:dust_radiance')
@@ -155,10 +155,11 @@ ServerEvents.recipes(event => {
     )
 
     //Factories
-    event.remove({id:/mekanism:tier_installer\/(advanced|elite|ultimate)/})
-    detailedbox('mekanism:advanced_tier_installer', 'mekanism:alloy_reinforced', 'mekanism:elite_control_circuit', 'thermal:lumium_ingot', '#minecraft:planks')
-    detailedbox('mekanism:elite_tier_installer', 'mekanism_extras:alloy_radiance', 'mekanism_extras:absolute_control_circuit', 'minecraft:dirt', '#minecraft:planks')
-    detailedbox('mekanism:ultimate_tier_installer', 'mekanism_extras:alloy_shining', 'mekanism_extras:cosmic_control_circuit', 'minecraft:dirt', '#minecraft:planks')
+    event.remove({id:/mekanism:tier_installer\/(basic|advanced|elite|ultimate)/})
+    event.remove({id:/mekanism_extras:tier_installer\/(absolute|supreme|cosmic|infinite)/})
+    //detailedbox('mekanism:advanced_tier_installer', 'mekanism:alloy_reinforced', 'mekanism:elite_control_circuit', 'thermal:lumium_ingot', '#minecraft:planks')
+    //detailedbox('mekanism:elite_tier_installer', 'mekanism_extras:alloy_radiance', 'mekanism_extras:absolute_control_circuit', 'minecraft:dirt', '#minecraft:planks')
+    //detailedbox('mekanism:ultimate_tier_installer', 'mekanism_extras:alloy_shining', 'mekanism_extras:cosmic_control_circuit', 'minecraft:dirt', '#minecraft:planks')
 
     event.remove({id:/mekanism:factory\/(advanced|elite|ultimate)\/.+/})
     const machinery = [
