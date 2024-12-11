@@ -392,7 +392,7 @@
 					type: "item"
 				}
 				{
-					count: 2L
+					count: 3L
 					id: "66037BA17834AB49"
 					item: "mekanism:thermal_evaporation_valve"
 					type: "item"
@@ -1362,11 +1362,18 @@
 				"7E4760CE09F68631"
 			]
 			id: "73832DEEEF3165EA"
+			rewards: [{
+				count: 16
+				id: "0407CB47599C6F7B"
+				item: "enderio:energetic_alloy_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "07D223FFE1DE62F6"
 				item: "solarflux:sp_6"
 				type: "item"
 			}]
+			title: "Google isn't any good at jokes it seems..."
 			x: 10.5d
 			y: 0.25d
 		}
@@ -1376,11 +1383,18 @@
 				"4E3F3FB508D42EF1"
 			]
 			id: "7E4760CE09F68631"
+			rewards: [{
+				count: 8
+				id: "7DAE0D4DA577CFE5"
+				item: "thermal_extra:shellite_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "3529BFAF380F296D"
 				item: "solarflux:sp_5"
 				type: "item"
 			}]
+			title: "...and solar panel jokes are usually pretty long, yknow?"
 			x: 9.25d
 			y: 0.25d
 		}

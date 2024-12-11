@@ -64,6 +64,7 @@ StartupEvents.registry('item', event => {
   event.create('enchanted_gear').displayName('Enchanted Gear').tag('forge:gears')
   event.create('infinity_gear').displayName('Infinity Bimetal Gear').tag('forge:gears')
   event.create('end_bimetal_gear').displayName('End Bimetal Gear').tag('forge:gears')
+  event.create('black_iron_gear').displayName('Black Iron Gear').tag('forge:gears')
 
   //Rods
   event.create('dark_steel_rod').displayName('Dark Steel Rod').tag('forge:rods')

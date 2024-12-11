@@ -112,6 +112,7 @@
 					type: "item"
 				}
 			]
+			title: "Alternate Crafting"
 			x: -4.25d
 			y: -3.5d
 		}
@@ -209,6 +210,7 @@
 				item: "thermal:machine_refinery"
 				type: "item"
 			}]
+			title: "A Fraction of Power"
 			x: -3.0d
 			y: -6.0d
 		}
@@ -411,6 +413,7 @@
 					type: "item"
 				}
 			]
+			title: "Despite any belief, it's not an another core"
 			x: -0.5d
 			y: -1.0d
 		}
@@ -491,6 +494,7 @@
 				item: "laserio:logic_chip"
 				type: "item"
 			}]
+			title: "Cheap Logic"
 			x: -9.25d
 			y: -4.75d
 		}
@@ -505,28 +509,34 @@
 				table_id: 551655590567055679L
 				type: "choice"
 			}]
-			tasks: [
-				{
-					id: "37A5F5C04E85E14A"
-					item: "enderio:z_logic_controller"
-					type: "item"
+			tasks: [{
+				id: "3DF33DB03D0E6F90"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "enderio:z_logic_controller"
+							}
+							{
+								Count: 1b
+								id: "enderio:ender_resonator"
+							}
+							{
+								Count: 1b
+								id: "enderio:skeletal_contractor"
+							}
+							{
+								Count: 1b
+								id: "enderio:zombie_electrode"
+							}
+						]
+					}
 				}
-				{
-					id: "29A5389ACBD6D7C8"
-					item: "enderio:ender_resonator"
-					type: "item"
-				}
-				{
-					id: "65A578D0E7337412"
-					item: "enderio:skeletal_contractor"
-					type: "item"
-				}
-				{
-					id: "069378AD48978A82"
-					item: "enderio:zombie_electrode"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "Organic Processing"
 			x: -10.5d
 			y: -2.25d
@@ -805,6 +815,7 @@
 				item: "modularrouters:modular_router"
 				type: "item"
 			}]
+			title: "Modular Routing"
 			x: -10.5d
 			y: -3.5d
 		}
@@ -1175,6 +1186,7 @@
 				item: "enderio:xp_obelisk"
 				type: "item"
 			}]
+			title: "More of a XP Cube"
 			x: -10.5d
 			y: 0.25d
 		}
@@ -1196,6 +1208,7 @@
 				item: "extendedcrafting:enhanced_ender_component"
 				type: "item"
 			}]
+			title: "Fancy names for fancy components"
 			x: -3.0d
 			y: -1.0d
 		}
@@ -1422,7 +1435,7 @@
 					type: "item"
 				}
 			]
-			title: "Wireless Personal Battery!"
+			title: "Binding of Energy"
 			x: -8.0d
 			y: -4.75d
 		}
@@ -1476,6 +1489,7 @@
 				title: "Powered Spawner / Soul Catcher"
 				type: "item"
 			}]
+			title: "Spawning ever so easy!"
 			x: -0.5d
 			y: -6.0d
 		}
@@ -1542,6 +1556,7 @@
 				item: "actuallyadditions:atomic_reconstructor"
 				type: "item"
 			}]
+			title: "\"I have had many names\""
 			x: -1.75d
 			y: -3.5d
 		}
@@ -1646,6 +1661,7 @@
 				item: "actuallyadditions:palis_crystal"
 				type: "item"
 			}]
+			title: "Blazing Through²"
 			x: -0.5d
 			y: -2.25d
 		}
@@ -1664,6 +1680,7 @@
 				item: "actuallyadditions:basic_coil"
 				type: "item"
 			}]
+			title: "Cool Coil"
 			x: -3.0d
 			y: -4.75d
 		}
@@ -1685,6 +1702,7 @@
 				item: "actuallyadditions:advanced_coil"
 				type: "item"
 			}]
+			title: "Cool Coiller"
 			x: 0.75d
 			y: -2.25d
 		}
@@ -1895,6 +1913,7 @@
 				item: "enderio:double_layer_capacitor"
 				type: "item"
 			}]
+			title: "Slightly capable, I see."
 			x: 0.75d
 			y: -4.75d
 		}
@@ -1914,6 +1933,7 @@
 				item: "rainshield:rain_shield"
 				type: "item"
 			}]
+			title: "I'll take the Sun instead"
 			x: 3.25d
 			y: -6.0d
 		}
@@ -1936,6 +1956,7 @@
 				}
 				type: "item"
 			}]
+			title: "I love when the SJ2 lang file doesn't work properly. Yes that is the Quest Title joke"
 			x: 2.0d
 			y: -6.0d
 		}
@@ -1960,44 +1981,72 @@
 		{
 			dependencies: ["32160E9E60466D24"]
 			id: "5C97A3B7AE322F48"
+			rewards: [{
+				count: 4
+				id: "06F036A9D2EE4FF6"
+				item: "actuallyadditions:palis_crystal"
+				type: "item"
+			}]
 			tasks: [{
 				id: "28CE8573F4DC4EB1"
 				item: "solarflux:sp_1"
 				type: "item"
 			}]
+			title: "Okay, so... how do I make 11 Solar Panel jokes?"
 			x: 0.75d
 			y: -3.5d
 		}
 		{
 			dependencies: ["66B949D3973B2C2E"]
 			id: "4E3F3FB508D42EF1"
+			rewards: [{
+				count: 8
+				id: "7B0198E180414720"
+				item: "thermal:lumium_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5B727A9808B6E6FB"
 				item: "solarflux:sp_4"
 				type: "item"
 			}]
+			title: "+ Jokes aside, no one wants to see ultra long Quest Titles..."
 			x: 4.5d
 			y: -6.0d
 		}
 		{
 			dependencies: ["0C8B476FEA259D3F"]
 			id: "66B949D3973B2C2E"
+			rewards: [{
+				count: 4
+				id: "0185B25C083A8341"
+				item: "extendedcrafting:black_iron_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1BF6E4D798A32BD4"
 				item: "solarflux:sp_3"
 				type: "item"
 			}]
+			title: "11 times the same joke would be really exhausting."
 			x: 3.25d
 			y: -4.75d
 		}
 		{
 			dependencies: ["5C97A3B7AE322F48"]
 			id: "0C8B476FEA259D3F"
+			rewards: [{
+				count: 4
+				id: "6370511EB6FA3CCC"
+				item: "enderio:conductive_alloy_ingot"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2557DE7A8A1A7FE6"
 				item: "solarflux:sp_2"
 				type: "item"
 			}]
+			title: "No, seriously, I'm even struggling with making 2 Blazing joke."
 			x: 2.0d
 			y: -4.75d
 		}

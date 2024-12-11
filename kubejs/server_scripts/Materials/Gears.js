@@ -76,4 +76,5 @@ ServerEvents.recipes(event => {
     allpress('kubejs:energized_steel_gear', 'powah:steel_energized', 4, 9600)
     allpress('kubejs:enchanted_gear', 'kubejs:enchanted_ingot', 4, 9600)
     allpress('kubejs:red_gear', 'projectred_core:red_ingot', 4, 9600)
+    allpress('kubejs:black_iron_gear', 'extendedcrafting:black_iron_ingot', 4, 9600)
 })

@@ -109,15 +109,15 @@ ServerEvents.recipes(event => {
     event.remove({id:'mekanism:pressurized_reaction_chamber'})
     event.remove({id:/mekanism:chemical_(crystallizer|oxidizer|infuser|dissolution_chamber)/})
     event.remove({id:/mekanism:(fuelwood|resistive)_heater/})
-    event.shaped('mekanism:electrolytic_separator', ['ABA','CDC','EFE'], {A:'extendedcrafting:black_iron_ingot',B:'mekanism:electrolytic_core',C:'mekanism:ultimate_chemical_tank',D:'mekanism:steel_casing',E:'extendedcrafting:black_iron_block',F:'mekanism:ultimate_fluid_tank'})
-    event.shaped('mekanism:rotary_condensentrator', ['ABA','CDE','FBF'], {A:'extendedcrafting:black_iron_ingot',B:'mekanism:ultimate_control_circuit',C:'mekanism:ultimate_chemical_tank',D:'mekanism:steel_casing',E:'mekanism:ultimate_fluid_tank',F:'extendedcrafting:black_iron_block'})
+    event.shaped('mekanism:electrolytic_separator', ['ABA','CDC','EFE'], {A:'extendedcrafting:black_iron_ingot',B:'mekanism:electrolytic_core',C:'mekanism:ultimate_chemical_tank',D:'mekanism:steel_casing',E:'kubejs:black_iron_gear',F:'mekanism:ultimate_fluid_tank'})
+    event.shaped('mekanism:rotary_condensentrator', ['ABA','CDE','FBF'], {A:'extendedcrafting:black_iron_ingot',B:'mekanism:ultimate_control_circuit',C:'mekanism:ultimate_chemical_tank',D:'mekanism:steel_casing',E:'mekanism:ultimate_fluid_tank',F:'kubejs:black_iron_gear'})
     event.shaped('mekanism:pressurized_reaction_chamber', ['ABA','CDC','EFE'], {A:'extendedcrafting:black_iron_ingot',B:'mekanism:electrolytic_core',C:'mekanism:ultimate_control_circuit',D:'mekanism:enrichment_chamber',E:'mekanism:ultimate_chemical_tank',F:'mekanism:ultimate_fluid_tank'})
-    event.shaped('mekanism:chemical_crystallizer', ['ABA','CDE','FBF'], {A:'enderio:dark_steel_block',B:'mekanism:hdpe_sheet',C:'mekanism:ultimate_chemical_tank',D:'mekanism:steel_casing',E:'#mekanism:personal_storage',F:'extendedcrafting:black_iron_block'})
-    event.shaped('mekanism:chemical_oxidizer', ['ABA','CDE','FBF'], {A:'extendedcrafting:black_iron_ingot',B:'thermal_extra:dragonsteel_gear',C:'#mekanism:personal_storage',D:'mekanism:steel_casing',E:'mekanism:ultimate_chemical_tank',F:'extendedcrafting:black_iron_block'})
-    event.shaped('mekanism:chemical_infuser', ['ABA','CDC','ECE'], {A:'extendedcrafting:black_iron_ingot',B:'thermal_extra:dragonsteel_gear',C:'mekanism:ultimate_chemical_tank',D:'mekanism:steel_casing',E:'extendedcrafting:black_iron_block'})
-    event.shaped('mekanism:chemical_dissolution_chamber', ['ABA','CDC','EFE'], {A:'extendedcrafting:black_iron_ingot',B:'actuallyadditions:empowered_palis_crystal',C:'mekanism:ultimate_chemical_tank',D:'mekanism:steel_casing',E:'extendedcrafting:black_iron_block',F:'mekanism:hdpe_sheet'})
+    event.shaped('mekanism:chemical_crystallizer', ['ABA','CDE','FBF'], {A:'enderio:dark_steel_block',B:'mekanism:hdpe_sheet',C:'mekanism:ultimate_chemical_tank',D:'mekanism:steel_casing',E:'#mekanism:personal_storage',F:'kubejs:black_iron_gear'})
+    event.shaped('mekanism:chemical_oxidizer', ['ABA','CDE','FBF'], {A:'extendedcrafting:black_iron_ingot',B:'thermal_extra:dragonsteel_gear',C:'#mekanism:personal_storage',D:'mekanism:steel_casing',E:'mekanism:ultimate_chemical_tank',F:'kubejs:black_iron_gear'})
+    event.shaped('mekanism:chemical_infuser', ['ABA','CDC','ECE'], {A:'extendedcrafting:black_iron_ingot',B:'thermal_extra:dragonsteel_gear',C:'mekanism:ultimate_chemical_tank',D:'mekanism:steel_casing',E:'kubejs:black_iron_gear'})
+    event.shaped('mekanism:chemical_dissolution_chamber', ['ABA','CDC','EFE'], {A:'extendedcrafting:black_iron_ingot',B:'actuallyadditions:empowered_palis_crystal',C:'mekanism:ultimate_chemical_tank',D:'mekanism:steel_casing',E:'kubejs:black_iron_gear',F:'mekanism:hdpe_sheet'})
     event.shaped('mekanism:fuelwood_heater', ['ABA','CDC','AAA'], {A:'extendedcrafting:black_iron_ingot',B:'mekanism:ultimate_control_circuit',C:'minecraft:blast_furnace',D:'mekanism:steel_casing',})
-    event.shaped('mekanism:resistive_heater', ['ABA','BCB','DED'], {A:'extendedcrafting:black_iron_ingot',B:'mekanism_extras:dust_radiance',C:'mekanism:fuelwood_heater',D:'extendedcrafting:black_iron_block',E:'mekanism:basic_induction_cell'})
+    event.shaped('mekanism:resistive_heater', ['ABA','BCB','DED'], {A:'extendedcrafting:black_iron_ingot',B:'mekanism_extras:dust_radiance',C:'mekanism:fuelwood_heater',D:'kubejs:black_iron_gear',E:'mekanism:basic_induction_cell'})
 
     //Dynamic Tank
     event.replaceInput(

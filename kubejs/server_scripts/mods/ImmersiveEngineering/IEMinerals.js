@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
 
     mineral2(['minecraft:deepslate_iron_ore', 'minecraft:deepslate_gold_ore'], [0.7, 0.3], 'minecraft:overworld', 20, 'pyrite', 'Pyrite', '§r§fCommon')
     mineral2(['minecraft:deepslate_iron_ore', 'minecraft:deepslate_copper_ore'], [0.55, 0.45], 'minecraft:overworld', 20, 'chalcopyrite', 'Chalcopyrite', '§r§fCommon')
-    mineral2(['minecraft:deepslate_redstone_ore', 'thermal:deepslate_cinnabar_ore'], [0.75, 0.25], 'minecraft:overworld', 16, 'alkaline', 'Alkaline', '§r§bUncommon')
+    mineral3(['minecraft:deepslate_redstone_ore', 'thermal:deepslate_cinnabar_ore', 'thermal:deepslate_niter_ore'], [0.7, 0.2, 0.1], 'minecraft:overworld', 16, 'alkaline', 'Alkaline', '§r§bUncommon')
     mineral2(['minecraft:deepslate_gold_ore', 'kubejs:deepslate_quartz_ore'], [0.75, 0.25], 'minecraft:overworld', 20, 'orogenic', 'Orogenic', '§r§fCommon')
     mineral2(['thermal:deepslate_tin_ore', 'minecraft:deepslate_copper_ore'],[0.7, 0.3], 'minecraft:overworld', 20, 'cassiterite', 'Cassiterite', '§r§fCommon')
     mineral2(['kubejs:deepslate_certus_quartz_ore', 'kubejs:deepslate_quartz_ore'], [0.7, 0.3], 'minecraft:overworld', 10, 'certus', 'Certus', '§r§6Very Rare')

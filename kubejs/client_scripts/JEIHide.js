@@ -96,6 +96,7 @@ JEIEvents.hideItems(event => {
 
     //Powah
     event.hide(/powah:(thermo_generator|furnator|magmator|solar_panel|ender_gate|reactor|ender_cell)_.+/)
+    event.hide('powah:photoelectric_pane')
 
     //ProjectRed
     event.hide([/projectred_exploration:.+backpack/, 'projectred_exploration:athame'])

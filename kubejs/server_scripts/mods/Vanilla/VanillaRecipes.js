@@ -49,6 +49,7 @@ ServerEvents.recipes(event => {
     //Smithing Template
     event.shaped('minecraft:netherite_upgrade_smithing_template', ['ABA','BAB','ABA'], {A:'enderio:pulsating_crystal', B:'compressium:netherrack_1'})
 
-
+    //Snow Compacting
+    event.shapeless('4x minecraft:snowball', 'minecraft:snow_block')
 
 })
