@@ -5,4 +5,9 @@ ServerEvents.recipes(event => {
 
     //Photoelectric Pane
     event.remove({id:'powah:crafting/photoelectric_pane'})
+
+    //Uraninite Stuff
+    event.remove({id:/powah:(energizing|smelting|crafting)\/uraninite/})
+    event.remove({id:'powah:energizing/uranium_to_uraninite'})
+    
 })

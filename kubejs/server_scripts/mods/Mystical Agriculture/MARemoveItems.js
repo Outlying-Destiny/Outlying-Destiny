@@ -8,4 +8,12 @@ ServerEvents.recipes(event => {
 
     //Jars
     event.remove({id:/mysticalagriculture:(soul_jar|experience_capsule)/})
+
+    //Prosperity Ores
+    event.remove({id:/mystical(agriculture|agradditions):(nether_|end_){0,1}prosperity_shard_smelted/})
+
+    //Soulium
+    event.remove({id:/mysticalagriculture:soulium/})
+    event.remove({id:'mysticalagriculture:seed/infusion/soulium'})
+    event.remove({id:'mysticalagriculture:essence/mysticalagriculture/soulium_dust'})
 })

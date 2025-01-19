@@ -1,0 +1,10 @@
+{
+	id: "60FD09E2B8003846"
+	loot_size: 1
+	order_index: 76
+	rewards: [
+		{ count: 16, item: "naturesaura:infused_iron" }
+		{ count: 4, item: "kubejs:extradimensional_alloy_ingot" }
+	]
+	title: "OD Abyssal Ingot"
+}

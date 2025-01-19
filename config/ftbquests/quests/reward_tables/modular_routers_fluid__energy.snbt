@@ -1,7 +1,7 @@
 {
 	id: "4021E65F89F53BF6"
 	loot_size: 1
-	order_index: 47
+	order_index: 46
 	rewards: [
 		{ item: "enderio:pressurized_fluid_tank" }
 		{ item: "immersiveengineering:capacitor_mv" }

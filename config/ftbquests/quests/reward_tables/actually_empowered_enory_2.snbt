@@ -1,7 +1,7 @@
 {
 	id: "2CB703F05F48FDB1"
 	loot_size: 1
-	order_index: 58
+	order_index: 57
 	rewards: [
 		{ count: 32, item: "mekanism:yellow_cake_uranium" }
 		{ count: 8, item: "extendedcrafting:luminessence" }

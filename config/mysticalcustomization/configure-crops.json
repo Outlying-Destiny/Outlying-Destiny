@@ -1,1 +1,5 @@
-{}
+{
+    "mysticalagriculture:uraninite": {
+        "enabled": false
+    }
+}

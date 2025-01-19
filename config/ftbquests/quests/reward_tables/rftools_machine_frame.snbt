@@ -1,0 +1,10 @@
+{
+	id: "142760CC68520ED7"
+	loot_size: 1
+	order_index: 83
+	rewards: [
+		{ count: 16, item: "mekanism:alloy_atomic" }
+		{ count: 8, item: "rftoolsbase:dimensionalshard" }
+	]
+	title: "RFTools Machine Frame"
+}

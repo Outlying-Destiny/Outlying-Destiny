@@ -1,0 +1,10 @@
+{
+	id: "0CE9489A47F1E24A"
+	loot_size: 1
+	order_index: 87
+	rewards: [
+		{ count: 20, item: "ae2:printed_silicon" }
+		{ count: 4, item: "kubejs:printed_extradimensional_processor" }
+	]
+	title: "OD Extra-Dimensional Processor"
+}

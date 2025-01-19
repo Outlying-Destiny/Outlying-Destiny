@@ -1,0 +1,10 @@
+{
+	id: "55B5FA973667E9D7"
+	loot_size: 1
+	order_index: 86
+	rewards: [
+		{ count: 20, item: "ae2:printed_silicon" }
+		{ count: 4, item: "kubejs:printed_automaton_processor" }
+	]
+	title: "OD Automaton Processor"
+}

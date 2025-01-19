@@ -440,10 +440,10 @@
 			id: "415C7601E035DBDB"
 			min_width: 300
 			rewards: [{
-				count: 4
-				id: "6BC3A597CCDC3193"
-				item: "thermal:invar_gear"
-				type: "item"
+				exclude_from_claim_all: true
+				id: "217B571F6B1453FB"
+				table_id: 7032291403341332624L
+				type: "choice"
 			}]
 			size: 1.5d
 			tasks: [{
@@ -1526,7 +1526,7 @@
 				"36DA75C9F276770F"
 				"0D79613C2A510AAB"
 			]
-			description: ["Consumes less energy"]
+			description: ["Consumes less energy (gaslight)"]
 			icon: "ae2:controller"
 			id: "4A6467F39566C34D"
 			min_width: 300
@@ -1589,7 +1589,7 @@
 			description: [
 				"Find an AE2 Meteor! They can be found in The Aether."
 				""
-				"You can collect Sky Stone, Certus Quartz but most importantly  Inscriber Presses at their center from them."
+				"You can collect Sky Stone, Certus Quartz but most importantly Inscriber Presses at their core."
 				""
 				"Those presses are required to start Applied Energistic and make your own digital storage!"
 			]
@@ -1600,23 +1600,53 @@
 			size: 1.25d
 			tasks: [
 				{
-					id: "0045122C2902C5AA"
-					item: "ae2:silicon_press"
+					id: "27C6D307CDEE4464"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ae2:silicon_press"
+								}
+								{
+									Count: 1b
+									id: "ae2:logic_processor_press"
+								}
+								{
+									Count: 1b
+									id: "ae2:engineering_processor_press"
+								}
+								{
+									Count: 1b
+									id: "ae2:calculation_processor_press"
+								}
+							]
+						}
+					}
+					title: "Basic Inscriber Presses"
 					type: "item"
 				}
 				{
-					id: "57D8E0D9C0965104"
-					item: "ae2:logic_processor_press"
-					type: "item"
-				}
-				{
-					id: "3EAE9880566B81C3"
-					item: "ae2:engineering_processor_press"
-					type: "item"
-				}
-				{
-					id: "0960B825F4BD86D6"
-					item: "ae2:calculation_processor_press"
+					id: "6043F06AFD9A1759"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "kubejs:automaton_processor_press"
+								}
+								{
+									Count: 1b
+									id: "kubejs:extradimensional_processor_press"
+								}
+							]
+						}
+					}
+					title: "Advanced Inscriber Presses"
 					type: "item"
 				}
 			]
@@ -1850,7 +1880,7 @@
 					type: "item"
 				}
 				{
-					id: "2E1BE5FFF2E97766"
+					id: "068E84D1A890067C"
 					item: {
 						Count: 1
 						id: "itemfilters:or"
@@ -1864,22 +1894,13 @@
 									Count: 1b
 									id: "functionalstorage:framed_storage_controller"
 								}
-								{
-									Count: 1b
-									id: "functionalstorage:controller_extension"
-								}
-								{
-									Count: 1b
-									id: "functionalstorage:framed_controller_extension"
-								}
 							]
 						}
 					}
-					title: "Storage Controller / Access Point"
 					type: "item"
 				}
 				{
-					id: "2DF19D8B21DE5DB0"
+					id: "1F17FE1B541753F3"
 					item: {
 						Count: 1
 						id: "functionalstorage:linking_tool"
@@ -2034,8 +2055,8 @@
 			min_width: 300
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "09135B1F20054194"
-				table_id: 7430803578502713902L
+				id: "400589EFCC65AAEC"
+				table_id: 9119613390259379309L
 				type: "choice"
 			}]
 			tasks: [{

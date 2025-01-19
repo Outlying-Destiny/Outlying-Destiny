@@ -30,4 +30,13 @@ ServerEvents.recipes(event => {
     event.shaped('4x immersiveengineering:wirecoil_redstone', [' A ','BCB',' A '], {A: 'kubejs:invar_wire',B: 'minecraft:redstone',C: '#balm:wooden_rods'})
     event.remove({id:/therma(l|l_extra):compat.+/})
 
+    //Collapsible Glider
+    event.remove({id:'immersiveengineering:crafting/glider'})
+
+    //Unpacking Die Recipes
+    event.remove({id:'immersiveengineering:metalpress/melon'})
+    event.remove({id:'farmersdelight:integration/immersiveengineering/metalpress/pumpkin'})
+
+    //Induction Charger
+    event.remove({id:'immersiveengineering:crafting/toolupgrade_powerpack_induction'})
 })

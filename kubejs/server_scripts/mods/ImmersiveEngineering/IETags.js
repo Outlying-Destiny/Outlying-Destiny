@@ -12,4 +12,6 @@ ServerEvents.tags('item', event => {
     //Aluminium
     event.removeAllTagsFrom(/immersiveengineering:(nugget|ingot|storage|dust)_aluminum/)
 
+    //Slag Gravel
+    event.removeAllTagsFrom('immersiveengineering:slag_gravel')
 })

@@ -1,7 +1,7 @@
 {
 	id: "435EC220DE8F50BB"
 	loot_size: 1
-	order_index: 61
+	order_index: 60
 	rewards: [
 		{ count: 16, item: "powah:steel_energized" }
 		{ count: 8, item: "powah:crystal_blazing" }

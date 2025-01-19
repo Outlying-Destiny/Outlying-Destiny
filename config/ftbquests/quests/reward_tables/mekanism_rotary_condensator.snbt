@@ -1,7 +1,7 @@
 {
 	id: "76182D780CF22B59"
 	loot_size: 1
-	order_index: 63
+	order_index: 62
 	rewards: [
 		{ count: 8, item: "mekanism:advanced_control_circuit" }
 		{ count: 4, item: "extendedcrafting:black_iron_ingot" }

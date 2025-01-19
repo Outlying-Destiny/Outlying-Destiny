@@ -13,4 +13,7 @@ ServerEvents.tags('item', event => {
     //Niter Dust
     event.add('forge:dusts/saltpeter', 'thermal:niter_dust')
 
+    //Thermal Extra Armor
+    event.removeAllTagsFrom(/thermal_extra:.+_(helmet|chestplate|leggings|boots|sword|axe|pickaxe|shovel|hoe|excavator|hammer|knife|sickle)/)
+
 })

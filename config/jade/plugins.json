@@ -60,6 +60,9 @@
   "entangled": {
     "entangled_block_component": true
   },
+  "mekanismcovers": {
+    "cover_component": true
+  },
   "endercrop": {
     "endercrop": true,
     "endstone": false

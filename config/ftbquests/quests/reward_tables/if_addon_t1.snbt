@@ -1,7 +1,7 @@
 {
 	id: "427CA881CE837512"
 	loot_size: 1
-	order_index: 70
+	order_index: 69
 	rewards: [
 		{ count: 8, item: "thermal:signalum_ingot" }
 		{ count: 4, item: "mekanism:upgrade_speed" }

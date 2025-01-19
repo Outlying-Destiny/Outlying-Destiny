@@ -1,7 +1,7 @@
 {
 	id: "5A706DF31C658FD2"
 	loot_size: 1
-	order_index: 49
+	order_index: 48
 	rewards: [
 		{ count: 8, item: "ae2:logic_processor" }
 		{ count: 8, item: "ae2:engineering_processor" }

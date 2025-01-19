@@ -1,7 +1,7 @@
 {
 	id: "5FF1B89BCD83458C"
 	loot_size: 1
-	order_index: 68
+	order_index: 67
 	rewards: [
 		{ count: 64, item: "enderio:grains_of_infinity" }
 		{ count: 16, item: "enderio:dark_steel_ingot" }

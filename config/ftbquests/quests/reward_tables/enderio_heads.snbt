@@ -1,7 +1,7 @@
 {
 	id: "07A7DFD63A1B913F"
 	loot_size: 1
-	order_index: 44
+	order_index: 43
 	rewards: [
 		{ count: 4, item: "minecraft:zombie_head" }
 		{ count: 4, item: "minecraft:skeleton_skull" }

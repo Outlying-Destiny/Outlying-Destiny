@@ -8,14 +8,10 @@ ServerEvents.recipes(event => {
     event.remove({id: 'enderio:alloy_smelting/nethercotta'})
 
     //Silicon
-    event.remove({id:'enderio:sag_milling/redstone_ore'})
-    event.remove({id:'enderio:sag_milling/clay'})
-    event.remove({id:'enderio:sag_milling/sand'})
+    event.remove({id:/enderio:sag_milling\/(redstone_ore|clay|sand)/})
 
     //Powdered Materials
-    event.remove({id:'enderio:sag_milling/ender_pearl'})
-    event.remove({id:'enderio:sag_milling/quartz'})
-    event.remove({id:'enderio:sag_milling/quartz_ore'})
+    event.remove({id:/enderio:sag_milling\/(ender_pearl|quartz|quartz_ore)/})
 
     //Yeta Wrench
     event.remove({id:'enderio:yeta_wrench'})
@@ -41,10 +37,18 @@ ServerEvents.recipes(event => {
     event.remove({id:'enderio:tank_fill/experience_bottle'})
     event.remove({id:'enderio:tank_empty/glass_bottle'})
 
-    function EIOTank(output, input, fluid, fluidamount, isemptying){
-        event.custom({"type": "enderio:tank","fluid": {"amount": fluidamount,"fluid": fluid},"input": {"item": input},"is_emptying": isemptying,"output": output})
-    }
+    function EIOTank(output, input, fluid, fluidamount, isemptying){event.custom({"type": "enderio:tank","fluid": {"amount": fluidamount,"fluid": fluid},"input": {"item": input},"is_emptying": isemptying,"output": output})}
     EIOTank('minecraft:experience_bottle', 'minecraft:glass_bottle', 'mob_grinding_utils:fluid_xp', 250, false)
     EIOTank('minecraft:glass_bottle', 'minecraft:experience_bottle', 'mob_grinding_utils:fluid_xp', 250, true)
     event.remove({id:'thermal:bottler_xp_juice_bucket'})
+
+    //Enticing Crystal
+    event.remove({id:'enderio:soulbinding/enticing_crystal'})
+
+    //Glider Wing
+    event.remove({id:'enderio:glider_wing'})
+
+    //Flour / Base Cake
+    event.remove({id:'enderio:sag_milling/wheat'})
+    event.remove({id:'enderio:cake'})
 })

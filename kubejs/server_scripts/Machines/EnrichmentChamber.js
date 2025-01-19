@@ -2,6 +2,7 @@ ServerEvents.recipes(event => {
 
     //Function
     function enrichment(output, outputamount, input, inputamount){event.custom({"type":"mekanism:enriching","input":{"amount":inputamount,"ingredient":{"item":input}},"output":{"count":outputamount,"item":output}})}
+    function enrichmenttag(output, outputamount, input, inputamount){event.custom({"type":"mekanism:enriching","input":{"amount":inputamount,"ingredient":{"tag":input}},"output":{"count":outputamount,"item":output}})}
 
     //New Enriched Items
     enrichment('kubejs:enriched_rose_gold', 1, 'thermal:rose_gold_ingot', 1)
@@ -14,7 +15,10 @@ ServerEvents.recipes(event => {
 
     //Ore Dupe
     enrichment('thermal:silver_dust', 4, 'thermal:raw_silver', 3)
+    enrichmenttag('thermal:silver_dust', 2,'forge:ores/silver', 1)
     enrichment('thermal:nickel_dust', 4, 'thermal:raw_nickel', 3)
+    enrichmenttag('thermal:nickel_dust', 2,'forge:ores/nickel', 1)
+    enrichment('draconicevolution:draconium_dust', 2,'draconicevolution:end_draconium_ore', 1)
 
     //AE2 Dusts to Crystals
     event.remove({id:'ae2:transform/certus_quartz_crystals'})

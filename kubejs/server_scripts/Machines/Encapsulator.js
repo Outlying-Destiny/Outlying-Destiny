@@ -17,14 +17,14 @@ ServerEvents.recipes(event => {
     encapsulator('extendedcrafting:ender_ingot', 'extendedcrafting:black_iron_ingot', 'enderio:dew_of_the_void', 250, 12000)
 
     //Soul Infused Ingot
-    encapsulator('thermal_extra:soul_infused_ingot', 'kubejs:infusing_soul_ingot', 'thermal:refined_fuel', 200, 14000)
+    encapsulator('thermal_extra:soul_infused_ingot', 'kubejs:infusing_soul_ingot', 'thermal:refined_fuel', 250, 14000)
 
     //Biofuel Infused Ingot
     encapsulator('kubejs:biofuel_ingot', 'thermal:lead_ingot', 'industrialforegoing:biofuel', 250, 8000)
 
     //Dimensional Shard
     event.remove({id:'rftoolsbase:dimensionalshard'})
-    encapsulator('rftoolsbase:dimensionalshard', 'mekanism:enriched_diamond', 'industrialforegoing:ether_gas', 100, 12000)
+    encapsulator('rftoolsbase:dimensionalshard', 'mekanism:enriched_diamond', 'industrialforegoing:ether_gas', 60, 12000)
 
     //Dragon's Breath
     encapsulator('minecraft:dragon_breath', 'botania:ender_air_bottle', 'kubejs:molten_draconium', 250, 6000)

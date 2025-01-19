@@ -1,0 +1,11 @@
+{
+	id: "1000B0A741A6778B"
+	loot_size: 1
+	order_index: 91
+	rewards: [
+		{ count: 24, item: "thermal:invar_plate" }
+		{ count: 8, item: "mekanism:elite_control_circuit" }
+		{ count: 4, item: "kubejs:automaton_processor" }
+	]
+	title: "AE2 Crafting Unit"
+}

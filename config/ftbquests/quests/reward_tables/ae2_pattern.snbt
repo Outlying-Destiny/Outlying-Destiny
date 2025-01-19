@@ -1,0 +1,10 @@
+{
+	id: "6E40DF6610FB19B9"
+	loot_size: 1
+	order_index: 88
+	rewards: [
+		{ count: 32, item: "thermal:invar_plate" }
+		{ count: 12, item: "thermal:signalum_plate" }
+	]
+	title: "AE2 Pattern"
+}

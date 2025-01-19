@@ -1,0 +1,10 @@
+{
+	id: "75AD05C9FEA47016"
+	loot_size: 1
+	order_index: 94
+	rewards: [
+		{ count: 2, item: "ae2:annihilation_core" }
+		{ count: 2, item: "ae2:formation_core" }
+	]
+	title: "AE2 Planes"
+}

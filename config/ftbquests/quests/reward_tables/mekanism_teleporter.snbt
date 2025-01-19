@@ -1,0 +1,10 @@
+{
+	id: "68DCA3D16D1B4F29"
+	loot_size: 1
+	order_index: 78
+	rewards: [
+		{ count: 16, item: "extendedcrafting:black_iron_ingot" }
+		{ count: 6, item: "kubejs:extradimensional_alloy_ingot" }
+	]
+	title: "Mekanism Teleporter"
+}

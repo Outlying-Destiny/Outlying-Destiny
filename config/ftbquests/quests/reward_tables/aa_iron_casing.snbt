@@ -1,0 +1,10 @@
+{
+	id: "2516F3F4A9C2D443"
+	loot_size: 1
+	order_index: 80
+	rewards: [
+		{ count: 8, item: "enderio:infinity_rod" }
+		{ count: 2, item: "actuallyadditions:basic_coil" }
+	]
+	title: "AA Iron Casing"
+}

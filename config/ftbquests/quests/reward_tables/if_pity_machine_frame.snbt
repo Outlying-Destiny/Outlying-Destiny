@@ -1,7 +1,7 @@
 {
 	id: "704DB270AB4D7631"
 	loot_size: 1
-	order_index: 60
+	order_index: 59
 	rewards: [
 		{ count: 24, item: "enderio:energetic_alloy_ingot" }
 		{ count: 12, item: "thermal:signalum_ingot" }

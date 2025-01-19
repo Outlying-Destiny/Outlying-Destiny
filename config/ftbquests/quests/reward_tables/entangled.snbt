@@ -1,0 +1,10 @@
+{
+	id: "3F8D0DE92E540640"
+	loot_size: 1
+	order_index: 79
+	rewards: [
+		{ count: 8, item: "kubejs:automaton_ingot" }
+		{ count: 4, item: "thermal_extra:abyssal_ingot" }
+	]
+	title: "Entangled"
+}

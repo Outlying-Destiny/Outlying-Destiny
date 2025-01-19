@@ -191,10 +191,10 @@
 			id: "4E3F3D2CC84F706A"
 			min_width: 300
 			rewards: [{
-				count: 4
-				id: "4F14694DFBFF8B93"
-				item: "kubejs:infinity_gear"
-				type: "item"
+				exclude_from_claim_all: true
+				id: "310F6B332BE1417F"
+				table_id: 5606989243011167871L
+				type: "choice"
 			}]
 			tasks: [{
 				id: "4438C63555AF28C6"
@@ -231,7 +231,7 @@
 			id: "0F6ECA16BAFB299C"
 			min_width: 300
 			rewards: [{
-				count: 32
+				count: 24
 				id: "58780C0FC9751C94"
 				item: "pneumaticcraft:plastic"
 				type: "item"
@@ -380,7 +380,6 @@
 			id: "34C5F3C2EC9DA297"
 			min_width: 300
 			rewards: [{
-				count: 2
 				id: "4DD2CF7F2A5BE7EF"
 				item: "industrialforegoing:machine_frame_simple"
 				type: "item"
@@ -603,6 +602,7 @@
 		}
 		{
 			dependencies: ["323755DC97DFAE26"]
+			icon: "thermal_extra:soul_infused_machine_speed_augment"
 			id: "0FBA307E889389C5"
 			min_width: 300
 			rewards: [{
@@ -828,6 +828,15 @@
 		}
 		{
 			dependencies: ["4E5147F740457745"]
+			icon: {
+				Count: 1
+				id: "industrialforegoing:speed_addon_1"
+				tag: {
+					TitaniumAugment: {
+						Speed: 2.0f
+					}
+				}
+			}
 			id: "3944526C83B2BCDD"
 			min_width: 300
 			rewards: [{
@@ -882,10 +891,11 @@
 		}
 		{
 			dependencies: ["5FB1C36C44672D6C"]
+			icon: "mekanism:boiler_valve"
 			id: "269EC584408CEC4F"
 			min_width: 300
 			rewards: [{
-				count: 10
+				count: 12
 				id: "408F2C55EBAB32D1"
 				item: "extendedcrafting:black_iron_ingot"
 				type: "item"
@@ -1074,6 +1084,8 @@
 		}
 		{
 			dependencies: ["5FB1C36C44672D6C"]
+			description: [""]
+			icon: "industrialforegoing:enchantment_factory"
 			id: "7EA8EB705F30AB9B"
 			min_width: 300
 			rewards: [{
@@ -1139,6 +1151,7 @@
 		}
 		{
 			dependencies: ["4E3F3D2CC84F706A"]
+			icon: "industrialforegoing:plant_sower"
 			id: "4A1685BEDD0583F5"
 			min_width: 300
 			rewards: [{
@@ -1182,6 +1195,7 @@
 		}
 		{
 			dependencies: ["4E3F3D2CC84F706A"]
+			icon: "industrialforegoing:block_placer"
 			id: "1C4214532D48FA11"
 			min_width: 300
 			rewards: [{
@@ -1273,7 +1287,9 @@
 		}
 		{
 			dependencies: ["4E3F3D2CC84F706A"]
+			description: [""]
 			hide_dependency_lines: true
+			icon: "industrialforegoing:animal_baby_separator"
 			id: "1C4ED33D23E19544"
 			min_width: 300
 			rewards: [{
@@ -1397,6 +1413,23 @@
 			title: "...and solar panel jokes are usually pretty long, yknow?"
 			x: 9.25d
 			y: 0.25d
+		}
+		{
+			dependencies: ["3010848152BF092A"]
+			hide_dependency_lines: true
+			id: "63BCEEC2FD2EA733"
+			rewards: [{
+				id: "64D94B9EEDDA22D2"
+				item: "industrialforegoing:meat_bucket"
+				type: "item"
+			}]
+			tasks: [{
+				id: "282CA083CA31CC55"
+				item: "industrialforegoing:meat_feeder"
+				type: "item"
+			}]
+			x: 1.75d
+			y: -3.5d
 		}
 	]
 	title: "7. Chemical Industry"

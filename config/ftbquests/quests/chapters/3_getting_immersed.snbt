@@ -744,7 +744,7 @@
 				type: "item"
 			}]
 			title: "Hurt no more!"
-			x: 2.0d
+			x: 2.25d
 			y: -2.5d
 		}
 		{
@@ -820,7 +820,7 @@
 				type: "item"
 			}]
 			title: "Don't judge the recipe"
-			x: 0.75d
+			x: 0.5d
 			y: -4.5d
 		}
 		{
@@ -841,7 +841,7 @@
 				type: "dimension"
 			}]
 			title: "My home IS hellscape"
-			x: -0.25d
+			x: -0.5d
 			y: -3.5d
 		}
 		{
@@ -1487,7 +1487,7 @@
 				""
 				"3. Setting up Plant Oil: Your best option are Industrial Hemp Seeds, you can deal with the fibers production simply by sending them to a drawer before reaching the Squeezer Input. You need 7 Garden Cloches to keep up on Plant Oil production."
 				""
-				"4. Setting up Ethanol: Your best option are Glow Berries, it doesn't even have a secondary output! You need 13 Garden Cloches to keep up on Ethanol Production. (Technically melons would produce more Ethanol by using a Precision Sawmill, but due to the longer processing time in the Fermenter that would create, the energy usage of it would be too big to end up being useful.)"
+				"4. Setting up Ethanol: Your best option are Glow Berries, it doesn't even have a secondary output! You need 13 Garden Cloches to keep up on Ethanol Production. (Technically melons would produce more Ethanol but due to the longer processing time in the Fermenter that would create, the energy usage of it would be too big to end up being useful.)"
 				""
 				"5. Check up: Make sure every machines are properly connected to the energy system and are up and running."
 			]
@@ -1850,7 +1850,7 @@
 				}
 			]
 			title: "Assembler"
-			x: 0.25d
+			x: 1.5d
 			y: -1.5d
 		}
 		{
@@ -1905,8 +1905,8 @@
 				}
 			]
 			title: "Automated Engineer's Workbench"
-			x: -0.75d
-			y: -1.5d
+			x: 1.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["460A47E0362D9799"]
@@ -2014,6 +2014,8 @@
 				"You can equip upgrades on a machine by &eShift Right Clicking&r with the upgrades in hand or by using the upgrade menu located on the top right of the machine HUD."
 				""
 				"Yes, that does mean you can make your factories runs at 6FE/t but this will mostly come useful once you unlock Speed Upgrades in chapter 5."
+				""
+				"Did you know you can make Muffling Upgrades to reduce your machinery's noise too? And it even only requires 4 upgrades!"
 			]
 			id: "1ED1AD000CDE6819"
 			min_width: 300
@@ -2328,7 +2330,7 @@
 				}
 			]
 			title: "Reinforced Blast Furnace"
-			x: 1.5d
+			x: 0.25d
 			y: -1.5d
 		}
 		{
@@ -2353,8 +2355,8 @@
 				type: "item"
 			}]
 			title: "How to get coal in Minecraft? (The 46 minutes tutorial)"
-			x: 1.5d
-			y: -3.5d
+			x: -0.75d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -2376,8 +2378,8 @@
 				item: { Count: 2, id: "immersiveengineering:blastfurnace_preheater" }
 				type: "item"
 			}]
-			x: 0.75d
-			y: -2.5d
+			x: -0.25d
+			y: -2.25d
 		}
 		{
 			dependencies: ["26DE28EB32A47D88"]
@@ -2481,7 +2483,6 @@
 				""
 				"Useful if you regularly need nuggets / blocks or simply for a huge storage."
 			]
-			hide_dependency_lines: true
 			icon: "functionalstorage:compacting_drawer"
 			id: "3618DCAF2B312EB8"
 			min_width: 300
@@ -2521,8 +2522,8 @@
 				type: "item"
 			}]
 			title: "Compacting no more!"
-			x: -0.25d
-			y: -2.25d
+			x: 1.25d
+			y: -3.5d
 		}
 		{
 			dependencies: [

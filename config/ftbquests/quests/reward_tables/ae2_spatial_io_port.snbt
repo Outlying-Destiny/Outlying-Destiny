@@ -1,0 +1,10 @@
+{
+	id: "3C6C6C5BBD185C12"
+	loot_size: 1
+	order_index: 92
+	rewards: [
+		{ count: 24, item: "ae2:quartz_glass" }
+		{ count: 24, item: "ae2:fluix_dust" }
+	]
+	title: "AE2 Spatial IO Port"
+}

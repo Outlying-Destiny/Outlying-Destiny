@@ -1,6 +1,7 @@
 {
-  "values": [
-    "kubejs:soul_catcher",
-    "kubejs:the_vat"
-  ]
+    "values": [
+        "kubejs:soul_catcher",
+        "kubejs:the_vat",
+        "kubejs:quantum_miner"
+    ]
 }

@@ -1,7 +1,7 @@
 {
 	id: "06AA1868CCF9D997"
 	loot_size: 1
-	order_index: 50
+	order_index: 49
 	rewards: [
 		{ item: "thermal:light_oil_bucket" }
 		{ item: "thermal:heavy_oil_bucket" }

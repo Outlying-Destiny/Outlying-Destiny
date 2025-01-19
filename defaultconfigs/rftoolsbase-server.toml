@@ -6,11 +6,11 @@
 	maxInfuse = 256
 	#Amount of RF used per tick while infusing
 	#Range: > 0
-	usePerTick = 600
+	usePerTick = 60000
 	#Maximum RF storage that the infuser can hold
 	#Range: > 0
-	infuserMaxRF = 60000
+	infuserMaxRF = 6000000
 	#RF per tick that the infuser can receive
 	#Range: > 0
-	infuserRFPerTick = 600
+	infuserRFPerTick = 60000
 

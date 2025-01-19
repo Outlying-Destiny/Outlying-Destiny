@@ -1,0 +1,10 @@
+{
+	id: "1775CADA3520B570"
+	loot_size: 1
+	order_index: 84
+	rewards: [
+		{ count: 12, item: "actuallyadditions:empowered_palis_crystal" }
+		{ count: 8, item: "actuallyadditions:empowered_enori_crystal" }
+	]
+	title: "OD Quantum Modifiers"
+}

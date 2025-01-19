@@ -37,9 +37,9 @@ ServerEvents.recipes(event => {
     mineral4(['minecraft:deepslate_iron_ore', 'minecraft:deepslate_gold_ore', 'minecraft:deepslate_copper_ore', 'mekanism:deepslate_uranium_ore'],[0.5, 0.25, 0.15, 0.1], 'minecraft:overworld', 12, 'iocg', 'IOCG', "§dRare")
     mineral4(['thermal:oil_sand', 'minecraft:sand', 'minecraft:clay', 'minecraft:gravel'],[0.5, 0.25, 0.15, 0.1], 'minecraft:overworld', 12, 'bituminous', 'Bituminous', "§r§dRare")
 
-    mineral3(['minecraft:soul_sand', 'mysticalagriculture:soulstone', 'mysticalagriculture:soulium_ore'], [0.7, 0.2, 0.1], 'minecraft:the_nether', 35, 'soulium', 'Soulium', '§r§bUncommon')
-    mineral3(['minecraft:nether_quartz_ore', 'minecraft:glowstone', 'minecraft:nether_gold_ore'], [0.5, 0.4, 0.1], 'minecraft:the_nether', 50, 'quartzite', 'Quartzite', '§r§fCommon')
-    mineral3(['minecraft:netherrack', 'minecraft:magma_block', 'minecraft:ancient_debris'], [0.6, 0.3, 0.1], 'minecraft:the_nether', 20, 'ancient', 'Ancient', '§r§6Very Rare')
+    //mineral3(['minecraft:soul_sand', 'mysticalagriculture:soulstone', 'mysticalagriculture:soulium_ore'], [0.7, 0.2, 0.1], 'minecraft:the_nether', 35, 'soulium', 'Soulium', '§r§bUncommon')
+    mineral3(['minecraft:nether_quartz_ore', 'minecraft:glowstone', 'minecraft:nether_gold_ore'], [0.5, 0.4, 0.1], 'minecraft:the_nether', 60, 'quartzite', 'Quartzite', '§r§fCommon')
+    mineral3(['minecraft:netherrack', 'minecraft:magma_block', 'minecraft:ancient_debris'], [0.6, 0.3, 0.1], 'minecraft:the_nether', 25, 'ancient', 'Ancient', '§r§6Very Rare')
     
     mineral4(['aether:ambrosium_ore', 'aether:icestone', 'aether:zanite_ore', 'aether:gravitite_ore'],[0.5, 0.3, 0.15, 0.05], 'aether:the_aether', 100, 'ambrosia', 'Ambrosia', "§r§fCommon")
 

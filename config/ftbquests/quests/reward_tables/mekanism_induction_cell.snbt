@@ -1,7 +1,7 @@
 {
 	id: "18D019600F08E21C"
 	loot_size: 1
-	order_index: 75
+	order_index: 74
 	rewards: [
 		{ count: 32, item: "mekanism:dust_lithium" }
 		{ count: 6, item: "mekanism:energy_tablet" }

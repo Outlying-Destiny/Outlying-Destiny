@@ -438,6 +438,8 @@
 				"Find a Gold Dungeon and defeat its boss to get the Gold Key."
 				""
 				"The Gold dungeon spawns inside large spheric islands covered in Golden Oak Trees."
+				""
+				"Oh yeah, it's also not THAT rare anymore."
 			]
 			id: "69859C67C5901B5A"
 			min_width: 300
@@ -887,7 +889,7 @@
 			description: [
 				"Enter The Undergarden!"
 				""
-				"Simply build a Nether shaped portal with Stone Bricks and use your Catalyst inside of it!"
+				"Simply build a Nether shaped portal with Stone Bricks and use your Catalyst on it!"
 			]
 			hide_dependency_lines: true
 			id: "3C599A2D8429EAC2"
@@ -960,7 +962,7 @@
 			description: [
 				"Find an AE2 Meteor! They can be found in The Aether."
 				""
-				"You can collect Sky Stone, Certus Quartz but most importantly  Inscriber Presses at their center from them."
+				"You can collect Sky Stone, Certus Quartz but most importantly Inscriber Presses at their core."
 				""
 				"Those presses are required to start Applied Energistic and make your own digital storage!"
 			]
@@ -976,23 +978,53 @@
 			size: 1.5d
 			tasks: [
 				{
-					id: "58DC7100249F695B"
-					item: "ae2:silicon_press"
+					id: "59B33EC1ACFD86E7"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ae2:silicon_press"
+								}
+								{
+									Count: 1b
+									id: "ae2:logic_processor_press"
+								}
+								{
+									Count: 1b
+									id: "ae2:engineering_processor_press"
+								}
+								{
+									Count: 1b
+									id: "ae2:calculation_processor_press"
+								}
+							]
+						}
+					}
+					title: "Basic Inscriber Presses"
 					type: "item"
 				}
 				{
-					id: "227AD8A079464B68"
-					item: "ae2:logic_processor_press"
-					type: "item"
-				}
-				{
-					id: "63434F9A1FD9104E"
-					item: "ae2:engineering_processor_press"
-					type: "item"
-				}
-				{
-					id: "3FDA10C81ED2BB11"
-					item: "ae2:calculation_processor_press"
+					id: "6DF8CBE38F8A02F9"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "kubejs:automaton_processor_press"
+								}
+								{
+									Count: 1b
+									id: "kubejs:extradimensional_processor_press"
+								}
+							]
+						}
+					}
+					title: "Advanced Inscriber Presses"
 					type: "item"
 				}
 			]

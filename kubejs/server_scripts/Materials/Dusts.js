@@ -52,14 +52,10 @@ ServerEvents.recipes(event => {
     event.remove({id:'thermal:signalum_dust_4'})
     event.remove({id:'thermal:lumium_dust_4'})
     event.remove({id:'thermal:enderium_dust_2'})
-    event.remove({id:'thermal_extra:soul_infused_dust'})
-    event.remove({id:'thermal_extra:shellite_dust'})
-    event.remove({id:'thermal_extra:twinite_dust'})
-    event.remove({id:'thermal_extra:dragonsteel_dust'})
-    event.remove({id:'thermal_extra:abyssal_dust'})
-    event.remove({id:'immersiveengineering:crafting/electrum_mix'})
-    event.remove({id:'immersiveengineering:crafting/constantan_mix'})
+    event.remove({id:/thermal_extra:(soul_infused|shellite|twinite|dragonsteel|abyssal)_dust/})
+    event.remove({id:/immersiveengineering:crafting\/(electrum|constantan)_mix/})
     event.remove({id:'mekanism:processing/steel/ingot_to_dust'})
+    event.remove({id:'mekanism:processing/bronze/dust/from_ingot'})
 
     //Remove Quartz Dust Mekanism Recipe
     event.remove({id:'mekanism:processing/quartz/to_dust'})

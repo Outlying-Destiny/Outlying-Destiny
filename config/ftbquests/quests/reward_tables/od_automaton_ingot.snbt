@@ -1,0 +1,10 @@
+{
+	id: "149EB7F48419B9C6"
+	loot_size: 1
+	order_index: 75
+	rewards: [
+		{ count: 3, item: "thermal:signalum_block" }
+		{ item: "thermal_extra:dragonsteel_block" }
+	]
+	title: "OD Automaton Ingot"
+}

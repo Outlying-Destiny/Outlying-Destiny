@@ -10,6 +10,7 @@ ServerEvents.recipes(event => {
     event.remove({id:'industrialforegoing:dye_mixer'})
     event.remove({id:'industrialforegoing:dissolution_chamber/mechanical_dirt'})
     event.remove({id:'industrialforegoing:water_condensator'})
+    event.remove({id:'industrialforegoing:hydroponic_bed'})
 
 
     //Conveyors & Transporters

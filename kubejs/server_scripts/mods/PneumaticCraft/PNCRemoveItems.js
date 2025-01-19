@@ -18,6 +18,7 @@ ServerEvents.recipes(event => {
     event.remove({id:/pneumaticcraft:spawner_.+/})
     event.remove({id:'pneumaticcraft:pressurized_spawner'})
     event.remove({id:'pneumaticcraft:thermo_plant/spawner_core'})
+    event.remove({id:/pneumaticcraft:vacuum/})
 
     //Drones
     event.remove({id:/pneumaticcraft:.+_drone/})

@@ -3,28 +3,21 @@ ServerEvents.recipes(event => {
     //Functions
     function box(output, input1, input2, input3){event.shaped(output, ['ABA','BCB','ABA'], {A: input1,B: input2,C: input3})}
     function detailedbox(output, input1, input2, input3, input4){event.shaped(output, ['ABA','CDC','ABA'], {A: input1,B: input2,C: input3, D: input4})}
+    function sheetmetal(output, SheetmetalInput) {event.shaped(output, [' A ','A A',' A '], {A: SheetmetalInput})}
+    function component(output, ComponentInput, ComponentPlateInput) {
+        event.shaped(output, ['AAA','ABA','AAA'], {A: ComponentInput,B: 'thermal:bronze_ingot'})
+        event.custom({"type":"immersiveengineering:blueprint","category":"components","inputs":[{"base_ingredient":{"item":ComponentPlateInput},"count":2},{"item":"thermal:bronze_ingot"}],"result":{"item":output}})
+    }
+    function arcfurnace3(output, outputcount, baseinput, baseinputcount, extrainput1, extrainputcount1, extrainput2, extrainputcount2, energy, time){event.custom({"type":"immersiveengineering:arc_furnace","additives":[{"base_ingredient":{"item":extrainput1}, "count":extrainputcount1}, {"base_ingredient":{"item":extrainput2}, "count":extrainputcount2}],"energy":energy,"input":{"base_ingredient":{"item":baseinput}, "count":baseinputcount},"results":[{"base_ingredient":{"item":output}, "count":outputcount}],"slag":{"tag":"forge:slag"},"time":time})}
     function accumulator(tier, input1, input2, input3){event.shaped('immersiveengineering:capacitor_'+tier, ['ABA','DED','ACA'], {A: '#forge:treated_wood',B: input1,C: input2,D: 'immersiveengineering:coil_'+tier,E: input3}).modifyResult(copyOldAccumulatorData)}
-
+    
     //Engineer Hammer
-    event.replaceInput(
-        { output: 'immersiveengineering:hammer'},
-        'minecraft:iron_ingot',
-        'naturesaura:infused_stone'
-    )
+    event.replaceInput({ output: 'immersiveengineering:hammer'},'minecraft:iron_ingot','naturesaura:infused_stone')
     event.remove( {id:/immersiveengineering:crafting.+hammer.+/} )
     
     //Coke Oven
     event.remove({id:'immersiveengineering:crafting/cokebrick'})
-    event.shaped('2x immersiveengineering:cokebrick', [
-        'ABA',
-        'BCB',
-        'ABA'
-        ], {
-        A: 'minecraft:clay_ball',
-        B: 'minecraft:brick',
-        C: 'naturesaura:infused_stone'
-        }
-    )
+    box('2x immersiveengineering:cokebrick', 'minecraft:clay_ball', 'minecraft:brick', 'naturesaura:infused_stone')
 
     //Coke
     event.remove({ output: 'immersiveengineering:coal_coke' })
@@ -42,48 +35,17 @@ ServerEvents.recipes(event => {
     mold('immersiveengineering:mold_bullet_casing')
     mold('immersiveengineering:mold_wire')
     mold('immersiveengineering:mold_packing_4')
-    mold('immersiveengineering:mold_unpacking')
 
     //Wire Coils
-    event.shaped('immersiveengineering:wirecoil_copper', [
-        ' A ',
-        'ABA',
-        ' A '
-        ], {
-        A: 'minecraft:copper_ingot',
-        B: '#balm:wooden_rods'
-        }
-    )
+    event.shaped('immersiveengineering:wirecoil_copper', [' A ','ABA',' A '], {A: 'minecraft:copper_ingot',B: '#balm:wooden_rods'})
 
     //Mechanical Components
     event.remove({id:/immersiveengineering:.+component_iron/})
     event.remove({id:/immersiveengineering:.+component_steel/})
-    function component(output, ComponentInput, ComponentPlateInput) {
-        event.shaped(output, [
-            'AAA',
-            'ABA',
-            'AAA'
-            ], {
-            A: ComponentInput,
-            B: 'thermal:bronze_ingot'
-            }
-        )
-        event.custom({"type":"immersiveengineering:blueprint","category":"components","inputs":[{"base_ingredient":{"item":ComponentPlateInput},"count":2},{"item":"thermal:bronze_ingot"}],"result":{"item":output}})
-    }
     component('immersiveengineering:component_iron', 'minecraft:iron_ingot', 'thermal:iron_plate')
     component('immersiveengineering:component_steel', 'thermal:steel_ingot', 'thermal:steel_plate')
 
     //Sheetmetals
-    function sheetmetal(output, SheetmetalInput) {
-        event.shaped(output, [
-            ' A ',
-            'A A',
-            ' A '
-            ], {
-            A: SheetmetalInput
-            }
-        )
-    }
     sheetmetal('immersiveengineering:sheetmetal_iron', 'minecraft:iron_ingot')
     sheetmetal('immersiveengineering:sheetmetal_steel', 'thermal:steel_ingot')
 
@@ -92,11 +54,7 @@ ServerEvents.recipes(event => {
     
     //Light Engineering Block
     event.shapeless('immersiveengineering:light_engineering', ['immersiveengineering:sheetmetal_iron', 'immersiveengineering:component_iron', 'thermal:constantan_ingot'])
-    event.replaceInput(
-        { output: 'immersiveengineering:light_engineering'},
-        'minecraft:copper_ingot',
-        'thermal:constantan_ingot'
-    )
+    event.replaceInput({ output: 'immersiveengineering:light_engineering'},'minecraft:copper_ingot','thermal:constantan_ingot')
 
     //Redstone Engineering Block
     event.remove({id: 'immersiveengineering:crafting/rs_engineering'})
@@ -104,82 +62,32 @@ ServerEvents.recipes(event => {
     box('4x immersiveengineering:rs_engineering', 'immersiveengineering:sheetmetal_iron', 'mekanism:alloy_infused', 'projectred_core:red_ingot')
 
     //Thermoelectric Generator
-    event.replaceInput(
-        { output: 'immersiveengineering:thermoelectric_generator' },
-        '#forge:plates/constantan',
-        'thermal:constantan_ingot'         
-    )
+    event.replaceInput({ output: 'immersiveengineering:thermoelectric_generator' },'#forge:plates/constantan','thermal:constantan_ingot'         )
 
     //Blueprints
-    event.replaceInput(
-        {output:'immersiveengineering:blueprint'},
-        '#forge:plates/iron',
-        'immersiveengineering:hammer'
-    )
-    event.replaceInput(
-        {output:'immersiveengineering:blueprint'},
-        '#forge:ingots/aluminum',
-        'thermal:invar_ingot'
-    )
-
-    //Graphite Electrode
+    event.replaceInput({output:'immersiveengineering:blueprint'},'#forge:plates/iron','immersiveengineering:hammer')
+    event.replaceInput({output:'immersiveengineering:blueprint'},'#forge:ingots/aluminum','thermal:invar_ingot')
     event.remove({id:"immersiveengineering:metalpress/electrode"})
-    event.shaped(Item.of('immersiveengineering:blueprint', '{blueprint:"electrode"}'), [
-        ' A ',
-        'DDD',
-        'EEE'
-        ], {
-        A:'immersiveengineering:mold_rod',
-        D:'minecraft:blue_dye',
-        E:'minecraft:paper'
-        }
+    event.shaped(Item.of('immersiveengineering:blueprint', '{blueprint:"electrode"}'), [' A ','DDD','EEE'], {A:'immersiveengineering:mold_rod',D:'minecraft:blue_dye',E:'minecraft:paper'}
     )
-
-    //Function Arc Furnace
-    function arcfurnace3(output, outputcount, baseinput, baseinputcount, extrainput1, extrainputcount1, extrainput2, extrainputcount2, energy, time){
-        event.custom({   
-            "type":"immersiveengineering:arc_furnace",
-                "additives":[{"base_ingredient":{"item":extrainput1}, "count":extrainputcount1}, {"base_ingredient":{"item":extrainput2}, "count":extrainputcount2}],
-                "energy":energy,
-                "input":{"base_ingredient":{"item":baseinput}, "count":baseinputcount},
-                "results":[{"base_ingredient":{"item":output}, "count":outputcount}],
-                "slag":{"tag":"forge:slag"},
-                "time":time
-        })
-    }
 
     //Dielectric Paste
     arcfurnace3("powah:dielectric_paste", 16, "immersiveengineering:dust_coke", 4, "minecraft:clay_ball", 8, "minecraft:blaze_powder", 2, 153600, 300)
 
     //Wooden Barrel
     event.remove({output:'immersiveengineering:wooden_barrel'})
-    event.shaped('immersiveengineering:wooden_barrel', [
-        'AAA',
-        'BCB',
-        'BBB'
-        ], {
-        A:'#forge:treated_wood_slab',
-        B:'#forge:treated_wood',
-        C:'immersiveengineering:wire_steel'
+    event.shaped('immersiveengineering:wooden_barrel', ['AAA','BCB','BBB'], {A:'#forge:treated_wood_slab',B:'#forge:treated_wood',C:'immersiveengineering:wire_steel'
     })
 
     //Conveyor Belts
-    event.replaceInput(
-        {output:'immersiveengineering:conveyor_basic'},
-        'minecraft:iron_ingot',
-        'thermal:steel_ingot'
-    )
+    event.replaceInput({output:'immersiveengineering:conveyor_basic'},'minecraft:iron_ingot','thermal:steel_ingot')
 
     //Radiator Block
     event.remove({output:'immersiveengineering:radiator'})
     detailedbox('2x immersiveengineering:radiator', 'immersiveengineering:sheetmetal_steel', 'mekanism:alloy_infused', 'immersiveengineering:ingot_hop_graphite', 'mekanism:advanced_control_circuit')
 
     //Generator Block
-    event.replaceInput(
-        {output:'immersiveengineering:generator'},
-        'immersiveengineering:component_iron',
-        'mekanism:energy_tablet'
-    )
+    event.replaceInput({output:'immersiveengineering:generator'},'immersiveengineering:component_iron','mekanism:energy_tablet')
 
     //Accumulators
         /**
@@ -217,19 +125,9 @@ ServerEvents.recipes(event => {
     event.custom({"type":"immersiveengineering:blueprint","category":"components","inputs":[{"base_ingredient":{"item":'immersiveengineering:plate_duroplast'},"count":2},{"base_ingredient":{"item":'immersiveengineering:electron_tube'},"count":2},{"base_ingredient":{"item":'kubejs:invar_wire'},"count":4}],"result":{"item":'immersiveengineering:component_electronic_adv'}})
 
     //External Heater
-    event.replaceInput(
-        {output:'immersiveengineering:furnace_heater'},
-        '#forge:plates/copper',
-        'thermal:steel_plate'
-    )
+    event.replaceInput({output:'immersiveengineering:furnace_heater'},'#forge:plates/copper','thermal:steel_plate')
 
     //Treated Stick Fix
-    event.shaped('4x immersiveengineering:stick_treated', [
-        'A  ',
-        'A  ',
-        '   '
-        ], {
-        A:'#forge:treated_wood'
-    })
+    event.shaped('4x immersiveengineering:stick_treated', ['A  ','A  ','   '], {A:'#forge:treated_wood'})
 
 })

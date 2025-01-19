@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "kubejs:block/machinarium_casing",
+    "east": "kubejs:block/machinarium_casing",
+    "north": "kubejs:block/quantum_miner/quantum_miner",
+    "particle": "kubejs:block/quantum_miner/quantum_miner",
+    "south": "kubejs:block/machinarium_casing",
+    "up": "kubejs:block/machinarium_casing",
+    "west": "kubejs:block/machinarium_casing"
+  }
+}

@@ -1,0 +1,10 @@
+{
+	id: "4DD00702691DF67F"
+	loot_size: 1
+	order_index: 82
+	rewards: [
+		{ count: 4, item: "kubejs:infinity_gear" }
+		{ count: 2, item: "thermal_extra:shellite_gear" }
+	]
+	title: "IF Simple Machine Frame"
+}

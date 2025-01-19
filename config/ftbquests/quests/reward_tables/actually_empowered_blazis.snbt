@@ -1,7 +1,7 @@
 {
 	id: "23D537C2E12B5C33"
 	loot_size: 1
-	order_index: 59
+	order_index: 58
 	rewards: [
 		{ count: 32, item: "minecraft:obsidian" }
 		{ count: 16, item: "aether:aerogel" }

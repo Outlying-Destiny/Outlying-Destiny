@@ -1,7 +1,7 @@
 {
 	id: "263883C865E0C2CF"
 	loot_size: 1
-	order_index: 40
+	order_index: 39
 	rewards: [
 		{ count: 16, item: "ae2:silicon" }
 		{ count: 8, item: "ae2:certus_quartz_crystal" }

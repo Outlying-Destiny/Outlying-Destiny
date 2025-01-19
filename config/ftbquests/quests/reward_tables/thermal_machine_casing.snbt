@@ -1,0 +1,10 @@
+{
+	id: "6197B7C5CD318090"
+	loot_size: 1
+	order_index: 81
+	rewards: [
+		{ count: 8, item: "pneumaticcraft:plastic" }
+		{ count: 4, item: "thermal:invar_gear" }
+	]
+	title: "Thermal Machine Casing"
+}

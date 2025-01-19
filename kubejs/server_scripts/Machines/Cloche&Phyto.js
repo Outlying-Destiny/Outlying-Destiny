@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
 
-    //Functions machines (render is generic, crop or stacking)
+    //Functions machines (render is generic, crop, stacking or stem)
     function phyto(sapling, log){event.custom({"type": "thermal:insolator","ingredient": {"item": sapling+'_sapling',},"result": [{"item": log+'_log',"chance": 6.0},{"item": sapling+'_sapling',"chance": 1.1}],"energy_mod": 3.0,"water_mod": 3.0})}
     function gardensapling(sapling, log){event.custom({"type":"immersiveengineering:cloche","input":{"item":sapling+'_sapling'},"render":{"type":"generic","block":sapling+'_sapling'},"results":[{"count":6,"item":log+'_log'}, {"item":sapling+'_sapling'}],"soil":{"item":"minecraft:dirt"},"time":800})}
     function sapling(wood){phyto(wood, wood), gardensapling(wood, wood)}
@@ -64,4 +64,5 @@ ServerEvents.recipes(event => {
 
     //Garden Cloche Crops
     gardenitem('minecraft:cocoa_beans', 2, 'minecraft:cocoa_beans', 'minecraft:jungle_log', 560, 'crop', 'minecraft:cocoa')
+    gardenitem('thermal:frost_melon', 1, 'thermal:frost_melon_seeds', 'minecraft:dirt', 800, 'stem', 'thermal:frost_melon')
 })

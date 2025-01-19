@@ -1,9 +1,13 @@
 ServerEvents.recipes(event => {
 
-    //Backpack
-    event.remove({output:/projectred_exploration:.+backpack/})
+    //Electrotine Generator
+    event.remove({id:'projectred_core:electrotine_generator'})
 
-    //Athame
-    event.remove({id:'projectred_exploration:athame'})
+    //Timer (for being the world's laggiest block in the game)
+    event.remove({id:'projectred_integration:timer_gate'})
 
+    //Unused Stuff
+    event.remove({id:'projectred_core:draw_plate'})
+    event.remove({id:/projectred_core:(copper|iron|gold)_coil/})
+    event.remove({id:'projectred_core:motor'})
 })

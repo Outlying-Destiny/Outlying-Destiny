@@ -1592,10 +1592,10 @@
 			id: "2FAD84CCF0B8DAB5"
 			min_width: 300
 			rewards: [{
-				count: 2
-				id: "58A7B2908AAFDD6A"
-				item: "actuallyadditions:basic_coil"
-				type: "item"
+				exclude_from_claim_all: true
+				id: "25ACC9A9854A631D"
+				table_id: 2672591661036655683L
+				type: "choice"
 			}]
 			tasks: [{
 				id: "67D87B3469C2941D"
@@ -1722,8 +1722,8 @@
 				type: "item"
 			}]
 			title: "Poltergust 8000!"
-			x: 3.25d
-			y: -1.0d
+			x: 4.5d
+			y: 0.25d
 		}
 		{
 			dependencies: ["2FAD84CCF0B8DAB5"]
@@ -1773,7 +1773,7 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
+			x: 3.25d
 			y: -1.0d
 		}
 		{
@@ -1934,8 +1934,8 @@
 				type: "item"
 			}]
 			title: "I'll take the Sun instead"
-			x: 3.25d
-			y: -6.0d
+			x: -0.5d
+			y: 0.25d
 		}
 		{
 			dependencies: ["28CCC25EB1BF22A8"]
@@ -2049,6 +2049,126 @@
 			title: "No, seriously, I'm even struggling with making 2 Blazing joke."
 			x: 2.0d
 			y: -4.75d
+		}
+		{
+			dependencies: ["2FAD84CCF0B8DAB5"]
+			id: "44EB1419FB18283C"
+			rewards: [{
+				count: 6
+				id: "22CEC501A8769EE9"
+				item: "thermal:signalum_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2FE6B50179A5DEE2"
+				item: "rftoolsbase:machine_base"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["44EB1419FB18283C"]
+			id: "07DC3C175BE0E276"
+			rewards: [{
+				count: 4
+				id: "53388464A772F49C"
+				item: "projectred_core:red_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7D288BE3018D8908"
+				item: "rftoolsutility:timer"
+				type: "item"
+			}]
+			x: 0.75d
+			y: 0.25d
+		}
+		{
+			dependencies: ["44EB1419FB18283C"]
+			id: "1453D7733D0870E5"
+			rewards: [{
+				count: 8
+				id: "45BC7957F5B2DE01"
+				item: "enderio:redstone_alloy_ingot"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4959AF62E19FE738"
+					item: "rftoolsutility:redstone_transmitter"
+					type: "item"
+				}
+				{
+					id: "2FD31496683E9BF4"
+					item: "rftoolsutility:redstone_receiver"
+					type: "item"
+				}
+			]
+			x: 3.25d
+			y: 0.25d
+		}
+		{
+			dependencies: ["44EB1419FB18283C"]
+			id: "15A7438ECC00D4BC"
+			tasks: [{
+				id: "14A39AD8094A4A78"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "rftoolsutility:crafter1"
+							}
+							{
+								Count: 1b
+								id: "rftoolsutility:crafter2"
+							}
+							{
+								Count: 1b
+								id: "rftoolsutility:crafter3"
+							}
+						]
+					}
+				}
+				title: "Crafters"
+				type: "item"
+			}]
+			title: "Crafters"
+			x: 2.0d
+			y: 0.25d
+		}
+		{
+			dependencies: ["11943E63F2FF8684"]
+			icon: "elevatorid:elevator_white"
+			id: "407377F68C39C65D"
+			tasks: [{
+				id: "6A0298CA13AA2836"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "elevatorid:elevators"
+					}
+				}
+				title: "Elevator"
+				type: "item"
+			}]
+			x: -9.25d
+			y: 0.25d
+		}
+		{
+			dependencies: ["66B949D3973B2C2E"]
+			id: "0688176AC9BEE1FE"
+			tasks: [{
+				id: "1A640BFA14E6697D"
+				item: "solarflux:efficiency_upgrade"
+				type: "item"
+			}]
+			x: 3.25d
+			y: -6.0d
 		}
 	]
 	title: "6. Darker than Dark"

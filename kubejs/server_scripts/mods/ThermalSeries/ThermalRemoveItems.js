@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
     //Thermal Extra Ore Dupe
     event.remove({id:'thermal_extra:crafting/nitratic_igniter'})
     event.remove({id:/thermal_extra:machine\/nitratic_igniter.+/})
-    event.remove({id:/thermal_extra.+machine\/chiller.+raw_.+/})
+    event.remove({id:/thermal_extra:machine\/(chiller|endothermic_dehydrator).+raw_.+/})
     event.remove({id:/thermal_extra:machine\/crucible.+/})
 
     //Devices
@@ -65,8 +65,8 @@ ServerEvents.recipes(event => {
     event.remove({id:'thermal:device_soil_infuser'})
 
     //Ruby / Sapphire
-    event.remove({id:'industrialforegoing:laser_drill_ore/ores/ruby'})
-    event.remove({id:'industrialforegoing:laser_drill_ore/ores/sapphire'})
+    event.remove({id:/industrialforegoing:laser_drill_ore\/ores\/(ruby|sapphire)/})
+    event.remove({id:/thermal:machines\/smelter\/smelter_(ruby|sapphire)_ore/})
 
     //Ancient Dust
     event.remove({id:'thermal_extra:machine/crystallizer/ancient_dust'})
@@ -80,4 +80,18 @@ ServerEvents.recipes(event => {
     event.remove({id:'thermal:compat/immersiveengineering/compression_ie_biodiesel'})
     event.remove({id:/thermal:dynamo_(numismatic|disenchantment)/})
     event.remove({id:'thermal_extra:crafting/dynamo_frost'})
+
+    //Thermal Extra Armor
+    event.remove({id:/thermal_extra:.+_(helmet|chestplate|leggings|boots|sword|axe|pickaxe|shovel|hoe|excavator|hammer|knife|sickle)/})
+
+    //Packing Dies
+    event.remove({id:/thermal:press_packing_(2x2|3x3)_die/})
+    event.remove({id:'thermal:press_unpacking_die'})
+    event.remove({id:/thermal:machines\/press.+packing/})
+    event.remove({id:/thermalendergy:machine\/press\/(packing3x3|unpacking)/})
+    
+    //Numismatic Die
+    event.remove({id:'thermal:press_coin_die'})
+    event.remove({id:/thermal:machines\/press\/press_.+_to_coin/})
+    event.remove({id:/thermal(_extra|endergy):machine\/press\/.+_coin/})
 })

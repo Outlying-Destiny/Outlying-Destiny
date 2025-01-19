@@ -1,0 +1,10 @@
+{
+	id: "40D9916C2BB39666"
+	loot_size: 1
+	order_index: 90
+	rewards: [
+		{ count: 16, item: "ae2:calculation_processor" }
+		{ count: 4, item: "kubejs:automaton_processor" }
+	]
+	title: "AE2 Pattern Provider"
+}

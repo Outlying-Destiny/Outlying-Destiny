@@ -1,7 +1,7 @@
 {
 	id: "18BAFF49CE5CB737"
 	loot_size: 1
-	order_index: 64
+	order_index: 63
 	rewards: [
 		{ count: 4, item: "kubejs:crystalline_alloy_ingot" }
 		{ count: 4, item: "extendedcrafting:black_iron_ingot" }

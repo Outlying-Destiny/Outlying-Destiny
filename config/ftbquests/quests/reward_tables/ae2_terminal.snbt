@@ -1,0 +1,10 @@
+{
+	id: "7E8F600F874E5C6D"
+	loot_size: 1
+	order_index: 95
+	rewards: [
+		{ count: 24, item: "minecraft:glowstone_dust" }
+		{ count: 16, item: "minecraft:redstone" }
+	]
+	title: "AE2 Terminal"
+}

@@ -1,0 +1,10 @@
+{
+	id: "3988D5638A981E2E"
+	loot_size: 1
+	order_index: 96
+	rewards: [
+		{ count: 6, item: "thermal_extra:twinite_ingot" }
+		{ count: 4, item: "thermal_extra:dragonsteel_ingot" }
+	]
+	title: "Meka Quantum Entangloporter"
+}

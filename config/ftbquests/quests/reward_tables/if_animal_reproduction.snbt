@@ -1,7 +1,7 @@
 {
 	id: "43209936360CA03F"
 	loot_size: 1
-	order_index: 62
+	order_index: 61
 	rewards: [
 		{ count: 2, item: "minecraft:cow_spawn_egg" }
 		{ count: 2, item: "minecraft:pig_spawn_egg" }

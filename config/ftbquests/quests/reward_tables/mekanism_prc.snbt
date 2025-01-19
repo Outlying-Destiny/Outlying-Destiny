@@ -1,7 +1,7 @@
 {
 	id: "2F9AF7A6C630AC4B"
 	loot_size: 1
-	order_index: 65
+	order_index: 64
 	rewards: [
 		{ count: 8, item: "mekanism:advanced_control_circuit" }
 		{ count: 4, item: "kubejs:crystalline_alloy_ingot" }

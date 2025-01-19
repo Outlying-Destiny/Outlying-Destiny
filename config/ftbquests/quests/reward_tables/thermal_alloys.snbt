@@ -1,7 +1,7 @@
 {
 	id: "57C35C6C5B0A1828"
 	loot_size: 1
-	order_index: 57
+	order_index: 56
 	rewards: [
 		{ count: 8, item: "thermal:lumium_ingot" }
 		{ count: 8, item: "thermal:enderium_ingot" }

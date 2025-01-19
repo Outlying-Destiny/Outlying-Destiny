@@ -35,9 +35,6 @@ JEIEvents.hideItems(event => {
     //Duplicate Stuff
     event.hide([
         /ae2:facade/,
-        /mekanism:creative_fluid_tank/,
-        /mekanism:creative_chemical_tank/,
-        /evilcraft:dark_tank/,
         ///enderio:filled_soul_vial/,
         ///Item.of('enderio:broken_spawner', '{BlockEntityTag:{EntityStorage:{Entity:{id:".+"}}}}')/,
         /enderio:clear_glass.+/,
@@ -60,9 +57,6 @@ JEIEvents.addItems(event => {
     //Duplicate Stuff
     event.add([
         Item.of('ae2:facade', '{item:"minecraft:stone"}'),
-        'mekanism:creative_fluid_tank',
-        'mekanism:creative_chemical_tank',
-        'evilcraft:dark_tank',
         //Item.of('enderio:filled_soul_vial', '{BlockEntityTag:{EntityStorage:{Entity:{id:"minecraft:zombie"}}}}')
     ])
 

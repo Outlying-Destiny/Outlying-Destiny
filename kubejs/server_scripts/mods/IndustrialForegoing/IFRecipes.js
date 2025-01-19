@@ -15,23 +15,15 @@ ServerEvents.recipes(event => {
     function dissolution(output, outputcount, fluid, fluidamount, input1, input2, input3, input4, input5, time){event.custom({"type": "industrialforegoing:dissolution_chamber","input": [{"item": input1},{"item": input2},{"item": input1},{"item": input3},{"item": input3},{"item": input4},{"item": input5},{"item": input4}],"inputFluid": `{FluidName:"${fluid}",Amount:${fluidamount}}`,"output": {"count": outputcount,"item": output},"processingTime": time})}
 
     //Plastic conversion to PNC
-    event.replaceOutput(
-        { output: 'industrialforegoing:plastic' },
-        'industrialforegoing:plastic',
-        'pneumaticcraft:plastic'         
-    )
-    event.replaceInput(
-      { input: 'industrialforegoing:plastic' },
-      'industrialforegoing:plastic',
-      'pneumaticcraft:plastic'         
-    )
+    event.replaceOutput({ output: 'industrialforegoing:plastic' },'industrialforegoing:plastic','pneumaticcraft:plastic'         )
+    event.replaceInput({ input: 'industrialforegoing:plastic' },'industrialforegoing:plastic','pneumaticcraft:plastic')
 
     //Mob Imprisonment Tool
-    event.replaceInput(
-      {output:'industrialforegoing:mob_imprisonment_tool'},
-      'minecraft:ghast_tear',
-      'enderio:ender_crystal'
-    )
+    event.replaceInput({output:'industrialforegoing:mob_imprisonment_tool'},'minecraft:ghast_tear','enderio:ender_crystal')
+
+    //Meat Feeder
+    event.remove({id:'industrialforegoing:meat_feeder'})
+    event.shaped('industrialforegoing:meat_feeder', [' B ','CAB','AC '], {A: 'immersiveengineering:stick_steel',B: 'thermal:steel_gear',C: 'minecraft:glass_bottle'})
   
     //Remove Enchanted Bottle from Dissolution Chamber
     event.remove({id:'industrialforegoing:dissolution_chamber/xp_bottles'})
@@ -59,9 +51,9 @@ ServerEvents.recipes(event => {
     dissolution('industrialforegoing:speed_addon_1', 1, 'kubejs:molten_signalum', 500, 'pneumaticcraft:plastic', 'mekanism:upgrade_speed', 'mekanism_extras:dust_radiance', 'pneumaticcraft:plastic', 'thermal:machine_speed_augment', 100)
     dissolution('industrialforegoing:efficiency_addon_1', 1, 'kubejs:molten_signalum', 500, 'pneumaticcraft:plastic', 'mekanism:upgrade_speed', 'mekanism_extras:dust_radiance', 'pneumaticcraft:plastic', 'actuallyadditions:palis_crystal', 100)
     dissolution('industrialforegoing:processing_addon_1', 1, 'kubejs:molten_signalum', 500, 'pneumaticcraft:plastic', 'mekanism:upgrade_speed', 'mekanism_extras:dust_radiance', 'pneumaticcraft:plastic', 'minecraft:furnace', 100)
-    dissolution('industrialforegoing:speed_addon_2', 1, 'thermal_extra:twinite', 500, 'pneumaticcraft:plastic', 'industrialforegoing:speed_addon_1', 'botania:manasteel_ingot', 'pneumaticcraft:plastic', 'thermal_extra:soul_infused_machine_speed_augment', 100)
-    dissolution('industrialforegoing:efficiency_addon_2', 1, 'thermal_extra:twinite', 500, 'pneumaticcraft:plastic', 'industrialforegoing:efficiency_addon_1', 'botania:manasteel_ingot', 'pneumaticcraft:plastic', 'actuallyadditions:empowered_palis_crystal', 100)
-    dissolution('industrialforegoing:processing_addon_2', 1, 'thermal_extra:twinite', 500, 'pneumaticcraft:plastic', 'industrialforegoing:processing_addon_1', 'botania:manasteel_ingot', 'pneumaticcraft:plastic', 'mekanism:energized_smelter', 100)
+    dissolution('industrialforegoing:speed_addon_2', 1, 'thermal_extra:twinite', 500, 'pneumaticcraft:plastic', 'industrialforegoing:speed_addon_1', 'botania:manasteel_ingot', 'pneumaticcraft:plastic', 'thermal_extra:soul_infused_machine_speed_augment', 150)
+    dissolution('industrialforegoing:efficiency_addon_2', 1, 'thermal_extra:twinite', 500, 'pneumaticcraft:plastic', 'industrialforegoing:efficiency_addon_1', 'botania:manasteel_ingot', 'pneumaticcraft:plastic', 'actuallyadditions:empowered_palis_crystal', 150)
+    dissolution('industrialforegoing:processing_addon_2', 1, 'thermal_extra:twinite', 500, 'pneumaticcraft:plastic', 'industrialforegoing:processing_addon_1', 'botania:manasteel_ingot', 'pneumaticcraft:plastic', 'mekanism:energized_smelter', 150)
     
     const range = [
       {input:'minecraft:coal', number:'0'},{input:'minecraft:lapis_lazuli', number:'1'},{input:'minecraft:iron_ingot', number:'2'},{input:'thermal:steel_ingot', number:'3'},{input:'thermal:bronze_ingot', number:'4'},{input:'thermal:lumium_ingot', number:'5'},{input:'chemlib:platinum_ingot', number:'6'},{input:'enderio:energetic_alloy_ingot', number:'7'},{input:'kubejs:machinarium_ingot', number:'8'},{input:'botania:manasteel_ingot', number:'9'},{input:'botania:elementium_ingot', number:'10'},{input:'botania:terrasteel_ingot', number:'11'}

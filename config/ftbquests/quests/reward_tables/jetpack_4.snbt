@@ -1,7 +1,7 @@
 {
 	id: "0ADF1221C4327504"
 	loot_size: 1
-	order_index: 52
+	order_index: 51
 	rewards: [
 		{ count: 64, item: "minecraft:redstone" }
 		{ count: 8, item: "thermal_extra:soul_infused_ingot" }

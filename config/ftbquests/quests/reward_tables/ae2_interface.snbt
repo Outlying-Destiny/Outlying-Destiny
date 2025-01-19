@@ -1,0 +1,10 @@
+{
+	id: "3DE11FA8EB39118C"
+	loot_size: 1
+	order_index: 89
+	rewards: [
+		{ count: 16, item: "ae2:logic_processor" }
+		{ count: 4, item: "kubejs:automaton_processor" }
+	]
+	title: "AE2 Interface"
+}

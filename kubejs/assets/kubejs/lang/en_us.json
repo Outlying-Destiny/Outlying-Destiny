@@ -1,4 +1,35 @@
 {
     "block.kubejs.soul_catcher": "Soul Catcher",
-    "block.kubejs.the_vat": "The Vat"
+    "kubejs.soul_catcher": "Soul Catcher",
+    "block.kubejs.the_vat": "The Vat",
+    "kubejs.the_vat": "The Vat",
+    "block.kubejs.quantum_miner": "Quantum Miner",
+    "kubejs.quantum_miner": "Quantum Miner",
+
+
+    "block.kubejs.tiny_item_input": "Tiny Item Input",
+    "block.kubejs.small_item_input": "Small Item Input",
+    "block.kubejs.normal_item_input": "Normal Item Input",
+    "block.kubejs.big_item_input": "Big Item Input",
+    "block.kubejs.huge_item_input": "Huge Item Input",
+    "block.kubejs.tiny_item_output": "Tiny Item Output",
+    "block.kubejs.small_item_output": "Small Item Output",
+    "block.kubejs.normal_item_output": "Normal Item Output",
+    "block.kubejs.big_item_output": "Big Item Output",
+    "block.kubejs.huge_item_output": "Huge Item Output",
+    "block.kubejs.tiny_fluid_input": "Tiny Fluid Input",
+    "block.kubejs.small_fluid_input": "Small Fluid Input",
+    "block.kubejs.normal_fluid_input": "Normal Fluid Input",
+    "block.kubejs.big_fluid_input": "Big Fluid Input",
+    "block.kubejs.huge_fluid_input": "Huge Fluid Input",
+    "block.kubejs.tiny_fluid_output": "Tiny Fluid Output",
+    "block.kubejs.small_fluid_output": "Small Fluid Output",
+    "block.kubejs.normal_fluid_output": "Normal Fluid Output",
+    "block.kubejs.big_fluid_output": "Big Fluid Output",
+    "block.kubejs.huge_fluid_output": "Huge Fluid Output",
+    "block.kubejs.tiny_energy_input": "Tiny Energy Input",
+    "block.kubejs.small_energy_input": "Small Energy Input",
+    "block.kubejs.normal_energy_input": "Normal Energy Input",
+    "block.kubejs.big_energy_input": "Big Energy Input",
+    "block.kubejs.huge_energy_input": "Huge Energy Input"
 }

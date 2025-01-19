@@ -7,7 +7,7 @@
 		#The position to render the blood gui overlay at. (0=NE, 1=SE, 2=SW,3=NW)
 		bloodGuiOverlayPosition = 1
 		#If farting is enabled on this server; Client-side: If farting can be seen at your client.
-		farting = true
+		farting = false
 		#The X offset for the blood gui overlay.
 		bloodGuiOverlayPositionOffsetX = -5
 		#The amount of mB that can flow per tick out of machines and items.
@@ -19,7 +19,7 @@
 
 	[general.weather_container]
 		#If shapeless crafting of the higher tiers of weather containers should be enabled.
-		shapelessRecipes = true
+		shapelessRecipes = false
 
 [worldgeneration]
 
@@ -43,7 +43,7 @@
 		#The amount of blood per HP (2HP = 1 heart) of the max mob health that will be added to this blockState when a mob dies from fall damage.
 		bloodMBPerHP = 20
 		#Blocks onto which no blood stains can be spawned. Regular expressions are allowed.
-		spawnBlacklist = ["tconstruct:.*"]
+		spawnBlacklist = [".*"]
 		#If blood stains should be spawned on block entities.
 		spawnOnBlockEntities = false
 
@@ -79,7 +79,7 @@
 		#Sets the default default speed in increments per tick with which an item will move when being process by an environmental accumulator.
 		defaultProcessItemSpeed = 0.015
 		#Sets the default amount of ticks the environmental accumulator takes to cool down
-		defaultTickCooldown = 1200
+		defaultTickCooldown = 600
 
 	[machine.purifier]
 		#The duration limit in ticks for which potion effect can be collected. Set to a negative value to allow any duration.
@@ -111,7 +111,7 @@
 		#If the fluid should be rendered statically. Fluids won't be shown fluently, but more efficiently.
 		staticBlockRendering = false
 		#If creative versions for all fluids should be added to the creative tab.
-		creativeTabFluids = true
+		creativeTabFluids = false
 
 	[machine.spirit_reanimator]
 		#The required amount of ticks for each reanimation.
