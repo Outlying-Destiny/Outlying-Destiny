@@ -1,6 +1,7 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
+	default_quest_size: 1.2d
 	filename: "1_new_beginnings"
 	group: ""
 	icon: "kubejs:iron_fragment"
@@ -34,8 +35,8 @@
 				type: "item"
 			}]
 			title: "Setting up the wood"
-			x: -5.0d
-			y: -5.0d
+			x: -5.3999999999999995d
+			y: -6.6d
 		}
 		{
 			dependencies: ["0A3D05D5F3E9C113"]
@@ -65,8 +66,8 @@
 				type: "item"
 			}]
 			title: "Wow a Crafting Table, how climatic!"
-			x: -4.0d
-			y: -5.0d
+			x: -4.2d
+			y: -6.6d
 		}
 		{
 			dependencies: ["491A6D808994797B"]
@@ -85,8 +86,8 @@
 				type: "item"
 			}]
 			title: "Got any marshmallow?"
-			x: -3.5d
-			y: -4.0d
+			x: -3.5999999999999996d
+			y: -5.3999999999999995d
 		}
 		{
 			dependencies: ["3734A5BF783739BE"]
@@ -112,7 +113,7 @@
 			}]
 			title: "Stony day"
 			x: -3.0d
-			y: -5.0d
+			y: -6.6d
 		}
 		{
 			dependencies: [
@@ -134,7 +135,7 @@
 			}]
 			title: "That's not very Metal from you"
 			x: -3.0d
-			y: -3.0d
+			y: -4.2d
 		}
 		{
 			dependencies: ["1DD3363A37D52A83"]
@@ -147,6 +148,7 @@
 				item: "minecraft:coal"
 				type: "item"
 			}]
+			size: 1.3d
 			tasks: [{
 				count: 2L
 				id: "5984BC61E88399A0"
@@ -155,7 +157,7 @@
 			}]
 			title: "Now that's Metal!"
 			x: -3.0d
-			y: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["616F8356C06E4806"]
@@ -177,8 +179,8 @@
 				type: "item"
 			}]
 			title: "Got any cupcake?"
-			x: -2.0d
-			y: -2.0d
+			x: -1.7999999999999998d
+			y: -3.0d
 		}
 		{
 			dependencies: ["3734A5BF783739BE"]
@@ -213,8 +215,8 @@
 				type: "item"
 			}]
 			title: "That's a nice chest buddy"
-			x: -4.5d
-			y: -4.0d
+			x: -4.8d
+			y: -5.3999999999999995d
 		}
 		{
 			dependencies: ["616F8356C06E4806"]
@@ -245,8 +247,8 @@
 				type: "item"
 			}]
 			title: "Chest but Bigger... somehow?"
-			x: -4.0d
-			y: -3.0d
+			x: -4.2d
+			y: -4.2d
 		}
 		{
 			dependencies: [
@@ -278,8 +280,8 @@
 				type: "item"
 			}]
 			title: "No seriously, how does that work?"
-			x: -4.0d
-			y: -2.0d
+			x: -4.2d
+			y: -3.0d
 		}
 		{
 			dependencies: ["6402629A93101A90"]
@@ -305,8 +307,8 @@
 				type: "item"
 			}]
 			title: "Everything's better with a bit of gold"
-			x: 0.0d
-			y: -3.0d
+			x: 0.6d
+			y: -4.2d
 		}
 		{
 			dependencies: [
@@ -389,8 +391,8 @@
 				}
 			]
 			title: "This one's magical, trust me"
-			x: 0.0d
-			y: -1.0d
+			x: 0.6d
+			y: -1.7999999999999998d
 		}
 		{
 			dependencies: ["72EB2ED8D9D7B364"]
@@ -419,8 +421,8 @@
 				type: "item"
 			}]
 			title: "Bundles sure looks differents"
-			x: -5.0d
-			y: -3.0d
+			x: -5.3999999999999995d
+			y: -4.2d
 		}
 		{
 			dependencies: [
@@ -442,8 +444,8 @@
 				type: "item"
 			}]
 			title: "Got enough slots yet?"
-			x: -5.0d
-			y: -2.0d
+			x: -5.3999999999999995d
+			y: -3.0d
 		}
 		{
 			dependencies: ["616F8356C06E4806"]
@@ -467,7 +469,7 @@
 			}]
 			title: "Mother Nature"
 			x: -3.0d
-			y: -1.0d
+			y: -1.7999999999999998d
 		}
 		{
 			dependencies: ["4B5E70ADE3D668E9"]
@@ -496,8 +498,8 @@
 				type: "item"
 			}]
 			title: "Now including Fancy Options"
-			x: -5.5d
-			y: -4.0d
+			x: -6.0d
+			y: -5.3999999999999995d
 		}
 		{
 			dependencies: ["616F8356C06E4806"]
@@ -521,8 +523,8 @@
 				type: "item"
 			}]
 			title: "Shiny!"
-			x: -4.0d
-			y: -1.0d
+			x: -4.2d
+			y: -1.7999999999999998d
 		}
 		{
 			dependencies: ["616F8356C06E4806"]
@@ -542,8 +544,8 @@
 				type: "item"
 			}]
 			title: "That's not energy!"
-			x: -2.0d
-			y: -3.0d
+			x: -1.7999999999999998d
+			y: -4.2d
 		}
 		{
 			dependencies: ["491A6D808994797B"]
@@ -563,8 +565,8 @@
 				type: "item"
 			}]
 			title: "That's Raw!"
-			x: -2.5d
-			y: -4.0d
+			x: -2.4d
+			y: -5.3999999999999995d
 		}
 		{
 			dependencies: ["23E48C4BA203C8F8"]
@@ -588,8 +590,8 @@
 				type: "item"
 			}]
 			title: "You're rich! Or are you?"
-			x: -1.0d
-			y: -2.0d
+			x: -0.6d
+			y: -3.0d
 		}
 		{
 			description: [
@@ -612,8 +614,8 @@
 				type: "item"
 			}]
 			title: "What have you done?"
-			x: -6.0d
-			y: -3.0d
+			x: -6.6d
+			y: -4.2d
 		}
 		{
 			dependencies: ["3DA41078DF459632"]
@@ -637,8 +639,8 @@
 				type: "item"
 			}]
 			title: "Rock, Pickaxe, Lava!"
-			x: -5.0d
-			y: -1.0d
+			x: -5.3999999999999995d
+			y: -1.7999999999999998d
 		}
 		{
 			dependencies: ["616F8356C06E4806"]
@@ -662,8 +664,8 @@
 				type: "item"
 			}]
 			title: "Shinier!"
-			x: -2.0d
-			y: -1.0d
+			x: -1.7999999999999998d
+			y: -1.7999999999999998d
 		}
 		{
 			dependencies: ["3DA41078DF459632"]
@@ -686,8 +688,8 @@
 				type: "item"
 			}]
 			title: "Like the dwarf you are"
-			x: -5.0d
-			y: 0.0d
+			x: -5.3999999999999995d
+			y: -0.6d
 		}
 		{
 			dependencies: [
@@ -708,14 +710,15 @@
 				table_id: 6307414237475125258L
 				type: "choice"
 			}]
+			size: 1.3d
 			tasks: [{
 				id: "341DA724CF7B98AD"
 				item: "minecraft:enchanting_table"
 				type: "item"
 			}]
 			title: "It makes things shiny"
-			x: -6.0d
-			y: -1.0d
+			x: -6.6d
+			y: -1.7999999999999998d
 		}
 		{
 			description: [
@@ -744,8 +747,8 @@
 				type: "checkmark"
 			}]
 			title: "&c&lImportant: World Gen and Trading"
-			x: -1.0d
-			y: -5.0d
+			x: -0.6d
+			y: -6.6d
 		}
 		{
 			description: [
@@ -768,8 +771,8 @@
 				title: "&c&lImportant: Fire Spread"
 				type: "checkmark"
 			}]
-			x: -0.5d
-			y: -6.0d
+			x: 0.0d
+			y: -7.8d
 		}
 		{
 			dependencies: ["72EB2ED8D9D7B364"]
@@ -794,8 +797,8 @@
 				type: "item"
 			}]
 			title: "It's like in the 90's!"
-			x: -6.0d
-			y: -2.0d
+			x: -6.6d
+			y: -3.0d
 		}
 		{
 			description: [
@@ -836,8 +839,8 @@
 				title: "Welcome to Outlying Destiny!"
 				type: "checkmark"
 			}]
-			x: -6.0d
-			y: -5.0d
+			x: -6.6d
+			y: -6.6d
 		}
 		{
 			description: [
@@ -864,8 +867,8 @@
 				type: "checkmark"
 			}]
 			title: "&c&lImportant: Bugs?"
-			x: -1.5d
-			y: -6.0d
+			x: -1.2d
+			y: -7.8d
 		}
 		{
 			description: [
@@ -894,8 +897,8 @@
 				type: "checkmark"
 			}]
 			title: "&c&lImportant: Questbook Manual"
-			x: -5.5d
-			y: -6.0d
+			x: -6.0d
+			y: -7.8d
 		}
 		{
 			description: [
@@ -930,8 +933,8 @@
 				title: "&c&lImportant: Useful Shortcuts"
 				type: "checkmark"
 			}]
-			x: -3.5d
-			y: -6.0d
+			x: -3.5999999999999996d
+			y: -7.8d
 		}
 		{
 			description: [
@@ -975,8 +978,8 @@
 				title: "&c&lImportant: JEI Manual"
 				type: "checkmark"
 			}]
-			x: -4.5d
-			y: -6.0d
+			x: -4.8d
+			y: -7.8d
 		}
 		{
 			description: [
@@ -1005,8 +1008,8 @@
 				title: "&c&lImportant: Teaming Up"
 				type: "checkmark"
 			}]
-			x: -2.5d
-			y: -6.0d
+			x: -2.4d
+			y: -7.8d
 		}
 		{
 			dependencies: ["4F27C10BCFCC365F"]
@@ -1034,8 +1037,8 @@
 				type: "item"
 			}]
 			title: "Bucket but bigger!"
-			x: -1.0d
-			y: -3.0d
+			x: -0.6d
+			y: -4.2d
 		}
 		{
 			dependencies: ["4F27C10BCFCC365F"]
@@ -1069,8 +1072,8 @@
 				type: "item"
 			}]
 			title: "Spaghetti with ketchup"
-			x: -1.5d
-			y: -4.0d
+			x: -1.2d
+			y: -5.3999999999999995d
 		}
 		{
 			description: [
@@ -1092,8 +1095,8 @@
 				title: "&c&lImportant: Ultimine"
 				type: "checkmark"
 			}]
-			x: -2.0d
-			y: -5.0d
+			x: -1.7999999999999998d
+			y: -6.6d
 		}
 	]
 	title: "1. New Beginnings"

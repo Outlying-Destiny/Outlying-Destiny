@@ -94,4 +94,7 @@ ServerEvents.recipes(event => {
     event.remove({id:'thermal:press_coin_die'})
     event.remove({id:/thermal:machines\/press\/press_.+_to_coin/})
     event.remove({id:/thermal(_extra|endergy):machine\/press\/.+_coin/})
+
+    //Crop Harvester
+    event.remove({id:'thermal_extra:crafting/device_harvester'})
 })

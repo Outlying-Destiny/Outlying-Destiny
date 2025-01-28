@@ -520,6 +520,7 @@
 				item: "thermal:rf_coil"
 				type: "item"
 			}]
+			size: 1.1d
 			tasks: [
 				{
 					id: "17867FC32C281AF0"
@@ -1543,6 +1544,7 @@
 				}
 				type: "item"
 			}]
+			size: 1.1d
 			tasks: [
 				{
 					id: "5D95CDBF8D5872D1"
@@ -1581,6 +1583,7 @@
 				item: "ae2:inscriber"
 				type: "item"
 			}]
+			title: "Scribe! Until the end."
 			x: 0.5d
 			y: -4.5d
 		}
@@ -1691,6 +1694,7 @@
 					type: "item"
 				}
 			]
+			title: "Processing Party"
 			x: 0.5d
 			y: -3.5d
 		}
@@ -1733,6 +1737,7 @@
 				}
 				type: "item"
 			}]
+			title: "Energy Battery³"
 			x: 2.5d
 			y: -4.5d
 		}
@@ -1755,6 +1760,7 @@
 				}
 				type: "item"
 			}]
+			title: "Density? Very"
 			x: 3.5d
 			y: -4.5d
 		}
@@ -1774,6 +1780,7 @@
 				item: "ae2:cell_component_1k"
 				type: "item"
 			}]
+			title: "Digital Storage!"
 			x: 3.5d
 			y: -3.5d
 		}
@@ -1792,6 +1799,7 @@
 				item: "ae2:cell_component_4k"
 				type: "item"
 			}]
+			title: "Great Storage"
 			x: 4.5d
 			y: -3.5d
 		}
@@ -1810,6 +1818,7 @@
 				item: "ae2:cell_component_16k"
 				type: "item"
 			}]
+			title: "Super Storage"
 			x: 5.5d
 			y: -3.5d
 		}
@@ -1833,6 +1842,7 @@
 				item: "ae2:fluix_crystal"
 				type: "item"
 			}]
+			title: "Fluix flew by"
 			x: 1.5d
 			y: -4.5d
 		}
@@ -1859,6 +1869,7 @@
 				item: "ae2:drive"
 				type: "item"
 			}]
+			title: "What do you have in stock?"
 			x: 2.5d
 			y: -3.5d
 		}
@@ -1897,6 +1908,7 @@
 							]
 						}
 					}
+					title: "Storage Controller"
 					type: "item"
 				}
 				{
@@ -1928,6 +1940,7 @@
 				item: "ae2:cell_component_64k"
 				type: "item"
 			}]
+			title: "Ultra Storage"
 			x: 5.5d
 			y: -2.5d
 		}
@@ -1978,6 +1991,7 @@
 					type: "item"
 				}
 			]
+			title: "Grow up, Certus!"
 			x: 1.0d
 			y: -5.25d
 		}
@@ -1995,6 +2009,7 @@
 				item: "ae2:cell_workbench"
 				type: "item"
 			}]
+			title: "Cell Maintenance"
 			x: 4.5d
 			y: -4.5d
 		}
@@ -2064,6 +2079,7 @@
 				item: "ae2:terminal"
 				type: "item"
 			}]
+			title: "Waiter! More items please"
 			x: 2.5d
 			y: -2.5d
 		}
@@ -2082,6 +2098,7 @@
 				item: "ae2:cell_component_256k"
 				type: "item"
 			}]
+			title: "Extreme Storage"
 			x: 4.5d
 			y: -2.5d
 		}
@@ -2248,6 +2265,7 @@
 				item: "ae2:view_cell"
 				type: "item"
 			}]
+			title: "Cellular View"
 			x: 5.5d
 			y: -4.5d
 		}
@@ -2479,6 +2497,7 @@
 				""
 				"Elite Factories can process 5 recipes at once."
 			]
+			icon: "mekanism:advanced_smelting_factory"
 			id: "6D3DF45A28E33B78"
 			min_width: 325
 			rewards: [{
@@ -2627,8 +2646,8 @@
 				type: "item"
 			}]
 			title: "Copypasta"
-			x: 7.25d
-			y: 2.0d
+			x: 8.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["66D705EFB050318F"]
@@ -2677,7 +2696,7 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["415C7601E035DBDB"]
+			dependencies: ["090D14082AE0CCD0"]
 			description: [
 				"Like their Garden Cloche alternative, Phytogenic Insolators can automatically farm any type of tree for you!"
 				""
@@ -2699,8 +2718,8 @@
 				type: "item"
 			}]
 			title: "Garden Cloche well... actually stay."
-			x: 0.25d
-			y: -2.5d
+			x: 5.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -2723,13 +2742,18 @@
 				type: "choice"
 			}]
 			tasks: [{
-				id: "05EA0063414D8B60"
+				id: "35D2B157F6E6DCB0"
 				item: {
 					Count: 1
-					id: "simplyjetpacks:jetpack_te2"
-					tag: { }
+					id: "ironjetpacks:jetpack"
+					tag: {
+						Id: "ironjetpacks:hardened"
+						Throttle: 1.0d
+					}
 				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "Faster, Stronger"
 			x: 6.75d
@@ -2758,17 +2782,22 @@
 				type: "choice"
 			}]
 			tasks: [{
-				id: "321EFB2E08D8FB5D"
+				id: "7EC565775B882AFB"
 				item: {
 					Count: 1
-					id: "simplyjetpacks:jetpack_te1"
-					tag: { }
+					id: "ironjetpacks:jetpack"
+					tag: {
+						Id: "ironjetpacks:leadstone"
+						Throttle: 1.0d
+					}
 				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "Look Mom, I can fly (metal edition)"
-			x: 5.5d
-			y: 3.0d
+			x: 7.375d
+			y: 2.0d
 		}
 		{
 			dependencies: ["78A5EFE0090C4D99"]
@@ -2825,6 +2854,25 @@
 			title: "Komodo Dragon, eh?"
 			x: 0.25d
 			y: 3.0d
+		}
+		{
+			dependencies: ["415C7601E035DBDB"]
+			id: "6B130126C761B916"
+			rewards: [{
+				count: 4
+				id: "2DEFAA1429EAE75C"
+				item: "thermal:signalum_ingot"
+				type: "item"
+			}]
+			size: 1.1d
+			tasks: [{
+				id: "2D61AD06D2176D56"
+				item: "thermal:machine_crafter"
+				type: "item"
+			}]
+			title: "Craft, craft more!"
+			x: 0.25d
+			y: -2.5d
 		}
 	]
 	title: "5. Heat it up!"

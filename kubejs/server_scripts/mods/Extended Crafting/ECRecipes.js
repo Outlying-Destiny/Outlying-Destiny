@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
     
     //Basic Crafting Table
     event.remove({id:'extendedcrafting:basic_table'})
-    event.remove({id:'extendedcrafting:advanced_auto_table'})
+    event.remove({id:'extendedcrafting:basic_auto_table'})
     event.shaped('extendedcrafting:basic_table', ['ABA',' C ','DDD'], {A: 'kubejs:signalum_catalyst',B: 'kubejs:double_compressed_crafting_table',C: 'extendedcrafting:frame',D: 'extendedcrafting:black_iron_slate'})
     detailedbox('extendedcrafting:basic_auto_table', 'extendedcrafting:black_iron_ingot', 'kubejs:signalum_catalyst', 'kubejs:automaton_component', 'extendedcrafting:basic_table')
 

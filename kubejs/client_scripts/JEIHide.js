@@ -44,7 +44,7 @@ JEIEvents.hideItems(event => {
     event.hide(['elementalcraft:inert_crystal_ore', 'elementalcraft:deepslate_inert_crystal_ore'])
 
     //EvilCraft
-    event.hide([/evilcraft:exalted_crafte.+/, 'evilcraft:entangled_chalice'])
+    event.hide([/evilcraft:exalted_crafte.+/, 'evilcraft:entangled_chalice', /evilcraft:dark_tank/])
     
     //Extended Crafting
     event.hide([/extendedcrafting:(enhanced_){0,1}redstone_(ingot|nugget|component|catalyst)/, /extendedcrafting:(auto_){0,1}flux_(alternator|crafter|star)/, 'packagedexcrafting:flux_crafter'])
@@ -81,6 +81,9 @@ JEIEvents.hideItems(event => {
     event.hide(/industrialforegoing:mycelial_.+/)
     event.hide(/industrialforegoing:infinity.+/)
     event.hide(['industrialforegoing:biofuel_generator', 'industrialforegoing:pitiful_generator', 'industrialforegoing:resourceful_furnace', 'industrialforegoing:spores_recreator', 'industrialforegoing:dye_mixer', 'industrialforegoing:mechanical_dirt', 'industrialforegoing:water_condensator', 'industrialforegoing:hydroponic_bed'])
+
+    //Iron Jetpacks
+    event.hide(['ironjetpacks:cell', 'ironjetpacks:capacitor', /ironjetpacks:.+_coil/, Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:creative"}').strongNBT()])
 
     //Laserio
     event.hide('laserio:laser_connector_advanced')
@@ -124,8 +127,8 @@ JEIEvents.hideItems(event => {
     event.hide(['rftoolsutility:environmental_controller', /rftoolsutility:module(plus){0,1}_template/, /rftoolsutility:(blindness|featherfalling|haste|flight|glowing|luck|nightvision|noteleport|peaceful|poison|regeneration|saturation|slowness|speed|waterbreathing|weakness)(plus){0,1}_module/, /rftoolsbuilder:(mover|vehicle)/, /rftoolsbuilder:.+shield/])
 
     //Simply Jetpacks
-    event.hide([/simplyjetpacks:.+(vanilla|ie|mek).+/, 'simplyjetpacks:jetpack_potato'])
-    event.hide(/simplyjetpacks:armorplating_te[1-4]/)
+    //event.hide([/simplyjetpacks:.+(vanilla|ie|mek).+/, 'simplyjetpacks:jetpack_potato'])
+    //event.hide(/simplyjetpacks:armorplating_te[1-4]/)
 
     //Solar Flux Reborn
     event.hide([/solarflux:twilightforest.+/, /solarflux:sp_tf.+/, /solarflux:(traversal|dispersive|block_charging|furnace)_upgrade/, /solarflux:(emerald|ender)_glass/, 'solarflux:blazing_coating'])
@@ -143,7 +146,7 @@ JEIEvents.hideItems(event => {
     event.hide(['thermal_extra:upgrade_augment', 'thermal_extra:abyssal_upgrade_augment'])
     event.hide(['thermal_extra:nitratic_igniter', /thermal_extra:.+_ore_chunk/])
     event.hide([/thermal:.+mushroom_spores/, 'thermal_extra:ancient_dust', 'thermal_extra:sticky_ball'])
-    event.hide(['thermal:satchel', 'thermal_extra:device_lava_gen', 'thermal:device_water_gen', 'thermal:phytosoil', 'thermal:phytosoil_tiled', 'thermal:device_soil_infuser', 'thermal:xp_crystal', 'thermal:device_xp_condenser', 'thermal:xp_storage_augment', /thermal:press_(packing_2x2|packing_3x3|unpacking|coin)_die/])
+    event.hide(['thermal:satchel', 'thermal_extra:device_lava_gen', 'thermal:device_water_gen', 'thermal:phytosoil', 'thermal:phytosoil_tiled', 'thermal:device_soil_infuser', 'thermal:xp_crystal', 'thermal:device_xp_condenser', 'thermal:xp_storage_augment', /thermal:press_(packing_2x2|packing_3x3|unpacking|coin)_die/, 'thermal_extra:device_harvester'])
     event.hide(['thermal:ruby_ore', 'thermal:deepslate_ruby_ore', 'thermal:sapphire_ore', 'thermal:deepslate_sapphire_ore'])
     event.hide(/thermal_extra:.+_(helmet|chestplate|leggings|boots|sword|axe|pickaxe|shovel|hoe|excavator|hammer|knife|sickle)/)
 

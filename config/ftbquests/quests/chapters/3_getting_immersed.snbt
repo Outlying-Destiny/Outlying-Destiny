@@ -313,6 +313,7 @@
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
+			size: 1.1d
 			tasks: [{
 				id: "53F6D21B186ACD16"
 				item: "thermal:steel_ingot"
@@ -979,7 +980,7 @@
 				""
 				"Logistical Transporters are used to transport items, their pump rate works the same as their fluid counterpart and their speed being the number of blocks per second the item will travel inside the cables, meaning that compared to the other cables, item transportation is not instant. &aRestrictive and Diversion Transporters has been disabled.&r"
 				""
-				"The Configurator have multiple modes, you can &eshift mouse wheel&r to switch between modes and &eshift right click&r to interact with blocks in the world. The Wrench mode will insta-break machines or cables. The rotate mode is self-explanatory. The other mods are used to configure cable or machine sides without having to open their HUD. When it comes to cables you can configure them no matter what element your configuration mode is on."
+				"The Configurator have multiple modes, you can &eshift mouse wheel&r to switch between modes and &eshift right click&r to interact with blocks in the world. The Wrench mode will insta-break machines or cables. The rotate mode is self-explanatory. The other mods are used to configure cable or machine sides without having to open their HUD. When it comes to cables you can configure them no matter what element your configuration mode is on. You can also &eshift right click&r tanks to activate auto-output."
 				""
 				"You can easily copy-paste a machine's settings with the Configuration Tool."
 				""

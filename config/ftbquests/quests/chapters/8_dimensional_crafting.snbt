@@ -1,6 +1,7 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
+	default_quest_size: 1.1d
 	filename: "8_dimensional_crafting"
 	group: ""
 	icon: "rftoolsbase:dimensionalshard"
@@ -16,14 +17,14 @@
 			disable_toast: true
 			id: "441808A1F27C6DEF"
 			min_width: 300
-			size: 1.5d
+			size: 1.4d
 			tasks: [{
 				id: "5B2B5180047A7C2B"
 				item: "industrialforegoing:machine_frame_supreme"
 				type: "item"
 			}]
-			x: -12.25d
-			y: -1.5d
+			x: -12.375d
+			y: -1.1d
 		}
 		{
 			dependencies: ["441808A1F27C6DEF"]
@@ -57,8 +58,8 @@
 					type: "item"
 				}
 			]
-			x: -10.75d
-			y: -1.5d
+			x: -10.175d
+			y: -1.1d
 		}
 		{
 			dependencies: ["441808A1F27C6DEF"]
@@ -74,8 +75,8 @@
 				item: "industrialforegoing:wither_builder"
 				type: "item"
 			}]
-			x: -12.75d
-			y: -2.75d
+			x: -12.925d
+			y: -2.475d
 		}
 		{
 			dependencies: ["441808A1F27C6DEF"]
@@ -99,8 +100,8 @@
 					type: "item"
 				}
 			]
-			x: -11.75d
-			y: -2.75d
+			x: -11.825000000000001d
+			y: -2.475d
 		}
 		{
 			dependencies: ["441808A1F27C6DEF"]
@@ -115,8 +116,8 @@
 				item: "industrialforegoing:enchantment_extractor"
 				type: "item"
 			}]
-			x: -12.25d
-			y: 0.0d
+			x: -12.375d
+			y: 0.275d
 		}
 		{
 			dependencies: ["4901F2BFB8E5E48C"]
@@ -132,8 +133,8 @@
 				item: "rftoolsbase:dimensionalshard"
 				type: "item"
 			}]
-			x: -9.25d
-			y: -1.5d
+			x: -7.9750000000000005d
+			y: -1.1d
 		}
 		{
 			dependencies: ["224AC09195D0ACA6"]
@@ -149,8 +150,8 @@
 				item: "rftoolsbase:machine_frame"
 				type: "item"
 			}]
-			x: -10.75d
-			y: -4.5d
+			x: -3.85d
+			y: -3.85d
 		}
 		{
 			dependencies: ["2E34815F339B49B3"]
@@ -206,8 +207,8 @@
 					type: "item"
 				}
 			]
-			x: -10.75d
-			y: -6.0d
+			x: -3.85d
+			y: -5.2250000000000005d
 		}
 		{
 			dependencies: ["0405FD0A6A940955"]
@@ -223,8 +224,8 @@
 				item: "extendedcrafting:advanced_table"
 				type: "item"
 			}]
-			x: -4.75d
-			y: -3.0d
+			x: -2.475d
+			y: -2.475d
 		}
 		{
 			dependencies: [
@@ -243,8 +244,8 @@
 				item: "extendedcrafting:auto_ender_crafter"
 				type: "item"
 			}]
-			x: -6.25d
-			y: -3.0d
+			x: -3.85d
+			y: -2.475d
 		}
 		{
 			dependencies: ["279935A116DB7389"]
@@ -260,12 +261,13 @@
 				item: "thermal_extra:abyssal_ingot"
 				type: "item"
 			}]
-			x: -6.25d
-			y: -1.5d
+			x: -5.2250000000000005d
+			y: -1.1d
 		}
 		{
 			dependencies: ["4A75A7BA728158A6"]
 			id: "667537EE5D9C958B"
+			size: 1.4d
 			tasks: [{
 				id: "4823AAD070985D70"
 				item: {
@@ -288,8 +290,8 @@
 				}
 				type: "item"
 			}]
-			x: -3.25d
-			y: -1.5d
+			x: -2.475d
+			y: -1.1d
 		}
 		{
 			dependencies: ["08D42B748B94B99C"]
@@ -305,8 +307,8 @@
 				item: "mekanism:quantum_entangloporter"
 				type: "item"
 			}]
-			x: -10.75d
-			y: 1.5d
+			x: -9.35d
+			y: 1.6500000000000001d
 		}
 		{
 			dependencies: [
@@ -340,8 +342,8 @@
 					type: "item"
 				}
 			]
-			x: -7.75d
-			y: 0.0d
+			x: -6.6000000000000005d
+			y: 0.275d
 		}
 		{
 			dependencies: ["16AE041645FB3240"]
@@ -357,8 +359,8 @@
 				item: "mekanism:teleportation_core"
 				type: "item"
 			}]
-			x: -10.75d
-			y: 0.0d
+			x: -9.35d
+			y: 0.275d
 		}
 		{
 			dependencies: [
@@ -377,8 +379,8 @@
 				item: "powah:binding_card_dim"
 				type: "item"
 			}]
-			x: -9.25d
-			y: 0.0d
+			x: -7.9750000000000005d
+			y: 0.275d
 		}
 		{
 			dependencies: ["1F34435E89390F62"]
@@ -408,8 +410,8 @@
 					type: "item"
 				}
 			]
-			x: -6.25d
-			y: 1.5d
+			x: -5.2250000000000005d
+			y: 1.6500000000000001d
 		}
 		{
 			dependencies: ["1F34435E89390F62"]
@@ -434,8 +436,8 @@
 					type: "item"
 				}
 			]
-			x: -4.75d
-			y: 1.5d
+			x: -3.85d
+			y: 1.6500000000000001d
 		}
 		{
 			dependencies: ["08D42B748B94B99C"]
@@ -508,8 +510,8 @@
 				title: "Gadgets"
 				type: "item"
 			}]
-			x: -12.25d
-			y: 1.5d
+			x: -10.725d
+			y: 0.275d
 		}
 		{
 			dependencies: [
@@ -547,8 +549,8 @@
 					type: "item"
 				}
 			]
-			x: -3.25d
-			y: 0.0d
+			x: -2.475d
+			y: 0.275d
 		}
 		{
 			dependencies: ["4A75A7BA728158A6"]
@@ -564,8 +566,8 @@
 				item: "javd:portal_block"
 				type: "item"
 			}]
-			x: -4.75d
-			y: -4.5d
+			x: -1.1d
+			y: -2.475d
 		}
 		{
 			dependencies: ["2320CBCFAB2C954A"]
@@ -576,13 +578,15 @@
 				table_id: 4458879916434854284L
 				type: "choice"
 			}]
+			size: 1.2d
 			tasks: [{
 				id: "38D58CE58A21BCDD"
 				item: "ae2:interface"
 				type: "item"
 			}]
-			x: -6.25d
-			y: -6.0d
+			title: "Analog Interface"
+			x: -9.35d
+			y: -2.475d
 		}
 		{
 			dependencies: ["5C8FE51BD6EC44E5"]
@@ -593,13 +597,14 @@
 				table_id: 4672925982149285478L
 				type: "choice"
 			}]
+			size: 1.2d
 			tasks: [{
 				id: "667AD38BB464354B"
 				item: "ae2:pattern_provider"
 				type: "item"
 			}]
-			x: -7.75d
-			y: -7.5d
+			x: -9.35d
+			y: -3.85d
 		}
 		{
 			dependencies: ["2320CBCFAB2C954A"]
@@ -632,8 +637,8 @@
 				title: "ME Import / Export Bus"
 				type: "item"
 			}]
-			x: -6.25d
-			y: -4.5d
+			x: -7.9750000000000005d
+			y: -2.475d
 		}
 		{
 			dependencies: ["2320CBCFAB2C954A"]
@@ -658,8 +663,8 @@
 					type: "item"
 				}
 			]
-			x: -7.75d
-			y: -6.0d
+			x: -7.9750000000000005d
+			y: -5.2250000000000005d
 		}
 		{
 			dependencies: ["16AE041645FB3240"]
@@ -675,8 +680,8 @@
 				item: "kubejs:extradimensional_alloy_ingot"
 				type: "item"
 			}]
-			x: -7.75d
-			y: -1.5d
+			x: -6.6000000000000005d
+			y: -1.1d
 		}
 		{
 			dependencies: ["279935A116DB7389"]
@@ -692,8 +697,8 @@
 				item: "kubejs:extradimensional_processor"
 				type: "item"
 			}]
-			x: -6.25d
-			y: 0.0d
+			x: -5.2250000000000005d
+			y: 0.275d
 		}
 		{
 			dependencies: ["26EAEEAB65B009DA"]
@@ -709,8 +714,8 @@
 				item: "kubejs:automaton_processor"
 				type: "item"
 			}]
-			x: -7.75d
-			y: -4.5d
+			x: -7.9750000000000005d
+			y: -3.85d
 		}
 		{
 			dependencies: ["06F72DB4D5A3109F"]
@@ -726,8 +731,8 @@
 				item: "solarflux:sp_7"
 				type: "item"
 			}]
-			x: -4.75d
-			y: 0.0d
+			x: -3.85d
+			y: 0.275d
 		}
 		{
 			dependencies: ["16AE041645FB3240"]
@@ -743,8 +748,8 @@
 				item: "kubejs:automaton_ingot"
 				type: "item"
 			}]
-			x: -9.25d
-			y: -3.0d
+			x: -6.6000000000000005d
+			y: -2.475d
 		}
 		{
 			dependencies: ["26EAEEAB65B009DA"]
@@ -760,8 +765,8 @@
 				item: "kubejs:machinarium_ingot"
 				type: "item"
 			}]
-			x: -10.75d
-			y: -3.0d
+			x: -5.2250000000000005d
+			y: -3.85d
 		}
 		{
 			dependencies: ["1F34435E89390F62"]
@@ -790,8 +795,8 @@
 					type: "item"
 				}
 			]
-			x: -7.75d
-			y: 1.5d
+			x: -6.6000000000000005d
+			y: 1.6500000000000001d
 		}
 		{
 			dependencies: ["08D42B748B94B99C"]
@@ -825,8 +830,8 @@
 					type: "item"
 				}
 			]
-			x: -9.25d
-			y: 1.5d
+			x: -7.9750000000000005d
+			y: 1.6500000000000001d
 		}
 		{
 			dependencies: ["06F72DB4D5A3109F"]
@@ -842,8 +847,8 @@
 				item: "kubejs:abyssal_component"
 				type: "item"
 			}]
-			x: -4.75d
-			y: -1.5d
+			x: -3.85d
+			y: -1.1d
 		}
 		{
 			dependencies: ["26EAEEAB65B009DA"]
@@ -859,8 +864,8 @@
 				item: "kubejs:automaton_component"
 				type: "item"
 			}]
-			x: -7.75d
-			y: -3.0d
+			x: -5.2250000000000005d
+			y: -2.475d
 		}
 		{
 			dependencies: ["5C8FE51BD6EC44E5"]
@@ -876,8 +881,8 @@
 				item: "ae2:molecular_assembler"
 				type: "item"
 			}]
-			x: -9.25d
-			y: -6.0d
+			x: -9.35d
+			y: -5.2250000000000005d
 		}
 		{
 			dependencies: ["2320CBCFAB2C954A"]
@@ -914,11 +919,12 @@
 				title: "Annihilation / Formation Plane"
 				type: "item"
 			}]
-			x: -9.25d
-			y: -4.5d
+			x: -6.6000000000000005d
+			y: -3.85d
 		}
 		{
 			dependencies: ["5558584DC5FCE381"]
+			icon: "ae2:pattern_encoding_terminal"
 			id: "5FEEF885BF4856BF"
 			rewards: [{
 				count: 16
@@ -938,8 +944,8 @@
 					type: "item"
 				}
 			]
-			x: -6.25d
-			y: -7.5d
+			x: -10.725d
+			y: -2.475d
 		}
 		{
 			dependencies: ["5558584DC5FCE381"]
@@ -955,8 +961,8 @@
 				item: "ae2:crafting_unit"
 				type: "item"
 			}]
-			x: -9.25d
-			y: -7.5d
+			x: -10.725d
+			y: -3.85d
 		}
 		{
 			dependencies: ["7053C1D0B4C8A492"]
@@ -1013,19 +1019,20 @@
 					type: "item"
 				}
 			]
-			x: -10.75d
-			y: -7.5d
+			x: -10.725d
+			y: -5.2250000000000005d
 		}
 		{
 			dependencies: ["4A75A7BA728158A6"]
 			id: "16798CAFE609CF56"
+			size: 1.4d
 			tasks: [{
 				id: "7174401C3FE6FE9C"
 				item: "ad_astra:nasa_workbench"
 				type: "item"
 			}]
-			x: -3.25d
-			y: -4.5d
+			x: -2.475d
+			y: -3.85d
 		}
 		{
 			dependencies: ["65AF059247785042"]
@@ -1062,8 +1069,8 @@
 				title: "Spatial Components"
 				type: "item"
 			}]
-			x: -3.25d
-			y: 1.5d
+			x: -2.475d
+			y: 1.6500000000000001d
 		}
 		{
 			dependencies: ["14F691930009DB7F"]
@@ -1096,8 +1103,8 @@
 				title: "Fortune / Silk Touch Quarry"
 				type: "item"
 			}]
-			x: -12.25d
-			y: -4.5d
+			x: -2.475d
+			y: -5.2250000000000005d
 		}
 		{
 			dependencies: [
@@ -1120,6 +1127,7 @@
 					type: "item"
 				}
 			]
+			size: 1.2d
 			tasks: [
 				{
 					id: "0E3B31AE9859C109"
@@ -1219,8 +1227,8 @@
 					type: "item"
 				}
 			]
-			x: -12.25d
-			y: -6.0d
+			x: -5.2250000000000005d
+			y: -5.2250000000000005d
 		}
 		{
 			dependencies: ["78CA996FD7E0B181"]
@@ -1260,8 +1268,51 @@
 					type: "item"
 				}
 			]
-			x: -12.25d
-			y: -7.5d
+			x: -6.6000000000000005d
+			y: -5.2250000000000005d
+		}
+		{
+			dependencies: ["7C9D2079558AB413"]
+			hide_dependency_lines: true
+			icon: "extendedcrafting:basic_auto_table"
+			id: "23FA5E27949A7882"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3D0D0697FAFA4651"
+				table_id: 7000154331664210551L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "4005FBF268E2ED46"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "extendedcrafting:basic_auto_table"
+							}
+							{
+								Count: 1b
+								id: "extendedcrafting:advanced_auto_table"
+							}
+							{
+								Count: 1b
+								id: "extendedcrafting:elite_auto_table"
+							}
+							{
+								Count: 1b
+								id: "extendedcrafting:ultimate_auto_table"
+							}
+						]
+					}
+				}
+				title: "Auto Crafting Table"
+				type: "item"
+			}]
+			x: -10.725d
+			y: 1.6500000000000001d
 		}
 	]
 	title: "8. Dimensional Crafting"

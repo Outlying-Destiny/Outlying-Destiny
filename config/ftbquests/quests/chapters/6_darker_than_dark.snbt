@@ -315,7 +315,7 @@
 				item: "extendedcrafting:ender_ingot"
 				type: "item"
 			}]
-			title: "Finally, an en... wait, no.. HOW LONG IS THIS LINE?"
+			title: "Finally, an en... wait, no.. we're just starting aren't we?"
 			x: -5.5d
 			y: -3.5d
 		}
@@ -334,7 +334,7 @@
 				item: "extendedcrafting:enhanced_ender_ingot"
 				type: "item"
 			}]
-			title: "EE Ingot"
+			title: "EnderPowered"
 			x: -4.25d
 			y: -2.25d
 		}
@@ -1159,6 +1159,7 @@
 				table_id: 3233895940310047275L
 				type: "choice"
 			}]
+			size: 1.1d
 			tasks: [{
 				id: "655C7BA4BC75FEEB"
 				item: "extendedcrafting:frame"
@@ -1466,7 +1467,7 @@
 				item: "enderio:ensouled_chassis"
 				type: "item"
 			}]
-			size: 1.0d
+			size: 1.1d
 			tasks: [{
 				id: "2C2CBD86540D3A98"
 				item: {
@@ -1530,11 +1531,13 @@
 				table_id: 6516829551726006226L
 				type: "choice"
 			}]
+			size: 1.1d
 			tasks: [{
 				id: "7424AEB6EFF1A2BA"
 				item: "ae2:crafting_terminal"
 				type: "item"
 			}]
+			title: "Craft Changing Mechanic!"
 			x: 0.75d
 			y: -1.0d
 		}
@@ -1584,6 +1587,7 @@
 					type: "item"
 				}
 			]
+			title: "OverPowered"
 			x: 3.25d
 			y: -2.25d
 		}
@@ -1597,11 +1601,13 @@
 				table_id: 2672591661036655683L
 				type: "choice"
 			}]
+			size: 1.1d
 			tasks: [{
 				id: "67D87B3469C2941D"
 				item: "actuallyadditions:iron_casing"
 				type: "item"
 			}]
+			title: "I rest my case"
 			x: 2.0d
 			y: -2.25d
 		}
@@ -1773,6 +1779,7 @@
 					type: "item"
 				}
 			]
+			title: "I sure needed a 4th way of item transportation"
 			x: 3.25d
 			y: -1.0d
 		}
@@ -1827,6 +1834,7 @@
 					type: "item"
 				}
 			]
+			title: "You block faker!"
 			x: 4.5d
 			y: -2.25d
 		}
@@ -1855,11 +1863,13 @@
 				}
 				type: "item"
 			}]
+			title: "You know the drill!"
 			x: 2.0d
 			y: -3.5d
 		}
 		{
 			dependencies: ["3E550A5967C6F86E"]
+			icon: "actuallyadditions:drill_upgrade_fortune_ii"
 			id: "7AA87F96C570713B"
 			min_width: 300
 			rewards: [{
@@ -1948,15 +1958,20 @@
 				type: "choice"
 			}]
 			tasks: [{
-				id: "4919042EE4B99DA7"
+				id: "59C01348F3D4F964"
 				item: {
 					Count: 1
-					id: "simplyjetpacks:jetpack_te3"
-					tag: { }
+					id: "ironjetpacks:jetpack"
+					tag: {
+						Id: "ironjetpacks:darkened"
+						Throttle: 1.0d
+					}
 				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
-			title: "I love when the SJ2 lang file doesn't work properly. Yes that is the Quest Title joke"
+			title: "The joke here used to be about SJ2, to put it simply, it didn't age well"
 			x: 2.0d
 			y: -6.0d
 		}
@@ -2046,7 +2061,7 @@
 				item: "solarflux:sp_2"
 				type: "item"
 			}]
-			title: "No, seriously, I'm even struggling with making 2 Blazing joke."
+			title: "No, seriously, I'm even struggling with making 2 Blazing jokes."
 			x: 2.0d
 			y: -4.75d
 		}
@@ -2081,6 +2096,7 @@
 				item: "rftoolsutility:timer"
 				type: "item"
 			}]
+			title: "Tick-Tock"
 			x: 0.75d
 			y: 0.25d
 		}
@@ -2105,12 +2121,14 @@
 					type: "item"
 				}
 			]
+			title: "Wireless Redstone Technology"
 			x: 3.25d
 			y: 0.25d
 		}
 		{
 			dependencies: ["44EB1419FB18283C"]
 			id: "15A7438ECC00D4BC"
+			size: 1.1d
 			tasks: [{
 				id: "14A39AD8094A4A78"
 				item: {
@@ -2136,7 +2154,7 @@
 				title: "Crafters"
 				type: "item"
 			}]
-			title: "Crafters"
+			title: "Craft, keep crafting!"
 			x: 2.0d
 			y: 0.25d
 		}
@@ -2156,6 +2174,7 @@
 				title: "Elevator"
 				type: "item"
 			}]
+			title: "Long Elevator"
 			x: -9.25d
 			y: 0.25d
 		}
@@ -2167,6 +2186,7 @@
 				item: "solarflux:efficiency_upgrade"
 				type: "item"
 			}]
+			title: "Better Solars, less Bulk Crafts!"
 			x: 3.25d
 			y: -6.0d
 		}

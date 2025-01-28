@@ -48,12 +48,12 @@ ServerEvents.recipes(event => {
 
     //Addons
     event.remove({id:/industrialforegoing:dissolution_chamber.+_addon.+/})
-    dissolution('industrialforegoing:speed_addon_1', 1, 'kubejs:molten_signalum', 500, 'pneumaticcraft:plastic', 'mekanism:upgrade_speed', 'mekanism_extras:dust_radiance', 'pneumaticcraft:plastic', 'thermal:machine_speed_augment', 100)
-    dissolution('industrialforegoing:efficiency_addon_1', 1, 'kubejs:molten_signalum', 500, 'pneumaticcraft:plastic', 'mekanism:upgrade_speed', 'mekanism_extras:dust_radiance', 'pneumaticcraft:plastic', 'actuallyadditions:palis_crystal', 100)
-    dissolution('industrialforegoing:processing_addon_1', 1, 'kubejs:molten_signalum', 500, 'pneumaticcraft:plastic', 'mekanism:upgrade_speed', 'mekanism_extras:dust_radiance', 'pneumaticcraft:plastic', 'minecraft:furnace', 100)
-    dissolution('industrialforegoing:speed_addon_2', 1, 'thermal_extra:twinite', 500, 'pneumaticcraft:plastic', 'industrialforegoing:speed_addon_1', 'botania:manasteel_ingot', 'pneumaticcraft:plastic', 'thermal_extra:soul_infused_machine_speed_augment', 150)
-    dissolution('industrialforegoing:efficiency_addon_2', 1, 'thermal_extra:twinite', 500, 'pneumaticcraft:plastic', 'industrialforegoing:efficiency_addon_1', 'botania:manasteel_ingot', 'pneumaticcraft:plastic', 'actuallyadditions:empowered_palis_crystal', 150)
-    dissolution('industrialforegoing:processing_addon_2', 1, 'thermal_extra:twinite', 500, 'pneumaticcraft:plastic', 'industrialforegoing:processing_addon_1', 'botania:manasteel_ingot', 'pneumaticcraft:plastic', 'mekanism:energized_smelter', 150)
+    dissolution('industrialforegoing:speed_addon_1', 1, 'kubejs:molten_signalum', 500, 'mekanism:hdpe_sheet', 'mekanism:upgrade_speed', 'mekanism_extras:dust_radiance', 'mekanism:hdpe_sheet', 'thermal:machine_speed_augment', 100)
+    dissolution('industrialforegoing:efficiency_addon_1', 1, 'kubejs:molten_signalum', 500, 'mekanism:hdpe_sheet', 'mekanism:upgrade_speed', 'mekanism_extras:dust_radiance', 'mekanism:hdpe_sheet', 'actuallyadditions:palis_crystal', 100)
+    dissolution('industrialforegoing:processing_addon_1', 1, 'kubejs:molten_signalum', 500, 'mekanism:hdpe_sheet', 'mekanism:upgrade_speed', 'mekanism_extras:dust_radiance', 'mekanism:hdpe_sheet', 'minecraft:furnace', 100)
+    dissolution('industrialforegoing:speed_addon_2', 1, 'thermal_extra:twinite', 500, 'mekanism:hdpe_sheet', 'industrialforegoing:speed_addon_1', 'botania:manasteel_ingot', 'mekanism:hdpe_sheet', 'thermal_extra:soul_infused_machine_speed_augment', 150)
+    dissolution('industrialforegoing:efficiency_addon_2', 1, 'thermal_extra:twinite', 500, 'mekanism:hdpe_sheet', 'industrialforegoing:efficiency_addon_1', 'botania:manasteel_ingot', 'mekanism:hdpe_sheet', 'actuallyadditions:empowered_palis_crystal', 150)
+    dissolution('industrialforegoing:processing_addon_2', 1, 'thermal_extra:twinite', 500, 'mekanism:hdpe_sheet', 'industrialforegoing:processing_addon_1', 'botania:manasteel_ingot', 'mekanism:hdpe_sheet', 'mekanism:energized_smelter', 150)
     
     const range = [
       {input:'minecraft:coal', number:'0'},{input:'minecraft:lapis_lazuli', number:'1'},{input:'minecraft:iron_ingot', number:'2'},{input:'thermal:steel_ingot', number:'3'},{input:'thermal:bronze_ingot', number:'4'},{input:'thermal:lumium_ingot', number:'5'},{input:'chemlib:platinum_ingot', number:'6'},{input:'enderio:energetic_alloy_ingot', number:'7'},{input:'kubejs:machinarium_ingot', number:'8'},{input:'botania:manasteel_ingot', number:'9'},{input:'botania:elementium_ingot', number:'10'},{input:'botania:terrasteel_ingot', number:'11'}
@@ -62,7 +62,7 @@ ServerEvents.recipes(event => {
     range.forEach((range) => {
       event.custom({
         "type": "industrialforegoing:dissolution_chamber",
-        "input": [{"item": range.input},{"item": range.input},{"item": range.input},{"item": range.input},{"item": range.input},{"item": 'pneumaticcraft:plastic'},{"item": 'pneumaticcraft:plastic'},{"item": 'pneumaticcraft:plastic'}],
+        "input": [{"item": range.input},{"item": range.input},{"item": range.input},{"item": range.input},{"item": range.input},{"item": 'mekanism:hdpe_sheet'},{"item": 'mekanism:hdpe_sheet'},{"item": 'mekanism:hdpe_sheet'}],
         "inputFluid": `{FluidName:"kubejs:molten_signalum",Amount:500}`,
         "output": {
           "count": 1,
@@ -110,7 +110,7 @@ ServerEvents.recipes(event => {
     machine('marine_fisher', 'thermal:device_fisher', 'thermal_extra:shellite_gear', 'simple', 'thermal_extra:shellite_gear', 'minecraft:bucket')
     machine('potion_brewer', 'thermal:machine_brewer', 'thermal_extra:shellite_gear', 'advanced', 'thermal_extra:shellite_gear','thermal_extra:twinite_block')
     machine('wither_builder', 'industrialforegoing:block_placer', 'thermal_extra:soul_infused_gear', 'supreme', 'thermal_extra:soul_infused_gear', 'minecraft:nether_star')
-    machine('mob_duplicator', 'enderio:powered_spawner', 'thermal_extra:dragonsteel_gear', 'supreme', 'thermal_extra:dragonsteel_gear', [Item.of('thermal:fluid_cell', '{BlockEntityTag:{RenderFluid:{Amount:1000,FluidName:"mob_grinding_utils:fluid_xp"},TankInv:[{Amount:32000,Capacity:32000,FluidName:"mob_grinding_utils:fluid_xp",Tank:0b}],id:"thermal:fluid_cell"}}').weakNBT(), Item.of('thermal:fluid_cell', '{BlockEntityTag:{RenderFluid:{Amount:1000,FluidName:"industrialforegoing:essence"},TankInv:[{Amount:32000,Capacity:32000,FluidName:"industrialforegoing:essence",Tank:0b}],id:"thermal:fluid_cell"}}').weakNBT(), Item.of('thermal:fluid_cell', '{BlockEntityTag:{RenderFluid:{Amount:1000,FluidName:"pneumaticcraft:memory_essence"},TankInv:[{Amount:32000,Capacity:32000,FluidName:"pneumaticcraft:memory_essence",Tank:0b}],id:"thermal:fluid_cell"}}').weakNBT(), Item.of('thermal:fluid_cell', '{BlockEntityTag:{RenderFluid:{Amount:1000,FluidName:"enderio:xp_juice"},TankInv:[{Amount:32000,Capacity:32000,FluidName:"enderio:xp_juice",Tank:0b}],id:"thermal:fluid_cell"}}').weakNBT()])
+    machine('mob_duplicator', 'enderio:powered_spawner', 'thermal_extra:dragonsteel_gear', 'supreme', 'thermal_extra:dragonsteel_gear', [Item.of('thermal:fluid_cell', '{BlockEntityTag:{TankInv:[{Amount:32000,Capacity:32000,FluidName:"mob_grinding_utils:fluid_xp",Tank:0b}]}}').weakNBT(), Item.of('thermal:fluid_cell', '{BlockEntityTag:{TankInv:[{Amount:32000,Capacity:32000,FluidName:"industrialforegoing:essence",Tank:0b}]}}').weakNBT(), Item.of('thermal:fluid_cell', '{BlockEntityTag:{TankInv:[{Amount:32000,Capacity:32000,FluidName:"pneumaticcraft:memory_essence",Tank:0b}]}}').weakNBT(), Item.of('thermal:fluid_cell', '{TankInv:[{Amount:32000,Capacity:32000,FluidName:"enderio:xp_juice",Tank:0b}]}}').weakNBT()])
     machine('stasis_chamber', 'industrialforegoing:mob_detector', 'kubejs:end_bimetal_gear', 'advanced', 'kubejs:end_bimetal_gear', 'mekanism:basic_induction_cell')
     machine('mob_detector', 'minecraft:comparator', 'minecraft:repeater', 'simple', 'minecraft:repeater', 'minecraft:observer')
     machine('plant_gatherer', 'minecraft:diamond_axe', 'minecraft:diamond_hoe', 'simple', 'minecraft:diamond_hoe', 'thermal_extra:shellite_block')

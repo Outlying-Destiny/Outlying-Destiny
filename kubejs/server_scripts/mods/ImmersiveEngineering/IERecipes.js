@@ -91,7 +91,7 @@ ServerEvents.recipes(event => {
 
     //Accumulators
         /**
-     * Copies old Accumulator nbt to the new Accumulator (whoever Monifactory contibutor coded that, thank you)
+     * Copies old Accumulator nbt to the new Accumulator (whoever Monifactory contibutor coded that, thank you (again))
      * @param {Internal.ModifyRecipeCraftingGrid} grid
      * @param {Internal.ItemStack} result
      * @returns {Internal.ItemStack}
@@ -108,6 +108,7 @@ ServerEvents.recipes(event => {
 		}
 		return result.withNBT(nbt);
 	}
+
     event.remove({output:/immersiveengineering:capacitor_.+/})
     accumulator('lv', 'thermal:lead_plate', 'thermal:lead_plate', 'minecraft:iron_ingot')
     accumulator('mv', 'thermal:nickel_plate', 'thermal:iron_plate', 'immersiveengineering:capacitor_lv')

@@ -1,6 +1,7 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
+	default_quest_size: 1.25d
 	filename: "2_natural_magic"
 	group: ""
 	icon: "naturesaura:nature_altar"
@@ -58,8 +59,8 @@
 				}
 			]
 			title: "This one's magical, trust me"
-			x: -1.5d
-			y: -0.5d
+			x: -2.1875d
+			y: -0.625d
 		}
 		{
 			dependencies: [
@@ -80,8 +81,8 @@
 				type: "item"
 			}]
 			title: ":)"
-			x: 0.0d
-			y: -0.5d
+			x: -0.3125d
+			y: -0.625d
 		}
 		{
 			dependencies: ["678EF4FAD5178E53"]
@@ -105,6 +106,7 @@
 				table_id: 6931617435292310794L
 				type: "choice"
 			}]
+			size: 1.35d
 			tasks: [
 				{
 					id: "5CB20F7A953D32EC"
@@ -143,8 +145,8 @@
 				}
 			]
 			title: "Aura Infusion"
-			x: 1.0d
-			y: -0.5d
+			x: 1.25d
+			y: -0.625d
 		}
 		{
 			dependencies: ["7530FE8F2D9D011B"]
@@ -164,8 +166,8 @@
 				type: "item"
 			}]
 			title: "Didn't now colorants were magical"
-			x: 2.0d
-			y: -0.5d
+			x: 3.125d
+			y: -0.625d
 		}
 		{
 			dependencies: ["7530FE8F2D9D011B"]
@@ -183,15 +185,15 @@
 				item: "minecraft:stone"
 				type: "item"
 			}]
-			size: 1.25d
+			size: 1.5d
 			tasks: [{
 				id: "5288C9C4711C2316"
 				item: "naturesaura:infused_stone"
 				type: "item"
 			}]
 			title: "Rock Infusion"
-			x: 1.0d
-			y: 0.75d
+			x: 2.1875d
+			y: 0.625d
 		}
 		{
 			dependencies: ["6A53A5AD90652811"]
@@ -214,8 +216,8 @@
 				type: "item"
 			}]
 			title: "Natural Steel"
-			x: 5.75d
-			y: -0.5d
+			x: 8.4375d
+			y: -0.625d
 		}
 		{
 			dependencies: ["66E4E78EE2442FC4"]
@@ -245,8 +247,8 @@
 				type: "item"
 			}]
 			title: "Not to drink, probably"
-			x: -0.5d
-			y: -1.5d
+			x: -0.3125d
+			y: -2.1875d
 		}
 		{
 			dependencies: ["020E762288257550"]
@@ -271,8 +273,8 @@
 				type: "item"
 			}]
 			title: "Magical Bottle"
-			x: -0.5d
-			y: -2.5d
+			x: -1.25d
+			y: -3.4375d
 		}
 		{
 			dependencies: ["738163BCAD68CC8F"]
@@ -285,7 +287,7 @@
 				item: "minecraft:quartz"
 				type: "item"
 			}]
-			size: 1.25d
+			size: 1.5d
 			tasks: [{
 				count: 36L
 				id: "4F79195000F27F6F"
@@ -293,8 +295,8 @@
 				type: "item"
 			}]
 			title: "Hellscape right at home!"
-			x: 1.0d
-			y: -1.75d
+			x: 2.1875d
+			y: -1.875d
 		}
 		{
 			dependencies: ["07A64AE31764BD29"]
@@ -318,8 +320,8 @@
 				type: "item"
 			}]
 			title: "Ancient? I just made them!"
-			x: -1.5d
-			y: 1.0d
+			x: -3.125d
+			y: 0.9375d
 		}
 		{
 			dependencies: ["5F8FE2C8D2EB3B88"]
@@ -334,8 +336,8 @@
 				type: "dimension"
 			}]
 			title: "My home IS hellscape"
-			x: 4.5d
-			y: -0.5d
+			x: 6.5625d
+			y: -0.625d
 		}
 		{
 			dependencies: [
@@ -362,6 +364,7 @@
 				item: "minecraft:netherite_scrap"
 				type: "item"
 			}]
+			size: 1.35d
 			tasks: [
 				{
 					id: "51930EE6F8C47CB7"
@@ -388,8 +391,8 @@
 				}
 			]
 			title: "Pray but most importantly pay"
-			x: 7.0d
-			y: -0.5d
+			x: 10.3125d
+			y: -0.625d
 		}
 		{
 			dependencies: ["6A53A5AD90652811"]
@@ -419,8 +422,8 @@
 				type: "item"
 			}]
 			title: "Luigi's Mansion 4"
-			x: 5.25d
-			y: -1.5d
+			x: 7.5d
+			y: -1.875d
 		}
 		{
 			dependencies: [
@@ -447,8 +450,8 @@
 				type: "item"
 			}]
 			title: "Ghastly noises"
-			x: 5.25d
-			y: 0.5d
+			x: 7.5d
+			y: 0.625d
 		}
 		{
 			dependencies: ["3A778832C6CDC464"]
@@ -467,8 +470,8 @@
 				type: "item"
 			}]
 			title: ":("
-			x: 6.25d
-			y: 0.5d
+			x: 9.375d
+			y: 0.625d
 		}
 		{
 			dependencies: ["684CBF2196952AF5"]
@@ -491,8 +494,8 @@
 				type: "item"
 			}]
 			title: ":O"
-			x: 6.25d
-			y: -1.5d
+			x: 9.375d
+			y: -1.875d
 		}
 		{
 			dependencies: ["6A53A5AD90652811"]
@@ -515,8 +518,8 @@
 				type: "item"
 			}]
 			title: "Because the multiblock wasn't big enough"
-			x: 3.75d
-			y: 0.5d
+			x: 5.625d
+			y: 0.625d
 		}
 		{
 			dependencies: ["5FE1BA0649DB77B6"]
@@ -557,8 +560,8 @@
 				}
 			]
 			title: "Waiter! More tokens please"
-			x: 7.75d
-			y: 0.5d
+			x: 11.25d
+			y: 0.625d
 		}
 		{
 			dependencies: ["5FE1BA0649DB77B6"]
@@ -575,15 +578,15 @@
 				item: "thermal:steel_ingot"
 				type: "item"
 			}]
-			size: 1.25d
+			size: 1.5d
 			tasks: [{
 				id: "5E95E143123086BF"
 				item: "naturesaura:sky_ingot"
 				type: "item"
 			}]
 			title: "Gift from Olympus"
-			x: 7.75d
-			y: -1.5d
+			x: 11.25d
+			y: -1.875d
 		}
 		{
 			dependencies: [
@@ -606,15 +609,14 @@
 				}
 				type: "item"
 			}]
-			size: 1.0d
 			tasks: [{
 				id: "6E50634A88B24B28"
 				item: "kubejs:token_twilight"
 				type: "item"
 			}]
 			title: "Rather bright for a Token of Twilight"
-			x: 8.5d
-			y: -0.5d
+			x: 12.1875d
+			y: -0.625d
 		}
 		{
 			dependencies: ["1D8893FD9B6AA44A"]
@@ -634,7 +636,7 @@
 				type: "xp"
 				xp: 75
 			}]
-			size: 1.25d
+			size: 1.5d
 			tasks: [{
 				dimension: "twilightforest:twilight_forest"
 				id: "13D1D610D7CCB596"
@@ -642,8 +644,8 @@
 				type: "dimension"
 			}]
 			title: "Can't run from this one"
-			x: 10.0d
-			y: -0.5d
+			x: 14.0625d
+			y: -0.625d
 		}
 		{
 			dependencies: ["5EBD1BE5CAC32C54"]
@@ -747,8 +749,8 @@
 				}
 			]
 			title: "Hephaestus wannabe"
-			x: 9.25d
-			y: -1.5d
+			x: 13.125d
+			y: -1.875d
 		}
 		{
 			dependencies: ["315E6991C44E3C37"]
@@ -769,8 +771,8 @@
 				type: "item"
 			}]
 			title: "Everything's better with a bit of gold"
-			x: -1.5d
-			y: -2.0d
+			x: -2.1875d
+			y: -2.1875d
 		}
 		{
 			dependencies: ["684CBF2196952AF5"]
@@ -789,8 +791,8 @@
 				type: "item"
 			}]
 			title: "The Fourth Eye"
-			x: 3.75d
-			y: -1.5d
+			x: 5.9375d
+			y: -1.875d
 		}
 		{
 			dependencies: [
@@ -805,14 +807,15 @@
 			disable_toast: true
 			id: "28D5BB0DC2A4288E"
 			min_width: 300
+			size: 1.4d
 			tasks: [{
 				id: "4ED31DAA67F884E8"
 				item: "immersiveengineering:ingot_hop_graphite"
 				type: "item"
 			}]
 			title: "Blackout"
-			x: 9.25d
-			y: 0.5d
+			x: 13.125d
+			y: 0.625d
 		}
 		{
 			dependencies: ["07A64AE31764BD29"]
@@ -835,8 +838,8 @@
 				type: "item"
 			}]
 			title: "The Third Eye"
-			x: -0.5d
-			y: 0.5d
+			x: -1.25d
+			y: 0.9375d
 		}
 		{
 			dependencies: [
@@ -864,8 +867,8 @@
 				type: "item"
 			}]
 			title: "Monifactory wouldn't do this"
-			x: 3.25d
-			y: -0.5d
+			x: 5.0d
+			y: -0.625d
 		}
 		{
 			dependencies: ["475CABBA6607E1BF"]
@@ -879,15 +882,14 @@
 			disable_toast: true
 			id: "3267A5C745EE0A23"
 			min_width: 300
-			size: 1.0d
 			tasks: [{
 				id: "5AC9CDD4DE68496B"
 				item: "mekanism:metallurgic_infuser"
 				type: "item"
 			}]
 			title: "Infuse and mass produce"
-			x: 2.75d
-			y: -1.5d
+			x: 4.375d
+			y: -1.875d
 		}
 		{
 			dependencies: ["073BA665D40881DF"]
@@ -929,8 +931,8 @@
 				}
 			]
 			title: "Yeah, no... That's just stupid"
-			x: 2.75d
-			y: 0.5d
+			x: 4.375d
+			y: 0.625d
 		}
 	]
 	title: "2. Natural Magic"

@@ -1,0 +1,10 @@
+{
+	id: "61258B46B7C1DA77"
+	loot_size: 1
+	order_index: 97
+	rewards: [
+		{ count: 8, item: "extendedcrafting:black_iron_ingot" }
+		{ count: 3, item: "kubejs:automaton_ingot" }
+	]
+	title: "Extended Auto Crafting Table"
+}

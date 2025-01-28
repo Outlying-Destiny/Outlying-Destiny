@@ -7,6 +7,7 @@ ItemEvents.modification(event => {
         {i:'aether:skyroot_poison_bucket', n:16},
         {i:'aether:skyroot_remedy_bucket', n:16},
         {i:'immersiveengineering:logic_circuit', n:64},
+        {i:'minecraft:snowball', n:64}
     ]
   
     StackSize.forEach((StackSize) => {

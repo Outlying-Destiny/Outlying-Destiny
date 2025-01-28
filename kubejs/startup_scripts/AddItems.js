@@ -63,12 +63,6 @@ StartupEvents.registry('item', event => {
   event.create('demon_shovel', 'shovel').displayName('Demon Shovel').tier('demon').fireResistant(true)
   event.create('demon_hoe', 'hoe').displayName('Demon Hoe').tier('demon').fireResistant(true)
 
-  //Jetpack Plating
-  event.create('armorplating_te1').displayName('Invar Armor Plating')
-  event.create('armorplating_te2').displayName('Lumium Armor Plating')
-  event.create('armorplating_te3').displayName('Soul Infused Armor Plating')
-  event.create('armorplating_te4').displayName('Enderium Armor Plating')
-
   //Gears
   event.create('red_gear').displayName('Red Alloy Gear')
   event.create('energized_steel_gear').displayName('Energized Steel Gear').tag('forge:gears')
