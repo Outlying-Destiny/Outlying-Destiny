@@ -1,7 +1,6 @@
 /.curseclient
 /.probe
 /.qmenu_opened.marker
-/.vscode
 /aes
 /backups
 /crash-reports
@@ -25,17 +24,25 @@
 /usercache.json
 /usernamecache.json
 /mods
-/config/oculus.properties
-/config/jade/plugins.json
-/config/jei/world
 /kubejs/config/probe-settings.json
-/config/quark-common.toml
-/config/mm/pack/.cache
 /servers.dat
 /servers.dat_old
+cherishedworlds-favorites.dat
+
+# Config
 /config/mm/pack/.cache
 config/jei/ingredient-list-mod-sort-order.ini
 config/jei/recipe-category-sort-order.ini
 config/oculus.properties
 config/jei/world/local/New_World
-cherishedworlds-favorites.dat
+/config/quark-common.toml
+/config/mm/pack/.cache
+/config/oculus.properties
+/config/jade/plugins.json
+/config/jei/world
+
+
+# VSCode
+!/.vscode
+/.vscode/*
+!/.vscode/*.code-workspace
