@@ -28,4 +28,8 @@ ServerEvents.recipes(event => {
     //Infinity Stuff
     event.remove({id:/industrialforegoing:dissolution_chamber.+infinity_.+/})
     event.remove({id:'industrialforegoing:infinity_charger'})
+
+    //Black Hole Stuff
+    event.remove({id:/industrialforegoing:.+_black_hole_.+/})
+    event.remove({id:'industrialforegoing:black_hole_controller'})
 })

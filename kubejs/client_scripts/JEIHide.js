@@ -81,6 +81,7 @@ JEIEvents.hideItems(event => {
     event.hide(/industrialforegoing:mycelial_.+/)
     event.hide(/industrialforegoing:infinity.+/)
     event.hide(['industrialforegoing:biofuel_generator', 'industrialforegoing:pitiful_generator', 'industrialforegoing:resourceful_furnace', 'industrialforegoing:spores_recreator', 'industrialforegoing:dye_mixer', 'industrialforegoing:mechanical_dirt', 'industrialforegoing:water_condensator', 'industrialforegoing:hydroponic_bed'])
+    event.hide([/industrialforegoing:.+_black_hole_.+/, 'industrialforegoing:black_hole_controller'])
 
     //Iron Jetpacks
     event.hide(['ironjetpacks:cell', 'ironjetpacks:capacitor', /ironjetpacks:.+_coil/, Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:creative"}').strongNBT()])
