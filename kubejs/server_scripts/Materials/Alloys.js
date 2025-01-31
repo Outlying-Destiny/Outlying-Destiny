@@ -33,21 +33,21 @@ ServerEvents.recipes(event => {
     event.remove({id:'extendedcrafting:black_iron_ingot'})
 
     //Alloy Unification
-    alloy2('thermal:bronze_ingot', 4, 'thermal:tin_ingot', 1, 'minecraft:copper_ingot', 3, 6000)
+    alloy2('thermal:bronze_ingot', 4, 'thermal:tin_ingot', 1, 'minecraft:copper_ingot', 3, 9000)
     alloy2('thermal:electrum_ingot', 2, 'thermal:silver_ingot', 1, 'minecraft:gold_ingot', 1, 6000)
     alloy2('thermal:constantan_ingot', 2, 'thermal:nickel_ingot', 1, 'minecraft:copper_ingot', 1, 6000)
-    alloy2('thermal:invar_ingot', 3, 'thermal:nickel_ingot', 1, 'minecraft:iron_ingot', 2, 6000)
-    alloy2('thermal:rose_gold_ingot', 4, 'minecraft:gold_ingot', 1, 'minecraft:copper_ingot', 3, 6000)
+    alloy2('thermal:invar_ingot', 3, 'thermal:nickel_ingot', 1, 'minecraft:iron_ingot', 2, 8000)
+    alloy2('thermal:rose_gold_ingot', 4, 'minecraft:gold_ingot', 1, 'minecraft:copper_ingot', 3, 9000)
     alloy2('thermal:steel_ingot', 1, 'immersiveengineering:dust_coke', 1, 'minecraft:iron_ingot', 1, 4000)
 
     //Alloys
     alloy3('thermal:lumium_ingot', 1, 'thermal:tin_ingot', 1, 'thermal:electrum_ingot', 1, 'mekanism:ingot_refined_glowstone', 1, 10000)
     alloy3('thermal:signalum_ingot', 1, 'thermal:silver_ingot', 1, 'thermal:rose_gold_ingot', 1, 'enderio:redstone_alloy_ingot', 1, 10000)
     alloy3('thermal:enderium_ingot', 2, 'chemlib:platinum_ingot', 1, 'thermal:lead_ingot', 2, 'enderio:pulsating_alloy_ingot', 1, 18000)
-    alloy3('enderio:nethercotta', 2, 'minecraft:clay_ball', 4, 'minecraft:nether_brick', 2, 'thermal:constantan_ingot', 2, 8000)
+    alloy3('enderio:nethercotta', 2, 'minecraft:clay_ball', 4, 'minecraft:nether_brick', 2, 'thermal:constantan_ingot', 2, 10000)
     alloy2('enderio:pulsating_alloy_ingot', 1, 'minecraft:ender_pearl', 1, 'thermal:nickel_ingot', 1, 6000)
     alloy2('enderio:copper_alloy_ingot', 1, 'ae2:silicon', 1, 'thermal:bronze_ingot', 1, 6000)
-    alloy3('enderio:conductive_alloy_ingot', 3, 'minecraft:redstone', 2, 'enderio:copper_alloy_ingot', 2, 'thermal:invar_ingot', 1, 8000)
+    alloy3('enderio:conductive_alloy_ingot', 3, 'minecraft:redstone', 2, 'enderio:copper_alloy_ingot', 2, 'thermal:invar_ingot', 1, 12000)
     alloy3('enderio:energetic_alloy_ingot', 1, 'powah:steel_energized', 1, 'minecraft:redstone', 1, 'minecraft:glowstone_dust', 1, 10000)
     alloy2('enderio:vibrant_alloy_ingot', 1, 'minecraft:ender_pearl', 1, 'enderio:energetic_alloy_ingot', 1, 12000)
     alloy3('enderio:soularium_ingot', 1, 'thermal_extra:soul_sand_dust', 1, 'enderio:nethercotta', 1, 'minecraft:gold_ingot', 1, 10000)

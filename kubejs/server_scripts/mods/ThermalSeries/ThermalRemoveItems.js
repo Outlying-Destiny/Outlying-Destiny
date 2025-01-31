@@ -10,9 +10,6 @@ ServerEvents.recipes(event => {
     //Magnet
     event.remove({id:'thermal:flux_magnet'})
 
-    //Vacuum
-    event.remove({id:'thermal:device_collector'})
-
     //Satchel
     event.remove({id:'thermal:tools/satchel'})
 
@@ -27,7 +24,6 @@ ServerEvents.recipes(event => {
     //Augments
     event.remove({id:'thermal_extra:crafting/augment_smithing_templte'})
     event.remove({id:/thermal_extra:crafting\/augment.+/})
-    event.remove({id:'thermal_extra:machine/crystallizer/dragonsteel_infused_fluid_tank_augment'})
 
     //Components
     event.remove({id:'thermal_extra:crafting/dragonsteel_integral_component'})
@@ -52,7 +48,10 @@ ServerEvents.recipes(event => {
 
     //Devices
     event.remove({id:'thermal_extra:crafting/device_lava_gen'})
+    event.remove({id:'thermal_extra:crafting/device_harvester'})
     event.remove({id:'thermal:device_water_gen'})
+    event.remove({id:'thermal:device_collector'})
+    event.remove({id:'thermal:device_nullifier'})
 
     //Insightful Stuff
     event.remove({id:'thermal:tools/xp_crystal'})
@@ -95,6 +94,6 @@ ServerEvents.recipes(event => {
     event.remove({id:/thermal:machines\/press\/press_.+_to_coin/})
     event.remove({id:/thermal(_extra|endergy):machine\/press\/.+_coin/})
 
-    //Crop Harvester
-    event.remove({id:'thermal_extra:crafting/device_harvester'})
+    //Drill Head
+    event.remove({id:'thermal:drill_head'})
 })

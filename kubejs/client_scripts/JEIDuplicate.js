@@ -68,7 +68,4 @@ JEIEvents.addItems(event => {
 
     //Crafting Station
     event.add('craftingstation:crafting_station')
-
-    //Hidden? Augments
-    event.add(['thermal:potion_amplifier_augment', 'thermal:potion_duration_augment'])
 })

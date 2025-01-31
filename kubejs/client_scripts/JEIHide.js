@@ -142,12 +142,13 @@ JEIEvents.hideItems(event => {
 
     //Thermal Series
     event.hide([/thermal:dynamo_(numismatic|disenchantment)/, 'thermal_extra:dynamo_frost'])
-    event.hide([/thermal_extra:soul_infused.+_augment/, /thermal_extra:dragonsteel.+_augment/, /thermal.+dynamo_.+_augmen.+/, 'thermal_extra:twinite_fluid_tank_augment', 'thermal_extra:abyssal_fluid_tank_augment', /thermal_extra:.+_potion_amplifier_augment/, 'thermal_extra:twinite_potion_duration_augment', 'thermal_extra:shellite_potion_duration_augment', /thermal_extra:twinite_rf_coil.+augment/, /thermal_extra:abyssal_rf_coil.+augment/, /thermal_extra:.+machine_speed_augment/, 'thermal_extra:twinite_machine_efficiency_augment', 'thermal_extra:shellite_machine_efficiency_augment', 'thermal_extra:twinite_machine_output_augment', 'thermal_extra:abyssal_machine_output_augment', 'thermal_extra:twinite_machine_catalyst_augment', 'thermal_extra:shellite_machine_catalyst_augment', /thermal_extra:.+_area_radius_augment/, 'thermalendergy:melodic_range_augment', 'thermal_extra:av_item_filter_augment', 'thermal_extra:augment_smithing_upgrade'])
+    event.hide([/thermal.+dynamo_.+_augmen.+/, /thermal_extra:(soul_infused|twinite|dragonsteel|abyssal)_fluid_tank_augment/, /thermal_extra:(soul_infused|shellite|dragonsteel|abyssal)_potion_amplifier_augment/, /thermal_extra:(soul_infused|twinite|shellite|dragonsteel)_potion_duration_augment/, /thermal_extra:(soul_infused|twinite|dragonsteel|abyssal)_rf_coil_augment/, /thermal_extra:(soul_infused|twinite|shellite|abyssal)_rf_coil_.+_augment/, /thermal_extra:(twinite|shellite|dragonsteel|abyssal)_machine_speed_augment/, /thermal_extra:(soul_infused|twinite|shellite|dragonsteel)_machine_efficiency_augment/, /thermal_extra:(soul_infused|twinite|dragonsteel|abyssal)_machine_output_augment/, /thermal_extra:(soul_infused|twinite|shellite|dragonsteel)_machine_catalyst_augment/, /thermal_extra:(twinite|shellite|dragonsteel|abyssal)_area_radius_augment/, 'thermal_extra:av_item_filter_augment', 'thermal_extra:augment_smithing_upgrade'])
     event.hide(['thermal_extra:upgrade_augment', 'thermal_extra:abyssal_upgrade_augment'])
     event.hide(['thermal_extra:nitratic_igniter', /thermal_extra:.+_ore_chunk/])
-    event.hide([/thermal:.+mushroom_spores/, 'thermal_extra:ancient_dust', 'thermal_extra:sticky_ball'])
-    event.hide(['thermal:satchel', 'thermal_extra:device_lava_gen', 'thermal:device_water_gen', 'thermal:phytosoil', 'thermal:phytosoil_tiled', 'thermal:device_soil_infuser', 'thermal:xp_crystal', 'thermal:device_xp_condenser', 'thermal:xp_storage_augment', /thermal:press_(packing_2x2|packing_3x3|unpacking|coin)_die/, 'thermal_extra:device_harvester'])
+    event.hide([/thermal:.+mushroom_spores/, 'thermal_extra:ancient_dust', 'thermal_extra:sticky_ball', 'thermal:drill_head'])
+    event.hide(['thermal:satchel', 'thermal_extra:device_lava_gen', 'thermal:device_water_gen', 'thermal:phytosoil', 'thermal:phytosoil_tiled', 'thermal:device_soil_infuser', 'thermal:xp_crystal', 'thermal:device_xp_condenser', 'thermal:xp_storage_augment', /thermal:press_(packing_2x2|packing_3x3|unpacking|coin)_die/, 'thermal_extra:device_harvester', 'thermal:device_nullifier', 'thermal:charge_bench'])
     event.hide(['thermal:ruby_ore', 'thermal:deepslate_ruby_ore', 'thermal:sapphire_ore', 'thermal:deepslate_sapphire_ore'])
+    event.hide([/thermal:(ruby|sapphire)_gear/])
     event.hide(/thermal_extra:.+_(helmet|chestplate|leggings|boots|sword|axe|pickaxe|shovel|hoe|excavator|hammer|knife|sickle)/)
 
     //Twilight Forest
@@ -161,9 +162,9 @@ JEIEvents.hideItems(event => {
     event.hide('wormhole:coal_generator')
 
     //Dusts
-    event.hide(['ae2:ender_dust', 'enderio:powdered_ender_pearl'])
-    event.hide(['mekanism:dust_quartz', 'enderio:powdered_quartz'])
-    event.hide('enderio:powdered_cobalt')
+    event.hide(['ae2:ender_dust', 'enderio:powdered_ender_pearl']) //Ender Pearl
+    event.hide(['mekanism:dust_quartz', 'enderio:powdered_quartz']) //Quartz
+    event.hide(['enderio:powdered_cobalt', /thermal_extra:(arcane_gold|zinc)_dust/]) //Unusued
 
     //Sawdust
     event.hide(['immersiveengineering:dust_wood', 'thermal:sawdust'])
@@ -203,7 +204,7 @@ JEIEvents.hideItems(event => {
 
 JEIEvents.addItems(event => {
 
-    //Hidden? Augments
+    //Hidden Augments
     event.add(['thermal:potion_amplifier_augment', 'thermal:potion_duration_augment'])
 
     //IE Multi test
@@ -211,9 +212,6 @@ JEIEvents.addItems(event => {
 
     //FTB Questbook
     event.add('ftbquests:book')
-
-    //Thermal Extra Augment
-    event.add('thermal_extra:soul_infused_machine_speed_augment')
 
     //Thermal Frost Melon (not here for some reasons?)
     event.add('thermal:frost_melon')
@@ -240,7 +238,7 @@ JEIEvents.hideFluids(event => {
     event.hide('thermal:crude_oil')
 
     //Thermal Extra Molten Fluids
-    let molten = ['thermal_extra:raw_aluminum']
+    let molten = ['thermal_extra:raw_aluminum', 'thermal_extra:raw_arcane_gold', 'thermal_extra:raw_copper', 'thermal_extra:raw_gold', 'thermal_extra:raw_iron', 'thermal_extra:raw_lead', 'thermal_extra:raw_nickel', 'thermal_extra:raw_osmium', 'thermal_extra:raw_silver', 'thermal_extra:raw_tin', 'thermal_extra:raw_uranium', 'thermal_extra:raw_zinc']
     molten.forEach(fluid => {event.hide(fluid)})
 
     //Mystical Agriculture Fluids

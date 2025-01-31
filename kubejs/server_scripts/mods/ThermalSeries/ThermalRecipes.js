@@ -80,9 +80,7 @@ ServerEvents.recipes(event => {
   event.blasting('thermal:niter', '#forge:ores/niter')
   
   //Components
-  event.remove({id:'thermal:augments/upgrade_augment_1'})
-  event.remove({id:'thermal:augments/upgrade_augment_2'})
-  event.remove({id:'thermal:augments/upgrade_augment_3'})
+  event.remove({id:/thermal:augments\/upgrade_augment_(1|2|3)/})
   box('thermal:upgrade_augment_1', 'thermal:invar_plate', 'thermal:obsidian_glass', 'enderio:redstone_alloy_ingot', 'thermal:lumium_gear')
   box('thermal:upgrade_augment_2', 'extendedcrafting:black_iron_slate', 'thermal:signalum_glass', 'thermal:enderium_gear', 'thermal:upgrade_augment_1')
   box('thermal:upgrade_augment_3', 'thermal_extra:dragonsteel_plate', 'thermal_extra:shellite_glass', 'thermal_extra:soul_infused_gear', 'thermal:upgrade_augment_2') 
@@ -90,9 +88,11 @@ ServerEvents.recipes(event => {
   //Augments
   event.remove({id:'thermal:augments/machine_speed_augment'})
   event.shaped('thermal:machine_speed_augment', [' A ','BCB',' A '], {A:'thermal:electrum_gear',B:'thermal:signalum_plate',C:'thermal:rf_coil'})
+  event.shaped('thermal:potion_amplifier_augment', [' A ','BCB',' A '], {A:'thermal:lumium_gear',B:'thermal:constantan_plate',C:'#thermal:glass/hardened'})
+  event.shaped('thermal:potion_duration_augment', [' A ','BCB',' A '], {A:'thermal:bronze_gear',B:'thermal:constantan_plate',C:'#thermal:glass/hardened'})
 
   //Twinite Augments
-  const augment = [{name:'fluid_tank', material:'shellite'},{name:'potion_duration', material:'abyssal'},{name:'rf_coil', material:'shellite'},{name:'rf_coil_storage', material:'shellite'},{name:'rf_coil_xfer', material:'shellite'},{name:'machine_speed', material:'soul_infused'},{name:'machine_efficiency', material:'abyssal'},{name:'machine_output', material:'shellite'},{name:'machine_catalyst', material:'abyssal'}]
+  const augment = [{name:'fluid_tank', material:'shellite'},{name:'potion_duration', material:'abyssal'},{name:'potion_amplifier', material:'twinite'},{name:'rf_coil', material:'shellite'},{name:'rf_coil_storage', material:'dragonsteel'},{name:'rf_coil_xfer', material:'dragonsteel'},{name:'machine_speed', material:'soul_infused'},{name:'machine_efficiency', material:'abyssal'},{name:'machine_output', material:'shellite'},{name:'machine_catalyst', material:'abyssal'},{name:'area_radius', material:'soul_infused'}]
 
   augment.forEach((augment) => {
     event.shaped('thermal_extra:'+augment.material+'_'+augment.name+'_augment', [' A ','BCB',' A '], {A:'thermal:signalum_gear',B:'thermal_extra:twinite_plate',C:'thermal:'+augment.name+'_augment'})
@@ -102,7 +102,11 @@ ServerEvents.recipes(event => {
   device('tree_extractor', '#minecraft:planks', 'minecraft:piston', 'thermal:iron_gear')
   device('fisher', '#minecraft:planks', 'minecraft:fishing_rod', 'thermal:silver_gear')
   device('rock_gen', 'thermal:invar_ingot', 'enderio:weather_crystal', 'kubejs:infinity_gear')
-  
+  device('composter', '#minecraft:planks', 'minecraft:composter', 'thermal:steel_gear')
+  device('hive_extractor', '#minecraft:planks', 'minecraft:shears', 'thermal:iron_gear')
+  device('potion_diffuser', 'thermal:silver_ingot', 'minecraft:glass_bottle', 'thermal:constantan_gear')
+
+
   //Machines
   machine('smelter', 'minecraft:blast_furnace', 'immersiveengineering:coil_lv', 'thermal:steel_gear')
   machine('crucible', 'enderio:weather_crystal', 'kubejs:pyrotheum_dust', 'thermal:signalum_gear')
