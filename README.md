@@ -1,6 +1,8 @@
 # Outlying Destiny
 <img src="profileImage/placeholderlogo.png" align="left" height="200px" alt="Logo" />
 
+<br>
+
 An expert 1.20.1 Minecraft modpack.
 
 The pack is currently in alpha, report issues or request features in the [Issues](https://github.com/Blackalf14/Outlying-Destiny/issues) tab.
