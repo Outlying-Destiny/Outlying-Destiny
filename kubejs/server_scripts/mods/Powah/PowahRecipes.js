@@ -131,7 +131,7 @@ ServerEvents.recipes(event => {
       A:'powah:dielectric_paste',
       B:tier.material,
       C:'powah:capacitor_'+tier.tier,
-      D:'minecraft:redstone_block',
+      D:'#forge:storage_blocks/redstone',
       E:tier.materialblock
     })
     event.shaped('powah:energy_hopper_'+tier.tier, [

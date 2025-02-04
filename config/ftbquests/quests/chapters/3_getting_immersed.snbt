@@ -2416,6 +2416,7 @@
 				""
 				"Note: Upgrading the Accumulator to an Energy Cube will void any energy inside of it"
 			]
+			icon: "mekanism:basic_energy_cube"
 			id: "1C70164378BAE7E1"
 			min_width: 300
 			rewards: [{
@@ -2595,6 +2596,7 @@
 				""
 				"Basic factories can process 3 recipes at once."
 			]
+			icon: "mekanism:basic_smelting_factory"
 			id: "57F89AE2FB5431B2"
 			min_width: 330
 			rewards: [{

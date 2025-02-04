@@ -150,8 +150,8 @@
 				item: "rftoolsbase:machine_frame"
 				type: "item"
 			}]
-			x: -3.85d
-			y: -3.85d
+			x: -10.725d
+			y: -2.475d
 		}
 		{
 			dependencies: ["2E34815F339B49B3"]
@@ -207,8 +207,8 @@
 					type: "item"
 				}
 			]
-			x: -3.85d
-			y: -5.2250000000000005d
+			x: -10.725d
+			y: -3.85d
 		}
 		{
 			dependencies: ["0405FD0A6A940955"]
@@ -244,8 +244,8 @@
 				item: "extendedcrafting:auto_ender_crafter"
 				type: "item"
 			}]
-			x: -3.85d
-			y: -2.475d
+			x: -5.2250000000000005d
+			y: -3.85d
 		}
 		{
 			dependencies: ["279935A116DB7389"]
@@ -566,8 +566,8 @@
 				item: "javd:portal_block"
 				type: "item"
 			}]
-			x: -1.1d
-			y: -2.475d
+			x: -3.85d
+			y: -1.1d
 		}
 		{
 			dependencies: ["2320CBCFAB2C954A"]
@@ -578,7 +578,7 @@
 				table_id: 4458879916434854284L
 				type: "choice"
 			}]
-			size: 1.2d
+			size: 1.3d
 			tasks: [{
 				id: "38D58CE58A21BCDD"
 				item: "ae2:interface"
@@ -586,7 +586,7 @@
 			}]
 			title: "Analog Interface"
 			x: -9.35d
-			y: -2.475d
+			y: -5.2250000000000005d
 		}
 		{
 			dependencies: ["5C8FE51BD6EC44E5"]
@@ -597,14 +597,14 @@
 				table_id: 4672925982149285478L
 				type: "choice"
 			}]
-			size: 1.2d
+			size: 1.3d
 			tasks: [{
 				id: "667AD38BB464354B"
 				item: "ae2:pattern_provider"
 				type: "item"
 			}]
-			x: -9.35d
-			y: -3.85d
+			x: -5.2250000000000005d
+			y: -5.2250000000000005d
 		}
 		{
 			dependencies: ["2320CBCFAB2C954A"]
@@ -637,8 +637,8 @@
 				title: "ME Import / Export Bus"
 				type: "item"
 			}]
-			x: -7.9750000000000005d
-			y: -2.475d
+			x: -9.35d
+			y: -3.85d
 		}
 		{
 			dependencies: ["2320CBCFAB2C954A"]
@@ -663,7 +663,7 @@
 					type: "item"
 				}
 			]
-			x: -7.9750000000000005d
+			x: -6.6000000000000005d
 			y: -5.2250000000000005d
 		}
 		{
@@ -748,7 +748,7 @@
 				item: "kubejs:automaton_ingot"
 				type: "item"
 			}]
-			x: -6.6000000000000005d
+			x: -7.9750000000000005d
 			y: -2.475d
 		}
 		{
@@ -765,8 +765,8 @@
 				item: "kubejs:machinarium_ingot"
 				type: "item"
 			}]
-			x: -5.2250000000000005d
-			y: -3.85d
+			x: -9.35d
+			y: -2.475d
 		}
 		{
 			dependencies: ["1F34435E89390F62"]
@@ -848,7 +848,7 @@
 				type: "item"
 			}]
 			x: -3.85d
-			y: -1.1d
+			y: -2.475d
 		}
 		{
 			dependencies: ["26EAEEAB65B009DA"]
@@ -864,7 +864,7 @@
 				item: "kubejs:automaton_component"
 				type: "item"
 			}]
-			x: -5.2250000000000005d
+			x: -6.6000000000000005d
 			y: -2.475d
 		}
 		{
@@ -881,7 +881,7 @@
 				item: "ae2:molecular_assembler"
 				type: "item"
 			}]
-			x: -9.35d
+			x: -7.9750000000000005d
 			y: -5.2250000000000005d
 		}
 		{
@@ -944,8 +944,8 @@
 					type: "item"
 				}
 			]
-			x: -10.725d
-			y: -2.475d
+			x: -3.85d
+			y: -3.85d
 		}
 		{
 			dependencies: ["5558584DC5FCE381"]
@@ -961,8 +961,8 @@
 				item: "ae2:crafting_unit"
 				type: "item"
 			}]
-			x: -10.725d
-			y: -3.85d
+			x: -3.85d
+			y: -5.2250000000000005d
 		}
 		{
 			dependencies: ["7053C1D0B4C8A492"]
@@ -1019,7 +1019,7 @@
 					type: "item"
 				}
 			]
-			x: -10.725d
+			x: -2.475d
 			y: -5.2250000000000005d
 		}
 		{
@@ -1103,8 +1103,8 @@
 				title: "Fortune / Silk Touch Quarry"
 				type: "item"
 			}]
-			x: -2.475d
-			y: -5.2250000000000005d
+			x: -12.1d
+			y: -3.85d
 		}
 		{
 			dependencies: [
@@ -1127,7 +1127,7 @@
 					type: "item"
 				}
 			]
-			size: 1.2d
+			size: 1.3d
 			tasks: [
 				{
 					id: "0E3B31AE9859C109"
@@ -1227,7 +1227,7 @@
 					type: "item"
 				}
 			]
-			x: -5.2250000000000005d
+			x: -10.725d
 			y: -5.2250000000000005d
 		}
 		{
@@ -1268,12 +1268,11 @@
 					type: "item"
 				}
 			]
-			x: -6.6000000000000005d
+			x: -12.1d
 			y: -5.2250000000000005d
 		}
 		{
 			dependencies: ["7C9D2079558AB413"]
-			hide_dependency_lines: true
 			icon: "extendedcrafting:basic_auto_table"
 			id: "23FA5E27949A7882"
 			rewards: [{
@@ -1311,8 +1310,8 @@
 				title: "Auto Crafting Table"
 				type: "item"
 			}]
-			x: -10.725d
-			y: 1.6500000000000001d
+			x: -5.2250000000000005d
+			y: -2.475d
 		}
 	]
 	title: "8. Dimensional Crafting"

@@ -46,3 +46,6 @@ config/jei/world/local/New_World
 !/.vscode
 /.vscode/*
 !/.vscode/*.code-workspace
+config/jei/ingredient-list-mod-sort-order.ini
+config/jei/ingredient-list-mod-sort-order.ini
+config/jei/world/local/New_World/bookmarks.ini

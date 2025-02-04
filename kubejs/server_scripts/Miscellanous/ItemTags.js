@@ -5,7 +5,4 @@ ServerEvents.tags('item', event => {
 
     //Fertilizers
     event.add('forge:fertilizer', ['thermal:compost', 'thermal:phytogro', 'immersiveengineering:fertilizer'])
-
-    //Coals
-    event.add('outlying:coal_blocks', ['minecraft:coal_block', 'thermal:charcoal_block'])
 })
