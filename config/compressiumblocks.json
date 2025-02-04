@@ -1,7 +1,7 @@
 [
   {
     "name": "cobblestone",
-    "nestedDepth": 9,
+    "nestedDepth": 2,
     "isBlockOf": false,
     "baseResourceLocation": "minecraft:cobblestone",
     "particlePath": "minecraft:block/cobblestone",
@@ -10,7 +10,7 @@
   },
   {
     "name": "stone",
-    "nestedDepth": 9,
+    "nestedDepth": 2,
     "isBlockOf": false,
     "baseResourceLocation": "minecraft:stone",
     "particlePath": "minecraft:block/stone",
@@ -19,7 +19,7 @@
   },
   {
     "name": "sand",
-    "nestedDepth": 9,
+    "nestedDepth": 2,
     "isBlockOf": false,
     "baseResourceLocation": "minecraft:sand",
     "particlePath": "minecraft:block/sand",
@@ -28,7 +28,7 @@
   },
   {
     "name": "gravel",
-    "nestedDepth": 9,
+    "nestedDepth": 2,
     "isBlockOf": false,
     "baseResourceLocation": "minecraft:gravel",
     "particlePath": "minecraft:block/gravel",
@@ -37,7 +37,7 @@
   },
   {
     "name": "netherrack",
-    "nestedDepth": 9,
+    "nestedDepth": 2,
     "isBlockOf": false,
     "baseResourceLocation": "minecraft:netherrack",
     "particlePath": "minecraft:block/netherrack",
@@ -46,7 +46,7 @@
   },
   {
     "name": "snow",
-    "nestedDepth": 9,
+    "nestedDepth": 2,
     "isBlockOf": true,
     "baseResourceLocation": "minecraft:snow_block",
     "particlePath": "minecraft:block/snow",
@@ -55,7 +55,7 @@
   },
   {
     "name": "soulsand",
-    "nestedDepth": 9,
+    "nestedDepth": 2,
     "isBlockOf": false,
     "baseResourceLocation": "minecraft:soul_sand",
     "particlePath": "minecraft:block/soul_sand",
@@ -64,7 +64,7 @@
   },
   {
     "name": "iron",
-    "nestedDepth": 9,
+    "nestedDepth": 2,
     "isBlockOf": false,
     "baseResourceLocation": "minecraft:iron_block",
     "particlePath": "minecraft:block/iron_block",
@@ -73,7 +73,7 @@
   },
   {
     "name": "gold",
-    "nestedDepth": 9,
+    "nestedDepth": 2,
     "isBlockOf": false,
     "baseResourceLocation": "minecraft:gold_block",
     "particlePath": "minecraft:block/gold_block",
@@ -82,7 +82,7 @@
   },
   {
     "name": "diamond",
-    "nestedDepth": 9,
+    "nestedDepth": 2,
     "isBlockOf": false,
     "baseResourceLocation": "minecraft:diamond_block",
     "particlePath": "minecraft:block/diamond_block",
@@ -91,7 +91,7 @@
   },
   {
     "name": "emerald",
-    "nestedDepth": 9,
+    "nestedDepth": 2,
     "isBlockOf": false,
     "baseResourceLocation": "minecraft:emerald_block",
     "particlePath": "minecraft:block/emerald_block",
@@ -100,7 +100,7 @@
   },
   {
     "name": "clay",
-    "nestedDepth": 9,
+    "nestedDepth": 2,
     "isBlockOf": false,
     "baseResourceLocation": "minecraft:clay",
     "particlePath": "minecraft:block/clay",
@@ -109,7 +109,7 @@
   },
   {
     "name": "netherite",
-    "nestedDepth": 9,
+    "nestedDepth": 2,
     "isBlockOf": false,
     "baseResourceLocation": "minecraft:netherite_block",
     "particlePath": "minecraft:block/netherite_block",
@@ -118,7 +118,7 @@
   },
   {
     "name": "dirt",
-    "nestedDepth": 9,
+    "nestedDepth": 2,
     "isBlockOf": false,
     "baseResourceLocation": "minecraft:dirt",
     "particlePath": "minecraft:block/dirt",
@@ -127,7 +127,7 @@
   },
   {
     "name": "coal",
-    "nestedDepth": 9,
+    "nestedDepth": 2,
     "isBlockOf": true,
     "baseResourceLocation": "minecraft:coal_block",
     "particlePath": "minecraft:block/coal_block",
@@ -136,7 +136,7 @@
   },
   {
     "name": "redsand",
-    "nestedDepth": 9,
+    "nestedDepth": 2,
     "isBlockOf": true,
     "baseResourceLocation": "minecraft:red_sand",
     "particlePath": "minecraft:block/red_sand",
@@ -145,7 +145,7 @@
   },
   {
     "name": "endstone",
-    "nestedDepth": 9,
+    "nestedDepth": 2,
     "isBlockOf": true,
     "baseResourceLocation": "minecraft:end_stone",
     "particlePath": "minecraft:block/end_stone",
@@ -154,7 +154,7 @@
   },
   {
     "name": "obsidian",
-    "nestedDepth": 9,
+    "nestedDepth": 2,
     "isBlockOf": true,
     "baseResourceLocation": "minecraft:obsidian",
     "particlePath": "minecraft:block/obsidian",
@@ -163,7 +163,7 @@
   },
   {
     "name": "lapis",
-    "nestedDepth": 9,
+    "nestedDepth": 2,
     "isBlockOf": true,
     "baseResourceLocation": "minecraft:lapis_block",
     "particlePath": "minecraft:block/lapis_block",
@@ -172,7 +172,7 @@
   },
   {
     "name": "quartz",
-    "nestedDepth": 9,
+    "nestedDepth": 2,
     "isBlockOf": true,
     "baseResourceLocation": "minecraft:quartz_block",
     "particlePath": "minecraft:block/quartz_block_side",
@@ -181,7 +181,7 @@
   },
   {
     "name": "redstone",
-    "nestedDepth": 9,
+    "nestedDepth": 2,
     "isBlockOf": true,
     "baseResourceLocation": "minecraft:redstone_block",
     "particlePath": "minecraft:block/redstone_block",
@@ -190,7 +190,7 @@
   },
   {
     "name": "andesite",
-    "nestedDepth": 9,
+    "nestedDepth": 2,
     "isBlockOf": true,
     "baseResourceLocation": "minecraft:andesite",
     "particlePath": "minecraft:block/andesite",
@@ -199,7 +199,7 @@
   },
   {
     "name": "diorite",
-    "nestedDepth": 9,
+    "nestedDepth": 2,
     "isBlockOf": true,
     "baseResourceLocation": "minecraft:diorite",
     "particlePath": "minecraft:block/diorite",
@@ -208,7 +208,7 @@
   },
   {
     "name": "copper",
-    "nestedDepth": 9,
+    "nestedDepth": 2,
     "isBlockOf": false,
     "baseResourceLocation": "minecraft:copper_block",
     "particlePath": "minecraft:block/copper_block",
@@ -217,7 +217,7 @@
   },
   {
     "name": "granite",
-    "nestedDepth": 9,
+    "nestedDepth": 2,
     "isBlockOf": true,
     "baseResourceLocation": "minecraft:granite",
     "particlePath": "minecraft:block/granite",

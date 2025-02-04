@@ -113,7 +113,7 @@ ServerEvents.recipes(event => {
         A: 'kubejs:evil_infused_sword',
         B: 'minecraft:diamond',
         C: 'mob_grinding_utils:spikes',
-        D: 'minecraft:redstone_block',
+        D: '#forge:storage_blocks/redstone',
         E: 'kubejs:evil_infused_block'
         }
     )
