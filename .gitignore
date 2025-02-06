@@ -28,6 +28,7 @@
 /servers.dat
 /servers.dat_old
 cherishedworlds-favorites.dat
+knownkeys.txt
 
 # Config
 /config/mm/pack/.cache

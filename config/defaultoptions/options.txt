@@ -1,0 +1,3 @@
+autoJump:false
+gamma:1.0
+resourcePacks:["vanilla","mod_resources","Moonlight Mods Dynamic Assets","mm_resources","file/SmoothFont_1.20.zip"]
