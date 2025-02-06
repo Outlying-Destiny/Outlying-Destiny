@@ -31,4 +31,14 @@ ServerEvents.recipes(event => {
 
     //Dynamic Tank
     event.remove({id:/mekanism:dynamic_(tank|valve)/})
+
+    //Enriched Lead
+    event.remove({id:'mekanism_extras:enriching/enriched/dust_lead'})
+
+    //Enriched Mekanism Extras Stuff
+    event.remove({id:'mekanism_extras:enriching/enriched/dust_radiance'})
+    event.remove({id:'mekanism_extras:reaction/enriched_radiance_gasification/enriched_thermonuclear'})
+    event.remove({id:'mekanism_extras:nucleosynthesizing/enriched_shining'})
+    event.remove({id:'mekanism_extras:processing/enriched_spectrum/from_enriched_shining'})
+    
 })

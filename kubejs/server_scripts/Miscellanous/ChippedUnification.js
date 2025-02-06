@@ -51,10 +51,6 @@ const unifyChisel = (event) => {
     event.add('minecraft:piglin_loved', [GOLD_TAG, RAW_GOLD_TAG])
 }
 
-ServerEvents.tags('item', event => {
-    unifyChisel(event);
-})
+ServerEvents.tags('item', unifyChisel)
 
-ServerEvents.tags('block', event => {
-    unifyChisel(event);
-})
+ServerEvents.tags('block', unifyChisel)

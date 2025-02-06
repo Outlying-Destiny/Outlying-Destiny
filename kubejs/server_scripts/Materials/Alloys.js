@@ -57,7 +57,6 @@ ServerEvents.recipes(event => {
     alloy3('kubejs:infusing_soul_ingot', 1, 'powah:crystal_blazing', 1, 'enderio:soularium_ingot', 1, 'kubejs:enchanted_ingot', 1, 14000)
     alloy3('thermal_extra:shellite_ingot', 2, 'minecraft:shulker_shell', 1, 'kubejs:biofuel_ingot', 2, 'mekanism:ingot_refined_obsidian', 2, 26000)
     alloy3('kubejs:evil_infused_ingot', 1, 'kubejs:enchanted_ingot', 1, 'kubejs:demon_ingot', 1, 'architects_palette:withered_bone', 1, 12000)
-    alloy3('powah_dielectric_paste', 16, 'minecraft:clay_ball', 1, 'immersiveengineering:dust_coke', 2, 'minecraft:blaze_powder', 1, 6000)
     alloy2('kubejs:crystalline_alloy_ingot', 2, 'enderio:pulsating_powder', 1, 'thermal:lumium_ingot', 2, 21000)
     //alloy2('kubejs:crystalline_pink_slime_ingot', 1, 'industrialforegoing:pink_slime_ingot', 1, 'kubejs:crystalline_alloy_ingot',1 ,16000)
     //alloy3('kubejs:dark_soularium_ingot', 1, 'enderio:soularium_ingot', 1, 'enderio:dark_steel_ingot', 10, '', 1, 24000)

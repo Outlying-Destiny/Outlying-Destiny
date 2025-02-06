@@ -682,7 +682,7 @@
 				""
 				"When connecting a cable from a point A to B the cable cannot go through blocks, while trying to do so blocks in the way will be highlighted in red."
 				""
-				"Each tier of Wire Coils have their limits, being the maximum input value (how much energy a connector can take) (aka IV), the total transfer rate (how much energy can go through the Wire Coils) (aka TR) and the max wire length:"
+				"Each tier of Wire Coils have their limits, being the maximum Input Value (how much energy a connector can take) (aka IV), the total Transfer Rate (how much energy can go through the Wire Coils) (aka TR) and the max wire length:"
 				"LV: IV = 256, TR = 4096, length = 16"
 				"MV: IV = 1024, TR = 16384, length = 16"
 				"HV: IV = 4096, TR = 65536, length = 32"
@@ -1918,11 +1918,11 @@
 				""
 				"Energizing Rods have a speed limit on how much energy they can send represented by their \"Max I/O\". You can upgrade them or use multiple on a same Energizing Rods to unlock faster speeds."
 				""
-				"(In the case where an Energizing Rod is in the range of 2 Energizing Orbs you can use the Powah wrench to force connection of a Rod to a specific Orb )"
+				"(If 2 Energizing Orbs are in the range of an Energizing Rod, you can use the Powah wrench to bind it to a specific Orb.)"
 			]
 			icon: "powah:energizing_orb"
 			id: "187BE2A259075C18"
-			min_width: 300
+			min_width: 315
 			rewards: [{
 				count: 16
 				id: "73549C3C5E809539"

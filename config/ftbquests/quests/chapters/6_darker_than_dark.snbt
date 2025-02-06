@@ -2127,6 +2127,7 @@
 		}
 		{
 			dependencies: ["44EB1419FB18283C"]
+			icon: "rftoolsutility:crafter3"
 			id: "15A7438ECC00D4BC"
 			size: 1.1d
 			tasks: [{
@@ -2189,6 +2190,35 @@
 			title: "Better Solars, less Bulk Crafts!"
 			x: 3.25d
 			y: -6.0d
+		}
+		{
+			dependencies: ["1B993EA365BEFD7F"]
+			description: [
+				"Speed Upgrades can be used on Mekanism machinery to increase their processing speed at the cost of energy efficiency!"
+				""
+				"Like their energy equivalent, each upgrade gives a x1.33 multiplier boost up to 8 upgrades for a x10 boost."
+				""
+				"Beware as maxing your machinery speed will increase their energy requirement by x100 as their speed boost is also equal to their energy efficiency debuff."
+				""
+				"That means you probably want to use energy upgrades to counter that effect and think wisely before maximizing the speed of machines that might not immediately need it."
+			]
+			id: "667102BF5FAF6151"
+			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "46FE1562D32286A8"
+				table_id: 7071292920799606641L
+				type: "choice"
+			}]
+			size: 1.1d
+			tasks: [{
+				count: 8L
+				id: "4096D40265A0BD45"
+				item: "mekanism:upgrade_speed"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.25d
 		}
 	]
 	title: "6. Darker than Dark"

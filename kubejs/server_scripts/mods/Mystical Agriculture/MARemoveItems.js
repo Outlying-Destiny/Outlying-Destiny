@@ -16,4 +16,7 @@ ServerEvents.recipes(event => {
     event.remove({id:/mysticalagriculture:soulium/})
     event.remove({id:'mysticalagriculture:seed/infusion/soulium'})
     event.remove({id:'mysticalagriculture:essence/mysticalagriculture/soulium_dust'})
+
+    //Watering Cans
+    event.remove({id:/mysticalagriculture.+watering_can/})
 })

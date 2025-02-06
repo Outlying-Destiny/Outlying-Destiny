@@ -95,7 +95,7 @@ JEIEvents.hideItems(event => {
 
     //Mekanism
     event.hide(['mekanism:formulaic_assemblicator', 'mekanism:crafting_formula', /mekanism:(restrictive|diversion)_transporter/, /mekanism:(basic|advanced|elite|ultimate)_tier_installer/, /mekanism_extras:(absolute|supreme|cosmic|infinite)_tier_installer/, 'mekanism:upgrade_gas', /mekanism:dynamic_(tank|valve)/])
-    event.hide('mekanism:enriched_tin')
+    event.hide(['mekanism:enriched_tin', 'mekanism:enriched_refined_obsidian', 'mekanism_extras:enriched_lead'])
     event.hide([/mekanism:qio_(drive_array|dashboard|exporter|importer|redstone_adapter)/, 'mekanism:portable_qio_dashboard', /mekanism:qio_drive_(base|hyper_dense|time_dilating|supermassive)/, /mekanism_extras:qio_drive_(collapse|gamma|black_hole|singularity)/, /mekanism(_extras:expand_|:)radioactive_waste_barrel/, /mekanism.+_bin/])
 
     //Mob Grinding Utils
@@ -105,7 +105,7 @@ JEIEvents.hideItems(event => {
     event.hide('modularrouters:sender_module_3')
 
     //Mystical Agriculture
-    event.hide([/mysticalagriculture:(enchanter|harvester|soul_extractor|seed_reprocessor|soulium_spawner)/, /mysticalagriculture:(s|passives|hostiles)oulium_dagger/, /mysticalagriculture:(soul_jar|experience_capsule)/, /mystical(agriculture|agradditions):(deepslate_|nether_|end_){0,1}prosperity_ore/, /mysticalagriculture:soulium/, 'mysticalagradditions:molten_soulium_bucket', /mysticalagriculture:.+_soulium_dagger/])
+    event.hide([/mysticalagriculture:(enchanter|harvester|soul_extractor|seed_reprocessor|soulium_spawner)/, /mysticalagriculture:(s|passives|hostiles)oulium_dagger/, /mysticalagriculture:(soul_jar|experience_capsule)/, /mystical(agriculture|agradditions):(deepslate_|nether_|end_){0,1}prosperity_ore/, /mysticalagriculture:soulium/, 'mysticalagradditions:molten_soulium_bucket', /mysticalagriculture:.+_soulium_dagger/, /mysticalagriculture.+watering_can/])
 
     //PneumaticCraft
     event.hide(['pneumaticcraft:air_compressor', 'pneumaticcraft:advanced_air_compressor', 'pneumaticcraft:thermal_compressor', 'pneumaticcraft:liquid_compressor', 'pneumaticcraft:advanced_liquid_compressor', 'pneumaticcraft:manual_compressor', 'pneumaticcraft:electrostatic_compressor','pneumaticcraft:pneumatic_dynamo'])
@@ -154,7 +154,7 @@ JEIEvents.hideItems(event => {
 
     //Twilight Forest
     event.hide(/twilightforest:.+boss_spawner/)
-    event.hide(['twilightforest:uncrafting_table', 'twilightforest:ore_magnet'])
+    event.hide(['twilightforest:uncrafting_table', 'twilightforest:ore_magnet', 'twilightforest:glass_sword'])
 
     //Wither Skeleton Tweaks
     event.hide(/wstweaks:(lava|blaze)_blade/)

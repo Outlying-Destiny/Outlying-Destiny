@@ -36,8 +36,8 @@ ServerEvents.recipes(event => {
     //Creosote Oil
     event.remove({id:'thermal:machines/pyrolyzer/pyrolyzer_coal'})
     event.remove({id:'thermal:machines/pyrolyzer/pyrolyzer_logs'})
-    event.custom({"type": "thermal:pyrolyzer","ingredient": {"item": "minecraft:coal"},"result": [{"item": "thermal:coal_coke"},{"item": "thermal:tar","chance": 0.25},{"fluid": "immersiveengineering:creosote","amount": 250}],"experience": 0.15})
-    event.custom({"type": "thermal:pyrolyzer","ingredient": {"tag": "minecraft:logs"},"result": [{"item": "minecraft:charcoal"},{"fluid": "immersiveengineering:creosote","amount": 125}],"experience": 0.15})
+    event.custom({"type": "thermal:pyrolyzer","ingredient": {"item": "minecraft:coal"},"result": [{"item": "thermal:coal_coke"},{"item": "thermal:tar","chance": 0.25},{"fluid": "immersiveengineering:creosote","amount": 250}]})
+    event.custom({"type": "thermal:pyrolyzer","ingredient": {"tag": "minecraft:logs"},"result": [{"item": "minecraft:charcoal"},{"fluid": "immersiveengineering:creosote","amount": 125}]})
     event.remove({id:'thermal:bottler_creosote_bucket'})
 
     //Thermal Extra Ore Dupe

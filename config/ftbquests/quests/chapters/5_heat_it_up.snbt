@@ -939,34 +939,6 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["40889CF006E38EB0"]
-			description: [
-				"Speed Upgrades can be used on Mekanism machinery to increase their processing speed at the cost of energy efficiency!"
-				""
-				"Like their energy equivalent, each upgrade gives a x1.33 multiplier boost up to 8 upgrades for a x10 boost."
-				""
-				"Beware as maxing your machinery speed will increase their energy requirement by x100 as their speed boost is also equal to their energy efficiency debuff."
-				""
-				"That means you probably want to use energy upgrades to counter that effect and think wisely before maximizing the speed of machines that might not immediately need it."
-			]
-			id: "021AF051D9490BD4"
-			min_width: 300
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "248B606BC1A292ED"
-				table_id: 7071292920799606641L
-				type: "choice"
-			}]
-			tasks: [{
-				count: 8L
-				id: "7B24C884A2AA3922"
-				item: "mekanism:upgrade_speed"
-				type: "item"
-			}]
-			x: 3.625d
-			y: 2.0d
-		}
-		{
 			dependencies: [
 				"554507DD4518153D"
 				"37084AF4364CC896"
@@ -2646,8 +2618,8 @@
 				type: "item"
 			}]
 			title: "Copypasta"
-			x: 8.0d
-			y: 1.0d
+			x: 3.625d
+			y: 2.0d
 		}
 		{
 			dependencies: ["66D705EFB050318F"]

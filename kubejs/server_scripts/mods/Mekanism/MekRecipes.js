@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
     //Upgrades
     event.remove({id:/mekanism:upgrade\//})
     upgrade('energy', 'powah:steel_energized', 'mekanism:alloy_infused', 'thermal:gold_dust')
-    upgrade('speed', 'mekanism:ingot_refined_obsidian', 'mekanism:alloy_reinforced', 'mekanism:dust_osmium')
+    upgrade('speed', 'extendedcrafting:luminessence', 'mekanism:alloy_reinforced', 'mekanism:dust_osmium')
     upgrade('muffling', '#minecraft:wool', 'mekanism:alloy_infused', 'thermal:constantan_dust')
     upgrade('anchor', 'rftoolsbase:dimensionalshard', 'mekanism:alloy_atomic', 'thermal:ender_pearl_dust')
     upgrade('stone_generator', 'enderio:weather_crystal', 'mekanism:alloy_atomic', 'ae2:sky_dust')
@@ -139,6 +139,9 @@ ServerEvents.recipes(event => {
     //Security Desk
     event.remove({id:'mekanism:security_desk'})
     event.shaped('mekanism:security_desk', ['ABA','CDC','AEA'], {A:'thermal:steel_ingot',B:'#forge:glass',C:'mekanism:elite_control_circuit',D:'mekanism:steel_casing',E:'mekanism:ingot_refined_obsidian'})
+
+    //Atomic Disassembler
+    event.remove({id:'mekanism:atomic_disassembler'})
 
     //Gas Machinery
     event.remove({id:'mekanism:electrolytic_separator'})

@@ -3,7 +3,7 @@
     "disable": false,
     "tier": -1,
     "color": "00FFFFFF",
-    "armorPoints": 8,
+    "armorPoints": 12,
     "enchantability": 0,
     "craftingMaterial": "null",
     "creative": true,

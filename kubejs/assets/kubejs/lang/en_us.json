@@ -31,5 +31,8 @@
     "block.kubejs.small_energy_input": "Small Energy Input",
     "block.kubejs.normal_energy_input": "Normal Energy Input",
     "block.kubejs.big_energy_input": "Big Energy Input",
-    "block.kubejs.huge_energy_input": "Huge Energy Input"
+    "block.kubejs.huge_energy_input": "Huge Energy Input",
+
+
+    "sound_event.kubejs.machine.vat": "Vat Gurgling"
 }

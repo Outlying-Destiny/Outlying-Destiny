@@ -36,4 +36,6 @@ ServerEvents.recipes(event => {
     fluidizersolid('bigreactors:verderium', 18000,'mekanism:ingot_uranium', 2, 'bigreactors:blutonium_ingot', 1)
     fluidizersolid('bigreactors:verderium', 18000, 'bigreactors:blutonium_ingot', 1,'mekanism:ingot_uranium', 2)
 
+    //Remove Coal Block to Graphite Block Recipe
+    event.remove({id:/bigreactors:(smelting|blasting)\/graphite_from_coalblock/})
 })

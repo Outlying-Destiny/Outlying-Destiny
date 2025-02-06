@@ -4,7 +4,7 @@
 	order_index: 26
 	rewards: [
 		{ count: 16, item: "thermal:steel_ingot" }
-		{ count: 8, item: "mekanism:ingot_refined_obsidian" }
+		{ count: 8, item: "extendedcrafting:luminessence" }
 	]
 	title: "Meka Upgrade Speed"
 }

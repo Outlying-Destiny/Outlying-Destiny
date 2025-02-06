@@ -56,6 +56,7 @@ ServerEvents.recipes(event => {
     event.remove({id:/immersiveengineering:crafting\/(electrum|constantan)_mix/})
     event.remove({id:'mekanism:processing/steel/ingot_to_dust'})
     event.remove({id:'mekanism:processing/bronze/dust/from_ingot'})
+    event.remove({id:/mekanism:processing\/refined_(obsidian|glowstone)\/dust\/from_ingot/})
 
     //Remove Quartz Dust Mekanism Recipe
     event.remove({id:'mekanism:processing/quartz/to_dust'})
@@ -72,8 +73,8 @@ ServerEvents.recipes(event => {
     sagmillnoboost('ae2:fluix_dust', 1, 'ae2:fluix_crystal', 2400)
     sagmillnoboost('ae2:sky_dust', 1, 'ae2:sky_stone_block', 2400)
     sagmillnoboost('ae2:sky_dust', 1, 'ad_astra:sky_stone', 2400)
-    sagmillnoboost('minecraft:glowstone_dust', 1, 'mekanism:ingot_refined_glowstone', 2400)
-    sagmillnoboost('mekanism:dust_refined_obsidian', 1, 'mekanism:ingot_refined_obsidian', 2400)
+    //sagmillnoboost('minecraft:glowstone_dust', 1, 'mekanism:ingot_refined_glowstone', 2400)
+    //sagmillnoboost('mekanism:dust_refined_obsidian', 1, 'mekanism:ingot_refined_obsidian', 2400)
     sagmillnoboost('mekanism:dust_charcoal', 1, 'minecraft:charcoal', 2400)
     sagmillnoboost('mekanism:dust_coal', 1, 'minecraft:coal', 2400)
     sagmillnoboost('mekanism:dust_fluorite', 1, 'mekanism:fluorite_gem', 2400)

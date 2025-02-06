@@ -15,11 +15,7 @@
           "weight": 3
         }
       ],
-      "rolls": {
-        "type": "minecraft:uniform",
-        "max": 1.0,
-        "min": 1.0
-      }
+      "rolls": 1.0
     }
   ],
   "random_sequence": "aether:chests/dungeon/bronze/bronze_dungeon_treasure"

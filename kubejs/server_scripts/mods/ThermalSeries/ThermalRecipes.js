@@ -51,6 +51,7 @@ ServerEvents.recipes(event => {
   //Sawdust Block Fix
   event.replaceInput({ output:'thermal:sawdust_block'},'thermal:sawdust','#forge:sawdust')
   event.replaceOutput({ output:'thermal:sawdust'},'thermal:sawdust','#forge:sawdust')
+  
   //GearWorking Die
   event.replaceInput({ output:'thermal:press_gear_die'},'thermal:diamond_gear','#forge:gears')
 
