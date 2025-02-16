@@ -25,6 +25,9 @@ JEIEvents.hideItems(event => {
     //Building Gadgets
     event.hide(['buildinggadgets2:template_manager', 'buildinggadgets2:template', 'buildinggadgets2:redprint'])
    
+    //Compressium
+    event.hide(/compressium:.+_[3-9]/)
+    
     //Construction Wand
     event.hide(['constructionwand:stone_wand', 'constructionwand:iron_wand'])
 
