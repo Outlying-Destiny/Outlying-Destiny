@@ -625,12 +625,14 @@
 				""
 				"Beware, the Token of Twilight will be consumed, make sure you create your portal in an appropriate spot unless you want to craft a new token."
 				""
-				"Here's a preview of the unlit portal"
+				"Here's a preview of the unlit portal:"
 				""
 				"{image:kubejs:textures/ftbquests/twilightforest/portal.png width:100 height:100 align:center}"
+				""
+				"&l&o&6Progression has been disabled in the Twilight, you don't need to beat dungeons in their initial order."
 			]
 			id: "3A338B82C0765C40"
-			min_width: 300
+			min_width: 315
 			rewards: [{
 				id: "15265A492B977827"
 				type: "xp"

@@ -11,8 +11,8 @@
       "result": "deny"
     },
     {
-      "mob":["thermal:blizz", "thermal:blitz", "thermal:basalz", "minecraft:wandering_trader"],
-      "dimension": "minecraft:overworld",
+      "mob":["thermal:blizz", "thermal:blitz", "thermal:basalz"],
+      "dimension": ["minecraft:overworld", "minecraft:nether"],
       "result": "deny"
     },
     {

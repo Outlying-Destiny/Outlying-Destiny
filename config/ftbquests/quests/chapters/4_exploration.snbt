@@ -16,7 +16,7 @@
 				""
 				"Beware, the Token of Twilight will be consumed, make sure you create your portal in an appropriate spot unless you want to craft a new token."
 				""
-				"Here's a preview of the unlit portal"
+				"Here's a preview of the unlit portal:"
 				""
 				"{image:kubejs:textures/ftbquests/twilightforest/portal.png width:100 height:100 align:center}"
 				""
@@ -70,7 +70,7 @@
 			description: [
 				"Get some Carminite!"
 				""
-				"It can either be looted from Dark Tower's chests, by killing the Ur-Ghast or by crafting some with the use of Borer Essence obtainable by killing Towerwood Borer."
+				"It can either be looted from Dark Tower's chests, by killing the Ur-Ghast or by crafting some with the use of Borer Essence obtainable by killing Towerwood Borer (Dark Tower's Silverfish)."
 			]
 			id: "760CF1D73B65EB17"
 			min_width: 300
@@ -86,6 +86,7 @@
 				item: "twilightforest:carminite"
 				type: "item"
 			}]
+			title: "Carminite Corporation"
 			x: -15.3125d
 			y: -0.3125d
 		}
@@ -189,7 +190,7 @@
 				item: "kubejs:freed_soul"
 				type: "item"
 			}]
-			title: "Ah, ah. Ow."
+			title: "Ah ah. Ow."
 			x: -13.125d
 			y: -0.125d
 		}
@@ -363,7 +364,7 @@
 			description: [
 				"Enter The Aether!"
 				""
-				"Simply build a Nether shaped portal with glowstone blocks and place water inside of it!"
+				"Simply build a Nether shaped portal with Glowstone blocks and place water inside of it!"
 			]
 			hide_dependency_lines: true
 			id: "7E2D6E8C57E87A77"

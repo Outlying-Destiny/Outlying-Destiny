@@ -47,11 +47,6 @@
 					type: "item"
 				}
 				{
-					id: "1E3B7E2461C2FACF"
-					item: "industrialforegoing:laser_lens10"
-					type: "item"
-				}
-				{
 					id: "317C7D510206AFEC"
 					item: "industrialforegoing:ether_gas_bucket"
 					optional_task: true

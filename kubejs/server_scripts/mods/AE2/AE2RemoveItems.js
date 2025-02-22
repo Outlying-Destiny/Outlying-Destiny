@@ -18,4 +18,7 @@ ServerEvents.recipes(event => {
     //Mega Cells Radioactive Stuff
     event.remove({id:'megacells:crafting/radioactive_cell_component'})
     event.remove({id:'megacells:cells/standard/radioactive_chemical_cell'})
+
+    //Assembler Matrix
+    event.remove({id:/expatternprovider:assembler_matrix_/})
 })

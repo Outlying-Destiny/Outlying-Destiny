@@ -120,7 +120,8 @@
 				"65DB6A7BE6098186"
 				"5F2E88EBE7506C76"
 			]
-			description: ["Smelt some Raw Iron in a Campfire to get some Iron Fragments."]
+			description: ["Smelt Raw Iron in a Campfire to get some Iron Fragments."]
+			icon: "kubejs:iron_fragment"
 			id: "1DD3363A37D52A83"
 			min_width: 300
 			rewards: [{
@@ -128,11 +129,19 @@
 				type: "xp"
 				xp: 10
 			}]
-			tasks: [{
-				id: "695D939B339DAD05"
-				item: "kubejs:iron_fragment"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "695D939B339DAD05"
+					item: "kubejs:iron_fragment"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1ED402CFF6E72BCC"
+					title: "Found Iron already? Fine..."
+					type: "checkmark"
+				}
+			]
 			title: "That's not very Metal from you"
 			x: -3.0d
 			y: -4.2d

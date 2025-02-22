@@ -15,4 +15,8 @@ ServerEvents.recipes(event => {
     //Etrionic Blast Furnace
     event.remove({id:'ad_astra:alloying/steel_ingot_from_alloying_iron_ingot_and_coals'})
     event.remove({id:'ad_astra:etrionic_blast_furnace'})
+    
+    //Steel Block Recipe
+    event.remove({id:'ad_astra:steel_block'})
+
 })

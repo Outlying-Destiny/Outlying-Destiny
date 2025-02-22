@@ -9,5 +9,8 @@ ServerEvents.recipes(event => {
     //Uraninite Stuff
     event.remove({id:/powah:(energizing|smelting|crafting)\/uraninite/})
     event.remove({id:'powah:energizing/uranium_to_uraninite'})
+
+    //Dry Ice
+    event.remove({id:'powah:energizing/dry_ice'})
     
 })

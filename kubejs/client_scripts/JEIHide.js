@@ -13,7 +13,7 @@ JEIEvents.hideItems(event => {
 
     //Applied Energistics 2
     event.hide(['ae2:crafting_card', 'ae2:spatial_anchor', 'ae2:crystal_resonance_generator', 'ae2:pattern_access_terminal', 'ae2wtlib:wireless_pattern_access_terminal'])
-    event.hide(['expatternprovider:circuit_cutter', 'expatternprovider:pattern_terminal_upgrade'])
+    event.hide(['expatternprovider:circuit_cutter', 'expatternprovider:pattern_terminal_upgrade', /expatternprovider:assembler_matrix_/])
     event.hide(['megacells:radioactive_cell_component', 'megacells:radioactive_chemical_cell'])
 
     //Blood Magic
@@ -116,7 +116,7 @@ JEIEvents.hideItems(event => {
 
     //Powah
     event.hide(/powah:(thermo_generator|furnator|magmator|solar_panel|ender_gate|reactor|ender_cell)_.+/)
-    event.hide(['powah:photoelectric_pane', /powah:(deepslate_){0,1}uraninite/])
+    event.hide(['powah:photoelectric_pane', /powah:(deepslate_){0,1}uraninite/, 'powah:dry_ice'])
 
     //ProjectRed
     event.hide(['projectred_core:electrotine_generator', 'projectred_integration:timer_gate', 'projectred_core:draw_plate', /projectred_core:(copper|iron|gold)_coil/, 'projectred_core:motor'])

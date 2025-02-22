@@ -876,8 +876,9 @@
 			id: "199CC95E08343BAC"
 			min_width: 300
 			rewards: [{
-				id: "09E84087CB192A5C"
-				item: "immersiveengineering:mold_unpacking"
+				count: 2
+				id: "572ED9A3E5F5CB50"
+				item: "thermal:steel_ingot"
 				type: "item"
 			}]
 			tasks: [

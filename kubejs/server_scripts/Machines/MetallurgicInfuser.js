@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
 
     //Functions
-    function itemtogas(input, output){event.custom({"type":"mekanism:infusion_conversion","input":{"ingredient":{"item":input}},"output":{"amount":40,"infuse_type":output}})}
+    function itemtogas(input, outputamount, output){event.custom({"type":"mekanism:infusion_conversion","input":{"ingredient":{"item":input}},"output":{"amount":outputamount,"infuse_type":output}})}
     function enrichedtogas(input, enrichedinput, output){
         itemtogas(input, 10, output)
         itemtogas(enrichedinput, 40, output)
@@ -14,10 +14,10 @@ ServerEvents.recipes(event => {
     enrichedtogas('thermal:rose_gold_ingot', 'kubejs:enriched_rose_gold', 'kubejs:rose_gold')
     enrichedtogas('chemlib:platinum_ingot', 'kubejs:enriched_platinum', 'kubejs:platinum')
     enrichedtogas('thermal_extra:shellite_ingot', 'kubejs:enriched_shellite', 'kubejs:shellite')
-    itemtogas('mekanism:enriched_carbon', 'mekanism:carbon')
-    itemtogas('mekanism:enriched_redstone', 'mekanism:redstone')
-    itemtogas('mekanism:enriched_diamond', 'mekanism:diamond')
-    itemtogas('mekanism:enriched_gold', 'mekanism:gold')
+    itemtogas('mekanism:enriched_carbon', 40, 'mekanism:carbon')
+    itemtogas('mekanism:enriched_redstone', 40, 'mekanism:redstone')
+    itemtogas('mekanism:enriched_diamond', 40, 'mekanism:diamond')
+    itemtogas('mekanism:enriched_gold', 40, 'mekanism:gold')
     
     //Base Alloys
     event.remove({id:'mekanism:metallurgic_infusing/alloy/infused'})
