@@ -1,0 +1,27 @@
+{
+  "feature": "kubejs:ancient_debris",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 4
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": 8
+        },
+        "max_inclusive": {
+          "absolute": 119
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

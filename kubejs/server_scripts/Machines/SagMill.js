@@ -10,4 +10,7 @@ ServerEvents.recipes(event => {
 
     //Remove Flower Pot Recipe
     event.remove({id:'enderio:sag_milling/flower_pot'})
+
+    //Remove Ore Processing
+    event.remove({id:/enderio:sag_milling\/.+_ore/})
 })

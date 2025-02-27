@@ -8,6 +8,28 @@
   },
   "structures": [
     {
+      "name": "forbidden_arcanus:nipa",
+      "is_disabled": true,
+      "enable_flatness_check": false,
+      "flatness_check_distance": 0,
+      "flatness_check_threshold": 10,
+      "enable_biome_check": false,
+      "biome_check_distance": 0,
+      "whitelisted_biomes": [],
+      "blacklisted_biomes": []
+    },
+    {
+      "name": "forbidden_arcanus:nipa_floating",
+      "is_disabled": true,
+      "enable_flatness_check": false,
+      "flatness_check_distance": 0,
+      "flatness_check_threshold": 10,
+      "enable_biome_check": false,
+      "biome_check_distance": 0,
+      "whitelisted_biomes": [],
+      "blacklisted_biomes": []
+    },
+    {
       "name": "terralith:fortified_desert_village",
       "is_disabled": true,
       "enable_flatness_check": false,

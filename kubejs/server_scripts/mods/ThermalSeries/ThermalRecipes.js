@@ -74,11 +74,6 @@ ServerEvents.recipes(event => {
   event.shapeless('2x kubejs:cryotheum_dust', ['2x thermal:blizz_powder', 'minecraft:redstone', 'minecraft:snowball'])
   event.shapeless('2x kubejs:petrotheum_dust', ['2x thermal:basalz_powder', 'minecraft:redstone', 'mekanism:dust_obsidian'])
   event.shapeless('2x kubejs:pyrotheum_dust', ['2x minecraft:blaze_powder', 'minecraft:redstone', 'thermal:sulfur_dust'])
-
-  //Fix smelting Deepslate Niter Ore
-  event.remove({id:/thermal:smelting\/niter_from_/})
-  event.smelting('thermal:niter', '#forge:ores/niter')
-  event.blasting('thermal:niter', '#forge:ores/niter')
   
   //Components
   event.remove({id:/thermal:augments\/upgrade_augment_(1|2|3)/})

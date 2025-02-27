@@ -131,4 +131,10 @@ ServerEvents.recipes(event => {
     //Treated Stick Fix
     event.shaped('4x immersiveengineering:stick_treated', ['A  ','A  ','   '], {A:'#forge:treated_wood'})
 
+    //Slag Brick StoneCutter Fix
+    event.remove({id:'immersiveengineering:stonecutting/slag_brick'})
+    event.stonecutting('immersiveengineering:slag_brick', 'thermal:slag')
+
+    //Remove Arc Furnace Ore Proc
+    event.remove({id:/immersiveengineering:arcfurnace\/(raw|ore|dust|netherite)_/})
 })

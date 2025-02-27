@@ -8,5 +8,7 @@ ServerEvents.recipes(event => {
     crushertag('minecraft:sand', 4, 'forge:sandstone/colorless')
     crushertag('minecraft:red_sand', 4, 'forge:sandstone/red')
 
+    //Removes Dirty Netherite Scrap Crusher Recipe
+    event.remove({id:'mekanism:processing/netherite/ancient_debris_to_dirty_scrap'})
 
 })

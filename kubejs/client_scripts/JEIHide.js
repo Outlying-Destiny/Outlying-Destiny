@@ -17,7 +17,7 @@ JEIEvents.hideItems(event => {
     event.hide(['megacells:radioactive_cell_component', 'megacells:radioactive_chemical_cell'])
 
     //Blood Magic
-    event.hide(['#bloodmagic:fragments', '#bloodmagic:gravels'])
+    event.hide(['#bloodmagic:fragments', '#bloodmagic:gravels', 'bloodmagic:sand_netherite'])
 
     //Botania
     event.hide(/botania:.+_mushroom/)
@@ -43,7 +43,7 @@ JEIEvents.hideItems(event => {
     event.hide([/enderio.+condui.+/, /enderio.+filte.+/, /enderio:extraction_speed_upgrade.+/])
 
     //ElementalCraft
-    event.hide([/elementalcraft:pure_ore/, 'elementalcraft:purifier'])
+    event.hide([/elementalcraft:pure_ore/, 'elementalcraft:purifier', /elementalcraft:(water|air)_mill_grindstone/])
     event.hide(['elementalcraft:inert_crystal_ore', 'elementalcraft:deepslate_inert_crystal_ore'])
 
     //EvilCraft
@@ -65,7 +65,7 @@ JEIEvents.hideItems(event => {
     event.hide('fluxnetworks:admin_configurator')
     
     //Forbiddern Arcanus
-    event.hide(['forbidden_arcanus:xpetrified_ore', 'forbidden_arcanus:stella_arcanum', 'forbidden_arcanus:orb_of_temporary_flight', 'forbidden_arcanus:arcane_bone_meal'])
+    event.hide(['forbidden_arcanus:xpetrified_ore', 'forbidden_arcanus:stella_arcanum', 'forbidden_arcanus:orb_of_temporary_flight', 'forbidden_arcanus:arcane_bone_meal', 'forbidden_arcanus:golden_orchid_seeds', 'forbidden_arcanus:arcane_crystal_dust_speck', 'forbidden_arcanus:nipa'])
 
     //FTBQuests
     event.hide(/ftbquests:.+/)
@@ -74,7 +74,7 @@ JEIEvents.hideItems(event => {
     event.hide(['functionalstorage:collector_upgrade', 'functionalstorage:ender_drawer', /functionalstorage:(framed_){0,1}controller_extension/])
 
     //Immersive Engineering
-    event.hide(['immersiveengineering:dust_saltpeter', 'immersiveengineering:sawblade', 'immersiveengineering:coal_coke', 'immersiveengineering:grindingdisk', 'immersiveengineering:mold_packing_9', 'immersiveengineering:glider', 'immersiveengineering:mold_unpacking', 'immersiveengineering:slag_gravel', 'immersiveengineering:toolupgrade_powerpack_induction'])
+    event.hide(['immersiveengineering:dust_saltpeter', 'immersiveengineering:sawblade', 'immersiveengineering:coal_coke', 'immersiveengineering:grindingdisk', 'immersiveengineering:mold_packing_9', 'immersiveengineering:glider', 'immersiveengineering:mold_unpacking', 'immersiveengineering:slag_gravel', 'immersiveengineering:toolupgrade_powerpack_induction', 'immersiveengineering:slag', 'immersiveengineering:slag_glass'])
     event.hide([/immersiveengineering.+alu.+/, 'immersiveengineering:metal_ladder_alu'])
     
     //Industrial Foregoing

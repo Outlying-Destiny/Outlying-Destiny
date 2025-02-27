@@ -1,44 +1,11 @@
 ServerEvents.recipes(event => {
 
     //Function SagMill
-    function sagmillnoboost(output, outputcount, input, energy){
-      event.custom({
-          "type": "enderio:sag_milling",
-          "bonus": "none",
-          "energy": energy,
-          "input": {
-            "item": input
-          },
-          "outputs": [
-            {
-              "count": outputcount,
-              "item": output
-            }
-          ]
-        })
-    }
-    
-    function sagmillnoboosttag(output, outputcount, input, energy){
-      event.custom({
-          "type": "enderio:sag_milling",
-          "bonus": "none",
-          "energy": energy,
-          "input": {
-            "tag": input
-          },
-          "outputs": [
-            {
-              "count": outputcount,
-              "item": output
-            }
-          ]
-        })
-    }
+    function sagmillnoboost(output, outputcount, input, energy){event.custom({"type": "enderio:sag_milling","bonus": "none","energy": energy,"input": {"item": input},"outputs": [{"count": outputcount,"item": output}]})}
+    function sagmillnoboosttag(output, outputcount, input, energy){event.custom({"type": "enderio:sag_milling","bonus": "none","energy": energy,"input": {"tag": input},"outputs": [{"count": outputcount,"item": output}]})}
 
     //Function Crusher Mekanism
-    function crusher(output, input){
-        event.custom({"type":"mekanism:crushing","input":{"ingredient":{"item":input}},"output":{"item":output}})
-    }
+    function crusher(output, input){event.custom({"type":"mekanism:crushing","input":{"ingredient":{"item":input}},"output":{"item":output}})}
 
     //Function All Crush
     function allcrush(output, outputcount, input, energy) {
@@ -56,10 +23,14 @@ ServerEvents.recipes(event => {
     event.remove({id:/immersiveengineering:crafting\/(electrum|constantan)_mix/})
     event.remove({id:'mekanism:processing/steel/ingot_to_dust'})
     event.remove({id:'mekanism:processing/bronze/dust/from_ingot'})
-    event.remove({id:/mekanism:processing\/refined_(obsidian|glowstone)\/dust\/from_ingot/})
+    event.remove({id:'mekanism:processing/refined_obsidian/dust/from_ingot'})
+    event.remove({id:'mekanism:processing/refined_glowstone/ingot_to_dust'})
 
     //Remove Quartz Dust Mekanism Recipe
     event.remove({id:'mekanism:processing/quartz/to_dust'})
+
+    //Remove Arcane Crystal Dust from Smelting / Blasting
+    event.remove({id:/forbidden_arcanus:(smelting|blasting)\/arcane_crystal_dust_from_/})
     
     //SAG Mill Dusts from non ingot
     sagmillnoboost('thermal_extra:soul_sand_dust', 1, 'minecraft:soul_sand', 1800)
@@ -73,8 +44,6 @@ ServerEvents.recipes(event => {
     sagmillnoboost('ae2:fluix_dust', 1, 'ae2:fluix_crystal', 2400)
     sagmillnoboost('ae2:sky_dust', 1, 'ae2:sky_stone_block', 2400)
     sagmillnoboost('ae2:sky_dust', 1, 'ad_astra:sky_stone', 2400)
-    //sagmillnoboost('minecraft:glowstone_dust', 1, 'mekanism:ingot_refined_glowstone', 2400)
-    //sagmillnoboost('mekanism:dust_refined_obsidian', 1, 'mekanism:ingot_refined_obsidian', 2400)
     sagmillnoboost('mekanism:dust_charcoal', 1, 'minecraft:charcoal', 2400)
     sagmillnoboost('mekanism:dust_coal', 1, 'minecraft:coal', 2400)
     sagmillnoboost('mekanism:dust_fluorite', 1, 'mekanism:fluorite_gem', 2400)
@@ -123,5 +92,7 @@ ServerEvents.recipes(event => {
     allcrush('thermalendergy:stellarium_dust', 1, 'thermalendergy:stellarium_ingot', 2400)
     allcrush('immersiveengineering:dust_coke', 1, 'thermal:coal_coke', 2400)
     allcrush('immersiveengineering:dust_hop_graphite', 1, 'immersiveengineering:ingot_hop_graphite', 2400)
-    
+    allcrush('evilcraft:dark_gem_crushed', 1, 'evilcraft:dark_gem', 2400)
+    allcrush('forbidden_arcanus:arcane_crystal_dust', 1, 'forbidden_arcanus:arcane_crystal', 2400)
+    allcrush('draconicevolution:draconium_dust', 1, 'draconicevolution:draconium_ingot', 2400)
 })

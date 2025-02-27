@@ -14,4 +14,7 @@ ServerEvents.tags('item', event => {
 
     //Slag Gravel
     event.removeAllTagsFrom('immersiveengineering:slag_gravel')
+
+    //Slag
+    event.removeAllTagsFrom('immersiveengineering:slag')
 })

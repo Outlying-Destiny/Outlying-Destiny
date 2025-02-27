@@ -29,6 +29,7 @@ ServerEvents.recipes(event => {
     event.shaped('4x immersiveengineering:wirecoil_steel', [' A ','BCB',' A '], {A: 'immersiveengineering:wire_steel',B: 'kubejs:invar_wire',C: '#balm:wooden_rods'})
     event.shaped('4x immersiveengineering:wirecoil_redstone', [' A ','BCB',' A '], {A: 'kubejs:invar_wire',B: 'minecraft:redstone',C: '#balm:wooden_rods'})
     event.remove({id:/therma(l|l_extra):compat.+/})
+    event.remove({id:'thermal:compat/immersiveengineering/smelter_ie_raw_uranium'})
 
     //Collapsible Glider
     event.remove({id:'immersiveengineering:crafting/glider'})
@@ -39,4 +40,10 @@ ServerEvents.recipes(event => {
 
     //Induction Charger
     event.remove({id:'immersiveengineering:crafting/toolupgrade_powerpack_induction'})
+
+    //Slag Glass
+    event.remove({id:'immersiveengineering:smelting/slag_glass'})
+    event.remove({id:'immersiveengineering:crafting/connector_hv_relay'})
+    event.shaped('8x immersiveengineering:connector_hv_relay', [' A ','BAB','BAB'], {A: 'thermal:invar_ingot',B: 'immersiveengineering:insulating_glass'})
+
 })
