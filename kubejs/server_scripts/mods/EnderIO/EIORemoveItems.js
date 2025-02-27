@@ -29,6 +29,7 @@ ServerEvents.recipes(event => {
     event.remove({id:'enderio:stirling_generator'})
     event.remove({id:'enderio:crafter'})
     event.remove({id:'enderio:soul_engine'})
+    event.remove({id:'enderio:soulbinding/soul_engine'})
     event.remove({id:'enderio:alloy_smelter'})
     event.remove({id:'enderio:vacuum_chest'})
     event.remove({id:'enderio:xp_vacuum'})  

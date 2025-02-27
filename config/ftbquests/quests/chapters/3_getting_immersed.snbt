@@ -1375,7 +1375,10 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["25544587CC944FCB"]
+			dependencies: [
+				"25544587CC944FCB"
+				"6A53A5AD90652811"
+			]
 			description: ["Dielectric Paste is used everywhere in Powah, craft some to unlock it."]
 			id: "460A47E0362D9799"
 			min_width: 300
@@ -1560,13 +1563,13 @@
 				""
 				"1. Mineral Veins are locations where you can place an Excavator to automatically mine a certain group of ores. There can be multiple veins at a same location, when this is the case the Excavator will switch between those multiple veins based on their percentage of presence, this means you can mine a larger variety of ores per Excavator coming at the cost of a smaller chance to get each resulting in a slower production."
 				""
-				"2. JEI will give you a lot of information about veins. Informations such as the rarity and dimension location of each vein as so of their retrievable ores and likeliness of each."
+				"2. JEI will give you a lot of informations about veins. Informations such as the rarity and dimension location of each vein as so of their retrievable ores and likeliness of each."
 				""
 				"3. To start looking for mineral veins, you'll want some Survey Tools and a Core Sample Drill."
 				""
 				"4. You can use your Survey Tools on natural blocks (dirt, stone, etc...) to identify veins and their locations. Each sample taken of a same vein will be more accurate than the last."
 				""
-				"5. You can use your Core Sample Drill to get more precise informations on veins present at that location. It costs energy so think of carrying a battery. (Needs a block below it to work)"
+				"5. You can use your Core Sample Drill to get more precise informations on veins present at that location, such as the excepted yield. It costs energy so think of carrying a battery. (Needs a block below it to work)"
 				""
 				"6. Once you find out where you want to start mining, it will be time to place an Excavator, more info on that in the next quest."
 				""

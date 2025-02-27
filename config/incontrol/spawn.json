@@ -16,7 +16,8 @@
       "result": "deny"
     },
     {
-      "mob":["quark:forgotten"],
+      "mob":["quark:forgotten", "minecraft:wandering_trader"],
+      "when": "onjoin",
       "result": "deny"
     }
   ]

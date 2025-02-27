@@ -196,7 +196,7 @@
 			y: 0.625d
 		}
 		{
-			dependencies: ["6A53A5AD90652811"]
+			dependencies: ["30C16811BB92E249"]
 			description: [
 				"Infuse some steel in your Natural Altar."
 				""
@@ -210,6 +210,7 @@
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
+			size: 1.3d
 			tasks: [{
 				id: "3C2D811E0A86E4F5"
 				item: "naturesaura:infused_iron"
@@ -329,7 +330,7 @@
 			disable_toast: true
 			id: "6A53A5AD90652811"
 			min_width: 300
-			size: 1.25d
+			size: 1.3d
 			tasks: [{
 				dimension: "minecraft:the_nether"
 				id: "57A9582B9A67409B"

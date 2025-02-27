@@ -124,7 +124,7 @@
 			description: [
 				"Pressure tubes are used to transport pressure between machines."
 				""
-				"Their max pression is 5 bars, if that limit gets exceeded for too long the tubes will explode and all pression will be lost."
+				"Their max pressure is 5 bars, if that limit gets exceeded for too long the tubes will explode and all pression will be lost."
 				""
 				"You can prevent that by adding a Safety Tube Module on one of your tubes to automatically release some air when the max pressure is reached. This solution wastes a bit of energy but is simple to put in place"
 				""
