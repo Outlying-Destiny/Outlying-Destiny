@@ -1,7 +1,7 @@
 JEIEvents.hideItems(event => {
 
     //Actually Additions
-    event.hide([/actuallyadditions:lamp.+/, /actuallyadditions:.+_aiot/, /actuallyadditions:.+_crystal_cluster/, /actuallyadditions:.+pattern/, /actuallyadditions:ric.+/, /actuallyadditions:void_crysta(l|l_shard|l_block)/, /actuallyadditions:empowered_void_crysta(l|l_block)/, /actuallyadditions.+black_quart.+/, 'actuallyadditions:oil_generator', 'actuallyadditions:coal_generator', 'actuallyadditions:leaf_generator', 'actuallyadditions:bio_reactor', 'actuallyadditions:heat_collector', 'actuallyadditions:wings_of_the_bats', 'actuallyadditions:laser_upgrade_range', 'actuallyadditions:laser_upgrade_invisibility', 'actuallyadditions:lamp_controller', 'actuallyadditions:crate_keeper', 'actuallyadditions:crate_small', 'actuallyadditions:bats_wing', 'actuallyadditions:water_bowl', 'actuallyadditions:ender_star', 'actuallyadditions:engineers_goggles', 'actuallyadditions:engineers_goggles_advanced', 'actuallyadditions:tiny_torch', 'actuallyadditions:shock_suppressor', 'actuallyadditions:powered_furnace', 'actuallyadditions:lava_factory_controller', 'actuallyadditions:lava_factory_casing', 'actuallyadditions:xp_solidifier','actuallyadditions:crusher', 'actuallyadditions:crusher_double', 'actuallyadditions:greenhouse_glass', 'actuallyadditions:ring', 'actuallyadditions:ring_of_magnetizing', 'actuallyadditions:ring_of_growth', 'actuallyadditions:flax_seeds', 'actuallyadditions:travelers_sack', 'actuallyadditions:void_sack', 'actuallyadditions:teleport_staff', 'actuallyadditions:feeder', 'actuallyadditions:energizer', 'actuallyadditions:enervator', 'actuallyadditions:farmer', 'actuallyadditions:battery_box', 'actuallyadditions:laser_relay', 'actuallyadditions:laser_relay_advanced', 'actuallyadditions:laser_relay_extreme', 'actuallyadditions:laser_relay_fluids', 'actuallyadditions:laser_relay_item_advanced', 'actuallyadditions:phantom_booster', 'actuallyadditions:fermenting_barrel', 'actuallyadditions:canola_press', 'actuallyadditions:wood_casing'])
+    event.hide([/actuallyadditions:lamp.+/, /actuallyadditions:.+_aiot/, /actuallyadditions:.+_crystal_cluster/, /actuallyadditions:.+pattern/, /actuallyadditions:ric.+/, /actuallyadditions:void_crysta(l|l_shard|l_block)/, /actuallyadditions:empowered_void_crysta(l|l_block)/, /actuallyadditions.+black_quart.+/, 'actuallyadditions:oil_generator', 'actuallyadditions:coal_generator', 'actuallyadditions:leaf_generator', 'actuallyadditions:bio_reactor', 'actuallyadditions:heat_collector', 'actuallyadditions:wings_of_the_bats', 'actuallyadditions:laser_upgrade_range', 'actuallyadditions:laser_upgrade_invisibility', 'actuallyadditions:lamp_controller', 'actuallyadditions:crate_keeper', 'actuallyadditions:crate_small', 'actuallyadditions:bats_wing', 'actuallyadditions:water_bowl', 'actuallyadditions:ender_star', 'actuallyadditions:engineers_goggles', 'actuallyadditions:engineers_goggles_advanced', 'actuallyadditions:tiny_torch', 'actuallyadditions:shock_suppressor', 'actuallyadditions:powered_furnace', 'actuallyadditions:lava_factory_controller', 'actuallyadditions:lava_factory_casing', 'actuallyadditions:xp_solidifier','actuallyadditions:crusher', 'actuallyadditions:crusher_double', 'actuallyadditions:greenhouse_glass', 'actuallyadditions:ring', 'actuallyadditions:ring_of_magnetizing', 'actuallyadditions:ring_of_growth', 'actuallyadditions:flax_seeds', 'actuallyadditions:travelers_sack', 'actuallyadditions:void_sack', 'actuallyadditions:teleport_staff', 'actuallyadditions:feeder', 'actuallyadditions:energizer', 'actuallyadditions:enervator', 'actuallyadditions:farmer', 'actuallyadditions:battery_box', 'actuallyadditions:laser_relay', 'actuallyadditions:laser_relay_advanced', 'actuallyadditions:laser_relay_extreme', 'actuallyadditions:laser_relay_fluids', 'actuallyadditions:laser_relay_item_advanced', 'actuallyadditions:phantom_booster', 'actuallyadditions:fermenting_barrel', 'actuallyadditions:canola_press', 'actuallyadditions:wood_casing', 'actuallyadditions:crafter_on_a_stick'])
     event.hide(['actuallyadditions:lens_of_the_miner', 'actuallyadditions:lens_of_disruption', 'actuallyadditions:lens_of_disenchanting', 'actuallyadditions:lens_of_detonation', 'actuallyadditions:lens_of_certain_death', 'actuallyadditions:lens_of_the_killer'])
 
     //Ad Astra
@@ -16,6 +16,9 @@ JEIEvents.hideItems(event => {
     event.hide(['expatternprovider:circuit_cutter', 'expatternprovider:pattern_terminal_upgrade', /expatternprovider:assembler_matrix_/])
     event.hide(['megacells:radioactive_cell_component', 'megacells:radioactive_chemical_cell'])
 
+    //Baubley Heart Canisters
+    event.hide(/bhc:.+_heart_melted/)
+    
     //Blood Magic
     event.hide(['#bloodmagic:fragments', '#bloodmagic:gravels', 'bloodmagic:sand_netherite'])
 
@@ -97,7 +100,7 @@ JEIEvents.hideItems(event => {
     event.hide('mm:the_vat_tiny_item_port_output')
 
     //Mekanism
-    event.hide(['mekanism:formulaic_assemblicator', 'mekanism:crafting_formula', /mekanism:(restrictive|diversion)_transporter/, /mekanism:(basic|advanced|elite|ultimate)_tier_installer/, /mekanism_extras:(absolute|supreme|cosmic|infinite)_tier_installer/, 'mekanism:upgrade_gas', /mekanism:dynamic_(tank|valve)/])
+    event.hide(['mekanism:formulaic_assemblicator', 'mekanism:crafting_formula', /mekanism:(restrictive|diversion)_transporter/, /mekanism:(basic|advanced|elite|ultimate)_tier_installer/, /mekanism_extras:(absolute|supreme|cosmic|infinite)_tier_installer/, 'mekanism:upgrade_gas', /mekanism:dynamic_(tank|valve)/, 'mekanism:oredictionificator'])
     event.hide(['mekanism:enriched_tin', 'mekanism:enriched_refined_obsidian', 'mekanism_extras:enriched_lead'])
     event.hide([/mekanism:qio_(drive_array|dashboard|exporter|importer|redstone_adapter)/, 'mekanism:portable_qio_dashboard', /mekanism:qio_drive_(base|hyper_dense|time_dilating|supermassive)/, /mekanism_extras:qio_drive_(collapse|gamma|black_hole|singularity)/, /mekanism(_extras:expand_|:)radioactive_waste_barrel/, /mekanism.+_bin/])
 
@@ -117,10 +120,6 @@ JEIEvents.hideItems(event => {
     //Powah
     event.hide(/powah:(thermo_generator|furnator|magmator|solar_panel|ender_gate|reactor|ender_cell)_.+/)
     event.hide(['powah:photoelectric_pane', /powah:(deepslate_){0,1}uraninite/, 'powah:dry_ice'])
-
-    //ProjectRed
-    event.hide(['projectred_core:electrotine_generator', 'projectred_integration:timer_gate', 'projectred_core:draw_plate', /projectred_core:(copper|iron|gold)_coil/, 'projectred_core:motor'])
-    event.hide('cb_microblock:microblock')
     
     //Quark
     event.hide(['quark:gunpowder_sack', 'quark:apple_crate'])
@@ -146,7 +145,7 @@ JEIEvents.hideItems(event => {
 
     //Thermal Series
     event.hide([/thermal:dynamo_(numismatic|disenchantment)/, 'thermal_extra:dynamo_frost'])
-    event.hide([/thermal.+dynamo_.+_augmen.+/, /thermal_extra:(soul_infused|twinite|dragonsteel|abyssal)_fluid_tank_augment/, /thermal_extra:(soul_infused|shellite|dragonsteel|abyssal)_potion_amplifier_augment/, /thermal_extra:(soul_infused|twinite|shellite|dragonsteel)_potion_duration_augment/, /thermal_extra:(soul_infused|twinite|dragonsteel|abyssal)_rf_coil_augment/, /thermal_extra:(soul_infused|twinite|shellite|abyssal)_rf_coil_.+_augment/, /thermal_extra:(twinite|shellite|dragonsteel|abyssal)_machine_speed_augment/, /thermal_extra:(soul_infused|twinite|shellite|dragonsteel)_machine_efficiency_augment/, /thermal_extra:(soul_infused|twinite|dragonsteel|abyssal)_machine_output_augment/, /thermal_extra:(soul_infused|twinite|shellite|dragonsteel)_machine_catalyst_augment/, /thermal_extra:(twinite|shellite|dragonsteel|abyssal)_area_radius_augment/, 'thermal_extra:av_item_filter_augment', 'thermal_extra:augment_smithing_upgrade'])
+    event.hide([/thermal.+dynamo_.+_augmen.+/, /thermal_extra:(soul_infused|shellite|dragonsteel|abyssal)_.+_augment/, 'thermal_extra:av_item_filter_augment', 'thermal_extra:augment_smithing_upgrade'])
     event.hide(['thermal_extra:upgrade_augment', 'thermal_extra:abyssal_upgrade_augment'])
     event.hide(['thermal_extra:nitratic_igniter', /thermal_extra:.+_ore_chunk/])
     event.hide([/thermal:.+mushroom_spores/, 'thermal_extra:ancient_dust', 'thermal_extra:sticky_ball', 'thermal:drill_head'])
@@ -224,7 +223,7 @@ JEIEvents.addItems(event => {
 JEIEvents.hideFluids(event => {
 
     //Experience
-    let exp = ['cofh_core:experience', 'enderio:flowing_xp_juice', 'sophisticatedcore:xp_still']
+    let exp = ['cofh_core:experience', 'sophisticatedcore:xp_still']
     exp.forEach(fluid => {event.hide(fluid)})
     
     //Biodiesel Line

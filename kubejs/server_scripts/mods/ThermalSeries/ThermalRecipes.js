@@ -88,10 +88,10 @@ ServerEvents.recipes(event => {
   event.shaped('thermal:potion_duration_augment', [' A ','BCB',' A '], {A:'thermal:bronze_gear',B:'thermal:constantan_plate',C:'#thermal:glass/hardened'})
 
   //Twinite Augments
-  const augment = [{name:'fluid_tank', material:'shellite'},{name:'potion_duration', material:'abyssal'},{name:'potion_amplifier', material:'twinite'},{name:'rf_coil', material:'shellite'},{name:'rf_coil_storage', material:'dragonsteel'},{name:'rf_coil_xfer', material:'dragonsteel'},{name:'machine_speed', material:'soul_infused'},{name:'machine_efficiency', material:'abyssal'},{name:'machine_output', material:'shellite'},{name:'machine_catalyst', material:'abyssal'},{name:'area_radius', material:'soul_infused'}]
+  const augment = [['fluid_tank'],['potion_duration'],['potion_amplifier'],['rf_coil'],['rf_coil_storage'],['rf_coil_xfer'],['machine_speed'],['machine_efficiency'],['machine_output'],['machine_catalyst'],['area_radius']]
 
   augment.forEach((augment) => {
-    event.shaped('thermal_extra:'+augment.material+'_'+augment.name+'_augment', [' A ','BCB',' A '], {A:'thermal:signalum_gear',B:'thermal_extra:twinite_plate',C:'thermal:'+augment.name+'_augment'})
+    event.shaped('thermal_extra:twinite_'+augment+'_augment', [' A ','BCB',' A '], {A:'thermal:signalum_gear',B:'thermal_extra:twinite_plate',C:'thermal:'+augment+'_augment'})
   })
 
   //Devices

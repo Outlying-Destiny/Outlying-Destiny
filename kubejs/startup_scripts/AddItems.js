@@ -96,4 +96,23 @@ StartupEvents.registry('item', event => {
   event.create('automaton_catalyst').displayName('Automaton Catalyst')
   event.create('abyssal_catalyst').displayName('Abyssal Catalyst')
   event.create('signalum_catalyst').displayName('Signalum Catalyst')
+
+  //Thermal Augments (Base Code from Mierno by FalAut, go play it!)
+  const $AugmentItem = Java.loadClass('cofh.thermal.lib.common.item.AugmentItem');
+  const $Item$Properties = Java.loadClass('net.minecraft.world.item.Item$Properties');
+  event.createCustom('thermal_extra:twinite_rf_coil_augment',() =>new $AugmentItem(new $Item$Properties(), {Type: 'RF', RFXfer: 16, RFMax: 16}))
+  event.createCustom('thermal_extra:twinite_rf_coil_storage_augment',() =>new $AugmentItem(new $Item$Properties(), {Type: 'RF', RFXfer: 8, RFMax: 24}))
+  event.createCustom('thermal_extra:twinite_rf_coil_xfer_augment',() =>new $AugmentItem(new $Item$Properties(), {Type: 'RF', RFXfer: 24, RFMax: 8}))
+  event.createCustom('thermal_extra:twinite_fluid_tank_augment',() =>new $AugmentItem(new $Item$Properties(), {Type: 'Fluid', FluidMax: 16}))
+  event.createCustom('thermal_extra:twinite_machine_speed_augment',() =>new $AugmentItem(new $Item$Properties(), {Type: 'Machine', MachineEnergy: 1, MachinePower: 1.1}))
+  event.createCustom('thermal_extra:twinite_machine_efficiency_augment',() =>new $AugmentItem(new $Item$Properties(), {Type: 'Machine', MachineEnergy: 0.7, MachineSpeed: -0.1}))
+  event.createCustom('thermal_extra:twinite_machine_output_augment',() =>new $AugmentItem(new $Item$Properties(), {Type: 'Machine', MachineEnergy: 1.1, MachineSec: 0.3}))
+  event.createCustom('thermal_extra:twinite_machine_catalyst_augment',() =>new $AugmentItem(new $Item$Properties(), {Type: 'Machine', MachineCat: 0.6, MachineEnergy: 1.25}))
+  event.createCustom('thermal_extra:twinite_potion_amplifier_augment',() =>new $AugmentItem(new $Item$Properties(), {Type: 'Potion', PotionAmp: 2, PotionDur: -0.5}))
+  event.createCustom('thermal_extra:twinite_potion_duration_augment',() =>new $AugmentItem(new $Item$Properties(), {Type: 'Potion', PotionDur: 1.5}))
+  event.createCustom('thermal_extra:twinite_area_radius_augment',() =>new $AugmentItem(new $Item$Properties(), {Type: 'Area', Radius: 3}))
+  event.createCustom('thermal:machine_efficiency_augment',() =>new $AugmentItem(new $Item$Properties(), {Type: 'Machine', MachineEnergy: 0.85, MachineSpeed: -0.1}))
+  event.createCustom('thermal:machine_output_augment',() =>new $AugmentItem(new $Item$Properties(), {Type: 'Machine', MachineEnergy: 1.1, MachineSec: 0.15}))
+  event.createCustom('thermal:potion_amplifier_augment',() =>new $AugmentItem(new $Item$Properties(), {Type: 'Potion', PotionAmp: 1, PotionDur: -0.5}))
+
 })
