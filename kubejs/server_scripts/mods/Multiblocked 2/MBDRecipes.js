@@ -7,8 +7,6 @@ ServerEvents.recipes((event) => {
     function detailedboxup(output, input1, input2, input3, input4, input5){event.shaped(output, ['ABA','CDC','AEA'], {A: input1,B: input2,C: input3, D: input4, E: input5})}
     function quanfier(output, input1, input2, input3){detailedboxup('kubejs:'+output+'_quantum_modifier', 'rftoolsbase:dimensionalshard', input1, input2, 'kubejs:blank_quantum_modifier', input3)}
 
-    //event.recipes.kubejs.the_vat().id("kubejs:the_vat/water") .duration(150).inputItems("minecraft:blaze_powder", "minecraft:redstone").inputFluids("1000x enderio:hootch").outputFluids("1000x enderio:fire_water").perTick(energy => energy.inputFE(128))
-
     //Machinarium Casing
     cross('4x kubejs:machinarium_casing', 'kubejs:machinarium_ingot', 'mekanism:steel_casing')
 
@@ -44,4 +42,7 @@ ServerEvents.recipes((event) => {
     quanfier('silk_touch', 'actuallyadditions:drill_upgrade_silk_touch', 'kubejs:radiance_block', 'actuallyadditions:empowered_palis_crystal_block')
     quanfier('fortune', 'actuallyadditions:drill_upgrade_fortune_ii', 'thermal:signalum_block', 'actuallyadditions:empowered_enori_crystal_block')
     
+    //Fluid XP Converter
+    event.shaped('kubejs:fluid_xp_converter', ['ABA','CDC','AEA'], {A: 'thermal:steel_ingot',B: '#forge:glass_panes',C: 'mekanism:basic_control_circuit', D: 'mekanism:steel_casing', E: 'mekanism:dictionary'})
+
 })

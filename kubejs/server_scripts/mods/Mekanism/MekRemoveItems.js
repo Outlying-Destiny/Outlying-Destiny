@@ -41,4 +41,6 @@ ServerEvents.recipes(event => {
     event.remove({id:'mekanism_extras:nucleosynthesizing/enriched_shining'})
     event.remove({id:'mekanism_extras:processing/enriched_spectrum/from_enriched_shining'})
     
+    //Oredictionificator
+    event.remove({id:'mekanism:oredictionificator'})
 })
