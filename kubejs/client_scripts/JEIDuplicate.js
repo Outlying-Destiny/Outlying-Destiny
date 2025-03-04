@@ -24,12 +24,6 @@ JEIEvents.removeCategories(event => {
     )
 })
 
-JEIEvents.removeRecipes(event => {
-    
-    //Soul Catcher Recipes
-    //event.remove('kubejs:soul_catcher_recipes', /mbd2:soul_catcher_recipes\/.+_(double|octadic)/)
-})
-
 JEIEvents.hideItems(event => {
 
     //Duplicate Stuff
@@ -37,8 +31,6 @@ JEIEvents.hideItems(event => {
         /ae2:facade/,
         'enderio:filled_soul_vial',
         'enderio:broken_spawner',
-        ///enderio:filled_soul_vial/,
-        ///Item.of('enderio:broken_spawner', '{BlockEntityTag:{EntityStorage:{Entity:{id:".+"}}}}')/,
         /enderio:clear_glass.+/,
         /enderio:fused_quartz.+/
     ])

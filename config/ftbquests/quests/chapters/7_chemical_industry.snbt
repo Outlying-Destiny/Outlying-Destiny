@@ -605,7 +605,7 @@
 		}
 		{
 			dependencies: ["323755DC97DFAE26"]
-			icon: "thermal_extra:soul_infused_machine_speed_augment"
+			icon: "thermal_extra:twinite_machine_speed_augment"
 			id: "0FBA307E889389C5"
 			min_width: 300
 			rewards: [{
@@ -615,7 +615,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "091492CC51890EF9"
+				id: "46B899D8D74AAD2E"
 				item: {
 					Count: 1
 					id: "itemfilters:or"
@@ -623,39 +623,47 @@
 						items: [
 							{
 								Count: 1b
-								id: "thermal_extra:soul_infused_machine_speed_augment"
+								id: "thermal_extra:twinite_rf_coil_augment"
 							}
 							{
 								Count: 1b
-								id: "thermal_extra:shellite_machine_output_augment"
+								id: "thermal_extra:twinite_rf_coil_storage_augment"
 							}
 							{
 								Count: 1b
-								id: "thermal_extra:abyssal_machine_catalyst_augment"
+								id: "thermal_extra:twinite_rf_coil_xfer_augment"
 							}
 							{
 								Count: 1b
-								id: "thermal_extra:abyssal_machine_efficiency_augment"
+								id: "thermal_extra:twinite_fluid_tank_augment"
 							}
 							{
 								Count: 1b
-								id: "thermal_extra:abyssal_potion_duration_augment"
+								id: "thermal_extra:twinite_machine_speed_augment"
 							}
 							{
 								Count: 1b
-								id: "thermal_extra:shellite_fluid_tank_augment"
+								id: "thermal_extra:twinite_machine_efficiency_augment"
 							}
 							{
 								Count: 1b
-								id: "thermal_extra:shellite_rf_coil_augment"
+								id: "thermal_extra:twinite_machine_output_augment"
 							}
 							{
 								Count: 1b
-								id: "thermal_extra:shellite_rf_coil_storage_augment"
+								id: "thermal_extra:twinite_machine_catalyst_augment"
 							}
 							{
 								Count: 1b
-								id: "thermal_extra:shellite_rf_coil_xfer_augment"
+								id: "thermal_extra:twinite_potion_amplifier_augment"
+							}
+							{
+								Count: 1b
+								id: "thermal_extra:twinite_potion_duration_augment"
+							}
+							{
+								Count: 1b
+								id: "thermal_extra:twinite_area_radius_augment"
 							}
 						]
 					}

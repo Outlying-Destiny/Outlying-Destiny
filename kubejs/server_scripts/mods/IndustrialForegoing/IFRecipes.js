@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
     dissolution('industrialforegoing:speed_addon_1', 1, 'kubejs:molten_signalum', 500, 'mekanism:hdpe_sheet', 'mekanism:upgrade_speed', 'mekanism_extras:dust_radiance', 'mekanism:hdpe_sheet', 'thermal:machine_speed_augment', 100)
     dissolution('industrialforegoing:efficiency_addon_1', 1, 'kubejs:molten_signalum', 500, 'mekanism:hdpe_sheet', 'mekanism:upgrade_speed', 'mekanism_extras:dust_radiance', 'mekanism:hdpe_sheet', 'actuallyadditions:palis_crystal', 100)
     dissolution('industrialforegoing:processing_addon_1', 1, 'kubejs:molten_signalum', 500, 'mekanism:hdpe_sheet', 'mekanism:upgrade_speed', 'mekanism_extras:dust_radiance', 'mekanism:hdpe_sheet', 'minecraft:furnace', 100)
-    dissolution('industrialforegoing:speed_addon_2', 1, 'thermal_extra:twinite', 500, 'mekanism:hdpe_sheet', 'industrialforegoing:speed_addon_1', 'botania:manasteel_ingot', 'mekanism:hdpe_sheet', 'thermal_extra:soul_infused_machine_speed_augment', 150)
+    dissolution('industrialforegoing:speed_addon_2', 1, 'thermal_extra:twinite', 500, 'mekanism:hdpe_sheet', 'industrialforegoing:speed_addon_1', 'botania:manasteel_ingot', 'mekanism:hdpe_sheet', 'thermal_extra:twinite_machine_speed_augment', 150)
     dissolution('industrialforegoing:efficiency_addon_2', 1, 'thermal_extra:twinite', 500, 'mekanism:hdpe_sheet', 'industrialforegoing:efficiency_addon_1', 'botania:manasteel_ingot', 'mekanism:hdpe_sheet', 'actuallyadditions:empowered_palis_crystal', 150)
     dissolution('industrialforegoing:processing_addon_2', 1, 'thermal_extra:twinite', 500, 'mekanism:hdpe_sheet', 'industrialforegoing:processing_addon_1', 'botania:manasteel_ingot', 'mekanism:hdpe_sheet', 'mekanism:energized_smelter', 150)
     
