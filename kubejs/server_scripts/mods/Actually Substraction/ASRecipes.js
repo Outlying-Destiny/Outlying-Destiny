@@ -87,7 +87,7 @@ ServerEvents.recipes(event => {
     detailedbox('2x actuallyadditions:phantom_itemface', 'immersiveengineering:sheetmetal_steel', 'actuallyadditions:empowered_palis_crystal', 'extendedcrafting:ender_ingot', 'enderio:sentient_ender')
     event.shaped('actuallyadditions:phantom_itemface', ['   ','ABA','   '], {A:'enderio:pulsating_alloy_ingot',B:'#outlying:phantomfaces'})
     event.shaped('actuallyadditions:phantom_energyface', ['   ','ABA','   '], {A:'thermal:electrum_ingot',B:'#outlying:phantomfaces'})
-    event.shaped('actuallyadditions:phantom_redstoneface', ['   ','ABA','   '], {A:'projectred_core:red_ingot',B:'#outlying:phantomfaces'})
+    event.shaped('actuallyadditions:phantom_redstoneface', ['   ','ABA','   '], {A:'kubejs:red_alloy_ingot',B:'#outlying:phantomfaces'})
     event.shaped('actuallyadditions:phantom_connector', [' A ','BCB',' A '], {A:'extendedcrafting:ender_ingot',B:'minecraft:string',C:'enderio:ender_resonator'})
     event.replaceInput({ id:/actuallyadditions:phantom_(liquiface|placer|breaker)/},'actuallyadditions:phantom_itemface','#outlying:phantomfaces')
     event.remove({id:'actuallyadditions:dropper'})

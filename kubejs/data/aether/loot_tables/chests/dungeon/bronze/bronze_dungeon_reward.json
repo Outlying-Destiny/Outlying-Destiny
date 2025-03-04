@@ -233,7 +233,7 @@
                             "function": "minecraft:set_count"
                         }
                     ],
-                    "name": "projectred_core:red_ingot",
+                    "name": "kubejs:red_alloy_ingot",
                     "weight": 3
                 }
             ],

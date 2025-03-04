@@ -50,6 +50,8 @@ StartupEvents.registry('item', event => {
   event.create('automaton_ingot').displayName('Automaton Ingot')
   event.create('automaton_nugget').displayName('Automaton Nugget')
   event.create('machinarium_ingot').displayName('Machinarium Ingot')
+  event.create('red_alloy_compound').displayName('Red Alloy Compound')
+  event.create('red_alloy_ingot').displayName('Red Alloy Ingot')
 
   //Tools
   event.create('evil_infused_sword', 'sword').displayName('Evil Infused Sword').tier('evil_infused')

@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
     card('item', 'enderio:pulsating_alloy_ingot')
     card('fluid', 'minecraft:bucket')
     card('energy', 'thermal:electrum_ingot')
-    card('redstone', 'projectred_core:red_ingot')
+    card('redstone', 'kubejs:red_alloy_ingot')
     card('chemical', 'thermal_extra:shellite_ingot')
 
     //Filters

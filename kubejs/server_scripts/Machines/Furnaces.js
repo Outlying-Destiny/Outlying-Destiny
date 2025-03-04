@@ -24,4 +24,7 @@ ServerEvents.recipes(event => {
     blasting('evilcraft:dark_gem', '#forge:ores/dark', 0.6)
     blastingo('draconicevolution:draconium_ingot', '#forge:ores/draconium', 1.0)
     blasting('thermal:niter', '#forge:ores/niter', 0.6)
+
+    //Red Alloy Ingot
+    blasting('kubejs:red_alloy_ingot', 'kubejs:red_alloy_compound', 0)
 })

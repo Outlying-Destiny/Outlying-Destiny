@@ -13,20 +13,15 @@ ServerEvents.recipes(event => {
 
     //Timer
     event.remove({id:'rftoolsutility:timer'})
-    detailedboxup('rftoolsutility:timer', 'projectred_core:red_ingot', 'minecraft:clock', 'minecraft:repeater', 'rftoolsbase:machine_base', 'minecraft:redstone_torch')
+    detailedboxup('rftoolsutility:timer', 'kubejs:red_alloy_ingot', 'minecraft:clock', 'minecraft:repeater', 'rftoolsbase:machine_base', 'minecraft:redstone_torch')
 
     //Redstone Transmitter / Receiver
     event.remove({id:/rftoolsutility:redstone_(transmitter|receiver)/})
-    detailedboxup('rftoolsutility:redstone_transmitter', 'projectred_core:red_ingot', 'extendedcrafting:ender_ingot', 'minecraft:redstone_torch', 'rftoolsbase:machine_base', 'enderio:redstone_alloy_block')
-    detailedboxup('rftoolsutility:redstone_receiver', 'projectred_core:red_ingot', 'extendedcrafting:ender_ingot', 'minecraft:comparator', 'rftoolsbase:machine_base', 'enderio:redstone_alloy_block')
-    
-    //Logic
-    event.remove({id:'rftoolsutility:logic'})
-    event.shaped('rftoolsutility:logic', ['ABC','BDB','EBF'], {A:'projectred_integration:or_gate',B:'projectred_core:red_ingot',C:'projectred_integration:nor_gate',D:'rftoolsbase:machine_base',E:'projectred_integration:and_gate',F:'projectred_integration:nand_gate'})
-
+    detailedboxup('rftoolsutility:redstone_transmitter', 'kubejs:red_alloy_ingot', 'extendedcrafting:ender_ingot', 'minecraft:redstone_torch', 'rftoolsbase:machine_base', 'enderio:redstone_alloy_block')
+    detailedboxup('rftoolsutility:redstone_receiver', 'kubejs:red_alloy_ingot', 'extendedcrafting:ender_ingot', 'minecraft:comparator', 'rftoolsbase:machine_base', 'enderio:redstone_alloy_block')
     
     //Unmodified Base Machinery
-    event.replaceInput({output:/rftoolsutility:(analog|counter|digit|invchecker|sensor|sequencer|logic)/},'minecraft:redstone','projectred_core:red_ingot')
+    event.replaceInput({output:/rftoolsutility:(analog|counter|digit|invchecker|sensor|sequencer|logic)/},'minecraft:redstone','kubejs:red_alloy_ingot')
 
     //Crafters
     event.remove({id:/rftoolsutility:crafter(1|2|3)/})

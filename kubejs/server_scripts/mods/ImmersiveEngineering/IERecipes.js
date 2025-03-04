@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
     //Redstone Engineering Block
     event.remove({id: 'immersiveengineering:crafting/rs_engineering'})
     box('immersiveengineering:rs_engineering', 'immersiveengineering:sheetmetal_iron', 'minecraft:redstone', 'thermal:rose_gold_ingot')
-    box('4x immersiveengineering:rs_engineering', 'immersiveengineering:sheetmetal_iron', 'mekanism:alloy_infused', 'projectred_core:red_ingot')
+    box('4x immersiveengineering:rs_engineering', 'immersiveengineering:sheetmetal_iron', 'mekanism:alloy_infused', 'kubejs:red_alloy_ingot')
 
     //Thermoelectric Generator
     event.replaceInput({ output: 'immersiveengineering:thermoelectric_generator' },'#forge:plates/constantan','thermal:constantan_ingot'         )
@@ -137,4 +137,5 @@ ServerEvents.recipes(event => {
 
     //Remove Arc Furnace Ore Proc
     event.remove({id:/immersiveengineering:arcfurnace\/(raw|ore|dust|netherite)_/})
+
 })

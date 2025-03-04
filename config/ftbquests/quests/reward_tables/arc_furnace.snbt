@@ -4,7 +4,7 @@
 	order_index: 7
 	rewards: [
 		{ count: 8, item: "thermal:constantan_ingot" }
-		{ count: 4, item: "projectred_core:red_ingot" }
+		{ count: 4, item: "kubejs:red_alloy_ingot" }
 	]
 	title: "Arc Furnace"
 }
