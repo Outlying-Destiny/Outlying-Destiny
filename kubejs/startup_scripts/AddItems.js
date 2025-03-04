@@ -100,8 +100,6 @@ StartupEvents.registry('item', event => {
   event.create('signalum_catalyst').displayName('Signalum Catalyst')
 
   //Thermal Augments (Base Code from Mierno by FalAut, go play it!)
-  const $AugmentItem = Java.loadClass('cofh.thermal.lib.common.item.AugmentItem');
-  const $Item$Properties = Java.loadClass('net.minecraft.world.item.Item$Properties');
   event.createCustom('thermal_extra:twinite_rf_coil_augment',() =>new $AugmentItem(new $Item$Properties(), {Type: 'RF', RFXfer: 16, RFMax: 16}))
   event.createCustom('thermal_extra:twinite_rf_coil_storage_augment',() =>new $AugmentItem(new $Item$Properties(), {Type: 'RF', RFXfer: 8, RFMax: 24}))
   event.createCustom('thermal_extra:twinite_rf_coil_xfer_augment',() =>new $AugmentItem(new $Item$Properties(), {Type: 'RF', RFXfer: 24, RFMax: 8}))
