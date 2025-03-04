@@ -2,6 +2,5 @@ ServerEvents.tags('item', event => {
 
     //Wither Bone
     event.removeAllTagsFrom('bhc:wither_bone')
-    event.add('forge:bones/wither', 'bhc:wither_bone')
 
 })

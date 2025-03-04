@@ -42,9 +42,13 @@
 			dependencies: ["0A3D05D5F3E9C113"]
 			description: [
 				"Tired of losing your crafting progress when you forget an important item in a chest?"
-				"Try using the Crafting Station! It will not only retain items when leaving its HUD but also give you and JEI access to chests close to it, making your crafting tasks easier! Just place a crafting table in your crafting grid to make one."
 				""
-				"You can also combine a Crafting Table with a Stick to be able to access your crafting table directly from your inventory."
+				"Try using the Crafting Station! It will not only retain items when leaving its HUD but also give you and JEI access to chests close to it, making your crafting tasks way easier!"
+				""
+				""
+				"You can also make a Crafting Table On A Stick which can be accessed via your inventory or via a keybind (&eV&r by default) once equipped in its Curios Slot."
+				" "
+				"You can access your &2Curios Menu&r by clicking on the button at the top left of the player visual in your inventory."
 			]
 			id: "3734A5BF783739BE"
 			min_width: 300
@@ -55,8 +59,8 @@
 					type: "item"
 				}
 				{
-					id: "6589A9F86238B2E0"
-					item: "actuallyadditions:crafter_on_a_stick"
+					id: "6A3CB32F8D549EEF"
+					item: "crafting_on_a_stick:crafting_table"
 					type: "item"
 				}
 			]
@@ -412,7 +416,7 @@
 				""
 				"You can open your backpack while not holding it by using &eB&r, this keybind is of course modifiable in the Controls."
 				""
-				"Some items like Backpacks are equipable in your &2Curios Menu&r, to access it click on the button at the top left of your player visual in your inventory."
+				"Some items like Backpacks are equipable in your &2Curios Menu&r, to access it click on the button at the top left of the player visual in your inventory."
 				""
 				"&aCurios equippable items always have their Curios slot written below their name.&r"
 			]
@@ -735,7 +739,7 @@
 				""
 				"There will be other way to obtain the items they trade such as mending books."
 				""
-				"The given Charm can be activated to disable Wandering Trader Spawning around you. It is also equipable in your &2Curios Menu&r, to access it click on the button at the top left of your player visual in your inventory."
+				"The given Charm can be activated to disable Wandering Trader Spawning around you. It is also equipable in your &2Curios Menu&r, to access it click on the button at the top left of the player visual in your inventory."
 			]
 			icon: "minecraft:emerald"
 			id: "6E857F803D3503A1"
@@ -756,12 +760,12 @@
 				type: "checkmark"
 			}]
 			title: "&c&lImportant: World Gen and Trading"
-			x: -0.6d
-			y: -6.6d
+			x: -1.2d
+			y: -5.3999999999999995d
 		}
 		{
 			description: [
-				"Fire Spread is automatically disabled in this pack such as it will not propagate itself but still despawn over time."
+				"&6Fire Spread is automatically disabled in this pack&r such as it will not propagate itself but still despawn over time."
 				""
 				"This prevents the player to use the burning plank method to open the nether portal early (also to prevent having your base burn down from lightning)"
 			]
@@ -780,8 +784,8 @@
 				title: "&c&lImportant: Fire Spread"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: -7.8d
+			x: -0.6d
+			y: -6.6d
 		}
 		{
 			dependencies: ["72EB2ED8D9D7B364"]
@@ -811,32 +815,45 @@
 		}
 		{
 			description: [
-				"Welcome to Outlying Destiny! You read the title didn't ya? Outlying Destiny is an expert pack mostly oriented around Tech and Magic automation but you'll find your fair share of exploration too, if you're into that stuff..."
+				"Welcome to Outlying Destiny! You read the title didn't ya? Outlying Destiny is an expert pack mostly oriented around &6Tech and Magic automation&r but you'll find your fair share of &6exploration&r too, if you're into that stuff..."
 				""
 				"But what is an expert modpack? We hired a random Divine Journey 2 player to answer us that question:"
 				""
-				"1. An expert modpack is a modpack that follows a progression, most recipes are changed and items are gated."
+				"1. An expert modpack is a modpack that follows a progression, &6most recipes are changed and items are gated.&r"
 				""
-				"2. The questbook is here to guide you! Huge efforts as been put into this pack to be a great entry point for new players while still being a great challenge for experienced player. Everyone can have fun, even if that doesn't include completing the pack, be proud of your achievements, you'll learn a lot!"
+				"2. &6The questbook is here to guide you!&r Huge efforts as been put into this pack to be a great entry point for new players while still being a great challenge for experienced player. Everyone can have fun, even if that doesn't include completing the pack, be proud of your achievements, you'll learn a lot!"
 				""
-				"3. Things will get hard! As you progress through the pack recipes will become more and more expensive, many recipes are \"tiered\" which means they will require you previous stuff to be crafted, autocrafting will be required and highly solicited! You'll unlock useful automation tools throught the pack and will become relevant in chapter 8 with the help of Applied Energistics. -\"If it's needed autocraft it!\""
-				""
-				""
-				"The pack will take you through lots of mods while adding its own twists containing over 1000 new recipes, 100 custom items, custom machines and even more!"
+				"3. &6Things will get hard!&r As you progress through the pack recipes will become more and more expensive, many recipes are \"tiered\" which means they will require you previous stuff to be crafted, &6autocrafting will be required and highly solicited!&r You'll unlock useful automation tools throught the pack and will become relevant in chapter 8 with the help of Applied Energistics. -\"If it's needed autocraft it!\""
 				""
 				""
-				"Next page will present you a breakdown of the modpack progression (Beware of spoilers!):"
+				"The pack will take you through lots of mods while adding its own twists containing over &61500 new recipes, 100 custom items, custom machines&r and even more!"
+				""
+				""
+				"Next page will present you a &6breakdown of the modpack progression&r (Beware of spoilers!):"
 				"{@pagebreak}"
 				"1. Early Game:"
 				""
-				"  - Genesis: Vanilla Minecraft, Nature's Aura, Immersive Engineering, Early Game Mekanism, PneumaticCraft"
 				""
-				"  - Exploration zone: Nether, Twilight Forest, The Aether, Undergarden, The End"
+				"  - Genesis:"
 				""
-				"  -Tech Mastery:"
-				"    -Thermal Series Part 1, AE2 Item / Fluid Storage, Mob Grinding Utils, EnderIO, LaserIO / Modular Routers"
-				"    -Thermal Series Part 2, ExtendedCrafting, AE2 Crafting Terminal, Actually Substractions"
-				"    -Industrial Foregoing, Mekanism Gas, RFTools, AE2 Autocrafting / Wireless"
+				"- Vanilla Minecraft, Nature's Aura, Immersive Engineering, Early Game Mekanism, PneumaticCraft"
+				""
+				""
+				""
+				"  - Exploration zone:"
+				""
+				"- Nether, Twilight Forest, The Aether, Undergarden, The End"
+				""
+				""
+				""
+				"  - Tech Mastery:"
+				""
+				"- Thermal Series Part 1, AE2 Item / Fluid Storage, Mob Grinding Utils, EnderIO, LaserIO / Modular Routers"
+				""
+				"- Thermal Series Part 2, ExtendedCrafting, AE2 Crafting Terminal, Actually Substractions"
+				""
+				"- Industrial Foregoing, Mekanism Gas, RFTools, AE2 Autocrafting / Wireless"
+				""
 				""
 				"And More To Come!"
 			]
@@ -853,21 +870,21 @@
 		}
 		{
 			description: [
-				"Outlying Destiny is currently in alpha and a heavily edited pack. You ARE a beta tester and despite my best efforts bugs are to be excepted."
+				"Outlying Destiny is &6currently in alpha&r and a heavily edited pack. You ARE a beta tester and despite my best efforts bugs are to be excepted."
 				""
-				"Want to help? You can easily report bugs to the GitHub: https://github.com/Blackalf14/Outlying-Destiny"
+				"Want to help? You can easily &6report bugs to the GitHub&r: https://github.com/Blackalf14/Outlying-Destiny"
 				""
 				"However, before reporting:"
-				"- Make sure you're playing on the latest version of the pack"
-				"- Make sure you're running the pack on the latest Java 17 version"
-				"- Make sure your pack has not be significantly altered whether it is on your side or on the server you're playing on"
-				"- Make sure this is a modpack issue and not a mod issue"
-				"- Make sure the issue wasn't already reported, if you think you can add more infos to the issue you can comment under it"
+				"- Make sure &6you're playing on the latest version of the pack&r"
+				"- Make sure &6you're running the pack on the latest Java 17 version&r"
+				"- Make sure &6your pack has not been significantly altered&r whether it is on your side or on the server you're playing on"
+				"- Make sure &6this is a modpack issue and not a mod issue"
+				"- Make sure &6the issue wasn't already reported&r, if you think you can add more infos to the issue you can comment under it"
 				""
 				""
-				"Once everything is check, feel free to send your report. Precise informations and screenshots are appreciated."
+				"Once everything is check, feel free to send your report. &6Precise informations and screenshots are appreciated.&r"
 			]
-			icon: "mm:debug_tool"
+			icon: "pneumaticcraft:assembly_program_laser"
 			id: "7C9557B8455BFEF5"
 			min_width: 350
 			tasks: [{
@@ -887,15 +904,15 @@
 				""
 				"The questbook (QB) is divided into chapters each with their own set of quests, you don't need to complete every quests of a given chapter to unlock the next, however you will need to follow a questline indicated with arrows, quests that bridges the gap between 2 chapters are bigger and can be seen in each concerned chapter. Locked quests are grayed out."
 				""
-				"You can access the questbook in 3 different ways: Using the Quest Book item, while in your inventory clicking on the book upleft to your screen, by using a keybind configurable in your controls by simply searching \"quests\"."
+				"&6You can access the questbook in 3 different ways:&r Using the Quest Book item, while in your inventory clicking on the book upleft to your screen, &6by using a keybind configurable in your controls by simply searching \"quests\".&r"
 				""
-				"When clicking on a quest you can check the upleft arrow to see the quest dependency or the upright arrow to see dependant quests from this one. This is mostly useful for the therefore mentioned gap bridging quests and for some side-quests with invisible arrow dependencies for chapter organization reasons."
+				"When clicking on a quest &6you can check the upleft arrow to see the quest dependency or the upright arrow to see dependant quests from this one&r. This is mostly useful for the therefore mentioned gap bridging quests and for some side-quests with invisible arrow dependencies for chapter organization reasons."
 				""
-				"Outside of rare exceptions, quests requires you to complete all their dependencies to be unlocked, however your progress on non-unlocked quests is still tracked so if you accidently complete a quest before unlocking it you will auto-complete it once unlocked."
+				"Outside of rare exceptions, quests requires you to complete all their dependencies to be unlocked, however &6your progress on non-unlocked quests is still tracked&r so if you accidently complete a quest before unlocking it you will auto-complete it once unlocked."
 				""
-				"Each quests will have their own description usually containing tips or stupid jokes whichever you prefer. They also each have rewards, some are \"choice quests\" which name is self-explanatory you choose one of the rewards."
+				"&6Each quests have their own description usually containing tips&r or stupid jokes whichever you prefer. They also each have rewards, some are \"choice quests\" which name is self-explanatory you choose one of the rewards."
 				""
-				"In the top left of the main QB page, you can automatically collect every uncollected rewards with the up right button (choice quests not included), below it you'll find a button opening up a shortcut menu concerning the questbook."
+				"In the top left of the main QB page, &6you can automatically collect every uncollected rewards&r with the up right button (choice quests not included), below it you'll find a button opening up a shortcut menu concerning the questbook."
 			]
 			icon: "ftbquests:book"
 			id: "78FEFF40138063EA"
@@ -911,23 +928,23 @@
 		}
 		{
 			description: [
-				"Those next keybinds can me modified in the \"Controls\" Menu:"
+				"Those next &6keybinds can me modified&r in the \"Controls\" Menu:"
 				"(Note: You can search for specific controls name or keybinds using the top bar in the menu)"
 				""
-				"Pressing &eY&r while hovering over an item will highlight nearby inventories containing that same item. If no valid inventory are found, nothing will happen. You can also press &eShift+T&r to showcase that item in chat to everyone."
+				"Pressing &eY&r while hovering over an item will &6highlight nearby inventories containing that same item&r. If no valid inventory are found, nothing will happen. You can also press &eShift+T&r to &6showcase that item in chat to everyone&r."
 				""
-				"Pressing &eF7&r will show a yellow X on blocks where monsters can spawn at night or a red X where monsters can always spawn."
+				"Pressing &eF7&r &6will show&r a blue X on blocks &6where monsters can spawn at night&r or a red X &6where monsters can always spawn.&r"
 				""
 				""
-				"Those next keybinds cannot be modified in the \"Controls\" Menu:"
+				"Those next keybinds &6cannot be modified&r in the \"Controls\" Menu:"
 				""
-				"Pressing &eF3+G&r will activate the Chunk Boundary Overlary which will show you the border of chunks."
+				"Pressing &eF3+G&r will activate the Chunk Boundary Overlary which will &6show you the border of chunks&r."
 				""
-				"Pressing &eF3+H&r will activate \"Display Advanced Tooltips\" which allows you to get useful informations like an item tags."
+				"Pressing &eF3+H&r will activate \"Display Advanced Tooltips\" which allows you to &6get useful informations like an item tags&r."
 				""
-				"Pressing &eF3+P&r will deactivate \"Pause on Lost Focus\" which is what pauses your game when switching tabs while not in a HUD in singleplayer."
+				"Pressing &eF3+P&r will &6deactivate \"Pause on Lost Focus\"&r which is what pauses your game when switching tabs while not in a HUD in singleplayer."
 				""
-				"Pressing &eF3+B&r will show hitboxes of entities which can sometimes be useful when a boss, for example the Ender Dragon, seemingly randomly doesn't take hits or oppositively hits you from very far away"
+				"Pressing &eF3+B&r will &6show hitboxes of entities&r which can sometimes be useful when a boss, for example the Ender Dragon, seemingly randomly doesn't take hits or oppositively hits you from very far away"
 				""
 				"There are more &eF3+[key]&r shortcuts which you can show in chat by pressing &eF3+Q&r for qwerty users or &eF3+A&r for azerty users"
 			]
@@ -944,37 +961,35 @@
 		}
 		{
 			description: [
-				"Just Enough Items, also known as JEI, is the mod adding that list of items in the right of your inventory, it is used to check items and recipes making it a crucial mod to the modpack comprehension."
+				"Just Enough Items, also known as JEI, is the mod adding the list of items in the right of your inventory, it is used to &6check items and recipes&r making it a crucial mod to the modpack comprehension."
 				""
-				"All below keybinds are modifiable in the \"Controls\" menu:"
+				"All below &6keybinds are modifiable&r in the \"Controls\" menu:"
 				""
-				"By &eleft clicking&r an item in the JEI menu or by pressing &eR&r you can display all recipes to craft that item"
-				"By &eright clicking&r or pressing &eU&r you can display all recipes using that item"
-				"If nothing happens that means that there is no valid recipe to make or to use that item"
+				"By &eleft clicking&r an item in the JEI menu or by pressing &eR&r you can &6display all recipes to craft that item.&r"
+				"By &eright clicking&r or pressing &eU&r you can &6display all recipes using that item.&r"
+				"If nothing happens that means that there is no valid recipe to make or to use that item."
 				""
-				"By pressing &eA&r you can bookmark an item to the left of your screen in order to access it easily"
+				"By pressing &eA&r you can &6bookmark an item&r to the left of your screen in order to access it easily."
 				""
 				""
 				"While checking recipes you will be shown a new HUD:"
 				""
-				"To the left of it you can see (almost) every blocks where the recipe can be effectuated"
+				"&6To the left&r of it &6you can see&r (almost) every blocks &6where the recipe can be effectuated.&r"
 				""
-				"At the top you can select different categories of crafting, for example smelting or smithing, which both have their appropriate category."
-				"You can also move from page to page when there's a lot of recipes in a same category whether by pressing the arrow buttons or by using the &eMouse Wheel&r, you can also return to your previously viewed recipe by pressing &eBackspace&r"
+				"&6At the top you can select different categories of crafting&r, for example smelting or smithing, which both have their appropriate category."
+				"You can also move from page to page when there's a lot of recipes in a same category whether by pressing the arrow buttons or by using the &eMouse Wheel&r, you can also &6return to your previously viewed recipe&r by pressing &eBackspace&r."
 				""
 				"At the right of a recipe you can find 2 buttons:"
-				"The + can be pressed to automatically fill the recipe in a crafting table, if pressed while holding &eShift&r it will try to fill the recipe the most it can using what you have in your inventory, so if you have 48 logs and are trying to make planks it will fill all 48 of them."
-				"The button below it can be pressed to bookmark a recipe, not the same as an item, it can be useful if you're using a recipe frequently."
+				"The + can be pressed to &6automatically fill the recipe in a crafting table&r, if pressed while holding &eShift&r it will try to fill the recipe the most it can using what you have in your inventory, so if you have 48 logs and are trying to make planks it will fill all 48 of them."
+				"The button below it can be pressed to &6bookmark a recipe&r, not the same as an item, it can be useful if you're using a recipe frequently."
 				"{@pagebreak}"
 				"How to properly search with JEI:"
 				""
-				"You can search specific items using JEI with the search bar on the down right side of your HUD screen"
+				"You can &6search specific items&r using JEI with the search bar on the down right side of your HUD screen."
 				""
-				"You can focus your search on a specific mod by using &e@&r, for example \"@mekanism\". You can still search for an item name from there by just using a space, for example \"@mekanism factory\" will search for every factories in the mod Mekanism."
+				"You can &6focus your search on a specific mod&r by using &e@&r, for example \"@mekanism\". You can still search for an item name from there by just using a space, for example \"@mekanism factory\" will search for every factories in the mod Mekanism."
 				""
-				"Oppositively you can exclude results by using &e-&r, for example \"@mekanism -factory\" will search every items from Mekanism BUT factories"
-				""
-				"If you cannot locate an item in a large inventory, you can &edouble click&r the search bar to highlight items that matches your current search."
+				"Oppositively you can &6exclude results&r by using &e-&r, for example \"@mekanism -factory\" will search every items from Mekanism BUT factories."
 			]
 			icon: "minecraft:brain_coral_block"
 			id: "726BFB17213D0231"
@@ -991,20 +1006,20 @@
 			description: [
 				"You can play in this pack as a Team, here's a few steps tutorial to do so:"
 				""
-				"First, open your inventory and click the \"My Team\" button in the top left."
-				"From there you can create a team."
-				"Once you're done, come back to the team screen and use the green button on the top right to invite players."
-				"All they need to do is to accept the invitation and you're all done."
+				"First, &6open your inventory&r and click the &6\"My Team\" button&r in the top left."
+				"From there you can &6create a team&r."
+				"Once you're done, &6come back to the team screen&r and use the &6green button&r on the top right to &6invite players&r."
+				"All they need to do is to &6accept the invitation&r and you're all done."
 				""
-				"Any player on a same team will share quest progress and rewards and will be able to interact with claimed chunks from said team."
+				"Any player on a same team will &6share quest progress and rewards&r and will be able to &6interact with claimed chunks from said team.&r"
 				""
 				""
-				"By going back to your inventory you can access the FTB Chunks: Claim Manager Menu by clicking on the green map in top left of your screen."
+				"By going back to your inventory you can access the &6FTB Chunks: Claim Manager Menu&r by clicking on the green map in top left of your screen."
 				""
-				"From there you can claim chunks using &eLeft Click&r on the map and force load those using &eShift + Left Click&r"
-				"You can undo those actions by using &eRight Click&r instead of &eLeft Click&r."
+				"From there you can &6claim chunks&r using &eLeft Click&r on the map and &6force load&r those using &eShift + Left Click&r"
+				"You can &6undo those actions&r by using &eRight Click&r instead of &eLeft Click&r."
 				""
-				"Claimed Chunks are chunks were only team members can interact and force loaded chunks are chunks that are always active whether or not there are players close / online."
+				"Claimed Chunks are &6chunks were only team members can interact&r and force loaded chunks are &6chunks that are always active&r whether or not there are players close / online."
 			]
 			icon: "minecraft:player_head"
 			id: "6130D43C39F79D9B"
@@ -1047,51 +1062,16 @@
 			y: -4.2d
 		}
 		{
-			dependencies: ["4F27C10BCFCC365F"]
-			description: [
-				"Thanksfully, good old redstone comes with an upgrade."
-				""
-				"By combining some iron and redstone you can make some Red Alloy Wires."
-				""
-				"Here's what they do differently:"
-				""
-				"Oppositively to redstone, Red Alloy Wires power doesn't decline over distance."
-				""
-				"Red Alloy Wires powers every block around them, not only the ones they're facing to, it's specially useful when placing machinery at 90 degrees from a Red Alloy Wire line."
-				""
-				"Red Alloy Wires can be placed on walls, no more extravagant stair or redstone torches setup!"
-				""
-				"With wool you can make some Colored Insulated Wires, it's not only a nice way to differentiate different Redstone systems and adding some style to your base, different Colored Wires doesn't connect between each other, useful if you wish to have multiple system close to each other."
-				""
-				"Red Alloy Wires are also just way more lag free."
-			]
-			id: "36AC0722D684C4F4"
-			min_width: 300
-			rewards: [{
-				id: "564C7827E0F21A94"
-				item: "projectred_integration:timer_gate"
-				type: "item"
-			}]
-			tasks: [{
-				id: "6B37AB6086EA1F68"
-				item: "projectred_transmission:red_alloy_wire"
-				type: "item"
-			}]
-			title: "Spaghetti with ketchup"
-			x: -1.2d
-			y: -5.3999999999999995d
-		}
-		{
 			description: [
 				"Tired of mining and collecting ressources for hours? Lucky for you we got just what you need!"
 				""
-				"By pressing your Ultimine button (default: &e²&r) you can mine multiple of a same block at once up to a stack!"
+				"By pressing your Ultimine button (default: &e²&r) &6you can mine multiple of a same block at once up to a stack!&r"
 				""
-				"This make boring processes like breaking trees or collecting an ore vein a joke! At the cost of a bit of food"
+				"This make boring processes like &6breaking trees&r or &6collecting an ore vein&r a joke! At the cost of a bit of food"
 				""
-				"By using &eShift + Mouse Wheel&r while holding your Ultimine keybind you can change the preset of your Ultimine to break blocks in different patterns! Most notable exemples being the Small Cube 3x3 and mining tunnel."
+				"By using &eShift + Mouse Wheel&r while holding your Ultimine keybind you can &6change the preset of your Ultimine to break blocks in different patterns!&r Most notable exemples being the Small Cube 3x3 and mining tunnel."
 				""
-				"Ultimine is your best friend, make sure to use it frequently :)"
+				"&6Ultimine is your best friend&r, make sure to use it frequently :)"
 			]
 			icon: "mysticalagradditions:supremium_paxel"
 			id: "6735C90A27B2216A"

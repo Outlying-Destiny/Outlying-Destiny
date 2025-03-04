@@ -419,43 +419,14 @@
 		}
 		{
 			dependencies: ["4CD3AA3E83C316B7"]
-			icon: "mm:the_vat"
+			icon: "kubejs:the_vat"
 			id: "0B0410EFB86FACD8"
 			min_width: 300
-			tasks: [
-				{
-					id: "383854D823F11DAD"
-					item: "mm:the_vat"
-					type: "item"
-				}
-				{
-					count: 18L
-					id: "60CEC4FDD98850F6"
-					item: { Count: 18, id: "kubejs:void_frame" }
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "6FA4B60489CD4F6B"
-					item: "mm:the_vat_tiny_item_port_input"
-					type: "item"
-				}
-				{
-					id: "15EE0FD7E0AFC078"
-					item: "mm:the_vat_small_fluid_port_input"
-					type: "item"
-				}
-				{
-					id: "209BF92064B9C440"
-					item: "mm:the_vat_small_fluid_port_output"
-					type: "item"
-				}
-				{
-					id: "26C03B0489F8C2FD"
-					item: "mm:the_vat_tiny_energy_port_input"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "383854D823F11DAD"
+				item: "kubejs:the_vat"
+				type: "item"
+			}]
 			title: "Fluid Madness"
 			x: -6.75d
 			y: -3.5d
@@ -2088,7 +2059,7 @@
 			rewards: [{
 				count: 4
 				id: "53388464A772F49C"
-				item: "projectred_core:red_ingot"
+				item: "kubejs:red_alloy_ingot"
 				type: "item"
 			}]
 			tasks: [{
@@ -2194,29 +2165,133 @@
 		{
 			dependencies: ["1B993EA365BEFD7F"]
 			description: [
-				"Speed Upgrades can be used on Mekanism machinery to increase their processing speed at the cost of energy efficiency!"
+				"You can now upgrade your basic factories into elite factories!"
 				""
-				"Like their energy equivalent, each upgrade gives a x1.33 multiplier boost up to 8 upgrades for a x10 boost."
-				""
-				"Beware as maxing your machinery speed will increase their energy requirement by x100 as their speed boost is also equal to their energy efficiency debuff."
-				""
-				"That means you probably want to use energy upgrades to counter that effect and think wisely before maximizing the speed of machines that might not immediately need it."
+				"Elite Factories can process 5 recipes at once."
 			]
-			id: "667102BF5FAF6151"
-			min_width: 300
+			icon: "mekanism:advanced_smelting_factory"
+			id: "5BB94D10E3141203"
+			min_width: 325
 			rewards: [{
-				exclude_from_claim_all: true
-				id: "46FE1562D32286A8"
-				table_id: 7071292920799606641L
-				type: "choice"
-			}]
-			size: 1.1d
-			tasks: [{
-				count: 8L
-				id: "4096D40265A0BD45"
-				item: "mekanism:upgrade_speed"
+				count: 4
+				id: "1FFCEBE114CC8456"
+				item: "thermal:lumium_ingot"
 				type: "item"
 			}]
+			tasks: [{
+				id: "066DC62C18FFA982"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "mekanism:advanced_smelting_factory"
+								tag: {
+									mekData: {
+										EnergyContainers: [{
+											Container: 0b
+											stored: "12500"
+										}]
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanism:advanced_enriching_factory"
+								tag: {
+									mekData: {
+										EnergyContainers: [{
+											Container: 0b
+											stored: "10000"
+										}]
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanism:advanced_crushing_factory"
+								tag: {
+									mekData: {
+										EnergyContainers: [{
+											Container: 0b
+											stored: "9250"
+										}]
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanism:advanced_compressing_factory"
+								tag: {
+									mekData: {
+										EnergyContainers: [{
+											Container: 0b
+											stored: "33000"
+										}]
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanism:advanced_combining_factory"
+								tag: {
+									mekData: {
+										EnergyContainers: [{
+											Container: 0b
+											stored: "13000"
+										}]
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanism:advanced_purifying_factory"
+								tag: {
+									mekData: {
+										EnergyContainers: [{
+											Container: 0b
+											stored: "22000"
+										}]
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanism:advanced_injecting_factory"
+								tag: {
+									mekData: {
+										EnergyContainers: [{
+											Container: 0b
+											stored: "38000"
+										}]
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanism:advanced_infusing_factory"
+								tag: {
+									mekData: {
+										EnergyContainers: [{
+											Container: 0b
+											stored: "5250"
+										}]
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "mekanism:advanced_sawing_factory"
+							}
+						]
+					}
+				}
+				title: "Any Elite Factory"
+				type: "item"
+			}]
+			title: "Overclocked Factory"
 			x: -5.5d
 			y: 0.25d
 		}

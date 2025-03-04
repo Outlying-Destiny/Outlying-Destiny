@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
     //Upgrades
     event.remove({id:/mekanism:upgrade\//})
     upgrade('energy', 'powah:steel_energized', 'mekanism:alloy_infused', 'thermal:gold_dust')
-    upgrade('speed', 'extendedcrafting:luminessence', 'mekanism:alloy_reinforced', 'mekanism:dust_osmium')
+    upgrade('speed', 'mekanism:ingot_refined_obsidian', 'mekanism:alloy_reinforced', 'mekanism:dust_osmium')
     upgrade('muffling', '#minecraft:wool', 'mekanism:alloy_infused', 'thermal:constantan_dust')
     upgrade('anchor', 'rftoolsbase:dimensionalshard', 'mekanism:alloy_atomic', 'thermal:ender_pearl_dust')
     upgrade('stone_generator', 'enderio:weather_crystal', 'mekanism:alloy_atomic', 'ae2:sky_dust')
@@ -52,7 +52,7 @@ ServerEvents.recipes(event => {
     //Cables
     event.replaceInput({ output: ['mekanism:basic_universal_cable', 'mekanism:basic_mechanical_pipe', 'mekanism:basic_pressurized_tube', 'mekanism:basic_logistical_transporter', 'mekanism:basic_thermodynamic_conductor']},'#forge:ingots/steel','thermal:steel_plate')
     //event.remove({id:/mekanism(_extras){0,1}:transmitter.+/})
-    //const cables = [{type:'universal_cable', basematerial:'minecraft:redstone', material:'projectred_core:red_ingot'}, {type:'mechanical_pipe', basematerial:'minecraft:bucket', material:'thermal:bronze_ingot'}, {type:'pressurized_tube', basematerial:'kubejs:crystalline_alloy_ingot', material:'thermal_extra:shellite_ingot'}, {type:'logistical_transporter', basematerial:'mekanism:basic_control_circuit', material:'thermal:constantan_ingot'}, {type:'thermodynamic_conductor', basematerial:'mekanism:hdpe_sheet', material:'actuallyadditions:palis_crystal'}]
+    //const cables = [{type:'universal_cable', basematerial:'minecraft:redstone', material:'kubejs:red_alloy_ingot'}, {type:'mechanical_pipe', basematerial:'minecraft:bucket', material:'thermal:bronze_ingot'}, {type:'pressurized_tube', basematerial:'kubejs:crystalline_alloy_ingot', material:'thermal_extra:shellite_ingot'}, {type:'logistical_transporter', basematerial:'mekanism:basic_control_circuit', material:'thermal:constantan_ingot'}, {type:'thermodynamic_conductor', basematerial:'mekanism:hdpe_sheet', material:'actuallyadditions:palis_crystal'}]
     //cables.forEach((cables) => {
     //    detailedbox('6x mekanism:basic_'+cables.type, 'thermal:steel_plate', 'immersiveengineering:stick_steel', cables.material, cables.basematerial)
     //    cable('mekanism:advanced_'+cables.type, 'mekanism:basic_'+cables.type, 'mekanism:alloy_infused', cables.material)
@@ -199,7 +199,7 @@ ServerEvents.recipes(event => {
     event.remove({id:/mekanism:factory\/(advanced|elite|ultimate)\/.+/})
     const machinery = [{name:'combining'},{name:'compressing'},{name:'crushing'},{name:'enriching'},{name:'infusing'},{name:'injecting'},{name:'purifying'},{name:'sawing'},{name:'smelting'}]
     machinery.forEach((machinery) => {
-        event.custom({"type":"mekanism:mek_data","key":{"A":{"item":"mekanism:alloy_reinforced"},"C":{"item":"mekanism:elite_control_circuit"},"I":{"item":"thermal:lumium_ingot"},"P":{"item":"mekanism:basic_"+machinery.name+"_factory"}},"pattern":["ACA","IPI","ACA"],"result":{"item":"mekanism:advanced_"+machinery.name+"_factory"}})
+        event.custom({"type":"mekanism:mek_data","key":{"A":{"item":"mekanism:alloy_reinforced"},"C":{"item":"mekanism:elite_control_circuit"},"I":{"item":"extendedcrafting:luminessence"},"P":{"item":"mekanism:basic_"+machinery.name+"_factory"}},"pattern":["ACA","IPI","ACA"],"result":{"item":"mekanism:advanced_"+machinery.name+"_factory"}})
         event.custom({"type":"mekanism:mek_data","key":{"A":{"item":"mekanism_extras:alloy_radiance"},"C":{"item":"mekanism_extras:absolute_control_circuit"},"I":{"item":"minecraft:dirt"},"P":{"item":"mekanism:advanced_"+machinery.name+"_factory"}},"pattern":["ACA","IPI","ACA"],"result":{"item":"mekanism:elite_"+machinery.name+"_factory"}})
         event.custom({"type":"mekanism:mek_data","key":{"A":{"item":"mekanism_extras:alloy_shining"},"C":{"item":"mekanism_extras:cosmic_control_circuit"},"I":{"item":"minecraft:dirt"},"P":{"item":"mekanism:elite_"+machinery.name+"_factory"}},"pattern":["ACA","IPI","ACA"],"result":{"item":"mekanism:ultimate_"+machinery.name+"_factory"}})
     })

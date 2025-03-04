@@ -2,6 +2,7 @@
     "values": [
         "kubejs:soul_catcher",
         "kubejs:the_vat",
-        "kubejs:quantum_miner"
+        "kubejs:quantum_miner",
+        "kubejs:fluid_xp_converter"
     ]
   }

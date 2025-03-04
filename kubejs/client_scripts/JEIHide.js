@@ -41,7 +41,7 @@ JEIEvents.hideItems(event => {
     event.hide('endercrop:tilled_end_stone')
 
     //EnderIO
-    event.hide(['enderio:silicon', 'enderio:flour', 'enderio:cake_base', 'enderio:clayed_glowstone', 'enderio:glider_wing', 'enderio:enticing_crystal', /enderio:(powered_){0,1}light.+/])
+    event.hide(['enderio:silicon', 'enderio:flour', 'enderio:cake_base', 'enderio:clayed_glowstone', 'enderio:glider_wing', 'enderio:enticing_crystal', /enderio:(powered_){0,1}light.+/, Item.of('minecraft:enchanted_book').enchant('enderio:repellent', 0)])
     event.hide(['enderio:drain', 'enderio:stirling_generator', 'enderio:crafter', 'enderio:soul_engine', 'enderio:primitive_alloy_smelter', 'enderio:alloy_smelter', 'enderio:vacuum_chest', 'enderio:xp_vacuum'])
     event.hide([/enderio.+condui.+/, /enderio.+filte.+/, /enderio:extraction_speed_upgrade.+/])
 
@@ -94,10 +94,6 @@ JEIEvents.hideItems(event => {
 
     //Laserio
     event.hide('laserio:laser_connector_advanced')
-    
-    //Masterful Machinery
-    event.hide(/mm:.+energy_port_output/)
-    event.hide('mm:the_vat_tiny_item_port_output')
 
     //Mekanism
     event.hide(['mekanism:formulaic_assemblicator', 'mekanism:crafting_formula', /mekanism:(restrictive|diversion)_transporter/, /mekanism:(basic|advanced|elite|ultimate)_tier_installer/, /mekanism_extras:(absolute|supreme|cosmic|infinite)_tier_installer/, 'mekanism:upgrade_gas', /mekanism:dynamic_(tank|valve)/, 'mekanism:oredictionificator'])

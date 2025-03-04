@@ -16,11 +16,11 @@
 		minCost = 15
 
 	[enchantments.repellent]
-		maxLevel = 4
-		maxCostBase = 10
-		maxCostPerLevel = 10
-		minCostBase = 10
-		minCostPerLevel = 5
+		maxLevel = 0
+		maxCostBase = 0
+		maxCostPerLevel = 0
+		minCostBase = 0
+		minCostPerLevel = 0
 		chanceBase = 0.35
 		chancePerLevel = 0.1
 		rangeBase = 8.0

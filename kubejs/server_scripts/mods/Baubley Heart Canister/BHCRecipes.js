@@ -5,23 +5,11 @@ ServerEvents.recipes(event => {
     event.shapeless('bhc:canister', '9x thermal:iron_plate')
 
     //Heart Amulet
-    event.replaceInput(
-        { output: 'bhc:heart_amulet'},
-        '#c:glass_blocks',
-        'thermal:lumium_glass'
-      )
+    event.replaceInput({ output: 'bhc:heart_amulet'},'#c:glass_blocks','thermal:lumium_glass')
     
     //Relic Apple
     event.remove({id:'bhc:relic_apple'})
-    event.shaped('bhc:relic_apple', [
-        ' A ',
-        'BCB',
-        ' A '
-        ], {
-        A:'enderio:pulsating_crystal',
-        B:'enderio:vibrant_crystal',
-        C:'minecraft:apple'
-    })
+    event.shaped('bhc:relic_apple', [' A ','BCB',' A '], {A:'enderio:pulsating_crystal',B:'enderio:vibrant_crystal',C:'minecraft:apple'})
 
 
     //Red Heart Canister

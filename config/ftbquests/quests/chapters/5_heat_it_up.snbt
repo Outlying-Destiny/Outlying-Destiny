@@ -1560,7 +1560,11 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["17FB887A20B0F3F3"]
+			dependencies: [
+				"17FB887A20B0F3F3"
+				"7E2D6E8C57E87A77"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"Find an AE2 Meteor! They can be found in The Aether."
 				""
@@ -2463,139 +2467,6 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["090D14082AE0CCD0"]
-			description: [
-				"You can now upgrade your basic factories into elite factories!"
-				""
-				"Elite Factories can process 5 recipes at once."
-			]
-			icon: "mekanism:advanced_smelting_factory"
-			id: "6D3DF45A28E33B78"
-			min_width: 325
-			rewards: [{
-				count: 4
-				id: "502D225F8EC79244"
-				item: "thermal:lumium_ingot"
-				type: "item"
-			}]
-			tasks: [{
-				id: "0A7F4B4B194F46E8"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "mekanism:advanced_smelting_factory"
-								tag: {
-									mekData: {
-										EnergyContainers: [{
-											Container: 0b
-											stored: "12500"
-										}]
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "mekanism:advanced_enriching_factory"
-								tag: {
-									mekData: {
-										EnergyContainers: [{
-											Container: 0b
-											stored: "10000"
-										}]
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "mekanism:advanced_crushing_factory"
-								tag: {
-									mekData: {
-										EnergyContainers: [{
-											Container: 0b
-											stored: "9250"
-										}]
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "mekanism:advanced_compressing_factory"
-								tag: {
-									mekData: {
-										EnergyContainers: [{
-											Container: 0b
-											stored: "33000"
-										}]
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "mekanism:advanced_combining_factory"
-								tag: {
-									mekData: {
-										EnergyContainers: [{
-											Container: 0b
-											stored: "13000"
-										}]
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "mekanism:advanced_purifying_factory"
-								tag: {
-									mekData: {
-										EnergyContainers: [{
-											Container: 0b
-											stored: "22000"
-										}]
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "mekanism:advanced_injecting_factory"
-								tag: {
-									mekData: {
-										EnergyContainers: [{
-											Container: 0b
-											stored: "38000"
-										}]
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "mekanism:advanced_infusing_factory"
-								tag: {
-									mekData: {
-										EnergyContainers: [{
-											Container: 0b
-											stored: "5250"
-										}]
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "mekanism:advanced_sawing_factory"
-							}
-						]
-					}
-				}
-				title: "Any Elite Factory"
-				type: "item"
-			}]
-			title: "Overclocked Factory"
-			x: 4.25d
-			y: 3.0d
-		}
-		{
 			dependencies: ["415C7601E035DBDB"]
 			description: [
 				"The Redprint can easily copy-paste Thermal Series machine's settings for you!"
@@ -2618,8 +2489,8 @@
 				type: "item"
 			}]
 			title: "Copypasta"
-			x: 3.625d
-			y: 2.0d
+			x: 4.25d
+			y: 3.0d
 		}
 		{
 			dependencies: ["66D705EFB050318F"]
@@ -2732,7 +2603,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["415C7601E035DBDB"]
+			dependencies: ["1A965CD16F4D3FE3"]
 			description: [
 				"Craft a Leadstone Jetpack! At the cost of energy this jetpack let's you fly!"
 				""
@@ -2845,6 +2716,34 @@
 			title: "Craft, craft more!"
 			x: 0.25d
 			y: -2.5d
+		}
+		{
+			dependencies: ["40889CF006E38EB0"]
+			description: [
+				"Speed Upgrades can be used on Mekanism machinery to increase their processing speed at the cost of energy efficiency!"
+				""
+				"Like their energy equivalent, each upgrade gives a x1.33 multiplier boost up to 8 upgrades for a x10 boost."
+				""
+				"Beware as maxing your machinery speed will increase their energy requirement by x100 as their speed boost is also equal to their energy efficiency debuff."
+				""
+				"That means you probably want to use energy upgrades to counter that effect and think wisely before maximizing the speed of machines that might not immediately need it."
+			]
+			id: "5879B064D9AB9140"
+			min_width: 300
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "195EE2734C5D289F"
+				table_id: 7071292920799606641L
+				type: "choice"
+			}]
+			tasks: [{
+				count: 8L
+				id: "09F7103D5069294B"
+				item: "mekanism:upgrade_speed"
+				type: "item"
+			}]
+			x: 3.625d
+			y: 2.0d
 		}
 	]
 	title: "5. Heat it up!"

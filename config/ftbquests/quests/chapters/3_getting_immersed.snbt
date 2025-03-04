@@ -379,7 +379,7 @@
 				""
 				"Once powered, equip it with a mold of your choice and drop your items on the conveyor belt! You can use a dropper on the entry conveyor belt to insert items and a chest on the exit to automatically collect the outputs."
 				""
-				"&eThis quest requires 3 out of 4 dependencies to be completed."
+				"&6This quest requires 3 out of 4 dependencies to be completed."
 			]
 			icon: "immersiveengineering:metal_press"
 			id: "0AA6184C7940DD0E"
@@ -543,7 +543,7 @@
 				""
 				"While the KD is pretty cheap it is really space inefficient, if you don't like setting up huge things you should check the Thermoelectric Generator quest."
 				""
-				"&eThis quest requires 1 out of 2 dependencies to be completed."
+				"&6This quest requires 1 out of 2 dependencies to be completed."
 			]
 			id: "20D2FE0159ADB69C"
 			min_width: 300
@@ -652,7 +652,7 @@
 				""
 				"While the KD is pretty cheap it is really space inefficient, if you don't like setting up huge things you should check the Thermoelectric Generator quest."
 				""
-				"&eThis quest requires 1 out of 2 dependencies to be completed."
+				"&6This quest requires 1 out of 2 dependencies to be completed."
 			]
 			disable_toast: true
 			hide_dependent_lines: true
@@ -958,7 +958,7 @@
 			rewards: [{
 				count: 2
 				id: "5276A205266D6AFF"
-				item: "projectred_core:red_ingot"
+				item: "kubejs:red_alloy_ingot"
 				type: "item"
 			}]
 			tasks: [{
@@ -1569,18 +1569,20 @@
 				""
 				"4. You can use your Survey Tools on natural blocks (dirt, stone, etc...) to identify veins and their locations. Each sample taken of a same vein will be more accurate than the last."
 				""
-				"5. You can use your Core Sample Drill to get more precise informations on veins present at that location, such as the excepted yield. It costs energy so think of carrying a battery. (Needs a block below it to work)"
+				"5. You can use your Core Sample Drill to get more precise informations on veins present at that location, such as the excepted yield or the vein's saturation. It costs energy so think of carrying a battery. (Needs a block below it to work)"
 				""
-				"6. Once you find out where you want to start mining, it will be time to place an Excavator, more info on that in the next quest."
+				"6. The vein's saturation is based on how far you are from the vein's center, the lower the saturation the higher the chance to get no ore in a cycle is, the higher the saturation the better!"
+				""
+				"7. Once you find out where you want to start mining, it will be time to place an Excavator, more info on that in the next quest."
 				""
 				""
 				"Notes:"
 				"The vein's locations are no longer chunk based. "
-				"The Saturation and spoil system has been removed."
+				"The Spoil system has been removed."
 			]
 			icon: "immersiveengineering:sample_drill"
 			id: "50F6EA9CC23FF68D"
-			min_width: 300
+			min_width: 330
 			rewards: [{
 				count: 6
 				id: "22A80A6399F39668"
@@ -1957,6 +1959,7 @@
 							]
 						}
 					}
+					title: "Energizing Rod"
 					type: "item"
 				}
 			]

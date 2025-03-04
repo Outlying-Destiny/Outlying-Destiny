@@ -15,7 +15,7 @@
     "usage": 40,
     "speedVertical": 0.22,
     "accelVertical": 0.1,
-    "speedSideways": 0.01,
+    "speedSideways": 0.2,
     "speedHoverAscend": 0.18,
     "speedHoverDescend": 0.18,
     "speedHover": 0.0,

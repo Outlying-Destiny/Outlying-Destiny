@@ -10,6 +10,8 @@ ServerEvents.recipes(event => {
     event.remove({output:'thermal:device_'+output})
     event.shaped('thermal:device_'+output, ['ABA','CDC','AEA'], {A: input1,B: input2,C: input3,D: 'thermal:machine_frame',E: 'thermal:redstone_servo'})
   }
+  function augment(output, input1, input2, input3){event.shaped('thermal:'+output+'_augment', [' A ','BCB',' A '], {A:input1, B:input2, C:input3})
+}
 
   //Explosives
   const explosives = [{input: 'minecraft:redstone', tnt: 'minecraft:tnt', grenade: 'thermal:explosive_grenade'},{input: 'minecraft:glowstone_dust', tnt: 'thermal:glowstone_tnt', grenade: 'thermal:glowstone_grenade'},{input: 'minecraft:ender_pearl', tnt: 'thermal:ender_tnt', grenade: 'thermal:ender_grenade'},{input: 'minecraft:redstone_block', tnt: 'thermal:redstone_tnt', grenade: 'thermal:redstone_grenade'},{input: '#forge:slimeballs', tnt: 'thermal:slime_tnt', grenade: 'thermal:slime_grenade'},{input: 'minecraft:blaze_powder', tnt: 'thermal:fire_tnt', grenade: 'thermal:fire_grenade'},{input: 'thermal:blizz_powder', tnt: 'thermal:ice_tnt', grenade: 'thermal:ice_grenade'},{input: 'thermal:blitz_powder', tnt: 'thermal:lightning_tnt', grenade: 'thermal:lightning_grenade'},{input: 'thermal:basalz_powder', tnt: 'thermal:earth_tnt', grenade: 'thermal:earth_grenade'},{input: 'thermal:phytogro', tnt: 'thermal:phyto_tnt', grenade: 'thermal:phyto_grenade'}]
@@ -82,15 +84,16 @@ ServerEvents.recipes(event => {
   box('thermal:upgrade_augment_3', 'thermal_extra:dragonsteel_plate', 'thermal_extra:shellite_glass', 'thermal_extra:soul_infused_gear', 'thermal:upgrade_augment_2') 
 
   //Augments
-  event.remove({id:'thermal:augments/machine_speed_augment'})
-  event.shaped('thermal:machine_speed_augment', [' A ','BCB',' A '], {A:'thermal:electrum_gear',B:'thermal:signalum_plate',C:'thermal:rf_coil'})
-  event.shaped('thermal:potion_amplifier_augment', [' A ','BCB',' A '], {A:'thermal:lumium_gear',B:'thermal:constantan_plate',C:'#thermal:glass/hardened'})
-  event.shaped('thermal:potion_duration_augment', [' A ','BCB',' A '], {A:'thermal:bronze_gear',B:'thermal:constantan_plate',C:'#thermal:glass/hardened'})
+  event.remove({id:/thermal:augments\/machine_(speed|efficiency)_augment/})
+  augment('machine_speed', 'thermal:electrum_gear', 'thermal:signalum_plate', 'thermal:rf_coil')
+  augment('machine_efficiency', 'kubejs:energized_steel_gear', 'thermal:lumium_plate', 'thermal:rf_coil')
+  augment('potion_amplifier', 'thermal:lumium_gear', 'thermal:constantan_plate', '#thermal:glass/hardened')
+  augment('potion_duration', 'thermal:bronze_gear', 'thermal:constantan_plate', '#thermal:glass/hardened')
 
   //Twinite Augments
-  const augment = [['fluid_tank'],['potion_duration'],['potion_amplifier'],['rf_coil'],['rf_coil_storage'],['rf_coil_xfer'],['machine_speed'],['machine_efficiency'],['machine_output'],['machine_catalyst'],['area_radius']]
+  const extraAugment = [['fluid_tank'],['potion_duration'],['potion_amplifier'],['rf_coil'],['rf_coil_storage'],['rf_coil_xfer'],['machine_speed'],['machine_efficiency'],['machine_output'],['machine_catalyst'],['area_radius']]
 
-  augment.forEach((augment) => {
+  extraAugment.forEach((augment) => {
     event.shaped('thermal_extra:twinite_'+augment+'_augment', [' A ','BCB',' A '], {A:'thermal:signalum_gear',B:'thermal_extra:twinite_plate',C:'thermal:'+augment+'_augment'})
   })
 

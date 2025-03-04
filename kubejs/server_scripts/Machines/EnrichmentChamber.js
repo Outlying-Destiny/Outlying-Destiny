@@ -19,6 +19,7 @@ ServerEvents.recipes(event => {
     event.remove({id:'ae2:transform/fluix_crystal'})
     enrichment('ae2:certus_quartz_crystal', 1, 'ae2:certus_quartz_dust', 1)
     enrichment('ae2:fluix_crystal', 1, 'ae2:fluix_dust', 1)
+    enrichment('evilcraft:dark_gem', 1, 'evilcraft:dark_gem_crushed', 1)
     enrichment('forbidden_arcanus:arcane_crystal', 1, 'forbidden_arcanus:arcane_crystal_dust', 1)
     const thertal = ['sulfur','niter','apatite','cinnabar']
     thertal.forEach((thertal) => {enrichment('thermal:'+thertal, 1, 'thermal:'+thertal+'_dust', 1)})
