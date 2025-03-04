@@ -91,15 +91,12 @@ ServerEvents.recipes(event => {
 
     //The Vat
     event.shaped('kubejs:the_vat', ['ABA','CDC','EFE'], {A: 'enderio:dark_steel_ingot',B: 'enderio:pressurized_fluid_tank',C: 'enderio:weather_crystal',D: 'enderio:void_chassis',E: 'enderio:dark_bimetal_gear',F: 'enderio:frank_n_zombie'})
-    //event.shaped('8x kubejs:void_frame', ['AAA','ABA','AAA'], {A: 'enderio:dark_steel_ingot',B: 'enderio:void_chassis'})
-    //const tvport = [{port:'tiny_item_port_input'},{port:'small_fluid_port_input'},{port:'small_fluid_port_output'},{port:'tiny_energy_port_input'}]
-    //tvport.forEach((port) => {event.shapeless("mm:the_vat_"+port.port,["mm:base_"+port.port, 'kubejs:void_frame'])})
 
     //Soul Catcher
     event.shaped('kubejs:soul_catcher', ['ABA','CDC','EFE'], {A: 'thermal_extra:soul_infused_ingot',B: 'enderio:empty_soul_vial',C: 'enderio:prescient_crystal',D: 'enderio:ensouled_chassis',E: 'thermal_extra:soul_infused_gear',F: 'enderio:frank_n_zombie'})
-    //event.shaped('8x kubejs:ensouled_frame', ['AAA','ABA','AAA'], {A: 'thermal_extra:soul_infused_ingot',B: 'enderio:ensouled_chassis'})
-    //const scport = [{port:'tiny_item_port_input'},{port:'tiny_item_port_output'},{port:'small_energy_port_input'}]
-    //scport.forEach((port) => {event.shapeless("mm:soul_catcher_"+port.port,["mm:base_"+port.port, 'kubejs:ensouled_frame'])})
 
+    //Frames
+    //event.shaped('8x kubejs:void_frame', ['AAA','ABA','AAA'], {A: 'enderio:dark_steel_ingot',B: 'enderio:void_chassis'})
+    //event.shaped('8x kubejs:ensouled_frame', ['AAA','ABA','AAA'], {A: 'thermal_extra:soul_infused_ingot',B: 'enderio:ensouled_chassis'})
     
 })
