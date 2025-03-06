@@ -1,0 +1,92 @@
+{
+    "filters": [
+        {
+            "category": "mekanism:energized_smelter"
+        },
+        {
+            "category": "industrialforegoing:fermenter"
+        },
+        {
+            "category": "industrialforegoing:ore_sieve"
+        },
+        {
+            "category": "industrialforegoing:ore_washer"
+        },
+        {
+            "category": "farmingforblockheads:market"
+        },
+        {
+            "category": "thermal:furnace"
+        },
+        {
+            "category": "enderio:primitive_alloy_smelting"
+        },
+        {
+            "category": "enderio:alloy_smelting"
+        },
+        {
+            "category": "mysticalagriculture:enchanter"
+        },
+        {
+            "category": "mysticalagriculture:reprocessor"
+        },
+        {
+            "category": "mysticalagriculture:soul_extractor"
+        },
+        {
+            "category": "thermal:disenchantment_fuel"
+        },
+        {
+            "category": "thermal:gourmand_fuel"
+        },
+        {
+            "category": "thermal:stirling_fuel"
+        },
+        {
+            "category": "enderio:soul_engine"
+        },
+        {
+            "category": "elementalcraft:purification"
+        },
+        {
+            "category": "pneumaticcraft:spawner_extraction"
+        },
+        {
+            "category": "bloodmagic:arcfurnace"
+        },
+        {
+            "category": "powah:magmatic"
+        },
+        {
+            "category": "powah:coolants"
+        },
+        {
+            "category": "powah:solid_coolants"
+        },
+        {
+            "category": "powah:heat_sources"
+        },
+        {
+            "category": "/industrialforegoing:mycelial/"
+        },
+        {
+            "category": "emi:grinding"
+        },
+        {
+            "id": "/repairing/",
+            "category": "emi:anvil_repairing"
+        },
+        {
+            "id": "/repairing/",
+            "category": "emi:crafting"
+        },
+        {
+            "id": "/bucket_filling/",
+            "category": "emi:world_interaction"
+        },
+        {
+            "id": "/cauldron_washing/",
+            "category": "emi:world_interaction"
+        }
+    ]
+}

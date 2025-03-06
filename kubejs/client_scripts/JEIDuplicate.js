@@ -3,7 +3,6 @@ JEIEvents.removeCategories(event => {
     //Categories
     console.log(event.categoryIds) //log a list of all category ids to logs/kubejs/client.txt
     event.remove(
-        'jeresources:villager',
         'mekanism:energized_smelter',
         'industrialforegoing:fermenter',
         'industrialforegoing:ore_sieve',
@@ -44,6 +43,17 @@ JEIEvents.hideItems(event => {
     event.hide('sophisticatedstorage:shulker_box')
     event.hide(/^sophisticatedstorage:limited.+barrel.+/)
     event.hide('sophisticatedbackpacks:backpack')
+
+    //EMI Compatibility (EMI really likes those items ig (doesn't work))
+    //event.hide([
+    //    /quark:seed_pouch/,
+    //    /evilcraft:biome_extract/,
+    //    /bloodmagic:upgradetome/,
+    //    /enderio:painted_/,
+    //    'moonlight:placeable_item
+    //])
+    //Also refuses to hide AE2 Facades and Structure Gel Stuffs
+
 })
 
 JEIEvents.addItems(event => {
@@ -63,4 +73,11 @@ JEIEvents.addItems(event => {
     event.add([Item.of('sophisticatedstorage:copper_chest', '{woodType:"oak"}'), Item.of('sophisticatedstorage:iron_chest', '{woodType:"oak"}'), Item.of('sophisticatedstorage:gold_chest', '{woodType:"oak"}'), Item.of('sophisticatedstorage:diamond_chest', '{woodType:"oak"}'), Item.of('sophisticatedstorage:netherite_chest', '{woodType:"oak"}')])
     event.add(['sophisticatedstorage:copper_shulker_box', 'sophisticatedstorage:iron_shulker_box', 'sophisticatedstorage:gold_shulker_box', 'sophisticatedstorage:diamond_shulker_box', 'sophisticatedstorage:netherite_shulker_box'])
     event.add('sophisticatedbackpacks:backpack')
+
+    //EMI Compatibility (doesn't work)
+    //event.add([
+    //    'quark:seed_pouch',
+    //    'evilcraft:biome_extract',
+    //    'bloodmagic:upgradetome'
+    //])
 })

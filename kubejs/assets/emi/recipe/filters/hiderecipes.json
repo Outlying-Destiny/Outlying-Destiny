@@ -1,0 +1,13 @@
+{
+    "filters": [
+        {
+            "id": "/emi:/crafting/repairing/.*/"
+        },
+        {
+            "id": "/mysticalagriculture:essence/common/(rubber|brass_ingot|mithril_ingot|chrome_ingot)/"
+        },
+        {
+            "id": "mysticalagriculture:essence/gems/peridot"
+        }
+    ]
+}
