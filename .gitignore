@@ -29,18 +29,14 @@
 /servers.dat_old
 cherishedworlds-favorites.dat
 knownkeys.txt
+user-prefs.json
 
 # Config
-/config/mm/pack/.cache
-config/jei/ingredient-list-mod-sort-order.ini
-config/jei/recipe-category-sort-order.ini
 config/oculus.properties
-config/jei/world/local/New_World
-/config/quark-common.toml
-/config/mm/pack/.cache
-/config/oculus.properties
-/config/jade/plugins.json
-/config/jei/world
+config/quark-common.toml
+config/oculus.properties
+config/jade/plugins.json
+config/fml.toml
 
 
 # VSCode
@@ -50,5 +46,7 @@ config/jei/world/local/New_World
 
 # JEI
 config/jei/ingredient-list-mod-sort-order.ini
-config/jei/ingredient-list-mod-sort-order.ini
-config/jei/world/local
+config/jei/ingredient-list-type-sort-order.ini
+config/jei/recipe-category-sort-order.ini
+config/jei/world
+emi.json
