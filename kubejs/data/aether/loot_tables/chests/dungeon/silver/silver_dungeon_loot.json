@@ -392,7 +392,7 @@
             "rolls": {
                 "type": "minecraft:uniform",
                 "max": 3.0,
-                "min": 1.0
+                "min": 2.0
             }
         }
     ],

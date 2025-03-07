@@ -96,4 +96,7 @@ ServerEvents.recipes(event => {
 
     //Drill Head
     event.remove({id:'thermal:drill_head'})
+
+    //Rod Cast
+    event.remove({id:'thermal:chiller_rod_cast'})
 })

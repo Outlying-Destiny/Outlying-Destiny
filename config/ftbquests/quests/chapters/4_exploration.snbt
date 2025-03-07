@@ -280,6 +280,10 @@
 				""
 				"You can loot them in Phantom Stronholds by looting chests or killing mobs."
 				""
+				"You can open a Phantom Stronghold by placing a trophy on a Trophy Pedestal:"
+				""
+				"{image:kubejs:textures/ftbquests/twilightforest/phantom_stronghold_entry.png width:160 height:120 align:center}"
+				""
 				"You can find Phantom Stronholds at this location on the map:"
 				"{image:kubejs:textures/ftbquests/twilightforest/phantomknight.png width:16 height:12 align:center}"
 			]
@@ -308,13 +312,14 @@
 		{
 			dependencies: ["3D422E8282D4F5A6"]
 			description: [
-				"Get a Naga Trophy!"
+				"Get any trophy by killing a boss!"
 				""
-				"You'll need it to open the Phantom Stronghold!"
+				"The easiest one to find being the Gaia which you can found at the below location on the map:"
 				""
-				"To do so, simply kill a Naga found at this location on the map:"
+				"You'll need one to open the Phantom Stronghold!"
 				"{image:kubejs:textures/ftbquests/twilightforest/naga.png width:12 height:12 align:center}"
 			]
+			icon: "twilightforest:naga_trophy"
 			id: "1F9021F87B5C3FF0"
 			min_width: 315
 			rewards: [{
@@ -324,8 +329,51 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "4CF56032F6062113"
-				item: "twilightforest:naga_trophy"
+				id: "1584119929B270CF"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "twilightforest:naga_trophy"
+							}
+							{
+								Count: 1b
+								id: "twilightforest:lich_trophy"
+							}
+							{
+								Count: 1b
+								id: "twilightforest:minoshroom_trophy"
+							}
+							{
+								Count: 1b
+								id: "twilightforest:hydra_trophy"
+							}
+							{
+								Count: 1b
+								id: "twilightforest:knight_phantom_trophy"
+							}
+							{
+								Count: 1b
+								id: "twilightforest:ur_ghast_trophy"
+							}
+							{
+								Count: 1b
+								id: "twilightforest:alpha_yeti_trophy"
+							}
+							{
+								Count: 1b
+								id: "twilightforest:snow_queen_trophy"
+							}
+							{
+								Count: 1b
+								id: "twilightforest:quest_ram_trophy"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
 			title: "Nagative damage"

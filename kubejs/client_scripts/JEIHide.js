@@ -50,7 +50,7 @@ JEIEvents.hideItems(event => {
     event.hide(['elementalcraft:inert_crystal_ore', 'elementalcraft:deepslate_inert_crystal_ore'])
 
     //EvilCraft
-    event.hide([/evilcraft:exalted_crafte.+/, 'evilcraft:entangled_chalice', /evilcraft:dark_tank/])
+    event.hide([/evilcraft:exalted_crafte.+/, 'evilcraft:entangled_chalice', /evilcraft:dark_tank/, /evilcraft:(poisonous_libelle|werewolf)_spawn_egg$/, 'evilcraft:poison_sac', 'evilcraft:flesh_werewolf', /evilcraft:werewolf_(fur|bone)$/, 'evilcraft:ender_tear', 'evilcraft:blood_stain', 'evilcraft:spirit_portal', /evilcraft:broom(_part)?$/])
     
     //Extended Crafting
     event.hide([/extendedcrafting:(enhanced_){0,1}redstone_(ingot|nugget|component|catalyst)/, /extendedcrafting:(auto_){0,1}flux_(alternator|crafter|star)/, 'packagedexcrafting:flux_crafter'])
@@ -141,11 +141,11 @@ JEIEvents.hideItems(event => {
 
     //Thermal Series
     event.hide([/thermal:dynamo_(numismatic|disenchantment)/, 'thermal_extra:dynamo_frost'])
-    event.hide([/thermal.+dynamo_.+_augmen.+/, /thermal_extra:(soul_infused|shellite|dragonsteel|abyssal)_.+_augment/, 'thermal_extra:av_item_filter_augment', 'thermal_extra:augment_smithing_upgrade'])
+    event.hide([/thermal.+dynamo_.+_augmen.+/, /thermal_extra:.+_augment/, 'thermal_extra:av_item_filter_augment', 'thermal_extra:augment_smithing_upgrade'])
     event.hide(['thermal_extra:upgrade_augment', 'thermal_extra:abyssal_upgrade_augment'])
     event.hide(['thermal_extra:nitratic_igniter', /thermal_extra:.+_ore_chunk/])
     event.hide([/thermal:.+mushroom_spores/, 'thermal_extra:ancient_dust', 'thermal_extra:sticky_ball', 'thermal:drill_head'])
-    event.hide(['thermal:satchel', 'thermal_extra:device_lava_gen', 'thermal:device_water_gen', 'thermal:phytosoil', 'thermal:phytosoil_tiled', 'thermal:device_soil_infuser', 'thermal:xp_crystal', 'thermal:device_xp_condenser', 'thermal:xp_storage_augment', /thermal:press_(packing_2x2|packing_3x3|unpacking|coin)_die/, 'thermal_extra:device_harvester', 'thermal:device_nullifier', 'thermal:charge_bench'])
+    event.hide(['thermal:satchel', 'thermal_extra:device_lava_gen', 'thermal:device_water_gen', 'thermal:phytosoil', 'thermal:phytosoil_tiled', 'thermal:device_soil_infuser', 'thermal:xp_crystal', 'thermal:device_xp_condenser', 'thermal:xp_storage_augment', /thermal:press_(packing_2x2|packing_3x3|unpacking|coin)_die/, 'thermal_extra:device_harvester', 'thermal:device_nullifier', 'thermal:charge_bench', 'thermal:chiller_rod_cast'])
     event.hide(['thermal:ruby_ore', 'thermal:deepslate_ruby_ore', 'thermal:sapphire_ore', 'thermal:deepslate_sapphire_ore'])
     event.hide([/thermal:(ruby|sapphire)_gear/])
     event.hide(/thermal_extra:.+_(helmet|chestplate|leggings|boots|sword|axe|pickaxe|shovel|hoe|excavator|hammer|knife|sickle)/)

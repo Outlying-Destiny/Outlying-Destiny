@@ -482,11 +482,11 @@
 				""
 				"It is used to make a large part of your future alloys up to 3 inputs."
 				""
-				"It can also be used to process ores and raw materials to get more ingots and byproducts as an output."
+				"It can also be used to &6process ores&r and raw materials to get more ingots and byproducts as an output."
 				""
-				"You can further boost the output ratio from ore processing with the usage of catalysts like cinnabar or cinnabar dust as long as JEI shows the output item as &6boostable&r."
+				"You can further &6boost the output ratio from ore processing with the usage of catalysts&r like cinnabar or cinnabar dust as long as JEI shows the output item as &6boostable&r."
 				""
-				"Non-upgraded the machine is pretty slow, check the Augments quest just below to get more infos on how to upgrade Thermal's machinery."
+				"Non-upgraded the machine is pretty slow, &6check the Augments quest&r just below to get more infos on how to upgrade Thermal's machinery."
 			]
 			id: "1A965CD16F4D3FE3"
 			min_width: 300

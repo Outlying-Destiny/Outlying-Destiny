@@ -321,7 +321,7 @@
 
 	[mob.werewolf]
 		#If villagers struck by lightning should have a 50% chance of becoming a werewolf villager
-		convertOnLightning = true
+		convertOnLightning = false
 
 [entity]
 

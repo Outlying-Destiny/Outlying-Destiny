@@ -16,7 +16,7 @@
       "result": "deny"
     },
     {
-      "mob":["quark:forgotten", "minecraft:wandering_trader"],
+      "mob":["quark:forgotten", "evilcraft:poisonous_libelle"],
       "when": "onjoin",
       "result": "deny"
     }

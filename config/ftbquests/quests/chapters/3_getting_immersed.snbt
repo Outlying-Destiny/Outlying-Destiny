@@ -61,7 +61,7 @@
 				""
 				"The Coke Oven will be used for the production of Coke and Creosote Oil."
 				""
-				"However, you'll notice it's pretty slow. 90 seconds per coke to be exact. You may want to make multiple of those as future coke demand will be expansive."
+				"However, you'll notice it's pretty slow. Don't be afraid of making multiple of those, they will come in use."
 				""
 				"Thanksfully, you can input and output from it from any of its block or side making it automatable."
 			]
@@ -1480,7 +1480,7 @@
 			description: [
 				"The Diesel Generator will be your main source of energy for a loooong time."
 				""
-				"It produces 4096FE/t at the cost of 1000mb of Biodiesel every 250 ticks (There are 20 ticks per second so 12.5 seconds)."
+				"It produces 4096FE/t at the cost of 1000mb of Biodiesel every 250 ticks (20 ticks occurs per second so 12.5 seconds)."
 				""
 				"If you're tired of running into energy issues or want to run big machineries like the Ore Excavator, that's your way to go."
 				""

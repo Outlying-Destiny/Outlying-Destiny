@@ -738,22 +738,9 @@
 				"Ruined Portals, Village generation and villagers trades have been disabled in this pack."
 				""
 				"There will be other way to obtain the items they trade such as mending books."
-				""
-				"The given Charm can be activated to disable Wandering Trader Spawning around you. It is also equipable in your &2Curios Menu&r, to access it click on the button at the top left of the player visual in your inventory."
 			]
 			icon: "minecraft:emerald"
 			id: "6E857F803D3503A1"
-			rewards: [{
-				id: "6DFB31CC100A9E51"
-				item: {
-					Count: 1
-					id: "nomowanderer:no_mo_wanderer_totem"
-					tag: {
-						Enabled: 1b
-					}
-				}
-				type: "item"
-			}]
 			tasks: [{
 				id: "543516CE25E51AD0"
 				title: "&c&l Important: Villages and Villagers"
@@ -828,6 +815,7 @@
 				""
 				"The pack will take you through lots of mods while adding its own twists containing over &61500 new recipes, 100 custom items, custom machines&r and even more!"
 				""
+				"&6&l&nDisclaimer:&r &6Outlying Destiny is currently in Alpha&r, stuffs might be ungated as their point of development has not been reached! &6If something looks ungated and doesn't reside in the questbook, you're not supposed to have it!&r"
 				""
 				"Next page will present you a &6breakdown of the modpack progression&r (Beware of spoilers!):"
 				"{@pagebreak}"
