@@ -605,7 +605,7 @@
 		}
 		{
 			dependencies: ["323755DC97DFAE26"]
-			icon: "thermal_extra:twinite_machine_speed_augment"
+			icon: "thermal:twinite_machine_speed_augment"
 			id: "0FBA307E889389C5"
 			min_width: 300
 			rewards: [{
@@ -615,7 +615,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "46B899D8D74AAD2E"
+				id: "3C310316D162D60C"
 				item: {
 					Count: 1
 					id: "itemfilters:or"
@@ -623,47 +623,47 @@
 						items: [
 							{
 								Count: 1b
-								id: "thermal_extra:twinite_rf_coil_augment"
+								id: "thermal:twinite_rf_coil_augment"
 							}
 							{
 								Count: 1b
-								id: "thermal_extra:twinite_rf_coil_storage_augment"
+								id: "thermal:twinite_rf_coil_storage_augment"
 							}
 							{
 								Count: 1b
-								id: "thermal_extra:twinite_rf_coil_xfer_augment"
+								id: "thermal:twinite_rf_coil_xfer_augment"
 							}
 							{
 								Count: 1b
-								id: "thermal_extra:twinite_fluid_tank_augment"
+								id: "thermal:twinite_fluid_tank_augment"
 							}
 							{
 								Count: 1b
-								id: "thermal_extra:twinite_machine_speed_augment"
+								id: "thermal:twinite_machine_speed_augment"
 							}
 							{
 								Count: 1b
-								id: "thermal_extra:twinite_machine_efficiency_augment"
+								id: "thermal:twinite_machine_efficiency_augment"
 							}
 							{
 								Count: 1b
-								id: "thermal_extra:twinite_machine_output_augment"
+								id: "thermal:twinite_machine_catalyst_augment"
 							}
 							{
 								Count: 1b
-								id: "thermal_extra:twinite_machine_catalyst_augment"
+								id: "thermal:twinite_machine_output_augment"
 							}
 							{
 								Count: 1b
-								id: "thermal_extra:twinite_potion_amplifier_augment"
+								id: "thermal:twinite_potion_amplifier_augment"
 							}
 							{
 								Count: 1b
-								id: "thermal_extra:twinite_potion_duration_augment"
+								id: "thermal:twinite_potion_duration_augment"
 							}
 							{
 								Count: 1b
-								id: "thermal_extra:twinite_area_radius_augment"
+								id: "thermal:twinite_area_radius_augment"
 							}
 						]
 					}

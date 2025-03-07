@@ -94,7 +94,7 @@ ServerEvents.recipes(event => {
   const extraAugment = [['fluid_tank'],['potion_duration'],['potion_amplifier'],['rf_coil'],['rf_coil_storage'],['rf_coil_xfer'],['machine_speed'],['machine_efficiency'],['machine_output'],['machine_catalyst'],['area_radius']]
 
   extraAugment.forEach((augment) => {
-    event.shaped('thermal_extra:twinite_'+augment+'_augment', [' A ','BCB',' A '], {A:'thermal:signalum_gear',B:'thermal_extra:twinite_plate',C:'thermal:'+augment+'_augment'})
+    event.shaped('thermal:twinite_'+augment+'_augment', [' A ','BCB',' A '], {A:'thermal:signalum_gear',B:'thermal_extra:twinite_plate',C:'thermal:'+augment+'_augment'})
   })
 
   //Devices
