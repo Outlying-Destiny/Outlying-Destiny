@@ -1,0 +1,6 @@
+{
+    "type": "forge:add_features",
+    "biomes": "#minecraft:is_nether",
+    "features": "kubejs:ancient_debris",
+    "step": "underground_ores"
+}

@@ -2,12 +2,12 @@
   "type": "minecraft:ore",
   "config": {
     "size": 2,
-    "discard_chance_on_air_exposure": 0,
+    "discard_chance_on_air_exposure": 1,
     "targets": [
       {
         "target": {
           "predicate_type": "minecraft:tag_match",
-          "tag": "minecraft:nether_ore_replaceables"
+          "tag": "minecraft:nether_carver_replaceables"
         },
         "state": {
           "Name": "minecraft:ancient_debris"
