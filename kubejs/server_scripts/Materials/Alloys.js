@@ -75,6 +75,7 @@ ServerEvents.recipes(event => {
 
     //Glasses
     //alloy1('enderio:fused_quartz', 1, 'minecraft:quartz', 4, 4000) Removed because quartz is already used in hardened glass recipe
+    alloy2tag1('immersiveengineering:insulating_glass', 2, 'forge:glass', 2, 'thermal:iron_dust', 1, 6000)
     alloy1('enderio:fused_quartz', 1, 'minecraft:quartz_block', 1, 4000)
     alloy1('enderio:clear_glass', 1, 'minecraft:glass', 1, 4000)
     const glass = [{material:'soul_infused'},{material:'shellite'},{material:'twinite'},{material:'dragonsteel'},{material:'abyssal'}]

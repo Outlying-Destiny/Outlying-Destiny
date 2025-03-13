@@ -18,5 +18,5 @@ ItemEvents.tooltip(event => {
     event.add('kubejs:fortune_quantum_modifier', ['How lucky can it get? It isn\'t, it\'s just better at its task', 'Mimics the effect of Fortune III, increases energy input by x2'])
     
     //WIP Stuff
-    event.add([/botania:/, /bloodmagic:/, /elementalcraft:/, /evilcraft:/, /alchemistry:/, /bigreactors:/, /thermalendergy:/, /mysticalagr/, /forbidden_arcanus:/, /hostilenetworks:/, /ad_astra:/], ['Work In Progress. No touchy!', "Generally if an item isn't mentionned in", "the QB and looks unmodified, it's WIP"])
+    event.add([/botania:/, /bloodmagic:/, /elementalcraft:/, /evilcraft:/, /alchemistry:/, /bigreactors:/, /thermalendergy:/, /mysticalagr/, /forbidden_arcanus:/, /ad_astra:/], ['Work In Progress. No touchy!', "Generally if an item isn't mentionned in", "the QB and looks unmodified, it's WIP"])
 })

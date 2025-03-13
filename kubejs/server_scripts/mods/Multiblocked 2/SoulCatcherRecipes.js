@@ -28,17 +28,8 @@ MBDMachineEvents.onBeforeRecipeModify('kubejs:soul_catcher', (event) => {
     const mbdEvent = event.getEvent();
     const { machine, recipe } = mbdEvent;
 
-    let cap = machine.getCapability($ForgeCapabilities.ITEM_HANDLER).orElse(null);
-    let capacitorId = cap.getStackInSlot(2).id;
-    
-    let divisor = ({
-        'enderio:basic_capacitor': 1,
-        'enderio:double_layer_capacitor': 2,
-        'enderio:octadic_capacitor': 3
-    })[capacitorId] || 1;
-
     let recipeCopy = recipe.copy();
-    recipeCopy.duration = Math.ceil(recipeCopy.duration / divisor);
+    recipeCopy.duration = newDuration(machine, recipeCopy.duration);
 
     mbdEvent.setRecipe(recipeCopy);
 });

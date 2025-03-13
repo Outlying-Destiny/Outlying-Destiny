@@ -28,8 +28,9 @@ ServerEvents.recipes(event => {
     event.shaped('8x minecraft:iron_bars', ['AAA','AAA','   '], {A: 'immersiveengineering:stick_iron'})
 
     //Piston
-    event.remove({id:'minecraft:piston'})
-    event.remove({id:'aether:skyroot_piston'})
+    event.remove({id:/minecraft:(sticky_)?piston/})
+    event.remove({id:/aether:(skyroot|swet_sticky)_piston/})
+    event.remove({id:'undergarden:sticky_piston_from_goo_ball'})
     
     //Cauldron
     event.remove({id:'minecraft:cauldron'})

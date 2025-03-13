@@ -198,6 +198,7 @@
 							]
 						}
 					}
+					optional_task: true
 					title: "Any Shape Card"
 					type: "item"
 				}

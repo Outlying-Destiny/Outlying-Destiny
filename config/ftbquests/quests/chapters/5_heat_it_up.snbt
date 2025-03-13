@@ -1215,21 +1215,7 @@
 		}
 		{
 			dependencies: ["1A75140087EB1B37"]
-			description: [
-				"You can create spawn eggs with the use of GM Chicken Feed"
-				""
-				""
-				""
-				"The Nutritious Chicken Feed and GM Chicken Feed Cursed are the base of any mob farm."
-				""
-				"When fed to a chicken, the Nutritious Chicken Feed will drop a Golden Egg which, when used on a patch of grass, will create a 5x5 square of delightful dirt where passive mob spawning is highly increased."
-				""
-				"Oppositively the GM Chicken Feed Cursed will drop a rotten Egg which will result in a square of Dreadful dirt, summoning hostile mobs at a high rate."
-				""
-				"They do not ignore spawning conditions, meaning you'll need light for your passive mobs and darkness for your hostile mobs to spawn."
-				""
-				"You need Silk Touch to recolt those so make sure to place them right."
-			]
+			description: [""]
 			id: "307492750314D80F"
 			min_width: 300
 			rewards: [{
@@ -1499,7 +1485,7 @@
 				"36DA75C9F276770F"
 				"0D79613C2A510AAB"
 			]
-			description: ["Consumes less energy (gaslight)"]
+			description: [""]
 			icon: "ae2:controller"
 			id: "4A6467F39566C34D"
 			min_width: 300
@@ -1579,6 +1565,7 @@
 			size: 1.25d
 			tasks: [
 				{
+					disable_toast: true
 					id: "27C6D307CDEE4464"
 					item: {
 						Count: 1
@@ -1608,6 +1595,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "6043F06AFD9A1759"
 					item: {
 						Count: 1

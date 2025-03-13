@@ -42,7 +42,7 @@ JEIEvents.hideItems(event => {
 
     //EnderIO
     event.hide(['enderio:silicon', 'enderio:flour', 'enderio:cake_base', 'enderio:clayed_glowstone', 'enderio:glider_wing', 'enderio:enticing_crystal', /enderio:(powered_){0,1}light.+/, Item.of('minecraft:enchanted_book').enchant('enderio:repellent', 0)])
-    event.hide(['enderio:drain', 'enderio:stirling_generator', 'enderio:crafter', 'enderio:soul_engine', 'enderio:primitive_alloy_smelter', 'enderio:alloy_smelter', 'enderio:vacuum_chest', 'enderio:xp_vacuum'])
+    event.hide(['enderio:drain', 'enderio:stirling_generator', 'enderio:crafter', 'enderio:soul_engine', 'enderio:primitive_alloy_smelter', 'enderio:alloy_smelter', 'enderio:vacuum_chest', 'enderio:xp_vacuum', 'enderio:painting_machine', 'enderio:wired_charger'])
     event.hide([/enderio.+condui.+/, /enderio.+filte.+/, /enderio:extraction_speed_upgrade.+/])
 
     //ElementalCraft
@@ -118,7 +118,7 @@ JEIEvents.hideItems(event => {
     event.hide(['powah:photoelectric_pane', /powah:(deepslate_){0,1}uraninite/, 'powah:dry_ice'])
     
     //Quark
-    event.hide(['quark:gunpowder_sack', 'quark:apple_crate'])
+    event.hide(['quark:gunpowder_sack', 'quark:apple_crate', 'quark:sugar_cane_block'])
     event.hide(['quark:forgotten_hat', 'quark:soul_bead'])
 
     //RFTools
@@ -153,7 +153,7 @@ JEIEvents.hideItems(event => {
     //Twilight Forest
     event.hide(/twilightforest:.+boss_spawner/)
     event.hide(['twilightforest:uncrafting_table', 'twilightforest:ore_magnet', 'twilightforest:glass_sword'])
-
+    event.hide(['twilightforest:twilight_portal_miniature_structure', 'twilightforest:naga_courtyard_miniature_structure', 'twilightforest:lich_tower_miniature_structure', 'twilightforest:auroralized_glass', 'twilightforest:cinder_furnace', 'twilightforest:cinder_log', 'twilightforest:cinder_wood', 'twilightforest:slider', 'twilightforest:ore_meter', 'twilightforest:magic_painting', 'twilightforest:candelabra', 'twilightforest:wrought_iron_fence', 'twilightforest:keepsake_casket', 'twilightforest:brittle_potion_flask', 'twilightforest:greater_potion_flask', 'twilightforest:cube_of_annihilation'])
     //Wither Skeleton Tweaks
     event.hide(/wstweaks:(lava|blaze)_blade/)
 

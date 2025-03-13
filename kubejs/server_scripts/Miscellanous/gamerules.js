@@ -1,10 +1,12 @@
 ServerEvents.loaded(event => {
 
-    if (!event.persistentData.getBoolean('first_launch')) {
-        event.gameRules.set('tfEnforcedProgression', 'false');
-        event.gameRules.set('doTraderSpawning', 'false');
-        event.gameRules.set('doWeatherCycle', 'false');
-        event.persistentData.putBoolean('first_launch', true);
+    const {server} = event;
+
+    if (!server.persistentData.getBoolean('first_launch')) {
+        server.gameRules.set('tfEnforcedProgression', 'false');
+        server.gameRules.set('doTraderSpawning', 'false');
+        server.gameRules.set('doWeatherCycle', 'false');
+        server.persistentData.putBoolean('first_launch', true);
     }
 
 })

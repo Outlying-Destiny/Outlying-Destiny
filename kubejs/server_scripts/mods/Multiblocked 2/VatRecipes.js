@@ -72,15 +72,15 @@ ServerEvents.recipes((event) => {
 
 })
 
-const $ForgeCapabilities = Java.loadClass("net.minecraftforge.common.capabilities.ForgeCapabilities")
+const $ForgeEnergyRecipeCapability = Java.loadClass("com.lowdragmc.mbd2.common.capability.recipe.ForgeEnergyRecipeCapability");
+const $Integer = Java.loadClass("java.lang.Integer");
 
-MBDMachineEvents.onBeforeRecipeModify('kubejs:the_vat', (event) => {
-    const mbdEvent = event.getEvent();
-    const { machine, recipe } = mbdEvent;
+function modifyRecipe(machine, recipe){
+    /**@type {Internal.ItemSlotCapabilityTrait} */
+    let upgradeTrait = machine.getTraitByName('Capacitor');
+    let storage = upgradeTrait.storage;
+    let capacitorId = storage.getStackInSlot(0).id;
 
-    let cap = machine.getCapability($ForgeCapabilities.ITEM_HANDLER).orElse(null);
-    let capacitorId = cap.getStackInSlot(2).id;
-    
     let divisor = ({
         'enderio:basic_capacitor': 1,
         'enderio:double_layer_capacitor': 2,
@@ -89,6 +89,30 @@ MBDMachineEvents.onBeforeRecipeModify('kubejs:the_vat', (event) => {
 
     let recipeCopy = recipe.copy();
     recipeCopy.duration = Math.ceil(recipeCopy.duration / divisor);
+
+    outerLoop:
+    for(let entry of recipeCopy.inputs.entrySet()){
+        if(entry.getKey() instanceof $ForgeEnergyRecipeCapability){
+            for(let content of entry.getValue()){
+                let energy = content.getContent();
+                if(energy instanceof $Integer){
+                    energy = energy * divisor + "";
+                    content.content = new $Integer(energy);
+                    
+                    break outerLoop;
+                }
+            }
+        }
+    }
+
+    return recipeCopy;
+}
+
+MBDMachineEvents.onBeforeRecipeModify('kubejs:the_vat', (event) => {
+    const mbdEvent = event.getEvent();
+    const { machine, recipe } = mbdEvent;
+
+    let recipeCopy = modifyRecipe(machine, recipe);
 
     mbdEvent.setRecipe(recipeCopy);
 });

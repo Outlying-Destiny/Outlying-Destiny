@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
 
   //Redstone Flux Coil
   event.remove({id:'thermal:rf_coil'})
-  event.shaped('thermal:rf_coil', ['  B',' A ','B  '], {A:'kubejs:red_gear',B:'thermal:gold_plate'})
+  event.shaped('thermal:rf_coil', ['  B',' A ','B  '], {A:'kubejs:red_alloy_gear',B:'thermal:gold_plate'})
 
   //Redstone Servro
   event.remove({id:'thermal:redstone_servo'})

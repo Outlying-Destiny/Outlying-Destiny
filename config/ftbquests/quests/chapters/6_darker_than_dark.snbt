@@ -2174,8 +2174,8 @@
 			min_width: 325
 			rewards: [{
 				count: 4
-				id: "1FFCEBE114CC8456"
-				item: "thermal:lumium_ingot"
+				id: "5F9BCE002897BE5A"
+				item: "extendedcrafting:luminessence"
 				type: "item"
 			}]
 			tasks: [{
