@@ -50,3 +50,4 @@ config/jei/ingredient-list-type-sort-order.ini
 config/jei/recipe-category-sort-order.ini
 config/jei/world
 emi.json
+fancymenu_data/last_world.fmdata

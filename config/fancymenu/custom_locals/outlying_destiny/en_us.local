@@ -1,2 +1,6 @@
 outlying.titlescreen.singleplayer.button = Singleplayer
 outlying.titlescreen.multiplayer.button = Multiplayer
+outlying.titlescreen.options.button = Options...
+outlying.titlescreen.mods.button = Mods
+outlying.titlescreen.discord.button = Discord
+outlying.titlescreen.quit.button = Quit Game
