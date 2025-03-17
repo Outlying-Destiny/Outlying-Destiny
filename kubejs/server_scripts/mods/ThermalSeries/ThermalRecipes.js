@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
 
   //Machine Frame
   event.remove({id:'thermal:machine_frame'})
-  box('thermal:machine_frame', 'pneumaticcraft:plastic', 'thermal:invar_gear', 'powah:steel_energized', 'mekanism:steel_casing')
+  box('thermal:machine_frame', 'thermal:invar_plate', 'pneumaticcraft:plastic', 'powah:steel_energized', 'mekanism:steel_casing')
   
   //Rubber
   event.remove({id:'thermal:rubber_from_vine'})

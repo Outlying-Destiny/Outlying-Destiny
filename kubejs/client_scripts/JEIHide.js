@@ -93,7 +93,7 @@ JEIEvents.hideItems(event => {
     event.hide(['ironjetpacks:cell', 'ironjetpacks:capacitor', /ironjetpacks:.+_coil/, Item.of('ironjetpacks:thruster', '{Id:"ironjetpacks:creative"}').strongNBT()])
 
     //Laserio
-    event.hide('laserio:laser_connector_advanced')
+    event.hide(['laserio:laser_connector_advanced', 'laserio:logic_chip_raw'])
 
     //Mekanism
     event.hide(['mekanism:formulaic_assemblicator', 'mekanism:crafting_formula', /mekanism:(restrictive|diversion)_transporter/, /mekanism:(basic|advanced|elite|ultimate)_tier_installer/, /mekanism_extras:(absolute|supreme|cosmic|infinite)_tier_installer/, 'mekanism:upgrade_gas', /mekanism:dynamic_(tank|valve)/, 'mekanism:oredictionificator'])

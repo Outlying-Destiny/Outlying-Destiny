@@ -50,7 +50,7 @@ ServerEvents.recipes(event => {
     alloy3('enderio:conductive_alloy_ingot', 3, 'minecraft:redstone', 2, 'enderio:copper_alloy_ingot', 2, 'thermal:invar_ingot', 1, 12000)
     alloy3('enderio:energetic_alloy_ingot', 1, 'powah:steel_energized', 1, 'minecraft:redstone', 1, 'minecraft:glowstone_dust', 1, 10000)
     alloy2('enderio:vibrant_alloy_ingot', 1, 'minecraft:ender_pearl', 1, 'enderio:energetic_alloy_ingot', 1, 12000)
-    alloy3('enderio:soularium_ingot', 1, 'thermal_extra:soul_sand_dust', 1, 'enderio:nethercotta', 1, 'minecraft:gold_ingot', 1, 10000)
+    alloy3('enderio:soularium_ingot', 1, 'thermal_extra:soul_sand_dust', 1, 'enderio:nethercotta', 1, 'minecraft:gold_ingot', 1, 9000)
     alloy3('enderio:dark_steel_ingot', 1, 'minecraft:obsidian', 1, 'thermal:steel_ingot', 1, 'thermal:enderium_dust', 1, 12000)
     alloy3('enderio:end_steel_ingot', 1, 'minecraft:end_stone', 1, 'enderio:dark_steel_ingot', 1, 'thermal:lumium_dust', 1, 14000)
     alloy3('extendedcrafting:black_iron_ingot', 4, 'thermal:tar', 6, 'enderio:dark_steel_ingot', 3, 'immersiveengineering:ingot_hop_graphite', 1, 48000)

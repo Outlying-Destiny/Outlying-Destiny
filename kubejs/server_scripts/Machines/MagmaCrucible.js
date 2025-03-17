@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
     //Making Destabilized Redstone amount constant with other molten materials
     event.remove({id:'thermal:machines/crucible/crucible_redstone_dust'})
     event.remove({id:'thermal:machines/crucible/crucible_redstone_block'})
-    molten('thermal:redstone', 'minecraft:redstone', 'minecraft:redstone_block', 8000)
+    molten('thermal:redstone', 'minecraft:redstone', 'minecraft:redstone_block', 6000)
 
     //Molten Materials
     molten('kubejs:molten_draconium', 'draconicevolution:draconium_ingot', 'draconicevolution:draconium_block', 32000)
@@ -40,4 +40,10 @@ ServerEvents.recipes(event => {
 
     //Solidified xp
     crucible('mob_grinding_utils:fluid_xp', 160, 'actuallyadditions:solidified_experience', 4000)
+
+    //Lava
+    event.remove({id:/thermal:machines\/crucible\/crucible_(cobblestone|netherrack|magma_block)_to_lava/})
+    crucible('minecraft:lava', 1000, 'minecraft:cobblestone', 80000)
+    crucible('minecraft:lava', 1000, 'minecraft:netherrack', 45000)
+    crucible('minecraft:lava', 1000, 'minecraft:magma_block', 30000)
   })

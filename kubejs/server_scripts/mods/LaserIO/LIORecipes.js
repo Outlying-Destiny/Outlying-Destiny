@@ -4,9 +4,10 @@ ServerEvents.recipes(event => {
     function box(output, input1, input2, input3, input4){event.shaped(output, ['ABA','CDC','ABA'], {A: input1,B: input2,C: input3,D: input4})}
     function card(card, input){event.shaped('laserio:card_'+card, ['BAB','CDC','EEE'], {A: input,B: 'minecraft:quartz',C: 'enderio:conductive_alloy_ingot',D: 'laserio:logic_chip',E: 'enderio:energetic_alloy_nugget'})}
     function overclocker(output, input){event.shaped('laserio:overclocker_'+output, [' A ','BCB','AAA'], {A: input,B: 'enderio:redstone_alloy_ingot',C: 'laserio:logic_chip'})}
-    //Raw Logic Chip
-    event.remove({id:'laserio:logic_chip_raw'})
-    box('8x laserio:logic_chip_raw', 'thermal:signalum_ingot', 'enderio:energetic_alloy_nugget', 'enderio:energetic_alloy_nugget', 'enderio:z_logic_controller')
+
+    //Logic Chip
+    event.remove({id:'laserio:logic_chip'})
+    box('8x laserio:logic_chip', 'thermal:signalum_ingot', 'enderio:energetic_alloy_nugget', 'enderio:energetic_alloy_nugget', 'enderio:z_logic_controller')
 
     //Laser Wrench
     event.remove({id:'laserio:laser_wrench'})

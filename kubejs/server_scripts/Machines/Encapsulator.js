@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
     encapsulator('botania:quartz_sunny', 'botania:quartz_mana', 'enderio:liquid_sunshine', 500, 10000)
 
     //Red Alloy Ingot
-    encapsulator('kubejs:red_alloy_ingot', 'minecraft:iron_ingot', 'thermal:redstone', 500, 8000)
+    encapsulator('kubejs:red_alloy_ingot', 'minecraft:iron_ingot', 'thermal:redstone', 500, 5000)
 
     //Florb Thermal Extra fix
     function florb(fluid, florbnbt) {event.custom({"type": "thermal:bottler","ingredients": [{"item": 'thermal:florb'},{"fluid": fluid,"amount": 1000}],"result": [{"type": "forge:nbt", "item": "thermal:florb", "nbt": florbnbt}],"energy": 400})}

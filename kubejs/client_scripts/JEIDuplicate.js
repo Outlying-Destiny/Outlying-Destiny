@@ -19,7 +19,8 @@ JEIEvents.removeCategories(event => {
         'enderio:soul_engine',
         'elementalcraft:purification',
         'pneumaticcraft:spawner_extraction',
-        'bloodmagic:arcfurnace'
+        'bloodmagic:arcfurnace',
+        'enderio:fire_crafting'
     )
 })
 
