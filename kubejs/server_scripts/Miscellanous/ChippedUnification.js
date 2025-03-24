@@ -32,6 +32,7 @@ const unifyChisel = (event) => {
     event.add('forge:cobblestone', [COBBLESTONE_TAG, MOSSY_COBBLESTONE_TAG])
     event.add('forge:cobblestone/normal', COBBLESTONE_TAG)
     event.add('forge:cobblestone/mossy', MOSSY_COBBLESTONE_TAG)
+    event.add('minecraft:stone_crafting_materials', COBBLESTONE_TAG)
     event.add('forge:sandstone', [SANDSTONE_TAG, RED_SANDSTONE_TAG])
     event.add('forge:sandstone/colorless', SANDSTONE_TAG)
     event.add('forge:sandstone/red', RED_SANDSTONE_TAG)

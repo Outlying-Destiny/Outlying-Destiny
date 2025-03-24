@@ -203,5 +203,9 @@ ServerEvents.recipes(event => {
     event.remove({id:/ae2wtlib:pattern_(encoding|access)/})
     event.remove({id:'expatternprovider:wireless_ex_pat'})
 
+    //Wireless Connector / Tool
+    event.remove({id:/expatternprovider:wireless_(connector|tool)/})
+    detailedbox('expatternprovider:wireless_connect', 'extendedcrafting:black_iron_ingot', 'ae2:wireless_receiver', '#ae2:smart_cable', 'thermal:machine_frame')
+    event.shaped('expatternprovider:wireless_tool', [' A ','BCB',' B '], {A: 'ae2:wireless_receiver',B: 'extendedcrafting:black_iron_ingot',C: 'kubejs:extradimensional_processor'})
 
 })

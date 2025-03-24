@@ -65,5 +65,8 @@ ServerEvents.recipes(event => {
     event.shapeless('9x minecraft:packed_ice', 'minecraft:blue_ice')
     event.shaped('12x minecraft:snow', ['   ','AAA','   '], {A: 'minecraft:snow_block'})
     event.shaped('3x minecraft:snow', ['   ','AAA','   '], {A: 'minecraft:snowball'})
+
+    //Dropper / Dispenser
+    event.remove({id:/minecraft:(dropper|dispenser)/})
     
 })

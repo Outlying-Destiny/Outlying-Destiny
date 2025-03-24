@@ -7,4 +7,12 @@ ServerEvents.tags('item', event => {
     //Uncrafting
     event.removeAll('twilightforest:uncrafting_ignores_cost')
 
+    //Logs
+    function logtagadd(log, oldtag){event.add('twilightforest:'+log+'_logs', '#twilightforest:'+oldtag+'_logs')}
+    
+    logtagadd('dark', 'darkwood')
+    logtagadd('time', 'timewood')
+    logtagadd('transformation', 'transwood')
+    logtagadd('sorting', 'sortwood')
+
 })

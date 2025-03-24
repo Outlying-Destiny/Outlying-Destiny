@@ -19,4 +19,7 @@ ServerEvents.recipes(event => {
     //Steel Block Recipe
     event.remove({id:'ad_astra:steel_block'})
 
+    //Oil
+    event.remove({id:'ad_astra_giselle_addon:compat/industrialforegoing/laser_drill_fluid/oil'})
+
 })

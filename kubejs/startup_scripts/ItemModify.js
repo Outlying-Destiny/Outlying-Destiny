@@ -1,7 +1,6 @@
 ItemEvents.modification(event => {
 
     //Stack Size
-
     const StackSize = [
         {i:'minecraft:ender_pearl', n:64},
         {i:'aether:skyroot_poison_bucket', n:16},
@@ -31,5 +30,16 @@ ItemEvents.modification(event => {
 
     BurnTime.forEach((BurnTime) => {
         event.modify(BurnTime.i, item => {item.burnTime = BurnTime.n})
+    })
+
+    //Fire Resistant
+    const FireResistant = [
+        {i:'minecraft:gold_nugget'},
+        {i:'minecraft:gold_ingot'},
+        {i:'minecraft:gold_block'}
+    ]
+  
+    FireResistant.forEach((FireResistant) => {
+        event.modify(FireResistant.i, item => {item.fireResistant = true})
     })
 })

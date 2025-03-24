@@ -28,8 +28,7 @@ MBDMachineEvents.onBeforeRecipeModify('kubejs:soul_catcher', (event) => {
     const mbdEvent = event.getEvent();
     const { machine, recipe } = mbdEvent;
 
-    let recipeCopy = recipe.copy();
-    recipeCopy.duration = newDuration(machine, recipeCopy.duration);
+    let recipeCopy = modifyRecipe(machine, recipe);
 
     mbdEvent.setRecipe(recipeCopy);
 });

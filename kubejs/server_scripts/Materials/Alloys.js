@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
     
     //Eye of Ender
     event.remove({id:'minecraft:ender_eye'})
-    alloy2('minecraft:ender_eye', 1, 'minecraft:blaze_powder', 1, 'minecraft:ender_pearl', 1, 8000)
+    alloy2('minecraft:ender_eye', 1, 'minecraft:blaze_powder', 1, 'minecraft:ender_pearl', 1, 6000)
 
     //Glasses
     //alloy1('enderio:fused_quartz', 1, 'minecraft:quartz', 4, 4000) Removed because quartz is already used in hardened glass recipe

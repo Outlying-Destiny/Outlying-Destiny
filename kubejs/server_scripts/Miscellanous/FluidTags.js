@@ -6,5 +6,6 @@ ServerEvents.tags('fluid', event => {
     event.remove('forge:ethanol', 'pneumaticcraft:ethanol')
     event.remove('forge:creosote', 'thermal:creosote')
     event.remove('forge:crude_oil', 'thermal:crude_oil')
+    event.add('outlying:demon', ['minecraft:lava', 'enderio:fire_water'])
 
 })

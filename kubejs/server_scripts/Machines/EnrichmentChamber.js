@@ -5,6 +5,7 @@ ServerEvents.recipes(event => {
     function enrichmenttag(output, outputamount, input, inputamount){event.custom({"type":"mekanism:enriching","input":{"amount":inputamount,"ingredient":{"tag":input}},"output":{"count":outputamount,"item":output}})}
     function oreproc(output, outputmult, material){enrichmenttag(output, 2*outputmult, 'forge:ores/'+material, 1)}
     function oreprocraw(output, material){enrichmenttag(output, 4, 'forge:raw_materials/'+material, 3); enrichmenttag(output, 2, 'forge:ores/'+material, 1)}
+
     //New Enriched Items
     enrichment('kubejs:enriched_rose_gold', 1, 'thermal:rose_gold_ingot', 1)
     enrichment('kubejs:enriched_platinum', 1, 'chemlib:platinum_ingot', 1)
@@ -44,5 +45,9 @@ ServerEvents.recipes(event => {
     oreproc('forbidden_arcanus:arcane_crystal_dust', 1, 'arcane_crystal')
     oreproc('forbidden_arcanus:rune', 1, 'rune')
     oreproc('draconicevolution:draconium_dust', 1, 'draconium')
+
+    //Dyes
+    //event.remove({id:/mekanism:enriching\/dye/})
+
 
 })

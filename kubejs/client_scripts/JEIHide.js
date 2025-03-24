@@ -197,7 +197,7 @@ JEIEvents.hideItems(event => {
     //event.hide('structure_gel:dynamic_spawner')
     
     //Fluid Buckets
-    event.hide(['enderio:xp_juice_bucket', 'pneumaticcraft:biodiesel_bucket', 'pneumaticcraft:vegetable_oil_bucket', 'pneumaticcraft:ethanol_bucket', 'thermal:creosote_bucket', 'thermal_extra:raw_aluminum_bucket'])
+    event.hide(['pneumaticcraft:biodiesel_bucket', 'pneumaticcraft:vegetable_oil_bucket', 'pneumaticcraft:ethanol_bucket', 'thermal:creosote_bucket', 'thermal:crude_oil_bucket', 'ad_astra:oil_bucket', /thermal_extra:raw_.+_bucket/])
 
 })
 
@@ -233,8 +233,9 @@ JEIEvents.hideFluids(event => {
     //Creosote
     event.hide('thermal:creosote')
 
-    //Crude Oil
-    event.hide('thermal:crude_oil')
+    //Oil
+    let oil = ['thermal:crude_oil', 'ad_astra:oil']
+    oil.forEach(fluid => {event.hide(fluid)})
 
     //Thermal Extra Molten Fluids
     let molten = ['thermal_extra:raw_aluminum', 'thermal_extra:raw_arcane_gold', 'thermal_extra:raw_copper', 'thermal_extra:raw_gold', 'thermal_extra:raw_iron', 'thermal_extra:raw_lead', 'thermal_extra:raw_nickel', 'thermal_extra:raw_osmium', 'thermal_extra:raw_silver', 'thermal_extra:raw_tin', 'thermal_extra:raw_uranium', 'thermal_extra:raw_zinc']

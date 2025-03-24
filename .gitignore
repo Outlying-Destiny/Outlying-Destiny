@@ -1,3 +1,23 @@
+# Config
+config/oculus.properties
+config/quark-common.toml
+config/oculus.properties
+config/jade/plugins.json
+config/fml.toml
+
+# VSCode
+!/.vscode
+/.vscode/*
+!/.vscode/*.code-workspace
+
+# JEI
+config/jei/ingredient-list-mod-sort-order.ini
+config/jei/ingredient-list-type-sort-order.ini
+config/jei/recipe-category-sort-order.ini
+config/jei/world
+emi.json
+fancymenu_data/last_world.fmdata
+
 /.curseclient
 /.probe
 /.qmenu_opened.marker
@@ -30,24 +50,4 @@
 cherishedworlds-favorites.dat
 knownkeys.txt
 user-prefs.json
-
-# Config
-config/oculus.properties
-config/quark-common.toml
-config/oculus.properties
-config/jade/plugins.json
-config/fml.toml
-
-
-# VSCode
-!/.vscode
-/.vscode/*
-!/.vscode/*.code-workspace
-
-# JEI
-config/jei/ingredient-list-mod-sort-order.ini
-config/jei/ingredient-list-type-sort-order.ini
-config/jei/recipe-category-sort-order.ini
-config/jei/world
-emi.json
-fancymenu_data/last_world.fmdata
+config/spark/activity.json

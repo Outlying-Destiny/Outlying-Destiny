@@ -19,4 +19,7 @@ ServerEvents.tags('item', event => {
 
     //Thermal Extra Armor
     event.removeAllTagsFrom(/thermal_extra:.+_(helmet|chestplate|leggings|boots|sword|axe|pickaxe|shovel|hoe|excavator|hammer|knife|sickle)/)
+
+    //Rubberwood Logs
+    event.add('thermal:rubberwood_logs', '#forge:rubberwood_logs')
 })
