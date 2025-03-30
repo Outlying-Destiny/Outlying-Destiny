@@ -2092,7 +2092,7 @@
 			description: [
 				"The Energized Smelter can smelt items at the cost of energy."
 				""
-				"It an be quite of use once upgraded into a factory!"
+				"It can be quite of use once upgraded into a factory!"
 			]
 			hide_dependency_lines: true
 			id: "0AE78B3871DB6D59"
@@ -2606,7 +2606,7 @@
 		{
 			dependencies: ["2D1BB8A835207114"]
 			description: [
-				"You can upgrade your Mekanism machinery into basic factories!"
+				"Tier Installers can be used on your Mekanism machinery to upgrade them into factories. (&eShift+RightClick&r)"
 				""
 				"Basic factories can process 3 recipes at once."
 			]
@@ -2619,127 +2619,63 @@
 				item: "mekanism:basic_control_circuit"
 				type: "item"
 			}]
-			tasks: [{
-				id: "4F680ED0C85FEF18"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "mekanism:basic_smelting_factory"
-								tag: {
-									mekData: {
-										EnergyContainers: [{
-											Container: 0b
-											stored: "30000"
-										}]
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "mekanism:basic_enriching_factory"
-								tag: {
-									mekData: {
-										EnergyContainers: [{
-											Container: 0b
-											stored: "30000"
-										}]
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "mekanism:basic_crushing_factory"
-								tag: {
-									mekData: {
-										EnergyContainers: [{
-											Container: 0b
-											stored: "23850"
-										}]
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "mekanism:basic_compressing_factory"
-								tag: {
-									mekData: {
-										EnergyContainers: [{
-											Container: 0b
-											stored: "93000"
-										}]
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "mekanism:basic_combining_factory"
-								tag: {
-									mekData: {
-										EnergyContainers: [{
-											Container: 0b
-											stored: "45300"
-										}]
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "mekanism:basic_purifying_factory"
-								tag: {
-									mekData: {
-										EnergyContainers: [{
-											Container: 0b
-											stored: "84600"
-										}]
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "mekanism:basic_injecting_factory"
-								tag: {
-									mekData: {
-										EnergyContainers: [{
-											Container: 0b
-											stored: "98400"
-										}]
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "mekanism:basic_infusing_factory"
-								tag: {
-									mekData: {
-										EnergyContainers: [{
-											Container: 0b
-											stored: "11700"
-										}]
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "mekanism:basic_sawing_factory"
-								tag: {
-									mekData: {
-										EnergyContainers: [{
-											Container: 0b
-											stored: "10950"
-										}]
-									}
-								}
-							}
-						]
-					}
+			tasks: [
+				{
+					id: "1C736838DF52861A"
+					item: "mekanism:basic_tier_installer"
+					type: "item"
 				}
-				title: "Any Basic Factory"
-				type: "item"
-			}]
+				{
+					id: "07A96AD74B71C3E5"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "mekanism:basic_smelting_factory"
+								}
+								{
+									Count: 1b
+									id: "mekanism:basic_enriching_factory"
+								}
+								{
+									Count: 1b
+									id: "mekanism:basic_crushing_factory"
+								}
+								{
+									Count: 1b
+									id: "mekanism:basic_compressing_factory"
+								}
+								{
+									Count: 1b
+									id: "mekanism:basic_combining_factory"
+								}
+								{
+									Count: 1b
+									id: "mekanism:basic_purifying_factory"
+								}
+								{
+									Count: 1b
+									id: "mekanism:basic_injecting_factory"
+								}
+								{
+									Count: 1b
+									id: "mekanism:basic_infusing_factory"
+								}
+								{
+									Count: 1b
+									id: "mekanism:basic_sawing_factory"
+								}
+							]
+						}
+					}
+					optional_task: true
+					title: "Any Basic Factory"
+					type: "item"
+				}
+			]
 			title: "Satis Factory"
 			x: 9.5d
 			y: -7.5d

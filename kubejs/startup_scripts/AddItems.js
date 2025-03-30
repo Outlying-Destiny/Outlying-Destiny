@@ -97,6 +97,13 @@ StartupEvents.registry('item', event => {
   event.create('abyssal_catalyst').displayName('Abyssal Catalyst')
   event.create('signalum_catalyst').displayName('Signalum Catalyst')
 
+  //Actually Additions Empowered Crystal Shards
+  event.create('actuallyadditions:empowered_enori_crystal_shard').displayName('Empowered Light Brown Crystal Shard').glow(true)
+  event.create('actuallyadditions:empowered_palis_crystal_shard').displayName('Empowered Orange Crystal Shard').glow(true)
+  event.create('actuallyadditions:empowered_diamatine_crystal_shard').displayName('Empowered Light Blue Crystal Shard').glow(true)
+  event.create('actuallyadditions:empowered_emeradic_crystal_shard').displayName('Empowered Green Crystal Shard').glow(true)
+  event.create('actuallyadditions:empowered_restonia_crystal_shard').displayName('Empowered Red Crystal Shard').glow(true)
+
   //Thermal Augments (Base Code from Mierno by FalAut, go play it!)
   event.createCustom('thermal:twinite_rf_coil_augment',() =>new $AugmentItem(new $Item$Properties(), {Type: 'RF', RFXfer: 16, RFMax: 16})).displayName('Twinite Expanded RF Coil')
   event.createCustom('thermal:twinite_rf_coil_storage_augment',() =>new $AugmentItem(new $Item$Properties(), {Type: 'RF', RFXfer: 8, RFMax: 24})).displayName('Twinite Stabilized RF Coil')

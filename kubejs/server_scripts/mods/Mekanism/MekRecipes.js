@@ -124,8 +124,6 @@ ServerEvents.recipes(event => {
 
     //Quantum Entangloporter
     event.remove({id:'mekanism:quantum_entangloporter'})
-    //detailedbox('mekanism:quantum_entangloporter', 'thermal:signalum_gear', 'mekanism:teleportation_core', 'enderio:sentient_ender', 'extendedcrafting:frame')
-    //event.shaped('mekanism:quantum_entangloporter', ['ABA','CDC','EBE'], {A:'thermal_extra:dragonsteel_gear',B:'enderio:sentient_ender',C:'mekanism:teleportation_core',D:'extendedcrafting:frame',E:'enderio:dark_steel_block'})
     event.shaped('mekanism:quantum_entangloporter', ['ABA','CDC','EBE'], {A:'mekanism:teleportation_core',B:'enderio:sentient_ender',C:'thermal_extra:twinite_plate',D:'extendedcrafting:frame',E:'thermal_extra:dragonsteel_gear'})
     
     //Teleporter
@@ -192,9 +190,9 @@ ServerEvents.recipes(event => {
     //Factories
     event.remove({id:/mekanism:tier_installer\/(basic|advanced|elite|ultimate)/})
     event.remove({id:/mekanism_extras:tier_installer\/(absolute|supreme|cosmic|infinite)/})
-    //detailedbox('mekanism:advanced_tier_installer', 'mekanism:alloy_reinforced', 'mekanism:elite_control_circuit', 'thermal:lumium_ingot', '#minecraft:planks')
-    //detailedbox('mekanism:elite_tier_installer', 'mekanism_extras:alloy_radiance', 'mekanism_extras:absolute_control_circuit', 'minecraft:dirt', '#minecraft:planks')
-    //detailedbox('mekanism:ultimate_tier_installer', 'mekanism_extras:alloy_shining', 'mekanism_extras:cosmic_control_circuit', 'minecraft:dirt', '#minecraft:planks')
+    detailedbox('mekanism:advanced_tier_installer', 'mekanism:alloy_reinforced', 'mekanism:elite_control_circuit', 'thermal:lumium_ingot', '#minecraft:planks')
+    detailedbox('mekanism:elite_tier_installer', 'mekanism_extras:alloy_radiance', 'mekanism_extras:absolute_control_circuit', 'minecraft:dirt', '#minecraft:planks')
+    detailedbox('mekanism:ultimate_tier_installer', 'mekanism_extras:alloy_shining', 'mekanism_extras:cosmic_control_circuit', 'minecraft:dirt', '#minecraft:planks')
 
     event.remove({id:/mekanism:factory\/(advanced|elite|ultimate)\/.+/})
     const machinery = [{name:'combining'},{name:'compressing'},{name:'crushing'},{name:'enriching'},{name:'infusing'},{name:'injecting'},{name:'purifying'},{name:'sawing'},{name:'smelting'}]

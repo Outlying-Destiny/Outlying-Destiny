@@ -60,7 +60,7 @@ ServerEvents.recipes(event => {
     alloy2('kubejs:crystalline_alloy_ingot', 2, 'enderio:pulsating_powder', 1, 'thermal:lumium_ingot', 2, 21000)
     //alloy2('kubejs:crystalline_pink_slime_ingot', 1, 'industrialforegoing:pink_slime_ingot', 1, 'kubejs:crystalline_alloy_ingot',1 ,16000)
     //alloy3('kubejs:dark_soularium_ingot', 1, 'enderio:soularium_ingot', 1, 'enderio:dark_steel_ingot', 10, '', 1, 24000)
-    alloy3('kubejs:machinarium_ingot', 4, 'mekanism:alloy_reinforced', 4, 'kubejs:automaton_ingot', 2, 'actuallyadditions:empowered_enori_crystal', 1, 16000)
+    alloy3('kubejs:machinarium_ingot', 4, 'mekanism:alloy_reinforced', 4, 'kubejs:automaton_ingot', 2, 'actuallyadditions:empowered_enori_crystal', 1, 60000)
     alloy2('industrialforegoing:pink_slime_ingot', 1, 'industrialforegoing:pink_slime', 1, 'kubejs:demon_ingot', 1, 8000)
     alloy3('thermal_extra:twinite_ingot', 2, 'industrialforegoing:pink_slime_ingot', 2, 'kubejs:crystalline_alloy_ingot', 2, 'minecraft:netherite_ingot', 1, 34000)
     alloy3('thermal_extra:dragonsteel_ingot', 1, 'draconicevolution:draconium_ingot', 1, 'thermal_extra:shellite_ingot', 1, 'enderio:end_steel_ingot', 1, 20000)
@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
     
     //Eye of Ender
     event.remove({id:'minecraft:ender_eye'})
-    alloy2('minecraft:ender_eye', 1, 'minecraft:blaze_powder', 1, 'minecraft:ender_pearl', 1, 6000)
+    alloy2('minecraft:ender_eye', 1, 'minecraft:blaze_powder', 1, 'minecraft:ender_pearl', 1, 8000)
 
     //Glasses
     //alloy1('enderio:fused_quartz', 1, 'minecraft:quartz', 4, 4000) Removed because quartz is already used in hardened glass recipe

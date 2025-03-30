@@ -84,7 +84,7 @@ function modifyRecipe(machine, recipe){
     let divisor = ({
         'enderio:basic_capacitor': 1,
         'enderio:double_layer_capacitor': 2,
-        'enderio:octadic_capacitor': 3
+        'enderio:octadic_capacitor': 3.5
     })[capacitorId] || 1;
 
     let recipeCopy = recipe.copy();

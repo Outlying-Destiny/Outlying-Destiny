@@ -46,8 +46,4 @@ ServerEvents.recipes(event => {
     oreproc('forbidden_arcanus:rune', 1, 'rune')
     oreproc('draconicevolution:draconium_dust', 1, 'draconium')
 
-    //Dyes
-    //event.remove({id:/mekanism:enriching\/dye/})
-
-
 })

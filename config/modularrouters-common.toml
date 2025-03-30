@@ -66,13 +66,13 @@
 [Router]
 	#Base tick interval (in server ticks) for a router; router will run this often
 	#Range: > 1
-	baseTickRate = 20
+	baseTickRate = 22
 	#Number of ticks by which 1 Speed Upgrade will reduce the router's tick interval
 	#Range: > 1
 	ticksPerUpgrade = 2
 	#Hard minimum tick interval for a router regardless of Speed Upgrades
 	#Range: > 1
-	hardMinTickRate = 2
+	hardMinTickRate = 4
 	#Router with eco mode enabled will go into low-power mode if idle for this many server ticks
 	#Range: > 1
 	ecoTimeout = 100

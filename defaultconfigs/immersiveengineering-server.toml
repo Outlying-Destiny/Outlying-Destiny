@@ -263,10 +263,10 @@
 	[machines.auto_workbench]
 		#A modifier to apply to the energy costs of every auto workbench recipe
 		#Range: 0.001 ~ 1000.0
-		energyModifier = 1.0
+		energyModifier = 2.0
 		#A modifier to apply to the time of every auto workbench recipe
 		#Range: 0.001 ~ 1000.0
-		timeModifier = 1.0
+		timeModifier = 0.5
 
 	[machines.bottling_machine]
 		#A modifier to apply to the energy costs of every bottling machine recipe

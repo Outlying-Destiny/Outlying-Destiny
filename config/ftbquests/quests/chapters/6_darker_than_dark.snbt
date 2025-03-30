@@ -514,7 +514,7 @@
 		}
 		{
 			dependencies: ["6AFDB0F2AD9E81BC"]
-			description: ["And hey! There's even a gas one for your future Mekanism endeavors too!"]
+			description: [""]
 			icon: "laserio:card_item"
 			id: "68F05DB4A722B875"
 			min_width: 300
@@ -945,6 +945,7 @@
 							]
 						}
 					}
+					title: "Transportation Modules Mk1"
 					type: "item"
 				}
 				{
@@ -997,6 +998,7 @@
 							]
 						}
 					}
+					title: "Transportation Modules Mk2"
 					type: "item"
 				}
 			]
@@ -2178,119 +2180,63 @@
 				item: "extendedcrafting:luminessence"
 				type: "item"
 			}]
-			tasks: [{
-				id: "066DC62C18FFA982"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "mekanism:advanced_smelting_factory"
-								tag: {
-									mekData: {
-										EnergyContainers: [{
-											Container: 0b
-											stored: "12500"
-										}]
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "mekanism:advanced_enriching_factory"
-								tag: {
-									mekData: {
-										EnergyContainers: [{
-											Container: 0b
-											stored: "10000"
-										}]
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "mekanism:advanced_crushing_factory"
-								tag: {
-									mekData: {
-										EnergyContainers: [{
-											Container: 0b
-											stored: "9250"
-										}]
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "mekanism:advanced_compressing_factory"
-								tag: {
-									mekData: {
-										EnergyContainers: [{
-											Container: 0b
-											stored: "33000"
-										}]
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "mekanism:advanced_combining_factory"
-								tag: {
-									mekData: {
-										EnergyContainers: [{
-											Container: 0b
-											stored: "13000"
-										}]
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "mekanism:advanced_purifying_factory"
-								tag: {
-									mekData: {
-										EnergyContainers: [{
-											Container: 0b
-											stored: "22000"
-										}]
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "mekanism:advanced_injecting_factory"
-								tag: {
-									mekData: {
-										EnergyContainers: [{
-											Container: 0b
-											stored: "38000"
-										}]
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "mekanism:advanced_infusing_factory"
-								tag: {
-									mekData: {
-										EnergyContainers: [{
-											Container: 0b
-											stored: "5250"
-										}]
-									}
-								}
-							}
-							{
-								Count: 1b
-								id: "mekanism:advanced_sawing_factory"
-							}
-						]
-					}
+			tasks: [
+				{
+					id: "1E30CD5523125C50"
+					item: "mekanism:advanced_tier_installer"
+					type: "item"
 				}
-				title: "Any Elite Factory"
-				type: "item"
-			}]
+				{
+					id: "572D0F6D5D748D11"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "mekanism:advanced_smelting_factory"
+								}
+								{
+									Count: 1b
+									id: "mekanism:advanced_enriching_factory"
+								}
+								{
+									Count: 1b
+									id: "mekanism:advanced_crushing_factory"
+								}
+								{
+									Count: 1b
+									id: "mekanism:advanced_compressing_factory"
+								}
+								{
+									Count: 1b
+									id: "mekanism:advanced_combining_factory"
+								}
+								{
+									Count: 1b
+									id: "mekanism:advanced_purifying_factory"
+								}
+								{
+									Count: 1b
+									id: "mekanism:advanced_injecting_factory"
+								}
+								{
+									Count: 1b
+									id: "mekanism:advanced_infusing_factory"
+								}
+								{
+									Count: 1b
+									id: "mekanism:advanced_sawing_factory"
+								}
+							]
+						}
+					}
+					optional_task: true
+					title: "Any Elite Factory"
+					type: "item"
+				}
+			]
 			title: "Overclocked Factory"
 			x: -5.5d
 			y: 0.25d

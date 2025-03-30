@@ -181,7 +181,7 @@
 	[Recipes.Insolator]
 		#This sets the recipe energy multiplier for the Phytogenic Insolator. This scales all recipe energy requirements.
 		#Range: 0.0625 ~ 16.0
-		"Energy Multiplier" = 1.0
+		"Energy Multiplier" = 1.5
 
 	[Recipes.Centrifuge]
 		#This sets the recipe energy multiplier for the Centrifugal Seperator. This scales all recipe energy requirements.

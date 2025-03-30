@@ -26,15 +26,15 @@
 		capacity = 64000
 		#The base energy consumption in uI/t.
 		#Range: > 1
-		usage = 16
+		usage = 32
 
 	[energy.poweredSpawner]
 		#The base energy capacity in uI.
 		#Range: > 1
-		capacity = 100000
+		capacity = 120000
 		#The base energy consumption in uI/t.
 		#Range: > 1
-		usage = 40
+		usage = 60
 
 	[energy.sagMill]
 		#The base energy capacity in uI.
@@ -42,23 +42,23 @@
 		capacity = 64000
 		#The base energy consumption in uI/t.
 		#Range: > 1
-		usage = 20
+		usage = 32
 
 	[energy.slicer]
-		#The base energy capacity in uI.
-		#Range: > 1
-		capacity = 100000
-		#The base energy consumption in uI/t.
-		#Range: > 1
-		usage = 30
-
-	[energy.soulBinder]
 		#The base energy capacity in uI.
 		#Range: > 1
 		capacity = 128000
 		#The base energy consumption in uI/t.
 		#Range: > 1
-		usage = 60
+		usage = 64
+
+	[energy.soulBinder]
+		#The base energy capacity in uI.
+		#Range: > 1
+		capacity = 256000
+		#The base energy consumption in uI/t.
+		#Range: > 1
+		usage = 128
 
 	[energy.stirlingGenerator]
 		#The base energy capacity in uI.
@@ -135,10 +135,10 @@
 	[energy.aversion]
 		#The base energy capacity in uI.
 		#Range: > 1
-		capacity = 64000
+		capacity = 40000
 		#The base energy consumption in uI/t.
 		#Range: > 1
-		usage = 10
+		usage = 20
 
 [enchanter]
 	#The lapis cost is enchant level multiplied by this value.

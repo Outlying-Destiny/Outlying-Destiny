@@ -68,5 +68,9 @@ ServerEvents.recipes(event => {
 
     //Dropper / Dispenser
     event.remove({id:/minecraft:(dropper|dispenser)/})
+
+    //Lever
+    event.remove({id:/(minecraft|terralith):lever/})
+    event.shaped('minecraft:lever', [' A ',' B ','   '], {A:'#forge:rods/wooden',B:'#minecraft:stone_crafting_materials'})
     
 })

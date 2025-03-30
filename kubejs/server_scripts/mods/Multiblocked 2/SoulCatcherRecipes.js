@@ -7,7 +7,7 @@ ServerEvents.recipes((event) => {
         .chance(0, catcher => catcher.inputItems(JsonIO.of({"value": [{"item": "enderio:basic_capacitor"},{"item": "enderio:double_layer_capacitor"},{"item": "enderio:octadic_capacitor"}]}), catalyst))
         .outputItems(JsonIO.of({"value": {"type": "forge:nbt","item": "enderio:filled_soul_vial","nbt": output}}))
         .perTick(catcher => catcher.inputFE(256))
-        .duration(450)
+        .duration(400)
     }
 
     //Zombie

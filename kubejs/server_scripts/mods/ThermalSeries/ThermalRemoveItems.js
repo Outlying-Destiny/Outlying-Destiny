@@ -1,8 +1,5 @@
 ServerEvents.recipes(event => {
 
-    //Dynamos
-    //event.remove({ output:/thermal:dynamo.+/})
-
     //Sawmill Recipes
     event.remove({id:/thermal:machines.+sawmill.+/})
     event.remove({id:/thermal:compat.+sawmill/})
@@ -22,8 +19,8 @@ ServerEvents.recipes(event => {
     event.remove({id:'thermal:machinaes/insolator/insolator_slime_mushroom'})
 
     //Augments
-    event.remove({id:'thermal_extra:crafting/augment_smithing_templte'})
-    event.remove({id:/thermal_extra:crafting\/augment.+/})
+    event.remove({id:/thermal:augments\/dynamo/})
+    event.remove({id:/thermal_extra:crafting\/augment/})
 
     //Components
     event.remove({id:'thermal_extra:crafting/dragonsteel_integral_component'})

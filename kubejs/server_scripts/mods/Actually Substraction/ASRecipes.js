@@ -109,4 +109,20 @@ ServerEvents.recipes(event => {
     drillaugment('five_by_five', 'actuallyadditions:empowered_diamatine_crystal', 'thermal_extra:twinite_block', 'actuallyadditions:drill_upgrade_three_by_three', 'actuallyadditions:advanced_coil')
     drillaugment('silk_touch', 'mekanism:block_refined_glowstone', 'actuallyadditions:enori_crystal_block', 'actuallyadditions:palis_crystal_block', 'kubejs:drill_upgrade_base')
     drillaugment('block_placing', 'mekanism:block_refined_obsidian', 'actuallyadditions:enori_crystal_block', 'actuallyadditions:palis_crystal_block', 'kubejs:drill_upgrade_base')
+
+    //Empowered Crystal Shards Recipes
+    const shard = [['enori'],['palis'],['diamatine'],['emeradic'],['restonia']]
+
+    shard.forEach((shard) => {
+        event.shapeless('actuallyadditions:empowered_'+shard+'_crystal', '9x actuallyadditions:empowered_'+shard+'_crystal_shard')
+        event.shapeless('9x actuallyadditions:empowered_'+shard+'_crystal_shard', 'actuallyadditions:empowered_'+shard+'_crystal')
+    })
+
+    //Machines Temp
+    event.remove({id:'actuallyadditions:placer'})
+    event.remove({id:'actuallyadditions:breaker'})
+    event.remove({id:'actuallyadditions:long_range_breaker'})
+    event.remove({id:'actuallyadditions:fluid_placer'})
+    event.remove({id:'actuallyadditions:fluid_collector'})
+
 })
