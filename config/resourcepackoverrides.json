@@ -1,0 +1,7 @@
+{
+    "schema_version": "2",
+
+    "default_packs": [
+        "file/Slightly-Improved-Font-1.1.5.zip"
+    ]
+}
