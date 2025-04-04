@@ -43,4 +43,7 @@ ServerEvents.recipes(event => {
     
     //Oredictionificator
     event.remove({id:'mekanism:oredictionificator'})
+
+    //Mekanism Extras Factories
+    event.remove({id:/mekanism_extras:factory\//})
 })

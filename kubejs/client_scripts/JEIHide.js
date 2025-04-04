@@ -108,6 +108,7 @@ JEIEvents.hideItems(event => {
     event.hide(['mekanism:formulaic_assemblicator', 'mekanism:crafting_formula', /mekanism:(restrictive|diversion)_transporter/, /mekanism_extras:(absolute|supreme|cosmic|infinite)_tier_installer/, 'mekanism:upgrade_gas', /mekanism:dynamic_(tank|valve)/, 'mekanism:oredictionificator'])
     event.hide(['mekanism:enriched_tin', 'mekanism:enriched_refined_obsidian', 'mekanism_extras:enriched_lead'])
     event.hide([/mekanism:qio_(drive_array|dashboard|exporter|importer|redstone_adapter)/, 'mekanism:portable_qio_dashboard', /mekanism:qio_drive_(base|hyper_dense|time_dilating|supermassive)/, /mekanism_extras:qio_drive_(collapse|gamma|black_hole|singularity)/, /mekanism(_extras:expand_|:)radioactive_waste_barrel/, /mekanism.+_bin/])
+    event.hide(/mekanism_extras:.+_factory$/)
 
     //Mob Grinding Utils
     event.hide(['mob_grinding_utils:entity_spawner', 'mob_grinding_utils:spawner_upgrade_height', 'mob_grinding_utils:spawner_upgrade_width', 'mob_grinding_utils:jumbo_tank'])

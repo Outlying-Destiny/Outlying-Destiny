@@ -8,21 +8,21 @@ ServerEvents.recipes(event => {
     
     //Blood Extractor
     event.remove({id:'evilcraft:crafting/blood_extractor'})
-    event.custom({"type": "extendedcrafting:shaped_table","pattern": [
-        "   A ",
-        " BCAA",
-        " BDC ",
-        "ECBB ",
-        " E   "],"key": {"A": {"item": "mob_grinding_utils:spikes"},"B": {"item": "thermal:signalum_glass"},"C": {"item": "kubejs:dark_soul_infused_block"},"D": {"item": "kubejs:ender_core"},"E": {"item": "extendedcrafting:black_iron_block"}},"result": {"item": "evilcraft:blood_extractor"}})
+    //event.custom({"type": "extendedcrafting:shaped_table","pattern": [
+    //    "   A ",
+    //    " BCAA",
+    //    " BDC ",
+    //    "ECBB ",
+    //    " E   "],"key": {"A": {"item": "mob_grinding_utils:spikes"},"B": {"item": "thermal:signalum_glass"},"C": {"item": "kubejs:dark_soul_infused_block"},"D": {"item": "kubejs:ender_core"},"E": {"item": "extendedcrafting:black_iron_block"}},"result": {"item": "evilcraft:blood_extractor"}})
 
-    //Blood Extractor
-    event.remove({id:'evilcraft:crafting/blood_extractor'})
-    event.custom({"type": "extendedcrafting:shaped_table","pattern": [
-        "   A ",
-        " BBAA",
-        " CDB ",
-        "ECCB ",
-        "EE   "],"key": {"A": {"item": "mob_grinding_utils:spikes"},"B": {"item": "thermal:signalum_glass"},"C": {"item": "kubejs:dark_soul_infused_block"},"D": {"item": "kubejs:ender_core"},"E": {"item": "extendedcrafting:black_iron_block"}},"result": {"item": "evilcraft:blood_extractor"}})
+    ////Blood Extractor
+    //event.remove({id:'evilcraft:crafting/blood_extractor'})
+    //event.custom({"type": "extendedcrafting:shaped_table","pattern": [
+    //    "   A ",
+    //    " BBAA",
+    //    " CDB ",
+    //    "ECCB ",
+    //    "EE   "],"key": {"A": {"item": "mob_grinding_utils:spikes"},"B": {"item": "thermal:signalum_glass"},"C": {"item": "kubejs:dark_soul_infused_block"},"D": {"item": "kubejs:ender_core"},"E": {"item": "extendedcrafting:black_iron_block"}},"result": {"item": "evilcraft:blood_extractor"}})
 
 
     //Weather Container

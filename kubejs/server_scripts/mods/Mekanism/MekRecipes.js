@@ -191,15 +191,15 @@ ServerEvents.recipes(event => {
     event.remove({id:/mekanism:tier_installer\/(basic|advanced|elite|ultimate)/})
     event.remove({id:/mekanism_extras:tier_installer\/(absolute|supreme|cosmic|infinite)/})
     detailedbox('mekanism:advanced_tier_installer', 'mekanism:alloy_reinforced', 'mekanism:elite_control_circuit', 'thermal:lumium_ingot', '#minecraft:planks')
-    detailedbox('mekanism:elite_tier_installer', 'mekanism_extras:alloy_radiance', 'mekanism_extras:absolute_control_circuit', 'minecraft:dirt', '#minecraft:planks')
-    detailedbox('mekanism:ultimate_tier_installer', 'mekanism_extras:alloy_shining', 'mekanism_extras:cosmic_control_circuit', 'minecraft:dirt', '#minecraft:planks')
+    //detailedbox('mekanism:elite_tier_installer', 'mekanism_extras:alloy_radiance', 'mekanism_extras:absolute_control_circuit', 'minecraft:dirt', '#minecraft:planks')
+    //detailedbox('mekanism:ultimate_tier_installer', 'mekanism_extras:alloy_shining', 'mekanism_extras:cosmic_control_circuit', 'minecraft:dirt', '#minecraft:planks')
 
     event.remove({id:/mekanism:factory\/(advanced|elite|ultimate)\/.+/})
     const machinery = [{name:'combining'},{name:'compressing'},{name:'crushing'},{name:'enriching'},{name:'infusing'},{name:'injecting'},{name:'purifying'},{name:'sawing'},{name:'smelting'}]
     machinery.forEach((machinery) => {
         event.custom({"type":"mekanism:mek_data","key":{"A":{"item":"mekanism:alloy_reinforced"},"C":{"item":"mekanism:elite_control_circuit"},"I":{"item":"extendedcrafting:luminessence"},"P":{"item":"mekanism:basic_"+machinery.name+"_factory"}},"pattern":["ACA","IPI","ACA"],"result":{"item":"mekanism:advanced_"+machinery.name+"_factory"}})
-        event.custom({"type":"mekanism:mek_data","key":{"A":{"item":"mekanism_extras:alloy_radiance"},"C":{"item":"mekanism_extras:absolute_control_circuit"},"I":{"item":"minecraft:dirt"},"P":{"item":"mekanism:advanced_"+machinery.name+"_factory"}},"pattern":["ACA","IPI","ACA"],"result":{"item":"mekanism:elite_"+machinery.name+"_factory"}})
-        event.custom({"type":"mekanism:mek_data","key":{"A":{"item":"mekanism_extras:alloy_shining"},"C":{"item":"mekanism_extras:cosmic_control_circuit"},"I":{"item":"minecraft:dirt"},"P":{"item":"mekanism:elite_"+machinery.name+"_factory"}},"pattern":["ACA","IPI","ACA"],"result":{"item":"mekanism:ultimate_"+machinery.name+"_factory"}})
+        //event.custom({"type":"mekanism:mek_data","key":{"A":{"item":"mekanism_extras:alloy_radiance"},"C":{"item":"mekanism_extras:absolute_control_circuit"},"I":{"item":"minecraft:dirt"},"P":{"item":"mekanism:advanced_"+machinery.name+"_factory"}},"pattern":["ACA","IPI","ACA"],"result":{"item":"mekanism:elite_"+machinery.name+"_factory"}})
+        //event.custom({"type":"mekanism:mek_data","key":{"A":{"item":"mekanism_extras:alloy_shining"},"C":{"item":"mekanism_extras:cosmic_control_circuit"},"I":{"item":"minecraft:dirt"},"P":{"item":"mekanism:elite_"+machinery.name+"_factory"}},"pattern":["ACA","IPI","ACA"],"result":{"item":"mekanism:ultimate_"+machinery.name+"_factory"}})
     })
 
 })
