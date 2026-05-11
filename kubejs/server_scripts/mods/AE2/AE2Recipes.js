@@ -8,7 +8,6 @@ ServerEvents.recipes(event => {
     event.custom({"type": "ae2:inscriber","ingredients": {"middle": {"item": material},"top": {"item": "kubejs:"+processor+"_processor_press"}},"mode": "inscribe","result": {"item": "kubejs:printed_"+processor+"_processor"}})
     event.custom({"type": "ae2:inscriber","ingredients": {"bottom": {"item": "ae2:printed_silicon"},"middle": {"item": "minecraft:redstone"},"top": {"item": "kubejs:printed_"+processor+"_processor"}},"mode": "press","result": {  "item": "kubejs:"+processor+"_processor"}})
     event.custom({"type": "ae2:inscriber","ingredients": {"middle": {"item": 'minecraft:iron_block'},"top": {"item": "kubejs:"+processor+"_processor_press"}},"mode": "inscribe","result": {"item": "kubejs:"+processor+"_processor_press"}})
-    event.shaped("kubejs:"+processor+"_processor_press", ['AAA','ABA','AAA'], {A: 'mysticalagriculture:certus_quartz_essence',B: material})
     }
     function cstore(storage, input1, input2){event.shaped('ae2:'+storage+'k_crafting_storage', ['ABA','BCB','ADA'], {A: 'thermal:invar_plate',B: input1,C: input2,D: 'ae2:cell_component_'+storage+'k'})}
 

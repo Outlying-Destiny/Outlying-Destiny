@@ -22,7 +22,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				count: 8L
+				count: 4L
 				id: "798D3243F92F64B2"
 				item: {
 					Count: 1
@@ -1061,7 +1061,13 @@
 				""
 				"&6Ultimine is your best friend&r, make sure to use it frequently :)"
 			]
-			icon: "mysticalagradditions:supremium_paxel"
+			icon: {
+				Count: 1
+				id: "lost_aether_content:phoenix_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "6735C90A27B2216A"
 			min_width: 300
 			tasks: [{

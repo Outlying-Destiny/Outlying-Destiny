@@ -1,0 +1,6 @@
+{
+    "type": "forge:add_features",
+    "biomes": "#minecraft:is_overworld",
+    "features": "kubejs:diamond3",
+    "step": "underground_ores"
+}

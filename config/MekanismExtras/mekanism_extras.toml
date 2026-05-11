@@ -7,11 +7,11 @@
 		#Internal buffer in Joules of each 'TIER' universal cable
 		absoluteUniversalCable = "512000"
 		#Internal buffer in Joules of each 'TIER' universal cable
-		supremeUniversalCable = "1024000"
+		supremeUniversalCable = "2048000"
 		#Internal buffer in Joules of each 'TIER' universal cable
-		cosmicUniversalCable = "4096000"
+		cosmicUniversalCable = "8192000"
 		#Internal buffer in Joules of each 'TIER' universal cable
-		infiniteUniversalCable = "16384000"
+		infiniteUniversalCable = "32768000"
 
 	#Mechanical Pipes
 	[mekanism_extras."mechanical pipes"]

@@ -21,6 +21,7 @@ JEIEvents.hideItems(event => {
 
     //Baubley Heart Canisters
     event.hide(/bhc:.+_heart_melted/)
+    event.hide('bhc:wither_bone')
     
     //Blood Magic
     event.hide(['#bloodmagic:fragments', '#bloodmagic:gravels', 'bloodmagic:sand_netherite'])
@@ -61,7 +62,7 @@ JEIEvents.hideItems(event => {
     event.hide('extendedcrafting:handheld_table')
 
     //Extreme Reactors
-    event.hide([/bigreactors.+yelloriu.+/, /mysticalagriculture:yellorium.+/])
+    event.hide(/bigreactors.+yelloriu.+/)
     event.hide(['bigreactors:yellorite_ore', 'bigreactors:deepslate_yellorite_ore', 'bigreactors:benitoite_ore', 'bigreactors:anglesite_ore'])
 
     //Farming for Blockheads
@@ -115,9 +116,6 @@ JEIEvents.hideItems(event => {
 
     //Modular Routers
     event.hide('modularrouters:sender_module_3')
-
-    //Mystical Agriculture
-    event.hide([/mysticalagriculture:(enchanter|harvester|soul_extractor|seed_reprocessor|soulium_spawner)/, /mysticalagriculture:(s|passives|hostiles)oulium_dagger/, /mysticalagriculture:(soul_jar|experience_capsule)/, /mystical(agriculture|agradditions):(deepslate_|nether_|end_){0,1}prosperity_ore/, /mysticalagriculture:soulium/, 'mysticalagradditions:molten_soulium_bucket', /mysticalagriculture:.+_soulium_dagger/, /mysticalagriculture.+watering_can/])
 
     //Nature's Aura
     event.hide(['naturesaura:multiblock_maker', 'naturesaura:rf_converter', 'naturesaura:chunk_loader'])
@@ -238,9 +236,6 @@ JEIEvents.hideFluids(event => {
     let molten = ['thermal_extra:raw_aluminum', 'thermal_extra:raw_arcane_gold', 'thermal_extra:raw_copper', 'thermal_extra:raw_gold', 'thermal_extra:raw_iron', 'thermal_extra:raw_lead', 'thermal_extra:raw_nickel', 'thermal_extra:raw_osmium', 'thermal_extra:raw_silver', 'thermal_extra:raw_tin', 'thermal_extra:raw_uranium', 'thermal_extra:raw_zinc']
     molten.forEach(fluid => {event.hide(fluid)})
 
-    //Mystical Agriculture Fluids
-    let ma = ['mysticalagradditions:molten_soulium']
-    ma.forEach(fluid => {event.hide(fluid)})
 })
 
 //const $IEMulti = Java.loadClass('sguest.jeimultiblocks.jei.MultiblockIngredientType')

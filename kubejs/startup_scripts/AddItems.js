@@ -120,5 +120,5 @@ StartupEvents.registry('item', event => {
   event.createCustom('thermal:machine_output_augment',() =>new $AugmentItem(new $Item$Properties(), {Type: 'Machine', MachineEnergy: 1.1, MachineSec: 0.15}))
   event.createCustom('thermal:machine_catalyst_augment',() =>new $AugmentItem(new $Item$Properties(), {Type: 'Machine', MachineCat: 0.8, MachineEnergy: 1.1}))
   event.createCustom('thermal:potion_amplifier_augment',() =>new $AugmentItem(new $Item$Properties(), {Type: 'Potion', PotionAmp: 1, PotionDur: -0.5}))
-
+  //https://pastebin.com/GXHJay09
 })

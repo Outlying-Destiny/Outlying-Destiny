@@ -12,7 +12,4 @@ ServerEvents.recipes(event => {
     //Removes Dirty Netherite Scrap Crusher Recipe
     event.remove({id:'mekanism:processing/netherite/ancient_debris_to_dirty_scrap'})
 
-    //Wither Bone to Withered Bone (thanks BHC for the hard coded loottable)
-    crusher('architects_palette:withered_bone', 1, 'bhc:wither_bone')
-
 })

@@ -85,4 +85,7 @@ ServerEvents.recipes(event => {
     //Crafting Table On A Stick
     event.remove({id:'actuallyadditions:crafter_on_a_stick'})
 
+    //Ender Star
+    event.remove({id:'actuallyadditions:ender_star'})
+
 })

@@ -61,8 +61,8 @@
 			id: "0E46350616ACB62C"
 			rewards: [{
 				count: 2
-				id: "046BD7AA2A426AE0"
-				item: "mysticalagradditions:withering_soul"
+				id: "07E42F9693EC9809"
+				item: "minecraft:wither_skeleton_skull"
 				type: "item"
 			}]
 			tasks: [{

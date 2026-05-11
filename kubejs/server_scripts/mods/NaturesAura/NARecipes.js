@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
 
     //Natural Altar
     event.remove({id:'naturesaura:tree_ritual/nature_altar'})
-    woodenstand("naturesaura:nature_altar", "naturesaura:gold_leaf", "naturesaura:token_joy", "mysticalagriculture:inferium_block", "minecraft:smooth_stone", "minecraft:smooth_stone", "minecraft:smooth_stone", "mysticalagriculture:inferium_block", "naturesaura:token_joy", "forge:sapling", 1, 500)
+    event.custom({"type": "naturesaura:tree_ritual", "ingredients": [{"type": "forge:nbt","item": "naturesaura:aura_bottle","count": 1,"nbt": "{stored_type:\"naturesaura:overworld\"}"}, {"item": "minecraft:smooth_stone"}, {"item": "naturesaura:gold_leaf"}, {"item": "naturesaura:gold_leaf"}, {"item": "naturesaura:token_joy"}, {"item": "minecraft:smooth_stone"}, {"item": "naturesaura:token_joy"}, {"item": "minecraft:smooth_stone"} ], "sapling": {"tag": "forge:sapling"}, "output": {"item": "naturesaura:nature_altar", "count": 1}, "time": 500})
 
     //Netherrrack
     woodenstand("minecraft:netherrack", "compressium:stone_1", "naturesaura:tainted_gold", "compressium:stone_1", "naturesaura:tainted_gold", "compressium:stone_1", "naturesaura:tainted_gold", "compressium:stone_1", "naturesaura:tainted_gold", "forge:sapling", 36, 300)

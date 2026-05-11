@@ -105,7 +105,7 @@
 			shouldGenerate = true
 			#Chance that upper osmium veins generates in a chunk.
 			#Range: 1 ~ 256
-			perChunk = 65
+			perChunk = 90
 			#Maximum number of blocks in a upper osmium vein.
 			#Range: 1 ~ 64
 			maxVeinSize = 7
@@ -146,7 +146,7 @@
 			shouldGenerate = true
 			#Chance that middle osmium veins generates in a chunk.
 			#Range: 1 ~ 256
-			perChunk = 6
+			perChunk = 8
 			#Maximum number of blocks in a middle osmium vein.
 			#Range: 1 ~ 64
 			maxVeinSize = 9
@@ -187,7 +187,7 @@
 			shouldGenerate = true
 			#Chance that small osmium veins generates in a chunk.
 			#Range: 1 ~ 256
-			perChunk = 8
+			perChunk = 11
 			#Maximum number of blocks in a small osmium vein.
 			#Range: 1 ~ 64
 			maxVeinSize = 4
@@ -233,7 +233,7 @@
 			shouldGenerate = true
 			#Chance that small uranium veins generates in a chunk.
 			#Range: 1 ~ 256
-			perChunk = 4
+			perChunk = 6
 			#Maximum number of blocks in a small uranium vein.
 			#Range: 1 ~ 64
 			maxVeinSize = 4
@@ -274,7 +274,7 @@
 			shouldGenerate = true
 			#Chance that buried uranium veins generates in a chunk.
 			#Range: 1 ~ 256
-			perChunk = 7
+			perChunk = 10
 			#Maximum number of blocks in a buried uranium vein.
 			#Range: 1 ~ 64
 			maxVeinSize = 9
@@ -320,7 +320,7 @@
 			shouldGenerate = true
 			#Chance that normal fluorite veins generates in a chunk.
 			#Range: 1 ~ 256
-			perChunk = 5
+			perChunk = 7
 			#Maximum number of blocks in a normal fluorite vein.
 			#Range: 1 ~ 64
 			maxVeinSize = 5
@@ -361,7 +361,7 @@
 			shouldGenerate = true
 			#Chance that buried fluorite veins generates in a chunk.
 			#Range: 1 ~ 256
-			perChunk = 3
+			perChunk = 4
 			#Maximum number of blocks in a buried fluorite vein.
 			#Range: 1 ~ 64
 			maxVeinSize = 13

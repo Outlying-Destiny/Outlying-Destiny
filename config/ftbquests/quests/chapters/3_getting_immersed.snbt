@@ -502,9 +502,9 @@
 				""
 				"There are 2 interesting combination of heat sources:"
 				""
-				"Water + Lava / Magma Block producing 15FE/t (30FE/t max per TG)"
+				"Water + Lava / Magma Block producing 19FE/t (38FE/t max per TG)"
 				""
-				"Water + Uranium Block producing 20FE/t (40FE/t max per TG)"
+				"Water + Uranium Block producing 25FE/t (50FE/t max per TG)"
 				""
 				"(Snow and Ice temperature difference are too little compared to water to be noticed)"
 				""
@@ -570,7 +570,7 @@
 				""
 				"While they can produce a fair amount of energy and the setup is pretty cheap they're not very space efficient as you want to setup a 9x9x5 area to max a setup."
 				""
-				"The max production of a 3 Water Wheels setup is 88FE/t."
+				"The max production of a 3 Water Wheels setup is 133FE/t."
 				""
 				"Here's what a maxed setup looks like:"
 				""
@@ -605,7 +605,7 @@
 				""
 				"Rains and thunderstorms can also make it rotate up to 2 times faster but that's out of your scope and so not really reliable."
 				""
-				"Its max* production on clear weather is 35FE/t."
+				"Its max* production on clear weather is 53FE/t."
 				""
 				"You're free to use it but using Water Wheels on the Kinetic Dynamos or using the Thermoelectric Generator are better options."
 			]
@@ -2084,11 +2084,7 @@
 			y: -2.5d
 		}
 		{
-			dependencies: [
-				"2D1BB8A835207114"
-				"11D604309801EF9C"
-				"2AFBDF3213FABA18"
-			]
+			dependencies: ["2AFBDF3213FABA18"]
 			description: [
 				"The Energized Smelter can smelt items at the cost of energy."
 				""

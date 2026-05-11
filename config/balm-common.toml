@@ -3,12 +3,12 @@ exampleBoolean = true
 #Range: > -2147483648
 exampleInt = 42
 exampleString = "Hello World"
-exampleMultilineString = "Hello World"
 #Allowed Values: Hello, World
 exampleEnum = "Hello"
 exampleStringList = ["Hello", "World"]
 exampleIntList = [12, 24]
 exampleEnumList = ["Hello", "World"]
+exampleMultilineString = "Hello World"
 
 [exampleCategory]
 	#This is an example category

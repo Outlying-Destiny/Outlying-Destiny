@@ -40,7 +40,6 @@ ServerEvents.recipes(event => {
     oreproc('thermal:niter_dust', 2.5, 'niter')
     oreproc('thermal:cinnabar_dust', 1.5, 'cinnabar')
     oreproc('ae2:certus_quartz_dust', 3.5, 'certus_quartz')
-    oreproc('mysticalagriculture:inferium_essence', 3, 'inferium')
     oreproc('evilcraft:dark_gem_crushed', 2.5, 'dark')
     oreproc('forbidden_arcanus:arcane_crystal_dust', 1, 'arcane_crystal')
     oreproc('forbidden_arcanus:rune', 1, 'rune')

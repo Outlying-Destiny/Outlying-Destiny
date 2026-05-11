@@ -67,7 +67,6 @@ ServerEvents.recipes(event => {
     oreproc3("forbidden_arcanus:arcane_crystal", "forbidden_arcanus:arcane_crystal_dust", 1, "evilcraft:dark_gem", "evilcraft:dark_gem_crushed", 2.5, "arcane_crystal")
     oreproc3("forbidden_arcanus:rune", "forbidden_arcanus:rune", 1, "forbidden_arcanus:arcane_crystal", "forbidden_arcanus:arcane_crystal_dust", 1, "rune")
     oreproc2("evilcraft:dark_gem", "evilcraft:dark_gem_crushed", 2.5, "dark")
-    oreproc2("mysticalagriculture:inferium_essence", "mysticalagriculture:inferium_essence", 3, "inferium")
     oreproc3("ae2:certus_quartz_crystal", "ae2:certus_quartz_dust", 3.5, "thermal:niter", "thermal:niter_dust", 2.5, "certus_quartz")
     oreproc2('draconicevolution:draconium_ingot', 'draconicevolution:draconium_dust', 1, 'draconium')
 })
