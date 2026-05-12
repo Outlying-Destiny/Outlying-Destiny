@@ -26,11 +26,12 @@ ServerEvents.recipes(event => {
     event.remove({id:/thermal:machines.+smelter.+smelter_alloy_.+/})
     event.remove({id:/thermal:fire_charge.+/})
     event.remove({id:/thermal_extra:.+_glass/})
-    event.remove({id:/thermal_extra:machine.+smelter.+ingot/})
+    event.remove({id:/thermal_extra:machine\/smelter.+ingot/})
     event.remove({id:/thermal:machines.+smelter.+smelter.+dust/})
-    event.remove({id:/thermal_extra:machine.+smelter.+dust/})
+    event.remove({id:/thermal_extra:machine\/smelter.+dust/})
     event.remove({id:/thermal:compat.+smelter.+dust/})
     event.remove({id:'extendedcrafting:black_iron_ingot'})
+    event.remove({id:/thermalendergy:machine\/smelter.+ingot/})
 
     //Alloy Unification
     alloy2('thermal:bronze_ingot', 4, 'thermal:tin_ingot', 1, 'minecraft:copper_ingot', 3, 9000)

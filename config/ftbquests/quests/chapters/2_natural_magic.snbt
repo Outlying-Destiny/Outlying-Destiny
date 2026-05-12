@@ -11,8 +11,8 @@
 	quests: [
 		{
 			dependencies: [
-				"2B9C8EF454CAFCB8"
 				"699B23728F627B1F"
+				"734947460042909A"
 			]
 			description: [
 				"Your next step is to perform the Ritual of the Forest and start your Naturalist Journey."

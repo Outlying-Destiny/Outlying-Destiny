@@ -5,4 +5,7 @@ ServerEvents.recipes(event => {
     event.remove({id:/sophisticatedstorage:storag.+/})
     event.remove({id:/minecraft:storage.+from.+/})
 
+    //Fix Log Warnings
+    event.remove({id:/sophisticatedstorage:.+_chest_from_quark_.+_chest/})
+
 })

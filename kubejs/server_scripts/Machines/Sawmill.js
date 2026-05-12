@@ -34,16 +34,25 @@ ServerEvents.recipes(event => {
     wood('twilightforest:mining')
     wood('twilightforest:sorting')
     wood('aether:skyroot')
-    wood('forbidden_arcanus:aurum')
     wood('thermal:rubberwood')
     wood('quark:ancient')
     wood('quark:azalea')
     wood('quark:blossom')
+
+    event.custom({"type":"mekanism:sawing","input":{"ingredient":{"tag":"forbidden_arcanus:mysterywood_logs"}},"mainOutput":{"count":6,"item":"forbidden_arcanus:aurum_planks"},"secondaryChance":0.25,"secondaryOutput":{"item":"mekanism:sawdust"}})
+    event.custom({"type":"mekanism:sawing","input":{"ingredient":{"item":"forbidden_arcanus:aurum_fence_gate"}},"mainOutput":{"count":2,"item":"forbidden_arcanus:aurum_planks"},"secondaryChance":1.0,"secondaryOutput":{"count":4,"item":"minecraft:stick"}})
+    event.custom({"type":"mekanism:sawing","input":{"ingredient":{"item":"forbidden_arcanus:aurum_pressure_plate"}},"mainOutput":{"item":"forbidden_arcanus:aurum_planks"},"secondaryChance":0.25,"secondaryOutput":{"count":2,"item":"mekanism:sawdust"}})
+    event.custom({"type":"mekanism:sawing","input":{"ingredient":{"item":"forbidden_arcanus:aurum_trapdoor"}},"mainOutput":{"count":3,"item":"forbidden_arcanus:aurum_planks"}})
+    event.custom({"type":"mekanism:sawing","input":{"ingredient":{"item":"forbidden_arcanus:aurum_door"}},"mainOutput":{"count":2,"item":"forbidden_arcanus:aurum_planks"}})
+    event.custom({"type":"mekanism:sawing","input":{"ingredient":{"item":"forbidden_arcanus:aurum_boat"}},"mainOutput":{"count":5,"item":"forbidden_arcanus:aurum_planks"}})
+
     event.custom({"type":"mekanism:sawing","input":{"ingredient":{"tag":"architects_palette:twisted_logs"}},"mainOutput":{"count":6,"item":"architects_palette:twisted_planks"},"secondaryChance":0.25,"secondaryOutput":{"item":"mekanism:sawdust"}})
     event.custom({"type":"mekanism:sawing","input":{"ingredient":{"item":"architects_palette:twisted_fence_gate"}},"mainOutput":{"count":2,"item":"architects_palette:twisted_planks"},"secondaryChance":1.0,"secondaryOutput":{"count":4,"item":"minecraft:stick"}})
     event.custom({"type":"mekanism:sawing","input":{"ingredient":{"item":"architects_palette:twisted_pressure_plate"}},"mainOutput":{"item":"architects_palette:twisted_planks"},"secondaryChance":0.25,"secondaryOutput":{"count":2,"item":"mekanism:sawdust"}})
     event.custom({"type":"mekanism:sawing","input":{"ingredient":{"item":"architects_palette:twisted_trapdoor"}},"mainOutput":{"count":3,"item":"architects_palette:twisted_planks"}})
     event.custom({"type":"mekanism:sawing","input":{"ingredient":{"item":"architects_palette:twisted_door"}},"mainOutput":{"count":2,"item":"architects_palette:twisted_planks"}})
 
+    //Remove Boat Chests Sawmilling
+    event.remove({id:/mekanism:sawing\/chest_boat/})
 
 })

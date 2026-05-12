@@ -24,11 +24,11 @@ ServerEvents.recipes(event => {
     }
 
     //Pulverizer Cleaning
-    event.remove({id:/therma.+pulverizer.+/})
+    event.remove({id:/thermal.+pulverizer.+/})
 
     //Induction Smelter Cleaning
-    event.remove({id: /thermal:machines.+smelter.+tools/})
-    event.remove({id: /thermal:machines.+smelter.+armor/})
+    event.remove({id: /thermal:machines\/smelter.+(tools|armor)/})
+    event.remove({id: /thermal_extra:machine\/smelter.+(tools|armor)/})
 
     //Catalysts
     event.remove({id:/thermal:machines\/smelter\/smelter_catalyst/})
@@ -64,8 +64,6 @@ ServerEvents.recipes(event => {
     oreprocraw("mekanism:ingot_osmium", "mekanism:dust_osmium", 1, "minecraft:iron_ingot", "thermal:iron_dust", "minecraft:iron_nugget", 1, "osmium")
     oreprocraw("mekanism:ingot_uranium", "mekanism:dust_uranium", 1, "thermal:lead_ingot", "thermal:lead_dust", "thermal:lead_nugget", 1, "uranium")
     oreproc2("mekanism:fluorite_gem", "mekanism:dust_fluorite", 3, "fluorite")
-    oreproc3("forbidden_arcanus:arcane_crystal", "forbidden_arcanus:arcane_crystal_dust", 1, "evilcraft:dark_gem", "evilcraft:dark_gem_crushed", 2.5, "arcane_crystal")
-    oreproc3("forbidden_arcanus:rune", "forbidden_arcanus:rune", 1, "forbidden_arcanus:arcane_crystal", "forbidden_arcanus:arcane_crystal_dust", 1, "rune")
     oreproc2("evilcraft:dark_gem", "evilcraft:dark_gem_crushed", 2.5, "dark")
     oreproc3("ae2:certus_quartz_crystal", "ae2:certus_quartz_dust", 3.5, "thermal:niter", "thermal:niter_dust", 2.5, "certus_quartz")
     oreproc2('draconicevolution:draconium_ingot', 'draconicevolution:draconium_dust', 1, 'draconium')

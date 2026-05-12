@@ -1,5 +1,17 @@
 ServerEvents.recipes(event => {
 
+    //Dark Gems
+    event.remove({id:'evilcraft:crafting/dark_gem'})
+    event.remove({id:'evilcraft:crafting/dark_block'})
+    event.shapeless('4x evilcraft:dark_gem', 'evilcraft:dark_block')
+    event.shaped('evilcraft:dark_block', ['AA ','AA ','   '], {A: 'evilcraft:dark_gem'})
+
+    //Dark Power Gems
+    event.remove({id:'evilcraft:crafting/dark_power_gem'})
+    event.remove({id:'evilcraft:crafting/dark_power_gem_block'})
+    event.shapeless('4x evilcraft:dark_power_gem', 'evilcraft:dark_power_gem_block')
+    event.shaped('evilcraft:dark_power_gem_block', ['AA ','AA ','   '], {A: 'evilcraft:dark_power_gem'})
+
     //Dark Tank
     event.remove({id:'evilcraft:crafting/dark_tank'})
     event.remove({id:'evilcraft:special/dark_tank_large'})

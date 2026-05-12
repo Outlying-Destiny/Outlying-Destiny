@@ -23,21 +23,15 @@ StartupEvents.registry('block', event => {
         .hardness(5).resistance(4).requiresTool(true)
         .tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_iron_tool')
 
-    event.create('dielectric_paste_block').displayName('Dielectric Paste Block').soundType('wool')
-        .hardness(3.0).resistance(1.0).requiresTool(true)
-        .tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_iron_tool')
-    //event.create('crystalline_pink_slime_block').displayName('Crystalline Pink Slime Block').soundType('metal')
-    //  .hardness(5.0).resistance(2.5).requiresTool(true)
-    //  .tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_iron_tool')
-    event.create('radiance_block').displayName('Radiance Block').soundType('wool')
-        .hardness(3.0).resistance(1.5).requiresTool(true)
-        .tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_iron_tool')
+    //Compressed Crafting Tables
     event.create('compressed_crafting_table').displayName('Compressed Crafting Table').soundType('wood')
         .hardness(3.5).resistance(3.5).requiresTool(false)
     .tagBlock('minecraft:mineable/axe').tagBlock('minecraft:needs_iron_tool')
     event.create('double_compressed_crafting_table').displayName('Double Compressed Crafting Table').soundType('wood')
         .hardness(4.5).resistance(4.5).requiresTool(false)
         .tagBlock('minecraft:mineable/axe').tagBlock('minecraft:needs_iron_tool')
+
+    //Ores
     event.create('quartz_ore').displayName('Quartz Ore').soundType('stone')
         .hardness(3).resistance(3).requiresTool(true)
         .tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_wooden_tool').tagBlock('forge:ores').tagBlock('forge:ores/quartz').item(t=>{t.tag('forge:ores').tag('forge:ores/quartz')})
@@ -81,6 +75,18 @@ StartupEvents.registry('block', event => {
         .tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_iron_tool')
     event.create('automaton_block').displayName('Automaton Block').soundType('metal')
         .hardness(8.0).resistance(4.0).requiresTool(true)
+        .tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_iron_tool')
+    //event.create('crystalline_pink_slime_block').displayName('Crystalline Pink Slime Block').soundType('metal')
+    //    .hardness(5.0).resistance(2.5).requiresTool(true)
+    //    .tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_iron_tool')
+    event.create('dielectric_paste_block').displayName('Dielectric Paste Block').soundType('wool')
+        .hardness(3.0).resistance(1.0).requiresTool(true)
+        .tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_iron_tool')
+    event.create('radiance_block').displayName('Radiance Block').soundType('wool')
+        .hardness(3.0).resistance(1.5).requiresTool(true)
+        .tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_iron_tool')
+    event.create('purified_block').displayName('Purified Gem Block').soundType('metal')
+        .hardness(6.0).resistance(3.0).requiresTool(true)
         .tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_iron_tool')
 
 

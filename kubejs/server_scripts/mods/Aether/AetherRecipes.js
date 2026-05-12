@@ -280,6 +280,10 @@ ServerEvents.recipes(event => {
             "results":[{"base_ingredient":{"item":'undergarden:catalyst'},
                 "count":1}],
             "time":1200
-    })    
+    })
+
+    //Rubberbood Chest Boat Quark Compat
+    event.shaped('aether:skyroot_chest_boat', ['ABA','AAA','   '], {A: 'aether:skyroot_planks', B:'#forge:chests/wooden'})
+
 
 })

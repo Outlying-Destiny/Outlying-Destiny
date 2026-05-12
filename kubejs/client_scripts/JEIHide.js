@@ -16,7 +16,7 @@ JEIEvents.hideItems(event => {
 
     //Applied Energistics 2
     event.hide(['ae2:crafting_card', 'ae2:spatial_anchor', 'ae2:crystal_resonance_generator', 'ae2:pattern_access_terminal', 'ae2wtlib:wireless_pattern_access_terminal'])
-    event.hide(['expatternprovider:circuit_cutter', 'expatternprovider:pattern_terminal_upgrade', /expatternprovider:assembler_matrix_/])
+    event.hide(['expatternprovider:circuit_cutter', 'expatternprovider:pattern_terminal_upgrade', /expatternprovider:assembler_matrix_/, 'expatternprovider:ex_crafting_terminal'])
     event.hide(['megacells:radioactive_cell_component', 'megacells:radioactive_chemical_cell'])
 
     //Baubley Heart Canisters
@@ -24,7 +24,7 @@ JEIEvents.hideItems(event => {
     event.hide('bhc:wither_bone')
     
     //Blood Magic
-    event.hide(['#bloodmagic:fragments', '#bloodmagic:gravels', 'bloodmagic:sand_netherite'])
+    event.hide(['#bloodmagic:fragments', '#bloodmagic:gravels', 'bloodmagic:sand_netherite', 'bloodmagic:saltpeter'])
 
     //Botania
     event.hide(/botania:.+_mushroom/)
@@ -45,7 +45,7 @@ JEIEvents.hideItems(event => {
     event.hide('endercrop:tilled_end_stone')
 
     //EnderIO
-    event.hide(['enderio:silicon', 'enderio:flour', 'enderio:cake_base', 'enderio:clayed_glowstone', 'enderio:glider_wing', 'enderio:enticing_crystal', /enderio:(powered_){0,1}light.+/, Item.of('minecraft:enchanted_book').enchant('enderio:repellent', 0), 'enderio:plant_matter_brown'])
+    event.hide(['enderio:silicon', 'enderio:flour', 'enderio:cake_base', 'enderio:clayed_glowstone', 'enderio:glider_wing', 'enderio:enticing_crystal', /enderio:(powered_){0,1}light.+/, Item.of('minecraft:enchanted_book').enchant('enderio:repellent', 0), 'enderio:plant_matter_brown', 'enderio:wood_gear', 'enderio:light', 'enderio:powered_light'])
     event.hide(['enderio:drain', 'enderio:stirling_generator', 'enderio:crafter', 'enderio:soul_engine', 'enderio:primitive_alloy_smelter', 'enderio:alloy_smelter', 'enderio:vacuum_chest', 'enderio:xp_vacuum', 'enderio:painting_machine', 'enderio:wired_charger'])
     event.hide([/enderio.+condui.+/, /enderio.+filte.+/, /enderio:extraction_speed_upgrade.+/])
 
@@ -54,7 +54,7 @@ JEIEvents.hideItems(event => {
     event.hide(['elementalcraft:inert_crystal_ore', 'elementalcraft:deepslate_inert_crystal_ore'])
 
     //EvilCraft
-    event.hide([/evilcraft:exalted_crafte.+/, 'evilcraft:entangled_chalice', /evilcraft:dark_tank/, /evilcraft:(poisonous_libelle|werewolf)_spawn_egg$/, 'evilcraft:poison_sac', 'evilcraft:flesh_werewolf', /evilcraft:werewolf_(fur|bone)$/, 'evilcraft:ender_tear', 'evilcraft:blood_stain', 'evilcraft:spirit_portal', /evilcraft:broom(_part)?$/])
+    event.hide([/evilcraft:exalted_crafte.+/, 'evilcraft:entangled_chalice', /evilcraft:dark_tank/, /evilcraft:(poisonous_libelle|werewolf)_spawn_egg$/, 'evilcraft:poison_sac', 'evilcraft:flesh_werewolf', /evilcraft:werewolf_(fur|bone)$/, 'evilcraft:ender_tear', 'evilcraft:blood_stain', 'evilcraft:spirit_portal', /evilcraft:broom(_part)?$/, 'evilcraft:environmental_accumulator', 'evilcraft:spirit_reanimator'])
     
     //Extended Crafting
     event.hide([/extendedcrafting:(enhanced_){0,1}redstone_(ingot|nugget|component|catalyst)/, /extendedcrafting:(auto_){0,1}flux_(alternator|crafter|star)/, 'packagedexcrafting:flux_crafter'])
@@ -72,7 +72,7 @@ JEIEvents.hideItems(event => {
     event.hide('fluxnetworks:admin_configurator')
     
     //Forbiddern Arcanus
-    event.hide(['forbidden_arcanus:xpetrified_ore', 'forbidden_arcanus:stella_arcanum', 'forbidden_arcanus:orb_of_temporary_flight', 'forbidden_arcanus:arcane_bone_meal', 'forbidden_arcanus:golden_orchid_seeds', 'forbidden_arcanus:arcane_crystal_dust_speck', 'forbidden_arcanus:nipa'])
+    event.hide(['forbidden_arcanus:xpetrified_ore', 'forbidden_arcanus:stella_arcanum', 'forbidden_arcanus:orb_of_temporary_flight', 'forbidden_arcanus:arcane_bone_meal', 'forbidden_arcanus:golden_orchid_seeds', 'forbidden_arcanus:arcane_crystal_dust_speck', 'forbidden_arcanus:nipa', 'forbidden_arcanus:purifying_soap', 'forbidden_arcanus:wet_purifying_soap'])
 
     //FTBQuests
     event.hide(/ftbquests:.+/)
@@ -93,7 +93,7 @@ JEIEvents.hideItems(event => {
     event.hide([/industrialforegoing:conveyo.+/, /industrialforegoing:.+_transporter_type/])
     event.hide(/industrialforegoing:mycelial_.+/)
     event.hide(/industrialforegoing:infinity.+/)
-    event.hide(['industrialforegoing:biofuel_generator', 'industrialforegoing:pitiful_generator', 'industrialforegoing:resourceful_furnace', 'industrialforegoing:spores_recreator', 'industrialforegoing:dye_mixer', 'industrialforegoing:mechanical_dirt', 'industrialforegoing:water_condensator', 'industrialforegoing:hydroponic_bed'])
+    event.hide(['industrialforegoing:biofuel_generator', 'industrialforegoing:pitiful_generator', 'industrialforegoing:resourceful_furnace', 'industrialforegoing:spores_recreator', 'industrialforegoing:dye_mixer', 'industrialforegoing:mechanical_dirt', 'industrialforegoing:water_condensator', 'industrialforegoing:hydroponic_bed', 'industrialforegoing:simulated_hydroponic_bed', 'industrialforegoing:hydroponic_simulation_processor'])
     event.hide([/industrialforegoing:.+_black_hole_.+/, 'industrialforegoing:black_hole_controller'])
 
     //Iron Jetpacks
@@ -107,9 +107,10 @@ JEIEvents.hideItems(event => {
 
     //Mekanism
     event.hide(['mekanism:formulaic_assemblicator', 'mekanism:crafting_formula', /mekanism:(restrictive|diversion)_transporter/, /mekanism_extras:(absolute|supreme|cosmic|infinite)_tier_installer/, 'mekanism:upgrade_gas', /mekanism:dynamic_(tank|valve)/, 'mekanism:oredictionificator'])
-    event.hide(['mekanism:enriched_tin', 'mekanism:enriched_refined_obsidian', 'mekanism_extras:enriched_lead'])
+    event.hide(['mekanism:enriched_tin', 'mekanism:enriched_refined_obsidian', 'mekanism_extras:enriched_lead', 'mekanism_extras:enriched_osmium'])
     event.hide([/mekanism:qio_(drive_array|dashboard|exporter|importer|redstone_adapter)/, 'mekanism:portable_qio_dashboard', /mekanism:qio_drive_(base|hyper_dense|time_dilating|supermassive)/, /mekanism_extras:qio_drive_(collapse|gamma|black_hole|singularity)/, /mekanism(_extras:expand_|:)radioactive_waste_barrel/, /mekanism.+_bin/])
     event.hide(/mekanism_extras:.+_factory$/)
+    event.hide('mekanism_extras:upgrade_stack')
 
     //Mob Grinding Utils
     event.hide(['mob_grinding_utils:entity_spawner', 'mob_grinding_utils:spawner_upgrade_height', 'mob_grinding_utils:spawner_upgrade_width', 'mob_grinding_utils:jumbo_tank'])
@@ -158,8 +159,12 @@ JEIEvents.hideItems(event => {
     event.hide([/thermal:.+mushroom_spores/, 'thermal_extra:ancient_dust', 'thermal_extra:sticky_ball', 'thermal:drill_head'])
     event.hide(['thermal:satchel', 'thermal_extra:device_lava_gen', 'thermal:device_water_gen', 'thermal:phytosoil', 'thermal:phytosoil_tiled', 'thermal:device_soil_infuser', 'thermal:xp_crystal', 'thermal:device_xp_condenser', 'thermal:xp_storage_augment', /thermal:press_(packing_2x2|packing_3x3|unpacking|coin)_die/, 'thermal_extra:device_harvester', 'thermal:device_nullifier', 'thermal:device_collector', 'thermal:charge_bench', 'thermal:chiller_rod_cast'])
     event.hide(['thermal:ruby_ore', 'thermal:deepslate_ruby_ore', 'thermal:sapphire_ore', 'thermal:deepslate_sapphire_ore'])
-    event.hide([/thermal:(ruby|sapphire)_gear/])
+    event.hide(/thermal:(ruby|sapphire|gold|tin|lead|nickel|rose_gold|invar|lapis|diamond|emerald|quartz)_gear/)
+    event.hide(/thermal:(netherite|tin|rose_gold)_plate/)
+    event.hide(/thermal_extra:(soul_infused|shellite|abyssal)_plate/)
     event.hide(/thermal_extra:.+_(helmet|chestplate|leggings|boots|sword|axe|pickaxe|shovel|hoe|excavator|hammer|knife|sickle)/)
+    event.hide(/thermal_extra:(soul_infused|twinite|shellite|dragonsteel|abyssal|copper|diamond|emerald|netherite|lead|tin|silver|nickel|bronze|electrum|constantan|lumium|enderium)_rod/)
+
 
     //Twilight Forest
     event.hide(/twilightforest:.+boss_spawner/)

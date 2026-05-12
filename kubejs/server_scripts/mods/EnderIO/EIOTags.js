@@ -12,7 +12,7 @@ ServerEvents.tags('item', event => {
     event.add('forge:heads', 'enderio:enderman_head')
 
     //Dark Bimetal Gear
-    event.removeAllTagsFrom('enderio:dark_bimetal_gear')
+    event.removeAllTagsFrom(/enderio:(wood|stone|energized|vibrant|dark_bimetal)_gear/)
 
     //Capacitors
     event.add('enderio:capacitor', /enderio:.+_capacitor/)

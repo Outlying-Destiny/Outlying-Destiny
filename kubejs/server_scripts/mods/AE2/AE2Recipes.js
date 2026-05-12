@@ -202,9 +202,10 @@ ServerEvents.recipes(event => {
     event.remove({id:/ae2wtlib:pattern_(encoding|access)/})
     event.remove({id:'expatternprovider:wireless_ex_pat'})
 
-    //Wireless Connector / Tool
+    //Wireless Connector / Tool / Hub
     event.remove({id:/expatternprovider:wireless_(connector|tool)/})
     detailedbox('expatternprovider:wireless_connect', 'extendedcrafting:black_iron_ingot', 'ae2:wireless_receiver', '#ae2:smart_cable', 'thermal:machine_frame')
     event.shaped('expatternprovider:wireless_tool', [' A ','BCB',' B '], {A: 'ae2:wireless_receiver',B: 'extendedcrafting:black_iron_ingot',C: 'kubejs:extradimensional_processor'})
-
+    event.replaceInput({ output: 'expatternprovider:wireless_hub'},'ae2:engineering_processor','kubejs:extradimensional_processor')
+    event.replaceInput({ output: 'expatternprovider:wireless_advanced_tool'},'minecraft:nether_star','ae2:fluix_pearl')
 })

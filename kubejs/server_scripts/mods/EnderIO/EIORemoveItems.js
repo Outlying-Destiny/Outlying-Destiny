@@ -54,4 +54,10 @@ ServerEvents.recipes(event => {
     //Flour / Base Cake
     event.remove({id:'enderio:sag_milling/wheat'})
     event.remove({id:'enderio:cake'})
+
+    //Wooden Gear
+    event.remove({id:'enderio:wood_gear'})
+    event.remove({id:'enderio:wood_gear_corner'})
+    event.remove({id:'enderio:stone_gear_upgrade'})
+
 })

@@ -1,19 +1,30 @@
 StartupEvents.registry('item', event => {
 
-  event.create('iron_fragment').tooltip("Your very first source of iron")
+  event.create('iron_fragment').displayName('Iron Fragment').tooltip("Your very first source of iron")
+  event.create('purifying_soap').displayName('Purifying Soap')
+  event.create('purified_gem').displayName('Purified Gem')
   event.create('twilight_powder').displayName("Powder of Twilight")
   event.create('token_twilight').displayName("Token of Twilight")
   event.create('your_soul').displayName("Your Soul?")
   event.create('freed_soul').displayName("Freed Soul")
+
+  //Undergarden's Core
   event.create('base_core').displayName('Base Core')
   event.create('enchanted_core').displayName('Enchanted Core')
   event.create('frozen_core').displayName('Frozen Core')
-  //event.create('crystalline_pink_slime_ingot').displayName('Crystalline Pink Slime Ingot')
+
+  event.create('ender_core').displayName('Ender Core').maxDamage(10000)
+
+  //Dye Blends
   event.create('void_infused_dye_blend').displayName('Void Infused Dye Blend')
   event.create('soul_attuned_dye_blend').displayName('Soul Attuned Dye Blend')
-  event.create('ender_core').displayName('Ender Core').maxDamage(10000)
+
+
+  //Drill Upgrades
   event.create('drill_upgrade_base').displayName('Drill Augment Base')
   event.create('drill_upgrade_auto_smelt').displayName('Subtitute Drill Auto-Smelt Augment')
+
+  //Blaze's Dusts
   event.create('aerotheum_dust').displayName('Aerotheum Dust')
   event.create('cryotheum_dust').displayName('Cryotheum Dust')
   event.create('petrotheum_dust').displayName('Petrotheum Dust')
@@ -50,6 +61,7 @@ StartupEvents.registry('item', event => {
   event.create('machinarium_ingot').displayName('Machinarium Ingot')
   event.create('red_alloy_compound').displayName('Red Alloy Compound')
   event.create('red_alloy_ingot').displayName('Red Alloy Ingot')
+  //event.create('crystalline_pink_slime_ingot').displayName('Crystalline Pink Slime Ingot')
 
   //Tools
   event.create('dark_steel_shears', 'shears').displayName('Dark Steel Shears').maxDamage(952)
@@ -68,8 +80,8 @@ StartupEvents.registry('item', event => {
   event.create('red_alloy_gear').displayName('Red Alloy Gear')
   event.create('energized_steel_gear').displayName('Energized Steel Gear').tag('forge:gears')
   event.create('enchanted_gear').displayName('Enchanted Gear').tag('forge:gears')
-  event.create('infinity_gear').displayName('Infinity Bimetal Gear').tag('forge:gears')
-  event.create('end_bimetal_gear').displayName('End Bimetal Gear').tag('forge:gears')
+  event.create('infinity_gear').displayName('Infinity Bimetal Gear')
+  event.create('end_bimetal_gear').displayName('End Bimetal Gear')
   event.create('black_iron_gear').displayName('Black Iron Gear').tag('forge:gears')
 
   //Rods
@@ -98,11 +110,11 @@ StartupEvents.registry('item', event => {
   event.create('signalum_catalyst').displayName('Signalum Catalyst')
 
   //Actually Additions Empowered Crystal Shards
-  event.create('actuallyadditions:empowered_enori_crystal_shard').displayName('Empowered Light Brown Crystal Shard').glow(true)
-  event.create('actuallyadditions:empowered_palis_crystal_shard').displayName('Empowered Orange Crystal Shard').glow(true)
-  event.create('actuallyadditions:empowered_diamatine_crystal_shard').displayName('Empowered Light Blue Crystal Shard').glow(true)
-  event.create('actuallyadditions:empowered_emeradic_crystal_shard').displayName('Empowered Green Crystal Shard').glow(true)
-  event.create('actuallyadditions:empowered_restonia_crystal_shard').displayName('Empowered Red Crystal Shard').glow(true)
+  event.create('actuallyadditions:empowered_enori_crystal_shard').displayName('Empowered Enori Crystal Shard').glow(true)
+  event.create('actuallyadditions:empowered_palis_crystal_shard').displayName('Empowered Blazis Crystal Shard').glow(true)
+  event.create('actuallyadditions:empowered_diamatine_crystal_shard').displayName('Empowered Diamatine Blue Crystal Shard').glow(true)
+  event.create('actuallyadditions:empowered_emeradic_crystal_shard').displayName('Empowered Emeradic Crystal Shard').glow(true)
+  event.create('actuallyadditions:empowered_restonia_crystal_shard').displayName('Empowered Restonia Crystal Shard').glow(true)
 
   //Thermal Augments (Base Code from Mierno by FalAut, go play it!)
   event.createCustom('thermal:twinite_rf_coil_augment',() =>new $AugmentItem(new $Item$Properties(), {Type: 'RF', RFXfer: 16, RFMax: 16})).displayName('Twinite Expanded RF Coil')

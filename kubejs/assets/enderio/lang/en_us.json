@@ -1,6 +1,6 @@
 {
-    "block.enderio.copper_alloy_block": "Copper Alloy Block",
-    "item.enderio.copper_alloy_grinding_ball": "Copper Alloy Grinding Ball",
-    "item.enderio.copper_alloy_ingot": "Copper Alloy Ingot",
-    "item.enderio.copper_alloy_nugget": "Copper Alloy Nugget"
+    "block.enderio.copper_alloy_block": "Bronze Alloy Block",
+    "item.enderio.copper_alloy_grinding_ball": "Bronze Alloy Grinding Ball",
+    "item.enderio.copper_alloy_ingot": "Bronze Alloy Ingot",
+    "item.enderio.copper_alloy_nugget": "Bronze Alloy Nugget"
 }

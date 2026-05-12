@@ -1,4 +1,11 @@
 {
+  "framedblocks": {
+    "framed_item_frame": true
+  },
+  "evilcraft": {
+    "box_of_eternal_closure": true,
+    "broom": true
+  },
   "minecraft": {
     "item_storage.show_name_amount": 5,
     "furnace": true,
@@ -54,8 +61,23 @@
   "entangled": {
     "entangled_block_component": true
   },
+  "jadeaddons.mcjtylib": {
+    "jadeaddons": true
+  },
   "mekanismcovers": {
     "cover_component": true
+  },
+  "endercrop": {
+    "endercrop": true,
+    "endstone": false
+  },
+  "pneumaticcraft": {
+    "pneumatic": true,
+    "tube_module": true,
+    "entity": true,
+    "redstone": true,
+    "camo": true,
+    "semiblock": true
   },
   "immersiveengineering": {
     "multiblock_icon": true
@@ -68,11 +90,21 @@
     "registry_name": "OFF",
     "mod_name": true
   },
+  "expatternprovider": {
+    "jade_chamber": true,
+    "jade_wireless": true
+  },
   "botania_editor": {
     "botania_spreader": true,
     "botania_spreader_advanced": true,
     "botania_mana": true,
     "botania_flower": true
+  },
+  "functionalstorage": {
+    "armory": true
+  },
+  "balm": {
+    "jade": true
   },
   "custommachinery": {
     "machine_component_provider": true
@@ -88,6 +120,9 @@
     "power_storage": true,
     "crafting_monitor": true,
     "part_name": true
+  },
+  "modularrouters": {
+    "router": true
   },
   "mbd2": {
     "recipe_logic_provider": true,
@@ -112,6 +147,9 @@
     "tesseract": true,
     "remove_default": true
   },
+  "jadeaddons": {
+    "equipment_requirement": ""
+  },
   "hammerlib": {
     "root": true
   },
@@ -125,57 +163,12 @@
     "energy": true,
     "tooltip_renderer": true
   },
-  "framedblocks": {
-    "framed_item_frame": true
-  },
-  "mm": {
-    "controller_progress": true
-  },
-  "endercrop": {
-    "endercrop": true,
-    "endstone": false
-  },
-  "pneumaticcraft": {
-    "pneumatic": true,
-    "tube_module": true,
-    "entity": true,
-    "redstone": true,
-    "camo": true,
-    "semiblock": true
-  },
-  "expatternprovider": {
-    "jade_chamber": true,
-    "jade_wireless": true
-  },
-  "mcjtylib": {
-    "jadeaddons": true
-  },
-  "balm": {
-    "jade": true
-  },
-  "modularrouters": {
-    "router": true
-  },
-  "jadeaddons": {
-    "equipment_requirement": ""
-  },
   "shetiphiancore": {
     "hud.rgb16": true,
     "hud": true,
     "hud.redstone": true
   },
-  "mysticalagradditions": {
-    "infused_farmland": true
-  },
   "twilightforest": {
     "quest_ram_wool": true
-  },
-  "corpse": {
-    "corpse": true
-  },
-  "mysticalagriculture": {
-    "infused_farmland": true,
-    "crop": true,
-    "inferium_crop": true
   }
 }

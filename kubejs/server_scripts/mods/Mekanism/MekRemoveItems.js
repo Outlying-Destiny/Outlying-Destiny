@@ -32,8 +32,10 @@ ServerEvents.recipes(event => {
     //Dynamic Tank
     event.remove({id:/mekanism:dynamic_(tank|valve)/})
 
-    //Enriched Lead
+    //Enriched Lead & Osmium
     event.remove({id:'mekanism_extras:enriching/enriched/dust_lead'})
+    event.remove({id:'mekanism_extras:enriching/enriched/dust_osmium'})
+    event.remove({id:'mekanism_extras:gas_conversion/osmium_from_enriched'})
 
     //Enriched Mekanism Extras Stuff
     event.remove({id:'mekanism_extras:enriching/enriched/dust_radiance'})
@@ -46,4 +48,8 @@ ServerEvents.recipes(event => {
 
     //Mekanism Extras Factories
     event.remove({id:/mekanism_extras:factory\//})
+
+    //Stack Upgrade
+    event.remove({id:'mekanism_extras:upgrade/stack'})
+    
 })

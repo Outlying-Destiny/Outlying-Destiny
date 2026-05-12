@@ -11,5 +11,11 @@ ServerEvents.recipes(event => {
         event.shaped('4x twilightforest:'+wood+'_chest', ['AAA','A A','AAA'], {A: '#twilightforest:'+wood+'_logs'})
     })
 
+    //Chest Boats
+    const twilightchestBoat = [['twilight_oak'], ['canopy'], ['mangrove'], ['dark'], ['time'], ['transformation'], ['mining'], ['sorting']]
+    twilightchestBoat.forEach((wood) => {
+        event.shaped('twilightforest:'+wood+'_chest_boat', ['ABA','AAA','   '], {A: 'twilightforest:'+wood+'_planks', B:'#forge:chests/wooden'})
+    })
+
 
 })

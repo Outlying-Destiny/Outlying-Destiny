@@ -8,4 +8,8 @@ ServerEvents.recipes(event => {
     //Remove reverse Netherrite
     event.remove({id:'bloodmagic:arc/reversion/netherite_ingot'})
 
+    //Remove Saltpeter
+    event.remove({id:'bloodmagic:smelting/saltpeter'})
+    event.remove({id:'bloodmagic:alchemytable/saltpeter'})
+
 })

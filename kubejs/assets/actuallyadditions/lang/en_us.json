@@ -3,6 +3,9 @@
   "block.actuallyadditions.empowered_palis_crystal_block": "Empowered Blazis Crystal Block",
   "item.actuallyadditions.palis_crystal": "Blazis Crystal",
   "item.actuallyadditions.empowered_palis_crystal": "Empowered Blazis Crystal",
-  "item.actuallyadditions.palis_crystal_shard": "Orange Crystal Shard",
-  "item.actuallyadditions.enori_crystal_shard": "Light Brown Crystal Shard"
+  "item.actuallyadditions.palis_crystal_shard": "Blazis Crystal Shard",
+  "item.actuallyadditions.enori_crystal_shard": "Enori Crystal Shard",
+  "item.actuallyadditions.diamatine_crystal_shard": "Diamatine Crystal Shard",
+  "item.actuallyadditions.emeradic_crystal_shard": "Emeradic Crystal Shard",
+  "item.actuallyadditions.restonia_crystal_shard": "Restonia Crystal Shard"
 }

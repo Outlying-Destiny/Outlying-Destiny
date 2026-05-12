@@ -1,15 +1,11 @@
 ServerEvents.tags('item', event => {
 
     //Ores
-    event.add('forge:ores/arcane_crystal', '#forbidden_arcanus:arcane_crystal_ores')
-    event.add('forge:ores/rune', '#forbidden_arcanus:runic_stones')
-    event.add('forge:ores', ['#forbidden_arcanus:arcane_crystal_ores', '#forbidden_arcanus:runic_stones'])
+    event.removeAllTagsFrom(['forbidden_arcanus:arcane_crystal_ore', 'forbidden_arcanus:deepslate_arcane_crystal_ore', 'forbidden_arcanus:runic_stone', 'forbidden_arcanus:runic_deepslate', 'forbidden_arcanus:runic_darkstone'])
 })
 
 ServerEvents.tags('block', event => {
 
     //Ores
-    event.add('forge:ores/arcane_crystal', '#forbidden_arcanus:arcane_crystal_ores')
-    event.add('forge:ores/rune', '#forbidden_arcanus:runic_stones')
-    event.add('forge:ores', ['#forbidden_arcanus:arcane_crystal_ores', '#forbidden_arcanus:runic_stones'])
+    event.removeAllTagsFrom(['forbidden_arcanus:arcane_crystal_ore', 'forbidden_arcanus:deepslate_arcane_crystal_ore', 'forbidden_arcanus:runic_stone', 'forbidden_arcanus:runic_deepslate', 'forbidden_arcanus:runic_darkstone'])
 })

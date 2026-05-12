@@ -11,6 +11,8 @@ ServerEvents.recipes(event => {
     event.remove({id:'industrialforegoing:dissolution_chamber/mechanical_dirt'})
     event.remove({id:'industrialforegoing:water_condensator'})
     event.remove({id:'industrialforegoing:hydroponic_bed'})
+    event.remove({id:'industrialforegoing:simulated_hydroponic_bed'})
+    event.remove({id:'industrialforegoing:hydroponic_simulation_processor'})
 
 
     //Conveyors & Transporters

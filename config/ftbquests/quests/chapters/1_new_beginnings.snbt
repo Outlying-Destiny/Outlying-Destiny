@@ -320,13 +320,13 @@
 				type: "item"
 			}]
 			title: "Everything's better with a bit of gold"
-			x: 0.6d
+			x: 0.8999999999999999d
 			y: -4.2d
 		}
 		{
 			dependencies: [
 				"699B23728F627B1F"
-				"2B9C8EF454CAFCB8"
+				"734947460042909A"
 			]
 			description: [
 				"Your next step is to perform the Ritual of the Forest and start your Naturalist Journey."
@@ -404,8 +404,8 @@
 				}
 			]
 			title: "This one's magical, trust me"
-			x: 0.6d
-			y: -1.7999999999999998d
+			x: 0.8999999999999999d
+			y: -2.875d
 		}
 		{
 			dependencies: ["72EB2ED8D9D7B364"]
@@ -435,7 +435,7 @@
 			}]
 			title: "Bundles sure looks differents"
 			x: -5.3999999999999995d
-			y: -4.2d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -458,7 +458,7 @@
 			}]
 			title: "Got enough slots yet?"
 			x: -5.3999999999999995d
-			y: -3.0d
+			y: -1.7999999999999998d
 		}
 		{
 			dependencies: ["616F8356C06E4806"]
@@ -511,8 +511,8 @@
 				type: "item"
 			}]
 			title: "Now including Fancy Options"
-			x: -6.0d
-			y: -5.3999999999999995d
+			x: -5.3999999999999995d
+			y: -4.2d
 		}
 		{
 			dependencies: ["616F8356C06E4806"]
@@ -607,6 +607,7 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["463D54DAEECAC15F"]
 			description: [
 				"You can craft leather with rotten flesh now!"
 				""
@@ -652,62 +653,13 @@
 				type: "item"
 			}]
 			title: "Rock, Pickaxe, Lava!"
-			x: -5.3999999999999995d
-			y: -1.7999999999999998d
-		}
-		{
-			dependencies: ["616F8356C06E4806"]
-			description: [
-				"Mine some Arcane Crystals."
-				""
-				"You can find them between y=-40 and y=14."
-			]
-			id: "2B9C8EF454CAFCB8"
-			min_width: 300
-			rewards: [{
-				count: 12
-				id: "3DB0B3F77A7D9802"
-				item: "forbidden_arcanus:arcane_crystal"
-				type: "item"
-			}]
-			tasks: [{
-				count: 20L
-				id: "403EB54BD15D5B91"
-				item: "forbidden_arcanus:arcane_crystal"
-				type: "item"
-			}]
-			title: "Shinier!"
-			x: -1.7999999999999998d
-			y: -1.7999999999999998d
-		}
-		{
-			dependencies: ["3DA41078DF459632"]
-			description: [
-				"Mine some runes."
-				""
-				"You can find them anywhere below y=2."
-			]
-			id: "581158A159C3EB4C"
-			min_width: 300
-			rewards: [{
-				id: "28A82AA7C4893E8A"
-				item: "forbidden_arcanus:rune"
-				type: "item"
-			}]
-			tasks: [{
-				count: 3L
-				id: "2B42F869B6EFAE30"
-				item: "forbidden_arcanus:rune"
-				type: "item"
-			}]
-			title: "Like the dwarf you are"
-			x: -5.3999999999999995d
+			x: -3.0d
 			y: -0.6d
 		}
 		{
 			dependencies: [
 				"6AD41103407CF7B6"
-				"581158A159C3EB4C"
+				"734947460042909A"
 				"555D82860FDAE970"
 			]
 			description: [
@@ -723,15 +675,14 @@
 				table_id: 6307414237475125258L
 				type: "choice"
 			}]
-			size: 1.3d
 			tasks: [{
 				id: "341DA724CF7B98AD"
 				item: "minecraft:enchanting_table"
 				type: "item"
 			}]
 			title: "It makes things shiny"
-			x: -6.6d
-			y: -1.7999999999999998d
+			x: -1.5d
+			y: -0.6d
 		}
 		{
 			description: [
@@ -747,7 +698,7 @@
 				type: "checkmark"
 			}]
 			title: "&c&lImportant: World Gen and Trading"
-			x: -1.2d
+			x: 0.0d
 			y: -5.3999999999999995d
 		}
 		{
@@ -771,8 +722,8 @@
 				title: "&c&lImportant: Fire Spread"
 				type: "checkmark"
 			}]
-			x: -0.6d
-			y: -6.6d
+			x: -1.2d
+			y: -5.3999999999999995d
 		}
 		{
 			dependencies: ["72EB2ED8D9D7B364"]
@@ -783,6 +734,8 @@
 				""
 				"You can easily find bookshelves inside structures if you're not looking for a cow killing spree."
 			]
+			hide_dependency_lines: false
+			hide_dependent_lines: true
 			id: "555D82860FDAE970"
 			min_width: 300
 			rewards: [{
@@ -853,8 +806,8 @@
 				title: "Welcome to Outlying Destiny!"
 				type: "checkmark"
 			}]
-			x: -6.6d
-			y: -6.6d
+			x: -6.0d
+			y: -5.3999999999999995d
 		}
 		{
 			description: [
@@ -881,8 +834,8 @@
 				type: "checkmark"
 			}]
 			title: "&c&lImportant: Bugs?"
-			x: -1.2d
-			y: -7.8d
+			x: -0.6d
+			y: -6.6d
 		}
 		{
 			description: [
@@ -911,7 +864,7 @@
 				type: "checkmark"
 			}]
 			title: "&c&lImportant: Questbook Manual"
-			x: -6.0d
+			x: -4.8d
 			y: -7.8d
 		}
 		{
@@ -944,7 +897,7 @@
 				title: "&c&lImportant: Useful Shortcuts"
 				type: "checkmark"
 			}]
-			x: -3.5999999999999996d
+			x: -2.4d
 			y: -7.8d
 		}
 		{
@@ -987,7 +940,7 @@
 				title: "&c&lImportant: JEI Manual"
 				type: "checkmark"
 			}]
-			x: -4.8d
+			x: -3.5999999999999996d
 			y: -7.8d
 		}
 		{
@@ -1017,7 +970,7 @@
 				title: "&c&lImportant: Teaming Up"
 				type: "checkmark"
 			}]
-			x: -2.4d
+			x: -1.2d
 			y: -7.8d
 		}
 		{
@@ -1077,6 +1030,60 @@
 			}]
 			x: -1.7999999999999998d
 			y: -6.6d
+		}
+		{
+			dependencies: ["1D20345812595374"]
+			description: [
+				"You reached your first complicated recipe, I see."
+				""
+				"Not much to say but that you can use a campfire below the Cooking Pot to keep it hot and to make sure you're using full fluid blocks when doing In-World Crafting."
+				""
+				"JEI shall explain you the rest."
+				""
+				"Well, get to work already!"
+			]
+			id: "734947460042909A"
+			min_width: 300
+			rewards: [{
+				count: 2
+				id: "683F0989AF6CA3A3"
+				item: "kubejs:purified_block"
+				type: "item"
+			}]
+			tasks: [{
+				count: 6L
+				id: "51075ED2915FC861"
+				item: "kubejs:purified_block"
+				type: "item"
+			}]
+			title: "Shiny Once Again!"
+			x: 0.0d
+			y: -1.7999999999999998d
+		}
+		{
+			dependencies: ["616F8356C06E4806"]
+			description: [
+				"Mine some Dark Gems."
+				""
+				"You can find them between y=-32 and y=66."
+			]
+			id: "1D20345812595374"
+			min_width: 300
+			rewards: [{
+				count: 8
+				id: "360BDF5DE72505FD"
+				item: "evilcraft:dark_gem"
+				type: "item"
+			}]
+			tasks: [{
+				count: 16L
+				id: "72D2DBA042EB136D"
+				item: { Count: 16, id: "evilcraft:dark_gem" }
+				type: "item"
+			}]
+			title: "Not... Shiny"
+			x: -1.5d
+			y: -1.7999999999999998d
 		}
 	]
 	title: "1. New Beginnings"

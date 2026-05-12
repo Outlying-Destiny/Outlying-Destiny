@@ -21,4 +21,8 @@ ServerEvents.recipes(event => {
 
     //Assembler Matrix
     event.remove({id:/expatternprovider:assembler_matrix_/})
+
+    //ME Extended Crafting Terminal (Wishing for a Wireless version)
+    event.remove({id:'expatternprovider:ex_crafting_terminal'})
+    
 })

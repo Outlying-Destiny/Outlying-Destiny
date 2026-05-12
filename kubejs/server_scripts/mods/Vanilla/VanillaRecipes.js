@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
 
     //Enchanting Table
     event.remove({ output: 'minecraft:enchanting_table' })
-    event.shaped('minecraft:enchanting_table', [' A ','BCB','CDC'], {A: 'minecraft:book',B: 'minecraft:diamond',C: 'compressium:obsidian_1',D: 'forbidden_arcanus:rune_block'})
+    event.shaped('minecraft:enchanting_table', [' A ','BCB','CDC'], {A: 'minecraft:book',B: 'minecraft:diamond',C: 'compressium:obsidian_1',D: 'kubejs:purified_block'})
 
     //Flint and steel
     event.replaceInput({ output: 'minecraft:flint_and_steel' },'minecraft:iron_ingot','thermal:steel_ingot'         )
@@ -72,5 +72,5 @@ ServerEvents.recipes(event => {
     //Lever
     event.remove({id:/(minecraft|terralith):lever/})
     event.shaped('minecraft:lever', [' A ',' B ','   '], {A:'#forge:rods/wooden',B:'#minecraft:stone_crafting_materials'})
-    
+
 })

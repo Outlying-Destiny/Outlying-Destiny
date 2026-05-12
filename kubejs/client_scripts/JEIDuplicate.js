@@ -17,7 +17,9 @@ JEIEvents.removeCategories(event => {
         'elementalcraft:purification',
         'pneumaticcraft:spawner_extraction',
         'bloodmagic:arcfurnace',
-        'enderio:fire_crafting'
+        'enderio:fire_crafting',
+        'evilcraftcompat:environmental_accumulator',
+        'evilcraftcompat:spirit_reanimator',
     )
 })
 

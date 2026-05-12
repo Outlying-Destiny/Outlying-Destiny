@@ -11,4 +11,11 @@ ServerEvents.recipes(event => {
 
     //Arane Crystal Dust Speck (From removed Nipa)
     event.remove({id:'forbidden_arcanus:arcane_crystal_dust'})
+
+    //Purifying Soap
+    event.remove({id:'forbidden_arcanus:purifying_soap'})
+
+    //Arcane Crystal / Rune Ores
+    event.remove({id:/forbidden_arcanus:(smelting|blasting)\/(arcane_crystal|rune)_from_/})
+
 })

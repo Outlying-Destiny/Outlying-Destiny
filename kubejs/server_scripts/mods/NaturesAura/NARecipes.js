@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
 
     //Wooden Stand
     event.remove({id:'naturesaura:wood_stand'})
-    event.shaped('naturesaura:wood_stand', ['ABA','ACA','AAA'], {A: '#minecraft:logs',B: 'naturesaura:gold_leaf',C: 'forbidden_arcanus:arcane_crystal_block'})
+    event.shaped('naturesaura:wood_stand', ['ABA','ACA','AAA'], {A: '#minecraft:logs',B: 'naturesaura:gold_leaf',C: 'kubejs:purified_block'})
 
     //Gunpowder
     woodenstand("minecraft:gunpowder", "minecraft:redstone", "minecraft:clay_ball", "minecraft:glowstone_dust", "minecraft:clay_ball", "minecraft:redstone", "minecraft:clay_ball", "minecraft:glowstone_dust", "minecraft:clay_ball", "forge:sapling", 16, 400)
@@ -39,7 +39,7 @@ ServerEvents.recipes(event => {
 
     //Tainted Gold
     event.remove({id:/naturesaura:altar\/tainted_gold/})
-    altar("naturesaura:tainted_gold", "minecraft:gold_block", 6000, 30)
+    altar("naturesaura:tainted_gold", "minecraft:gold_ingot", 6000, 30)
     altar("naturesaura:tainted_gold_block", "minecraft:gold_block", 54000, 270)
 
     //Offering Table

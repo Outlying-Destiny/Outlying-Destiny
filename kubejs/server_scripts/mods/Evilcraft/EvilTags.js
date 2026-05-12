@@ -11,5 +11,6 @@ ServerEvents.tags('block', event => {
 
     //Ores
     event.add('forge:ores/dark', '#evilcraft:dark_ores')
+    event.add('minecraft:needs_iron_tool', '#evilcraft:dark_ores')
 
 })

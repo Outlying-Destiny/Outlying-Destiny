@@ -77,6 +77,11 @@ ServerEvents.recipes(event => {
     event.remove({id:'enderio:sag_mill'})
     event.shaped('enderio:sag_mill', ['AAA','BCB','DED'], {A: 'enderio:end_steel_ingot',B: 'enderio:dark_steel_ingot',C: 'enderio:void_chassis',D: 'enderio:dark_bimetal_gear',E: 'minecraft:piston'})
 
+    //Slice'N'Splice
+    event.remove({id:'enderio:slice_and_splice'})
+    event.shaped('enderio:slice_and_splice', ['ABA','ACA','DED'], {A: 'enderio:soularium_ingot',B: '#forge:heads',C: 'enderio:ensouled_chassis',D: 'enderio:energized_gear',E: 'enderio:dark_steel_bars'})
+
+
     //Soul Binder
     event.remove({id:'enderio:soul_binder'})
     event.shaped('enderio:soul_binder', ['ABA','CDC','AEA'], {A: 'enderio:soularium_ingot',B: 'enderio:z_logic_controller',C: 'enderio:energized_gear',D: 'enderio:ensouled_chassis',E: 'enderio:experience_rod'})

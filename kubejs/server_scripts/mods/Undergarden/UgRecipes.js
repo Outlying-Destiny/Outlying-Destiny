@@ -6,4 +6,10 @@ ServerEvents.recipes(event => {
     //Catalyst smelting
     event.remove({id:/undergarden:(smelt|blast)_catalyst/})
 
+    //Chest Boats
+    const undergardenchestBoat = [['smogstem'], ['wigglewood'], ['grongle']]
+    undergardenchestBoat.forEach((wood) => {
+        event.shaped('undergarden:'+wood+'_chest_boat', ['ABA','AAA','   '], {A: 'undergarden:'+wood+'_planks', B:'#forge:chests/wooden'})
+    })
+
 })

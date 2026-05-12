@@ -13,4 +13,7 @@ ServerEvents.recipes(event => {
     event.remove({id:'evilcraft:crafting/minecraft_leather'})
     event.remove({id:'evilcraft:crafting/minecraft_bone_meal'})
 
+    //Spirit Reanimator
+    event.remove({id:'evilcraft:crafting/spirit_reanimator'})
+
 })
