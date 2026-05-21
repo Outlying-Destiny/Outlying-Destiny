@@ -1,14 +1,13 @@
 ServerEvents.recipes(event => {
 
     //Function Combination Crafting
-    function combination4(output, baseinput, input1, input2, input3, input4, energyrate, time){event.custom({"type": "extendedcrafting:combination","powerCost": energyrate*time,"powerRate": energyrate,"input": {"item": baseinput, "count": 1},"ingredients": [{"item":input1},{"item":input2},{"item":input3},{"item":input4}],"result": {"item": output }})}    
-    //function combinatione(output, baseinput, input1, input2, input3, florbnbt, energyrate, time){event.custom({"type": "extendedcrafting:combination","powerCost": energyrate*time,"powerRate": energyrate,"input": {"item": baseinput, "count": 1},"ingredients": [{"item":input1},{"item":input2},{"item":input3},{"type": "forge:nbt", "item": "thermal:florb", "nbt": florbnbt}],"result": {"item": output }})}    
+    function combination4(output, baseinput, input1, input2, input3, input4, energyrate, time){event.custom({"type": "extendedcrafting:combination","powerCost": energyrate*time,"powerRate": energyrate,"input": {"item": baseinput, "count": 1},"ingredients": [{"item":input1},{"item":input2},{"item":input3},{"item":input4}],"result": {"item": output }})}
+    function combination8(output, baseinput, input1, input2, input3, input4, input5, input6, input7, input8, energyrate, time){event.custom({"type": "extendedcrafting:combination","powerCost": energyrate*time,"powerRate": energyrate,"input": {"item": baseinput, "count": 1},"ingredients": [{"item":input1},{"item":input2},{"item":input3},{"item":input4},{"item":input5},{"item":input6},{"item":input7},{"item":input8}],"result": {"item": output }})}
 
     //Advanced Coil
-    combination4('actuallyadditions:advanced_coil', 'actuallyadditions:basic_coil', 'actuallyadditions:palis_crystal', 'actuallyadditions:palis_crystal', 'actuallyadditions:palis_crystal', 'actuallyadditions:palis_crystal', 128, 20)
+    combination4('actuallyadditions:advanced_coil', 'actuallyadditions:basic_coil', 'actuallyadditions:palis_crystal', 'actuallyadditions:palis_crystal', 'actuallyadditions:palis_crystal', 'actuallyadditions:palis_crystal', 256, 20)
 
-    //Empowered Powah Materials
-    //combinatione('actuallyadditions:empowered_enori_crystal', 'powah:steel_energized', 'enderio:energized_gear', 'extendedcrafting:luminessence', 'mekanism:yellow_cake_uranium', '{Fluid:{Amount:1000,FluidName:"thermal_extra:sunflower_oil"}}', 200, 100)
-    //combinatione('actuallyadditions:empowered_palis_crystal', 'powah:crystal_blazing', 'minecraft:packed_ice', 'aether:aerogel', 'minecraft:obsidian', '{Fluid:{Amount:1000,FluidName:"enderio:fire_water"}}', 1000, 100)
+    //Abyssal Crystal
+    combination8('kubejs:abyssal_crystal_block', 'thermal_extra:abyssal_glass', 'thermal_extra:abyssal_ingot', 'actuallyadditions:empowered_palis_crystal', 'thermal_extra:abyssal_ingot', 'actuallyadditions:empowered_palis_crystal', 'thermal_extra:abyssal_ingot', 'actuallyadditions:empowered_palis_crystal', 'thermal_extra:abyssal_ingot', 'actuallyadditions:empowered_palis_crystal', 512, 60)
  
 })

@@ -34,16 +34,21 @@ StartupEvents.registry('block', event => {
     //Ores
     event.create('quartz_ore').displayName('Quartz Ore').soundType('stone')
         .hardness(3).resistance(3).requiresTool(true)
-        .tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_wooden_tool').tagBlock('forge:ores').tagBlock('forge:ores/quartz').item(t=>{t.tag('forge:ores').tag('forge:ores/quartz')})
+        .tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_wooden_tool').tagBlock('forge:ores').tagBoth('forge:ores/quartz')
     event.create('deepslate_quartz_ore').displayName('Deepslate Quartz Ore').soundType('deepslate')
         .hardness(4.5).resistance(3).requiresTool(true)
-        .tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_wooden_tool').tagBlock('forge:ores').tagBlock('forge:ores/quartz').item(t=>{t.tag('forge:ores').tag('forge:ores/quartz')})
+        .tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_wooden_tool').tagBlock('forge:ores').tagBoth('forge:ores/quartz')
     event.create('certus_quartz_ore').displayName('Certus Quartz Ore').soundType('stone')
         .hardness(3).resistance(3).requiresTool(true)
-        .tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_wooden_tool').tagBlock('forge:ores').tagBlock('forge:ores/certus_quartz').item(t=>{t.tag('forge:ores').tag('forge:ores/certus_quartz')})
+        .tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_wooden_tool').tagBlock('forge:ores').tagBoth('forge:ores/certus_quartz')
     event.create('deepslate_certus_quartz_ore').displayName('Deepslate Certus Quartz Ore').soundType('deepslate')
         .hardness(4.5).resistance(3).requiresTool(true)
-        .tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_wooden_tool').tagBlock('forge:ores').tagBlock('forge:ores/certus_quartz').item(t=>{t.tag('forge:ores').tag('forge:ores/certus_quartz')})   
+        .tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_wooden_tool').tagBlock('forge:ores').tagBoth('forge:ores/certus_quartz')
+
+    //Purified Block
+    event.create('purified_block').displayName('Purified Gem Block').soundType('metal')
+        .hardness(6.0).resistance(3.0).requiresTool(true)
+        .tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_iron_tool')
 
     //Material Blocks
     event.create('neptune_block').displayName('Neptune Block').soundType('metal')
@@ -67,9 +72,9 @@ StartupEvents.registry('block', event => {
     event.create('crystalline_alloy_block').displayName('Crystalline Alloy Block').soundType('metal')
         .hardness(5.0).resistance(2.5).requiresTool(true)
         .tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_iron_tool')
-    event.create('dark_soul_infused_block').displayName('Dark Soul Infused Block').soundType('metal')
-        .hardness(7.0).resistance(3.0).requiresTool(true)
-        .tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_iron_tool').item(gl=>{gl.glow(true)})
+    //event.create('dark_soul_infused_block').displayName('Dark Soul Infused Block').soundType('metal')
+    //    .hardness(7.0).resistance(3.0).requiresTool(true)
+    //    .tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_iron_tool').item(gl=>{gl.glow(true)})
     event.create('extradimensional_alloy_block').displayName('Extra-Dimensional Alloy Block').soundType('metal')
         .hardness(6.0).resistance(3.0).requiresTool(true)
         .tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_iron_tool')
@@ -85,9 +90,10 @@ StartupEvents.registry('block', event => {
     event.create('radiance_block').displayName('Radiance Block').soundType('wool')
         .hardness(3.0).resistance(1.5).requiresTool(true)
         .tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_iron_tool')
-    event.create('purified_block').displayName('Purified Gem Block').soundType('metal')
-        .hardness(6.0).resistance(3.0).requiresTool(true)
+        
+    //Crystal Blocks
+    event.create('abyssal_crystal_block').displayName('Abyssal Crystal Block').soundType('metal')
+        .hardness(7.0).resistance(3.0).requiresTool(true)
         .tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:needs_iron_tool')
-
 
 })

@@ -1931,7 +1931,7 @@
 				type: "choice"
 			}]
 			tasks: [{
-				id: "59C01348F3D4F964"
+				id: "157BE70AFC7E0D62"
 				item: {
 					Count: 1
 					id: "ironjetpacks:jetpack"

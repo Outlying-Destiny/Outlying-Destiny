@@ -1,7 +1,8 @@
 [*]
 background:          ftblibrary:textures/gui/background_squares.png; color=#DCFFFFFF; tile_size=64
-background_quest:          ftblibrary:textures/gui/background_quest.png; color=#DCFFFFFF; tile_size=64
 extra_quest_shapes:  diamond, pentagon, hexagon, octagon, heart, gear
+selected_chapter_highlight_1: #60999999
+selected_chapter_highlight_2: #28999999
 
 text_color:          #FFFFFF
 hover_text_color:    #FFFFA0
@@ -16,7 +17,7 @@ button:                hollow_rectangle:{{widget_border}}
 panel:                 {{container_slot}}
 disabled_button:       hollow_rectangle:{{widget_border}}
 hover_button:          {{button}} + {{widget_background}}; padding=1
-context_menu:          hollow_rectangle:{{widget_border}}; round_edges + {{background_quest}}; color=#B4B4B4; padding=1
+context_menu:          hollow_rectangle:{{widget_border}}; round_edges + {{background}}; color=#B4B4B4; padding=1
 scroll_bar_background: {{widget_background}}
 scroll_bar:            {{button}} + {{widget_background}}; padding=1
 container_slot:        {{button}}; padding=-1
@@ -45,6 +46,7 @@ modpack_icon:         ftbquests:textures/item/book.png
 reward_table_icon:    ftblibrary:icons/money_bag
 shop_icon:            ftbquests:textures/gui/shop.png; color=#EF9E1A
 collect_rewards_icon: ftbquests:textures/gui/collect_rewards.png; color=#EF9E1A
+lock_icon:            ftbquests:textures/gui/quest_locked.png
 delete_icon:          ftblibrary:icons/remove
 reload_icon:          ftblibrary:icons/refresh
 download_icon:        ftblibrary:icons/down
@@ -60,14 +62,14 @@ rewards_text_color:                 #FFAA00
 quest_view_background:              {{context_menu}}
 quest_view_border:                  {{widget_border}}
 quest_view_title:                   #AAAAAA
-quest_completed_color:              #6d197e
-quest_started_color:                #c23dce
-quest_not_started_color:            #96FFFFFF
+quest_completed_color:              #7623cc
+quest_started_color:                #EE60EE
+quest_not_started_color:            #AAAAAA
 quest_locked_color:                 #FF999999
 dependency_line_texture:            ftbquests:textures/gui/dependency.png
-dependency_line_completed_color:    #710d85
-dependency_line_uncompleted_color:  #9238a3
-dependency_line_requires_color:     #968096
+dependency_line_completed_color:    #7623cc
+dependency_line_uncompleted_color:  #a8329e
+dependency_line_requires_color:     #999999
 dependency_line_required_for_color: #C8C800
 dependency_line_selected_speed:     1.0
 dependency_line_unselected_speed:   0.0

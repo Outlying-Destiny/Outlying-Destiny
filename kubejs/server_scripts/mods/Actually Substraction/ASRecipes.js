@@ -9,8 +9,10 @@ ServerEvents.recipes(event => {
       detailedbox('actuallyadditions:drill_upgrade_'+output, input1, input2, input3, input4)
     }
 
-    //Materials
-    event.remove({id:/actuallyadditions:laser.+crysta.+/})
+    //Atomic Disassembler recipes
+    event.remove({id:/actuallyadditions:laser\/crystal/})
+    event.remove({id:/actuallyadditions:laser\/ethetic_(white|green)_block/})
+    event.remove({id:'actuallyadditions:laser/nether_wart'})
     atomic('actuallyadditions:enori_crystal', 'powah:steel_energized', 2000)
     atomic('actuallyadditions:enori_crystal_block', 'powah:energized_steel_block', 18000)
     atomic('actuallyadditions:palis_crystal', 'powah:crystal_blazing', 10000)
@@ -22,18 +24,13 @@ ServerEvents.recipes(event => {
     atomic('actuallyadditions:restonia_crystal', 'powah:crystal_nitro', 50000)
     atomic('actuallyadditions:restonia_crystal_block', 'powah:nitro_crystal_block', 450000)
     atomic('actuallyadditions:crystallized_canola_seed', 'actuallyadditions:canola_seeds', 1000)
+    atomic('actuallyadditions:ethetic_white_block', 'minecraft:quartz_block', 1000)
+    atomic('actuallyadditions:ethetic_green_block', 'minecraft:chiseled_quartz_block', 1000)
     
     //Empowered Materials
     event.remove({id:/actuallyadditions:empowering.+/})
     empowerer('actuallyadditions:empowered_enori_crystal', 'actuallyadditions:enori_crystal', 'enderio:energized_gear', 'extendedcrafting:luminessence', 'mekanism:yellow_cake_uranium', '{Fluid:{Amount:1000,FluidName:"thermal_extra:sunflower_oil"}}', 200, 100, 13421772)
     empowerer('actuallyadditions:empowered_palis_crystal', 'actuallyadditions:palis_crystal', 'minecraft:packed_ice', 'aether:aerogel', 'minecraft:obsidian', '{Fluid:{Amount:1000,FluidName:"enderio:fire_water"}}', 1000, 100, 2437779)
-
-    //Crafting Table on a Stick
-    event.replaceInput(
-      { id:'actuallyadditions:crafter_on_a_stick'},
-      '#minecraft:signs',
-      '#forge:rods/wooden'
-    )
 
     //Filters
     event.remove({id:'actuallyadditions:filter'})
@@ -114,8 +111,8 @@ ServerEvents.recipes(event => {
     const shard = [['enori'],['palis'],['diamatine'],['emeradic'],['restonia']]
 
     shard.forEach((shard) => {
-        event.shapeless('actuallyadditions:empowered_'+shard+'_crystal', '9x actuallyadditions:empowered_'+shard+'_crystal_shard')
-        event.shapeless('9x actuallyadditions:empowered_'+shard+'_crystal_shard', 'actuallyadditions:empowered_'+shard+'_crystal')
+        event.shapeless('actuallyadditions:empowered_'+shard+'_crystal', '9x kubejs_actuallyadditions:empowered_'+shard+'_crystal_shard')
+        event.shapeless('9x kubejs_actuallyadditions:empowered_'+shard+'_crystal_shard', 'actuallyadditions:empowered_'+shard+'_crystal')
     })
 
     //Machines Temp

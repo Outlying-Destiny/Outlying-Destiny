@@ -16,7 +16,7 @@
       "result": "deny"
     },
     {
-      "mob":["quark:forgotten", "evilcraft:poisonous_libelle"],
+      "mob":["quark:forgotten", "evilcraft:poisonous_libelle", "forbidden_arcanus:lost_soul"],
       "when": "onjoin",
       "result": "deny"
     }

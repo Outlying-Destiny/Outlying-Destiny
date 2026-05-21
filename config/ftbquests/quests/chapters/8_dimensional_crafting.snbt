@@ -553,7 +553,7 @@
 			dependencies: ["4A75A7BA728158A6"]
 			id: "08E1BCABA62F3023"
 			rewards: [{
-				count: 8
+				count: 2
 				id: "427565D99C4CCF40"
 				item: "thermal_extra:abyssal_ingot"
 				type: "item"
@@ -1187,24 +1187,29 @@
 					type: "item"
 				}
 				{
-					count: 3L
+					count: 2L
 					id: "7FBACE0AB7D3F01C"
-					item: { Count: 3, id: "kubejs:big_item_output" }
+					item: "kubejs:big_item_output"
 					type: "item"
 				}
 				{
-					id: "7D1319B0CB268846"
+					id: "0FCC03EE5C59891E"
+					item: "kubejs:normal_item_output"
+					type: "item"
+				}
+				{
+					id: "3310E08C9642FA79"
 					item: "kubejs:normal_energy_input"
 					type: "item"
 				}
 				{
 					count: 2L
-					id: "0A329555D91F5106"
-					item: { Count: 2, id: "kubejs:blank_quantum_modifier" }
+					id: "5BB931F59C817797"
+					item: "kubejs:blank_quantum_modifier"
 					type: "item"
 				}
 				{
-					id: "10F56CFC0618F620"
+					id: "2C54DDD087958A27"
 					item: {
 						Count: 1
 						id: "itemfilters:or"
@@ -1221,7 +1226,6 @@
 							]
 						}
 					}
-					title: "Overworld / Nether Quantum Modifier"
 					type: "item"
 				}
 			]

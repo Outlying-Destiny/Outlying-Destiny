@@ -7,6 +7,10 @@ ServerEvents.recipes((event) => {
     function detailedboxup(output, input1, input2, input3, input4, input5){event.shaped(output, ['ABA','CDC','AEA'], {A: input1,B: input2,C: input3, D: input4, E: input5})}
     function quanfier(output, input1, input2, input3){detailedboxup('kubejs:'+output+'_quantum_modifier', 'rftoolsbase:dimensionalshard', input1, input2, 'kubejs:blank_quantum_modifier', input3)}
 
+    //MBD Gadgets
+    event.remove({id:'mbd2:mbd_gadgets'})
+    event.shapeless('mbd2:mbd_gadgets', ['2x minecraft:paper', '2x rftoolsbase:dimensionalshard'])
+
     //Machinarium Casing
     cross('4x kubejs:machinarium_casing', 'kubejs:machinarium_ingot', 'mekanism:steel_casing')
 

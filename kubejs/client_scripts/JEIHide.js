@@ -72,7 +72,7 @@ JEIEvents.hideItems(event => {
     event.hide('fluxnetworks:admin_configurator')
     
     //Forbiddern Arcanus
-    event.hide(['forbidden_arcanus:xpetrified_ore', 'forbidden_arcanus:stella_arcanum', 'forbidden_arcanus:orb_of_temporary_flight', 'forbidden_arcanus:arcane_bone_meal', 'forbidden_arcanus:golden_orchid_seeds', 'forbidden_arcanus:arcane_crystal_dust_speck', 'forbidden_arcanus:nipa', 'forbidden_arcanus:purifying_soap', 'forbidden_arcanus:wet_purifying_soap'])
+    event.hide(['forbidden_arcanus:xpetrified_ore', 'forbidden_arcanus:stella_arcanum', 'forbidden_arcanus:orb_of_temporary_flight', 'forbidden_arcanus:arcane_bone_meal', 'forbidden_arcanus:golden_orchid_seeds', 'forbidden_arcanus:arcane_crystal_dust_speck', 'forbidden_arcanus:nipa', 'forbidden_arcanus:purifying_soap', 'forbidden_arcanus:wet_purifying_soap', 'forbidden_arcanus:soul_extractor'])
 
     //FTBQuests
     event.hide(/ftbquests:.+/)
@@ -197,7 +197,7 @@ JEIEvents.hideItems(event => {
     event.hide(['bigreactors:wrench', 'hammerlib:wrench', 'ad_astra:wrench', 'enderio:yeta_wrench'])
 
     //Fluid Buckets
-    event.hide(['pneumaticcraft:biodiesel_bucket', 'pneumaticcraft:vegetable_oil_bucket', 'pneumaticcraft:ethanol_bucket', 'thermal:creosote_bucket', 'thermal:crude_oil_bucket', 'ad_astra:oil_bucket', /thermal_extra:raw_.+_bucket/])
+    event.hide(['pneumaticcraft:biodiesel_bucket', 'pneumaticcraft:vegetable_oil_bucket', 'pneumaticcraft:ethanol_bucket', 'thermal:creosote_bucket', 'thermal:crude_oil_bucket', 'ad_astra:oil_bucket', /thermal_extra:raw_.+_bucket/, /thermal_extra:(shellite|dragonsteel|abyssal)_bucket/])
 
 })
 
@@ -238,8 +238,8 @@ JEIEvents.hideFluids(event => {
     oil.forEach(fluid => {event.hide(fluid)})
 
     //Thermal Extra Molten Fluids
-    let molten = ['thermal_extra:raw_aluminum', 'thermal_extra:raw_arcane_gold', 'thermal_extra:raw_copper', 'thermal_extra:raw_gold', 'thermal_extra:raw_iron', 'thermal_extra:raw_lead', 'thermal_extra:raw_nickel', 'thermal_extra:raw_osmium', 'thermal_extra:raw_silver', 'thermal_extra:raw_tin', 'thermal_extra:raw_uranium', 'thermal_extra:raw_zinc']
-    molten.forEach(fluid => {event.hide(fluid)})
+    let molten = ['raw_aluminum', 'raw_arcane_gold', 'raw_copper', 'raw_gold', 'raw_iron', 'raw_lead', 'raw_nickel', 'raw_osmium', 'raw_silver', 'raw_tin', 'raw_uranium', 'raw_zinc', 'shellite', 'dragonsteel', 'abyssal']
+    molten.forEach(fluid => {event.hide('thermal_extra:' + fluid)})
 
 })
 

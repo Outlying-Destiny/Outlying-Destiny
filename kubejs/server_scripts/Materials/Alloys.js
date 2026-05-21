@@ -60,7 +60,7 @@ ServerEvents.recipes(event => {
     alloy3('kubejs:evil_infused_ingot', 1, 'kubejs:enchanted_ingot', 1, 'kubejs:demon_ingot', 1, 'architects_palette:withered_bone', 1, 12000)
     alloy2('kubejs:crystalline_alloy_ingot', 2, 'enderio:pulsating_powder', 1, 'thermal:lumium_ingot', 2, 21000)
     //alloy2('kubejs:crystalline_pink_slime_ingot', 1, 'industrialforegoing:pink_slime_ingot', 1, 'kubejs:crystalline_alloy_ingot',1 ,16000)
-    //alloy3('kubejs:dark_soularium_ingot', 1, 'enderio:soularium_ingot', 1, 'enderio:dark_steel_ingot', 10, '', 1, 24000)
+    //alloy2('kubejs:dark_soul_infused_ingot', 3, 'enderio:dark_steel_ingot', 1, 'thermal_extra:soul_infused_ingot', 2, 40000)
     alloy3('kubejs:machinarium_ingot', 4, 'mekanism:alloy_reinforced', 4, 'kubejs:automaton_ingot', 2, 'actuallyadditions:empowered_enori_crystal', 1, 60000)
     alloy2('industrialforegoing:pink_slime_ingot', 1, 'industrialforegoing:pink_slime', 1, 'kubejs:demon_ingot', 1, 8000)
     alloy3('thermal_extra:twinite_ingot', 2, 'industrialforegoing:pink_slime_ingot', 2, 'kubejs:crystalline_alloy_ingot', 2, 'minecraft:netherite_ingot', 1, 34000)
@@ -68,7 +68,6 @@ ServerEvents.recipes(event => {
     alloy2('kubejs:extradimensional_alloy_ingot', 3, 'rftoolsbase:dimensionalshard', 3, 'extendedcrafting:enhanced_ender_ingot', 1, 50000)
     alloy3('thermal_extra:abyssal_ingot', 1, 'naturesaura:infused_iron', 1, 'kubejs:extradimensional_alloy_ingot', 1, 'evilcraft:dark_gem', 4, 22000)
     alloy3('kubejs:automaton_ingot', 2, 'thermal:signalum_ingot', 1, 'thermal_extra:dragonsteel_ingot', 1, 'rftoolsbase:dimensionalshard', 2, 36000)
-    alloy2('kubejs:dark_soul_infused_ingot', 3, 'enderio:dark_steel_ingot', 1, 'thermal_extra:soul_infused_ingot', 2, 40000)
     
     //Eye of Ender
     event.remove({id:'minecraft:ender_eye'})

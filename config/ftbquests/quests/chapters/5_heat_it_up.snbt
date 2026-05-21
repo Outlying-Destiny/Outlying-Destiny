@@ -2573,7 +2573,7 @@
 				type: "choice"
 			}]
 			tasks: [{
-				id: "35D2B157F6E6DCB0"
+				id: "3210746E5FAA441F"
 				item: {
 					Count: 1
 					id: "ironjetpacks:jetpack"
@@ -2613,7 +2613,7 @@
 				type: "choice"
 			}]
 			tasks: [{
-				id: "7EC565775B882AFB"
+				id: "001C049032B47301"
 				item: {
 					Count: 1
 					id: "ironjetpacks:jetpack"

@@ -18,4 +18,7 @@ ServerEvents.recipes(event => {
     //Arcane Crystal / Rune Ores
     event.remove({id:/forbidden_arcanus:(smelting|blasting)\/(arcane_crystal|rune)_from_/})
 
+    //Soul Extractor
+    event.remove({id:'forbidden_arcanus:soul_extractor'})
+    
 })

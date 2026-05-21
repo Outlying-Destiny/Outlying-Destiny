@@ -69,8 +69,8 @@ JEIEvents.addItems(event => {
     ])
 
     //Sophisticated Storage Stuff
-    event.add([Item.of('sophisticatedstorage:copper_barrel', '{woodType:"oak"}'), Item.of('sophisticatedstorage:iron_barrel', '{woodType:"oak"}'), Item.of('sophisticatedstorage:gold_barrel', '{woodType:"oak"}'), Item.of('sophisticatedstorage:diamond_barrel', '{woodType:"oak"}'), Item.of('sophisticatedstorage:netherite_barrel', '{woodType:"oak"}')])
-    event.add([Item.of('sophisticatedstorage:copper_chest', '{woodType:"oak"}'), Item.of('sophisticatedstorage:iron_chest', '{woodType:"oak"}'), Item.of('sophisticatedstorage:gold_chest', '{woodType:"oak"}'), Item.of('sophisticatedstorage:diamond_chest', '{woodType:"oak"}'), Item.of('sophisticatedstorage:netherite_chest', '{woodType:"oak"}')])
+    event.add([Item.of('sophisticatedstorage:barrel', '{woodType:"oak"}'), Item.of('sophisticatedstorage:copper_barrel', '{woodType:"oak"}'), Item.of('sophisticatedstorage:iron_barrel', '{woodType:"oak"}'), Item.of('sophisticatedstorage:gold_barrel', '{woodType:"oak"}'), Item.of('sophisticatedstorage:diamond_barrel', '{woodType:"oak"}'), Item.of('sophisticatedstorage:netherite_barrel', '{woodType:"oak"}')])
+    event.add([Item.of('sophisticatedstorage:chest', '{woodType:"oak"}'), Item.of('sophisticatedstorage:copper_chest', '{woodType:"oak"}'), Item.of('sophisticatedstorage:iron_chest', '{woodType:"oak"}'), Item.of('sophisticatedstorage:gold_chest', '{woodType:"oak"}'), Item.of('sophisticatedstorage:diamond_chest', '{woodType:"oak"}'), Item.of('sophisticatedstorage:netherite_chest', '{woodType:"oak"}')])
     event.add(['sophisticatedstorage:copper_shulker_box', 'sophisticatedstorage:iron_shulker_box', 'sophisticatedstorage:gold_shulker_box', 'sophisticatedstorage:diamond_shulker_box', 'sophisticatedstorage:netherite_shulker_box'])
     event.add('sophisticatedbackpacks:backpack')
 

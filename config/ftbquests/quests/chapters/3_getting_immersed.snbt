@@ -379,7 +379,7 @@
 				""
 				"Once powered, equip it with a mold of your choice and drop your items on the conveyor belt! You can use a dropper on the entry conveyor belt to insert items and a chest on the exit to automatically collect the outputs."
 				""
-				"&6This quest requires 3 out of 4 dependencies to be completed."
+				"&6This quest requires 3 out of 4 dependencies to be unlocked."
 			]
 			icon: "immersiveengineering:metal_press"
 			id: "0AA6184C7940DD0E"
@@ -543,7 +543,7 @@
 				""
 				"While the KD is pretty cheap it is really space inefficient, if you don't like setting up huge things you should check the Thermoelectric Generator quest."
 				""
-				"&6This quest requires 1 out of 2 dependencies to be completed."
+				"&6This quest requires 1 out of 2 dependencies to be unlocked."
 			]
 			id: "20D2FE0159ADB69C"
 			min_width: 300
@@ -652,7 +652,7 @@
 				""
 				"While the KD is pretty cheap it is really space inefficient, if you don't like setting up huge things you should check the Thermoelectric Generator quest."
 				""
-				"&6This quest requires 1 out of 2 dependencies to be completed."
+				"&6This quest requires 1 out of 2 dependencies to be unlocked."
 			]
 			disable_toast: true
 			hide_dependent_lines: true

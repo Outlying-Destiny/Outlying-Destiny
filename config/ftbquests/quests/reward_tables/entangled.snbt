@@ -3,8 +3,8 @@
 	loot_size: 1
 	order_index: 79
 	rewards: [
-		{ count: 8, item: "kubejs:automaton_ingot" }
-		{ count: 4, item: "thermal_extra:abyssal_ingot" }
+		{ count: 4, item: "kubejs:automaton_ingot" }
+		{ count: 2, item: "thermal_extra:abyssal_ingot" }
 	]
 	title: "Entangled"
 }

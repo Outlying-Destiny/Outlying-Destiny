@@ -1,13 +1,15 @@
 ServerEvents.recipes(event => {
 
-    //const custommaterials = []
+    const custommaterials = [
+        {item:'abyssal_crystal'}
+    ]
 
     const custommaterialsnugget = [
         {item:'neptune'},
         {item:'valkyrie'},
         {item:'phoenix'},
         {item:'crystalline_alloy'},
-        {item:'dark_soul_infused'},
+        //{item:'dark_soul_infused'},
         {item:'demon'},
         {item:'enchanted'},
         {item:'evil_infused'},
@@ -15,10 +17,10 @@ ServerEvents.recipes(event => {
         {item:'automaton'}
     ]
 
-    //custommaterials.forEach((mat) => {
-    //    event.shapeless('kubejs:'+mat.item+'_block', '9x kubejs:'+mat.item+'_ingot')
-    //    event.shapeless('9x kubejs:'+mat.item+'_ingot', 'kubejs:'+mat.item+'_block')
-    //})
+    custommaterials.forEach((mat) => {
+        event.shapeless('kubejs:'+mat.item+'_block', '9x kubejs:'+mat.item)
+        event.shapeless('9x kubejs:'+mat.item, 'kubejs:'+mat.item+'_block')
+    })
 
     custommaterialsnugget.forEach((mat) => {
         event.shapeless('kubejs:'+mat.item+'_block', '9x kubejs:'+mat.item+'_ingot')

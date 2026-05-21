@@ -675,6 +675,7 @@
 				table_id: 6307414237475125258L
 				type: "choice"
 			}]
+			size: 1.3d
 			tasks: [{
 				id: "341DA724CF7B98AD"
 				item: "minecraft:enchanting_table"
